@@ -14,23 +14,51 @@ set -o errexit
 
 CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-if [ ! -f "${CURRENT_DIR}/VERSION" ]; then
+DOCS_REPO=https://github.com/phalcon/docs
+CPHALCON_REPO=https://github.com/phalcon/cphalcon
+
+DOCS_PATH="${DOCS_PATH:-${CURRENT_DIR}/docs}"
+API_PATH="${API_PATH:-${CURRENT_DIR}/storage/repo}"
+
+ref=$(git rev-parse --abbrev-ref HEAD)
+
+echo -e "Current branch is ${ref}"
+
+if [[ ${ref} != master ]]; then
+    echo "Doing nothing: only the master branch may be deployed for this project"
+    exit 0
+fi
+
+echo -e "Pull the latest changes from the git repo..."
+git checkout -f
+git pull origin ${ref}
+
+if [[ ! -f "${CURRENT_DIR}/VERSIONS" ]]; then
 	echo -e "Unable to locate the VERSIONS file. Exit..."
 	exit 1
 fi
 
+echo -e ""
 
-# Pull from github
-git pull
+while IFS= read -r version; do
+    echo -e "Clear the docs folder..."
+    rm -rf "${DOCS_PATH}/${version}"
+    mkdir -p "${DOCS_PATH}/${version}"
 
-# Clear cache
+    echo -e "Update the docs for ${version}..."
+    echo -e "git clone -q -b ${version} --depth=1 ${DOCS_REPO}" "${DOCS_PATH}/${version}"
+    echo -e "Done\n"
+
+    echo -e "Clear the repo folder for ${version}..."
+    find ${API_PATH} ! -name '.gitignore' ! -path ${API_PATH}  -exec rm -rf {} \;
+    mkdir -p "${API_PATH}"
+
+    echo -e "Clone cphalcon's $version branch..."
+    echo -e "TODO: git clone -q -b ${version}.0 --depth=1 ${CPHALCON_REPO} ${API_PATH}"
+    echo -e "TODO: regenerate the API doc"
+    echo -e "TODO: copy the generated API doc to the ${DOCS_PATH}/${version}/en/api"
+    echo -e "Done\n"
+done < "${CURRENT_DIR}/VERSIONS"
+
+echo -e "Clear the cache..."
 ./phalcon -clear-cache
-
-# Clear the repo folder
-rm -fR ./storage/repo/
-
-# Re-clone the cphalcon project in the folder
-mkdir ./storage/repo/
-cd ./storage/repo/
-git clone https://github.com/phalcon/cphalcon --depth=1 .
-cd ../../
