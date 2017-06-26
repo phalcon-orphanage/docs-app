@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# trace ERR through pipes
+set -o pipefail
+
+# trace ERR through 'time command' and other functions
+set -o errtrace
+
+# set -u : exit the script if you try to use an uninitialised variable
+set -o nounset
+
+# set -e : exit the script if any statement returns a non-true return value
+set -o errexit
+
+CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+
+if [ ! -f "${CURRENT_DIR}/VERSION" ]; then
+	echo -e "Unable to locate the VERSIONS file. Exit..."
+	exit 1
+fi
+
+
+# Pull from github
+git pull
+
+# Clear cache
+./phalcon -clear-cache
+
+# Clear the repo folder
+rm -fR ./storage/repo/
+
+# Re-clone the cphalcon project in the folder
+mkdir ./storage/repo/
+cd ./storage/repo/
+git clone https://github.com/phalcon/cphalcon --depth=1 .
+cd ../../
