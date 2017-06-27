@@ -64,13 +64,13 @@ class Utils extends Component
      * Returns an asset with the CDN and the version
      *
      * @param string $asset
+     * @param string|int $version
      *
      * @return string
      */
-    public function getAsset(string $asset): string
+    public function getAsset(string $asset, $version): string
     {
         $cdnUrl    = $this->getCdnUrl();
-        $version   = $this->config->get('app')->get('version', '');
         $pathInfo  = pathinfo($asset);
         $dirName   = $pathInfo['dirname'];
         $fileName  = $pathInfo['filename'];

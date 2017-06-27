@@ -249,12 +249,19 @@ class Main
         /** @var PhAssetManager $assets */
         $assets = $this->diContainer->getShared('assets');
         $assets->collection("header_js");
+
+        if ($this->mode === 'development') {
+            $version = time();
+        } else {
+            $version = $config->get('app')->get('version', '9999');
+        }
+
         $assets
             ->collection('header_css')
             ->addCss('https://fonts.googleapis.com/css?family=Lato', false)
             ->addCss('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', false)
             ->addCss('https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/darcula.min.css', false)
-            ->addCss($utils->getAsset('css/docs.css?v=' . time()));
+            ->addCss($utils->getAsset('css/docs.css', $version));
 
         $assets
             ->collection('footer_js')
