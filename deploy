@@ -79,12 +79,12 @@ print_help() {
 }
 
 print_unknown_option() {
-    print_error "Error: Unknown option: ${1}." >&2
+    print_error "Unknown option: ${1}." >&2
     print_error "See ./deploy --help for more."
 }
 
 print_error() {
-    printf "${RED}${1}${NC}\n"
+    printf "${RED}Error: ${1}${NC}\n"
 }
 
 validate_work_dir() {
