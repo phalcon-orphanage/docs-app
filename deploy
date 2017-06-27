@@ -338,7 +338,7 @@ if [[ "${CLEAR_CACHE}" -eq 1 ]]; then
     printf "Clear the cache...\n"
 
     validate_php_bin
-    ${WORK_DIR}/phalcon -clear-cache
+    ${PHP_BIN} ${WORK_DIR}/phalcon -clear-cache
 
     printf "Done\n\n"
 fi
