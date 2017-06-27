@@ -7,14 +7,17 @@
 <html lang="{{ language }}" class="no-js">
 <!--<![endif]-->
 <head>
-    {%- include "include/meta.volt" -%}
+    {%- set name = config.get('app').get('name', 'Phalcon Documentation') -%}
+    {%- set description = config.get('app').get('description', 'Official Phalcon Documentation') -%}
+
+    {%- include "include/meta.volt" with ['name': name, 'description': description] -%}
     {%- include "include/icons.volt" -%}
     {%- include "include/analytics.volt" -%}
 
     {{- assets.outputCss('header_css') -}}
 
     <title>
-        Phalcon Documentation - {{ config.get('app').get('name', 'Phalcon Framework') }}
+        {{ name ~ ' - ' ~ description}}
     </title>
 </head>
 
@@ -32,7 +35,7 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand phalcon-logo" href="{{ url() }}">
-                <span itemprop="name" class="sr-only">Phalcon Framework</span>
+                <span itemprop="name" class="sr-only">{{ name }}</span>
             </a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-collapse-main">
