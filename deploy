@@ -21,7 +21,7 @@ set -o errtrace
 set -o errexit
 
 CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
-WORK_TREE=${CURRENT_DIR}
+WORK_DIR=${CURRENT_DIR}
 
 DOCS_REPO=https://github.com/phalcon/docs
 CPHALCON_REPO=https://github.com/phalcon/cphalcon
@@ -44,11 +44,11 @@ REGENERATE_API=1
 UPDATE_DOCS=1
 PULL_CHANGES=1
 
-VERSION=0.5.0
+VERSION=0.6.0
 APP_NAME="Phalcon Docs"
 
 print_version() {
-    printf "${YELLOW}${APP_NAME} Deploy Script${NC} v${VERSION}\n"
+    printf "${YELLOW}${APP_NAME} Deployer${NC} v${VERSION}\n"
 }
 
 print_dump_version() {
@@ -59,26 +59,34 @@ print_help() {
     printf "\n${YELLOW}Usage:${NC}"
     printf "\n./deploy [options]\n"
     printf "\n${YELLOW}Options:${NC}"
-    printf "\n      ${GREEN}--[no-]install-deps${NC}    Install the application dependencies using the Composer. (enabled by default)."
-    printf "\n      ${GREEN}--[no-]generate-api${NC}    Regenerate the API docs for all known versions (enabled by default)."
-    printf "\n      ${GREEN}--[no-]update-docs${NC}     Update the documentation for all known versions (enabled by default)."
-    printf "\n      ${GREEN}--[no-]pull-changes${NC}    Pull the latests changes from the git repo (enabled by default)."
-    printf "\n  ${GREEN}-H, --help${NC}                 Show this help message."
-    printf "\n  ${GREEN}-V, --version${NC}              Show only version number and exit."
-    printf "\n      ${GREEN}--dumpversion${NC}          Show the version and exit."
+    printf "\n      ${GREEN}--[no-]install-deps${NC}        Install the application dependencies using the Composer. (enabled by default)."
+    printf "\n      ${GREEN}--[no-]generate-api${NC}        Regenerate the API docs for all known versions (enabled by default)."
+    printf "\n      ${GREEN}--[no-]update-docs${NC}         Update the documentation for all known versions (enabled by default)."
+    printf "\n      ${GREEN}--[no-]pull-changes${NC}        Pull the latests changes from the git repo (enabled by default)."
+    printf "\n  ${GREEN}-H, --help${NC}                     Show this help message."
+    printf "\n  ${GREEN}-V, --version${NC}                  Show the version and exit."
+    printf "\n      ${GREEN}--dumpversion${NC}              Show only version number and exit."
+    printf "\n      ${GREEN}--working-dir=WORKING-DIR${NC}  If specified, use the given directory as working directory."
     printf "\n"
     printf "\n${YELLOW}Help:${NC}"
-    printf "\n${APP_NAME} Deploy Script is a source code deploying script."
+    printf "\n${APP_NAME} Deployer is a source code deploying script."
     printf "\n\n"
 }
 
 print_unknown_option() {
-    print_error "Invalid option: ${1}."
+    print_error "Error: Unknown option: ${1}." >&2
     print_error "See ./deploy --help for more."
 }
 
 print_error() {
     printf "${RED}${1}${NC}\n"
+}
+
+validate_work_dir() {
+    if [[ ! -d  ${WORK_DIR} ]]; then
+        print_error "Unable to locate specified path as working directory: ${WORK_DIR}"
+        exit ${ST_ERR}
+    fi
 }
 
 install_app_deps() {
@@ -88,6 +96,8 @@ install_app_deps() {
         print_error "Unable to detect the composer bin. Exit..."
         exit ${ST_ERR}
     fi
+
+    pushd ${WORK_DIR}
 
     ${composer_bin} install \
         --quiet \
@@ -99,6 +109,8 @@ install_app_deps() {
         --prefer-dist \
         --no-suggest \
         --ignore-platform-reqs
+
+    popd
 }
 
 pull_latest_changes() {
@@ -117,15 +129,18 @@ pull_latest_changes() {
         print_error "Doing nothing: only the master branch may be deployed for this project."
     else
         printf "Pull the latest changes from the git repo...\n"
-        pushd ${WORK_TREE}
+
+        pushd ${WORK_DIR}
+
         ${git_bin} checkout -f
         ${git_bin} pull origin ${current_branch}
+
         popd
     fi
 }
 
-while test -n "$1"; do
-    case $1 in
+for key in $@; do
+    case ${key} in
         --help|-H)
             print_help
             exit ${ST_HLP}
@@ -140,35 +155,53 @@ while test -n "$1"; do
             ;;
         --install-deps)
             INSTALL_DEPS=1
+            shift
             ;;
         --no-install-deps)
             INSTALL_DEPS=0
+            shift
             ;;
         --generate-api)
             REGENERATE_API=1
+            shift
             ;;
         --no-generate-api)
             REGENERATE_API=0
+            shift
             ;;
         --update-docs)
             UPDATE_DOCS=1
+            shift
             ;;
         --no-update-docs)
             UPDATE_DOCS=0
+            shift
             ;;
         --pull-changes)
             PULL_CHANGES=1
+            shift
             ;;
         --no-pull-changes)
             PULL_CHANGES=0
+            shift
             ;;
-        *)
+        --working-dir=*)
+            WORK_DIR="${key#*=}"
+            shift
+            ;;
+        -*)
+            # unknown option
             print_unknown_option $1
             exit ${ST_HLP}
             ;;
+        *)
+            # No more options
+            break
+            ;;
     esac
-    shift
 done
+
+validate_work_dir
 
 if [[ "${PULL_CHANGES}" -eq 1 ]]; then
     pull_latest_changes
