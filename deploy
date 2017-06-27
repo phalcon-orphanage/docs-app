@@ -6,9 +6,6 @@ set -o pipefail
 # trace ERR through 'time command' and other functions
 set -o errtrace
 
-# set -u : exit the script if you try to use an uninitialised variable
-set -o nounset
-
 # set -e : exit the script if any statement returns a non-true return value
 set -o errexit
 
@@ -19,6 +16,62 @@ CPHALCON_REPO=https://github.com/phalcon/cphalcon
 
 DOCS_PATH="${DOCS_PATH:-${CURRENT_DIR}/docs}"
 API_PATH="${API_PATH:-${CURRENT_DIR}/storage/repo}"
+
+ST_OK=0
+ST_ERR=1
+ST_HLP=2
+
+GREEN="\033[0;32m"
+RED="\033[0;31m"
+YELLOW="\e[1;33m"
+PURPLE="\e[0;35m"
+NC="\033[0m"
+
+UPDATE_COMPOSER=0
+
+VERSION=0.2.0
+
+print_version() {
+    printf "${YELLOW}Phalcon Docs Deploy Script${NC} v${VERSION}\n"
+}
+
+print_help() {
+    printf "\n"
+    print_version
+    printf "\n  Description:"
+    printf "\n  Phalcon Docs Deploy Script is a source code deploying script.\n"
+    printf "\nUsage: ${PURPLE}./deploy [command]${NC}\n"
+    printf "\nCommands:"
+    printf "\n  -H | --help                     Show this help message."
+    printf "\n  -U | --update-deps              Update dependencies using the Composer."
+    printf "\n  -V | --version                  Show the version and exit."
+    printf "\n"
+}
+
+print_unknown_arg() {
+    printf "${RED}Unknow argument: ${1}${NC}\n"
+}
+
+while test -n "$1"; do
+    case $1 in
+        --help|-H)
+            print_help
+            exit ${ST_HLP}
+            ;;
+        --version|-V)
+            print_version
+            exit ${ST_HLP}
+            ;;
+        --update-deps|-U)
+            UPDATE_COMPOSER=1
+            ;;
+        *)
+            print_unknown_arg $1
+            exit ${ST_HLP}
+            ;;
+    esac
+    shift
+done
 
 ref=$(git rev-parse --abbrev-ref HEAD)
 
