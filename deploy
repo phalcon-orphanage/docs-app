@@ -42,7 +42,7 @@ INSTALL_DEPS=1
 REGENERATE_API=1
 UPDATE_DOCS=1
 
-VERSION=0.2.0
+VERSION=0.3.0
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -68,12 +68,32 @@ print_help() {
 }
 
 print_unknown_option() {
-    printf "Invalid option: ${RED}${1}${NC}.\n"
-    printf "See${NC} ./deploy --help for more.\n"
+    print_error "Invalid option: ${1}."
+    print_error "See ./deploy --help for more."
+}
+
+print_error() {
+    printf "${RED}${1}${NC}\n"
 }
 
 install_app_deps() {
-    declare composer_bin
+    declare composer_bin=$(command -v composer 2>/dev/null)
+
+    if [[ "x${composer_bin}" == "x" ]]; then
+        print_error "Unable to detect the composer bin. Exit..."
+        exit 1
+    fi
+
+    ${composer_bin} install \
+        --quiet \
+        --no-interaction \
+        --no-ansi \
+        --no-progress \
+        --optimize-autoloader \
+        --no-dev \
+        --prefer-dist \
+        --no-suggest \
+        --ignore-platform-reqs
 }
 
 while test -n "$1"; do
@@ -132,6 +152,10 @@ git pull origin ${ref}
 if [[ ! -f "${CURRENT_DIR}/VERSIONS" ]]; then
 	echo -e "Unable to locate the VERSIONS file. Exit..."
 	exit 1
+fi
+
+if [[ "${INSTALL_DEPS}" -eq 1 ]]; then
+    install_app_deps
 fi
 
 echo -e ""
