@@ -53,7 +53,11 @@ class Utils extends Component
             }
         }
 
-        return sprintf('https://docs.phalconphp.com/%s/latest', $return);
+        return sprintf(
+            '%s/%s/latest',
+            $this->config->get('app')->get('url', 'https://docs.phalconphp.com'),
+            $return
+        );
     }
 
     /**
@@ -65,13 +69,12 @@ class Utils extends Component
      */
     public function getAsset(string $asset): string
     {
-        $cdnUrl    = $this->config->get('app')->get('staticUrl', '/');
+        $cdnUrl    = $this->getCdnUrl();
         $version   = $this->config->get('app')->get('version', '');
         $pathInfo  = pathinfo($asset);
         $dirName   = $pathInfo['dirname'];
         $fileName  = $pathInfo['filename'];
         $extension = $pathInfo['extension'];
-
 
         return sprintf(
             '%s%s/%s.%s.%s',
