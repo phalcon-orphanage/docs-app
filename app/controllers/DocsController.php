@@ -83,7 +83,8 @@ class DocsController extends PhController
      */
     private function getDocument($language, $version, $fileName): string
     {
-        $key = sprintf('%s.%s.%s.cache', $fileName,$version, $language);
+        $key = sprintf('%s.%s.%s.cache', $fileName, $version, $language);
+
         if ('production' === $this->config->get('app')->get('env') &&
             true === $this->cacheData->exists($key)) {
             return $this->cacheData->get($key);
@@ -91,15 +92,15 @@ class DocsController extends PhController
             $pageName = sprintf(
                 '%s/docs/%s/%s/%s.md',
                 APP_PATH,
-                $language,
                 $version,
+                $language,
                 $fileName
             );
             $apiFileName = sprintf(
                 '%s/docs/%s/%s/api/%s.md',
                 APP_PATH,
-                $language,
                 $version,
+                $language,
                 $fileName
             );
 
