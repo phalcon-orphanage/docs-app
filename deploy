@@ -21,6 +21,7 @@ set -o errtrace
 set -o errexit
 
 CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
+WORK_TREE=${CURRENT_DIR}
 
 DOCS_REPO=https://github.com/phalcon/docs
 CPHALCON_REPO=https://github.com/phalcon/cphalcon
@@ -41,8 +42,9 @@ NC="\033[0m"
 INSTALL_DEPS=1
 REGENERATE_API=1
 UPDATE_DOCS=1
+PULL_CHANGES=1
 
-VERSION=0.4.0
+VERSION=0.5.0
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -60,6 +62,7 @@ print_help() {
     printf "\n      ${GREEN}--[no-]install-deps${NC}    Install the application dependencies using the Composer. (enabled by default)."
     printf "\n      ${GREEN}--[no-]generate-api${NC}    Regenerate the API docs for all known versions (enabled by default)."
     printf "\n      ${GREEN}--[no-]update-docs${NC}     Update the documentation for all known versions (enabled by default)."
+    printf "\n      ${GREEN}--[no-]pull-changes${NC}    Pull the latests changes from the git repo (enabled by default)."
     printf "\n  ${GREEN}-H, --help${NC}                 Show this help message."
     printf "\n  ${GREEN}-V, --version${NC}              Show only version number and exit."
     printf "\n      ${GREEN}--dumpversion${NC}          Show the version and exit."
@@ -83,7 +86,7 @@ install_app_deps() {
 
     if [[ "x${composer_bin}" == "x" ]]; then
         print_error "Unable to detect the composer bin. Exit..."
-        exit 1
+        exit ${ST_ERR}
     fi
 
     ${composer_bin} install \
@@ -96,6 +99,29 @@ install_app_deps() {
         --prefer-dist \
         --no-suggest \
         --ignore-platform-reqs
+}
+
+pull_latest_changes() {
+    declare git_bin=$(command -v git 2>/dev/null)
+
+    if [[ "x${git_bin}" == "x" ]]; then
+        print_error "Unable to detect the git bin. Exit..."
+        exit ${ST_ERR}
+    fi
+
+    declare current_branch=`${git_bin} rev-parse --abbrev-ref HEAD`
+
+    printf "Current branch is ${YELLOW}${current_branch}${NC}.\n"
+
+    if [[ ${current_branch} != master ]]; then
+        print_error "Doing nothing: only the master branch may be deployed for this project."
+    else
+        printf "Pull the latest changes from the git repo...\n"
+        pushd ${WORK_TREE}
+        ${git_bin} checkout -f
+        ${git_bin} pull origin ${current_branch}
+        popd
+    fi
 }
 
 while test -n "$1"; do
@@ -130,6 +156,12 @@ while test -n "$1"; do
         --no-update-docs)
             UPDATE_DOCS=0
             ;;
+        --pull-changes)
+            PULL_CHANGES=1
+            ;;
+        --no-pull-changes)
+            PULL_CHANGES=0
+            ;;
         *)
             print_unknown_option $1
             exit ${ST_HLP}
@@ -138,26 +170,17 @@ while test -n "$1"; do
     shift
 done
 
-ref=$(git rev-parse --abbrev-ref HEAD)
-
-echo -e "Current branch is ${ref}"
-
-if [[ ${ref} != master ]]; then
-    echo "Doing nothing: only the master branch may be deployed for this project"
-    exit 0
-fi
-
-echo -e "Pull the latest changes from the git repo..."
-git checkout -f
-git pull origin ${ref}
-
-if [[ ! -f "${CURRENT_DIR}/VERSIONS" ]]; then
-	echo -e "Unable to locate the VERSIONS file. Exit..."
-	exit 1
+if [[ "${PULL_CHANGES}" -eq 1 ]]; then
+    pull_latest_changes
 fi
 
 if [[ "${INSTALL_DEPS}" -eq 1 ]]; then
     install_app_deps
+fi
+
+if [[ ! -f "${CURRENT_DIR}/VERSIONS" ]]; then
+	echo -e "Unable to locate the VERSIONS file. Exit..."
+	exit ${ST_ERR}
 fi
 
 echo -e ""
