@@ -42,8 +42,9 @@ INSTALL_DEPS=1
 REGENERATE_API=1
 UPDATE_DOCS=1
 PULL_CHANGES=1
+CLEAR_CACHE=1
 
-VERSION=0.8.0
+VERSION=0.9.0
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -62,6 +63,7 @@ print_help() {
     printf "\n      ${GREEN}--[no-]generate-api${NC}        Regenerate the API docs for all known versions (enabled by default)."
     printf "\n      ${GREEN}--[no-]update-docs${NC}         Update the documentation for all known versions (enabled by default)."
     printf "\n      ${GREEN}--[no-]pull-changes${NC}        Pull the latests changes from the git repo (enabled by default)."
+    printf "\n      ${GREEN}--[no-]clear-cache${NC}         Clear the cache (enabled by default)."
     printf "\n  ${GREEN}-L, --list-versions${NC}            List known docs versions."
     printf "\n  ${GREEN}-H, --help${NC}                     Show this help message."
     printf "\n  ${GREEN}-V, --version${NC}                  Show the version and exit."
@@ -215,6 +217,14 @@ for key in $@; do
             print_versions
             exit ${ST_HLP}
             ;;
+        --clear-cache)
+            CLEAR_CACHE=1
+            shift
+            ;;
+        --no-clear-cache)
+            CLEAR_CACHE=0
+            shift
+            ;;
         --install-deps)
             INSTALL_DEPS=1
             shift
@@ -281,7 +291,14 @@ if [[ "${REGENERATE_API}" -eq 1 ]]; then
     update_api
 fi
 
-echo -e "Clear the cache..."
-./phalcon -clear-cache
+if [[ "${REGENERATE_API}" -eq 1 ]]; then
+    update_api
+fi
+
+if [[ "${CLEAR_CACHE}" -eq 1 ]]; then
+    printf "Clear the cache...\n"
+    ${WORK_DIR}./phalcon -clear-cache
+    printf "Done\n"
+fi
 
 exit ${ST_OK}
