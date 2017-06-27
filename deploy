@@ -44,7 +44,7 @@ REGENERATE_API=1
 UPDATE_DOCS=1
 PULL_CHANGES=1
 
-VERSION=0.6.0
+VERSION=0.7.0
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -65,6 +65,7 @@ print_help() {
     printf "\n      ${GREEN}--[no-]pull-changes${NC}        Pull the latests changes from the git repo (enabled by default)."
     printf "\n  ${GREEN}-H, --help${NC}                     Show this help message."
     printf "\n  ${GREEN}-V, --version${NC}                  Show the version and exit."
+    printf "\n  ${GREEN}-L, --list-versions${NC}            List known docs versions."
     printf "\n      ${GREEN}--dumpversion${NC}              Show only version number and exit."
     printf "\n      ${GREEN}--working-dir=WORKING-DIR${NC}  If specified, use the given directory as working directory."
     printf "\n"
@@ -84,7 +85,14 @@ print_error() {
 
 validate_work_dir() {
     if [[ ! -d  ${WORK_DIR} ]]; then
-        print_error "Unable to locate specified path as working directory: ${WORK_DIR}"
+        print_error "Unable to locate specified path as working directory: ${WORK_DIR}. Exit..."
+        exit ${ST_ERR}
+    fi
+}
+
+validate_versions() {
+    if [[ ! -f "${WORK_DIR}/VERSIONS" ]]; then
+        echo -e "Unable to locate the VERSIONS file. Exit..."
         exit ${ST_ERR}
     fi
 }
@@ -139,6 +147,12 @@ pull_latest_changes() {
     fi
 }
 
+print_versions() {
+    validate_versions
+
+    cat "${WORK_DIR}/VERSIONS"
+}
+
 for key in $@; do
     case ${key} in
         --help|-H)
@@ -151,6 +165,10 @@ for key in $@; do
             ;;
         --dumpversion)
             print_dump_version
+            exit ${ST_HLP}
+            ;;
+        --list-versions|-L)
+            print_versions
             exit ${ST_HLP}
             ;;
         --install-deps)
