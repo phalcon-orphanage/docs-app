@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Phalcon
-# Copyright (c) 2017 Phalcon Team (https://phalconphp.com)
+# Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)
 #
 # This source file is subject to the New BSD License that is bundled
 # with this package in the file LICENSE.txt.
@@ -42,7 +42,7 @@ INSTALL_DEPS=1
 REGENERATE_API=1
 UPDATE_DOCS=1
 
-VERSION=0.3.0
+VERSION=0.4.0
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -54,17 +54,19 @@ print_dump_version() {
 }
 
 print_help() {
-    printf "${YELLOW}Description:${NC}"
-    printf "\n${APP_NAME} Deploy Script is a source code deploying script.\n"
-    printf "\nUsage: ${PURPLE}./deploy [options]${NC}\n"
+    printf "\n${YELLOW}Usage:${NC}"
+    printf "\n./deploy [options]\n"
     printf "\n${YELLOW}Options:${NC}"
-    printf "\n      --[no-]install-deps    Install the application dependencies using the Composer. (enabled by default)."
-    printf "\n      --[no-]generate-api    Regenerate the API docs for all known versions (enabled by default)."
-    printf "\n      --[no-]update-docs     Update the documentation for all known versions. (enabled by default)."
-    printf "\n  -H, --help                 Show this help message."
-    printf "\n  -V, --version              Show only version number and exit."
-    printf "\n      --dumpversion          Show the version and exit."
+    printf "\n      ${GREEN}--[no-]install-deps${NC}    Install the application dependencies using the Composer. (enabled by default)."
+    printf "\n      ${GREEN}--[no-]generate-api${NC}    Regenerate the API docs for all known versions (enabled by default)."
+    printf "\n      ${GREEN}--[no-]update-docs${NC}     Update the documentation for all known versions (enabled by default)."
+    printf "\n  ${GREEN}-H, --help${NC}                 Show this help message."
+    printf "\n  ${GREEN}-V, --version${NC}              Show only version number and exit."
+    printf "\n      ${GREEN}--dumpversion${NC}          Show the version and exit."
     printf "\n"
+    printf "\n${YELLOW}Help:${NC}"
+    printf "\n${APP_NAME} Deploy Script is a source code deploying script."
+    printf "\n\n"
 }
 
 print_unknown_option() {
