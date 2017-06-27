@@ -23,11 +23,12 @@ set -o errexit
 CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 WORK_DIR=${CURRENT_DIR}
 
+GIT_BIN=$(command -v git 2>/dev/null)
+
 DOCS_REPO=https://github.com/phalcon/docs
 CPHALCON_REPO=https://github.com/phalcon/cphalcon
 
-DOCS_PATH="${DOCS_PATH:-${CURRENT_DIR}/docs}"
-API_PATH="${API_PATH:-${CURRENT_DIR}/storage/repo}"
+API_PATH="${API_PATH:-${WORK_DIR}/storage/repo}"
 
 ST_OK=0
 ST_ERR=1
@@ -121,15 +122,39 @@ install_app_deps() {
     popd
 }
 
-pull_latest_changes() {
-    declare git_bin=$(command -v git 2>/dev/null)
+print_versions() {
+    validate_versions
 
-    if [[ "x${git_bin}" == "x" ]]; then
+    cat "${WORK_DIR}/VERSIONS"
+}
+
+update_docs() {
+    printf "Clear the docs folder...\n"
+
+    declare docs_path="${WORK_DIR}/docs"
+    declare versions=$(print_versions)
+
+    if [[ ! -d ${docs_path} ]]; then
+        print_error "Unable to locate the docs directory"
+        exit ${ST_ERR}
+    fi
+
+    for version in ${versions}; do
+        printf "Update the docs for ${version}...\n"
+        rm -rf "${docs_path}/${version}"
+        mkdir -p "${docs_path}/${version}"
+        ${GIT_BIN} clone -q -b ${version} --depth=1 "${DOCS_REPO}" "${docs_path}/${version}"
+        printf "Done\n"
+    done
+}
+
+pull_latest_changes() {
+    if [[ "x${GIT_BIN}" == "x" ]]; then
         print_error "Unable to detect the git bin. Exit..."
         exit ${ST_ERR}
     fi
 
-    declare current_branch=`${git_bin} rev-parse --abbrev-ref HEAD`
+    declare current_branch=`${GIT_BIN} rev-parse --abbrev-ref HEAD`
 
     printf "Current branch is ${YELLOW}${current_branch}${NC}.\n"
 
@@ -140,17 +165,11 @@ pull_latest_changes() {
 
         pushd ${WORK_DIR}
 
-        ${git_bin} checkout -f
-        ${git_bin} pull origin ${current_branch}
+        ${GIT_BIN} checkout -f
+        ${GIT_BIN} pull origin ${current_branch}
 
         popd
     fi
-}
-
-print_versions() {
-    validate_versions
-
-    cat "${WORK_DIR}/VERSIONS"
 }
 
 for key in $@; do
@@ -229,22 +248,13 @@ if [[ "${INSTALL_DEPS}" -eq 1 ]]; then
     install_app_deps
 fi
 
-if [[ ! -f "${CURRENT_DIR}/VERSIONS" ]]; then
-	echo -e "Unable to locate the VERSIONS file. Exit..."
-	exit ${ST_ERR}
+if [[ "${UPDATE_DOCS}" -eq 1 ]]; then
+    update_docs
 fi
 
 echo -e ""
 
 while IFS= read -r version; do
-    echo -e "Clear the docs folder..."
-    rm -rf "${DOCS_PATH}/${version}"
-    mkdir -p "${DOCS_PATH}/${version}"
-
-    echo -e "Update the docs for ${version}..."
-    echo -e "git clone -q -b ${version} --depth=1 ${DOCS_REPO}" "${DOCS_PATH}/${version}"
-    echo -e "Done\n"
-
     echo -e "Clear the repo folder for ${version}..."
     find ${API_PATH} ! -name '.gitignore' ! -path ${API_PATH}  -exec rm -rf {} \;
     mkdir -p "${API_PATH}"
@@ -258,3 +268,5 @@ done < "${CURRENT_DIR}/VERSIONS"
 
 echo -e "Clear the cache..."
 ./phalcon -clear-cache
+
+exit ${ST_OK}
