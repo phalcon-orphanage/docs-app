@@ -2,8 +2,6 @@
 
 namespace Docs\Cli\Tasks;
 
-use const APP_PATH;
-use const PHP_EOL;
 use function Docs\Functions\app_path;
 use Phalcon\CLI\Task as PhTask;
 use RecursiveDirectoryIterator;
@@ -279,12 +277,7 @@ class RegenerateApiTask extends PhTask
                 }
             }
 
-            $fileName = sprintf(
-                '%s/docs/%s/en/api/%s.md',
-                APP_PATH,
-                $version,
-                $simpleClassName
-            );
+            $fileName = app_path(sprintf('docs/%s/en/api/%s.md', $version, $simpleClassName));
 
             $contents = $this->viewSimple->render(
                 'include/api',
@@ -313,14 +306,7 @@ class RegenerateApiTask extends PhTask
             $bar->progress();
         }
 
-        file_put_contents(
-            sprintf(
-                '%s/docs/%s/en/api/index.md',
-                APP_PATH,
-                $version
-            ),
-            $apiIndex
-        );
+        file_put_contents(app_path(sprintf('docs/%s/en/api/index.md', $version)), $apiIndex);
         $bar->end();
     }
 
