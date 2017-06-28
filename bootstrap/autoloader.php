@@ -17,18 +17,8 @@
 
 use function Docs\Functions\app_path;
 
-/**
- * @const APP_START_TIME The start time of the application, used for profiling
- */
-defined('APP_START_TIME') || define('APP_START_TIME', microtime(true));
-
-/**
- * @const APP_START_MEMORY The memory usage at the start of the application, used for profiling
- */
-defined('APP_START_MEMORY') || define('APP_START_MEMORY', memory_get_usage());
-
 // Register The Composer Auto Loader
-require dirname(__DIR__) . '/vendor/autoload.php';
+require __DIR__ . '/../vendor/autoload.php';
 
 // Load environment
 try {
