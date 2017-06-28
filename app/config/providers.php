@@ -1,7 +1,24 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sergheiiakovlev
- * Date: 6/29/17
- * Time: 2:00 AM
- */
+
+/*
+  +------------------------------------------------------------------------+
+  | Phalcon                                                                |
+  +------------------------------------------------------------------------+
+  | Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)         |
+  +------------------------------------------------------------------------+
+  | This source file is subject to the New BSD License that is bundled     |
+  | with this package in the file LICENSE.txt.                             |
+  |                                                                        |
+  | If you did not receive a copy of the license and are unable to         |
+  | obtain it through the world-wide-web, please send an email             |
+  | to license@phalconphp.com so we can send you a copy immediately.       |
+  +------------------------------------------------------------------------+
+*/
+
+return [
+    // Application Service Providers
+    Docs\Providers\Config\ServiceProvider::class
+
+    // Third Party Providers
+    // ...
+];

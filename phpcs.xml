@@ -30,7 +30,9 @@
     <file>bootstrap</file>
     <file>app/config</file>
     <file>app/providers</file>
+    <file>app/library/Config</file>
     <file>app/library/Exception</file>
+    <file>app/library/Bootstrap.php</file>
 
     <!--
         You can hard-code ignore patterns directly into your
