@@ -49,12 +49,12 @@
         "erusev/parsedown-extra": "^0.7.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^4.8",
-        "codeception/codeception": "^2.2",
+        "phpunit/phpunit": "^6.2",
+        "codeception/codeception": "^2.3",
         "codeception/verify": "~0.3",
         "codeception/specify": "~0.4",
         "codeception/mockery-module": "^0.2",
-        "squizlabs/php_codesniffer": "~2.7",
+        "squizlabs/php_codesniffer": "~2.9",
         "phalcon/dd": "^1.1"
     },
     "config": {
