@@ -19,10 +19,10 @@ namespace Docs\Config;
 
 use Phalcon\Config;
 use League\Flysystem\Filesystem;
-use function Docs\Functions\container;
 use function Docs\Functions\cache_path;
 use function Docs\Functions\config_path;
 use function Docs\Functions\environment;
+use Phalcon\Di;
 
 class Factory
 {
@@ -49,7 +49,7 @@ class Factory
         $merge  = self::merge();
 
         /** @var Filesystem $filesystem */
-        $filesystem = container('filesystem', [cache_path('config')]);
+        $filesystem = Di::getDefault()->get('filesystem', [cache_path('config')]);
 
         if ($filesystem->has('cached.php') && !environment('development')) {
             $merge($config, cache_path('config/cached.php'));

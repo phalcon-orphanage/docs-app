@@ -15,11 +15,32 @@
   +------------------------------------------------------------------------+
 */
 
-return [
-    // Application Service Providers
-    Docs\Providers\Config\ServiceProvider::class,
-    Docs\Providers\FileSystem\ServiceProvider::class,
+namespace Docs\Providers\FileSystem;
 
-    // Third Party Providers
-    // ...
-];
+use Phalcon\DiInterface;
+use League\Flysystem\Filesystem;
+use League\Flysystem\Adapter\Local;
+use Phalcon\Di\ServiceProviderInterface;
+use function Docs\Functions\app_path;
+
+/**
+ * Docs\Providers\FileSystem\ServiceProvider
+ *
+ * @package Docs\Providers\FileSystem
+ */
+class ServiceProvider implements ServiceProviderInterface
+{
+    public function register(DiInterface $di)
+    {
+        $di->set(
+            'filesystem',
+            function ($root = null) {
+                if ($root === null) {
+                    $root = app_path();
+                }
+
+                return new Filesystem(new Local($root));
+            }
+        );
+    }
+}
