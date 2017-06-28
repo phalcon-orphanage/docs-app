@@ -17,15 +17,81 @@
 
 namespace Docs\Functions;
 
-if (!function_exists('app_path')) {
-    /**
-     * Get the application path.
-     *
-     * @param  string $path
-     * @return string
-     */
-    function app_path(string $path = '') : string
-    {
-        return dirname(__DIR__) . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+use Closure;
+use Phalcon\Di;
+
+/**
+ * Get the application path.
+ *
+ * @param  string $path
+ * @return string
+ */
+function app_path(string $path = '') : string
+{
+    return dirname(__DIR__) . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+}
+
+/**
+ * Return the default value of the given value.
+ *
+ * @param  mixed $value
+ * @return mixed
+ */
+function value($value)
+{
+    return $value instanceof Closure ? $value() : $value;
+}
+
+/**
+ * Gets the value of an environment variable.
+ *
+ * @param  string $key
+ * @param  mixed  $default
+ * @return mixed
+ */
+function env($key, $default = null)
+{
+    $value = getenv($key);
+
+    if ($value === false) {
+        return value($default);
     }
+
+    switch (strtolower($value)) {
+        case 'true':
+            return true;
+        case 'false':
+            return false;
+        case 'empty':
+            return '';
+        case 'null':
+            return null;
+    }
+
+    return $value;
+}
+
+/**
+ * Calls the default Dependency Injection container.
+ *
+ * @param  mixed
+ * @return mixed|\Phalcon\DiInterface
+ */
+function container()
+{
+    $default = Di::getDefault();
+    $args = func_get_args();
+
+    if (empty($args)) {
+        return $default;
+    }
+
+    if ($default) {
+        return call_user_func_array([$default, 'getShared'], $args);
+
+    }
+
+    trigger_error('Unable to resolve Dependency Injection container.', E_USER_ERROR);
+
+    return null;
 }
