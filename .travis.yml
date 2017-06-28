@@ -11,9 +11,6 @@ php:
 git:
   depth: 1
 
-services:
-  - memcached
-
 cache:
   apt: true
   ccache: true
