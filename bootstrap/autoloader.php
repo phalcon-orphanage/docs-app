@@ -15,14 +15,12 @@
   +------------------------------------------------------------------------+
 */
 
-use function Docs\Functions\app_path;
-
 // Register The Composer Auto Loader
 require __DIR__ . '/../vendor/autoload.php';
 
 // Load environment
 try {
-    $result = (new Dotenv\Dotenv(app_path()))->load();
+    (new Dotenv\Dotenv(dirname(__DIR__)))->load();
 } catch (Dotenv\Exception\InvalidPathException $e) {
     // Skip
 }
