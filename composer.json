@@ -1,5 +1,5 @@
 {
-    "name": "phalcon/website",
+    "name": "phalcon/docs",
     "description": "Official Phalcon Documentation",
     "keywords": [
         "documentation",
@@ -32,10 +32,14 @@
             "Docs\\": "app/library",
             "Docs\\Cli\\Tasks\\": "app/tasks/",
             "Docs\\Controllers\\": "app/controllers/"
-        }
+        },
+        "files": [
+            "bootstrap/functions.php"
+        ]
     },
     "require": {
         "php": ">= 7.0",
+        "ext-phalcon": "~3.2",
         "vlucas/phpdotenv": "^2.4",
         "dariuszp/cli-progress-bar": "^1.0",
         "symfony/options-resolver": "^2.8.1",
@@ -53,6 +57,7 @@
         "phalcon/dd": "^1.1"
     },
     "config": {
-        "preferred-install": "dist"
+        "preferred-install": "dist",
+        "optimize-autoloader": true
     }
 }
