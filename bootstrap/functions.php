@@ -88,10 +88,24 @@ function container()
 
     if ($default) {
         return call_user_func_array([$default, 'getShared'], $args);
-
     }
 
     trigger_error('Unable to resolve Dependency Injection container.', E_USER_ERROR);
 
     return null;
+}
+
+/**
+ * Get or check the current application environment.
+ *
+ * @param  mixed
+ * @return string|bool
+ */
+function environment()
+{
+    if (func_num_args() > 0) {
+        return call_user_func_array([container(), 'getEnvironment'], func_get_args());
+    }
+
+    return container()->getEnvironment();
 }
