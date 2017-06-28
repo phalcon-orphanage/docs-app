@@ -2,9 +2,9 @@
 
 /*
   +------------------------------------------------------------------------+
-  | Phosphorum                                                             |
+  | Phalcon                                                                |
   +------------------------------------------------------------------------+
-  | Copyright (c) 2013-2017 Phalcon Team and contributors                  |
+  | Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)         |
   +------------------------------------------------------------------------+
   | This source file is subject to the New BSD License that is bundled     |
   | with this package in the file LICENSE.txt.                             |
