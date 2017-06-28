@@ -9,10 +9,10 @@
 <head>
     {%- set name = config.get('app').get('name', 'Phalcon Documentation') -%}
     {%- set description = config.get('app').get('description', 'Official Phalcon Documentation') -%}
-    {%- set static_url = config.get('app').get('staticUrl', '/') -%}
+    {%- set website_url = config.get('app').get('url', url()) -%}
 
     {%- include "include/meta.volt" with ['name': name, 'description': description] -%}
-    {%- include "include/icons.volt" -%}
+    {%- include "include/icons.volt" with ['website_url': website_url] -%}
     {%- include "include/analytics.volt" -%}
 
     {{- assets.outputCss('header_css') -}}
@@ -37,7 +37,7 @@
             </button>
             <a class="navbar-brand phalcon-logo" href="{{ url() }}">
                 <span itemprop="name" class="sr-only">{{ name }}</span>
-                <img src="/images/phalcon1.png" alt="{{ name }}">
+                <img src="{{ website_url ~ '/images/phalcon1.png' }}" alt="{{ name }}">
             </a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-collapse-main">
@@ -138,6 +138,6 @@
 
 {{- assets.outputJs('footer_js') -}}
 
-<script>hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
