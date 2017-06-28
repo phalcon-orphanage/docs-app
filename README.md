@@ -19,6 +19,6 @@ Phalcon Docs App is an open-sourced software licensed under the [New BSD License
 © Phalcon Team
 
 [:ci:]: https://travis-ci.org/phalcon/docs-app
-[:branch:]: https://github.com/phalcon/forum/branches
-[:tags:]: https://github.com/phalcon/forum/tags
+[:branch:]: https://github.com/phalcon/docs-app/branches
+[:tags:]: https://github.com/phalcon/docs-app/tags
 [:license:]: ./LICENSE.txt
