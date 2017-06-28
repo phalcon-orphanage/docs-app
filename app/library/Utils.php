@@ -53,25 +53,28 @@ class Utils extends Component
             }
         }
 
-        return sprintf('https://docs.phalconphp.com/%s/latest', $return);
+        return sprintf(
+            '%s/%s/latest',
+            $this->config->get('app')->get('url', 'https://docs.phalconphp.com'),
+            $return
+        );
     }
 
     /**
      * Returns an asset with the CDN and the version
      *
      * @param string $asset
+     * @param string|int $version
      *
      * @return string
      */
-    public function getAsset(string $asset): string
+    public function getAsset(string $asset, $version): string
     {
-        $cdnUrl    = $this->config->get('app')->get('staticUrl', '/');
-        $version   = $this->config->get('app')->get('version', '');
+        $cdnUrl    = $this->getCdnUrl();
         $pathInfo  = pathinfo($asset);
         $dirName   = $pathInfo['dirname'];
         $fileName  = $pathInfo['filename'];
         $extension = $pathInfo['extension'];
-
 
         return sprintf(
             '%s%s/%s.%s.%s',

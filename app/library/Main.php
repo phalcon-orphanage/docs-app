@@ -3,7 +3,6 @@
 namespace Docs;
 
 use Dotenv\Dotenv;
-
 use Phalcon\Assets\Manager as PhAssetManager;
 use Phalcon\Cache\Frontend\Data as PhCacheFrontData;
 use Phalcon\Cache\Frontend\Output as PhCacheFrontOutput;
@@ -18,9 +17,9 @@ use Phalcon\Mvc\Micro as PhMicro;
 use Phalcon\Mvc\Micro\Collection as PhMicroCollection;
 use Phalcon\Mvc\View\Simple as PhViewSimple;
 use Phalcon\Mvc\View\Engine\Volt as PhVolt;
-
 use ParsedownExtra as PParseDown;
 use Docs\Utils as DocsUtils;
+use function Docs\Functions\app_path;
 
 /**
  * Main
@@ -81,16 +80,6 @@ class Main
         $this->diContainer = $diContainer;
         $this->diContainer::setDefault($diContainer);
 
-        /***********************************************************************
-         * Autoloader
-         **********************************************************************/
-        require_once APP_PATH . '/vendor/autoload.php';
-
-        /***********************************************************************
-         * .load
-         **********************************************************************/
-        (new Dotenv(APP_PATH))->load();
-
         $this->mode = getenv('APP_ENV');
         $this->mode = (false !== $this->mode) ? $this->mode : 'development';
 
@@ -99,7 +88,8 @@ class Main
         /***********************************************************************
          * Config
          **********************************************************************/
-        $fileName = APP_PATH . '/app/config/config.php';
+        $fileName = app_path('app/config/config.php');
+
         if (true !== file_exists($fileName)) {
             throw new \Exception('Configuration file not found');
         }
@@ -117,7 +107,7 @@ class Main
         $lifetime = $config->get('cache')->get('lifetime', 3600);
         $driver   = $config->get('cache')->get('driver', 'file');
         $frontEnd = new PhCacheFrontData(['lifetime' => $lifetime]);
-        $backEnd  = ['cacheDir' => APP_PATH . '/storage/cache/data/'];
+        $backEnd  = ['cacheDir' => app_path('storage/cache/data/')];
         $class    = sprintf('\Phalcon\Cache\Backend\%s', ucfirst($driver));
         $cache    = new $class($frontEnd, $backEnd);
         $this->diContainer->setShared('cacheData', $cache);
@@ -126,14 +116,14 @@ class Main
          * View
          **********************************************************************/
         $options = [
-            'compiledPath'      => APP_PATH . '/storage/cache/volt/',
+            'compiledPath'      => app_path('storage/cache/volt/'),
             'compiledSeparator' => '_',
             'compiledExtension' => '.php',
             'compileAlways'     => boolval('development' === $this->mode),
             'stat'              => true,
         ];
         $view    = new PhViewSimple();
-        $view->setViewsDir(APP_PATH . '/app/views/');
+        $view->setViewsDir(app_path('app/views/'));
         $view->registerEngines(
             [
                 '.volt' => function ($view) use ($options) {
@@ -197,12 +187,8 @@ class Main
                             ->get('defaultFilename', 'application');
         $format    = $config->get('logger')
                             ->get('format', '[%date%][%type%] %message%');
-        $logFile   = sprintf(
-            '%s/storage/logs/%s-%s.log',
-            APP_PATH,
-            date('Ymd'),
-            $fileName
-        );
+        $logFile   = app_path(sprintf('storage/logs/%s-%s.log', date('Ymd'), $fileName));
+
         $formatter = new PhLoggerFormatter($format);
         $logger    = new PhFileLogger($logFile);
         $logger->setFormatter($formatter);
@@ -214,7 +200,7 @@ class Main
         $lifetime = $config->get('cache')->get('lifetime', 3600);
         $driver   = $config->get('cache')->get('viewDriver', 'file');
         $frontEnd = new PhCacheFrontOutput(['lifetime' => $lifetime]);
-        $backEnd  = ['cacheDir' => APP_PATH . '/storage/cache/view/'];
+        $backEnd  = ['cacheDir' => app_path('storage/cache/view/')];
         $class    = sprintf('\Phalcon\Cache\Backend\%s', ucfirst($driver));
         $cache    = new $class($frontEnd, $backEnd);
         $this->diContainer->set('viewCache', $cache);
@@ -249,12 +235,19 @@ class Main
         /** @var PhAssetManager $assets */
         $assets = $this->diContainer->getShared('assets');
         $assets->collection("header_js");
+
+        if ($this->mode === 'development') {
+            $version = time();
+        } else {
+            $version = $config->get('app')->get('version', '9999');
+        }
+
         $assets
             ->collection('header_css')
             ->addCss('https://fonts.googleapis.com/css?family=Lato', false)
             ->addCss('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', false)
             ->addCss('https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/darcula.min.css', false)
-            ->addCss($utils->getAsset('css/docs.css?v=' . time()));
+            ->addCss($utils->getAsset('css/docs.css', $version));
 
         $assets
             ->collection('footer_js')

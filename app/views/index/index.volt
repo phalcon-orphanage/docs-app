@@ -7,20 +7,24 @@
 <html lang="{{ language }}" class="no-js">
 <!--<![endif]-->
 <head>
-    {%- include "include/meta.volt" -%}
-    {%- include "include/icons.volt" -%}
+    {%- set name = config.get('app').get('name', 'Phalcon Documentation') -%}
+    {%- set description = config.get('app').get('description', 'Official Phalcon Documentation') -%}
+    {%- set website_url = config.get('app').get('url', url()) -%}
+
+    {%- include "include/meta.volt" with ['name': name, 'description': description] -%}
+    {%- include "include/icons.volt" with ['website_url': website_url] -%}
     {%- include "include/analytics.volt" -%}
 
     {{- assets.outputCss('header_css') -}}
 
     <title>
-        Phalcon Documentation - {{ config.get('app').get('name', 'Phalcon Framework') }}
+        {{ name ~ ' - ' ~ description}}
     </title>
 </head>
 
 <body class="with-top-navbar">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid p-x-md">
         <div class="navbar-header">
             <button type="button"
                     class="navbar-toggle collapsed"
@@ -32,11 +36,12 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand phalcon-logo" href="{{ url() }}">
-                <span itemprop="name" class="sr-only">Phalcon Framework</span>
+                <span itemprop="name" class="sr-only">{{ name }}</span>
+                <img src="{{ website_url ~ '/images/phalcon1.png' }}" alt="{{ name }}">
             </a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-collapse-main">
-            <ul class="nav navbar-nav navbar-right m-r-0 hidden-xs">
+            <ul class="nav navbar-nav navbar-right m-r-0">
                 <li class="dropdown">
                     <a href="javascript:;"
                        class="dropdown-toggle"
@@ -102,31 +107,37 @@
                     <a href="https://phalcon.link/fund" class="header-nav-link">
                         Support Us
                     </a>
+                <li>
+                    <a href="https://phalcon.link/download" class="btn btn-xs btn-success">
+                        Download
+                    </a>
                 </li>
             </ul>
             <ul class="nav navbar-nav hidden-sm hidden-md hidden-lg">
-                <a href="https://phalcon.link/contribute" class="header-nav-link">
-                    Contribute
-                </a>
+                <div class="doc-menu">
+                    <h4>Doc menu</h4>
+                    {{ sidebar }}
+                </div>
             </ul>
         </div>
     </div>
 </nav>
-<div class="container-fluid">
+<div class="container-fluid article-page-wrap">
     <div class="row">
-        <div class="col-md-2 sidebar">
+        <div class="col-md-2 sidebar hidden-xs">
             {{ sidebar }}
         </div>
-        <div class="col-md-10" id="articles">
-            {{ article }}
+        <div class="m-t-md m-b-lg" id="articles">
+            <div class="article-content">
+                {{ article }}
+            </div>
         </div>
+        {%- include "include/footer.volt" -%}
     </div>
 </div>
 
-{%- include "include/footer.volt" -%}
-
 {{- assets.outputJs('footer_js') -}}
 
-<script>hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

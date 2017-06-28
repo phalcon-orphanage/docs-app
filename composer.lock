@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f2a499033d9938e9afc0cc413b290f7",
+    "content-hash": "398a3eecfc8931c4590f8c0eb9484df6",
     "packages": [
         {
             "name": "dariuszp/cli-progress-bar",
@@ -1061,12 +1061,12 @@
             "version": "0.9.9",
             "source": {
                 "type": "git",
-                "url": "https://github.com/padraic/mockery.git",
+                "url": "https://github.com/mockery/mockery.git",
                 "reference": "6fdb61243844dc924071d3404bb23994ea0b6856"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/padraic/mockery/zipball/6fdb61243844dc924071d3404bb23994ea0b6856",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/6fdb61243844dc924071d3404bb23994ea0b6856",
                 "reference": "6fdb61243844dc924071d3404bb23994ea0b6856",
                 "shasum": ""
             },
@@ -1162,6 +1162,57 @@
                 "object graph"
             ],
             "time": "2017-04-12T18:52:22+00:00"
+        },
+        {
+            "name": "phalcon/dd",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phalcon/dd.git",
+                "reference": "bc3b3404f2af4fa04301a7eadce2b2c6281cbad4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phalcon/dd/zipball/bc3b3404f2af4fa04301a7eadce2b2c6281cbad4",
+                "reference": "bc3b3404f2af4fa04301a7eadce2b2c6281cbad4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-phalcon": ">=3.0",
+                "php": ">= 5.4  <8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/helper.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Phalcon Team",
+                    "email": "team@phalconphp.com",
+                    "homepage": "http://phalconphp.com/en/team"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/phalcon/dd/graphs/contributors"
+                }
+            ],
+            "description": "This package will add the `dd` and `dump` helpers to your Phalcon application.",
+            "homepage": "https://github.com/phalcong/dd",
+            "keywords": [
+                "VarDumper",
+                "dd",
+                "debug",
+                "dump",
+                "phalcon",
+                "utils"
+            ],
+            "time": "2017-05-06T17:11:54+00:00"
         },
         {
             "name": "phpdocumentor/reflection-common",
@@ -2732,7 +2783,8 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">= 5.6"
+        "php": ">= 7.0",
+        "ext-phalcon": "~3.2"
     },
     "platform-dev": []
 }

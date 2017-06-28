@@ -15,14 +15,24 @@
   +------------------------------------------------------------------------+
 */
 
-$uri = urldecode(
-    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
-);
+use function Docs\Functions\app_path;
 
-if ($uri !== '/' && file_exists(__DIR__ . '/public' . $uri)) {
-    return false;
+/**
+ * @const APP_START_TIME The start time of the application, used for profiling
+ */
+defined('APP_START_TIME') || define('APP_START_TIME', microtime(true));
+
+/**
+ * @const APP_START_MEMORY The memory usage at the start of the application, used for profiling
+ */
+defined('APP_START_MEMORY') || define('APP_START_MEMORY', memory_get_usage());
+
+// Register The Composer Auto Loader
+require dirname(__DIR__) . '/vendor/autoload.php';
+
+// Load environment
+try {
+    $result = (new Dotenv\Dotenv(app_path()))->load();
+} catch (Dotenv\Exception\InvalidPathException $e) {
+    // Skip
 }
-
-$_GET['_url'] = $_SERVER['REQUEST_URI'];
-
-require_once __DIR__ . '/public/index.php';

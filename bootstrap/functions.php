@@ -15,14 +15,17 @@
   +------------------------------------------------------------------------+
 */
 
-$uri = urldecode(
-    parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH)
-);
+namespace Docs\Functions;
 
-if ($uri !== '/' && file_exists(__DIR__ . '/public' . $uri)) {
-    return false;
+if (!function_exists('app_path')) {
+    /**
+     * Get the application path.
+     *
+     * @param  string $path
+     * @return string
+     */
+    function app_path(string $path = '') : string
+    {
+        return dirname(__DIR__) . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+    }
 }
-
-$_GET['_url'] = $_SERVER['REQUEST_URI'];
-
-require_once __DIR__ . '/public/index.php';
