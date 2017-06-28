@@ -29,6 +29,7 @@
     -->
     <file>bootstrap</file>
     <file>app/providers</file>
+    <file>app/library/Exception</file>
 
     <!--
         You can hard-code ignore patterns directly into your

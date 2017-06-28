@@ -46,6 +46,7 @@
         "symfony/options-resolver": "^2.8.1",
         "symfony/console":"^2.8.1",
         "erusev/parsedown": "^1.6",
+        "filp/whoops": "^2.1",
         "erusev/parsedown-extra": "^0.7.1"
     },
     "require-dev": {
