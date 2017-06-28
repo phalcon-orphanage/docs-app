@@ -2,6 +2,7 @@
 
 namespace Docs\Cli\Tasks;
 
+use function Docs\Functions\app_path;
 use Phalcon\CLI\Task as PhTask;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
@@ -33,7 +34,7 @@ class ClearCacheTask extends PhTask
 
         echo sprintf('Clearing the %s cache', $message) . PHP_EOL;
 
-        $path        = APP_PATH . '/storage/cache/' . $folder;
+        $path        = app_path('storage/cache/' . $folder);
         $dirIterator = new RecursiveDirectoryIterator(
             $path,
             \FilesystemIterator::SKIP_DOTS

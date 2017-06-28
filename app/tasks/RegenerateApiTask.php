@@ -2,15 +2,12 @@
 
 namespace Docs\Cli\Tasks;
 
+use function Docs\Functions\app_path;
 use Phalcon\CLI\Task as PhTask;
-
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use FilesystemIterator;
-use Exception;
-
 use Dariuszp\CliProgressBar as CliProgressBar;
-
 use Docs\ClassLink;
 
 /**
@@ -27,8 +24,6 @@ class RegenerateApiTask extends PhTask
      * @var array
      */
     protected $classDocs = [];
-
-    protected $phalconFolder = APP_PATH . '/storage/repo/ext';
 
     public function mainAction()
     {
@@ -281,12 +276,7 @@ class RegenerateApiTask extends PhTask
                 }
             }
 
-            $fileName = sprintf(
-                '%s/docs/%s/api/%s.md',
-                APP_PATH,
-                'en',
-                $simpleClassName
-            );
+            $fileName = sprintf('docs/en/api/%s.md', $simpleClassName);
 
             $contents = $this->viewSimple->render(
                 'include/api',
@@ -318,9 +308,9 @@ class RegenerateApiTask extends PhTask
     private function scanSources()
     {
         echo 'Scanning folders...' . PHP_EOL;
-        
+
         $recursiveDirectoryIterator = new RecursiveDirectoryIterator(
-            $this->phalconFolder,
+            app_path('storage/repo/ext'),
             FilesystemIterator::SKIP_DOTS
         );
 
@@ -399,7 +389,7 @@ class RegenerateApiTask extends PhTask
 
         if (isset($classDoc)) {
             if (!isset($className)) {
-                $fileName = str_replace($this->phalconFolder, '', $file);
+                $fileName = str_replace(app_path('storage/repo/ext'), '', $file);
                 $fileName = str_replace('.c', '', $fileName);
 
                 $parts = [];
