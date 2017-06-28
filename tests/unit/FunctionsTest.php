@@ -2,7 +2,7 @@
 
 use Codeception\Test\Unit;
 use function Docs\Functions\{
-    app_path, container, value, env, config_path
+    app_path, container, value, env, config_path, cache_path
 };
 use Phalcon\{
     DiInterface, DispatcherInterface
@@ -23,6 +23,7 @@ class FunctionsTest extends Unit
     public function _before()
     {
         $this->appPath = dirname(dirname(__DIR__));
+        $this->cachePath = $this->appPath . DIRECTORY_SEPARATOR . 'storage' . DIRECTORY_SEPARATOR . 'cache';
         $this->configPath = $this->appPath . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'config';
     }
 
@@ -70,5 +71,16 @@ class FunctionsTest extends Unit
 
         $this->tester->amInPath(app_path('app'));
         $this->tester->seeFileFound('config');
+    }
+
+    /** @test */
+    public function shouldWorkWithCachePathFacade()
+    {
+        $this->assertEquals($this->cachePath, cache_path());
+        $this->assertEquals($this->cachePath . DIRECTORY_SEPARATOR . 'foo', cache_path('foo'));
+        $this->assertEquals($this->cachePath . DIRECTORY_SEPARATOR . 'bar/', cache_path('bar/'));
+
+        $this->tester->amInPath(app_path('storage'));
+        $this->tester->seeFileFound('cache');
     }
 }

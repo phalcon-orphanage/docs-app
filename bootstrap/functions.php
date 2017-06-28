@@ -32,6 +32,28 @@ function app_path(string $path = '') : string
 }
 
 /**
+ * Get the configuration path.
+ *
+ * @param  string $path
+ * @return string
+ */
+function config_path($path = '')
+{
+    return app_path('app/config') . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+}
+
+/**
+ * Get the cache path.
+ *
+ * @param  string $path
+ * @return string
+ */
+function cache_path($path = '')
+{
+    return app_path('storage/cache') . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+}
+
+/**
  * Return the default value of the given value.
  *
  * @param  mixed $value
@@ -108,15 +130,4 @@ function environment()
     }
 
     return container()->getEnvironment();
-}
-
-/**
- * Get the configuration path.
- *
- * @param  string $path
- * @return string
- */
-function config_path($path = '')
-{
-    return app_path('app/config') . ($path ? DIRECTORY_SEPARATOR . $path : $path);
 }
