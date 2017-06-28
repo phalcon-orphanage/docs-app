@@ -235,8 +235,8 @@ pull_latest_changes() {
 
         pushd ${WORK_DIR} &> /dev/null
 
-        ${GIT_BIN} checkout -f
-        ${GIT_BIN} pull origin ${current_branch}
+        ${GIT_BIN} checkout -f &> /dev/null
+        ${GIT_BIN} pull origin ${current_branch} &> /dev/null
 
         popd &> /dev/null
     fi
