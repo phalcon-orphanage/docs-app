@@ -2,7 +2,7 @@
 
 use Codeception\Test\Unit;
 use function Docs\Functions\{
-    app_path, container, value, env
+    app_path, container, value, env, config_path
 };
 use Phalcon\{
     DiInterface, DispatcherInterface
@@ -23,6 +23,7 @@ class FunctionsTest extends Unit
     public function _before()
     {
         $this->appPath = dirname(dirname(__DIR__));
+        $this->configPath = $this->appPath . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'config';
     }
 
     /** @test */
@@ -58,5 +59,16 @@ class FunctionsTest extends Unit
         $this->assertNull(env('non-existent-key-here'));
         $this->assertTrue(env('non-existent-key-here', true));
         $this->assertEquals($_ENV['APP_URL'], env('APP_URL'));
+    }
+
+    /** @test */
+    public function shouldWorkWithConfigPathFacade()
+    {
+        $this->assertEquals($this->configPath, config_path());
+        $this->assertEquals($this->configPath . DIRECTORY_SEPARATOR . 'foo', config_path('foo'));
+        $this->assertEquals($this->configPath . DIRECTORY_SEPARATOR . 'bar/', config_path('bar/'));
+
+        $this->tester->amInPath(app_path('app'));
+        $this->tester->seeFileFound('config');
     }
 }

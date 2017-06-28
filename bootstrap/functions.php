@@ -109,3 +109,14 @@ function environment()
 
     return container()->getEnvironment();
 }
+
+/**
+ * Get the configuration path.
+ *
+ * @param  string $path
+ * @return string
+ */
+function config_path($path = '')
+{
+    return app_path('app/config') . ($path ? DIRECTORY_SEPARATOR . $path : $path);
+}
