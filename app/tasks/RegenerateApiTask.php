@@ -2,8 +2,10 @@
 
 namespace Docs\Cli\Tasks;
 
+use const APP_PATH;
 use Phalcon\CLI\Task as PhTask;
 
+use const PHP_EOL;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use FilesystemIterator;
@@ -111,6 +113,7 @@ class RegenerateApiTask extends PhTask
         sort($classes);
         $indexClasses    = [];
         $indexInterfaces = [];
+        $apiIndex        = '## API Index' . PHP_EOL;
 
         echo 'Generating API documentation...' . PHP_EOL;
         $steps = count($classes);
@@ -282,9 +285,9 @@ class RegenerateApiTask extends PhTask
             }
 
             $fileName = sprintf(
-                '%s/docs/%s/api/%s.md',
+                '%s/docs/%s/en/api/%s.md',
                 APP_PATH,
-                'en',
+                $version,
                 $simpleClassName
             );
 
@@ -308,9 +311,21 @@ class RegenerateApiTask extends PhTask
             );
 
             file_put_contents($fileName, $contents);
+
+            $apiIndex .= '- [' . $className . ']'
+                       . '(/' . $version . '/en/api/' . $simpleClassName . ')'
+                       . PHP_EOL;
             $bar->progress();
         }
 
+        file_put_contents(
+            sprintf(
+                '%s/docs/%s/en/api/index.md',
+                APP_PATH,
+                $version
+            ),
+            $apiIndex
+        );
         $bar->end();
     }
 
