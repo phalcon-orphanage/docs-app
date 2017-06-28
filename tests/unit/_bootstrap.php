@@ -1,4 +1,3 @@
-#!/usr/bin/env php
 <?php
 
 /*
@@ -16,16 +15,4 @@
   +------------------------------------------------------------------------+
 */
 
-use Docs\Cli;
-use Phalcon\Di\FactoryDefault\Cli as PhDiCli;
-
-// Register the auto loader
-require __DIR__.'/bootstrap/autoloader.php';
-
-try {
-    (new Cli())->run(new PhDiCli());
-} catch (\Exception $e) {
-    fwrite(STDERR, PHP_EOL . $e->getMessage() . PHP_EOL);
-    fwrite(STDERR, PHP_EOL . $e->getTraceAsString() . PHP_EOL . PHP_EOL);
-    exit(1);
-}
+ini_set('memory_limit', '-1');
