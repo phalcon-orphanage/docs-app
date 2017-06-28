@@ -28,6 +28,7 @@
         on the command line will ignore all file tags.
     -->
     <file>bootstrap</file>
+    <file>app/config</file>
     <file>app/providers</file>
     <file>app/library/Exception</file>
 
@@ -36,5 +37,5 @@
         custom standard so you don't have to specify the
         patterns on the command line.
     -->
-    <exclude-pattern>app/config/*</exclude-pattern>
+    <exclude-pattern>path/to/the/file/*</exclude-pattern>
 </ruleset>
