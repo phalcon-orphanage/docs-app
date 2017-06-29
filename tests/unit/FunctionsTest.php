@@ -1,8 +1,9 @@
 <?php
 
+use Phalcon\Config;
 use Codeception\Test\Unit;
 use function Docs\Functions\{
-    app_path, container, value, env, config_path, cache_path
+    app_path, container, value, env, config_path, cache_path, config
 };
 use Phalcon\{
     DiInterface, DispatcherInterface
@@ -82,5 +83,13 @@ class FunctionsTest extends Unit
 
         $this->tester->amInPath(app_path('storage'));
         $this->tester->seeFileFound('cache');
+    }
+
+    /** @test */
+    public function shouldWorkWithConfigFacade()
+    {
+        $this->assertInstanceOf(Config::class, config());
+        $this->assertInstanceOf(Config::class, config('app'));
+        $this->assertEquals(env('APP_TIMEZONE', 'UTC'), config('app.timezone', 'UTC'));
     }
 }

@@ -163,3 +163,21 @@ function assets_uri(string $asset, $version): string
 
     return cdn_url(sprintf('%s/%s.%s.%s', $dirName, $fileName, $version, $extension));
 }
+
+/**
+ * Gets the specified configuration value.
+ *
+ * @param string $key
+ * @param mixed  $default
+ * @return mixed||Phalcon\Config
+ */
+function config(string $key = '', $default = null)
+{
+    $config = container('config');
+
+    if (empty($key)) {
+        return $config;
+    }
+
+    return $config->path($key, $default);
+}
