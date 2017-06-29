@@ -55,7 +55,6 @@ class ServiceProvider implements ServiceProviderInterface
             'errorHandler',
             function () {
                 $run  = new Run();
-                $run->pushHandler(container('errorHandler::loggerHandler'));
 
                 $mode = container('bootstrap')->getMode();
 
@@ -85,6 +84,8 @@ class ServiceProvider implements ServiceProviderInterface
                             )
                         );
                 }
+
+                $run->pushHandler(container('errorHandler::loggerHandler'));
 
                 return $run;
             }
