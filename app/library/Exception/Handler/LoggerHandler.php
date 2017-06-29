@@ -19,6 +19,7 @@ namespace Docs\Exception\Handler;
 
 use Whoops\Exception\Frame;
 use Whoops\Handler\Handler;
+use function Docs\Functions\app_path;
 use function Docs\Functions\container;
 
 /**
@@ -176,7 +177,7 @@ class LoggerHandler extends Handler
                 $line,
                 $class,
                 $frame->getFunction(),
-                $frame->getFile(),
+                '..' . DIRECTORY_SEPARATOR . trim(substr($frame->getFile(), strlen(app_path())), '\\/'),
                 $frame->getLine(),
                 $this->getFrameArgsOutput($frame, $line)
             );
