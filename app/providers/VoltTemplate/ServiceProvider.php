@@ -42,16 +42,15 @@ class ServiceProvider implements ServiceProviderInterface
                 [
                     'compiledPath' => function ($path) {
                         $path     = trim(substr($path, strlen(app_path())), '\\/');
-                        $filename = basename(str_replace(['\\', '/'], '_', $path), '.volt') . '.php';
+                        $filename = basename(str_replace(['\\', '/'], '_', $path), '.volt');
+
                         $cacheDir = cache_path('volt');
-
-                        if (!is_dir($cacheDir)) {
-                            @mkdir($cacheDir, 0755, true);
+                        if (!is_dir($cacheDir) && !mkdir($cacheDir, 0755, true)) {
+                            trigger_error('Unable to locate/create the Volt cache dir', E_USER_ERROR);;
                         }
 
-                        if (!is_dir($cacheDir)) {
-                            trigger_error('Unable to locate/create the Volt cache dir', E_USER_ERROR);
-                        }
+                        $version  = container('config')->get('app')->get('version', '9999');
+                        $filename = sprintf('%s.%s.php', $filename, $version);
 
                         return $cacheDir . DIRECTORY_SEPARATOR . $filename;
                     },
