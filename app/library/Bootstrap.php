@@ -78,6 +78,7 @@ class Bootstrap
         $this->initializeServiceProvider(new ErrorHandler\ServiceProvider($this->di));
 
         $this->createInternalApplication();
+        $this->di->setShared('app', $this->app);
 
         /** @noinspection PhpIncludeInspection */
         $providers = require config_path('providers.php');
@@ -86,8 +87,6 @@ class Bootstrap
         }
 
         $this->app->setEventsManager(container('eventsManager'));
-
-        $this->di->setShared('app', $this->app);
         $this->app->setDI($this->di);
     }
 
@@ -184,6 +183,7 @@ class Bootstrap
     {
         switch ($this->mode) {
             case 'normal':
+            case 'api':
                 $this->app = new PhMicro($this->di);
                 break;
             case 'cli':
@@ -191,10 +191,6 @@ class Bootstrap
                     'Not implemented yet.'
                 );
                 break;
-            case 'api':
-                throw new \InvalidArgumentException(
-                    'Not implemented yet.'
-                );
             default:
                 throw new \InvalidArgumentException(
                     sprintf(

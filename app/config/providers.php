@@ -20,6 +20,7 @@ return [
     Docs\Providers\Config\ServiceProvider::class,
     Docs\Providers\FileSystem\ServiceProvider::class,
     Docs\Providers\UrlResolver\ServiceProvider::class,
+    Docs\Providers\Routing\ServiceProvider::class
 
     // Third Party Providers
     // ...
