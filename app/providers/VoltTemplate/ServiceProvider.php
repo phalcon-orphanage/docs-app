@@ -46,7 +46,7 @@ class ServiceProvider implements ServiceProviderInterface
 
                         $cacheDir = cache_path('volt');
                         if (!is_dir($cacheDir) && !mkdir($cacheDir, 0755, true)) {
-                            trigger_error('Unable to locate/create the Volt cache dir', E_USER_ERROR);;
+                            trigger_error('Unable to locate/create the Volt cache dir', E_USER_ERROR);
                         }
 
                         $version  = container('config')->get('app')->get('version', '9999');
