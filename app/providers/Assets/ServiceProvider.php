@@ -19,7 +19,7 @@ namespace Docs\Providers\Assets;
 
 use Phalcon\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;
-use function Docs\Functions\container;
+use function Docs\Functions\config;
 use function Docs\Functions\assets_uri;
 use function Docs\Functions\environment;
 
@@ -38,7 +38,7 @@ class ServiceProvider implements ServiceProviderInterface
         if (environment('development')) {
             $version = time();
         } else {
-            $version = container('config')->get('app')->get('version', '9999');
+            $version = config('app.version', '9999');
         }
 
         $assets

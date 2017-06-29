@@ -5,10 +5,6 @@
                 <h4>Download</h4>
                 <ul>
                     <li><a href="https://docs.phalconphp.com/{{ language }}/{{ version }}/installation{{ url(language ~ '/download') }}">Installing Phalcon PHP</a></li>
-                    {#<li><a href="{{ utils.getDocsUrl(language) }}/index.html" class="header-nav-link" target="_blank">{{ locale.translate(language, 'documentation') }}</a></li>#}
-                    {#<li><a href="http://api.phalconphp.com">API</a></li>#}
-                    {#<li><a href="{{ utils.getDocsUrl(language) }}/reference/tutorial.html">{{ locale.translate(language, 'tutorial') }}</a></li>#}
-                    {#<li><a href="{{ utils.getDocsUrl(language) }}/reference/tutorial.html#sample-applications">{{ locale.translate(language, 'sample_applications') }}</a></li>#}
                     <li><a href="https://phalconphp.com/{{ language }}/support">Support</a></li>
                 </ul>
             </div>

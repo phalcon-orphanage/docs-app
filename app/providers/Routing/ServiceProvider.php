@@ -34,7 +34,6 @@ class ServiceProvider implements ServiceProviderInterface
 
         switch ($mode) {
             case 'normal':
-            case 'api':
                 $collection = new Collection();
                 $routes = $di->getShared('config')->routes->toArray();
 

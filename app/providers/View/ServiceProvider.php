@@ -41,16 +41,11 @@ class ServiceProvider implements ServiceProviderInterface
                     case 'normal':
                     case 'cli':
                         $view = new Simple();
-
                         break;
-                    case 'api':
-                        throw new \InvalidArgumentException(
-                            'Not implemented yet.'
-                        );
                     default:
                         throw new \InvalidArgumentException(
                             sprintf(
-                                'Invalid application mode. Expected either "normal" or "cli" or "api". Got "%s".',
+                                'Invalid application mode. Expected either "normal" or "cli". Got "%s".',
                                 is_scalar($mode) ? $mode : var_export($mode, true)
                             )
                         );

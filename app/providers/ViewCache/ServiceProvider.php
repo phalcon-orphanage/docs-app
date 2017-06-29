@@ -17,11 +17,11 @@
 
 namespace Docs\Providers\ViewCache;
 
-use function Docs\Functions\app_path;
 use Phalcon\DiInterface;
 use Phalcon\Cache\Frontend\Output;
 use Phalcon\Di\ServiceProviderInterface;
-use function Docs\Functions\container;
+use function Docs\Functions\app_path;
+use function Docs\Functions\config;
 
 /**
  * Docs\Providers\ViewCache\ServiceProvider
@@ -44,17 +44,14 @@ class ServiceProvider implements ServiceProviderInterface
         $di->set(
             'viewCache',
             function () {
-                $config = container('config')->get('cache');
-
-                $driver  = $config->get('viewDriver', 'File');
+                $driver  = config('cache.viewDriver', 'File');
                 $adapter = '\Phalcon\Cache\Backend\\' . ucfirst($driver);
 
-                $options = [
-                    'cacheDir' => app_path('storage/cache/view/'),
-                ];
-
                 return new $adapter(
-                    new Output(['lifetime' => $config->get('lifetime', 3600)]), $options
+                    new Output(['lifetime' => config('cache.lifetime', 3600)]),
+                    [
+                        'cacheDir' => app_path('storage/cache/view/'),
+                    ]
                 );
             }
         );

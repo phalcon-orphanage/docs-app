@@ -17,13 +17,13 @@
 
 namespace Docs\Providers\Logger;
 
-use function Docs\Functions\app_path;
-use function Docs\Functions\container;
 use Phalcon\DiInterface;
 use Phalcon\Logger;
 use Phalcon\Logger\Adapter\File;
 use Phalcon\Logger\Formatter\Line;
 use Phalcon\Di\ServiceProviderInterface;
+use function Docs\Functions\app_path;
+use function Docs\Functions\config;
 
 /**
  * Docs\Providers\Logger\ServiceProvider
@@ -58,10 +58,8 @@ class ServiceProvider implements ServiceProviderInterface
         $di->set(
             'logger',
             function ($filename = null, $format = null) use ($logLevels) {
-                $config = container('config')->get('logger');
-
                 // Setting up the log level
-                $level = $config->get('level', self::DEFAULT_LEVEL);
+                $level = config('logger.level', self::DEFAULT_LEVEL);
 
                 if (!array_key_exists($level, $logLevels)) {
                     $level = Logger::DEBUG;
@@ -70,16 +68,16 @@ class ServiceProvider implements ServiceProviderInterface
                 }
 
                 // Setting up date format
-                $date = $config->get('date', self::DEFAULT_DATE);
+                $date = config('logger.date', self::DEFAULT_DATE);
 
                 // Format setting up
                 if (empty($format)) {
-                    $format = $config->get('format', self::DEFAULT_FORMAT);
+                    $format = config('logger.format', self::DEFAULT_FORMAT);
                 }
 
                 // Setting up the filename
                 if (empty($filename)) {
-                    $filename = $config->get('defaultFilename', self::DEFAULT_FILENANE);
+                    $filename = config('logger.defaultFilename', self::DEFAULT_FILENANE);
                 }
 
                 $filename = trim($filename, '\\/');

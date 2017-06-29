@@ -21,7 +21,6 @@ use Whoops\Run;
 use Phalcon\DiInterface;
 use InvalidArgumentException;
 use Whoops\Handler\PrettyPageHandler;
-use Whoops\Handler\JsonResponseHandler;
 use Phalcon\Di\ServiceProviderInterface;
 use Docs\Exception\Handler\LoggerHandler;
 use Docs\Exception\Handler\ErrorPageHandler;
@@ -42,16 +41,6 @@ class ServiceProvider implements ServiceProviderInterface
         $di->setShared('errorHandler::errorPageHandler', ErrorPageHandler::class);
 
         $di->setShared(
-            'errorHandler::jsonResponseHandler',
-            function () {
-                $handler = new JsonResponseHandler();
-                $handler->setJsonApi(true);
-
-                return $handler;
-            }
-        );
-
-        $di->setShared(
             'errorHandler',
             function () {
                 $run  = new Run();
@@ -69,17 +58,10 @@ class ServiceProvider implements ServiceProviderInterface
                     case 'cli':
                         // @todo
                         break;
-                    case 'api':
-                        throw new InvalidArgumentException(
-                            'Not implemented yet.'
-                        );
-                        // @todo
-                        // $run->pushHandler(container('errorHandler::jsonResponseHandler'));
-                        break;
                     default:
                         throw new InvalidArgumentException(
                             sprintf(
-                                'Invalid application mode. Expected either "normal" or "cli" or "api". Got "%s".',
+                                'Invalid application mode. Expected either "normal" or "cli". Got "%s".',
                                 is_scalar($mode) ? $mode : var_export($mode, true)
                             )
                         );

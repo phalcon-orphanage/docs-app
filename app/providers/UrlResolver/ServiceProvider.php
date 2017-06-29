@@ -20,7 +20,7 @@ namespace Docs\Providers\UrlResolver;
 use Phalcon\Mvc\Url;
 use Phalcon\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;
-use function Docs\Functions\container;
+use function Docs\Functions\config;
 
 /**
  * Docs\Providers\UrlResolver\ServiceProvider
@@ -34,12 +34,10 @@ class ServiceProvider implements ServiceProviderInterface
         $di->setShared(
             'url',
             function () {
-                $config = container('config');
-
                 $url = new Url();
 
-                $url->setBaseUri($config->get('app')->get('baseUri', '/'));
-                $url->setStaticBaseUri($config->get('app')->get('staticUrl', '/'));
+                $url->setBaseUri(config('app.baseUri', '/'));
+                $url->setStaticBaseUri(config('app.staticUrl', '/'));
 
                 return $url;
             }

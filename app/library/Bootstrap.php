@@ -18,12 +18,13 @@
 namespace Docs;
 
 use Phalcon\Di;
+use Phalcon\Mvc\Micro;
+use Phalcon\Cli\Console;
 use Phalcon\DiInterface;
 use Phalcon\Di\FactoryDefault;
 use Docs\Providers\Environment;
 use Docs\Providers\ErrorHandler;
 use Docs\Providers\EventsManager;
-use Phalcon\Mvc\Micro as PhMicro;
 use Phalcon\Di\ServiceProviderInterface;
 use function Docs\Functions\env;
 use function Docs\Functions\container;
@@ -33,7 +34,7 @@ class Bootstrap
 {
     /**
      * The internal application core.
-     * @var \Phalcon\Application
+     * @var Console|Micro
      */
     private $app;
 
@@ -59,7 +60,7 @@ class Bootstrap
     /**
      * Bootstrap constructor.
      *
-     * @param string $mode The application mode: "normal", "cli", "api".
+     * @param string $mode The application mode: "normal" or "cli".
      */
     public function __construct($mode = 'normal')
     {
@@ -103,7 +104,7 @@ class Bootstrap
     /**
      * Get the Application.
      *
-     * @return \Phalcon\Application|\Phalcon\Mvc\Micro
+     * @return Console|Micro
      */
     public function getApplication()
     {
@@ -131,7 +132,7 @@ class Bootstrap
     }
 
     /**
-     * Gets current application mode: normal, cli, api.
+     * Gets current application mode: normal or cli.
      *
      * @return string
      */
@@ -165,7 +166,7 @@ class Bootstrap
      */
     protected function initializeServiceProvider(ServiceProviderInterface $serviceProvider)
     {
-        $serviceProvider->register($this->di);
+        $this->di->register($serviceProvider);
 
         return $this;
     }
@@ -179,18 +180,15 @@ class Bootstrap
     {
         switch ($this->mode) {
             case 'normal':
-            case 'api':
-                $this->app = new PhMicro($this->di);
+                $this->app = new Micro($this->di);
                 break;
             case 'cli':
-                throw new \InvalidArgumentException(
-                    'Not implemented yet.'
-                );
+                $this->app = new Console($this->di);
                 break;
             default:
                 throw new \InvalidArgumentException(
                     sprintf(
-                        'Invalid application mode. Expected either "normal" or "cli" or "api". Got "%s".',
+                        'Invalid application mode. Expected either "normal" or "cli". Got "%s".',
                         is_scalar($this->mode) ? $this->mode : var_export($this->mode, true)
                     )
                 );
