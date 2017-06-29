@@ -23,6 +23,7 @@ return [
     Docs\Providers\Routing\ServiceProvider::class,
     Docs\Providers\Logger\ServiceProvider::class,
     Docs\Providers\ViewCache\ServiceProvider::class,
+    Docs\Providers\VoltTemplate\ServiceProvider::class,
 
     // Third Party Providers
     // ...
