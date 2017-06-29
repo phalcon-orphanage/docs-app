@@ -15,21 +15,34 @@
   +------------------------------------------------------------------------+
 */
 
-return [
-    // Application Service Providers
-    Docs\Providers\Config\ServiceProvider::class,
-    Docs\Providers\FileSystem\ServiceProvider::class,
-    Docs\Providers\UrlResolver\ServiceProvider::class,
-    Docs\Providers\Routing\ServiceProvider::class,
-    Docs\Providers\Logger\ServiceProvider::class,
-    Docs\Providers\ViewCache\ServiceProvider::class,
-    Docs\Providers\VoltTemplate\ServiceProvider::class,
-    Docs\Providers\View\ServiceProvider::class,
-    Docs\Providers\CacheData\ServiceProvider::class,
-    Docs\Providers\Markdown\ServiceProvider::class,
-    Docs\Providers\Assets\ServiceProvider::class,
-    Docs\Providers\Dispatcher\ServiceProvider::class,
+namespace Docs\Providers\Dispatcher;
 
-    // Third Party Providers
-    // ...
-];
+use Phalcon\DiInterface;
+use Phalcon\Cli\Dispatcher;
+use Phalcon\Di\ServiceProviderInterface;
+
+/**
+ * Docs\Providers\Dispatcher\ServiceProvider
+ *
+ * @package Docs\Providers\Dispatcher
+ */
+class ServiceProvider implements ServiceProviderInterface
+{
+    public function register(DiInterface $di)
+    {
+        // @todo
+        if ($di->get('bootstrap')->getMode() !== 'cli') {
+            return;
+        }
+
+        $di->setShared(
+            'dispatcher',
+            function () {
+                $dispatcher = new Dispatcher();
+                $dispatcher->setDefaultNamespace('Docs\Cli\Tasks');
+
+                return $dispatcher;
+            }
+        );
+    }
+}
