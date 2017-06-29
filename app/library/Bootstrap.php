@@ -23,8 +23,8 @@ use Phalcon\Di\FactoryDefault;
 use Docs\Providers\Environment;
 use Docs\Providers\ErrorHandler;
 use Docs\Providers\EventsManager;
+use Phalcon\Mvc\Micro as PhMicro;
 use Phalcon\Di\ServiceProviderInterface;
-use Phalcon\Mvc\Application as MvcApplication;
 use function Docs\Functions\env;
 use function Docs\Functions\container;
 use function Docs\Functions\config_path;
@@ -118,7 +118,7 @@ class Bootstrap
      */
     public function getOutput()
     {
-        if ($this->app instanceof MvcApplication) {
+        if ($this->app instanceof PhMicro) {
             return $this->app->handle()->getContent();
         }
 
@@ -184,7 +184,7 @@ class Bootstrap
     {
         switch ($this->mode) {
             case 'normal':
-                $this->app = new MvcApplication($this->di);
+                $this->app = new PhMicro($this->di);
                 break;
             case 'cli':
                 throw new \InvalidArgumentException(
