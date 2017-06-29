@@ -15,12 +15,34 @@
   +------------------------------------------------------------------------+
 */
 
-return [
-    // Application Service Providers
-    Docs\Providers\Config\ServiceProvider::class,
-    Docs\Providers\FileSystem\ServiceProvider::class,
-    Docs\Providers\UrlResolver\ServiceProvider::class,
+namespace Docs\Providers\UrlResolver;
 
-    // Third Party Providers
-    // ...
-];
+use Phalcon\Mvc\Url;
+use Phalcon\DiInterface;
+use Phalcon\Di\ServiceProviderInterface;
+use function Docs\Functions\container;
+
+/**
+ * Docs\Providers\UrlResolver\ServiceProvider
+ *
+ * @package Docs\Providers\UrlResolver
+ */
+class ServiceProvider implements ServiceProviderInterface
+{
+    public function register(DiInterface $di)
+    {
+        $di->setShared(
+            'url',
+            function () {
+                $config = container('config');
+
+                $url = new Url();
+
+                $url->setBaseUri($config->get('app')->get('baseUri', '/'));
+                $url->setStaticBaseUri($config->get('app')->get('staticUrl', '/'));
+
+                return $url;
+            }
+        );
+    }
+}
