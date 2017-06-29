@@ -22,6 +22,7 @@ return [
     Docs\Providers\UrlResolver\ServiceProvider::class,
     Docs\Providers\Routing\ServiceProvider::class,
     Docs\Providers\Logger\ServiceProvider::class,
+    Docs\Providers\ViewCache\ServiceProvider::class,
 
     // Third Party Providers
     // ...
