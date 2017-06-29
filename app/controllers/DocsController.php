@@ -7,6 +7,7 @@ use Phalcon\Config;
 use Phalcon\Http\ResponseInterface;
 use Phalcon\Mvc\Controller as PhController;
 use Phalcon\Mvc\View\Simple;
+use function Docs\Functions\environment;
 use function Docs\Functions\app_path;
 
 /**
@@ -85,7 +86,7 @@ class DocsController extends PhController
     {
         $key = sprintf('%s.%s.%s.cache', $fileName, $version, $language);
 
-        if ('production' === $this->config->get('app')->get('env') &&
+        if (environment('production') &&
             true === $this->cacheData->exists($key)) {
             return $this->cacheData->get($key);
         } else {
@@ -100,7 +101,6 @@ class DocsController extends PhController
             }
 
             if (!empty($data)) {
-
                 $namespaces = $this->getNamespaces();
                 $from = array_keys($namespaces);
                 $to   = array_values($namespaces);
