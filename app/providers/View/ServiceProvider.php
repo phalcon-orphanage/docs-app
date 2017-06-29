@@ -60,7 +60,7 @@ class ServiceProvider implements ServiceProviderInterface
                     '.volt' => container('volt', [$view, $this]),
                 ]);
 
-                $view->setViewsDir(app_path('views/'));
+                $view->setViewsDir(app_path('app/views/'));
 
                 $eventsManager = container('eventsManager');
 
