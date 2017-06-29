@@ -1,5 +1,20 @@
 <?php
 
+/*
+  +------------------------------------------------------------------------+
+  | Phalcon                                                                |
+  +------------------------------------------------------------------------+
+  | Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)         |
+  +------------------------------------------------------------------------+
+  | This source file is subject to the New BSD License that is bundled     |
+  | with this package in the file LICENSE.txt.                             |
+  |                                                                        |
+  | If you did not receive a copy of the license and are unable to         |
+  | obtain it through the world-wide-web, please send an email             |
+  | to license@phalconphp.com so we can send you a copy immediately.       |
+  +------------------------------------------------------------------------+
+*/
+
 namespace Docs;
 
 class ClassLink
@@ -27,7 +42,7 @@ class ClassLink
         }
 
         $this->className = $className;
-        $this->isArray   = $isArray;
+        $this->isArray = $isArray;
     }
 
     /**
@@ -43,6 +58,7 @@ class ClassLink
         $className = str_replace("\\\\", '\\', $className);
         if (preg_match("/^Phalcon\\\\/", $className)) {
             $htmlClassName = str_replace("\\", "_", $className);
+
             return sprintf(
                 '[%s](/[[language]]/[[version]]/api/%s)',
                 $className,
@@ -50,6 +66,7 @@ class ClassLink
             );
         } else {
             $url = "http://php.net/manual/en/class." . strtolower($className) . ".php";
+
             return sprintf(
                 '[%s](%s)',
                 $className,
