@@ -59,6 +59,8 @@ class ServiceProvider implements ServiceProviderInterface
 
                 $mode = container('bootstrap')->getMode();
 
+                $run->pushHandler(container('errorHandler::loggerHandler'));
+
                 switch ($mode) {
                     case 'normal':
                         if (env('APP_DEBUG', false)) {
@@ -71,10 +73,11 @@ class ServiceProvider implements ServiceProviderInterface
                         // @todo
                         break;
                     case 'api':
-                        $run->pushHandler(container('errorHandler::loggerHandler'));
                         throw new InvalidArgumentException(
                             'Not implemented yet.'
                         );
+                        // @todo
+                        // $run->pushHandler(container('errorHandler::jsonResponseHandler'));
                         break;
                     default:
                         throw new InvalidArgumentException(
