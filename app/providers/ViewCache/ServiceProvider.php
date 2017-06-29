@@ -30,6 +30,15 @@ use function Docs\Functions\container;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
+    /**
+     * {@inheritdoc}
+     *
+     * Note: The frontend must always be Phalcon\Cache\Frontend\Output and the
+     * service 'viewCache' must be registered as always open (not shared) in
+     * the services container (DI).
+     *
+     * @param DiInterface $di
+     */
     public function register(DiInterface $di)
     {
         $di->set(
