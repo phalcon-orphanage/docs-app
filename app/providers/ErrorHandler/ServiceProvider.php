@@ -59,8 +59,6 @@ class ServiceProvider implements ServiceProviderInterface
 
                 $mode = container('bootstrap')->getMode();
 
-                $run->pushHandler(container('errorHandler::loggerHandler'));
-
                 switch ($mode) {
                     case 'normal':
                         if (env('APP_DEBUG', false)) {
