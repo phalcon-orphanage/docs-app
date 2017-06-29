@@ -117,10 +117,6 @@ class Bootstrap
      */
     public function getOutput()
     {
-        if ($this->app instanceof PhMicro) {
-            return $this->app->handle()->getContent();
-        }
-
         return $this->app->handle();
     }
 
