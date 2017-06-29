@@ -17,6 +17,7 @@
 
 namespace Docs\Providers\Routing;
 
+use Phalcon\Cli\Router;
 use Phalcon\DiInterface;
 use Phalcon\Mvc\Micro\Collection;
 use Phalcon\Di\ServiceProviderInterface;
@@ -51,7 +52,7 @@ class ServiceProvider implements ServiceProviderInterface
                 $di->getShared('app')->mount($collection);
                 break;
             case 'cli':
-                // @todo
+                $di->setShared('router', Router::class);
         }
     }
 }
