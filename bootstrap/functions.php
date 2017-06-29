@@ -131,3 +131,35 @@ function environment()
 
     return container()->getEnvironment();
 }
+
+/**
+ * Returns the CDN URL
+ *
+ * @param string $resource
+ *
+ * @return string
+ */
+function cdn_url(string $resource = ''): string
+{
+    $url = container('config')->get('app')->get('staticUrl', '/');
+
+    return rtrim($url, '/') . ($resource ? ltrim($resource, '/') : '');
+}
+
+/**
+ * Returns an asset with the CDN and the version
+ *
+ * @param string $asset
+ * @param string|int $version
+ *
+ * @return string
+ */
+function assets_uri(string $asset, $version): string
+{
+    $pathInfo  = pathinfo($asset);
+    $dirName   = $pathInfo['dirname'];
+    $fileName  = $pathInfo['filename'];
+    $extension = $pathInfo['extension'];
+
+    return cdn_url(sprintf('%s/%s.%s.%s', $dirName, $fileName, $version, $extension));
+}
