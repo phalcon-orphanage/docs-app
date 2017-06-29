@@ -118,7 +118,36 @@ class Bootstrap
      */
     public function getOutput()
     {
-        return $this->app->handle();
+        if ($this->app instanceof Micro) {
+            return $this->app->handle();
+        }
+
+        // @todo Move to the "console:boot" event listener
+        $arguments = [];
+        if (isset($_SERVER['argv'])) {
+            foreach ($_SERVER['argv'] as $index => $argument) {
+                switch ($index) {
+                    case 1:
+                        $arguments['task'] = $argument;
+                        break;
+                    case 2:
+                        $arguments['action'] = $argument;
+                        break;
+                    case 3:
+                        $arguments['params'] = $argument;
+                        break;
+                }
+            }
+        }
+
+        try {
+            return $this->app->handle($arguments);
+        } catch (\Exception $e) {
+            // @todo Create a Handler for this
+            fwrite(STDERR, PHP_EOL . $e->getMessage() . PHP_EOL);
+            fwrite(STDERR, PHP_EOL . $e->getTraceAsString() . PHP_EOL . PHP_EOL);
+            exit(1);
+        }
     }
 
     /**
