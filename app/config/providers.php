@@ -27,6 +27,7 @@ return [
     Docs\Providers\View\ServiceProvider::class,
     Docs\Providers\CacheData\ServiceProvider::class,
     Docs\Providers\Markdown\ServiceProvider::class,
+    Docs\Providers\Assets\ServiceProvider::class,
 
     // Third Party Providers
     // ...
