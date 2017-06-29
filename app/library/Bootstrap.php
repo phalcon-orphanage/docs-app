@@ -179,7 +179,7 @@ class Bootstrap
     protected function initializeServiceProviders(array $providers)
     {
         foreach ($providers as $name => $class) {
-            $this->initializeServiceProvider(new $class($this->di));
+            $this->initializeServiceProvider(new $class());
         }
 
         return $this;
@@ -239,6 +239,6 @@ class Bootstrap
 
         defined('APPLICATION_ENV') || define('APPLICATION_ENV', $this->environment);
 
-        $this->initializeServiceProvider(new Environment\ServiceProvider($this->di));
+        $this->initializeServiceProvider(new Environment\ServiceProvider());
     }
 }
