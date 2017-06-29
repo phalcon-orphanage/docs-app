@@ -24,6 +24,7 @@ return [
     Docs\Providers\Logger\ServiceProvider::class,
     Docs\Providers\ViewCache\ServiceProvider::class,
     Docs\Providers\VoltTemplate\ServiceProvider::class,
+    Docs\Providers\View\ServiceProvider::class,
 
     // Third Party Providers
     // ...
