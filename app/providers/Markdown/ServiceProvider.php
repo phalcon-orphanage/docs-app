@@ -15,19 +15,21 @@
   +------------------------------------------------------------------------+
 */
 
-return [
-    // Application Service Providers
-    Docs\Providers\Config\ServiceProvider::class,
-    Docs\Providers\FileSystem\ServiceProvider::class,
-    Docs\Providers\UrlResolver\ServiceProvider::class,
-    Docs\Providers\Routing\ServiceProvider::class,
-    Docs\Providers\Logger\ServiceProvider::class,
-    Docs\Providers\ViewCache\ServiceProvider::class,
-    Docs\Providers\VoltTemplate\ServiceProvider::class,
-    Docs\Providers\View\ServiceProvider::class,
-    Docs\Providers\CacheData\ServiceProvider::class,
-    Docs\Providers\Markdown\ServiceProvider::class,
+namespace Docs\Providers\Markdown;
 
-    // Third Party Providers
-    // ...
-];
+use ParsedownExtra;
+use Phalcon\DiInterface;
+use Phalcon\Di\ServiceProviderInterface;
+
+/**
+ * Docs\Providers\Markdown\ServiceProvider
+ *
+ * @package Docs\Providers\Markdown
+ */
+class ServiceProvider implements ServiceProviderInterface
+{
+    public function register(DiInterface $di)
+    {
+        $di->setShared('parsedown', ParsedownExtra::class);
+    }
+}
