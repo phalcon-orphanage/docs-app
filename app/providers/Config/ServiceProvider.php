@@ -18,8 +18,8 @@
 namespace Docs\Providers\Config;
 
 use Docs\Config\Factory;
-use Phalcon\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
 use function Docs\Functions\config_path;
 
 /**

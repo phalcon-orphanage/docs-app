@@ -17,10 +17,10 @@
 
 namespace Docs\Providers\Assets;
 
-use Phalcon\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;
-use function Docs\Functions\config;
+use Phalcon\DiInterface;
 use function Docs\Functions\assets_uri;
+use function Docs\Functions\config;
 use function Docs\Functions\environment;
 
 /**

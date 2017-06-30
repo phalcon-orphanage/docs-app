@@ -17,9 +17,9 @@
 
 namespace Docs\Providers\Dispatcher;
 
-use Phalcon\DiInterface;
 use Phalcon\Cli\Dispatcher;
 use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
 
 /**
  * Docs\Providers\Dispatcher\ServiceProvider

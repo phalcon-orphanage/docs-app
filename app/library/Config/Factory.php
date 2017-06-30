@@ -17,9 +17,9 @@
 
 namespace Docs\Config;
 
-use Phalcon\Di;
-use Phalcon\Config;
 use League\Flysystem\Filesystem;
+use Phalcon\Config;
+use Phalcon\Di;
 use function Docs\Functions\cache_path;
 use function Docs\Functions\config_path;
 use function Docs\Functions\environment;
@@ -30,6 +30,7 @@ class Factory
      * Create configuration object.
      *
      * @param  string $path Path to the config files
+     *
      * @return Config
      */
     public static function create(string $path)
@@ -51,6 +52,7 @@ class Factory
      * Load all configuration.
      *
      * @param  array $files
+     *
      * @return Config
      */
     protected static function load(array $files)
@@ -106,7 +108,7 @@ class Factory
 
     protected static function dump(Filesystem $filesystem, $path, array $data)
     {
-        $header =<<<HEAD
+        $header   = <<<HEAD
 /*
   +------------------------------------------------------------------------+
   | Phalcon                                                                |

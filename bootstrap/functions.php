@@ -24,9 +24,10 @@ use Phalcon\Di;
  * Get the application path.
  *
  * @param  string $path
+ *
  * @return string
  */
-function app_path(string $path = '') : string
+function app_path(string $path = ''): string
 {
     return dirname(__DIR__) . ($path ? DIRECTORY_SEPARATOR . $path : $path);
 }
@@ -35,6 +36,7 @@ function app_path(string $path = '') : string
  * Get the configuration path.
  *
  * @param  string $path
+ *
  * @return string
  */
 function config_path($path = '')
@@ -46,6 +48,7 @@ function config_path($path = '')
  * Get the cache path.
  *
  * @param  string $path
+ *
  * @return string
  */
 function cache_path($path = '')
@@ -57,6 +60,7 @@ function cache_path($path = '')
  * Return the default value of the given value.
  *
  * @param  mixed $value
+ *
  * @return mixed
  */
 function value($value)
@@ -69,6 +73,7 @@ function value($value)
  *
  * @param  string $key
  * @param  mixed  $default
+ *
  * @return mixed
  */
 function env($key, $default = null)
@@ -97,12 +102,13 @@ function env($key, $default = null)
  * Calls the default Dependency Injection container.
  *
  * @param  mixed
+ *
  * @return mixed|\Phalcon\DiInterface
  */
 function container()
 {
     $default = Di::getDefault();
-    $args = func_get_args();
+    $args    = func_get_args();
 
     if (empty($args)) {
         return $default;
@@ -121,6 +127,7 @@ function container()
  * Get or check the current application environment.
  *
  * @param  mixed
+ *
  * @return string|bool
  */
 function environment()
@@ -149,7 +156,7 @@ function cdn_url(string $resource = ''): string
 /**
  * Returns an asset with the CDN and the version
  *
- * @param string $asset
+ * @param string     $asset
  * @param string|int $version
  *
  * @return string
@@ -169,6 +176,7 @@ function assets_uri(string $asset, $version): string
  *
  * @param string $key
  * @param mixed  $default
+ *
  * @return mixed||Phalcon\Config
  */
 function config(string $key = '', $default = null)

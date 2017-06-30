@@ -17,9 +17,9 @@
 
 namespace Docs\Providers\View;
 
+use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\DiInterface;
 use Phalcon\Mvc\View\Simple;
-use Phalcon\Di\ServiceProviderInterface;
 use function Docs\Functions\app_path;
 use function Docs\Functions\container;
 

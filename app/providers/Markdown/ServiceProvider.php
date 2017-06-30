@@ -18,8 +18,8 @@
 namespace Docs\Providers\Markdown;
 
 use ParsedownExtra;
-use Phalcon\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
 
 /**
  * Docs\Providers\Markdown\ServiceProvider

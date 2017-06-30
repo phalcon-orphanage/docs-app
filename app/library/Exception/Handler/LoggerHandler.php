@@ -82,71 +82,6 @@ class LoggerHandler extends Handler
     }
 
     /**
-     * Add error trace function arguments to output.
-     * Set to True for all frame args, or integer for the n first frame args.
-     *
-     * @param  bool|integer|null $addTraceFunctionArgsToOutput
-     * @return null|bool|integer
-     */
-    public function addTraceFunctionArgsToOutput($addTraceFunctionArgsToOutput = null)
-    {
-        if (func_num_args() == 0) {
-            return $this->addTraceFunctionArgsToOutput;
-        }
-
-        if (!is_integer($addTraceFunctionArgsToOutput)) {
-            $this->addTraceFunctionArgsToOutput = (bool) $addTraceFunctionArgsToOutput;
-        } else {
-            $this->addTraceFunctionArgsToOutput = $addTraceFunctionArgsToOutput;
-        }
-    }
-
-    /**
-     * Get the size limit in bytes of frame arguments var_dump output.
-     * If the limit is reached, the var_dump output is discarded.
-     * Prevent memory limit errors.
-     *
-     * @return integer
-     */
-    public function getTraceFunctionArgsOutputLimit()
-    {
-        return $this->traceFunctionArgsOutputLimit;
-    }
-
-    /**
-     * Add error trace to output.
-     *
-     * @param  bool|null $addTraceToOutput
-     * @return bool|$this
-     */
-    public function addTraceToOutput($addTraceToOutput = null)
-    {
-        if (func_num_args() == 0) {
-            return $this->addTraceToOutput;
-        }
-
-        $this->addTraceToOutput = (bool) $addTraceToOutput;
-        return $this;
-    }
-
-    /**
-     * @return string
-     */
-    public function contentType()
-    {
-        return 'text/plain';
-    }
-
-    private function getLogger()
-    {
-        if (container()->has('logger')) {
-            return container('logger');
-        }
-
-        return null;
-    }
-
-    /**
      * Get the exception trace as plain text.
      *
      * @return string
@@ -157,7 +92,7 @@ class LoggerHandler extends Handler
             return '';
         }
         $inspector = $this->getInspector();
-        $frames = $inspector->getFrames();
+        $frames    = $inspector->getFrames();
 
         $response = "\nStack trace:";
 
@@ -189,10 +124,29 @@ class LoggerHandler extends Handler
     }
 
     /**
+     * Add error trace to output.
+     *
+     * @param  bool|null $addTraceToOutput
+     *
+     * @return bool|$this
+     */
+    public function addTraceToOutput($addTraceToOutput = null)
+    {
+        if (func_num_args() == 0) {
+            return $this->addTraceToOutput;
+        }
+
+        $this->addTraceToOutput = (bool)$addTraceToOutput;
+
+        return $this;
+    }
+
+    /**
      * Get the frame args var_dump.
      *
      * @param  Frame   $frame
      * @param  integer $line
+     *
      * @return string
      */
     private function getFrameArgsOutput(Frame $frame, $line)
@@ -210,6 +164,7 @@ class LoggerHandler extends Handler
             // The argument var_dump is to big.
             // Discarded to limit memory usage.
             ob_clean();
+
             return sprintf(
                 "\n%sArguments dump length greater than %d Bytes. Discarded.",
                 self::VAR_DUMP_PREFIX,
@@ -221,5 +176,55 @@ class LoggerHandler extends Handler
             "\n%s",
             preg_replace('/^/m', self::VAR_DUMP_PREFIX, ob_get_clean())
         );
+    }
+
+    /**
+     * Add error trace function arguments to output.
+     * Set to True for all frame args, or integer for the n first frame args.
+     *
+     * @param  bool|integer|null $addTraceFunctionArgsToOutput
+     *
+     * @return null|bool|integer
+     */
+    public function addTraceFunctionArgsToOutput($addTraceFunctionArgsToOutput = null)
+    {
+        if (func_num_args() == 0) {
+            return $this->addTraceFunctionArgsToOutput;
+        }
+
+        if (!is_integer($addTraceFunctionArgsToOutput)) {
+            $this->addTraceFunctionArgsToOutput = (bool)$addTraceFunctionArgsToOutput;
+        } else {
+            $this->addTraceFunctionArgsToOutput = $addTraceFunctionArgsToOutput;
+        }
+    }
+
+    /**
+     * Get the size limit in bytes of frame arguments var_dump output.
+     * If the limit is reached, the var_dump output is discarded.
+     * Prevent memory limit errors.
+     *
+     * @return integer
+     */
+    public function getTraceFunctionArgsOutputLimit()
+    {
+        return $this->traceFunctionArgsOutputLimit;
+    }
+
+    private function getLogger()
+    {
+        if (container()->has('logger')) {
+            return container('logger');
+        }
+
+        return null;
+    }
+
+    /**
+     * @return string
+     */
+    public function contentType()
+    {
+        return 'text/plain';
     }
 }

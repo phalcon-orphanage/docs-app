@@ -28,7 +28,7 @@ class MainTask extends PhTask
             '  -regenerate-api       Regenerates API documentation',
         ];
 
-        echo 'Commands:' .  PHP_EOL;
+        echo 'Commands:' . PHP_EOL;
 
         foreach ($commands as $command) {
             echo $command . PHP_EOL;

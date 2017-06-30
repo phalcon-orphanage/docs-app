@@ -42,7 +42,7 @@ class ClassLink
         }
 
         $this->className = $className;
-        $this->isArray = $isArray;
+        $this->isArray   = $isArray;
     }
 
     /**

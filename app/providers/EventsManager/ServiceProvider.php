@@ -17,9 +17,9 @@
 
 namespace Docs\Providers\EventsManager;
 
+use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\DiInterface;
 use Phalcon\Events\Manager;
-use Phalcon\Di\ServiceProviderInterface;
 
 /**
  * Docs\Providers\EventsManager\ServiceProvider

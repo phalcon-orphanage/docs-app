@@ -17,9 +17,9 @@
 
 namespace Docs\Providers\Environment;
 
+use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\DiInterface;
 use function Docs\Functions\container;
-use Phalcon\Di\ServiceProviderInterface;
 
 /**
  * Docs\Providers\Environment\ServiceProvider

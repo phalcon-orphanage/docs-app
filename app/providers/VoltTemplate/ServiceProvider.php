@@ -17,10 +17,10 @@
 
 namespace Docs\Providers\VoltTemplate;
 
+use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\DiInterface;
 use Phalcon\Mvc\View\Engine\Volt;
 use Phalcon\Mvc\ViewBaseInterface;
-use Phalcon\Di\ServiceProviderInterface;
 use function Docs\Functions\app_path;
 use function Docs\Functions\cache_path;
 use function Docs\Functions\container;
@@ -40,7 +40,7 @@ class ServiceProvider implements ServiceProviderInterface
 
             $volt->setOptions(
                 [
-                    'compiledPath' => function ($path) {
+                    'compiledPath'  => function ($path) {
                         $path     = trim(substr($path, strlen(app_path())), '\\/');
                         $filename = basename(str_replace(['\\', '/'], '_', $path), '.volt');
 
@@ -61,8 +61,8 @@ class ServiceProvider implements ServiceProviderInterface
 
             $volt->getCompiler()
                 ->addFunction('str_repeat', 'str_repeat');
-                // @todo
-                //  ->addExtension(new VoltFunctions());
+            // @todo
+            //  ->addExtension(new VoltFunctions());
 
             return $volt;
         };
