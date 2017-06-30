@@ -17,8 +17,8 @@
 
 namespace Docs\Exception\Handler;
 
-use Phalcon\Config;
 use Whoops\Handler\Handler;
+use function Docs\Functions\config;
 use function Docs\Functions\container;
 
 /**
@@ -43,13 +43,10 @@ class ErrorPageHandler extends Handler
 
         if (!container()->has('view') ||
             !container()->has('dispatcher') ||
-            !container()->has('response') ||
-            !container('config')->get('error') instanceof Config
+            !container()->has('response')
         ) {
             return Handler::DONE;
         }
-
-        $config = container('config')->get('error');
 
         switch ($exception->getCode()) {
             case E_WARNING:
@@ -72,17 +69,20 @@ class ErrorPageHandler extends Handler
 
     private function renderErrorPage()
     {
-        $config     = container('config')->error;
         $dispatcher = container('dispatcher');
         $view       = container('view');
         $response   = container('response');
 
-        $dispatcher->setControllerName($config->controller);
-        $dispatcher->setActionName($config->action);
+        $dispatcher->setControllerName(config('error.controller', 'error'));
+        $dispatcher->setActionName(config('error.action', 'show500'));
 
         $view->start();
         $dispatcher->dispatch();
-        $view->render($config->controller, $config->action, $dispatcher->getParams());
+        $view->render(
+            config('error.controller', 'error'),
+            config('error.action', 'show500'),
+            $dispatcher->getParams()
+        );
         $view->finish();
 
         $response->setContent($view->getContent())->send();

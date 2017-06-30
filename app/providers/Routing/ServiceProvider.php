@@ -17,6 +17,7 @@
 
 namespace Docs\Providers\Routing;
 
+use function Docs\Functions\config;
 use Phalcon\Cli\Router;
 use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\DiInterface;
@@ -36,7 +37,7 @@ class ServiceProvider implements ServiceProviderInterface
         switch ($mode) {
             case 'normal':
                 $collection = new Collection();
-                $routes     = $di->getShared('config')->routes->toArray();
+                $routes     = config('routes')->toArray();
 
                 $collection->setHandler($routes['class'], true);
                 if (!empty($routes['prefix'])) {

@@ -2,11 +2,12 @@
 
 namespace Docs\Controllers;
 
-use Phalcon\Cache\BackendInterface;
 use Phalcon\Config;
+use Phalcon\Mvc\View\Simple;
+use Phalcon\Cache\BackendInterface;
 use Phalcon\Http\ResponseInterface;
 use Phalcon\Mvc\Controller as PhController;
-use Phalcon\Mvc\View\Simple;
+use function Docs\Functions\config;
 use function Docs\Functions\app_path;
 use function Docs\Functions\environment;
 
@@ -35,13 +36,12 @@ class DocsController extends PhController
     /**
      * Returns the current version string with its prefix if applicable
      *
-     * @param string $stub
-     *
+     * @param  string $stub
      * @return string
      */
-    private function getVersion($stub = ''): string
+    private function getVersion(string $stub = ''): string
     {
-        return $stub . $this->config->get('app')->get('version');
+        return $stub . config('app.version', '9999');
     }
 
     /**
@@ -93,15 +93,15 @@ class DocsController extends PhController
      *
      * @return string
      */
-    private function getLanguage($language): string
+    private function getLanguage(string $language): string
     {
-        $languages = $this->config->get('languages', ['en' => 'English']);
+        $languages = config('languages');
 
-        if (!array_key_exists($language, $languages)) {
+        if (!isset($languages[$language])) {
             return 'en';
-        } else {
-            return $language;
         }
+
+        return $language;
     }
 
     /**
@@ -115,59 +115,57 @@ class DocsController extends PhController
     {
         $key = sprintf('%s.%s.%s.cache', $fileName, $version, $language);
 
-        if (environment('production') &&
-            true === $this->cacheData->exists($key)
-        ) {
+        if (environment('production') && true === $this->cacheData->exists($key)) {
             return $this->cacheData->get($key);
-        } else {
-            $pageName    = app_path(sprintf('docs/%s/%s/%s.md', $version, $language, $fileName));
-            $apiFileName = app_path(sprintf('docs/%s/%s/api/%s.md', $version, $language, $fileName));
-
-            $data = '';
-            if (file_exists($pageName)) {
-                $data = file_get_contents($pageName);
-            } elseif (file_exists($apiFileName)) {
-                $data = file_get_contents($apiFileName);
-            }
-
-            if (!empty($data)) {
-                $namespaces = $this->getNamespaces();
-                $from       = array_keys($namespaces);
-                $to         = array_values($namespaces);
-
-                /**
-                 * API links
-                 */
-                $data = str_replace($from, $to, $data);
-
-                /**
-                 * Language and version
-                 */
-                $data = str_replace(
-                    [
-                        '[[language]]',
-                        '[[version]]',
-                        '0#', '1#', '2#', '3#', '4#',
-                        '5#', '6#', '7#', '8#', '9#',
-                        '0`', '1`', '2`', '3`', '4`',
-                        '5`', '6`', '7`', '8`', '9`',
-                    ],
-                    [
-                        $language,
-                        $this->getVersion(),
-                        '#', '#', '#', '#', '#',
-                        '#', '#', '#', '#', '#',
-                        '`', '`', '`', '`', '`',
-                        '`', '`', '`', '`', '`',
-                    ],
-                    $data
-                );
-                $data = $this->parsedown->text($data);
-                $this->cacheData->save($key, $data);
-            }
-
-            return $data;
         }
+
+        $pageName    = app_path(sprintf('docs/%s/%s/%s.md', $version, $language, $fileName));
+        $apiFileName = app_path(sprintf('docs/%s/%s/api/%s.md', $version, $language, $fileName));
+
+        $data = '';
+        if (file_exists($pageName)) {
+            $data = file_get_contents($pageName);
+        } elseif (file_exists($apiFileName)) {
+            $data = file_get_contents($apiFileName);
+        }
+
+        if (!empty($data)) {
+            $namespaces = $this->getNamespaces();
+            $from       = array_keys($namespaces);
+            $to         = array_values($namespaces);
+
+            /**
+             * API links
+             */
+            $data = str_replace($from, $to, $data);
+
+            /**
+             * Language and version
+             */
+            $data = str_replace(
+                [
+                    '[[language]]',
+                    '[[version]]',
+                    '0#', '1#', '2#', '3#', '4#',
+                    '5#', '6#', '7#', '8#', '9#',
+                    '0`', '1`', '2`', '3`', '4`',
+                    '5`', '6`', '7`', '8`', '9`',
+                ],
+                [
+                    $language,
+                    $this->getVersion(),
+                    '#', '#', '#', '#', '#',
+                    '#', '#', '#', '#', '#',
+                    '`', '`', '`', '`', '`',
+                    '`', '`', '`', '`', '`',
+                ],
+                $data
+            );
+            $data = $this->parsedown->text($data);
+            $this->cacheData->save($key, $data);
+        }
+
+        return $data;
     }
 
     /**
@@ -178,33 +176,31 @@ class DocsController extends PhController
     private function getNamespaces(): array
     {
         $key = 'namespaces.cache';
-        if ('production' === $this->config->get('app')->get('env') &&
-            true === $this->cacheData->exists($key)
-        ) {
+        if (environment('production') && true === $this->cacheData->exists($key)) {
             return $this->cacheData->get($key);
-        } else {
-            $namespaces = [];
-            $template   = '[%s](/[[language]]/[[version]]/api/%s)';
-
-            $data = get_declared_classes();
-            foreach ($data as $name) {
-                if (substr($name, 0, 8) === 'Phalcon\\') {
-                    $apiName               = str_replace('\\', '_', $name);
-                    $namespaces["`$name`"] = sprintf($template, $name, $apiName);
-                }
-            }
-
-            $data = get_declared_interfaces();
-            foreach ($data as $name) {
-                if (substr($name, 0, 8) === 'Phalcon\\') {
-                    $apiName               = str_replace('\\', '_', $name);
-                    $namespaces["`$name`"] = sprintf($template, $name, $apiName);
-                }
-            }
-
-            $this->cacheData->save($key, $namespaces);
-
-            return $namespaces;
         }
+
+        $namespaces = [];
+        $template   = '[%s](/[[language]]/[[version]]/api/%s)';
+
+        $data = get_declared_classes();
+        foreach ($data as $name) {
+            if (substr($name, 0, 8) === 'Phalcon\\') {
+                $apiName               = str_replace('\\', '_', $name);
+                $namespaces["`$name`"] = sprintf($template, $name, $apiName);
+            }
+        }
+
+        $data = get_declared_interfaces();
+        foreach ($data as $name) {
+            if (substr($name, 0, 8) === 'Phalcon\\') {
+                $apiName               = str_replace('\\', '_', $name);
+                $namespaces["`$name`"] = sprintf($template, $name, $apiName);
+            }
+        }
+
+        $this->cacheData->save($key, $namespaces);
+
+        return $namespaces;
     }
 }

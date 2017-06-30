@@ -17,10 +17,11 @@
 
 namespace Docs\Providers\VoltTemplate;
 
-use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\DiInterface;
 use Phalcon\Mvc\View\Engine\Volt;
 use Phalcon\Mvc\ViewBaseInterface;
+use Phalcon\Di\ServiceProviderInterface;
+use function Docs\Functions\config;
 use function Docs\Functions\app_path;
 use function Docs\Functions\cache_path;
 use function Docs\Functions\container;
@@ -49,8 +50,7 @@ class ServiceProvider implements ServiceProviderInterface
                             trigger_error('Unable to locate/create the Volt cache dir', E_USER_ERROR);
                         }
 
-                        $version  = container('config')->get('app')->get('version', '9999');
-                        $filename = sprintf('%s.%s.php', $filename, $version);
+                        $filename = sprintf('%s.%s.php', $filename, config('app.version', '9999'));
 
                         return $cacheDir . DIRECTORY_SEPARATOR . $filename;
                     },
