@@ -20,6 +20,7 @@ namespace Docs\Providers\Config;
 use Docs\Config\Factory;
 use Phalcon\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;
+use function Docs\Functions\config_path;
 
 /**
  * Docs\Providers\Config\ServiceProvider
@@ -28,28 +29,12 @@ use Phalcon\Di\ServiceProviderInterface;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    /**
-     * Config files.
-     * @var array
-     */
-    protected $configs = [
-        'app',
-        'cache',
-        'google',
-        'languages',
-        'logger',
-        // @todo Move to the route service provider
-        'routes',
-    ];
-
     public function register(DiInterface $di)
     {
-        $configs = $this->configs;
-
         $di->setShared(
             'config',
-            function () use ($configs) {
-                return Factory::create($configs);
+            function () {
+                return Factory::create(config_path());
             }
         );
     }

@@ -17,33 +17,43 @@
 
 namespace Docs\Config;
 
+use Phalcon\Di;
 use Phalcon\Config;
 use League\Flysystem\Filesystem;
 use function Docs\Functions\cache_path;
 use function Docs\Functions\config_path;
 use function Docs\Functions\environment;
-use Phalcon\Di;
 
 class Factory
 {
     /**
      * Create configuration object.
      *
-     * @param  array  $providers
+     * @param  string $path Path to the config files
      * @return Config
      */
-    public static function create(array $providers = [])
+    public static function create(string $path)
     {
-        return self::load($providers);
+        /** @var Filesystem $filesystem */
+        $filesystem = Di::getDefault()->get('filesystem', [$path]);
+
+        $files = array_filter($filesystem->listContents(), function ($metadata) {
+            return isset($metadata['type']) &&
+                $metadata['type'] == 'file' &&
+                isset($metadata['extension']) &&
+                $metadata['extension'] == 'php';
+        });
+
+        return self::load($files);
     }
 
     /**
      * Load all configuration.
      *
-     * @param  array $providers
+     * @param  array $files
      * @return Config
      */
-    protected static function load(array $providers)
+    protected static function load(array $files)
     {
         $config = new Config();
         $merge  = self::merge();
@@ -57,8 +67,8 @@ class Factory
             return $config;
         }
 
-        foreach ($providers as $provider) {
-            $merge($config, config_path("$provider.php"), $provider);
+        foreach ($files as $file) {
+            $merge($config, config_path($file['path']), $file['filename']);
         }
 
         if (environment('production') && !$filesystem->has('cached.php')) {
