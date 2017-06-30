@@ -222,9 +222,9 @@ class RegenerateApiTask extends PhTask
                         $ret = [];
                     }
                     $methodsString .= implode(
-                            ' ',
-                            \Reflection::getModifierNames($method->getModifiers())
-                        ) . ' ';
+                        ' ',
+                        \Reflection::getModifierNames($method->getModifiers())
+                    ) . ' ';
                     if (isset($ret['return'])) {
                         $returnTypes = explode('|', $ret['return']);
                         foreach ($returnTypes as $i => $returnType) {
@@ -421,7 +421,6 @@ class RegenerateApiTask extends PhTask
 
         ksort($this->docs);
         ksort($this->classDocs);
-
     }
 
     /**
