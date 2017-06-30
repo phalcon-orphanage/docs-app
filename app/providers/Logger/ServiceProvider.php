@@ -17,11 +17,11 @@
 
 namespace Docs\Providers\Logger;
 
+use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\DiInterface;
 use Phalcon\Logger;
 use Phalcon\Logger\Adapter\File;
 use Phalcon\Logger\Formatter\Line;
-use Phalcon\Di\ServiceProviderInterface;
 use function Docs\Functions\app_path;
 use function Docs\Functions\config;
 
@@ -32,9 +32,9 @@ use function Docs\Functions\config;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    const DEFAULT_LEVEL = 'debug';
-    const DEFAULT_FORMAT = '[%date%][%type%] %message%';
-    const DEFAULT_DATE = 'd-M-Y H:i:s';
+    const DEFAULT_LEVEL    = 'debug';
+    const DEFAULT_FORMAT   = '[%date%][%type%] %message%';
+    const DEFAULT_DATE     = 'd-M-Y H:i:s';
     const DEFAULT_FILENANE = 'application';
 
     protected $logLevels = [

@@ -7,8 +7,8 @@ use Phalcon\Config;
 use Phalcon\Http\ResponseInterface;
 use Phalcon\Mvc\Controller as PhController;
 use Phalcon\Mvc\View\Simple;
-use function Docs\Functions\environment;
 use function Docs\Functions\app_path;
+use function Docs\Functions\environment;
 
 /**
  * Class DocsController
@@ -33,6 +33,18 @@ class DocsController extends PhController
     }
 
     /**
+     * Returns the current version string with its prefix if applicable
+     *
+     * @param string $stub
+     *
+     * @return string
+     */
+    private function getVersion($stub = ''): string
+    {
+        return $stub . $this->config->get('app')->get('version');
+    }
+
+    /**
      * @param null|string $language
      * @param null|string $version
      * @param string      $page
@@ -52,7 +64,7 @@ class DocsController extends PhController
         }
 
         if (strtolower($version) === 'latest') {
-            $version  = $this->getVersion();
+            $version = $this->getVersion();
         }
 
         if (empty($page)) {
@@ -72,7 +84,24 @@ class DocsController extends PhController
         $this->response->setContent($contents);
 
         return $this->response;
+    }
 
+    /**
+     * Check the available languages and return either that or 'en'
+     *
+     * @param string $language
+     *
+     * @return string
+     */
+    private function getLanguage($language): string
+    {
+        $languages = $this->config->get('languages', ['en' => 'English']);
+
+        if (!array_key_exists($language, $languages)) {
+            return 'en';
+        } else {
+            return $language;
+        }
     }
 
     /**
@@ -87,10 +116,11 @@ class DocsController extends PhController
         $key = sprintf('%s.%s.%s.cache', $fileName, $version, $language);
 
         if (environment('production') &&
-            true === $this->cacheData->exists($key)) {
+            true === $this->cacheData->exists($key)
+        ) {
             return $this->cacheData->get($key);
         } else {
-            $pageName = app_path(sprintf('docs/%s/%s/%s.md', $version, $language, $fileName));
+            $pageName    = app_path(sprintf('docs/%s/%s/%s.md', $version, $language, $fileName));
             $apiFileName = app_path(sprintf('docs/%s/%s/api/%s.md', $version, $language, $fileName));
 
             $data = '';
@@ -102,8 +132,8 @@ class DocsController extends PhController
 
             if (!empty($data)) {
                 $namespaces = $this->getNamespaces();
-                $from = array_keys($namespaces);
-                $to   = array_values($namespaces);
+                $from       = array_keys($namespaces);
+                $to         = array_values($namespaces);
 
                 /**
                  * API links
@@ -141,24 +171,6 @@ class DocsController extends PhController
     }
 
     /**
-     * Check the available languages and return either that or 'en'
-     *
-     * @param string $language
-     *
-     * @return string
-     */
-    private function getLanguage($language): string
-    {
-       $languages = $this->config->get('languages', ['en' => 'English']);
-
-       if (!array_key_exists($language, $languages)) {
-           return 'en';
-       } else {
-           return $language;
-       }
-    }
-
-    /**
      * Gets all the namespaces so that API URLs are generated properly
      *
      * @return array
@@ -167,7 +179,8 @@ class DocsController extends PhController
     {
         $key = 'namespaces.cache';
         if ('production' === $this->config->get('app')->get('env') &&
-            true === $this->cacheData->exists($key)) {
+            true === $this->cacheData->exists($key)
+        ) {
             return $this->cacheData->get($key);
         } else {
             $namespaces = [];
@@ -176,7 +189,7 @@ class DocsController extends PhController
             $data = get_declared_classes();
             foreach ($data as $name) {
                 if (substr($name, 0, 8) === 'Phalcon\\') {
-                    $apiName = str_replace('\\', '_', $name);
+                    $apiName               = str_replace('\\', '_', $name);
                     $namespaces["`$name`"] = sprintf($template, $name, $apiName);
                 }
             }
@@ -184,7 +197,7 @@ class DocsController extends PhController
             $data = get_declared_interfaces();
             foreach ($data as $name) {
                 if (substr($name, 0, 8) === 'Phalcon\\') {
-                    $apiName = str_replace('\\', '_', $name);
+                    $apiName               = str_replace('\\', '_', $name);
                     $namespaces["`$name`"] = sprintf($template, $name, $apiName);
                 }
             }
@@ -193,17 +206,5 @@ class DocsController extends PhController
 
             return $namespaces;
         }
-    }
-
-    /**
-     * Returns the current version string with its prefix if applicable
-     *
-     * @param string $stub
-     *
-     * @return string
-     */
-    private function getVersion($stub = ''): string
-    {
-        return $stub . $this->config->get('app')->get('version');
     }
 }

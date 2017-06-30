@@ -2,11 +2,11 @@
 
 namespace Docs\Cli\Tasks;
 
-use function Docs\Functions\app_path;
+use Dariuszp\CliProgressBar as CliProgressBar;
 use Phalcon\CLI\Task as PhTask;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use Dariuszp\CliProgressBar as CliProgressBar;
+use function Docs\Functions\app_path;
 
 /**
  * ClearCacheTask
@@ -51,7 +51,8 @@ class ClearCacheTask extends PhTask
             ->display();
         foreach ($iterator as $file) {
             if (true !== $file->isDir() &&
-                ('php' === $file->getExtension() || 'cache' === $file->getExtension())) {
+                ('php' === $file->getExtension() || 'cache' === $file->getExtension())
+            ) {
                 $bar->progress();
                 unlink($file->getPathname());
             }

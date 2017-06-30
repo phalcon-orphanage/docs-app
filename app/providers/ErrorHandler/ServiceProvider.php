@@ -17,15 +17,15 @@
 
 namespace Docs\Providers\ErrorHandler;
 
-use Whoops\Run;
-use Phalcon\DiInterface;
-use InvalidArgumentException;
-use Whoops\Handler\PrettyPageHandler;
-use Phalcon\Di\ServiceProviderInterface;
-use Docs\Exception\Handler\LoggerHandler;
 use Docs\Exception\Handler\ErrorPageHandler;
-use function Docs\Functions\env;
+use Docs\Exception\Handler\LoggerHandler;
+use InvalidArgumentException;
+use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
+use Whoops\Handler\PrettyPageHandler;
+use Whoops\Run;
 use function Docs\Functions\container;
+use function Docs\Functions\env;
 
 /**
  * Docs\Providers\ErrorHandler\ServiceProvider
@@ -43,7 +43,7 @@ class ServiceProvider implements ServiceProviderInterface
         $di->setShared(
             'errorHandler',
             function () {
-                $run  = new Run();
+                $run = new Run();
 
                 $mode = container('bootstrap')->getMode();
 

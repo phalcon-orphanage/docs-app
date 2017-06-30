@@ -2,13 +2,13 @@
 
 namespace Docs\Cli\Tasks;
 
-use function Docs\Functions\app_path;
+use Dariuszp\CliProgressBar as CliProgressBar;
+use Docs\ClassLink;
+use FilesystemIterator;
 use Phalcon\CLI\Task as PhTask;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use FilesystemIterator;
-use Dariuszp\CliProgressBar as CliProgressBar;
-use Docs\ClassLink;
+use function Docs\Functions\app_path;
 
 /**
  * RegenerateApiTask
@@ -49,54 +49,54 @@ class RegenerateApiTask extends PhTask
 
         // Exception class docs
         $this->docs['Exception'] = [
-    '__construct'      => '/**
+            '__construct'      => '/**
  * Exception constructor
  *
  * @param string \$message
  * @param int \$code
  * @param Exception \$previous
 */',
-    'getMessage'       => '/**
+            'getMessage'       => '/**
  * Gets the Exception message
  *
  * @return string
 */',
-    'getCode'          => '/**
+            'getCode'          => '/**
  * Gets the Exception code
  *
  * @return int
 */',
-    'getLine'          => '/**
+            'getLine'          => '/**
  * Gets the line in which the exception occurred
  *
  * @return int
 */',
-    'getFile'          => '/**
+            'getFile'          => '/**
  * Gets the file in which the exception occurred
  *
  * @return string
 */',
-    'getTrace'         => '/**
+            'getTrace'         => '/**
  * Gets the stack trace
  *
  * @return array
 */',
-    'getTraceAsString' => '/**
+            'getTraceAsString' => '/**
  * Gets the stack trace as a string
  *
  * @return Exception
 */',
-    '__clone'          => '/**
+            '__clone'          => '/**
  * Clone the exception
  *
  * @return Exception
 */',
-    'getPrevious'      => '/**
+            'getPrevious'      => '/**
  * Returns previous Exception
  *
  * @return Exception
 */',
-    '__toString'       => '/**
+            '__toString'       => '/**
  * String representation of the exception
  *
  * @return string
@@ -149,10 +149,10 @@ class RegenerateApiTask extends PhTask
             $extendsString = '';
             if ($parentClass) {
                 $extendsName = $parentClass->name;
-                $classLink = new ClassLink($extendsName);
+                $classLink   = new ClassLink($extendsName);
                 if (class_exists($extendsName)) {
                     $parentClassReflector = new \ReflectionClass($extendsName);
-                    $prefix = 'class';
+                    $prefix               = 'class';
                     if ($parentClassReflector->isAbstract()) {
                         $prefix = 'abstract class';
                     }
@@ -168,18 +168,18 @@ class RegenerateApiTask extends PhTask
             if (count($interfaceNames)) {
                 $implements = [];
                 foreach ($interfaceNames as $interfaceName) {
-                    $classLink = new ClassLink($interfaceName);
+                    $classLink    = new ClassLink($interfaceName);
                     $implements[] = $classLink->get();
                 }
                 $implementsString .= PHP_EOL . '*implements* '
-                                   . join(', ', $implements) . PHP_EOL;
+                    . join(', ', $implements) . PHP_EOL;
             }
 
             $githubLink       = 'https://github.com/phalcon/cphalcon/blob/master/'
-                              . str_replace('\\', '/', strtolower($className)) . '.zep';
+                . str_replace('\\', '/', strtolower($className)) . '.zep';
             $classDescription = '';
             if (isset($this->classDocs[$realClassName])) {
-                $ret               = $this->getPhpDoc(
+                $ret              = $this->getPhpDoc(
                     $this->classDocs[$realClassName],
                     $className,
                     $realClassName
@@ -192,10 +192,10 @@ class RegenerateApiTask extends PhTask
             if (count($constants)) {
                 $constantsString .= '## Constants' . PHP_EOL;
                 foreach ($constants as $name => $constant) {
-                    $type = gettype($constant);
+                    $type            = gettype($constant);
                     $constantsString .= '*' . $type
-                                      . '* **' . $name . '**'
-                                      . PHP_EOL . PHP_EOL;
+                        . '* **' . $name . '**'
+                        . PHP_EOL . PHP_EOL;
                 }
             }
 
@@ -223,18 +223,18 @@ class RegenerateApiTask extends PhTask
                     }
                     $methodsString .= implode(
                         ' ',
-                            \Reflection::getModifierNames($method->getModifiers())
+                        \Reflection::getModifierNames($method->getModifiers())
                     ) . ' ';
                     if (isset($ret['return'])) {
                         $returnTypes = explode('|', $ret['return']);
                         foreach ($returnTypes as $i => $returnType) {
-                            $classLink = new ClassLink($returnType);
+                            $classLink       = new ClassLink($returnType);
                             $returnTypes[$i] = $classLink->get();
                         }
                         $methodsString .= implode(' | ', $returnTypes);
                     }
                     $methodsString .= ' **' . $method->name . '** (';
-                    $cp = [];
+                    $cp            = [];
                     foreach ($method->getParameters() as $parameter) {
                         $name = '$' . $parameter->name;
                         if (isset($ret['parameters'][$name])) {
@@ -248,7 +248,7 @@ class RegenerateApiTask extends PhTask
                         }
                         $parameterTypes = explode('|', $parameterType);
                         foreach ($parameterTypes as $i => $parameterType) {
-                            $classLink = new ClassLink($parameterType);
+                            $classLink          = new ClassLink($parameterType);
                             $parameterTypes[$i] = $classLink->get();
                         }
                         $parameterTypes = implode(' | ', $parameterTypes) . ' ' . $name;
@@ -260,8 +260,8 @@ class RegenerateApiTask extends PhTask
 
                     $methodsString .= join(', ', $cp) . ')';
                     if ($simpleClassName != $docClassName) {
-                        $className = $method->getDeclaringClass()->name;
-                        $classLink = new ClassLink($className);
+                        $className     = $method->getDeclaringClass()->name;
+                        $classLink     = new ClassLink($className);
                         $methodsString .= ' inherited from ' . $classLink->get();
                     }
 
@@ -301,8 +301,8 @@ class RegenerateApiTask extends PhTask
             file_put_contents($fileName, $contents);
 
             $apiIndex .= '- [' . $className . ']'
-                       . '(/' . $version . '/en/api/' . $simpleClassName . ')'
-                       . PHP_EOL;
+                . '(/' . $version . '/en/api/' . $simpleClassName . ')'
+                . PHP_EOL;
             $bar->progress();
         }
 
@@ -330,7 +330,8 @@ class RegenerateApiTask extends PhTask
             ->display();
         foreach ($iterator as $item) {
             if ($item->getExtension() !== 'c' ||
-                strpos($item->getPathname(), 'kernel') !== false) {
+                strpos($item->getPathname(), 'kernel') !== false
+            ) {
                 continue;
             }
 
@@ -420,7 +421,6 @@ class RegenerateApiTask extends PhTask
 
         ksort($this->docs);
         ksort($this->classDocs);
-
     }
 
     /**
@@ -479,7 +479,7 @@ class RegenerateApiTask extends PhTask
                             $parts = preg_split("/[ \t]+/", $content);
 
                             if (count($parts) == 2) {
-                                $name = '$' . str_replace('$', '', $parts[1]);
+                                $name                     = '$' . str_replace('$', '', $parts[1]);
                                 $ret['parameters'][$name] = trim($parts[0]);
                             } else {
                                 // throw new Exception(
@@ -575,11 +575,11 @@ class RegenerateApiTask extends PhTask
         foreach ($lines as $line) {
             if (trim($line) === '') {
                 if ($blankLine == false) {
-                    $final .= $line . "\n";
+                    $final     .= $line . "\n";
                     $blankLine = true;
                 }
             } else {
-                $final .= $line . "\n";
+                $final     .= $line . "\n";
                 $blankLine = false;
             }
         }

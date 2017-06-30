@@ -17,10 +17,10 @@
 
 namespace Docs\Providers\FileSystem;
 
-use Phalcon\DiInterface;
-use League\Flysystem\Filesystem;
 use League\Flysystem\Adapter\Local;
+use League\Flysystem\Filesystem;
 use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
 use function Docs\Functions\app_path;
 
 /**

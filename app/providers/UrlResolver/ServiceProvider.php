@@ -17,9 +17,9 @@
 
 namespace Docs\Providers\UrlResolver;
 
-use Phalcon\Mvc\Url;
-use Phalcon\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
+use Phalcon\Mvc\Url;
 use function Docs\Functions\config;
 
 /**

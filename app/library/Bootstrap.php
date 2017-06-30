@@ -17,35 +17,38 @@
 
 namespace Docs;
 
-use Phalcon\Di;
-use Phalcon\Mvc\Micro;
-use Phalcon\Cli\Console;
-use Phalcon\DiInterface;
-use Phalcon\Di\FactoryDefault;
 use Docs\Providers\Environment;
 use Docs\Providers\ErrorHandler;
 use Docs\Providers\EventsManager;
+use Phalcon\Cli\Console;
+use Phalcon\Di;
+use Phalcon\Di\FactoryDefault;
 use Phalcon\Di\ServiceProviderInterface;
-use function Docs\Functions\env;
-use function Docs\Functions\container;
+use Phalcon\DiInterface;
+use Phalcon\Mvc\Micro;
 use function Docs\Functions\config_path;
+use function Docs\Functions\container;
+use function Docs\Functions\env;
 
 class Bootstrap
 {
     /**
      * The internal application core.
+     *
      * @var Console|Micro
      */
     private $app;
 
     /**
      * The application mode.
+     *
      * @var string
      */
     private $mode;
 
     /**
      * The Dependency Injection Container
+     *
      * @var DiInterface
      */
     private $di;
@@ -53,6 +56,7 @@ class Bootstrap
     /**
      * Current application environment:
      * production, staging, development, testing
+     *
      * @var string
      */
     private $environment;
@@ -92,6 +96,80 @@ class Bootstrap
     }
 
     /**
+     * Initialize the Service Provider.
+     *
+     * Usually the Service Provider register a service in the Dependency Injector Container.
+     *
+     * @param  ServiceProviderInterface $serviceProvider
+     *
+     * @return $this
+     */
+    protected function initializeServiceProvider(ServiceProviderInterface $serviceProvider)
+    {
+        $this->di->register($serviceProvider);
+
+        return $this;
+    }
+
+    /**
+     * Setting up the application environment.
+     *
+     * This tries to get `APP_ENV` environment variable from $_ENV.
+     * If failed the `development` will be used.
+     *
+     * After getting `APP_ENV` variable we set the Bootstrap::$environment
+     * and the `APPLICATION_ENV` constant which used in other Phalcon related projects eg Incubator.
+     */
+    protected function setupEnvironment()
+    {
+        $this->environment = env('APP_ENV', 'development');
+
+        defined('APPLICATION_ENV') || define('APPLICATION_ENV', $this->environment);
+
+        $this->initializeServiceProvider(new Environment\ServiceProvider());
+    }
+
+    /**
+     * Create internal application to handle requests.
+     *
+     * @throws \InvalidArgumentException
+     */
+    protected function createInternalApplication()
+    {
+        switch ($this->mode) {
+            case 'normal':
+                $this->app = new Micro($this->di);
+                break;
+            case 'cli':
+                $this->app = new Console($this->di);
+                break;
+            default:
+                throw new \InvalidArgumentException(
+                    sprintf(
+                        'Invalid application mode. Expected either "normal" or "cli". Got "%s".',
+                        is_scalar($this->mode) ? $this->mode : var_export($this->mode, true)
+                    )
+                );
+        }
+    }
+
+    /**
+     * Initialize the Service Providers.
+     *
+     * @param  string[] $providers
+     *
+     * @return $this
+     */
+    protected function initializeServiceProviders(array $providers)
+    {
+        foreach ($providers as $name => $class) {
+            $this->initializeServiceProvider(new $class());
+        }
+
+        return $this;
+    }
+
+    /**
      * Runs the Application
      *
      * @return mixed
@@ -99,16 +177,6 @@ class Bootstrap
     public function run()
     {
         return $this->getOutput();
-    }
-
-    /**
-     * Get the Application.
-     *
-     * @return Console|Micro
-     */
-    public function getApplication()
-    {
-        return $this->app;
     }
 
     /**
@@ -151,6 +219,16 @@ class Bootstrap
     }
 
     /**
+     * Get the Application.
+     *
+     * @return Console|Micro
+     */
+    public function getApplication()
+    {
+        return $this->app;
+    }
+
+    /**
      * Gets current application environment: production, staging, development, testing, etc.
      *
      * @return string
@@ -168,77 +246,5 @@ class Bootstrap
     public function getMode()
     {
         return $this->mode;
-    }
-
-    /**
-     * Initialize the Service Providers.
-     *
-     * @param  string[] $providers
-     * @return $this
-     */
-    protected function initializeServiceProviders(array $providers)
-    {
-        foreach ($providers as $name => $class) {
-            $this->initializeServiceProvider(new $class());
-        }
-
-        return $this;
-    }
-
-    /**
-     * Initialize the Service Provider.
-     *
-     * Usually the Service Provider register a service in the Dependency Injector Container.
-     *
-     * @param  ServiceProviderInterface $serviceProvider
-     * @return $this
-     */
-    protected function initializeServiceProvider(ServiceProviderInterface $serviceProvider)
-    {
-        $this->di->register($serviceProvider);
-
-        return $this;
-    }
-
-    /**
-     * Create internal application to handle requests.
-     *
-     * @throws \InvalidArgumentException
-     */
-    protected function createInternalApplication()
-    {
-        switch ($this->mode) {
-            case 'normal':
-                $this->app = new Micro($this->di);
-                break;
-            case 'cli':
-                $this->app = new Console($this->di);
-                break;
-            default:
-                throw new \InvalidArgumentException(
-                    sprintf(
-                        'Invalid application mode. Expected either "normal" or "cli". Got "%s".',
-                        is_scalar($this->mode) ? $this->mode : var_export($this->mode, true)
-                    )
-                );
-        }
-    }
-
-    /**
-     * Setting up the application environment.
-     *
-     * This tries to get `APP_ENV` environment variable from $_ENV.
-     * If failed the `development` will be used.
-     *
-     * After getting `APP_ENV` variable we set the Bootstrap::$environment
-     * and the `APPLICATION_ENV` constant which used in other Phalcon related projects eg Incubator.
-     */
-    protected function setupEnvironment()
-    {
-        $this->environment = env('APP_ENV', 'development');
-
-        defined('APPLICATION_ENV') || define('APPLICATION_ENV', $this->environment);
-
-        $this->initializeServiceProvider(new Environment\ServiceProvider());
     }
 }

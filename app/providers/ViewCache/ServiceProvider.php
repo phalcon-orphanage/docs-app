@@ -17,9 +17,9 @@
 
 namespace Docs\Providers\ViewCache;
 
-use Phalcon\DiInterface;
 use Phalcon\Cache\Frontend\Output;
 use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
 use function Docs\Functions\app_path;
 use function Docs\Functions\config;
 
