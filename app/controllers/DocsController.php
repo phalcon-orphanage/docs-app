@@ -71,6 +71,7 @@ class DocsController extends PhController
             $page = 'introduction';
         }
 
+        $slug     = str_replace(['/' . $language, '/' . $version], ['', ''], $this->request->getURI());
         $contents = $this->viewSimple->render(
             'index/index',
             [
@@ -79,6 +80,7 @@ class DocsController extends PhController
                 'sidebar'  => $this->getDocument($language, $version, 'sidebar'),
                 'article'  => $this->getDocument($language, $version, $page),
                 'menu'     => $this->getDocument($language, $version, $page . '-menu'),
+                'slug'     => $slug,
             ]
         );
         $this->response->setContent($contents);
