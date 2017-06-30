@@ -17,11 +17,13 @@
 
 namespace Docs\Providers\Routing;
 
-use function Docs\Functions\config;
 use Phalcon\Cli\Router;
-use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\DiInterface;
+use Docs\Exception\HttpException;
+use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\Mvc\Micro\Collection;
+use function Docs\Functions\config;
+use function Docs\Functions\container;
 
 /**
  * Docs\Providers\Routing\ServiceProvider
@@ -32,7 +34,7 @@ class ServiceProvider implements ServiceProviderInterface
 {
     public function register(DiInterface $di)
     {
-        $mode = $di->getShared('bootstrap')->getMode();
+        $mode = container('bootstrap')->getMode();
 
         switch ($mode) {
             case 'normal':
@@ -50,10 +52,16 @@ class ServiceProvider implements ServiceProviderInterface
                     }
                 }
 
-                $di->getShared('app')->mount($collection);
+                $app = container('app');
+                $app->mount($collection);
+
+                $app->notFound(function() {
+                    throw new HttpException('Not Found', 404);
+                });
+
                 break;
             case 'cli':
-                $di->setShared('router', Router::class);
+                container()->setShared('router', Router::class);
         }
     }
 }
