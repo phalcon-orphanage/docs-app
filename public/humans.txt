@@ -1,0 +1,23 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Chef: Nikolaos (Nikos) Dimopoulos
+	Contact: nikos [at] phalconphp.com
+	GitHub: @niden
+	From: Charles Town, WV, USA
+
+	Devloper: Serghei (klay) Iakovlev
+	Contact: serghei [at] phalconphp.com
+	GitHub: @sergeyklay
+	From: Kyiv, Ukraine
+
+# THANKS
+
+    Now that you're here, why not start contributing as well? :)
+
+# TECHNOLOGY COLOPHON
+
+    PHP 7.0, Phalcon
+    Nginx Server Configs, Twitter Bootstrap, jQuery, Modernizr, Normalize.css, highlight.js
