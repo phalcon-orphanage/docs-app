@@ -28,14 +28,19 @@ use Phalcon\DiInterface;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
         // @todo
-        if ($di->get('bootstrap')->getMode() !== 'cli') {
+        if ($container->get('bootstrap')->getMode() !== 'cli') {
             return;
         }
 
-        $di->setShared(
+        $container->setShared(
             'dispatcher',
             function () {
                 $dispatcher = new Dispatcher();

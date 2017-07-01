@@ -17,7 +17,6 @@
 
 namespace Docs\Controllers;
 
-
 use Phalcon\Config;
 use Phalcon\Mvc\View\Simple;
 use Phalcon\Cache\BackendInterface;
@@ -56,48 +55,48 @@ class BaseController extends PhController
         $pageName    = app_path(sprintf('docs/%s/%s/%s.md', $version, $language, $fileName));
         $apiFileName = app_path(sprintf('docs/%s/%s/api/%s.md', $version, $language, $fileName));
 
-        $data = '';
         if (file_exists($pageName)) {
             $data = file_get_contents($pageName);
         } elseif (file_exists($apiFileName)) {
             $data = file_get_contents($apiFileName);
+        } else {
+            // The article does not exist
+            return '';
         }
 
-        if (!empty($data)) {
-            $namespaces = $this->getNamespaces();
-            $from       = array_keys($namespaces);
-            $to         = array_values($namespaces);
+        $namespaces = $this->getNamespaces();
+        $search     = array_keys($namespaces);
+        $replace    = array_values($namespaces);
 
-            /**
-             * API links
-             */
-            $data = str_replace($from, $to, $data);
+        /**
+         * API links
+         */
+        $data = str_replace($search, $replace, $data);
 
-            /**
-             * Language and version
-             */
-            $data = str_replace(
-                [
-                    '[[language]]',
-                    '[[version]]',
-                    '0#', '1#', '2#', '3#', '4#',
-                    '5#', '6#', '7#', '8#', '9#',
-                    '0`', '1`', '2`', '3`', '4`',
-                    '5`', '6`', '7`', '8`', '9`',
-                ],
-                [
-                    $language,
-                    $this->getVersion(),
-                    '#', '#', '#', '#', '#',
-                    '#', '#', '#', '#', '#',
-                    '`', '`', '`', '`', '`',
-                    '`', '`', '`', '`', '`',
-                ],
-                $data
-            );
-            $data = $this->parsedown->text($data);
-            $this->cacheData->save($key, $data);
-        }
+        /**
+         * Language and version
+         */
+        $data = str_replace(
+            [
+                '[[language]]',
+                '[[version]]',
+                '0#', '1#', '2#', '3#', '4#',
+                '5#', '6#', '7#', '8#', '9#',
+                '0`', '1`', '2`', '3`', '4`',
+                '5`', '6`', '7`', '8`', '9`',
+            ],
+            [
+                $language,
+                $this->getVersion(),
+                '#', '#', '#', '#', '#',
+                '#', '#', '#', '#', '#',
+                '`', '`', '`', '`', '`',
+                '`', '`', '`', '`', '`',
+            ],
+            $data
+        );
+        $data = $this->parsedown->text($data);
+        $this->cacheData->save($key, $data);
 
         return $data;
     }
@@ -160,10 +159,18 @@ class BaseController extends PhController
      * Returns the current version string with its prefix if applicable
      *
      * @param  string $stub
+     * @param  string $version
      * @return string
      */
-    protected function getVersion(string $stub = ''): string
+    protected function getVersion(string $stub = '', string $version = ''): string
     {
-        return $stub . config('app.version', '9999');
+        if (empty($version) || strtolower($version) === 'latest') {
+            $version = config('app.version', '9999');
+        } else {
+            $version = filter_var($version, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+            $version = $version ?? config('app.version', '9999');
+        }
+
+        return "{$stub}{$version}";
     }
 }

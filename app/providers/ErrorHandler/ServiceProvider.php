@@ -34,13 +34,18 @@ use function Docs\Functions\env;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
-        $di->setShared('errorHandler::loggerHandler', LoggerHandler::class);
-        $di->setShared('errorHandler::prettyPageHandler', PrettyPageHandler::class);
-        $di->setShared('errorHandler::errorPageHandler', ErrorPageHandler::class);
+        $container->setShared('errorHandler::loggerHandler', LoggerHandler::class);
+        $container->setShared('errorHandler::prettyPageHandler', PrettyPageHandler::class);
+        $container->setShared('errorHandler::errorPageHandler', ErrorPageHandler::class);
 
-        $di->setShared(
+        $container->setShared(
             'errorHandler',
             function () {
                 $run = new Run();

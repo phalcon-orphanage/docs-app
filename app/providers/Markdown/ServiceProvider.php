@@ -28,8 +28,13 @@ use Phalcon\DiInterface;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
-        $di->setShared('parsedown', ParsedownExtra::class);
+        $container->setShared('parsedown', ParsedownExtra::class);
     }
 }

@@ -182,20 +182,20 @@ class LoggerHandler extends Handler
      * Add error trace function arguments to output.
      * Set to True for all frame args, or integer for the n first frame args.
      *
-     * @param  bool|integer|null $addTraceFunctionArgsToOutput
+     * @param  bool|integer|null $args
      *
      * @return null|bool|integer
      */
-    public function addTraceFunctionArgsToOutput($addTraceFunctionArgsToOutput = null)
+    public function addTraceFunctionArgsToOutput($args = null)
     {
         if (func_num_args() == 0) {
             return $this->addTraceFunctionArgsToOutput;
         }
 
-        if (!is_integer($addTraceFunctionArgsToOutput)) {
-            $this->addTraceFunctionArgsToOutput = (bool)$addTraceFunctionArgsToOutput;
+        if (!is_integer($args)) {
+            $this->addTraceFunctionArgsToOutput = (bool)$args;
         } else {
-            $this->addTraceFunctionArgsToOutput = $addTraceFunctionArgsToOutput;
+            $this->addTraceFunctionArgsToOutput = $args;
         }
     }
 

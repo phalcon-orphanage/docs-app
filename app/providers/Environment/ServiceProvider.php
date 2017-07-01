@@ -28,11 +28,16 @@ use function Docs\Functions\container;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
-        $di->set(
+        $container->set(
             'environment',
-            function ($value = null) {
+            function () {
                 $environment = container('bootstrap')->getEnvironment();
 
                 if (func_num_args() > 0) {
