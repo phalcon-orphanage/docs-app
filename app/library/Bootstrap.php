@@ -78,9 +78,9 @@ class Bootstrap
         /**
          * These services should be registered first
          */
-        $this->initializeServiceProvider(new EventsManager\ServiceProvider($this->container));
+        $this->initializeServiceProvider(new EventsManager\ServiceProvider());
         $this->setupEnvironment();
-        $this->initializeServiceProvider(new ErrorHandler\ServiceProvider($this->container));
+        $this->initializeServiceProvider(new ErrorHandler\ServiceProvider());
 
         $this->createInternalApplication();
         $this->container->setShared('app', $this->app);
