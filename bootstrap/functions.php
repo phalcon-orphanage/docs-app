@@ -177,7 +177,7 @@ function assets_uri(string $asset, $version): string
  * @param string $key
  * @param mixed  $default
  *
- * @return mixed||Phalcon\Config
+ * @return mixed|\Phalcon\Config
  */
 function config(string $key = '', $default = null)
 {
