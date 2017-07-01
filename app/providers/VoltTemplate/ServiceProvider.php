@@ -41,8 +41,8 @@ class ServiceProvider implements ServiceProviderInterface
      */
     public function register(DiInterface $container)
     {
-        $service = function (ViewBaseInterface $view, DiInterface $di = null) {
-            $volt = new Volt($view, $di ?: container());
+        $service = function (ViewBaseInterface $view, DiInterface $container = null) {
+            $volt = new Volt($view, $container ?: container());
 
             $volt->setOptions(
                 [

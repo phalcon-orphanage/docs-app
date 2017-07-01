@@ -37,7 +37,7 @@ class ServiceProvider implements ServiceProviderInterface
     {
         $container->set(
             'environment',
-            function ($value = null) {
+            function () {
                 $environment = container('bootstrap')->getEnvironment();
 
                 if (func_num_args() > 0) {

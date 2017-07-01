@@ -27,8 +27,8 @@ use Throwable;
  */
 class HttpException extends Exception
 {
-    public function __construct(string $message, int $code, Throwable $e = null)
+    public function __construct(string $message, int $code, Throwable $exception = null)
     {
-        parent::__construct($message, $code);
+        parent::__construct($message, $code, $exception);
     }
 }
