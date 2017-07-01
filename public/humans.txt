@@ -5,7 +5,7 @@ Contact: nikos [at] phalconphp.com
 GitHub: @niden
 From: Charles Town, WV, USA
 
-Devloper: Serghei (klay) Iakovlev
+Developer: Serghei (klay) Iakovlev
 Contact: serghei [at] phalconphp.com
 GitHub: @sergeyklay
 From: Kyiv, Ukraine
