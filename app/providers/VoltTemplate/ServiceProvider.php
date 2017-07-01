@@ -41,12 +41,12 @@ class ServiceProvider implements ServiceProviderInterface
      */
     public function register(DiInterface $container)
     {
-        $service = function (ViewBaseInterface $view, DiInterface $container = null) {
+        $service = function(ViewBaseInterface $view, DiInterface $container = null) {
             $volt = new Volt($view, $container ?: container());
 
             $volt->setOptions(
                 [
-                    'compiledPath'  => function ($path) {
+                    'compiledPath'  => function($path) {
                         $path     = trim(substr($path, strlen(app_path())), '\\/');
                         $filename = basename(str_replace(['\\', '/'], '_', $path), '.volt');
 

@@ -106,6 +106,9 @@ class Factory
         };
     }
 
+    /**
+     * @param string $path
+     */
     protected static function dump(Filesystem $filesystem, $path, array $data)
     {
         $header   = <<<HEAD
