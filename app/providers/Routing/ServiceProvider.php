@@ -55,7 +55,7 @@ class ServiceProvider implements ServiceProviderInterface
                 $app = container('app');
                 $app->mount($collection);
 
-                $app->notFound(function() {
+                $app->notFound(function () {
                     throw new HttpException('Not Found', 404);
                 });
 
