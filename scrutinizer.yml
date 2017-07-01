@@ -18,6 +18,7 @@ build:
   dependencies:
       before:
         - cd /home/scrutinizer/build
+        - cp .env.example .env
         - git clone -q --depth=1 https://github.com/phalcon/cphalcon.git -b master
         - cd cphalcon/build
         - ./install
