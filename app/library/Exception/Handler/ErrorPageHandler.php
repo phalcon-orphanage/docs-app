@@ -90,10 +90,7 @@ class ErrorPageHandler extends Handler
         $dispatcher->setActionName($action);
         $dispatcher->dispatch();
 
-        $content = $view->render(
-            "$controller/$action",
-            $dispatcher->getParams()
-        );
+        $content = $view->render("$controller/$action", $dispatcher->getParams());
 
         $response->setContent($content)->send();
     }

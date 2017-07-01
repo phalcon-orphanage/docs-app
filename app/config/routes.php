@@ -20,7 +20,6 @@ return [
     'methods' => [
         'get' => [
             '/'                         => 'redirectAction',
-            '/404'                      => 'fourohfourAction',
             '/{l:[a-z]{2}}'             => 'mainAction',
             '/{l:[a-z]{2}}/{v}'         => 'mainAction',
             '/{l:[a-z]{2}}/{v}/{p}'     => 'mainAction',
