@@ -2,6 +2,7 @@
 
 namespace Docs\Controllers;
 
+use Docs\Exception\HttpException;
 use Phalcon\Http\ResponseInterface;
 
 /**
@@ -40,12 +41,14 @@ class DocsController extends BaseController
             return $this->response->redirect($this->getVersion('/' . $language . '/'));
         }
 
-        if (strtolower($version) === 'latest') {
-            $version = $this->getVersion();
-        }
+        $version = $this->getVersion('', $version);
 
         if (empty($page)) {
             $page = 'introduction';
+        }
+
+        if (!$article = $this->getDocument($language, $version, $page)) {
+            throw new HttpException('Not Found', 404);
         }
 
         $slug     = str_replace(['/' . $language, '/' . $version], ['', ''], $this->request->getURI());
@@ -55,7 +58,7 @@ class DocsController extends BaseController
                 'language' => $language,
                 'version'  => $version,
                 'sidebar'  => $this->getDocument($language, $version, 'sidebar'),
-                'article'  => $this->getDocument($language, $version, $page),
+                'article'  => $article,
                 'menu'     => $this->getDocument($language, $version, $page . '-menu'),
                 'slug'     => $slug,
             ]
