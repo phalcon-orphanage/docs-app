@@ -136,7 +136,7 @@ class LoggerHandler extends Handler
             return $this->addTraceToOutput;
         }
 
-        $this->addTraceToOutput = (bool)$addTraceToOutput;
+        $this->addTraceToOutput = (bool) $addTraceToOutput;
 
         return $this;
     }
@@ -193,7 +193,7 @@ class LoggerHandler extends Handler
         }
 
         if (!is_integer($args)) {
-            $this->addTraceFunctionArgsToOutput = (bool)$args;
+            $this->addTraceFunctionArgsToOutput = (bool) $args;
         } else {
             $this->addTraceFunctionArgsToOutput = $args;
         }

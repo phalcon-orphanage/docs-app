@@ -18,6 +18,6 @@
 use Docs\Bootstrap;
 
 // Register the auto loader
-require __DIR__.'/../bootstrap/autoloader.php';
+require __DIR__ . '/../bootstrap/autoloader.php';
 
 (new Bootstrap())->run();
