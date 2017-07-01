@@ -32,12 +32,11 @@ PURPLE="\e[0;35m"
 NC="\033[0m"
 
 INSTALL_DEPS=1
-REGENERATE_API=1
 UPDATE_DOCS=1
 PULL_CHANGES=1
 CLEAR_CACHE=1
 
-VERSION=0.10.0
+VERSION=0.11.0
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -54,7 +53,6 @@ print_help() {
     printf "\n./deploy [options]\n"
     printf "\n${YELLOW}Options:${NC}"
     printf "\n      ${GREEN}--[no-]install-deps${NC}        Install the application dependencies using the Composer (enabled by default)"
-    printf "\n      ${GREEN}--[no-]generate-api${NC}        Regenerate the API docs for all known versions (enabled by default)"
     printf "\n      ${GREEN}--[no-]update-docs${NC}         Update the documentation for all known versions (enabled by default)"
     printf "\n      ${GREEN}--[no-]pull-changes${NC}        Pull the latests changes from the git repo (enabled by default)"
     printf "\n      ${GREEN}--[no-]clear-cache${NC}         Clear the cache (enabled by default)"
@@ -173,45 +171,6 @@ update_docs() {
     done
 }
 
-update_api() {
-    validate_git_bin
-
-    declare docs_path="${WORK_DIR}/docs"
-    declare api_path="${WORK_DIR}/storage/repo"
-    declare versions=$(print_versions)
-
-    if [[ ! -d ${api_path} ]]; then
-        print_error "Unable to locate the cphalcon base directory"
-        exit ${ST_ERR}
-    fi
-
-    for version in ${versions}; do
-        printf "Update the API docs for ${version}...\n"
-        if [[ -d "${api_path}/${version}/.git" ]]; then
-            printf "The ${version} version of API docs already cloned. Try to update it...\n"
-            cd "${api_path}/${version}"
-
-            pushd "${api_path}/${version}" &> /dev/null
-
-            ${GIT_BIN} checkout -f &> /dev/null
-            ${GIT_BIN} pull origin "${version}.x" &> /dev/null
-            printf "${YELLOW}TODO:${NC} regenerate the API doc\n"
-            printf "${YELLOW}TODO:${NC} copy the generated API doc to the ./docs/${version}/en/api\n"
-
-            popd &> /dev/null
-
-            printf "Done\n\n"
-        else
-            rm -rf "${api_path}/${version}"
-            mkdir -p "${api_path}/${version}"
-            ${GIT_BIN} clone -q -b "${version}.x" --depth=1 "${CPHALCON_REPO}" "${api_path}/${version}" &> /dev/null
-            printf "${YELLOW}TODO:${NC} regenerate the API doc\n"
-            printf "${YELLOW}TODO:${NC} copy the generated API doc to the ./docs/${version}/en/api\n"
-            printf "Done\n\n"
-        fi
-    done
-}
-
 pull_latest_changes() {
     validate_git_bin
 
@@ -267,14 +226,6 @@ for key in $@; do
             INSTALL_DEPS=0
             shift
             ;;
-        --generate-api)
-            REGENERATE_API=1
-            shift
-            ;;
-        --no-generate-api)
-            REGENERATE_API=0
-            shift
-            ;;
         --update-docs)
             UPDATE_DOCS=1
             shift
@@ -319,10 +270,6 @@ fi
 
 if [[ "${UPDATE_DOCS}" -eq 1 ]]; then
     update_docs
-fi
-
-if [[ "${REGENERATE_API}" -eq 1 ]]; then
-    update_api
 fi
 
 if [[ "${CLEAR_CACHE}" -eq 1 ]]; then
