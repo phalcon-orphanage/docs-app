@@ -32,7 +32,7 @@ build:
   tests:
     override:
       -
-        command: 'cd /home/scrutinizer/build; ./vendor/bin/codecept --coverage-xml'
+        command: 'cd /home/scrutinizer/build; ./vendor/bin/codecept run --coverage-xml'
         coverage:
           file: 'tests/_output/coverage.xml'
           format: 'clover'
