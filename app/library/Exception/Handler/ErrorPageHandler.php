@@ -28,6 +28,19 @@ use function Docs\Functions\container;
  */
 class ErrorPageHandler extends Handler
 {
+    private $handleCodes = [
+        E_WARNING         => true,
+        E_NOTICE          => true,
+        E_CORE_WARNING    => true,
+        E_COMPILE_WARNING => true,
+        E_USER_WARNING    => true,
+        E_USER_NOTICE     => true,
+        E_STRICT          => true,
+        E_DEPRECATED      => true,
+        E_USER_DEPRECATED => true,
+        E_ALL             => true,
+    ];
+
     /**
      * {@inheritdoc}
      *
@@ -41,30 +54,29 @@ class ErrorPageHandler extends Handler
             return Handler::DONE;
         }
 
-        if (!container()->has('viewSimple') ||
-            !container()->has('dispatcher') ||
-            !container()->has('response')
-        ) {
+        if (!$this->isItPossibleToHandle()) {
             return Handler::DONE;
         }
 
-        switch ($exception->getCode()) {
-            case E_WARNING:
-            case E_NOTICE:
-            case E_CORE_WARNING:
-            case E_COMPILE_WARNING:
-            case E_USER_WARNING:
-            case E_USER_NOTICE:
-            case E_STRICT:
-            case E_DEPRECATED:
-            case E_USER_DEPRECATED:
-            case E_ALL:
-                return Handler::DONE;
+        if ($this->shouldWeSkipCurrentCode($exception->getCode())) {
+            return Handler::DONE;
         }
 
         $this->renderErrorPage();
 
         return Handler::QUIT;
+    }
+
+    private function shouldWeSkipCurrentCode($code) : bool
+    {
+        return isset($this->handleCodes[$code]);
+    }
+
+    private function isItPossibleToHandle() : bool
+    {
+        return container()->has('viewSimple') &&
+            container()->has('dispatcher') &&
+            container()->has('response');
     }
 
     private function renderErrorPage()

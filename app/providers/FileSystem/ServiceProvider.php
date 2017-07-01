@@ -30,9 +30,14 @@ use function Docs\Functions\app_path;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
-        $di->set(
+        $container->set(
             'filesystem',
             function ($root = null) {
                 if ($root === null) {

@@ -55,26 +55,23 @@ class BaseController extends PhController
         $pageName    = app_path(sprintf('docs/%s/%s/%s.md', $version, $language, $fileName));
         $apiFileName = app_path(sprintf('docs/%s/%s/api/%s.md', $version, $language, $fileName));
 
-        $data = '';
         if (file_exists($pageName)) {
             $data = file_get_contents($pageName);
         } elseif (file_exists($apiFileName)) {
             $data = file_get_contents($apiFileName);
-        }
-
-        if (empty($data)) {
+        } else {
             // The article does not exist
             return '';
         }
 
         $namespaces = $this->getNamespaces();
-        $from       = array_keys($namespaces);
-        $to         = array_values($namespaces);
+        $search     = array_keys($namespaces);
+        $replace    = array_values($namespaces);
 
         /**
          * API links
          */
-        $data = str_replace($from, $to, $data);
+        $data = str_replace($search, $replace, $data);
 
         /**
          * Language and version

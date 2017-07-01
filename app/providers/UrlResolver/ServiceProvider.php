@@ -29,9 +29,14 @@ use function Docs\Functions\config;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
-        $di->setShared(
+        $container->setShared(
             'url',
             function () {
                 $url = new Url();

@@ -34,7 +34,12 @@ use function Docs\Functions\environment;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
         $service = function (ViewBaseInterface $view, DiInterface $di = null) {
             $volt = new Volt($view, $di ?: container());
@@ -67,6 +72,6 @@ class ServiceProvider implements ServiceProviderInterface
             return $volt;
         };
 
-        $di->setShared('volt', $service);
+        $container->setShared('volt', $service);
     }
 }

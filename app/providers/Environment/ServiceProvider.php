@@ -28,9 +28,14 @@ use function Docs\Functions\container;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
-        $di->set(
+        $container->set(
             'environment',
             function ($value = null) {
                 $environment = container('bootstrap')->getEnvironment();

@@ -51,11 +51,16 @@ class ServiceProvider implements ServiceProviderInterface
         'special'   => Logger::SPECIAL,
     ];
 
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
         $logLevels = $this->logLevels;
 
-        $di->set(
+        $container->set(
             'logger',
             function ($filename = null, $format = null) use ($logLevels) {
                 // Setting up the log level

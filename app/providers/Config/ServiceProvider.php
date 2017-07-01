@@ -29,9 +29,14 @@ use function Docs\Functions\config_path;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
-        $di->setShared(
+        $container->setShared(
             'config',
             function () {
                 return Factory::create(config_path());

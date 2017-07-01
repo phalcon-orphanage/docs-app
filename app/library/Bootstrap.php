@@ -51,7 +51,7 @@ class Bootstrap
      *
      * @var DiInterface
      */
-    private $di;
+    private $container;
 
     /**
      * Current application environment:
@@ -70,20 +70,20 @@ class Bootstrap
     {
         $this->mode = $mode;
 
-        $this->di = new FactoryDefault();
-        $this->di->setShared('bootstrap', $this);
+        $this->container = new FactoryDefault();
+        $this->container->setShared('bootstrap', $this);
 
-        Di::setDefault($this->di);
+        Di::setDefault($this->container);
 
         /**
          * These services should be registered first
          */
-        $this->initializeServiceProvider(new EventsManager\ServiceProvider($this->di));
+        $this->initializeServiceProvider(new EventsManager\ServiceProvider($this->container));
         $this->setupEnvironment();
-        $this->initializeServiceProvider(new ErrorHandler\ServiceProvider($this->di));
+        $this->initializeServiceProvider(new ErrorHandler\ServiceProvider($this->container));
 
         $this->createInternalApplication();
-        $this->di->setShared('app', $this->app);
+        $this->container->setShared('app', $this->app);
 
         /** @noinspection PhpIncludeInspection */
         $providers = require config_path('providers.php');
@@ -92,7 +92,7 @@ class Bootstrap
         }
 
         $this->app->setEventsManager(container('eventsManager'));
-        $this->app->setDI($this->di);
+        $this->app->setDI($this->container);
     }
 
     /**
@@ -106,7 +106,7 @@ class Bootstrap
      */
     protected function initializeServiceProvider(ServiceProviderInterface $serviceProvider)
     {
-        $this->di->register($serviceProvider);
+        $this->container->register($serviceProvider);
 
         return $this;
     }
@@ -138,10 +138,10 @@ class Bootstrap
     {
         switch ($this->mode) {
             case 'normal':
-                $this->app = new Micro($this->di);
+                $this->app = new Micro($this->container);
                 break;
             case 'cli':
-                $this->app = new Console($this->di);
+                $this->app = new Console($this->container);
                 break;
             default:
                 throw new \InvalidArgumentException(
@@ -162,7 +162,7 @@ class Bootstrap
      */
     protected function initializeServiceProviders(array $providers)
     {
-        foreach ($providers as $name => $class) {
+        foreach ($providers as $class) {
             $this->initializeServiceProvider(new $class());
         }
 
