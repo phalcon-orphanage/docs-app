@@ -28,7 +28,7 @@ use function Docs\Functions\container;
  */
 class ErrorPageHandler extends Handler
 {
-    private $handleCodes = [
+    private $unHandleCodes = [
         E_WARNING         => true,
         E_NOTICE          => true,
         E_CORE_WARNING    => true,
@@ -69,7 +69,7 @@ class ErrorPageHandler extends Handler
 
     private function shouldWeSkipCurrentCode($code) : bool
     {
-        return isset($this->handleCodes[$code]);
+        return isset($this->unHandleCodes[$code]);
     }
 
     private function isItPossibleToHandle() : bool
