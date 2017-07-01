@@ -92,7 +92,6 @@ class Bootstrap
         }
 
         $this->app->setEventsManager(container('eventsManager'));
-        $this->app->setDI($this->container);
     }
 
     /**
