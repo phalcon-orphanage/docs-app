@@ -331,6 +331,8 @@ if [[ "${CLEAR_CACHE}" -eq 1 ]]; then
     validate_php_bin
     ${PHP_BIN} ${WORK_DIR}/phalcon -clear-cache
 
+    rm -f "${WORK_DIR}storage/cache/config/*.php"
+
     printf "Done\n\n"
 fi
 
