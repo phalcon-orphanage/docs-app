@@ -28,9 +28,7 @@
         on the command line will ignore all file tags.
     -->
     <file>bootstrap</file>
-    <file>app/config</file>
-    <file>app/providers</file>
-    <file>app/library</file>
+    <file>app</file>
 
     <!--
         You can hard-code ignore patterns directly into your

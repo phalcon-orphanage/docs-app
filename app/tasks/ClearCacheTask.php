@@ -1,17 +1,33 @@
 <?php
 
+/*
+  +------------------------------------------------------------------------+
+  | Phalcon                                                                |
+  +------------------------------------------------------------------------+
+  | Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)         |
+  +------------------------------------------------------------------------+
+  | This source file is subject to the New BSD License that is bundled     |
+  | with this package in the file LICENSE.txt.                             |
+  |                                                                        |
+  | If you did not receive a copy of the license and are unable to         |
+  | obtain it through the world-wide-web, please send an email             |
+  | to license@phalconphp.com so we can send you a copy immediately.       |
+  +------------------------------------------------------------------------+
+*/
+
 namespace Docs\Cli\Tasks;
 
-use Dariuszp\CliProgressBar as CliProgressBar;
-use Phalcon\CLI\Task as PhTask;
-use RecursiveDirectoryIterator;
+use Phalcon\CLI\Task;
+use FilesystemIterator;
+use Dariuszp\CliProgressBar;
 use RecursiveIteratorIterator;
+use RecursiveDirectoryIterator;
 use function Docs\Functions\app_path;
 
 /**
  * ClearCacheTask
  */
-class ClearCacheTask extends PhTask
+class ClearCacheTask extends Task
 {
     /**
      * This provides the main menu of commands if an command is not entered
@@ -35,10 +51,7 @@ class ClearCacheTask extends PhTask
         echo sprintf('Clearing the %s cache', $message) . PHP_EOL;
 
         $path        = app_path('storage/cache/' . $folder);
-        $dirIterator = new RecursiveDirectoryIterator(
-            $path,
-            \FilesystemIterator::SKIP_DOTS
-        );
+        $dirIterator = new RecursiveDirectoryIterator($path, FilesystemIterator::SKIP_DOTS);
         $iterator    = new RecursiveIteratorIterator(
             $dirIterator,
             RecursiveIteratorIterator::CHILD_FIRST

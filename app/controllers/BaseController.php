@@ -17,7 +17,6 @@
 
 namespace Docs\Controllers;
 
-
 use Phalcon\Config;
 use Phalcon\Mvc\View\Simple;
 use Phalcon\Cache\BackendInterface;
