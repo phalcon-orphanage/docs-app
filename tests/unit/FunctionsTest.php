@@ -3,7 +3,7 @@
 use Phalcon\Config;
 use Codeception\Test\Unit;
 use function Docs\Functions\{
-    app_path, container, value, env, config_path, cache_path, config
+    app_path, container, value, env, config_path, cache_path, config, environment
 };
 use Phalcon\{
     DiInterface, DispatcherInterface
@@ -91,5 +91,24 @@ class FunctionsTest extends Unit
         $this->assertInstanceOf(Config::class, config());
         $this->assertInstanceOf(Config::class, config('app'));
         $this->assertEquals(env('APP_TIMEZONE', 'UTC'), config('app.timezone', 'UTC'));
+    }
+
+    /** @test */
+    public function shouldWorkWithEnvironmentFacade()
+    {
+        $this->assertFalse(environment('non-existent-environment-here'));
+        $this->assertFalse(environment(['non-existent-environment-here', 'non-existent-environment-here']));
+        $this->assertFalse(environment([]));
+        $this->assertFalse(environment(false));
+        $this->assertFalse(environment(null));
+        $this->assertFalse(environment('production'));
+        $this->assertFalse(environment('staging'));
+        $this->assertFalse(environment(['staging', 'production']));
+
+        $this->assertTrue(environment(['staging', 'production', 'development', 'testing']));
+        $this->assertTrue(environment([env('APP_ENV')]));
+        $this->assertTrue(environment([$_ENV['APP_ENV']]));
+        $this->assertTrue(environment() === env('APP_ENV'));
+        $this->assertTrue(environment() === $_ENV['APP_ENV']);
     }
 }
