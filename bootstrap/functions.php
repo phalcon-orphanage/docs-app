@@ -140,17 +140,29 @@ function environment()
 }
 
 /**
+ * Returns the base website url
+ *
+ * @param  string $suffix
+ * @return string
+ */
+function base_url(string $suffix = '')
+{
+    $url = config('app.url', 'https://docs.phalconphp.com');
+
+    return rtrim($url, '/') . ($suffix ? '/' . ltrim($suffix, '/') : '');
+}
+
+/**
  * Returns the CDN URL
  *
- * @param string $resource
- *
+ * @param  string $resource
  * @return string
  */
 function cdn_url(string $resource = ''): string
 {
-    $url = container('config')->get('app')->get('staticUrl', '/');
+    $url = config('app.staticUrl', '/');
 
-    return rtrim($url, '/') . ($resource ? ltrim($resource, '/') : '');
+    return rtrim($url, '/') . ($resource ? '/' . ltrim($resource, '/') : '');
 }
 
 /**

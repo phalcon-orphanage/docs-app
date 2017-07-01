@@ -3,6 +3,7 @@
 namespace Docs\Controllers;
 
 use Docs\Exception\HttpException;
+use function Docs\Functions\base_url;
 use Phalcon\Http\ResponseInterface;
 
 /**
@@ -15,11 +16,11 @@ class DocsController extends BaseController
     /**
      * Performs necessary redirection
      *
-     * @return \Phalcon\Http\ResponseInterface
+     * @return ResponseInterface
      */
     public function redirectAction(): ResponseInterface
     {
-        return $this->response->redirect($this->getVersion('/en/'));
+        return $this->response->redirect(base_url($this->getVersion('/en/')));
     }
 
     /**
@@ -27,18 +28,19 @@ class DocsController extends BaseController
      * @param null|string $version
      * @param string      $page
      *
-     * @return \Phalcon\Http\ResponseInterface
+     * @return ResponseInterface
+     * @throws HttpException
      */
     public function mainAction(string $language = null, string $version = null, string $page = ''): ResponseInterface
     {
         if (empty($language)) {
-            return $this->response->redirect($this->getVersion('/en/'));
+            return $this->response->redirect(base_url($this->getVersion('/en/')));
         }
 
         $language = $this->getLanguage($language);
 
         if (empty($version)) {
-            return $this->response->redirect($this->getVersion('/' . $language . '/'));
+            return $this->response->redirect(base_url($this->getVersion('/' . $language . '/')));
         }
 
         $version = $this->getVersion('', $version);

@@ -31,3 +31,4 @@
 
 <link rel="canonical" href="{{ url }}">
 <link rel="publisher" href="https://plus.google.com/u/0/+PhalconPHP">
+<link rel="author" href="{{ url ~ '/humans.txt' }}">

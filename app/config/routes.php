@@ -25,5 +25,14 @@ return [
             '/{l:[a-z]{2}}/{v}/{p}'     => 'mainAction',
             '/{l:[a-z]{2}}/{v}/api/{p}' => 'mainAction',
         ],
+
+        // This is exactly the same execution as GET, but the Response has no body
+        'head' => [
+            '/'                         => 'redirectAction',
+            '/{l:[a-z]{2}}'             => 'mainAction',
+            '/{l:[a-z]{2}}/{v}'         => 'mainAction',
+            '/{l:[a-z]{2}}/{v}/{p}'     => 'mainAction',
+            '/{l:[a-z]{2}}/{v}/api/{p}' => 'mainAction',
+        ],
     ],
 ];

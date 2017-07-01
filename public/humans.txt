@@ -1,0 +1,33 @@
+/* TEAM */
+
+Chef: Nikolaos (Nikos) Dimopoulos
+Contact: nikos [at] phalconphp.com
+GitHub: @niden
+From: Charles Town, WV, USA
+
+Devloper: Serghei (klay) Iakovlev
+Contact: serghei [at] phalconphp.com
+GitHub: @sergeyklay
+From: Kyiv, Ukraine
+
+UI developer: Max Castro
+Contact: max [at] mctekk.com
+GitHub: @kaioken
+From: Dominican Republic
+
+/* THANKS */
+
+Thanks to all our translators!
+For more see: https://crowdin.com/project/phalcon-documentation
+
+Now that you're here, why not start contributing as well? :)
+
+/* SITE */
+
+Last update: 2017/07/02
+Framework: Phalcon
+Language: PHP 7.0
+Doctype: HTML5
+Standards: HTML5, CSS3
+Components: Nginx Server Configs, Twitter Bootstrap, jQuery, Google Fonts, highlight.js
+
