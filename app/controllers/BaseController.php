@@ -63,7 +63,7 @@ class BaseController extends PhController
         }
 
         if (empty($data)) {
-            // the article does not exists
+            // The article does not exist
             return '';
         }
 
@@ -174,6 +174,6 @@ class BaseController extends PhController
             $version = $version ?? config('app.version', '9999');
         }
 
-        return $stub . $version;
+        return "{$stub}{$version}";
     }
 }
