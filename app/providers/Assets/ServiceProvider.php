@@ -30,9 +30,14 @@ use function Docs\Functions\environment;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
-        $assets = $di->getShared('assets');
+        $assets = $container->getShared('assets');
         $assets->collection("header_js");
 
         if (environment('development')) {

@@ -37,11 +37,11 @@ class ServiceProvider implements ServiceProviderInterface
      * service 'viewCache' must be registered as always open (not shared) in
      * the services container (DI).
      *
-     * @param DiInterface $di
+     * @param DiInterface $container
      */
-    public function register(DiInterface $di)
+    public function register(DiInterface $container)
     {
-        $di->set(
+        $container->set(
             'viewCache',
             function () {
                 $driver  = config('cache.viewDriver', 'File');

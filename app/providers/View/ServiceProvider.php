@@ -30,9 +30,14 @@ use function Docs\Functions\container;
  */
 class ServiceProvider implements ServiceProviderInterface
 {
-    public function register(DiInterface $di)
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
     {
-        $di->setShared(
+        $container->setShared(
             'viewSimple',
             function () {
                 $mode = container('bootstrap')->getMode();
