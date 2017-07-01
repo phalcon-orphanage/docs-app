@@ -41,7 +41,7 @@ class ErrorPageHandler extends Handler
             return Handler::DONE;
         }
 
-        if (!container()->has('view') ||
+        if (!container()->has('viewSimple') ||
             !container()->has('dispatcher') ||
             !container()->has('response')
         ) {
@@ -70,21 +70,31 @@ class ErrorPageHandler extends Handler
     private function renderErrorPage()
     {
         $dispatcher = container('dispatcher');
-        $view       = container('view');
+        $view       = container('viewSimple');
         $response   = container('response');
 
-        $dispatcher->setControllerName(config('error.controller', 'error'));
-        $dispatcher->setActionName(config('error.action', 'show500'));
+        $controller = config('error.controller', 'error');
+        $defaultAction = config('error.action', 'show500');
 
-        $view->start();
+        switch ($this->getException()->getCode()) {
+            case 404:
+                $action = 'show404';
+                break;
+            default:
+                $action = $defaultAction;
+        }
+
+        /** @var \Phalcon\Mvc\Dispatcher $dispatcher */
+        $dispatcher->setNamespaceName('Docs\Controllers');
+        $dispatcher->setControllerName($controller);
+        $dispatcher->setActionName($action);
         $dispatcher->dispatch();
-        $view->render(
-            config('error.controller', 'error'),
-            config('error.action', 'show500'),
+
+        $content = $view->render(
+            "$controller/$action",
             $dispatcher->getParams()
         );
-        $view->finish();
 
-        $response->setContent($view->getContent())->send();
+        $response->setContent($content)->send();
     }
 }
