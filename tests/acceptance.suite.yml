@@ -10,10 +10,10 @@ modules:
     enabled:
         - Helper\Acceptance
         - Filesystem
-#        - PhpBrowser:
-#            url: "%APP_URL%"
-#            curl:
-#                CURLOPT_RETURNTRANSFER: true
+        - PhpBrowser:
+            url: "%APP_URL%"
+            curl:
+                CURLOPT_RETURNTRANSFER: true
         - Phalcon:
             part: services
 
