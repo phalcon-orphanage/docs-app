@@ -29,6 +29,11 @@
 <meta name="twitter:site" content="@phalconphp">
 <meta name="twitter:creator" content="@phalconphp">
 
-<link rel="canonical" href="{{ url }}">
+{% if canonical is defined %}
+    <link rel="canonical" href="{{ canonical }}">
+{% else %}
+    <link rel="canonical" href="{{ url }}">
+{% endif %}
+
 <link rel="publisher" href="https://plus.google.com/u/0/+PhalconPHP">
 <link rel="author" href="{{ url ~ '/humans.txt' }}">
