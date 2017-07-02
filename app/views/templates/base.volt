@@ -9,10 +9,11 @@
 <head>
     {%- set name = config.get('app').get('name', 'Phalcon Documentation') -%}
     {%- set description = config.get('app').get('description', 'Official Phalcon Documentation') -%}
-    {%- set website_url = config.get('app').get('url', url()) -%}
+    {%- set url = config.get('app').get('url', 'https://docs.phalconphp.com') -%}
+    {%- set keywords = config.get('app').get('keywords', 'php, phalcon, phalcon php, php framework, faster php framework') -%}
 
-    {%- include "include/meta.volt" with ['name': name, 'description': description] -%}
-    {%- include "include/icons.volt" with ['website_url': website_url] -%}
+    {%- block meta -%}{%- endblock -%}
+    {%- include "include/icons.volt" with ['url': url] -%}
     {%- include "include/analytics.volt" -%}
 
     {%- block head -%}
@@ -26,7 +27,7 @@
 
 <body class="with-top-navbar">
     {%- block nav -%}
-        {%- include 'include/nav.volt' -%}
+        {%- include 'include/nav.volt' with ['url': url] -%}
     {%- endblock -%}
     <div class="container-fluid article-page-wrap">
         <div class="row">

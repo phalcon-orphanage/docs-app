@@ -1,5 +1,9 @@
 {%- extends "templates/base.volt" -%}
 
+{%- block meta -%}
+    {%- include "include/noindex-meta.volt" -%}
+{%- endblock -%}
+
 {%- block title -%}
     Not Found
 {%- endblock -%}

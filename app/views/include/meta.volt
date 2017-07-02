@@ -1,6 +1,3 @@
-{%- set url = config.get('app').get('url', 'https://docs.phalconphp.com') -%}
-{%- set keywords = config.get('app').get('keywords', 'php, phalcon, phalcon php, php framework, faster php framework') -%}
-
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
