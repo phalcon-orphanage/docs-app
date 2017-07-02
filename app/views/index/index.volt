@@ -9,16 +9,7 @@
 {%- endblock -%}
 
 {%- block sidebar -%}
-    <select id="language_selector"
-            class="form-control"
-            onchange="this.options[this.selectedIndex].value && (window.location = this.options[this.selectedIndex].value);">
-        {% for label, text in config.path('languages') %}
-            <option value="/{{ label }}/{{ version }}{{ slug }}"{% if language === label %} selected{% endif %}>
-                {{ text }}
-            </option>
-        {% endfor %}
-    </select>
-    <br>
+    {%- include "include/language_selector.volt" -%}
     {{ sidebar }}
 {%- endblock -%}
 

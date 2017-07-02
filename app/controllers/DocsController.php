@@ -54,8 +54,6 @@ class DocsController extends BaseController
             throw new HttpException('Not Found', 404);
         }
 
-        $slug     = str_replace(['/' . $language, '/' . $version], ['', ''], $this->request->getURI());
-
         $contents = $this->viewSimple->render(
             'index/index',
             [
@@ -64,8 +62,7 @@ class DocsController extends BaseController
                 'sidebar'   => $this->getDocument($language, $version, 'sidebar'),
                 'article'   => $article,
                 'menu'      => $this->getDocument($language, $version, $page . '-menu'),
-                'slug'      => $slug,
-                'canonical' => Text::reduceSlashes(base_url("$language/$version") . ($slug ? "/$slug" : "")),
+                'canonical' => Text::reduceSlashes(base_url("{$language}/{$version}/{$page}")),
             ]
         );
         $this->response->setContent($contents);
