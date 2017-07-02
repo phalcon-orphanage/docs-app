@@ -12,7 +12,7 @@
             </button>
             <a class="navbar-brand phalcon-logo" href="{{ url() }}">
                 <span itemprop="name" class="sr-only">{{ name }}</span>
-                <img src="{{ website_url ~ '/images/phalcon1.png' }}" alt="{{ name }}">
+                <img src="{{ url ~ '/images/phalcon1.png' }}" alt="{{ name }}">
             </a>
         </div>
         <div class="navbar-collapse collapse" id="navbar-collapse-main">

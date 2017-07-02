@@ -1,5 +1,9 @@
 {%- extends "templates/base.volt" -%}
 
+{%- block meta -%}
+    {%- include "include/meta.volt" with ['name': name, 'description': description, 'keywords': keywords] -%}
+{%- endblock -%}
+
 {%- block title -%}
     {{ config.get('app').get('name', 'Phalcon Documentation') }}
 {%- endblock -%}

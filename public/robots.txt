@@ -1,2 +1,14 @@
 User-agent: *
 Allow: /
+
+Disallow: /*/*/_sources/*.txt
+Disallow: /*/*/_sources/api/*.txt
+Disallow: /*/*/_sources/reference/*.txt
+Disallow: /report.html
+
+User-agent: Yandex
+Disallow: /*/*/_sources/*.txt
+Disallow: /*/*/_sources/api/*.txt
+Disallow: /*/*/_sources/reference/*.txt
+Disallow: /report.html
+Host: docs.phalconphp.com

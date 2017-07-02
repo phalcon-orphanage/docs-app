@@ -1,6 +1,3 @@
-{%- set url = config.get('app').get('url', 'https://docs.phalconphp.com') -%}
-{%- set keywords = config.get('app').get('keywords', 'php, phalcon, phalcon php, php framework, faster php framework') -%}
-
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -29,6 +26,11 @@
 <meta name="twitter:site" content="@phalconphp">
 <meta name="twitter:creator" content="@phalconphp">
 
-<link rel="canonical" href="{{ url }}">
+{% if canonical is defined %}
+    <link rel="canonical" href="{{ canonical }}">
+{% else %}
+    <link rel="canonical" href="{{ url }}">
+{% endif %}
+
 <link rel="publisher" href="https://plus.google.com/u/0/+PhalconPHP">
 <link rel="author" href="{{ url ~ '/humans.txt' }}">

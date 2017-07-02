@@ -2,9 +2,10 @@
 
 namespace Docs\Controllers;
 
+use Phalcon\Text;
 use Docs\Exception\HttpException;
-use function Docs\Functions\base_url;
 use Phalcon\Http\ResponseInterface;
+use function Docs\Functions\base_url;
 
 /**
  * Docs\Controllers\DocsController
@@ -54,15 +55,17 @@ class DocsController extends BaseController
         }
 
         $slug     = str_replace(['/' . $language, '/' . $version], ['', ''], $this->request->getURI());
+
         $contents = $this->viewSimple->render(
             'index/index',
             [
-                'language' => $language,
-                'version'  => $version,
-                'sidebar'  => $this->getDocument($language, $version, 'sidebar'),
-                'article'  => $article,
-                'menu'     => $this->getDocument($language, $version, $page . '-menu'),
-                'slug'     => $slug,
+                'language'  => $language,
+                'version'   => $version,
+                'sidebar'   => $this->getDocument($language, $version, 'sidebar'),
+                'article'   => $article,
+                'menu'      => $this->getDocument($language, $version, $page . '-menu'),
+                'slug'      => $slug,
+                'canonical' => Text::reduceSlashes(base_url("$language/$version") . ($slug ? "/$slug" : "")),
             ]
         );
         $this->response->setContent($contents);
