@@ -15,7 +15,7 @@
 <meta property="og:type" content="object">
 <meta property="og:title" content="{{ description }}">
 <meta property="og:description" content="{{ description_long }}">
-<meta property="og:site_name" content="Phalcon Website">
+<meta property="og:site_name" content="{{ name }}">
 <meta property="og:image" content="{{ url ~ '/images/logo.png' }}">
 
 <meta name="twitter:image:alt" content="{{ name ~ ' - ' ~ description }}">
