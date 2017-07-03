@@ -3,9 +3,17 @@
 namespace Docs\Controllers;
 
 use Phalcon\Text;
-use Docs\Exception\HttpException;
 use Phalcon\Http\ResponseInterface;
+
+use FilesystemIterator;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+
+use Docs\Exception\HttpException;
+
+use function Docs\Functions\app_path;
 use function Docs\Functions\base_url;
+use SplFileInfo;
 
 /**
  * Docs\Controllers\DocsController
@@ -76,5 +84,59 @@ class DocsController extends BaseController
         $this->response->setContent($contents);
 
         return $this->response;
+    }
+
+    public function sitemapAction()
+    {
+        $cacheKey    = 'sitemap.cache';
+
+        if (true === $this->cacheData->exists($cacheKey)) {
+            $contents = $this->cacheData->get($cacheKey);
+        } else {
+            $elements    = [];
+            $path        = app_path('docs/');
+            $dirIterator = new RecursiveDirectoryIterator($path, FilesystemIterator::SKIP_DOTS);
+            $iterator    = new RecursiveIteratorIterator(
+                $dirIterator,
+                RecursiveIteratorIterator::CHILD_FIRST
+            );
+
+            /** @var SplFileInfo $file */
+            foreach ($iterator as $file) {
+                if ('md' === $file->getExtension() || 'html' === $file->getExtension()) {
+                    $fullFile   = $file->getPath() . '/' . $file->getFilename();
+                    $elements[] = str_replace(
+                        [
+                            app_path('docs/'),
+                            '.md',
+                            '.html',
+                        ],
+                        [
+                            '',
+                            '',
+                            '',
+                        ],
+                        $fullFile
+                    );
+                }
+            }
+
+            sort($elements);
+
+            $contents = $this->viewSimple->render(
+                'index/sitemap',
+                [
+                    'elements' => $elements,
+                ]
+            );
+
+            $this->cacheData->save($cacheKey, $contents);
+        }
+
+        $this->response->setContentType('application/xml')
+                       ->setContent($contents);
+
+        return $this->response;
+
     }
 }
