@@ -7,8 +7,9 @@
 <html lang="{{ language }}" class="no-js">
 <!--<![endif]-->
 <head>
-    {%- set name = config.get('app').get('name', 'Phalcon Documentation') -%}
-    {%- set description = config.get('app').get('description', 'Official Phalcon Documentation') -%}
+    {%- set name = config.get('app').get('name', 'Documentation') -%}
+    {%- set description = config.get('app').get('description', 'Phalcon Framework') -%}
+    {%- set description_long = config.get('app').get('descriptionLong', 'Official Phalcon Documentation') -%}
     {%- set url = config.get('app').get('url', 'https://docs.phalconphp.com') -%}
     {%- set keywords = config.get('app').get('keywords', 'php, phalcon, phalcon php, php framework, faster php framework') -%}
 
