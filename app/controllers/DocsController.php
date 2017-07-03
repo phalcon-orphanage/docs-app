@@ -86,9 +86,14 @@ class DocsController extends BaseController
         return $this->response;
     }
 
+    /**
+     * Generates the sitemap
+     *
+     * @return ResponseInterface
+     */
     public function sitemapAction()
     {
-        $cacheKey    = 'sitemap.cache';
+        $cacheKey = 'sitemap.cache';
 
         if (true === $this->cacheData->exists($cacheKey)) {
             $contents = $this->cacheData->get($cacheKey);
@@ -133,8 +138,10 @@ class DocsController extends BaseController
             $this->cacheData->save($cacheKey, $contents);
         }
 
-        $this->response->setContentType('application/xml')
-                       ->setContent($contents);
+        $this
+            ->response
+            ->setContentType('application/xml')
+            ->setContent($contents);
 
         return $this->response;
     }
