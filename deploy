@@ -35,7 +35,7 @@ UPDATE_DOCS=1
 PULL_CHANGES=1
 CLEAR_CACHE=1
 
-VERSION=0.11.1
+VERSION=0.11.2
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -179,6 +179,7 @@ pull_latest_changes() {
 
     if [[ ${current_branch} != master ]]; then
         print_error "Doing nothing: only the master branch may be deployed for this project."
+        exit ${ST_ERR}
     else
         printf "Pull the latest changes from the git repo...\n"
 
