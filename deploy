@@ -35,7 +35,7 @@ UPDATE_DOCS=1
 PULL_CHANGES=1
 CLEAR_CACHE=1
 
-VERSION=0.11.1
+VERSION=0.12.0
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -75,6 +75,10 @@ print_error() {
     printf "${RED}Error: ${1}${NC}\n"
 }
 
+print_loales_dirs() {
+    find $(pwd) -maxdepth 1 -type d | grep -v ".git" | grep -v "^.$" | awk -F'^./' '{print $2}'
+}
+
 validate_work_dir() {
     if [[ ! -d  ${WORK_DIR} ]]; then
         print_error "Unable to locate specified path as working directory: ${WORK_DIR}. Exit..."
@@ -110,7 +114,6 @@ validate_composer_bin() {
     fi
 }
 
-
 install_app_deps() {
     validate_composer_bin
 
@@ -141,11 +144,14 @@ update_docs() {
 
     declare docs_path="${WORK_DIR}/docs"
     declare versions=$(print_versions)
+    declare locales=$(print_loales_dirs)
 
     if [[ ! -d ${docs_path} ]]; then
         print_error "Unable to locate the docs base directory"
         exit ${ST_ERR}
     fi
+
+    printf "Detected versions: %s\n" ${versions} | tr '\r\n' ' '
 
     for version in ${versions}; do
         printf "Update the docs for ${version}...\n"
@@ -158,6 +164,16 @@ update_docs() {
 
             ${GIT_BIN} checkout -f  &> /dev/null
             ${GIT_BIN} pull origin ${version}  &> /dev/null
+
+            printf "Detected locales in the $version version: %s\n" ${locales} | tr '\r\n' ' '
+            for locale in ${locales}; do
+                printf "Going to add missed docs for: ${docs_path}/${version}/${locale}...\n"
+                cp -vR "${docs_path}/${version}/en/*" "${docs_path}/${version}/${locale}/"
+
+            done
+
+            printf "Discard unwanted changes in working directory: ${docs_path}/${version}\n"
+            ${GIT_BIN} checkout -- .
 
             popd &> /dev/null
         else
@@ -179,6 +195,7 @@ pull_latest_changes() {
 
     if [[ ${current_branch} != master ]]; then
         print_error "Doing nothing: only the master branch may be deployed for this project."
+        exit ${ST_ERR}
     else
         printf "Pull the latest changes from the git repo...\n"
 
