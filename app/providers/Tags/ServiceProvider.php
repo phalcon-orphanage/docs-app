@@ -15,23 +15,42 @@
   +------------------------------------------------------------------------+
 */
 
-use function Docs\Functions\env;
+namespace Docs\Providers\Tags;
 
-return [
-    'version'      => '3.2',
-    'timezone'     => env('APP_TIMEZONE', 'UTC'),
-    'debug'        => env('APP_DEBUG'),
-    'env'          => env('APP_ENV'),
-    'url'          => env('APP_URL'),
-    'name'         => env('APP_NAME'),
-    'project'      => env('APP_PROJECT'),
-    'description'  => env('APP_DESCRIPTION'),
-    'descriptionLong' => env('APP_DESCRIPTION_LONG', 'Official Phalcon Documentation'),
-    'keywords'     => env('APP_KEYWORDS'),
-    'repo'         => env('APP_REPO'),
-    'docs'         => env('APP_DOCS'),
-    'baseUri'      => env('APP_BASE_URI'),
-    'staticUrl'    => env('APP_STATIC_URL'),
-    'lang'         => env('APP_LANG'),
-    'supportEmail' => env('APP_SUPPORT_EMAIL'),
-];
+use function Docs\Functions\config;
+use Phalcon\Tag;
+use Phalcon\DiInterface;
+use Phalcon\Di\ServiceProviderInterface;
+
+/**
+ * Docs\Providers\Tags\ServiceProvider
+ *
+ * @package Docs\Providers\Tags
+ */
+class ServiceProvider implements ServiceProviderInterface
+{
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
+    {
+        $container->setShared(
+            'tag',
+            function () {
+                $tag = new Tag();
+                $tag->setDocType(Tag::HTML5);
+                $tag->setTitleSeparator(' - ');
+
+                $description = config('app.description', 'Phalcon Framework');
+                $title = config('app.name', 'Documentation');
+
+                $tag->setTitle($title);
+                $tag->appendTitle($description);
+
+                return $tag;
+            }
+        );
+    }
+}

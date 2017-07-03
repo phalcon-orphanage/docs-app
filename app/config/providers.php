@@ -29,6 +29,7 @@ return [
     Docs\Providers\Markdown\ServiceProvider::class,
     Docs\Providers\Assets\ServiceProvider::class,
     Docs\Providers\Dispatcher\ServiceProvider::class,
+    Docs\Providers\Tags\ServiceProvider::class,
 
     // Third Party Providers
     // ...

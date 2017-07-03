@@ -4,10 +4,6 @@
     {%- include "include/noindex-meta.volt" -%}
 {%- endblock -%}
 
-{%- block title -%}
-    Not Found
-{%- endblock -%}
-
 {%- block sidebar -%}
     {{ sidebar }}
 {%- endblock -%}
