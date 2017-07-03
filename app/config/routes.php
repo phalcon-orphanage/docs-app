@@ -24,6 +24,7 @@ return [
             '/{l:[a-z]{2}}/{v}'         => 'mainAction',
             '/{l:[a-z]{2}}/{v}/{p}'     => 'mainAction',
             '/{l:[a-z]{2}}/{v}/api/{p}' => 'mainAction',
+            '/sitemap.xml'              => 'sitemapAction',
         ],
 
         // This is exactly the same execution as GET, but the Response has no body
@@ -33,6 +34,7 @@ return [
             '/{l:[a-z]{2}}/{v}'         => 'mainAction',
             '/{l:[a-z]{2}}/{v}/{p}'     => 'mainAction',
             '/{l:[a-z]{2}}/{v}/api/{p}' => 'mainAction',
+            '/sitemap.xml'              => 'sitemapAction',
         ],
     ],
 ];
