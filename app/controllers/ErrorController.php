@@ -30,7 +30,7 @@ class ErrorController extends BaseController
     {
         $this->response->setStatusCode(500);
 
-        $this->tag->prependTitle('Internal Error - ');
+        $this->tag->prependTitle('Internal Error');
 
         $version = $this->getVersion();
 
@@ -47,7 +47,7 @@ class ErrorController extends BaseController
     {
         $this->response->setStatusCode(404);
 
-        $this->tag->prependTitle('Not Found - ');
+        $this->tag->prependTitle('Not Found');
 
         $version = $this->getVersion();
 
