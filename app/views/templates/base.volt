@@ -1,4 +1,4 @@
-<!doctype html>
+{{ get_doctype() }}
 <!--[if IE 8]>
 <html lang="{{ language }}" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]>
@@ -20,9 +20,7 @@
         {{- assets.outputCss('header_css') -}}
     {%- endblock -%}
 
-    <title>
-        {%- block title -%}{%- endblock -%}{{ ' - ' ~ description }}
-    </title>
+    {{  get_title() }}
 </head>
 
 <body class="with-top-navbar">

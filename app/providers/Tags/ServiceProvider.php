@@ -15,22 +15,42 @@
   +------------------------------------------------------------------------+
 */
 
-return [
-    // Application Service Providers
-    Docs\Providers\Config\ServiceProvider::class,
-    Docs\Providers\FileSystem\ServiceProvider::class,
-    Docs\Providers\UrlResolver\ServiceProvider::class,
-    Docs\Providers\Routing\ServiceProvider::class,
-    Docs\Providers\Logger\ServiceProvider::class,
-    Docs\Providers\ViewCache\ServiceProvider::class,
-    Docs\Providers\VoltTemplate\ServiceProvider::class,
-    Docs\Providers\View\ServiceProvider::class,
-    Docs\Providers\CacheData\ServiceProvider::class,
-    Docs\Providers\Markdown\ServiceProvider::class,
-    Docs\Providers\Assets\ServiceProvider::class,
-    Docs\Providers\Dispatcher\ServiceProvider::class,
-    Docs\Providers\Tags\ServiceProvider::class,
+namespace Docs\Providers\Tags;
 
-    // Third Party Providers
-    // ...
-];
+use function Docs\Functions\config;
+use Phalcon\Tag;
+use Phalcon\DiInterface;
+use Phalcon\Di\ServiceProviderInterface;
+
+/**
+ * Docs\Providers\Tags\ServiceProvider
+ *
+ * @package Docs\Providers\Tags
+ */
+class ServiceProvider implements ServiceProviderInterface
+{
+    /**
+     * {@inheritdoc}
+     *
+     * @param DiInterface $container
+     */
+    public function register(DiInterface $container)
+    {
+        $container->setShared(
+            'tag',
+            function () {
+                $tag = new Tag();
+                $tag->setDocType(Tag::HTML5);
+                $tag->setTitleSeparator(' - ');
+
+                $description = config('app.description', 'Phalcon Framework');
+                $title = config('app.name', 'Documentation');
+
+                $tag->setTitle($title);
+                $tag->appendTitle($description);
+
+                return $tag;
+            }
+        );
+    }
+}

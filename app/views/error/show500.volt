@@ -4,10 +4,6 @@
     {%- include "include/noindex-meta.volt" -%}
 {%- endblock -%}
 
-{%- block title -%}
-    Internal Error
-{%- endblock -%}
-
 {%- block sidebar -%}
     {{ sidebar }}
 {%- endblock -%}
