@@ -35,7 +35,7 @@ UPDATE_DOCS=1
 PULL_CHANGES=1
 CLEAR_CACHE=1
 
-VERSION=0.12.1
+VERSION=0.12.2
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -163,6 +163,8 @@ update_docs() {
 
             pushd "${docs_path}/${version}" &> /dev/null
 
+            declare locales=$(print_loales_dirs)
+
             ${GIT_BIN} checkout -f  &> /dev/null
             ${GIT_BIN} pull origin ${version}  &> /dev/null
 
@@ -170,7 +172,7 @@ update_docs() {
             printf "\n"
             for locale in ${locales}; do
                 printf "Going to add missed docs for: ${docs_path}/${version}/${locale}...\n"
-                cp -vR "${docs_path}/${version}/en/*" "${docs_path}/${version}/${locale}/"
+                cp -vR ${docs_path}/${version}/en/* ${docs_path}/${version}/${locale}/ > /dev/null 2>&1
             done
 
             printf "Discard unwanted changes in working directory: ${docs_path}/${version}\n"
@@ -180,7 +182,7 @@ update_docs() {
         else
             rm -rf "${docs_path}/${version}"
             mkdir -p "${docs_path}/${version}"
-            ${GIT_BIN} clone -q -b ${version} --depth=1 "${DOCS_REPO}" "${docs_path}/${version}"  &> /dev/null
+            ${GIT_BIN} clone -q -b ${version} --depth=1 "${DOCS_REPO}" "${docs_path}/${version}" &> /dev/null
         fi
 
         printf "Done\n\n"
