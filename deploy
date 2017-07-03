@@ -35,7 +35,7 @@ UPDATE_DOCS=1
 PULL_CHANGES=1
 CLEAR_CACHE=1
 
-VERSION=0.11.0
+VERSION=0.11.1
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -274,10 +274,10 @@ fi
 if [[ "${CLEAR_CACHE}" -eq 1 ]]; then
     printf "Clear the cache...\n"
 
+    rm -f "${WORK_DIR}/storage/cache/config/*.php"
+
     validate_php_bin
     ${PHP_BIN} ${WORK_DIR}/phalcon -clear-cache
-
-    rm -f "${WORK_DIR}/storage/cache/config/*.php"
 
     printf "Done\n\n"
 fi
