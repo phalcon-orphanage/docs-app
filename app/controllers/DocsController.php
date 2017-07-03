@@ -54,6 +54,14 @@ class DocsController extends BaseController
             throw new HttpException('Not Found', 404);
         }
 
+        $canonical = Text::reduceSlashes(base_url("{$language}/{$version}/{$page}"));
+
+        // @todo
+        if (strpos($this->request->getURI(), "/api/")) {
+            $canonical = base_url("{$language}/{$version}/api/{$page}");
+            $this->tag->setTitle('API Documentation');
+        }
+
         $contents = $this->viewSimple->render(
             'index/index',
             [
@@ -62,7 +70,7 @@ class DocsController extends BaseController
                 'sidebar'   => $this->getDocument($language, $version, 'sidebar'),
                 'article'   => $article,
                 'menu'      => $this->getDocument($language, $version, $page . '-menu'),
-                'canonical' => Text::reduceSlashes(base_url("{$language}/{$version}/{$page}")),
+                'canonical' => $canonical,
             ]
         );
         $this->response->setContent($contents);

@@ -30,6 +30,8 @@ class ErrorController extends BaseController
     {
         $this->response->setStatusCode(500);
 
+        $this->tag->prependTitle('Internal Error - ');
+
         $version = $this->getVersion();
 
         $this->viewSimple->setVars([
@@ -44,6 +46,8 @@ class ErrorController extends BaseController
     public function show404Action()
     {
         $this->response->setStatusCode(404);
+
+        $this->tag->prependTitle('Not Found - ');
 
         $version = $this->getVersion();
 
