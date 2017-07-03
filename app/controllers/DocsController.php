@@ -137,6 +137,5 @@ class DocsController extends BaseController
                        ->setContent($contents);
 
         return $this->response;
-
     }
 }
