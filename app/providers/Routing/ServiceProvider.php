@@ -43,22 +43,26 @@ class ServiceProvider implements ServiceProviderInterface
 
         switch ($mode) {
             case 'normal':
-                $collection = new Collection();
-                $routes     = config('routes')->toArray();
-
-                $collection->setHandler($routes['class'], true);
-                if (!empty($routes['prefix'])) {
-                    $collection->setPrefix($routes['prefix']);
-                }
-
-                foreach ($routes['methods'] as $verb => $methods) {
-                    foreach ($methods as $endpoint => $action) {
-                        $collection->$verb($endpoint, $action);
-                    }
-                }
-
+                $collections = config('routes')->toArray();
                 $app = container('app');
-                $app->mount($collection);
+
+                foreach ($collections as $handler => $routes) {
+                    $collection  = new Collection();
+
+                    $collection->setHandler($handler, true);
+
+                    if (!empty($routes['prefix'])) {
+                        $collection->setPrefix($routes['prefix']);
+                    }
+
+                    foreach ($routes['methods'] as $verb => $methods) {
+                        foreach ($methods as $endpoint => $action) {
+                            $collection->$verb($endpoint, $action);
+                        }
+                    }
+
+                    $app->mount($collection);
+                }
 
                 $app->notFound(function () {
                     throw new HttpException('Not Found', 404);
