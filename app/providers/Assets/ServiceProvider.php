@@ -50,7 +50,7 @@ class ServiceProvider implements ServiceProviderInterface
             ->collection('header_css')
             ->addCss('https://fonts.googleapis.com/css?family=Lato', false)
             ->addCss('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', false)
-            ->addCss('https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/darcula.min.css', false)
+            ->addCss('https://cdn.jsdelivr.net/highlight.js/9.11.0/styles/darcula.min.css', false)
             ->addCss(assets_uri('css/docs.css', $version));
 
         $supportedJs = array_map(function ($lang) {
