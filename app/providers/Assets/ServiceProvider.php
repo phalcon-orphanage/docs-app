@@ -53,10 +53,16 @@ class ServiceProvider implements ServiceProviderInterface
             ->addCss('https://cdn.jsdelivr.net/highlight.js/9.9.0/styles/darcula.min.css', false)
             ->addCss(assets_uri('css/docs.css', $version));
 
+        $supportedJs = array_map(function ($lang) {
+            return "languages/{$lang}.min.js";
+        }, config('highlight.js')->toArray());
+
+        $supportedJs = implode('+', ['highlight.min.js'] + $supportedJs);
+
         $assets
             ->collection('footer_js')
             ->addJs('https://code.jquery.com/jquery-3.1.1.min.js', false)
             ->addJs('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', false)
-            ->addJs('https://cdn.jsdelivr.net/highlight.js/9.9.0/highlight.min.js', false);
+            ->addJs("https://cdn.jsdelivr.net/g/highlight.js@9.11.0({$supportedJs})", false);
     }
 }
