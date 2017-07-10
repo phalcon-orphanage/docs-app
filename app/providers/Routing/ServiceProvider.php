@@ -43,10 +43,12 @@ class ServiceProvider implements ServiceProviderInterface
 
         switch ($mode) {
             case 'normal':
-                $collection  = new Collection();
                 $collections = config('routes')->toArray();
+                $app = container('app');
 
                 foreach ($collections as $handler => $routes) {
+                    $collection  = new Collection();
+
                     $collection->setHandler($handler, true);
 
                     if (!empty($routes['prefix'])) {
@@ -58,10 +60,9 @@ class ServiceProvider implements ServiceProviderInterface
                             $collection->$verb($endpoint, $action);
                         }
                     }
-                }
 
-                $app = container('app');
-                $app->mount($collection);
+                    $app->mount($collection);
+                }
 
                 $app->notFound(function () {
                     throw new HttpException('Not Found', 404);
