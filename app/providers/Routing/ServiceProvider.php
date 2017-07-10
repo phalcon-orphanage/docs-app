@@ -43,17 +43,20 @@ class ServiceProvider implements ServiceProviderInterface
 
         switch ($mode) {
             case 'normal':
-                $collection = new Collection();
-                $routes     = config('routes')->toArray();
+                $collection  = new Collection();
+                $collections = config('routes')->toArray();
 
-                $collection->setHandler($routes['class'], true);
-                if (!empty($routes['prefix'])) {
-                    $collection->setPrefix($routes['prefix']);
-                }
+                foreach ($collections as $handler => $routes) {
+                    $collection->setHandler($handler, true);
 
-                foreach ($routes['methods'] as $verb => $methods) {
-                    foreach ($methods as $endpoint => $action) {
-                        $collection->$verb($endpoint, $action);
+                    if (!empty($routes['prefix'])) {
+                        $collection->setPrefix($routes['prefix']);
+                    }
+
+                    foreach ($routes['methods'] as $verb => $methods) {
+                        foreach ($methods as $endpoint => $action) {
+                            $collection->$verb($endpoint, $action);
+                        }
                     }
                 }
 
