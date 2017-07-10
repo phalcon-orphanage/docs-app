@@ -16,6 +16,8 @@
 */
 
 return [
+    'version' => '9.11.0',
+
     'js' => [
         'apache',
         'css',

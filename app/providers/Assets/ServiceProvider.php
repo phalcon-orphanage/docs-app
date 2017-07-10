@@ -46,11 +46,13 @@ class ServiceProvider implements ServiceProviderInterface
             $version = config('app.version', '9999');
         }
 
+        $highlightVersion = config('highlight.version', '9.11.0');
+
         $assets
             ->collection('header_css')
             ->addCss('https://fonts.googleapis.com/css?family=Lato', false)
             ->addCss('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', false)
-            ->addCss('https://cdn.jsdelivr.net/highlight.js/9.11.0/styles/darcula.min.css', false)
+            ->addCss("https://cdn.jsdelivr.net/highlight.js/{$highlightVersion}/styles/darcula.min.css", false)
             ->addCss(assets_uri('css/docs.css', $version));
 
         $supportedJs = array_map(function ($lang) {
@@ -63,6 +65,6 @@ class ServiceProvider implements ServiceProviderInterface
             ->collection('footer_js')
             ->addJs('https://code.jquery.com/jquery-3.1.1.min.js', false)
             ->addJs('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', false)
-            ->addJs("https://cdn.jsdelivr.net/g/highlight.js@9.11.0({$supportedJs})", false);
+            ->addJs("https://cdn.jsdelivr.net/g/highlight.js@{$highlightVersion}({$supportedJs})", false);
     }
 }
