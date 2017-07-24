@@ -789,6 +789,9 @@ footer .container {
 @media screen and (max-width: 1600px) and (min-width: 320px) {
     .article-menu {
         right: 100px;
+        position: fixed;
+        background: white;
+        z-index: 1000;
     }
 
 }
@@ -842,6 +845,7 @@ footer .container {
 
     .article-menu {
         position: relative;
+        background: unset;
     }
 
 }
