@@ -775,8 +775,8 @@ td {
 }
 
 .article-content {
-    width: 800px;
-    margin: 35px auto;
+    width: 65%;
+    margin: 35px 15em;
 }
 
 footer .container {
@@ -798,8 +798,8 @@ footer .container {
 
 @media screen and (max-width: 1440px) and (min-width: 320px) {
     .article-content {
-        width: 600px;
-        margin: 35px auto;
+        width: 60%;
+        margin: 35px 15em;
     }
     footer .container {
         width: 650px;
@@ -819,7 +819,7 @@ footer .container {
         padding-bottom: 0;
     }
     .article-content {
-        width: 500px;
+        width: 57%;
     }
     footer .container {
         width: 550px;
@@ -839,7 +839,7 @@ footer .container {
 @media screen and (max-width: 992px) and (min-width: 320px) {
     .article-content,
     footer .container {
-        width: 520px;
+        width: 70%;
         margin-left: 233px;
     }
 
