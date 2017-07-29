@@ -650,18 +650,23 @@ td {
 .sidebar {
     position: fixed;
     z-index: 1;
-    top: 84px;
+    top: 7em;
     left: 0;
 
     overflow: auto;
 
     width: 200px;
-    height: 100vh;
+    height: 90vh;
 
     border-right: 1px solid #f0f2f1;
     background-color: #fff;
 
     font-size: 13px;
+}
+
+.sidebar--spacer {
+    width: 14em;
+    height: 10em;
 }
 
 .sidebar>ul,
