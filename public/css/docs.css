@@ -48,7 +48,7 @@ body>*:last-child {
 }
 
 .navbar-default .navbar-nav {
-    padding: 15px;
+    padding: 0.5em 1em;
 }
 
 .navbar-default .navbar-nav>li>a,
@@ -496,8 +496,9 @@ pre tt {
 .phalcon-logo {
     display: block;
 
-    width: 200px;
-    height: 80px;
+    width: 170px;
+    height: 60px;
+    margin-top: 0.25em;
 }
 
 .phalcon-logo img {
