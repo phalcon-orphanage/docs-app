@@ -67,6 +67,10 @@ body>*:last-child {
     color: #65D38D;
 }
 
+.navbar-brand {
+    padding: unset;
+}
+
 
 
 a {
