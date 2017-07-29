@@ -29,13 +29,14 @@ body {
     padding-bottom: 350px;
 }
 
-body > *:first-child {
+body>*:first-child {
     margin-top: 0 !important;
 }
 
-body > *:last-child {
+body>*:last-child {
     margin-bottom: 0 !important;
 }
+
 
 /*hamburguer*/
 
@@ -51,21 +52,23 @@ body > *:last-child {
     padding: 15px;
 }
 
-.navbar-default .navbar-nav > li > a,
-.doc-menu > li,
-.doc-menu > li > a {
+.navbar-default .navbar-nav>li>a,
+.doc-menu>li,
+.doc-menu>li>a {
     text-decoration: none;
 
     color: #fff;
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.sidebar > ul > li a:hover,
-.doc-menu > ul > li a:hover {
+.navbar-default .navbar-nav>li>a:hover,
+.sidebar>ul>li a:hover,
+.doc-menu>ul>li a:hover {
     text-decoration: underline;
 
     color: #65D38D;
 }
+
+
 
 a {
     text-decoration: underline;
@@ -111,7 +114,7 @@ h6 {
 
 h2:first-child,
 h1:first-child,
-h1:first-child + h2,
+h1:first-child+h2,
 h3:first-child,
 h4:first-child,
 h5:first-child,
@@ -209,25 +212,25 @@ hr {
     border: 0 none;
 }
 
-body > h2:first-child {
+body>h2:first-child {
     margin-top: 0;
     padding-top: 0;
 }
 
-body > h1:first-child {
+body>h1:first-child {
     margin-top: 0;
     padding-top: 0;
 }
 
-body > h1:first-child + h2 {
+body>h1:first-child+h2 {
     margin-top: 0;
     padding-top: 0;
 }
 
-body > h3:first-child,
-body > h4:first-child,
-body > h5:first-child,
-body > h6:first-child {
+body>h3:first-child,
+body>h4:first-child,
+body>h5:first-child,
+body>h6:first-child {
     margin-top: 0;
     padding-top: 0;
 }
@@ -277,11 +280,11 @@ blockquote {
     border-left: 4px solid #dddddd;
 }
 
-blockquote > :first-child {
+blockquote> :first-child {
     margin-top: 0;
 }
 
-blockquote > :last-child {
+blockquote> :last-child {
     margin-bottom: 0;
 }
 
@@ -340,7 +343,7 @@ span.frame {
     overflow: hidden;
 }
 
-span.frame > span {
+span.frame>span {
     display: block;
     float: left;
     overflow: hidden;
@@ -372,7 +375,7 @@ span.align-center {
     overflow: hidden;
 }
 
-span.align-center > span {
+span.align-center>span {
     display: block;
     overflow: hidden;
 
@@ -393,7 +396,7 @@ span.align-right {
     overflow: hidden;
 }
 
-span.align-right > span {
+span.align-right>span {
     display: block;
     overflow: hidden;
 
@@ -428,7 +431,7 @@ span.float-right {
     margin-left: 13px;
 }
 
-span.float-right > span {
+span.float-right>span {
     display: block;
     overflow: hidden;
 
@@ -502,6 +505,7 @@ pre tt {
     width: 100%;
 }
 
+
 /** NavBar */
 
 .navbar {
@@ -515,18 +519,24 @@ pre tt {
     box-shadow: 0 0 3px 0 rgba(37, 82, 95, 0.9);
 }
 
+
 /*.with-top-navbar {*/
+
 
 /*margin-top: 40px;*/
 
+
 /*}*/
 
+
 /** Main Container */
+
 
 /*.container {
     margin-left: 0;
     margin-right: 0;
 }*/
+
 
 /** Articles */
 
@@ -535,6 +545,7 @@ td {
     padding-right: 10px;
     padding-left: 10px;
 }
+
 
 /** Footer */
 
@@ -633,18 +644,19 @@ td {
     display: none;
 }
 
+
 /** Sidebar */
 
 .sidebar {
     position: fixed;
     z-index: 1;
-    top: 84px;
+    top: 7em;
     left: 0;
 
     overflow: auto;
 
     width: 200px;
-    height: 100vh;
+    height: 90vh;
 
     border-right: 1px solid #f0f2f1;
     background-color: #fff;
@@ -652,34 +664,40 @@ td {
     font-size: 13px;
 }
 
-.sidebar > ul,
-.doc-menu > ul {
+.sidebar--spacer {
+    width: 14em;
+    height: 10em;
+}
+
+.sidebar>ul,
+.doc-menu>ul
+{
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.sidebar > ul > li,
-.doc-menu > ul > li {
+.sidebar>ul>li,
+.doc-menu>ul>li  {
     margin: 1em 0 0;
     padding: 0 0 5px;
 }
 
-.sidebar > ul > li a {
+.sidebar>ul>li a {
     text-decoration: none;
 
     color: #000000;
 }
 
-.doc-menu h4, .doc-menu > ul > li, .doc-menu > ul > li a {
+.doc-menu h4, .doc-menu>ul>li, .doc-menu>ul>li a {
     text-decoration: none;
 
     color: #fff;
 }
 
-.sidebar > ul > li > ul,
-.doc-menu > ul > li > ul {
+.sidebar>ul>li>ul,
+.doc-menu>ul>li>ul {
     display: block;
 
     margin: 5px 0 0;
@@ -690,9 +708,10 @@ td {
     border-top: 1px solid rgba(37, 82, 95, 0.9);
 }
 
-.doc-menu > ul > li > ul {
+.doc-menu>ul>li>ul{
     border-top: 1px solid rgba(234, 234, 234, 0.9);
 }
+
 
 /** article menu */
 
@@ -723,46 +742,46 @@ td {
     font-size: 13px;
 }
 
-.article-menu > ul {
+.article-menu>ul {
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.article-menu > ul > li {
+.article-menu>ul>li {
     list-style: none;
 }
 
-.article-menu > ul > li > ul {
+.article-menu>ul>li>ul {
     padding-left: 10px;
 
     list-style: none;
 }
 
-.article-menu > ul > li > ul > li {
+.article-menu>ul>li>ul>li {
     list-style: none;
 }
 
-.article-menu > ul > li > ul > li > ul {
+.article-menu>ul>li>ul>li>ul {
     padding-left: 10px;
 
     list-style: none;
 }
 
-.article-menu > ul > li > ul > li > ul > li {
+.article-menu>ul>li>ul>li>ul>li {
     list-style: none;
 }
 
-.article-menu > ul > li > ul > li > ul > li > ul {
+.article-menu>ul>li>ul>li>ul>li>ul {
     padding-left: 10px;
 
     list-style: none;
 }
 
 .article-content {
-    width: 800px;
-    margin: 35px auto;
+    width: 65%;
+    margin: 35px 15em;
 }
 
 footer .container {
@@ -770,20 +789,23 @@ footer .container {
     margin: 0 auto;
 }
 
+
 /*CONTAINERS RESPONSE*/
 @media screen and (max-width: 1600px) and (min-width: 320px) {
     .article-menu {
         right: 100px;
+        position: fixed;
+        background: white;
+        z-index: 1000;
     }
 
 }
 
 @media screen and (max-width: 1440px) and (min-width: 320px) {
     .article-content {
-        width: 600px;
-        margin: 35px auto;
+        width: 60%;
+        margin: 35px 15em;
     }
-
     footer .container {
         width: 650px;
         margin: 0 auto;
@@ -797,20 +819,16 @@ footer .container {
     body {
         min-width: 300px;
     }
-
     .article-page-wrap {
         min-height: auto;
         padding-bottom: 0;
     }
-
     .article-content {
-        width: 500px;
+        width: 57%;
     }
-
     footer .container {
         width: 550px;
     }
-
     .footer {
         position: relative;
     }
@@ -822,15 +840,17 @@ footer .container {
     }
 }
 
+
 @media screen and (max-width: 992px) and (min-width: 320px) {
     .article-content,
     footer .container {
-        width: 520px;
+        width: 70%;
         margin-left: 233px;
     }
 
     .article-menu {
         position: relative;
+        background: unset;
     }
 
 }
@@ -843,7 +863,9 @@ footer .container {
     }
 }
 
+
 /*HELPERS*/
+
 
 /*positioning*/
 
@@ -851,7 +873,9 @@ footer .container {
     position: relative;
 }
 
+
 /*-------------------------MARGIN/PADDING-------------------------*/
+
 
 /*margin*/
 
@@ -1074,6 +1098,7 @@ footer .container {
     margin-bottom: 500px;
 }
 
+
 /*padding*/
 
 .p-a-0 {
@@ -1204,5 +1229,6 @@ footer .container {
     padding-top: 61px !important;
     padding-bottom: 61px !important;
 }
+
 
 /*-------------------------/.MARGIN/PADDING-------------------------*/
