@@ -32,6 +32,7 @@
         <div class="row">
             <div class="col-md-2 sidebar hidden-xs">
                 {%- block sidebar -%}{%- endblock -%}
+                <div class="sidebar--spacer">&nbsp;</div>
             </div>
             <div class="m-t-md m-b-lg" id="articles">
                 <div class="article-content">
