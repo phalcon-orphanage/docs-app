@@ -15,7 +15,7 @@
   +------------------------------------------------------------------------+
 */
 
-if(php_sapi_name() == "cli-server"){
+if (php_sapi_name() == "cli-server") {
     // Set timezone
     date_default_timezone_set("UTC");
 
@@ -24,11 +24,11 @@ if(php_sapi_name() == "cli-server"){
     );
 
     $matches = [];
-    if(preg_match("/(.+)\.(?:\d+)\.(js|css|png|jpg|jpeg|gif)$/", $uri, $matches)) {
-        $rewritten_uri = $matches[1] .".". $matches[2];
-        $rewritten_path = __DIR__ .'/public'. $rewritten_uri;
+    if (preg_match("/(.+)\.(?:\d+)\.(js|css|png|jpg|jpeg|gif)$/", $uri, $matches)) {
+        $rewritten_uri = $matches[1] . "." . $matches[2];
+        $rewritten_path = __DIR__ . '/public' . $rewritten_uri;
         $pathinfo = pathinfo($rewritten_path);
-        switch($pathinfo['extension']) {
+        switch ($pathinfo['extension']) {
             case 'css':
                 header("Content-Type: " . "text/css");
                 break;
@@ -47,7 +47,7 @@ if(php_sapi_name() == "cli-server"){
         return readfile($rewritten_path);
     }
 
-    if ($uri !== '/' && file_exists(__DIR__ .'/public'. $uri)) {
+    if ($uri !== '/' && file_exists(__DIR__ . '/public' . $uri)) {
         return false;
     }
 
