@@ -4,7 +4,7 @@
   +------------------------------------------------------------------------+
   | Phalcon                                                                |
   +------------------------------------------------------------------------+
-  | Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)         |
+  | Copyright (c) 2011-2017 Phalcon Team (https://phalconphp.com)          |
   +------------------------------------------------------------------------+
   | This source file is subject to the New BSD License that is bundled     |
   | with this package in the file LICENSE.txt.                             |
@@ -113,7 +113,7 @@ class Factory
   +------------------------------------------------------------------------+
   | Phalcon                                                                |
   +------------------------------------------------------------------------+
-  | Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)         |
+  | Copyright (c) 2011-2017 Phalcon Team (https://phalconphp.com)          |
   +------------------------------------------------------------------------+
   | This source file is subject to the New BSD License that is bundled     |
   | with this package in the file LICENSE.txt.                             |
