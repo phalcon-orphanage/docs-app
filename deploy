@@ -20,6 +20,10 @@ COMPOSER_BIN=$(command -v composer 2>/dev/null)
 
 DOCS_REPO=https://github.com/phalcon/docs
 
+if [ -f .env ]; then
+    source .env
+fi
+
 ST_OK=0
 ST_ERR=1
 ST_HLP=2
