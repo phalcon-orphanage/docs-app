@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Phalcon
-# Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)
+# Copyright (c) 2011-2017 Phalcon Team (https://phalconphp.com)
 #
 # This source file is subject to the New BSD License that is bundled
 # with this package in the file LICENSE.txt.
@@ -44,7 +44,7 @@ APP_NAME="Phalcon Docs"
 
 print_version() {
     printf "${YELLOW}${APP_NAME} Deployer${NC} v${VERSION}\n"
-    printf "Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)\n\n"
+    printf "Copyright (c) 2011-2017 Phalcon Team (https://phalconphp.com)\n\n"
 }
 
 print_dump_version() {
