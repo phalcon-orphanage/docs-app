@@ -2,19 +2,15 @@
 
 namespace Docs\Cli\Tasks;
 
-use function file_exists;
 use function file_put_contents;
+
 use Phalcon\CLI\Task;
 
 use function Docs\Functions\app_path;
+
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use FilesystemIterator;
-use Exception;
-
-use Dariuszp\CliProgressBar as CliProgressBar;
-
-use Docs\ClassLink;
 use SplFileInfo;
 
 /**
@@ -24,8 +20,7 @@ class GenerateSitemapTask extends Task
 {
     public function mainAction()
     {
-        $basePath = dirname(dirname(__FILE__));
-        $output   = $basePath . '/public/sitemap.xml';
+        $output   = app_path('public/sitemap.xml');
 
         $elements    = [];
         $path        = app_path('docs/');
@@ -64,6 +59,6 @@ class GenerateSitemapTask extends Task
             ]
         );
 
-        file_put_contents($contents, $output);
+        file_put_contents($output, $contents);
     }
 }
