@@ -9,3 +9,4 @@
 /.env
 /public/report.html
 /public/google*.html
+/public/sitemap.xml
