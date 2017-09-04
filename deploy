@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # Phalcon
-# Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)
+# Copyright (c) 2011-2017 Phalcon Team (https://phalconphp.com)
 #
 # This source file is subject to the New BSD License that is bundled
 # with this package in the file LICENSE.txt.
@@ -19,6 +19,10 @@ PHP_BIN=$(command -v php 2>/dev/null)
 COMPOSER_BIN=$(command -v composer 2>/dev/null)
 
 DOCS_REPO=https://github.com/phalcon/docs
+
+if [ -f .env ]; then
+    source .env
+fi
 
 ST_OK=0
 ST_ERR=1
@@ -40,7 +44,7 @@ APP_NAME="Phalcon Docs"
 
 print_version() {
     printf "${YELLOW}${APP_NAME} Deployer${NC} v${VERSION}\n"
-    printf "Copyright (c) 20111-2017 Phalcon Team (https://phalconphp.com)\n\n"
+    printf "Copyright (c) 2011-2017 Phalcon Team (https://phalconphp.com)\n\n"
 }
 
 print_dump_version() {

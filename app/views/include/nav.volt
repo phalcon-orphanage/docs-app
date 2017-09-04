@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default">
     <div class="container-fluid p-x-md">
         <div class="navbar-header">
             <button type="button"
