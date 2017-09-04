@@ -4,6 +4,7 @@ namespace Docs\Cli\Tasks;
 
 use function file_put_contents;
 
+use function implode;
 use Phalcon\CLI\Task;
 
 use function Docs\Functions\app_path;
@@ -33,7 +34,20 @@ class GenerateSitemapTask extends Task
         /** @var SplFileInfo $file */
         foreach ($iterator as $file) {
             if ('md' === $file->getExtension() || 'html' === $file->getExtension()) {
-                $fullFile   = $file->getPath() . '/' . $file->getFilename();
+                $docsPath = $file->getPath();
+                $temp     = str_replace($path, '', $file->getPath());
+                $parts    = explode('/', $temp);
+                if (count($parts) > 1) {
+                    /**
+                     * Check if we have 2 or 3 elements; 3 is the API
+                     */
+                    $first    = $parts[0];
+                    $parts[0] = $parts[1];
+                    $parts[1] = $first;
+                    $docsPath = implode('/', $parts);
+                }
+
+                $fullFile   = $docsPath . '/' . $file->getFilename();
                 $elements[] = str_replace(
                     [
                         app_path('docs/'),
