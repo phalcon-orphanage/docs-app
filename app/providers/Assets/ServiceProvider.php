@@ -47,24 +47,28 @@ class ServiceProvider implements ServiceProviderInterface
         }
 
         $highlightVersion = config('highlight.version', '9.11.0');
+        $supportedJs      = array_map(
+            function ($lang) {
+                return "languages/{$lang}.min.js";
+            },
+            config('highlight.js')->toArray()
+        );
+        $supportedJs      = implode('+', ['highlight.min.js'] + $supportedJs);
+
+        $cssCdn = "https://cdn.jsdelivr.net/g/font-lato@2.0(Lato/Lato-Black.css),"
+                . "bootstrap@3.3.7(css/bootstrap.min.css),"
+                . "highlight.js@{$highlightVersion}(styles/monokai-sublime.min.css)";
+        $jsCdn  = "https://cdn.jsdelivr.net/g/jquery@3.1.1,"
+                . "bootstrap@3.3.7,"
+                . "highlight.js@{$highlightVersion}({$supportedJs})";
 
         $assets
             ->collection('header_css')
-            ->addCss('https://fonts.googleapis.com/css?family=Lato', false)
-            ->addCss('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', false)
-            ->addCss("https://cdn.jsdelivr.net/highlight.js/{$highlightVersion}/styles/darcula.min.css", false)
+            ->addCss($cssCdn, false)
             ->addCss(assets_uri('css/docs.css', $version));
-
-        $supportedJs = array_map(function ($lang) {
-            return "languages/{$lang}.min.js";
-        }, config('highlight.js')->toArray());
-
-        $supportedJs = implode('+', ['highlight.min.js'] + $supportedJs);
 
         $assets
             ->collection('footer_js')
-            ->addJs('https://code.jquery.com/jquery-3.1.1.min.js', false)
-            ->addJs('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', false)
-            ->addJs("https://cdn.jsdelivr.net/g/highlight.js@{$highlightVersion}({$supportedJs})", false);
+            ->addJs($jsCdn, false);
     }
 }
