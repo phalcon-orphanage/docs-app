@@ -46,7 +46,9 @@
             {%- include "include/footer.volt" -%}
         {%- endblock -%}
     </div>
-
+    {%- block edit_button -%}
+        {%- include "include/edit_button.volt" -%}
+    {%- endblock -%}
     {{- assets.outputJs('footer_js') -}}
 
     <script type="application/javascript">hljs.initHighlightingOnLoad();</script>
