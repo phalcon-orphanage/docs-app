@@ -805,6 +805,16 @@ footer .container {
     margin: 0 auto;
 }
 
+#edit-button-href {
+    position: fixed;
+    bottom: 16px;
+    right: 24px;
+    z-index: 100;"
+}
+
+#edit-button-img {
+    height: 48px;
+}
 
 /*CONTAINERS RESPONSE*/
 @media screen and (max-width: 1600px) and (min-width: 320px) {
@@ -877,8 +887,23 @@ footer .container {
         width: 80%;
         margin: 20px auto 0 auto;
     }
+    #edit-button-href {
+    position: fixed;
+    bottom: 8px;
+    right: 8px;
+    z-index: 100;"
+    }
+
+    #edit-button-img {
+        height: 36px;
+    }
 }
 
+@media screen and (max-width: 354px) and (min-width: 320px) {
+    #edit-button-img {
+        height: 24px;
+    }
+}
 
 /*HELPERS*/
 
