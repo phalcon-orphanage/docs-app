@@ -518,7 +518,7 @@ pre tt {
     margin: 0;
 
     border: none;
-    background: url(../images/texture.png) repeat-x;
+    background: url(../images/texture.png);
     -webkit-box-shadow: 0 0 3px 0 rgba(37, 82, 95, 0.9);
     box-shadow: 0 0 3px 0 rgba(37, 82, 95, 0.9);
 }
