@@ -17,6 +17,7 @@
 
 namespace Docs\Controllers;
 
+use function file_exists;
 use Phalcon\Config;
 use Phalcon\Mvc\View\Simple;
 use Phalcon\Cache\BackendInterface;
@@ -24,6 +25,7 @@ use Phalcon\Mvc\Controller as PhController;
 use function Docs\Functions\config;
 use function Docs\Functions\app_path;
 use function Docs\Functions\environment;
+use function var_dump;
 
 /**
  * Docs\Controllers\BaseController
@@ -37,6 +39,42 @@ use function Docs\Functions\environment;
  */
 class BaseController extends PhController
 {
+    protected $seoStrings = [];
+
+    /**
+     * Gets the SEO title
+     *
+     * @param string $language
+     * @param string $version
+     * @param string $page
+     *
+     * @return string
+     */
+    protected function getSeoTitle(string $language, string $version, string $page): string
+    {
+        $title = '';
+        if (true === empty($this->seoStrings)) {
+            $fileName = app_path(
+                sprintf(
+                    'docs/%s/%s/seo.json',
+                    $version,
+                    $language
+                )
+            );
+
+            if (true === file_exists($fileName)) {
+                $this->seoStrings = json_decode(
+                    file_get_contents($fileName),
+                    true
+                );
+            }
+        }
+
+        $title = $this->seoStrings[$page] ?? $title;
+
+        return $title;
+    }
+
     /**
      * @param string $language
      * @param string $version
@@ -52,8 +90,22 @@ class BaseController extends PhController
             return $this->cacheData->get($key);
         }
 
-        $pageName    = app_path(sprintf('docs/%s/%s/%s.md', $version, $language, $fileName));
-        $apiFileName = app_path(sprintf('docs/%s/%s/api/%s.md', $version, $language, $fileName));
+        $pageName    = app_path(
+            sprintf(
+                'docs/%s/%s/%s.md',
+                $version,
+                $language,
+                $fileName
+            )
+        );
+        $apiFileName = app_path(
+            sprintf(
+                'docs/%s/%s/api/%s.md',
+                $version,
+                $language,
+                $fileName
+            )
+        );
 
         if (file_exists($pageName)) {
             $data = file_get_contents($pageName);
