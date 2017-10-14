@@ -67,8 +67,12 @@ class DocsController extends BaseController
         // @todo
         if (strpos($this->request->getURI(), "/api/")) {
             $canonical = base_url("{$language}/{$version}/api/{$page}");
-            $this->tag->setTitle('API Documentation');
         }
+
+        /**
+         * Get the SEO stuff from here
+         */
+        $this->tag->setTitle($this->getSeoTitle($language, $version, $page));
 
         $contents = $this->viewSimple->render(
             'index/index',
