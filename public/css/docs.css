@@ -207,6 +207,17 @@ pre {
     margin: 0;
 }
 
+.article-content>p, 
+.article-content>img,
+.article-content>pre,
+.article-content>ul,
+.article-content>ol,
+.article-content>dl,
+.article-content>blockquote,
+.article-content>table {
+    margin-bottom: 1.5em
+}
+
 hr {
     height: 4px;
     padding: 0;
