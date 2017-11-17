@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   $(".article-content h2").each(function() {
     var h2id = $(this).text().toLowerCase()
-    var elemId = h2id.replace(/[^a-z 0-9]/g, "").replace(/\s/g, "-")
+    var elemId = h2id.replace(/[^\w 0-9]/ug, "").replace(/\s/g, "-")
     $(this).attr('id', elemId)
     var editButton = "<a href=" + link + "/#" + elemId + "><img src='/images/edit_pencil.svg' class='edit-pencil' alt='Edit'/></a>"
     $(this).append(editButton)

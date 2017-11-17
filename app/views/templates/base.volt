@@ -38,7 +38,11 @@
                 <div class="m-t-md m-b-lg" id="articles">
                     <div class="article-content">
                         <div>
-                            <a class="article-content-edit-link pull-right" href="https://github.com/phalcon/docs/blob/{{ version }}/{{ language }}/{{ page == null ? '': page ~".md"}}">Edit this page on GitHub</a>
+                            {% if language == 'en' %}
+                                <a class="article-content-edit-link pull-right" href="https://github.com/phalcon/docs/blob/{{ version }}/{{ language }}/{{ page == null ? '': page ~".md"}}">Edit this page on GitHub</a>
+                            {% else %}
+                                <a class="article-content-edit-link pull-right" href="https://crowdin.com/project/phalcon-documentation/{{language}}">Edit on Crowdin</a>
+                            {% endif %}
                             <br>
                         </div>
                         {%- block content -%}{%- endblock -%}
