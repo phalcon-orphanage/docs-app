@@ -37,6 +37,10 @@
                 </div>
                 <div class="m-t-md m-b-lg" id="articles">
                     <div class="article-content">
+                        <div>
+                            <a class="article-content-edit-link pull-right" href="https://github.com/phalcon/docs/blob/{{ version }}/{{ language }}/{{ page == null ? '': page ~".md"}}">Edit this page on GitHub</a>
+                            <br>
+                        </div>
                         {%- block content -%}{%- endblock -%}
                     </div>
                 </div>
@@ -46,9 +50,6 @@
             {%- include "include/footer.volt" -%}
         {%- endblock -%}
     </div>
-    {%- block edit_button -%}
-        {%- include "include/edit_button.volt" -%}
-    {%- endblock -%}
     {{- assets.outputJs('footer_js') -}}
 
     <script type="application/javascript">hljs.initHighlightingOnLoad();</script>

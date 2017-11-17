@@ -69,6 +69,7 @@ class ServiceProvider implements ServiceProviderInterface
 
         $assets
             ->collection('footer_js')
-            ->addJs($jsCdn, false);
+            ->addJs($jsCdn, false)
+            ->addJs(assets_uri('js/edit_button.js', $version));
     }
 }
