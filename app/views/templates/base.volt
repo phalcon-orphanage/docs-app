@@ -39,7 +39,7 @@
                     <div class="article-content">
                         <div>
                             {% if language == 'en' %}
-                                <a class="article-content-edit-link pull-right" href="https://github.com/phalcon/docs/blob/{{ version }}/{{ language }}/{{ page == null ? '': page ~".md"}}">Edit this page on GitHub</a>
+                                <a class="article-content-edit-link pull-right" href="https://github.com/phalcon/docs/blob/{{ version }}/en/{{ page == null ? '': page ~".md"}}">Edit on GitHub</a>
                             {% else %}
                                 <a class="article-content-edit-link pull-right" href="https://crowdin.com/project/phalcon-documentation/{{language}}">Edit on Crowdin</a>
                             {% endif %}
