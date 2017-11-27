@@ -13,12 +13,7 @@ html {
 
 body {
     position: relative;
-    /* font: 16px/24px Ubuntu, sans-serif; */
-
     min-width: 990px;
-
-    color: #000000;
-    background: #fff;
 }
 
 .article-page-wrap {
@@ -1248,3 +1243,542 @@ footer .container {
 
 
 /*-------------------------/.MARGIN/PADDING-------------------------*/
+
+html {
+    font-size: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    margin: 0;
+    padding: 0
+}
+
+pre,
+code,
+address,
+caption,
+th,
+figcaption {
+    font-size: 1em;
+    font-weight: normal;
+    font-style: normal
+}
+
+fieldset,
+iframe,
+img {
+    border: none
+}
+
+caption,
+th {
+    text-align: left
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+main,
+section,
+summary,
+details,
+hgroup,
+figure,
+figcaption {
+    display: block
+}
+
+audio,
+canvas,
+video,
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+button {
+    font: inherit;
+    vertical-align: middle
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+    font-weight: 300
+}
+
+body pre,
+body code {
+    font-family: Menlo, Consolas, Monaco, "Courier New", monospace, serif
+}
+
+p {
+    margin-bottom: 1.5em;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    font-size: 3em;
+    font-weight: 200;
+    line-height: 1;
+    padding-top: 1em;
+}
+
+h1.active+.main-nav {
+    border-top: 1px solid #333
+}
+
+h2 {
+    margin-bottom: 0.5em;
+    font-size: 2.5em;
+    font-weight: 200;
+    line-height: 1;
+    padding-top: 1em;
+}
+
+h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+    font-weight: 400;
+    line-height: 1
+}
+
+h4 {
+    margin-bottom: 0.5em;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.2
+}
+
+h5 {
+    margin-bottom: 0.5em;
+    font-size: 1.175em;
+    font-weight: 500;
+    line-height: 1.4
+}
+
+h6 {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 1.5
+}
+
+pre {
+    font-size: 14px;
+    line-height: 18px;
+    border-left: 3px #ef5138 solid;
+    margin: 0.5em;
+    margin-left: 10px;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    padding-left: 1em;
+    overflow: scroll
+}
+
+p>code,
+li>code,
+dd>code,
+blockquote>code,
+td>code {
+    color: #000;
+    padding: 3px 8px;
+    font-size: 14px;
+    white-space: nowrap;
+    border: 1px solid #E5E5E5;
+    background-color: #f7f7f7
+}
+
+hr {
+    border: none;
+    border-top: 1px #f3f3f3 solid;
+    margin: 2em 0
+}
+
+hr:last-child {
+    display: none
+}
+
+details {
+    margin-bottom: 2em
+}
+
+details:first-child {
+    margin-top: 1.5em
+}
+
+cite {
+    display: block
+}
+
+cite:before {
+    content: "— "
+}
+
+article:first-of-type {
+    padding-bottom: 36px
+}
+
+article h2 {
+    padding-top: 1.1em
+}
+
+article h3 {
+    padding-top: 1em
+}
+
+article h4 {
+    padding-top: 1em;
+    border-bottom: 1px #f3f3f3 solid;
+    padding-bottom: 0.5em
+}
+
+article h5 {
+    margin-top: 1em
+}
+
+article header {
+    width: 100%;
+    display: inline-block;
+    padding-bottom: 3em
+}
+
+article header h1 {
+    padding-bottom: 0.125em
+}
+
+article header .byline {
+    float: left;
+    font-size: 14px;
+    margin-left: 3em
+}
+
+article header .byline img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px #ccc solid;
+    position: absolute;
+    margin-right: 0.25em;
+    margin-top: -6px
+}
+
+article header .byline span {
+    padding-left: 42px
+}
+
+article header time {
+    float: left;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    color: #aaa
+}
+
+article header .tags {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 0
+}
+
+article:not(:first-of-type) {
+    border-top: 1px solid #e6e6e6;
+    padding: 36px 0
+}
+
+article blockquote {
+    border-left: 3px #c3c3c3 solid;
+    margin: 0.5em;
+    margin-left: 10px;
+    margin-bottom: 1.5em;
+    padding: 0.5em;
+    padding-left: 1em;
+    color: #333
+}
+
+article ul,
+article ol {
+    padding-left: 40px;
+    margin: 1em 0
+}
+
+article ul ul,
+article ul ol,
+article ol ul,
+article ol ol {
+    margin: 0
+}
+
+article ul {
+    list-style: disc
+}
+
+article ul ul {
+    list-style: circle
+}
+
+article ul ul ul {
+    list-style: square
+}
+
+article ol {
+    list-style: decimal
+}
+
+article dl {
+    margin: 2em 0 1em 0
+}
+
+article dl:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+article dl dt {
+    float: left;
+    clear: right;
+    margin-right: 1em;
+    display: block;
+    width: 28%;
+    text-align: right
+}
+
+article dl dd {
+    float: right;
+    width: 65%;
+    margin-bottom: 1em;
+    overflow: scroll
+}
+
+article dl dd {
+    padding-bottom: 1em;
+    border-bottom: 1px #f3f3f3 solid
+}
+
+article table {
+    width: auto;
+    min-width: 68%;
+    margin: 2em auto 3em auto;
+    border-collapse: separate;
+    border: 1px #e3e3e3 solid
+}
+
+article table th {
+    background: #fafafa;
+    font-weight: 700;
+    text-align: center
+}
+
+article table th,
+article table td {
+    width: 50%;
+    padding: 0.5em 1.5em;
+    border-bottom: 1px #f3f3f3 solid
+}
+
+article table th:not(:first-child),
+article table td:not(:first-child) {
+    border-left: 1px #f3f3f3 solid
+}
+
+article table tr:last-child td {
+    border-bottom: none
+}
+
+article details {
+    margin-top: 0;
+    cursor: pointer
+}
+
+article details summary {
+    padding-bottom: 0.5em;
+    outline: none;
+    margin-top: 0
+}
+
+article details summary:after {
+    content: "Expand";
+    text-transform: lowercase;
+    font-variant: small-caps;
+    border-bottom: 1px #ccc dashed
+}
+
+article details[open] summary:after {
+    content: "Collapse"
+}
+
+article details[open] *:not(summary) {
+    cursor: auto
+}
+
+article details.download {
+    margin-top: 0;
+    cursor: pointer
+}
+
+article details.download summary {
+    padding-bottom: 0.5em;
+    outline: none;
+    margin-top: 0
+}
+
+article details.download summary:after {
+    content: none;
+    text-transform: lowercase;
+    font-variant: small-caps;
+    border-bottom: 1px #ccc dashed
+}
+
+article details.download[open] summary:after {
+    content: none
+}
+
+article details.download[open] *:not(summary) {
+    cursor: auto
+}
+
+article>details {
+    margin-left: 40px
+}
+
+article .good pre,
+article pre.good {
+    background: #E6FFE5;
+    border-color: #C0FFBC
+}
+
+article .good pre:before,
+article pre.good:before {
+    content: "✅";
+    float: right
+}
+
+article .bad pre,
+article pre.bad {
+    background: #F9E2E4;
+    border-color: #F6B7BE
+}
+
+article .bad pre:before,
+article pre.bad:before {
+    content: "⛔️";
+    float: right
+}
+
+article footer {
+    margin: 4em 0 0 0;
+    padding: 1.5em 0 1em 0;
+    border-top: 1px #F3F3F3 solid
+}
+
+article footer:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+article footer nav [rel="prev"] {
+    width: 45%;
+    float: left;
+    text-align: left
+}
+
+article footer nav [rel="prev"]:before {
+    content: "← "
+}
+
+article footer nav [rel="next"] {
+    width: 45%;
+    float: right;
+    text-align: right
+}
+
+article footer nav [rel="next"]:after {
+    content: " →"
+}
+
+.title a:link,
+.title a:visited {
+    color: #333
+}
+
+.alert,
+.success,
+.info,
+.warning,
+.danger {
+    border-width: 1px;
+    border-style: solid;
+    padding: 0.5em;
+    margin: 0.5em 0 1.5em 0
+}
+
+.alert p:first-child,
+.success p:first-child,
+.info p:first-child,
+.warning p:first-child,
+.danger p:first-child {
+    margin-top: 0
+}
+
+.alert p:last-child,
+.success p:last-child,
+.info p:last-child,
+.warning p:last-child,
+.danger p:last-child {
+    margin-bottom: 0
+}
+
+.alert code,
+.success code,
+.info code,
+.warning code,
+.danger code {
+    border: none;
+    background: transparent;
+    padding: 0
+}
+
+code {
+    white-space: pre-line
+}
+
+pre code {
+    white-space: inherit
+}
+
+pre code .graphic {
+    font-size: 19px;
+    line-height: 0
+}
+
+pre code .commentary,
+pre code .graphic {
+    font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif
+}
