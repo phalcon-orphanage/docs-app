@@ -805,6 +805,23 @@ footer .container {
     margin: 0 auto;
 }
 
+.edit-pencil {
+    padding-left: .1em;
+    max-height: .7em;
+}
+
+.edit-pencil:hover{
+    transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg); /* IE 9 */
+    transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+}
 
 /*CONTAINERS RESPONSE*/
 @media screen and (max-width: 1600px) and (min-width: 320px) {
@@ -814,7 +831,6 @@ footer .container {
         background: white;
         z-index: 1000;
     }
-
 }
 
 @media screen and (max-width: 1440px) and (min-width: 320px) {
@@ -879,6 +895,11 @@ footer .container {
     }
 }
 
+@media screen and (max-width: 354px) and (min-width: 320px) {
+    #edit-button-img {
+        height: 24px;
+    }
+}
 
 /*HELPERS*/
 

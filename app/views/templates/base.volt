@@ -37,6 +37,14 @@
                 </div>
                 <div class="m-t-md m-b-lg" id="articles">
                     <div class="article-content">
+                        <div>
+                            {% if language == 'en' %}
+                                <a class="article-content-edit-link pull-right" href="https://github.com/phalcon/docs/blob/{{ version }}/en/{{ page == null ? '': page ~".md"}}">Edit on GitHub</a>
+                            {% else %}
+                                <a class="article-content-edit-link pull-right" href="https://crowdin.com/project/phalcon-documentation/{{language}}">Edit on Crowdin</a>
+                            {% endif %}
+                            <br>
+                        </div>
                         {%- block content -%}{%- endblock -%}
                     </div>
                 </div>
@@ -46,7 +54,6 @@
             {%- include "include/footer.volt" -%}
         {%- endblock -%}
     </div>
-
     {{- assets.outputJs('footer_js') -}}
 
     <script type="application/javascript">hljs.initHighlightingOnLoad();</script>
