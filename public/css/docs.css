@@ -168,6 +168,7 @@ h6 code {
 h1 {
     color: black;
 
+    display: inline-block;
     font-size: 28px;
 }
 
@@ -175,6 +176,7 @@ h2 {
     color: black;
     border-bottom: 1px solid #cccccc;
 
+    display: inline-block;
     font-size: 24px;
 }
 
@@ -806,8 +808,16 @@ footer .container {
 }
 
 .edit-pencil {
-    padding-left: .1em;
-    max-height: .7em;
+    padding-left: 1em;
+    padding-bottom: 10px;
+}
+
+.edit-pencil-h1 {
+    max-height: 2.5em;
+}
+
+.edit-pencil-h2 {
+    max-height: 2.2em;
 }
 
 .edit-pencil:hover{
@@ -895,11 +905,7 @@ footer .container {
     }
 }
 
-@media screen and (max-width: 354px) and (min-width: 320px) {
-    #edit-button-img {
-        height: 24px;
-    }
-}
+@media screen and (max-width: 354px) and (min-width: 320px) {}
 
 /*HELPERS*/
 
