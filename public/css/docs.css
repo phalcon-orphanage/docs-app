@@ -3,8 +3,8 @@ html {
     height: 100%;
     padding: 0;
 
-    color: #333;
-    background-color: white;
+    color: #222;
+    background-color: #FAFBFB;
 
     font-family: "Lato", sans-serif;
     font-size: 14px;
@@ -18,7 +18,7 @@ body {
     min-width: 990px;
 
     color: #000000;
-    background: #fff;
+    /*background: #fff;*/
 }
 
 .article-page-wrap {
@@ -665,6 +665,7 @@ td {
 /** Sidebar */
 
 .sidebar {
+    padding-top: 1em;
     position: sticky;
     z-index: 1;
     float: left;
@@ -678,6 +679,8 @@ td {
 
     border-right: 1px solid #f0f2f1;
     background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px #bbb;
 
     font-size: 13px;
 }
@@ -753,10 +756,15 @@ td {
 
     width: 200px;
     padding-top: 20px;
+    padding-bottom: 16px;
     padding-left: 10px;
 
     border-left: 1px solid #0a6278;
 
+    margin-right: 4px;
+    border-left: 1px solid #f0f2f1;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px #bbb;
     font-size: 13px;
 }
 
@@ -808,8 +816,9 @@ footer .container {
 }
 
 .edit-pencil {
-    padding-left: 1em;
-    padding-bottom: 10px;
+    padding-left: .2em;
+    padding-bottom: .1em;
+    max-height: .7em;
 }
 
 .edit-pencil-h1 {
