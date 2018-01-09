@@ -30,12 +30,19 @@ run.config:
       - dom
       - json
       - mbstring
-      - opcache
       - phalcon
       - simplexml
       - tokenizer
-      - xdebug
       - xml
       - xmlwriter
+    zend_extensions:
+      - opcache
+    dev_zend_extensions:
+      add:
+        - xdebug
+      rm:
+        - opcache
   extra_steps:
     - echo "alias phalcon=\'phalcon.php\'" >> /data/var/home/gonano/.bashrc
+    - cp /app/storage/setup/xdebug.ini /data/etc/php.dev.d/xdebug.ini
+
