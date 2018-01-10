@@ -55,6 +55,21 @@ class ServiceProvider implements ServiceProviderInterface
         );
         $supportedJs      = implode('+', ['highlight.min.js'] + $supportedJs);
 
+        /*$jsCdn  = "https://cdn.jsdelivr.net/g/jquery@3.1.1,"
+                . "bootstrap@3.3.7,"
+                . "highlight.js@{$highlightVersion}({$supportedJs})";
+
+        $assets
+            ->collection('header_css')
+            ->addCss(assets_uri('css/docs.css', $version));
+
+        $assets
+            ->collection('footer_js')
+            ->addJs($jsCdn, false)
+            ->addJs(assets_uri('js/edit_button.js', $version));
+        */
+    
+
         $cssCdn = "https://cdn.jsdelivr.net/g/font-lato@2.0(Lato/Lato-Black.css),"
                 . "bootstrap@3.3.7(css/bootstrap.min.css),"
                 . "highlight.js@{$highlightVersion}(styles/monokai-sublime.min.css)";
@@ -64,12 +79,14 @@ class ServiceProvider implements ServiceProviderInterface
 
         $assets
             ->collection('header_css')
-            ->addCss($cssCdn, false)
-            ->addCss(assets_uri('css/docs.css', $version));
+            //->addCss($cssCdn, false)
+            ->addCss(assets_uri('js/highlight/styles/hybrid.css', $version))
+            ->addCss(assets_uri('css/style.css', $version));
 
         $assets
             ->collection('footer_js')
-            ->addJs($jsCdn, false)
-            ->addJs(assets_uri('js/edit_button.js', $version));
+            //->addJs($jsCdn, false);
+            ->addJs(assets_uri('js/main.min.js', $version))
+            ->addJs(assets_uri('js/highlight/highlight.pack.js', $version));
     }
 }

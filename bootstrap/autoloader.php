@@ -23,6 +23,4 @@ try {
     (new Dotenv\Dotenv(dirname(__DIR__)))->load();
 } catch (Dotenv\Exception\InvalidPathException $e) {
     // Skip
-} catch (\Docs\Exception\HttpException $e) {
-    // Skip
 }
