@@ -1,24 +1,24 @@
 <svg width="45" height="47" viewBox="0 0 45 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <title>edit_pencil</title>
-<g id="Canvas" transform="translate(-206 282)">
+<g id="Canvas" transform="translate(-207 282)">
 <g id="edit_pencil">
 <g id="Polygon">
-<use xlink:href="#path0_fill" transform="matrix(0.962954 -0.269667 0.31362 0.949549 200.984 -247.671)"/>
+<use xlink:href="#path0_fill" transform="matrix(0.962954 -0.269667 0.31362 0.949549 201.984 -247.671)" fill="#445C6C"/>
 </g>
 <g id="Polygon">
-<use xlink:href="#path1_fill" transform="matrix(0.969418 -0.245417 0.289692 0.95712 204.925 -247.348)" fill="#FFFFFF"/>
+<use xlink:href="#path1_fill" transform="matrix(0.969418 -0.245417 0.289692 0.95712 205.925 -247.348)" fill="#FFFFFF"/>
 </g>
 <g id="Rectangle">
-<use xlink:href="#path2_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 208.519 -250.079)"/>
+<use xlink:href="#path2_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 209.519 -250.079)" fill="#445C6C"/>
 </g>
 <g id="Rectangle 4">
-<use xlink:href="#path3_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 234.805 -276.364)"/>
+<use xlink:href="#path3_fill" transform="matrix(0.707107 -0.707107 0.707107 0.707107 235.805 -276.364)" fill="#445C6C"/>a
 </g>
 <g id="Line">
-<use xlink:href="#path4_stroke" transform="matrix(0.707107 -0.707107 0.707107 0.707107 211 -246)" fill="#FFFFFF"/>
+<use xlink:href="#path4_stroke" transform="matrix(0.707107 -0.707107 0.707107 0.707107 212 -246)" fill="#FFFFFF"/>
 </g>
 <g id="Line">
-<use xlink:href="#path4_stroke" transform="matrix(0.707107 -0.707107 0.707107 0.707107 216 -241)" fill="#FFFFFF"/>
+<use xlink:href="#path4_stroke" transform="matrix(0.707107 -0.707107 0.707107 0.707107 217 -241)" fill="#FFFFFF"/>
 </g>
 </g>
 </g>
