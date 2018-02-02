@@ -55,54 +55,54 @@ class RegenerateApiTask extends Task
 
         // Exception class docs
         $this->docs['Exception'] = [
-    '__construct'      => '/**
+        '__construct'      => '/**
  * Exception constructor
  *
  * @param string \$message
  * @param int \$code
  * @param Exception \$previous
 */',
-    'getMessage'       => '/**
+        'getMessage'       => '/**
  * Gets the Exception message
  *
  * @return string
 */',
-    'getCode'          => '/**
+        'getCode'          => '/**
  * Gets the Exception code
  *
  * @return int
 */',
-    'getLine'          => '/**
+        'getLine'          => '/**
  * Gets the line in which the exception occurred
  *
  * @return int
 */',
-    'getFile'          => '/**
+        'getFile'          => '/**
  * Gets the file in which the exception occurred
  *
  * @return string
 */',
-    'getTrace'         => '/**
+        'getTrace'         => '/**
  * Gets the stack trace
  *
  * @return array
 */',
-    'getTraceAsString' => '/**
+        'getTraceAsString' => '/**
  * Gets the stack trace as a string
  *
  * @return Exception
 */',
-    '__clone'          => '/**
+        '__clone'          => '/**
  * Clone the exception
  *
  * @return Exception
 */',
-    'getPrevious'      => '/**
+        'getPrevious'      => '/**
  * Returns previous Exception
  *
  * @return Exception
 */',
-    '__toString'       => '/**
+        '__toString'       => '/**
  * String representation of the exception
  *
  * @return string
@@ -230,7 +230,7 @@ class RegenerateApiTask extends Task
                     }
                     $methodsString .= implode(
                         ' ',
-                            \Reflection::getModifierNames($method->getModifiers())
+                        \Reflection::getModifierNames($method->getModifiers())
                     ) . ' ';
                     if (isset($ret['return'])) {
                         $returnTypes = explode('|', $ret['return']);
@@ -423,7 +423,6 @@ class RegenerateApiTask extends Task
 
         ksort($this->docs);
         ksort($this->classDocs);
-
     }
 
     /**

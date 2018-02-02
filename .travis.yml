@@ -23,7 +23,7 @@ cache:
 
 env:
     global:
-        - PHALCON_VERSION="v3.2.0"
+        - PHALCON_VERSION="v3.3.0"
 
 before_install:
     - export PHP_VERSION=$(php-config --version)
