@@ -13,7 +13,8 @@ tab_width                = 4
 trim_trailing_whitespace = true
 insert_final_newline     = true
 
-[*.php]
+[*.{php,volt}]
+indent_size              = 4
 indent_style             = space
 trim_trailing_whitespace = true
 insert_final_newline     = true
@@ -25,6 +26,7 @@ trim_trailing_whitespace = true
 insert_final_newline     = true
 
 [*.md]
+indent_size              = 4
 indent_style             = space
 trim_trailing_whitespace = false
 insert_final_newline     = true

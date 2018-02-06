@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="support-wrapper">
 		<div class="divider-icon">
-			<div class="divider-icon-wraper">
+			<div class="divider-icon-wrapper">
 				<img src="/images/icons/divider-topic-icon.png" alt="">
 			</div>
 		</div>

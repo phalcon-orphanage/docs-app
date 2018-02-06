@@ -15,17 +15,16 @@
   +------------------------------------------------------------------------+
 */
 
-  namespace Docs\Controllers;
+namespace Docs\Controllers;
 
-  use function file_exists;
-  use Phalcon\Config;
-  use Phalcon\Mvc\View\Simple;
-  use Phalcon\Cache\BackendInterface;
-  use Phalcon\Mvc\Controller as PhController;
-  use function Docs\Functions\config;
-  use function Docs\Functions\app_path;
-  use function Docs\Functions\environment;
-  use function var_dump;
+use function file_exists;
+use Phalcon\Config;
+use Phalcon\Mvc\View\Simple;
+use Phalcon\Cache\BackendInterface;
+use Phalcon\Mvc\Controller as PhController;
+use function Docs\Functions\config;
+use function Docs\Functions\app_path;
+use function Docs\Functions\environment;
 
 /**
  * Docs\Controllers\BaseController
@@ -75,17 +74,14 @@ class BaseController extends PhController
         return $title;
     }
 
-    /**
-     *
-     */
-    public function getSidebar($language, $version):array
+    public function getSidebar($language, $version) : array
     {
-        $pageName    = app_path(
+        $pageName = app_path(
             sprintf(
                 'docs/%s/%s/%s.md',
                 $version,
                 $language,
-                 'sidebar'
+                'sidebar'
             )
         );
         $apiFileName = app_path(
@@ -103,7 +99,7 @@ class BaseController extends PhController
             $data = file_get_contents($apiFileName);
         } else {
             // The article does not exist
-            return '';
+            return [];
         }
 
         $namespaces = $this->getNamespaces();
@@ -132,17 +128,14 @@ class BaseController extends PhController
 
         $data              = explode("\n", $data);
         $data              = array_diff($data, ['']);
-        $data              = array_diff($data, ['    ']);       
+        $data              = array_diff($data, ['    ']);
         $parseMarkDown     = [];
         $parseMarkDownItem = [];
         $menuItemKey       = 0;
-        
-        foreach($data as $key => $dataItem) 
-        {
-            if(preg_match('/(- \w+.*)/iu',$dataItem,$matches)) 
-            {
+
+        foreach ($data as $key => $dataItem) {
+            if (preg_match('/(- \w+.*)/iu', $dataItem, $matches)) {
                 unset($parseMarkDownItem);
-                // создаю элемент меню
                 $parseMarkDown[$menuItemKey] = [
                     'name'     => str_replace(["- "], "", $matches[0]),
                     'subItems' => []
@@ -151,12 +144,9 @@ class BaseController extends PhController
                 $menuItemKey++;
 
                 continue;
-            } 
-            else
-            {
-                preg_match('/(- \[\w+.*\])/iu', $dataItem,$subName);
-                preg_match('/](\(.*\w+.*)/iu', $dataItem,$subLink);
-                
+            } else {
+                preg_match('/(- \[\w+.*\])/iu', $dataItem, $subName);
+                preg_match('/](\(.*\w+.*)/iu', $dataItem, $subLink);
 
                 $parseMarkDownItem[$key] = [
                     'subName' => str_replace(["- [","]"], "", $subName[0]),

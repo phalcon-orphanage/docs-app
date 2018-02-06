@@ -1,3 +1,3 @@
 {% if (not(article_menu is empty)) %}
-	{{ article_menu }}
+    {{ article_menu }}
 {% endif %}

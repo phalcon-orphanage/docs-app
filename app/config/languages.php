@@ -27,6 +27,7 @@ return [
     'el' => 'Ελληνικά',
     'hu' => 'Magyar',
     'id' => 'Indonesian',
+    'ja' => '日本語',
     'pl' => 'Polski',
     'pt' => 'Português',
     'ru' => 'Русский',
@@ -35,5 +36,4 @@ return [
     'uk' => 'Українська',
     'vi' => 'Tiếng Việt',
     'zh' => '中文',
-    'ja' => '日本語',
 ];

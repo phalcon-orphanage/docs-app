@@ -2165,7 +2165,7 @@ footer {
   color: #43484D;
   font-size: 18px; }
 
-.advantages-item__discription {
+.advantages-item__description {
   line-height: 25px; }
 
 @media (max-width: 1200px) {
@@ -2252,7 +2252,7 @@ footer {
 .support-forums {
   position: relative; }
 
-.support-forum__contant {
+.support-forum__contact {
   position: absolute;
   padding: 32px 23px;
   right: 32px;
@@ -2260,22 +2260,22 @@ footer {
   padding-bottom: 42px;
   border: 2px solid #f7f7f7;
   width: 358px; }
-  .support-forum__contant .support-picture-wrapper {
+  .support-forum__contact .support-picture-wrapper {
     float: right;
     padding-right: 7px;
     padding-top: 11px;
     width: 68px;
     margin-right: 4px;
     margin-top: 2px; }
-    .support-forum__contant .support-picture-wrapper img {
+    .support-forum__contact .support-picture-wrapper img {
       width: 100%;
       height: 100%; }
-  .support-forum__contant .support-forum__header {
+  .support-forum__contact .support-forum__header {
     font-family: "Roboto-Regular", sans-serif;
     font-size: 18px;
     padding-right: 137px;
     margin-bottom: 52px; }
-  .support-forum__contant .support-forum__description {
+  .support-forum__contact .support-forum__description {
     line-height: 24px;
     margin-bottom: 35px; }
 
@@ -2287,11 +2287,11 @@ footer {
   padding-top: 79px; }
 
 @media (max-width: 1439px) {
-  .support-forum__contant {
+  .support-forum__contact {
     right: -44px; } }
 
 @media (max-width: 1023px) {
-  .support-forum__contant {
+  .support-forum__contact {
     right: -44px;
     position: static;
     margin: auto; } }
@@ -2301,14 +2301,14 @@ footer {
     text-align: center; }
   .topic-item {
     margin: 0 auto;
-    display: inlin;
+    display: inline;
     min-width: 300px;
     text-align: left; }
   .topic h2 {
     font-size: 34px; } }
 
 @media (max-width: 354px) {
-  .support-forum__contant {
+  .support-forum__contact {
     width: 100%; } }
 
 .support-section {
@@ -2327,11 +2327,11 @@ footer {
   background: #7dc855;
   padding-top: 10px;
   text-align: center; }
-  .divider-icon .divider-icon-wraper {
+  .divider-icon .divider-icon-wrapper {
     width: 25px;
     height: 25px;
     margin: auto; }
-    .divider-icon .divider-icon-wraper img {
+    .divider-icon .divider-icon-wrapper img {
       width: 100%;
       height: 100%; }
 
@@ -2513,7 +2513,7 @@ footer {
     letter-spacing: -1px;
     margin-bottom: 0;
     font-weight: normal; }
-  .documentation-section .support-forum__contant {
+  .documentation-section .support-forum__contact {
     position: static;
     margin-top: -4px;
     margin-bottom: 17px; }
@@ -2703,14 +2703,14 @@ footer {
   padding: 0;
   padding-left: 2px; }
 
-.support-collumn-margin {
+.support-column-margin {
   margin-left: -9px; }
 
 .topic-categories {
   padding-top: 28px;
   width: 358px;
   margin-bottom: 17px; }
-  .topic-categories .categoty-name {
+  .topic-categories .category-name {
     display: block;
     padding-left: 63px;
     font-family: "Roboto-Regular", sans-serif;
@@ -2719,7 +2719,7 @@ footer {
     position: relative;
     color: #5e6977;
     cursor: pointer; }
-    .topic-categories .categoty-name:before {
+    .topic-categories .category-name:before {
       background: no-repeat url(../images/icons/topic-category-small-icon.svg);
       position: absolute;
       content: "";
@@ -2728,7 +2728,7 @@ footer {
       background-size: contain;
       left: 20px;
       top: -2px; }
-    .topic-categories .categoty-name:hover span {
+    .topic-categories .category-name:hover span {
       border-bottom: 1px solid #B5C0D1; }
   .topic-categories ul {
     padding-left: 64px;
@@ -2892,7 +2892,7 @@ footer {
       font-weight: 600; }
 
 @media (max-width: 1023px) {
-  .documentation-section .support-forum__contant {
+  .documentation-section .support-forum__contact {
     width: 100%; }
   .documentation-section .article-menu {
     width: 100%; }

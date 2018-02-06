@@ -15,7 +15,7 @@
 				</script>
 				<gcse:searchresults-only></gcse:searchresults-only>
 			</div>
-			<div class="col-md-4 col-sm-12 support-collumn-margin">
+			<div class="col-md-4 col-sm-12 support-column-margin">
 				{% include 'inc/topics-sidebar.volt' %}
 				{% include 'inc/support-forum-form.volt' %}
 			</div>

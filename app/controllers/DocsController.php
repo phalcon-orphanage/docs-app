@@ -35,16 +35,14 @@ class DocsController extends BaseController
     /**
      * @param null|string $language
      * @param null|string $version
-     * @param string      $page
      *
      * @return ResponseInterface
-     * @throws HttpException
      */
     public function searchAction(string $language = null, string $version = null): ResponseInterface
     {
         $language = 'en';
-        $version = $this->getVersion();
-        $page       = 'introduction';
+        $version  = $this->getVersion();
+        $page     = 'introduction';
 
         $renderFile = 'index/search';
         $contents = $this->viewSimple->render(
@@ -88,7 +86,7 @@ class DocsController extends BaseController
             $renderFile = 'index/index';
             $page       = 'introduction';
         }
-       
+
         if (!$article = $this->getDocument($language, $version, $page)) {
             throw new HttpException('Not Found', 404);
         }
@@ -114,7 +112,7 @@ class DocsController extends BaseController
                 'language'     => $language,
                 'version'      => $version,
                 'topicsArray'  => $this->getSidebar($language, $version),
-                //'sidebar'    => $this->getDocument($language, $version, 'sidebar'),
+                // TODO(o2): 'sidebar' => $this->getDocument($language, $version, 'sidebar'),
                 'article'      => $article,
                 'article_menu' => $article_menu ? $article_menu[0] : [],
                 'menu'         => $this->getDocument($language, $version, $page . '-menu'),
