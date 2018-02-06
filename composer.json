@@ -51,6 +51,8 @@
         "erusev/parsedown-extra": "^0.7.1"
     },
     "require-dev": {
+        "doctrine/instantiator": "1.0.5",
+        "phpdocumentor/reflection-docblock": "^2.0",
         "phpunit/phpunit": "^6.2",
         "codeception/codeception": "^2.3",
         "codeception/verify": "~0.3",
