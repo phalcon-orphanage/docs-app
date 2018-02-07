@@ -1,6 +1,4 @@
 {{ get_doctype() }}
-<!--[if IE 8]>
-<html lang="{{ language }}" id="section-reco_main" class="nojs ie6 ieb7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"> <![endif]-->
 <!--[if IE 7]>
 <html lang="{{ language }}" id="section-reco_main" class="nojs iea6 ie7 ieb8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"> <![endif]-->
 <!--[if IE 8]>
@@ -20,14 +18,9 @@
     <script type="text/javascript" src="/js/main.min.js"></script>
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
-    <![endif]-->
-    <!--[if lt IE 9]>
     <script type="text/javascript" src="/js/libs/flexibility.min.js"></script>
-    <![endif]-->
-    <!--[if lt IE 9]>
     <script type="text/javascript" src="/js/libs/flexie.js"></script>
     <![endif]-->
-    
     {%- set name = config.get('app').get('name', 'Documentation') -%}
     {%- set description = config.get('app').get('description', 'Phalcon Framework') -%}
     {%- set description_long = config.get('app').get('descriptionLong', 'Official Phalcon Documentation') -%}
