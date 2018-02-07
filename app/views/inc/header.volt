@@ -5,12 +5,17 @@
                 {% include 'inc/head-menu.volt' %}
             </div>
             <div class="header-description" itemscope itemtype="http://schema.org/Thing">
-                <h1 class="h1_style" itemprop="description"><span itemprop="name">Phalcon</span> is feature rich, loosely coupled, optimized for high performance full stack framework for PHP.</h1>
+                <h1 class="h1_style" itemprop="description">
+                    <span itemprop="name">Phalcon</span>
+                    is feature rich, loosely coupled, optimized for high
+                    performance full stack framework for PHP.
+                </h1>
                 <p>
-                    Its innovative architecture makes Phalcon the fastest PHP framework ever built!
+                    Its innovative architecture makes Phalcon
+                    the fastest PHP framework ever built!
                 </p>
                 <div class="header-search">
-                    {% include 'gse-inner.volt' %}
+                    {% include 'inc/gse-inner.volt' %}
                 </div>
                 <a href="https://phalcon.link/github" class="link__github" target="_blank">
                     GitHub Project

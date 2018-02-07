@@ -6,7 +6,7 @@
             </div>
             <div class="header-description clearfix">
                 <div class="header-search">
-                    {% include 'gse-inner.volt' %}
+                    {% include 'inc/gse-inner.volt' %}
                 </div>
                 <a href="https://phalcon.link/github" class="link__github" target="_blank">
                     GitHub Project
