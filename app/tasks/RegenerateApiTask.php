@@ -4,14 +4,10 @@ namespace Docs\Cli\Tasks;
 
 use Phalcon\CLI\Task;
 
-use function Docs\Functions\app_path;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use FilesystemIterator;
-use Exception;
-
 use Dariuszp\CliProgressBar as CliProgressBar;
-
 use Docs\ClassLink;
 
 /**
@@ -55,54 +51,54 @@ class RegenerateApiTask extends Task
 
         // Exception class docs
         $this->docs['Exception'] = [
-        '__construct'      => '/**
+            '__construct'      => '/**
  * Exception constructor
  *
  * @param string \$message
  * @param int \$code
  * @param Exception \$previous
 */',
-        'getMessage'       => '/**
+            'getMessage'       => '/**
  * Gets the Exception message
  *
  * @return string
 */',
-        'getCode'          => '/**
+            'getCode'          => '/**
  * Gets the Exception code
  *
  * @return int
 */',
-        'getLine'          => '/**
+            'getLine'          => '/**
  * Gets the line in which the exception occurred
  *
  * @return int
 */',
-        'getFile'          => '/**
+            'getFile'          => '/**
  * Gets the file in which the exception occurred
  *
  * @return string
 */',
-        'getTrace'         => '/**
+            'getTrace'         => '/**
  * Gets the stack trace
  *
  * @return array
 */',
-        'getTraceAsString' => '/**
+            'getTraceAsString' => '/**
  * Gets the stack trace as a string
  *
  * @return Exception
 */',
-        '__clone'          => '/**
+            '__clone'          => '/**
  * Clone the exception
  *
  * @return Exception
 */',
-        'getPrevious'      => '/**
+            'getPrevious'      => '/**
  * Returns previous Exception
  *
  * @return Exception
 */',
-        '__toString'       => '/**
+            '__toString'       => '/**
  * String representation of the exception
  *
  * @return string
@@ -124,8 +120,13 @@ class RegenerateApiTask extends Task
         foreach ($classes as $className) {
             $realClassName   = $className;
             $simpleClassName = str_replace('\\', '_', $className);
-            $reflector       = new \ReflectionClass($className);
             $typeClass       = 'public';
+
+            try {
+                $reflector = new \ReflectionClass($className);
+            } catch (\ReflectionException $e) {
+                // TODO
+            }
 
             if ($reflector->isAbstract()) {
                 $typeClass = 'abstract';
@@ -178,11 +179,11 @@ class RegenerateApiTask extends Task
                     $implements[] = $classLink->get();
                 }
                 $implementsString .= PHP_EOL . '*implements* '
-                                   . join(', ', $implements) . PHP_EOL;
+                    . join(', ', $implements) . PHP_EOL;
             }
 
             $githubLink       = 'https://github.com/phalcon/cphalcon/blob/master/'
-                              . str_replace('\\', '/', strtolower($className)) . '.zep';
+                . str_replace('\\', '/', strtolower($className)) . '.zep';
 
             $classDescription = '';
             if (isset($this->classDocs[$realClassName])) {
@@ -201,8 +202,8 @@ class RegenerateApiTask extends Task
                 foreach ($constants as $name => $constant) {
                     $type = gettype($constant);
                     $constantsString .= '*' . $type
-                                      . '* **' . $name . '**'
-                                      . PHP_EOL . PHP_EOL;
+                        . '* **' . $name . '**'
+                        . PHP_EOL . PHP_EOL;
                 }
             }
 

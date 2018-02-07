@@ -1,7 +1,7 @@
 run.config:
-  engine: php  
-  engine.config:    
-    runtime: php-7.1    
+  engine: php
+  engine.config:
+    runtime: php-7.1
     document_root: public
     allow_url_fopen: 'Off'
     disable_functions:
@@ -45,4 +45,3 @@ run.config:
   extra_steps:
     - echo "alias phalcon=\'phalcon.php\'" >> /data/var/home/gonano/.bashrc
     - cp /app/storage/setup/xdebug.ini /data/etc/php.dev.d/xdebug.ini
-

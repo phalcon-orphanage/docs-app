@@ -25,7 +25,6 @@ use Phalcon\Mvc\Controller as PhController;
 use function Docs\Functions\config;
 use function Docs\Functions\app_path;
 use function Docs\Functions\environment;
-use function var_dump;
 
 /**
  * Docs\Controllers\BaseController
@@ -73,6 +72,90 @@ class BaseController extends PhController
         $title = $this->seoStrings[$page] ?? $title;
 
         return $title;
+    }
+
+    public function getSidebar($language, $version) : array
+    {
+        $pageName = app_path(
+            sprintf(
+                'docs/%s/%s/%s.md',
+                $version,
+                $language,
+                'sidebar'
+            )
+        );
+        $apiFileName = app_path(
+            sprintf(
+                'docs/%s/%s/api/%s.md',
+                $version,
+                $language,
+                'sidebar'
+            )
+        );
+
+        if (file_exists($pageName)) {
+            $data = file_get_contents($pageName);
+        } elseif (file_exists($apiFileName)) {
+            $data = file_get_contents($apiFileName);
+        } else {
+            // The article does not exist
+            return [];
+        }
+
+        $namespaces = $this->getNamespaces();
+        $search     = array_keys($namespaces);
+        $replace    = array_values($namespaces);
+
+        /**
+         * API links
+         */
+        $data = str_replace($search, $replace, $data);
+
+        /**
+         * Language and version
+         */
+        $data = str_replace(
+            [
+                '[[language]]',
+                '[[version]]'
+            ],
+            [
+                $language,
+                $this->getVersion()
+            ],
+            $data
+        );
+
+        $data              = explode("\n", $data);
+        $data              = array_diff($data, ['']);
+        $data              = array_diff($data, ['    ']);
+        $parseMarkDown     = [];
+        $parseMarkDownItem = [];
+        $menuItemKey       = 0;
+
+        foreach ($data as $key => $dataItem) {
+            if (preg_match('/(- \w+.*)/iu', $dataItem, $matches)) {
+                unset($parseMarkDownItem);
+                $parseMarkDown[$menuItemKey] = [
+                    'name'     => str_replace(["- "], "", $matches[0]),
+                    'subItems' => []
+                ];
+                $parseMarkDownItem = &$parseMarkDown[$menuItemKey]['subItems'];
+                $menuItemKey++;
+
+                continue;
+            } else {
+                preg_match('/(- \[\w+.*\])/iu', $dataItem, $subName);
+                preg_match('/](\(.*\w+.*)/iu', $dataItem, $subLink);
+
+                $parseMarkDownItem[$key] = [
+                    'subName' => str_replace(["- [","]"], "", $subName[0]),
+                    'subLink' => str_replace(["]","(",")"], "", $subLink[0])
+                ];
+            }
+        }
+
+        return $parseMarkDown;
     }
 
     /**

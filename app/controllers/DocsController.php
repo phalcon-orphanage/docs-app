@@ -35,6 +35,33 @@ class DocsController extends BaseController
     /**
      * @param null|string $language
      * @param null|string $version
+     *
+     * @return ResponseInterface
+     */
+    public function searchAction(string $language = null, string $version = null): ResponseInterface
+    {
+        $language = 'en';
+        $version  = $this->getVersion();
+        $page     = 'introduction';
+
+        $renderFile = 'index/search';
+        $contents = $this->viewSimple->render(
+            $renderFile,
+            [
+                'language'     => $language,
+                'version'      => $version,
+                'topicsArray'  => $this->getSidebar($language, $version),
+                'menu'         => $this->getDocument($language, $version, $page . '-menu'),
+            ]
+        );
+        $this->response->setContent($contents);
+
+        return $this->response;
+    }
+
+    /**
+     * @param null|string $language
+     * @param null|string $version
      * @param string      $page
      *
      * @return ResponseInterface
@@ -54,13 +81,18 @@ class DocsController extends BaseController
 
         $version = $this->getVersion('', $version);
 
+        $renderFile = 'index/article';
         if (empty($page)) {
-            $page = 'introduction';
+            $renderFile = 'index/index';
+            $page       = 'introduction';
         }
 
         if (!$article = $this->getDocument($language, $version, $page)) {
             throw new HttpException('Not Found', 404);
         }
+
+        preg_match('/(<div.*?<\/div>)/ius', $article, $article_menu);
+        $article = preg_replace('/(<div.*?<\/div>)/ius', "", $article);
 
         $canonical = Text::reduceSlashes(base_url("{$language}/{$version}/{$page}"));
 
@@ -75,14 +107,16 @@ class DocsController extends BaseController
         $this->tag->setTitle($this->getSeoTitle($language, $version, $page));
 
         $contents = $this->viewSimple->render(
-            'index/index',
+            $renderFile,
             [
-                'language'  => $language,
-                'version'   => $version,
-                'sidebar'   => $this->getDocument($language, $version, 'sidebar'),
-                'article'   => $article,
-                'menu'      => $this->getDocument($language, $version, $page . '-menu'),
-                'canonical' => $canonical,
+                'language'     => $language,
+                'version'      => $version,
+                'topicsArray'  => $this->getSidebar($language, $version),
+                // TODO(o2): 'sidebar' => $this->getDocument($language, $version, 'sidebar'),
+                'article'      => $article,
+                'article_menu' => $article_menu ? $article_menu[0] : [],
+                'menu'         => $this->getDocument($language, $version, $page . '-menu'),
+                'canonical'    => $canonical,
             ]
         );
         $this->response->setContent($contents);

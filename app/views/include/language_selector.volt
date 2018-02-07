@@ -5,4 +5,3 @@
         </option>
     {% endfor %}
 </select>
-<br>
