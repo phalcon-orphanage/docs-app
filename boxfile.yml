@@ -27,6 +27,7 @@ run.config:
     iconv_internal_encoding: 'UTF-8'
     extensions:
       - curl
+      - ctype
       - dom
       - json
       - mbstring
