@@ -133,6 +133,8 @@ class BaseController extends PhController
         $parseMarkDownItem = [];
         $menuItemKey       = 0;
 
+        
+
         foreach ($data as $key => $dataItem) {
             if (preg_match('/(- \w+.*)/iu', $dataItem, $matches)) {
                 unset($parseMarkDownItem);
@@ -145,15 +147,23 @@ class BaseController extends PhController
 
                 continue;
             } else {
+
                 preg_match('/(- \[\w+.*\])/iu', $dataItem, $subName);
                 preg_match('/](\(.*\w+.*)/iu', $dataItem, $subLink);
 
+                if(empty($subLink))
+                {
+                  $subLink[0]= "#";
+                }
+               
                 $parseMarkDownItem[$key] = [
                     'subName' => str_replace(["- [","]"], "", $subName[0]),
                     'subLink' => str_replace(["]","(",")"], "", $subLink[0])
                 ];
             }
         }
+
+       
 
         return $parseMarkDown;
     }
