@@ -1769,12 +1769,12 @@ input.submit-review-button {
     background-image: url("../images/icons/explore-topic-icon.png");
     width: 22px;
     height: 26px;
-    background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
     left: 25px;
-    top: 18px; }
+    top: 18px; 
+    background-size: contain;}
 
 /* components */
 .header-image {
