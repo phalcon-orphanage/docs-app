@@ -161,8 +161,8 @@ class BaseController extends PhController
 
                 if (false === empty($name)) {
                     $parseMarkDownItem[$key] = [
-                        'subName' => $link,
-                        'subLink' => $name
+                        'subName' => $name,
+                        'subLink' => $link,
                     ];
                 }
             }
