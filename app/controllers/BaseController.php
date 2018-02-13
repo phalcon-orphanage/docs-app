@@ -17,6 +17,7 @@
 
 namespace Docs\Controllers;
 
+use function Docs\Functions\container;
 use function file_exists;
 use Phalcon\Config;
 use Phalcon\Mvc\View\Simple;
@@ -93,9 +94,9 @@ class BaseController extends PhController
             )
         );
 
-        if (file_exists($pageName)) {
+        if (true === file_exists($pageName)) {
             $data = file_get_contents($pageName);
-        } elseif (file_exists($apiFileName)) {
+        } elseif (true === file_exists($apiFileName)) {
             $data = file_get_contents($apiFileName);
         } else {
             // The article does not exist
@@ -121,7 +122,7 @@ class BaseController extends PhController
             ],
             [
                 $language,
-                $this->getVersion()
+                $version
             ],
             $data
         );
@@ -148,10 +149,22 @@ class BaseController extends PhController
                 preg_match('/(- \[\w+.*\])/iu', $dataItem, $subName);
                 preg_match('/](\(.*\w+.*)/iu', $dataItem, $subLink);
 
-                $parseMarkDownItem[$key] = [
-                    'subName' => str_replace(["- [","]"], "", $subName[0]),
-                    'subLink' => str_replace(["]","(",")"], "", $subLink[0])
-                ];
+                $link = '#';
+                if (true === isset($subLink[0])) {
+                    $link = str_replace(["]","(",")"], "", $subLink[0]);
+                }
+
+                $name = '';
+                if (true === isset($subName[0])) {
+                    $name = str_replace(["- [","]"], "", $subName[0]);
+                }
+
+                if (false === empty($name)) {
+                    $parseMarkDownItem[$key] = [
+                        'subName' => $link,
+                        'subLink' => $name
+                    ];
+                }
             }
         }
 
@@ -190,9 +203,9 @@ class BaseController extends PhController
             )
         );
 
-        if (file_exists($pageName)) {
+        if (true === file_exists($pageName)) {
             $data = file_get_contents($pageName);
-        } elseif (file_exists($apiFileName)) {
+        } elseif (true === file_exists($apiFileName)) {
             $data = file_get_contents($apiFileName);
         } else {
             // The article does not exist
