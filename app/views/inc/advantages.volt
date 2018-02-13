@@ -10,7 +10,7 @@
             </p>
         </div>
     </a>
-    <a href="https://docs.phalconphp.com/en/latest/api/index" target="_blank">
+    <a href="{{ url ~ '/' ~ language ~ '/latest/api/index' }}" target="_blank">
         <div class="advantages-item">
             <div class="advantages-item__pictures">
                 {{ filesystem.read('/public/images/icons/advantages-developer-icon.svg') }}

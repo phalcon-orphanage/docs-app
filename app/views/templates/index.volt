@@ -35,7 +35,7 @@
 </head>
 <body  onclick="o2.allNavSlideUp()">
     {% include 'inc/header.volt' %}
-    {% include 'inc/advantages.volt' %}
+    {% include 'inc/advantages.volt' with ['url': url, 'language': language] %}
     {% include 'inc/topics.volt' %}
     {% include 'inc/support.volt' %}
     {% include 'inc/footer.volt' %}
