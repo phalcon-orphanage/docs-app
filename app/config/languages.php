@@ -17,8 +17,8 @@
 
 return [
     'ar' => 'العَرَبِيَّة‎‎',
-    'bg' => 'Bosanski',
-    'bs' => 'Български',
+    'bs' => 'Bosanski',
+    'bg' => 'Български',
     'hr' => 'Рrvatski',
     'cs' => 'Čeština',
     'en' => 'English',
