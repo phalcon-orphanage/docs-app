@@ -24,7 +24,7 @@
             </div>
 
             <div class="footer-copyright">
-                <a href="#" target="_blank" class="o2-link">
+                <a href="http://odva.pro/" target="_blank" class="o2-link">
                     <span>Development by</span> <img src="/images/logo-o2.svg" alt="logo o2">
                 </a>
             </div>
