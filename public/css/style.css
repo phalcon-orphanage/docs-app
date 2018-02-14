@@ -1759,8 +1759,8 @@ input.submit-review-button {
     content: "";
     width: 22px;
     height: 26px;
-    background-size: contain;
     background: url("../images/icons/explore-topic-icon.png") no-repeat;
+    background-size: contain;
     display: inline-block;
     position: absolute;
     left: 25px;
