@@ -2773,7 +2773,7 @@ footer {
   border: 1px solid #cccccc;
   -webkit-border-radius: 3px;
           border-radius: 3px;
-  background-color: #f0f0f0;
+  background-color: #fff;
   font-size: 13px;
   line-height: 19px; }
 
@@ -2797,7 +2797,7 @@ footer {
     color: #676767; }
 
 .parse-content table th {
-  background: #eee;
+  background: #f9f9f9;
   color: #111;
   border: 1px solid black;
   padding: 6px; }
@@ -2809,7 +2809,7 @@ footer {
   border: 1px solid black; }
 
 .parse-content table tr:nth-child(even) {
-  background-color: #eeeeee; }
+  background-color: #f9f9f9; }
 
 .parse-content .btn-danger {
   display: inline-block;
