@@ -7,7 +7,7 @@
                     <img class="footer-logo-img" src="/images/footer_logo.svg" alt="logo">
                 </a>
                 <a class="footer-link" href="https://phalcon.link/about" target="_blank">
-                    About
+                    About1
                 </a>
                 <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
                     Blog
