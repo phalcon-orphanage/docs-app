@@ -87,8 +87,8 @@
   display: block;
   height: 20px;
   width: 20px;
-  line-height: 0px;
-  font-size: 0px;
+  line-height: 0;
+  font-size: 0;
   cursor: pointer;
   background: transparent;
   color: transparent;
@@ -214,8 +214,8 @@
   display: block;
   height: 20px;
   width: 20px;
-  line-height: 0px;
-  font-size: 0px;
+  line-height: 0;
+  font-size: 0;
   cursor: pointer;
   background: transparent;
   color: transparent;
@@ -326,9 +326,6 @@
       opacity: 0.75; }
 
 /* base */
-/*  Переменные со шрифтами  */
-/*  Переменные с гарнитурами шрифтов  */
-/*  основные цвета  */
 @font-face {
   font-family: 'a_lcdnovaregular';
   src: url("../fonts/a_lcdnova-webfont.eot");
@@ -357,7 +354,6 @@
   font-weight: normal;
   font-style: normal; }
 
-/*  сбрасывает браузерное отображение элементов т.к. разные браузеры по разному отображают одно и тоже  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Set default font family to sans-serif.
@@ -720,7 +716,7 @@ th {
 
 /*  Общая типографика для всех страниц. здесь описываются общие свойства для текстовых блоков  */
 body {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   min-width: 320px; }
 
 html {
@@ -786,7 +782,7 @@ a:focus {
 
 .h2-style {
   font-size: 30px;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Roboto-Medium", sans-serif;
   color: #232323; }
 
 .h3-style {
@@ -5209,8 +5205,8 @@ footer {
   display: block;
   height: 20px;
   width: 20px;
-  line-height: 0px;
-  font-size: 0px;
+  line-height: 0;
+  font-size: 0;
   cursor: pointer;
   background: transparent;
   color: transparent;
