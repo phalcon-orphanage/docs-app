@@ -714,7 +714,6 @@ td,
 th {
   padding: 0; }
 
-/*  Общая типографика для всех страниц. здесь описываются общие свойства для текстовых блоков  */
 body {
   font-family: "Roboto-Regular", sans-serif;
   min-width: 320px; }
