@@ -82,7 +82,7 @@ class ServiceProvider implements ServiceProviderInterface
             ->collection('header_css')
             // TODO(o2)
             // ->addCss($cssCdn, false)
-            ->addCss(assets_uri('js/highlight/styles/hybrid.css', $version))
+            ->addCss(assets_uri('js/highlight/styles/googlecode.css', $version))
             ->addCss(assets_uri('css/style.css', $version));
 
         $assets

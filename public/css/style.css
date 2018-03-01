@@ -2840,7 +2840,7 @@ footer {
 
 .parse-content .hljs {
   font-size: 14px;
-  margin: -6px -10px; }
+  margin: -6px -12px; }
   .parse-content .hljs::-moz-selection {
     background-color: #B4D5FE !important; }
   .parse-content .hljs::selection {
