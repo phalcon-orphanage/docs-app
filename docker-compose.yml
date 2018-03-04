@@ -5,9 +5,11 @@ services:
   app:
     build: .
     image: phalconphp/php7.1-ubuntu16:0.0.4
+
     ports:
       - "9000:9000/tcp"
       - "80:80/tcp"
+
     volumes:
       - .:/app:delegated
       - ./storage/setup/nginx.conf:/etc/nginx/sites-available/default:ro
@@ -17,6 +19,7 @@ services:
       - ./storage/logs/nginx:/var/log/nginx
       - ./storage/tmp/nginx:/tmp/nginx
       - ./storage/tmp/debug:/tmp/debug
+
     environment:
       - XDEBUG_REMOTE_ENABLE=1
       - XDEBUG_REMOTE_AUTO_START=0
