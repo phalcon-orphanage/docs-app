@@ -7,6 +7,14 @@
 <html lang="{{ language }}" class="no-js">
 <!--<![endif]-->
 <head>
+    {%- if (not(version is empty)) -%}
+        {%- if (environment('development')) -%}
+            {%- set version = time() -%}
+        {%- else -%}
+            {%- set version = config('app.version', '9999') -%}
+        {%- endif -%}
+    {%- endif -%}
+
     {%- set name = config.get('app').get('name', 'Documentation') -%}
     {%- set description = config.get('app').get('description', 'Phalcon Framework') -%}
     {%- set description_long = config.get('app').get('descriptionLong', 'Official Phalcon Documentation') -%}
@@ -15,7 +23,7 @@
 
     {%- block meta -%}{%- endblock -%}
 
-    {%- include "include/ie-support.volt" -%}
+    {%- include "include/ie-support.volt" with ['version': version] -%}
     {%- include "include/icons.volt" with ['url': url] -%}
     {%- include "include/analytics.volt" -%}
 
@@ -23,15 +31,15 @@
         {{- assets.outputCss('header_css') -}}
     {%- endblock -%}
 
-    {{  get_title() }}
+    {{-  get_title() -}}
 </head>
 <body  onclick="o2.allNavSlideUp()">
-    {% include 'inc/header.volt' %}
-    {% include 'inc/advantages.volt' with ['url': url, 'language': language] %}
-    {% include 'inc/topics.volt' %}
-    {% include 'inc/support.volt' %}
+    {%- include 'inc/header.volt' -%}
+    {%- include 'inc/advantages.volt' with ['url': url, 'language': language] -%}
+    {%- include 'inc/topics.volt' -%}
+    {%- include 'inc/support.volt' -%}
 
     {{- assets.outputJs('footer_js') -}}
-    {% include 'inc/footer.volt' %}
+    {%- include 'inc/footer.volt' -%}
 </body>
 </html>

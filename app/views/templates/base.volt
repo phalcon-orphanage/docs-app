@@ -7,6 +7,14 @@
 <html lang="{{ language }}" class="no-js">
 <!--<![endif]-->
 <head>
+    {%- if (not(version is empty)) -%}
+        {%- if (environment('development')) -%}
+            {%- set version = time() -%}
+        {%- else -%}
+            {%- set version = config('app.version', '9999') -%}
+        {%- endif -%}
+    {%- endif -%}
+
     {%- set name = config.get('app').get('name', 'Documentation') -%}
     {%- set description = config.get('app').get('description', 'Phalcon Framework') -%}
     {%- set description_long = config.get('app').get('descriptionLong', 'Official Phalcon Documentation') -%}
@@ -21,11 +29,11 @@
         {{- assets.outputCss('header_css') -}}
     {%- endblock -%}
 
-    {{  get_title() }}
+    {{-  get_title() -}}
 </head>
 
 <body onclick="o2.allNavSlideUp()">
-    {% include 'inc/header-inner.volt' %}
+    {%- include 'inc/header-inner.volt' -%}
 
     <div class="container-fluid article-page-wrap">
         <div class="row">
@@ -42,7 +50,7 @@
         </div>
     </div>
 
-    {% include 'inc/footer.volt' %}
+    {%- include 'inc/footer.volt' -%}
     {{- assets.outputJs('footer_js') -}}
     <script type="application/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
