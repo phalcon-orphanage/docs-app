@@ -4,7 +4,7 @@
             <div class="clearfix">
                 {% include 'inc/head-menu.volt' %}
             </div>
-            <div class="header-description" itemscope itemtype="http://schema.org/Thing">
+            <div class="header-description" itemscope itemtype="https://schema.org/Thing">
                 <h1 class="h1_style" itemprop="description">
                     <span itemprop="name">Phalcon</span>
                     is feature rich, loosely coupled, optimized for high
