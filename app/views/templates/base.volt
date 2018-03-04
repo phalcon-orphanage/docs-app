@@ -1,6 +1,6 @@
 {{ get_doctype() }}
 <!--[if IE 8]>
-    <html lang="{{ language }}" class="ie8 no-js"> <![endif]-->
+<html lang="{{ language }}" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]>
 <html lang="{{ language }}" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
