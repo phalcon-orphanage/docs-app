@@ -44,6 +44,8 @@ filter:
     excluded_paths:
         - 'vendor/*'
         - 'docs/*'
+        - 'tests/*'
+        - 'storage/*'
 
 tools:
     php_analyzer: true

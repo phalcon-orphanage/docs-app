@@ -18,6 +18,7 @@
 namespace Docs\Providers\VoltTemplate;
 
 use Phalcon\DiInterface;
+use Docs\Mvc\View\VoltFunctions;
 use Phalcon\Mvc\View\Engine\Volt;
 use Phalcon\Mvc\ViewBaseInterface;
 use Phalcon\Di\ServiceProviderInterface;
@@ -65,9 +66,7 @@ class ServiceProvider implements ServiceProviderInterface
 
 
             $volt->getCompiler()
-                ->addFunction('str_repeat', 'str_repeat');
-            // @todo
-            //  ->addExtension(new VoltFunctions());
+                ->addExtension(new VoltFunctions());
 
             return $volt;
         };

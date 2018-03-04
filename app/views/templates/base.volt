@@ -1,12 +1,18 @@
 {{ get_doctype() }}
 <!--[if IE 8]>
-    <html lang="{{ language }}" class="ie8 no-js"> <![endif]-->
+<html lang="{{ language }}" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]>
 <html lang="{{ language }}" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="{{ language }}" class="no-js">
 <!--<![endif]-->
 <head>
+    {%- if (environment('development')) -%}
+        {%- set app_version = time() -%}
+    {%- else -%}
+        {%- set app_version = config('app.version', '9999') -%}
+    {%- endif -%}
+
     {%- set name = config.get('app').get('name', 'Documentation') -%}
     {%- set description = config.get('app').get('description', 'Phalcon Framework') -%}
     {%- set description_long = config.get('app').get('descriptionLong', 'Official Phalcon Documentation') -%}
@@ -21,11 +27,11 @@
         {{- assets.outputCss('header_css') -}}
     {%- endblock -%}
 
-    {{  get_title() }}
+    {{-  get_title() -}}
 </head>
 
 <body onclick="o2.allNavSlideUp()">
-    {% include 'inc/header-inner.volt' %}
+    {%- include 'inc/header-inner.volt' -%}
 
     <div class="container-fluid article-page-wrap">
         <div class="row">
@@ -42,7 +48,7 @@
         </div>
     </div>
 
-    {% include 'inc/footer.volt' %}
+    {%- include 'inc/footer.volt' -%}
     {{- assets.outputJs('footer_js') -}}
     <script type="application/javascript">hljs.initHighlightingOnLoad();</script>
 </body>

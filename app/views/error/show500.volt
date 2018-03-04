@@ -1,7 +1,7 @@
 {%- extends "templates/base.volt" -%}
 
 {%- block meta -%}
-    {%- include "include/noindex-meta.volt" -%}
+    {%- include "include/noindex-meta.volt" with ['app_version': app_version] -%}
 {%- endblock -%}
 
 {%- block sidebar -%}
