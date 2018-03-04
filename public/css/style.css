@@ -1757,10 +1757,11 @@ input.submit-review-button {
     transition: all .3s; }
   .explore-topic__link:before {
     content: "";
-    width: 44px;
-    height: 48px;
+    width: 22px;
+    height: 26px;
     background-size: contain;
-    background: url("../images/icons/explore-topic-icon.png") no-repeat;
+    background-image: url("../images/icons/explore-topic-icon.png");
+    background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
     left: 25px;
