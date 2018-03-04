@@ -7,12 +7,10 @@
 <html lang="{{ language }}" class="no-js">
 <!--<![endif]-->
 <head>
-    {%- if (not(version is empty)) -%}
-        {%- if (environment('development')) -%}
-            {%- set version = time() -%}
-        {%- else -%}
-            {%- set version = config('app.version', '9999') -%}
-        {%- endif -%}
+    {%- if (environment('development')) -%}
+        {%- set app_version = time() -%}
+    {%- else -%}
+        {%- set app_version = config('app.version', '9999') -%}
     {%- endif -%}
 
     {%- set name = config.get('app').get('name', 'Documentation') -%}

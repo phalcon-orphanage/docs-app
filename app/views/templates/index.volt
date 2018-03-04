@@ -7,13 +7,12 @@
 <html lang="{{ language }}" class="no-js">
 <!--<![endif]-->
 <head>
-    {%- if (not(version is empty)) -%}
-        {%- if (environment('development')) -%}
-            {%- set version = time() -%}
-        {%- else -%}
-            {%- set version = config('app.version', '9999') -%}
-        {%- endif -%}
+    {%- if (environment('development')) -%}
+        {%- set app_version = time() -%}
+    {%- else -%}
+        {%- set app_version = config('app.version', '9999') -%}
     {%- endif -%}
+
 
     {%- set name = config.get('app').get('name', 'Documentation') -%}
     {%- set description = config.get('app').get('description', 'Phalcon Framework') -%}
@@ -23,7 +22,7 @@
 
     {%- block meta -%}{%- endblock -%}
 
-    {%- include "include/ie-support.volt" with ['version': version] -%}
+    {%- include "include/ie-support.volt" with ['app_version': app_version] -%}
     {%- include "include/icons.volt" with ['url': url] -%}
     {%- include "include/analytics.volt" -%}
 

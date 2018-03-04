@@ -2,7 +2,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, min-width=320">
-{{- javascript_include(url ~ '/js/viewport-min-width.js') -}}
+{{- javascript_include(assets_uri('js/viewport-min-width.js', app_version)) -}}
 
 <meta name="MobileOptimized" content="320">
 <meta name="HandheldFriendly" content="true">
