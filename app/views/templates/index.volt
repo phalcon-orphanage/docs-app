@@ -15,12 +15,7 @@
 
     {%- block meta -%}{%- endblock -%}
 
-    <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js"></script>
-    <script type="text/javascript" src="/js/libs/flexibility.min.js"></script>
-    <script type="text/javascript" src="/js/libs/flexie.js"></script>
-    <![endif]-->
-
+    {%- include "include/ie-support.volt" -%}
     {%- include "include/icons.volt" with ['url': url] -%}
     {%- include "include/analytics.volt" -%}
 
