@@ -2055,7 +2055,8 @@ input.submit-review-button {
       width: 100%;
       line-height: 20px; }
   .h1_style {
-    font-size: 33px;
+    font-size: 25px;
+    line-height: 40px;
     letter-spacing: -1px; } }
 
 footer {
@@ -2807,7 +2808,8 @@ footer {
 
 .parse-content table td {
   padding: 6px;
-  border: 1px solid black; }
+  border: 1px solid black;
+  word-break: break-word; }
 
 .parse-content table tr:nth-child(even) {
   background-color: #f9f9f9; }
