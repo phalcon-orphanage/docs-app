@@ -229,9 +229,9 @@ class RegenerateApiTask extends Task
                         $ret = [];
                     }
                     $methodsString .= implode(
-                            ' ',
-                            \Reflection::getModifierNames($method->getModifiers())
-                        ) . ' ';
+                        ' ',
+                        \Reflection::getModifierNames($method->getModifiers())
+                    ) . ' ';
                     if (isset($ret['return'])) {
                         $returnTypes = explode('|', $ret['return']);
                         foreach ($returnTypes as $i => $returnType) {
