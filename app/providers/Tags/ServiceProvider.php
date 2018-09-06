@@ -17,10 +17,10 @@
 
 namespace Docs\Providers\Tags;
 
-use function Docs\Functions\config;
-use Phalcon\Tag;
-use Phalcon\DiInterface;
 use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
+use Phalcon\Tag;
+use function Docs\Functions\config;
 
 /**
  * Docs\Providers\Tags\ServiceProvider
@@ -44,7 +44,7 @@ class ServiceProvider implements ServiceProviderInterface
                 $tag->setTitleSeparator(' - ');
 
                 $description = config('app.description', 'Phalcon Framework');
-                $title = config('app.name', 'Documentation');
+                $title       = config('app.name', 'Documentation');
 
                 $tag->setTitle($title);
                 $tag->appendTitle($description);

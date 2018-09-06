@@ -2,13 +2,12 @@
 
 namespace Docs\Cli\Tasks;
 
-use Phalcon\CLI\Task;
-
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-use FilesystemIterator;
 use Dariuszp\CliProgressBar as CliProgressBar;
 use Docs\ClassLink;
+use FilesystemIterator;
+use Phalcon\CLI\Task;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 
 /**
  * RegenerateApiTask
@@ -156,10 +155,10 @@ class RegenerateApiTask extends Task
             $extendsString = '';
             if ($parentClass) {
                 $extendsName = $parentClass->name;
-                $classLink = new ClassLink($extendsName);
+                $classLink   = new ClassLink($extendsName);
                 if (class_exists($extendsName)) {
                     $parentClassReflector = new \ReflectionClass($extendsName);
-                    $prefix = 'class';
+                    $prefix               = 'class';
                     if ($parentClassReflector->isAbstract()) {
                         $prefix = 'abstract class';
                     }
@@ -175,19 +174,19 @@ class RegenerateApiTask extends Task
             if (count($interfaceNames)) {
                 $implements = [];
                 foreach ($interfaceNames as $interfaceName) {
-                    $classLink = new ClassLink($interfaceName);
+                    $classLink    = new ClassLink($interfaceName);
                     $implements[] = $classLink->get();
                 }
                 $implementsString .= PHP_EOL . '*implements* '
                     . join(', ', $implements) . PHP_EOL;
             }
 
-            $githubLink       = 'https://github.com/phalcon/cphalcon/blob/master/'
+            $githubLink = 'https://github.com/phalcon/cphalcon/blob/master/'
                 . str_replace('\\', '/', strtolower($className)) . '.zep';
 
             $classDescription = '';
             if (isset($this->classDocs[$realClassName])) {
-                $ret               = $this->getPhpDoc(
+                $ret              = $this->getPhpDoc(
                     $this->classDocs[$realClassName],
                     $className,
                     $realClassName
@@ -200,7 +199,7 @@ class RegenerateApiTask extends Task
             if (count($constants)) {
                 $constantsString .= '## Constants' . PHP_EOL;
                 foreach ($constants as $name => $constant) {
-                    $type = gettype($constant);
+                    $type            = gettype($constant);
                     $constantsString .= '*' . $type
                         . '* **' . $name . '**'
                         . PHP_EOL . PHP_EOL;
@@ -236,13 +235,13 @@ class RegenerateApiTask extends Task
                     if (isset($ret['return'])) {
                         $returnTypes = explode('|', $ret['return']);
                         foreach ($returnTypes as $i => $returnType) {
-                            $classLink = new ClassLink($returnType);
+                            $classLink       = new ClassLink($returnType);
                             $returnTypes[$i] = $classLink->get();
                         }
                         $methodsString .= implode(' | ', $returnTypes);
                     }
                     $methodsString .= ' **' . $method->name . '** (';
-                    $cp = [];
+                    $cp            = [];
                     foreach ($method->getParameters() as $parameter) {
                         $name = '$' . $parameter->name;
                         if (isset($ret['parameters'][$name])) {
@@ -256,7 +255,7 @@ class RegenerateApiTask extends Task
                         }
                         $parameterTypes = explode('|', $parameterType);
                         foreach ($parameterTypes as $i => $parameterType) {
-                            $classLink = new ClassLink($parameterType);
+                            $classLink          = new ClassLink($parameterType);
                             $parameterTypes[$i] = $classLink->get();
                         }
                         $parameterTypes = implode(' | ', $parameterTypes) . ' ' . $name;
@@ -268,8 +267,8 @@ class RegenerateApiTask extends Task
 
                     $methodsString .= join(', ', $cp) . ')';
                     if ($simpleClassName != $docClassName) {
-                        $className = $method->getDeclaringClass()->name;
-                        $classLink = new ClassLink($className);
+                        $className     = $method->getDeclaringClass()->name;
+                        $classLink     = new ClassLink($className);
                         $methodsString .= ' inherited from ' . $classLink->get();
                     }
 
@@ -329,8 +328,8 @@ class RegenerateApiTask extends Task
 
         /** @var $iterator RecursiveDirectoryIterator[] */
         $iterator = new RecursiveIteratorIterator($recursiveDirectoryIterator);
-        $steps = count($iterator);
-        $bar   = new CliProgressBar($steps);
+        $steps    = count($iterator);
+        $bar      = new CliProgressBar($steps);
         $bar
             ->setColorToGreen()
             ->display();
@@ -482,7 +481,7 @@ class RegenerateApiTask extends Task
                             $parts = preg_split("/[ \t]+/", $content);
 
                             if (count($parts) == 2) {
-                                $name = '$' . str_replace('$', '', $parts[1]);
+                                $name                     = '$' . str_replace('$', '', $parts[1]);
                                 $ret['parameters'][$name] = trim($parts[0]);
                             } else {
                                 // throw new Exception(
@@ -578,11 +577,11 @@ class RegenerateApiTask extends Task
         foreach ($lines as $line) {
             if (trim($line) === '') {
                 if ($blankLine == false) {
-                    $final .= $line . "\n";
+                    $final     .= $line . "\n";
                     $blankLine = true;
                 }
             } else {
-                $final .= $line . "\n";
+                $final     .= $line . "\n";
                 $blankLine = false;
             }
         }

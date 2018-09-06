@@ -17,10 +17,10 @@
 
 namespace Docs\Providers\Routing;
 
-use Phalcon\Cli\Router;
-use Phalcon\DiInterface;
 use Docs\Exception\HttpException;
+use Phalcon\Cli\Router;
 use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
 use Phalcon\Mvc\Micro\Collection;
 use function Docs\Functions\config;
 use function Docs\Functions\container;
@@ -44,10 +44,10 @@ class ServiceProvider implements ServiceProviderInterface
         switch ($mode) {
             case 'normal':
                 $collections = config('routes')->toArray();
-                $app = container('app');
+                $app         = container('app');
 
                 foreach ($collections as $handler => $routes) {
-                    $collection  = new Collection();
+                    $collection = new Collection();
 
                     $collection->setHandler($handler, true);
 

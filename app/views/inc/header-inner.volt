@@ -12,7 +12,7 @@
                     GitHub Project
                     <div class="link__circle-arrow">
                         <div class="link__arrow">
-                            
+
                         </div>
                     </div>
                 </a>

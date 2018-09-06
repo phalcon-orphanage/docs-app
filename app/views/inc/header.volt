@@ -20,7 +20,7 @@
                 <a href="https://phalcon.link/github" class="link__github" target="_blank">
                     GitHub Project
                     <div class="link__circle-arrow">
-                        <div class="link__arrow"> </div>
+                        <div class="link__arrow"></div>
                     </div>
                 </a>
             </div>

@@ -72,11 +72,11 @@ class ServiceProvider implements ServiceProviderInterface
 
 
         $cssCdn = "https://cdn.jsdelivr.net/g/font-lato@2.0(Lato/Lato-Black.css),"
-                . "bootstrap@3.3.7(css/bootstrap.min.css),"
-                . "highlight.js@{$highlightVersion}(styles/monokai-sublime.min.css)";
+            . "bootstrap@3.3.7(css/bootstrap.min.css),"
+            . "highlight.js@{$highlightVersion}(styles/monokai-sublime.min.css)";
         $jsCdn  = "https://cdn.jsdelivr.net/g/jquery@3.1.1,"
-                . "bootstrap@3.3.7,"
-                . "highlight.js@{$highlightVersion}({$supportedJs})";
+            . "bootstrap@3.3.7,"
+            . "highlight.js@{$highlightVersion}({$supportedJs})";
 
         $assets
             ->collection('header_css')

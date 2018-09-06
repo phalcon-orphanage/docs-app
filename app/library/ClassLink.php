@@ -43,6 +43,7 @@ class ClassLink
         $className = str_replace("\\\\", '\\', $className);
         if (preg_match("/^Phalcon\\\\/", $className)) {
             $htmlClassName = str_replace("\\", "_", $className);
+
             return sprintf(
                 '[%s](/[[language]]/[[version]]/api/%s)',
                 $className,
@@ -50,6 +51,7 @@ class ClassLink
             );
         } else {
             $url = "http://php.net/manual/en/class." . strtolower($className) . ".php";
+
             return sprintf(
                 '[%s](%s)',
                 $className,

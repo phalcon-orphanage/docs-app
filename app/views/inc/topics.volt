@@ -7,7 +7,11 @@
                         {{ filesystem.read('/public/images/icons/topic-head-icon.svg') }}
                     </div>
                     <h2>Explore Topics</h2>
-                    <p>We did our best to cover all topics related to this product. Each section have number which represent number of topic in each category.</p>
+                    <p>
+                        We did our best to cover all topics related to this
+                        product. Each section have number which represent number
+                        of topic in each category.
+                    </p>
                     <hr>
                 </div>
             </div>

@@ -1,7 +1,7 @@
 <div class="topic-item">
     <div class="list-head">
         <div class="list-head__circle-number">
-        {{ key + 1 }}
+            {{ key + 1 }}
         </div>
         <p>{{ topic["name"] }}</p>
     </div>

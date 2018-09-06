@@ -17,11 +17,11 @@
 
 namespace Docs\Cli\Tasks;
 
-use Phalcon\CLI\Task;
-use FilesystemIterator;
 use Dariuszp\CliProgressBar;
-use RecursiveIteratorIterator;
+use FilesystemIterator;
+use Phalcon\CLI\Task;
 use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 use function Docs\Functions\app_path;
 
 /**

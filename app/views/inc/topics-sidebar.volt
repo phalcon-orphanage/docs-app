@@ -1,7 +1,10 @@
-<div class="topic-categories" >
+<div class="topic-categories">
     {% for topic in topicsArray %}
-        <div class="topic-categories-item {% if loop.index > 4 %}topic-categories__all-topic{% endif %}" {% if loop.index > 4 %}style="display:none;"{% endif %}>
-            <div class="category-name" onclick="o2.topicsAccordion(this, event)"><span>{{ topic["name"] }}</span></div>
+        <div class="topic-categories-item {% if loop.index > 4 %}topic-categories__all-topic{% endif %}"
+             {% if loop.index > 4 %}style="display:none;"{% endif %}>
+            <div class="category-name" onclick="o2.topicsAccordion(this, event)">
+                <span>{{ topic["name"] }}</span>
+            </div>
             <ul style="display: none;">
                 {% for topicItem in topic["subItems"] %}
                     <li>

@@ -17,15 +17,14 @@
 
 namespace Docs\Controllers;
 
-use function Docs\Functions\container;
-use function file_exists;
-use Phalcon\Config;
-use Phalcon\Mvc\View\Simple;
 use Phalcon\Cache\BackendInterface;
+use Phalcon\Config;
 use Phalcon\Mvc\Controller as PhController;
-use function Docs\Functions\config;
+use Phalcon\Mvc\View\Simple;
 use function Docs\Functions\app_path;
+use function Docs\Functions\config;
 use function Docs\Functions\environment;
+use function file_exists;
 
 /**
  * Docs\Controllers\BaseController
@@ -39,45 +38,18 @@ use function Docs\Functions\environment;
  */
 class BaseController extends PhController
 {
+    /** @var array */
     protected $seoStrings = [];
 
     /**
-     * Gets the SEO title
-     *
      * @param string $language
      * @param string $version
-     * @param string $page
      *
-     * @return string
+     * @return array
      */
-    protected function getSeoTitle(string $language, string $version, string $page): string
+    public function getSidebar($language, $version): array
     {
-        $title = '';
-        if (true === empty($this->seoStrings)) {
-            $fileName = app_path(
-                sprintf(
-                    'docs/%s/%s/seo.json',
-                    $version,
-                    $language
-                )
-            );
-
-            if (true === file_exists($fileName)) {
-                $this->seoStrings = json_decode(
-                    file_get_contents($fileName),
-                    true
-                );
-            }
-        }
-
-        $title = $this->seoStrings[$page] ?? $title;
-
-        return $title;
-    }
-
-    public function getSidebar($language, $version) : array
-    {
-        $pageName = app_path(
+        $pageName    = app_path(
             sprintf(
                 'docs/%s/%s/%s.md',
                 $version,
@@ -118,11 +90,11 @@ class BaseController extends PhController
         $data = str_replace(
             [
                 '[[language]]',
-                '[[version]]'
+                '[[version]]',
             ],
             [
                 $language,
-                $version
+                $version,
             ],
             $data
         );
@@ -139,9 +111,9 @@ class BaseController extends PhController
                 unset($parseMarkDownItem);
                 $parseMarkDown[$menuItemKey] = [
                     'name'     => str_replace(["- "], "", $matches[0]),
-                    'subItems' => []
+                    'subItems' => [],
                 ];
-                $parseMarkDownItem = &$parseMarkDown[$menuItemKey]['subItems'];
+                $parseMarkDownItem           = &$parseMarkDown[$menuItemKey]['subItems'];
                 $menuItemKey++;
 
                 continue;
@@ -151,12 +123,12 @@ class BaseController extends PhController
 
                 $link = '#';
                 if (true === isset($subLink[0])) {
-                    $link = str_replace(["]","(",")"], "", $subLink[0]);
+                    $link = str_replace(["]", "(", ")"], "", $subLink[0]);
                 }
 
                 $name = '';
                 if (true === isset($subName[0])) {
-                    $name = str_replace(["- [","]"], "", $subName[0]);
+                    $name = str_replace(["- [", "]"], "", $subName[0]);
                 }
 
                 if (false === empty($name)) {
@@ -169,6 +141,76 @@ class BaseController extends PhController
         }
 
         return $parseMarkDown;
+    }
+
+    /**
+     * Gets all the namespaces so that API URLs are generated properly
+     *
+     * @return array
+     */
+    protected function getNamespaces(): array
+    {
+        $key = 'namespaces.cache';
+        if (environment('production') && true === $this->cacheData->exists($key)) {
+            return $this->cacheData->get($key);
+        }
+
+        $namespaces = [];
+        $template   = '[%s](/[[language]]/[[version]]/api/%s)';
+
+        $data = get_declared_classes();
+        foreach ($data as $name) {
+            if (substr($name, 0, 8) === 'Phalcon\\') {
+                $apiName               = str_replace('\\', '_', $name);
+                $namespaces["`$name`"] = sprintf($template, $name, $apiName);
+            }
+        }
+
+        $data = get_declared_interfaces();
+        foreach ($data as $name) {
+            if (substr($name, 0, 8) === 'Phalcon\\') {
+                $apiName               = str_replace('\\', '_', $name);
+                $namespaces["`$name`"] = sprintf($template, $name, $apiName);
+            }
+        }
+
+        $this->cacheData->save($key, $namespaces);
+
+        return $namespaces;
+    }
+
+    /**
+     * Gets the SEO title
+     *
+     * @param string $language
+     * @param string $version
+     * @param string $page
+     *
+     * @return string
+     */
+    protected function getSeoTitle(string $language, string $version, string $page): string
+    {
+        $title = '';
+        if (true === empty($this->seoStrings)) {
+            $fileName = app_path(
+                sprintf(
+                    'docs/%s/%s/seo.json',
+                    $version,
+                    $language
+                )
+            );
+
+            if (true === file_exists($fileName)) {
+                $this->seoStrings = json_decode(
+                    file_get_contents($fileName),
+                    true
+                );
+            }
+        }
+
+        $title = $this->seoStrings[$page] ?? $title;
+
+        return $title;
     }
 
     /**
@@ -227,11 +269,11 @@ class BaseController extends PhController
         $data = str_replace(
             [
                 '[[language]]',
-                '[[version]]'
+                '[[version]]',
             ],
             [
                 $language,
-                $this->getVersion()
+                $this->getVersion(),
             ],
             $data
         );
@@ -242,39 +284,23 @@ class BaseController extends PhController
     }
 
     /**
-     * Gets all the namespaces so that API URLs are generated properly
+     * Returns the current version string with its prefix if applicable
      *
-     * @return array
+     * @param  string $stub
+     * @param  string $version
+     *
+     * @return string
      */
-    protected function getNamespaces(): array
+    protected function getVersion(string $stub = '', string $version = ''): string
     {
-        $key = 'namespaces.cache';
-        if (environment('production') && true === $this->cacheData->exists($key)) {
-            return $this->cacheData->get($key);
+        if (empty($version) || strtolower($version) === 'latest') {
+            $version = config('app.version', '9999');
+        } else {
+            $version = filter_var($version, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
+            $version = $version ?? config('app.version', '9999');
         }
 
-        $namespaces = [];
-        $template   = '[%s](/[[language]]/[[version]]/api/%s)';
-
-        $data = get_declared_classes();
-        foreach ($data as $name) {
-            if (substr($name, 0, 8) === 'Phalcon\\') {
-                $apiName               = str_replace('\\', '_', $name);
-                $namespaces["`$name`"] = sprintf($template, $name, $apiName);
-            }
-        }
-
-        $data = get_declared_interfaces();
-        foreach ($data as $name) {
-            if (substr($name, 0, 8) === 'Phalcon\\') {
-                $apiName               = str_replace('\\', '_', $name);
-                $namespaces["`$name`"] = sprintf($template, $name, $apiName);
-            }
-        }
-
-        $this->cacheData->save($key, $namespaces);
-
-        return $namespaces;
+        return "{$stub}{$version}";
     }
 
     /**
@@ -293,24 +319,5 @@ class BaseController extends PhController
         }
 
         return $language;
-    }
-
-    /**
-     * Returns the current version string with its prefix if applicable
-     *
-     * @param  string $stub
-     * @param  string $version
-     * @return string
-     */
-    protected function getVersion(string $stub = '', string $version = ''): string
-    {
-        if (empty($version) || strtolower($version) === 'latest') {
-            $version = config('app.version', '9999');
-        } else {
-            $version = filter_var($version, FILTER_SANITIZE_NUMBER_FLOAT, FILTER_FLAG_ALLOW_FRACTION);
-            $version = $version ?? config('app.version', '9999');
-        }
-
-        return "{$stub}{$version}";
     }
 }

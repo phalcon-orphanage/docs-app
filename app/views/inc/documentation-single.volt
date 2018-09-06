@@ -4,9 +4,15 @@
             <div class="col-md-8 parse-content">
                 <div>
                     {% if language == 'en' %}
-                    <a class="article-content-edit-link pull-right" href="https://github.com/phalcon/docs/blob/{{ version }}/en/{{ page == null ? '': page ~".md"}}">Edit on GitHub</a>
+                        <a class="article-content-edit-link pull-right"
+                           href="https://github.com/phalcon/docs/blob/{{ version }}/en/{{ page == null ? '': page ~".md" }}">
+                            Edit on GitHub
+                        </a>
                     {% else %}
-                    <a class="article-content-edit-link pull-right" href="https://crowdin.com/project/phalcon-documentation/{{language}}">Edit on Crowdin</a>
+                        <a class="article-content-edit-link pull-right"
+                           href="https://crowdin.com/project/phalcon-documentation/{{ language }}">
+                            Edit on Crowdin
+                        </a>
                     {% endif %}
                     <br>
                 </div>
