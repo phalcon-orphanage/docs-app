@@ -20,7 +20,7 @@ use Docs\Controllers\DocsController;
 return [
     DocsController::class => [
         'methods' => [
-            'get' => [
+            'get'  => [
                 '/'                         => 'redirectAction',
                 '/{l:[a-z]{2}}'             => 'mainAction',
                 '/{l:[a-z]{2}}/{v}'         => 'mainAction',

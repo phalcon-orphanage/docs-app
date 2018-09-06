@@ -2,18 +2,10 @@
 
 namespace Docs\Controllers;
 
-use Phalcon\Text;
-use Phalcon\Http\ResponseInterface;
-
-use FilesystemIterator;
-use RecursiveDirectoryIterator;
-use RecursiveIteratorIterator;
-
 use Docs\Exception\HttpException;
-
-use function Docs\Functions\app_path;
+use Phalcon\Http\ResponseInterface;
+use Phalcon\Text;
 use function Docs\Functions\base_url;
-use SplFileInfo;
 
 /**
  * Docs\Controllers\DocsController
@@ -45,13 +37,13 @@ class DocsController extends BaseController
         $page     = 'introduction';
 
         $renderFile = 'index/search';
-        $contents = $this->viewSimple->render(
+        $contents   = $this->viewSimple->render(
             $renderFile,
             [
-                'language'     => $language,
-                'version'      => $version,
-                'topicsArray'  => $this->getSidebar($language, $version),
-                'menu'         => $this->getDocument($language, $version, $page . '-menu'),
+                'language'    => $language,
+                'version'     => $version,
+                'topicsArray' => $this->getSidebar($language, $version),
+                'menu'        => $this->getDocument($language, $version, $page . '-menu'),
             ]
         );
         $this->response->setContent($contents);

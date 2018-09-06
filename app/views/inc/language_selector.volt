@@ -7,7 +7,7 @@
         {% for code, name in config.path('languages') %}
             <a href="{{ url }}/{{ code }}/{{ version }}/{{ page }}" class="custom-select__list-item">
                 <img src="/images/flags/{{ code }}.gif" alt="">
-                <span>{{ name}}</span>
+                <span>{{ name }}</span>
             </a>
         {% endfor %}
     </div>

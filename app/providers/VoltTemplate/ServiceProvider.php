@@ -17,14 +17,14 @@
 
 namespace Docs\Providers\VoltTemplate;
 
-use Phalcon\DiInterface;
 use Docs\Mvc\View\VoltFunctions;
+use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
 use Phalcon\Mvc\View\Engine\Volt;
 use Phalcon\Mvc\ViewBaseInterface;
-use Phalcon\Di\ServiceProviderInterface;
-use function Docs\Functions\config;
 use function Docs\Functions\app_path;
 use function Docs\Functions\cache_path;
+use function Docs\Functions\config;
 use function Docs\Functions\container;
 use function Docs\Functions\environment;
 

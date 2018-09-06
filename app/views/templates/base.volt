@@ -27,29 +27,29 @@
         {{- assets.outputCss('header_css') -}}
     {%- endblock -%}
 
-    {{-  get_title() -}}
+    {{- get_title() -}}
 </head>
 
 <body onclick="o2.allNavSlideUp()">
-    {%- include 'inc/header-inner.volt' -%}
+{%- include 'inc/header-inner.volt' -%}
 
-    <div class="container-fluid article-page-wrap">
-        <div class="row">
-            <div>
-                <div class="col-md-2 sidebar hidden-xs">
-                    <div class="sidebar--spacer">&nbsp;</div>
-                </div>
-                <div class="m-t-md m-b-lg" id="articles">
-                    <div class="article-content">
-                        {%- block content -%}{%- endblock -%}
-                    </div>
+<div class="container-fluid article-page-wrap">
+    <div class="row">
+        <div>
+            <div class="col-md-2 sidebar hidden-xs">
+                <div class="sidebar--spacer">&nbsp;</div>
+            </div>
+            <div class="m-t-md m-b-lg" id="articles">
+                <div class="article-content">
+                    {%- block content -%}{%- endblock -%}
                 </div>
             </div>
         </div>
     </div>
+</div>
 
-    {%- include 'inc/footer.volt' -%}
-    {{- assets.outputJs('footer_js') -}}
-    <script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+{%- include 'inc/footer.volt' -%}
+{{- assets.outputJs('footer_js') -}}
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
 </body>
 </html>

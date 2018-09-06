@@ -4,7 +4,8 @@
             <div class="col-xs-4 col-sm-3">
                 <h4>Download</h4>
                 <ul>
-                    <li><a href="https://phalconphp.com/{{ language ~ '/download' }}" target="_blank">Installing Phalcon PHP</a></li>
+                    <li><a href="https://phalconphp.com/{{ language ~ '/download' }}" target="_blank">Installing Phalcon
+                            PHP</a></li>
                     <li><a href="https://phalconphp.com/{{ language ~ '/support' }}" target="_blank">Support</a></li>
                 </ul>
             </div>
@@ -14,8 +15,10 @@
                     <li><a href="https://phalcon.link/forum" class="header-nav-link" target="_blank">Forum</a></li>
                     <li><a href="https://phalcon.link/github" target="_blank">GitHub</a></li>
                     <li><a href="https://github.com/phalcon/cphalcon/issues" target="_blank">Issue Tracker</a></li>
-                    <li><a href="https://stackoverflow.com/questions/tagged/phalcon" target="_blank">Stack Overflow</a></li>
-                    <li><a href="https://phalconphp.com/{{ language ~ '/testimonials' }}" target="_blank">Testimonials</a></li>
+                    <li><a href="https://stackoverflow.com/questions/tagged/phalcon" target="_blank">Stack Overflow</a>
+                    </li>
+                    <li><a href="https://phalconphp.com/{{ language ~ '/testimonials' }}"
+                           target="_blank">Testimonials</a></li>
                     <li><a href="https://phalcon.link/builtwith" target="_blank">Built with Phalcon</a></li>
                     <li><a href="https://phalcon.link/store" target="_blank">Store</a></li>
                 </ul>

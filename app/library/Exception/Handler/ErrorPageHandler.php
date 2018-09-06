@@ -67,16 +67,16 @@ class ErrorPageHandler extends Handler
         return Handler::QUIT;
     }
 
-    private function shouldWeSkipCurrentCode($code) : bool
-    {
-        return isset($this->unHandleCodes[$code]);
-    }
-
-    private function isItPossibleToHandle() : bool
+    private function isItPossibleToHandle(): bool
     {
         return container()->has('viewSimple') &&
             container()->has('dispatcher') &&
             container()->has('response');
+    }
+
+    private function shouldWeSkipCurrentCode($code): bool
+    {
+        return isset($this->unHandleCodes[$code]);
     }
 
     private function renderErrorPage()
@@ -85,7 +85,7 @@ class ErrorPageHandler extends Handler
         $view       = container('viewSimple');
         $response   = container('response');
 
-        $controller = config('error.controller', 'error');
+        $controller    = config('error.controller', 'error');
         $defaultAction = config('error.action', 'show500');
 
         switch ($this->getException()->getCode()) {

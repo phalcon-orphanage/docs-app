@@ -1,8 +1,10 @@
 {{ get_doctype() }}
 <!--[if IE 8]>
-<html lang="{{ language }}" id="section-reco_main" class="nojs iea6 iea7 ie8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"> <![endif]-->
+<html lang="{{ language }}" id="section-reco_main"
+      class="nojs iea6 iea7 ie8 ieb9 ieb10 split1 nosplit5 platform-PC platform-notouch"> <![endif]-->
 <!--[if IE 9]>
-<html lang="{{ language }}" id="section-reco_main" class="nojs iea6 iea7 iea8 ie9 ieb10 split1 nosplit5 platform-PC platform-notouch"> <![endif]-->
+<html lang="{{ language }}" id="section-reco_main"
+      class="nojs iea6 iea7 iea8 ie9 ieb10 split1 nosplit5 platform-PC platform-notouch"> <![endif]-->
 <!--[if !IE]><!-->
 <html lang="{{ language }}" class="no-js">
 <!--<![endif]-->
@@ -30,15 +32,15 @@
         {{- assets.outputCss('header_css') -}}
     {%- endblock -%}
 
-    {{-  get_title() -}}
+    {{- get_title() -}}
 </head>
-<body  onclick="o2.allNavSlideUp()">
-    {%- include 'inc/header.volt' -%}
-    {%- include 'inc/advantages.volt' with ['url': url, 'language': language] -%}
-    {%- include 'inc/topics.volt' -%}
-    {%- include 'inc/support.volt' -%}
+<body onclick="o2.allNavSlideUp()">
+{%- include 'inc/header.volt' -%}
+{%- include 'inc/advantages.volt' with ['url': url, 'language': language] -%}
+{%- include 'inc/topics.volt' -%}
+{%- include 'inc/support.volt' -%}
 
-    {{- assets.outputJs('footer_js') -}}
-    {%- include 'inc/footer.volt' -%}
+{{- assets.outputJs('footer_js') -}}
+{%- include 'inc/footer.volt' -%}
 </body>
 </html>

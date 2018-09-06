@@ -17,9 +17,9 @@
 
 namespace Docs\Providers\CacheData;
 
-use Phalcon\DiInterface;
 use Phalcon\Cache\Frontend\Data;
 use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
 use function Docs\Functions\app_path;
 use function Docs\Functions\config;
 

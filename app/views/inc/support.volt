@@ -1,6 +1,6 @@
 <section class="support-section">
-	<div class="container">
-		<div class="support-wrapper">
+    <div class="container">
+        <div class="support-wrapper">
             <div class="divider-icon">
                 <div class="divider-icon-wrapper">
                     <img src="{{ url ~ '/images/icons/divider-topic-icon.png' }}" alt="">
@@ -21,6 +21,6 @@
             </div>
 
             {%- include 'inc/contact-us.volt' -%}
-		</div>
-	</div>
+        </div>
+    </div>
 </section>
