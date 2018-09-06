@@ -38,8 +38,15 @@ use function file_exists;
  */
 class BaseController extends PhController
 {
+    /** @var array */
     protected $seoStrings = [];
 
+    /**
+     * @param string $language
+     * @param string $version
+     *
+     * @return array
+     */
     public function getSidebar($language, $version): array
     {
         $pageName    = app_path(
