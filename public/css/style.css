@@ -5451,3 +5451,37 @@ body {
 .header-search table {
   height: 100% !important;
   border: none !important; }
+
+/*h5 {*/
+    /*background-color:rgb(255, 255, 255);*/
+    /*background-image: none;*/
+    /*background-origin: padding-box;*/
+    /*background-size: auto;*/
+    /*border-color: white;*/
+    /*box-shadow: rgba(0, 0, 0, 0.15) 0 0 0 1px inset;*/
+    /*color: rgb(115, 115, 115);*/
+    /*display: block;*/
+    /*font-family: monospace;*/
+    /*font-size: 14px;*/
+    /*font-weight: normal;*/
+    /*font-style: normal;*/
+    /*letter-spacing: -1px;*/
+    /*margin: 0 0 24px;*/
+    /*padding: 12px;*/
+    /*word-spacing: -2px;*/
+/*}*/
+
+/*h5 > strong {*/
+  /*font-weight: normal;*/
+  /*color: #369;*/
+/*}*/
+/*h5 > em {*/
+    /*color: #693;*/
+    /*font-style: normal;*/
+/*}*/
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
