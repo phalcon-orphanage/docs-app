@@ -15,10 +15,15 @@
   +------------------------------------------------------------------------+
 */
 
+use function Docs\Functions\app_path;
 use function Docs\Functions\env;
 
+$versions = file(app_path('VERSIONS'), FILE_IGNORE_NEW_LINES);
+end($versions);
+$version  = current($versions);
+
 return [
-    'version'         => '3.4',
+    'version'         => $version,
     'timezone'        => env('APP_TIMEZONE', 'UTC'),
     'debug'           => env('APP_DEBUG'),
     'env'             => env('APP_ENV'),

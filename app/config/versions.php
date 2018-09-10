@@ -15,8 +15,6 @@
   +------------------------------------------------------------------------+
 */
 
-return [
-    '3.1',
-    '3.2',
-    '3.3',
-];
+use function Docs\Functions\app_path;
+
+return file(app_path('VERSIONS'), FILE_IGNORE_NEW_LINES);

@@ -15,43 +15,6 @@ use function Docs\Functions\base_url;
 class DocsController extends BaseController
 {
     /**
-     * Performs necessary redirection
-     *
-     * @return ResponseInterface
-     */
-    public function redirectAction(): ResponseInterface
-    {
-        return $this->response->redirect(base_url($this->getVersion('/en/')));
-    }
-
-    /**
-     * @param null|string $language
-     * @param null|string $version
-     *
-     * @return ResponseInterface
-     */
-    public function searchAction(string $language = null, string $version = null): ResponseInterface
-    {
-        $language = 'en';
-        $version  = $this->getVersion();
-        $page     = 'introduction';
-
-        $renderFile = 'index/search';
-        $contents   = $this->viewSimple->render(
-            $renderFile,
-            [
-                'language'    => $language,
-                'version'     => $version,
-                'topicsArray' => $this->getSidebar($language, $version),
-                'menu'        => $this->getDocument($language, $version, $page . '-menu'),
-            ]
-        );
-        $this->response->setContent($contents);
-
-        return $this->response;
-    }
-
-    /**
      * @param null|string $language
      * @param null|string $version
      * @param string      $page
@@ -67,7 +30,7 @@ class DocsController extends BaseController
 
         $language = $this->getLanguage($language);
 
-        if (empty($version)) {
+        if (true === empty($version) || 'latest' === $version) {
             return $this->response->redirect(base_url($this->getVersion('/' . $language . '/')));
         }
 
@@ -109,6 +72,43 @@ class DocsController extends BaseController
                 'article_menu' => $article_menu ? $article_menu[0] : [],
                 'menu'         => $this->getDocument($language, $version, $page . '-menu'),
                 'canonical'    => $canonical,
+            ]
+        );
+        $this->response->setContent($contents);
+
+        return $this->response;
+    }
+
+    /**
+     * Performs necessary redirection
+     *
+     * @return ResponseInterface
+     */
+    public function redirectAction(): ResponseInterface
+    {
+        return $this->response->redirect(base_url($this->getVersion('/en/')));
+    }
+
+    /**
+     * @param null|string $language
+     * @param null|string $version
+     *
+     * @return ResponseInterface
+     */
+    public function searchAction(string $language = null, string $version = null): ResponseInterface
+    {
+        $language = 'en';
+        $version  = $this->getVersion();
+        $page     = 'introduction';
+
+        $renderFile = 'index/search';
+        $contents   = $this->viewSimple->render(
+            $renderFile,
+            [
+                'language'    => $language,
+                'version'     => $version,
+                'topicsArray' => $this->getSidebar($language, $version),
+                'menu'        => $this->getDocument($language, $version, $page . '-menu'),
             ]
         );
         $this->response->setContent($contents);
