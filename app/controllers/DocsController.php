@@ -31,7 +31,15 @@ class DocsController extends BaseController
         $language = $this->getLanguage($language);
 
         if (true === empty($version) || 'latest' === $version) {
-            return $this->response->redirect(base_url($this->getVersion('/' . $language . '/')));
+            $suffix = '';
+            if (true !== empty($page)) {
+                $suffix = '/' . $page;
+            }
+            return $this->response->redirect(
+                base_url(
+                    $this->getVersion('/' . $language . '/') . $suffix
+                )
+            );
         }
 
         $version = $this->getVersion('', $version);
