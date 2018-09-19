@@ -21,11 +21,14 @@ use function Docs\Functions\env;
 $versions = file(app_path('VERSIONS'), FILE_IGNORE_NEW_LINES);
 end($versions);
 $version  = current($versions);
+$debug    = env('APP_DEBUG', false);
+$assetTag = (true === $debug) ? time() : env('ASSET_TAG', time());
 
 return [
+    'assetTag'        => $assetTag,
     'version'         => $version,
     'timezone'        => env('APP_TIMEZONE', 'UTC'),
-    'debug'           => env('APP_DEBUG'),
+    'debug'           => $debug,
     'env'             => env('APP_ENV'),
     'url'             => env('APP_URL'),
     'name'            => env('APP_NAME'),
