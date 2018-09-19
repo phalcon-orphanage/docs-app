@@ -215,6 +215,15 @@ pull_latest_changes() {
     fi
 }
 
+update_asset_tag() {
+    echo "Setting up asset date"
+    DEPLOY_DATE=`date +%Y%m%d%H%M`
+    mv ${WORK_DIR}/.env ${WORK_DIR}/storage/setup/.env.bak
+    cat ${WORK_DIR}/storage/setup/.env.bak | \
+        sed -e "s/.*ASSET_TAG.*/ASSET_TAG=$DEPLOY_DATE/" > ${WORK_DIR}/.env
+    rm ${WORK_DIR}/storage/setup/.env.bak
+}
+
 for key in $@; do
     case ${key} in
         --help|-H)
@@ -299,6 +308,8 @@ if [[ "${CLEAR_CACHE}" -eq 1 ]]; then
     printf "Clear the cache...\n"
 
     rm -f "${WORK_DIR}/storage/cache/config/*.php"
+
+    update_asset_tag
 
     validate_php_bin
     ${PHP_BIN} ${WORK_DIR}/phalcon -clear-cache

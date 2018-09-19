@@ -40,10 +40,11 @@ class ServiceProvider implements ServiceProviderInterface
         $assets = $container->getShared('assets');
         $assets->collection("header_js");
 
-        if (environment('development')) {
-            $version = time();
+        $debug = config('app.debug');
+        if (true === $debug) {
+            $assetTag = time();
         } else {
-            $version = config('app.version', '9999');
+            $assetTag = config('app.assetTag', time());
         }
 
         $highlightVersion = config('highlight.version', '9.11.0');
@@ -82,14 +83,14 @@ class ServiceProvider implements ServiceProviderInterface
             ->collection('header_css')
             // TODO(o2)
             // ->addCss($cssCdn, false)
-            ->addCss(assets_uri('js/highlight/styles/googlecode.css', $version))
-            ->addCss(assets_uri('css/style.css', $version));
+            ->addCss(assets_uri('js/highlight/styles/googlecode.css', $assetTag))
+            ->addCss(assets_uri('css/style.css', $assetTag));
 
         $assets
             ->collection('footer_js')
             // // TODO(o2)
             // ->addJs($jsCdn, false);
-            ->addJs(assets_uri('js/main.min.js', $version))
-            ->addJs(assets_uri('js/highlight/highlight.pack.js', $version));
+            ->addJs(assets_uri('js/main.min.js', $assetTag))
+            ->addJs(assets_uri('js/highlight/highlight.pack.js', $assetTag));
     }
 }
