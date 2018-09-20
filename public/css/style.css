@@ -1072,6 +1072,7 @@ hr {
     margin-left: auto;
     padding-left: 32px;
     padding-right: 32px;
+    max-width: 1600px;
 }
 
 .row {
