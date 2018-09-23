@@ -1072,6 +1072,7 @@ hr {
     margin-left: auto;
     padding-left: 32px;
     padding-right: 32px;
+    max-width: 1600px;
 }
 
 .row {
@@ -7414,26 +7415,4 @@ body {
     background-color: #fcf8e3;
     border-color: #faebcc;
     color: #8a6d3b;
-}
-
-.alert-warning hr {
-    border-top-color: #f7e1b5;
-}
-
-.alert-warning .alert-link {
-    color: #66512c;
-}
-
-.alert-danger {
-    background-color: #f2dede;
-    border-color: #ebccd1;
-    color: #a94442;
-}
-
-.alert-danger hr {
-    border-top-color: #e4b9c0;
-}
-
-.alert-danger .alert-link {
-    color: #843534;
 }
