@@ -55,6 +55,7 @@
         "codeception/verify": "0.4.*",
         "doctrine/instantiator": "1.0.5",
         "phalcon/dd": "^1.1",
+        "phalcon/ide-stubs": "^3.4",
         "phpdocumentor/reflection-docblock": "^2.0",
         "phpmd/phpmd": "2.6.*",
         "phpunit/phpunit": "6.4.*",

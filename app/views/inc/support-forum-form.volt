@@ -3,13 +3,12 @@
         {{ filesystem.read('/public/images/icons/topic-message-icon.svg') }}
     </div>
     <p class="support-forum__header">
-        Looking for help?Join Community
+        {{ homeArray[21] }}
     </p>
     <p class="support-forum__description">
-        Couldn't find what your are looking for? Why not join out support forums
-        and let us help you.
+        {{ homeArray[6] }}
     </p>
     <a href="https://phalcon.link/forum" class="support-forum__button" target="_blank">
-        Support Forums
+        {{ homeArray[28] }}
     </a>
 </div>

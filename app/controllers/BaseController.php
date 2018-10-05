@@ -214,6 +214,27 @@ class BaseController extends PhController
     }
 
     /**
+     * Get the content for the home page
+     *
+     * @param string $language
+     * @param string $version
+     *
+     * @return array
+     */
+    protected function getWordsArray(string $language, string $version): array
+    {
+        $content = $this->getDocument($language, $version, 'home');
+
+        /**
+         * Split it into an array
+         */
+        $data = str_replace(['<p>', '</p>'], ['', ''], $content);
+        $data = explode(PHP_EOL, $data);
+
+        return $data;
+    }
+
+    /**
      * @param string $language
      * @param string $version
      * @param string $fileName

@@ -17,6 +17,6 @@
         </div>
     {% endfor %}
     <a href="javascript:void(0);" class="topic-categories__explore-all-topic" onclick="o2.toggleAllTopicSidebar(this)">
-        Explore All Topics
+        {{ homeArray[8] }}
     </a>
 </div>

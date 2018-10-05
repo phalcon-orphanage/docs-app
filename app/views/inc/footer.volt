@@ -7,25 +7,25 @@
                     <img class="footer-logo-img" src="/images/footer_logo.svg" alt="logo">
                 </a>
                 <a class="footer-link" href="https://phalcon.link/about" target="_blank">
-                    About
+                    {{ homeArray[0] }}
                 </a>
                 <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
-                    Blog
+                    {{ homeArray[27] }}
                 </a>
                 <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
-                    Support Us
+                    {{ homeArray[29] }}
                 </a>
                 <a class="footer-link" href="https://phalcon.link/download" target="_blank">
-                    Download
+                    {{ homeArray[7] }}
                 </a>
                 <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
-                    License New BSD
+                    {{ homeArray[42] }} New BSD
                 </a>
             </div>
 
             <div class="footer-copyright">
                 <a href="http://odva.pro/" target="_blank" class="o2-link">
-                    <span>Development by</span> <img src="/images/logo-o2.svg" alt="logo o2">
+                    <span>{{ homeArray[43] }}</span> <img src="/images/logo-o2.svg" alt="logo o2">
                 </a>
             </div>
         </div>
