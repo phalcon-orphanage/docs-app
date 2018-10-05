@@ -1,6 +1,6 @@
 <li class="nav-item" onclick="o2.toggleState(this, event);">
     <div class="nav-item__selected custom-select__version">
-        Version {{ version }}
+        {{ homeArray[32] }} {{ version }}
         <span class="caret"></span>
     </div>
     <div class="nav-item__list" onclick="event.stopPropagation();">

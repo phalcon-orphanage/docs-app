@@ -6,11 +6,9 @@
                     <div class="topic-picture-wrapper">
                         {{ filesystem.read('/public/images/icons/topic-head-icon.svg') }}
                     </div>
-                    <h2>Explore Topics</h2>
+                    <h2>{{ homeArray[9] }}</h2>
                     <p>
-                        We did our best to cover all topics related to this
-                        product. Each section have number which represent number
-                        of topic in each category.
+                        {{ homeArray[33] }}
                     </p>
                     <hr>
                 </div>
@@ -35,7 +33,7 @@
             </div>
             <div class="explore-topic">
                 <a href="javascript:void(0);" class="explore-topic__link" onclick="o2.toggleAllTopic(this)">
-                    Explore All Topics
+                    {{ homeArray[8] }}
                 </a>
             </div>
 

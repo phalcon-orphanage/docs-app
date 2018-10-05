@@ -4,9 +4,9 @@
             <div class="advantages-item__pictures">
                 {{ filesystem.read('/public/images/icons/advantages-help-icon.svg') }}
             </div>
-            <p class="advantages-item__header">What is Phalcon</p>
+            <p class="advantages-item__header">{{ homeArray[34] }}</p>
             <p class="advantages-item__description">
-                Unlike traditional frameworks, Phalcon written as a C-extension and optimized for high performance.
+                {{ homeArray[31] }}
             </p>
         </div>
     </a>
@@ -15,9 +15,9 @@
             <div class="advantages-item__pictures">
                 {{ filesystem.read('/public/images/icons/advantages-developer-icon.svg') }}
             </div>
-            <p class="advantages-item__header">API Documentation</p>
+            <p class="advantages-item__header">{{ homeArray[2] }}</p>
             <p class="advantages-item__description">
-                An incredibly API has been created for you to use as reference when developing Phalcon based solutions
+                {{ homeArray[1] }}
             </p>
         </div>
     </a>
@@ -26,9 +26,9 @@
             <div class="advantages-item__pictures">
                 {{ filesystem.read('/public/images/icons/advantages-community-icon.svg') }}
             </div>
-            <p class="advantages-item__header">Meet the Incubator</p>
+            <p class="advantages-item__header">{{ homeArray[22] }}</p>
             <p class="advantages-item__description">
-                Our community is developing amazing extra features for Phalcon every day via Incubator.
+                {{ homeArray[25] }}
             </p>
         </div>
     </a>

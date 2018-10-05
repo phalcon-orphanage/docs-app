@@ -25,7 +25,7 @@
                     {{- article -}}
                 </div>
                 <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
-                    <p class="text-right"><em>&mdash; The Phalcon Team</em></p>
+                    <p class="text-right"><em>&mdash; {{ homeArray[38] }}</em></p>
                 </div>
             </div>
         </div>

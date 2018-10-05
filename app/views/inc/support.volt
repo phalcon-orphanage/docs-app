@@ -7,8 +7,8 @@
                 </div>
             </div>
             <div class="support-description">
-                <h2>Get Support From Real People</h2>
-                <p>When you are stuck in something don’t waste your time just let us know we are here to help you</p>
+                <h2>{{ homeArray[15] }}</h2>
+                <p>{{ homeArray[35] }}</p>
                 <div class="people">
                     {%- for title, social in config.path('social', []) -%}
                         <div class="people__list">

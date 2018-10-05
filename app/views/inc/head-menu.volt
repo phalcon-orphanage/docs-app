@@ -19,52 +19,52 @@
                 {%- include "inc/version_selector.volt" -%}
                 <li class="nav-item" onclick="o2.toggleState(this, event);">
                     <div class="nav-item_selected">
-                        Community
+                        {{ homeArray[4] }}
                         <span class="caret"></span>
                     </div>
                     <div class="nav-item__list">
                         <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
-                            Forum
+                            {{ homeArray[11] }}
                         </a>
                         <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
-                            Blog
+                            {{ homeArray[3] }}
                         </a>
                         <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
-                            Resources
+                            {{ homeArray[26] }}
                         </a>
                         <div class="nav-item__divider"></div>
                         <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
-                            Facebook
+                            {{ homeArray[10] }}
                         </a>
                         <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
-                            Twitter
+                            {{ homeArray[30] }}
                         </a>
                         <a href="https://phalcon.link/g+" class="custom-select__list-item" target="_blank">
-                            Google+
+                            {{ homeArray[17] }}
                         </a>
                         <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
-                            Gab.ai
+                            {{ homeArray[12] }}
                         </a>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a href="https://phalcon.link/about">
-                        About
+                        {{ homeArray[0] }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="https://phalcon.link/sponsors">
-                        Blog
+                        {{ homeArray[27] }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="https://phalcon.link/fund">
-                        Support Us
+                        {{ homeArray[29] }}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a href="https://phalcon.link/download">
-                        Download
+                        {{ homeArray[7] }}
                     </a>
                 </li>
             </ul>
@@ -80,66 +80,66 @@
         </div>
         <div>
             <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
-                Community
+                {{ homeArray[4] }}
                 <span class="caret"></span>
             </div>
             <ul style="display:none;">
                 <li class="nav-item nav-item-li">
                     <a href="https://phalcon.link/forum" target="_blank">
-                        Forum
+                        {{ homeArray[11] }}
                     </a>
                 </li>
                 <li class="nav-item nav-item-li">
                     <a href="https://phalcon.link/blog" target="_blank">
-                        Blog
+                        {{ homeArray[3] }}
                     </a>
                 </li>
                 <li class="nav-item nav-item-li">
                     <a href="https://phalcon.link/resources" target="_blank">
-                        Resources
+                        {{ homeArray[26] }}
                     </a>
                 </li>
                 <li class="nav-item nav-item-li">
                     <a href="https://phalcon.link/f" target="_blank">
-                        Facebook
+                        {{ homeArray[10] }}
                     </a>
                 </li>
                 <li class="nav-item nav-item-li">
                     <a href="https://phalcon.link/t" target="_blank">
-                        Twitter
+                        {{ homeArray[30] }}
                     </a>
                 </li>
                 <li class="nav-item nav-item-li">
 
                     <a href="https://phalcon.link/g+" target="_blank">
-                        Google+
+                        {{ homeArray[17] }}
                     </a>
                 </li>
                 <li class="nav-item nav-item-li">
                     <a href="https://phalcon.link/gab" target="_blank">
-                        Gab.ai
+                        {{ homeArray[12] }}
                     </a>
                 </li>
             </ul>
         </div>
         <div class="nav-item">
             <a href="https://phalcon.link/about">
-                About
+                {{ homeArray[0] }}
             </a>
         </div>
         <div class="nav-item">
             <a href="https://phalcon.link/sponsors">
-                Blog
+                {{ homeArray[27] }}
             </a>
         </div>
         <div class="nav-item">
             <a href="https://phalcon.link/fund">
-                Support Us
+                {{ homeArray[29] }}
             </a>
         </div>
         <div class="nav-item">
             <a href="https://phalcon.link/download">
-                Download
+                {{ homeArray[7] }}
             </a>
         </div>
     </div>

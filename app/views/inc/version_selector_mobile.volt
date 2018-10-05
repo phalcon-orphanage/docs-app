@@ -1,5 +1,5 @@
 <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
-    Version {{ version }}
+    {{ homeArray[32] }} {{ version }}
     <span class="caret"></span>
 </div>
 

@@ -6,12 +6,12 @@
                     {% if language == 'en' %}
                         <a class="article-content-edit-link pull-right"
                            href="https://github.com/phalcon/docs/blob/{{ version }}/en/{{ page == null ? '': page ~".md" }}">
-                            Edit on GitHub
+                            {{ homeArray[40] }}
                         </a>
                     {% else %}
                         <a class="article-content-edit-link pull-right"
                            href="https://crowdin.com/project/phalcon-documentation/{{ language }}">
-                            Edit on Crowdin
+                            {{ homeArray[41] }}
                         </a>
                     {% endif %}
                     <br>
