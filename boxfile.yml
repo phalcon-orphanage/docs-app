@@ -3,7 +3,7 @@ run.config:
   engine.config:
     runtime: php-7.1
     document_root: public
-    allow_url_fopen: 'Off'
+    allow_url_fopen: 'On'
     disable_functions:
       - exec
       - shell_exec
