@@ -72,14 +72,15 @@ class DocsController extends BaseController
         $contents = $this->viewSimple->render(
             $renderFile,
             [
-                'language'     => $language,
-                'version'      => $version,
-                'topicsArray'  => $this->getSidebar($language, $version),
-                // TODO(o2): 'sidebar' => $this->getDocument($language, $version, 'sidebar'),
                 'article'      => $article,
                 'article_menu' => $article_menu ? $article_menu[0] : [],
-                'menu'         => $this->getDocument($language, $version, $page . '-menu'),
                 'canonical'    => $canonical,
+                'homeArray'    => $this->getWordsArray($language, $version),
+                'language'     => $language,
+                'menu'         => $this->getDocument($language, $version, $page . '-menu'),
+                'topicsArray'  => $this->getSidebar($language, $version),
+                'version'      => $version,
+                // TODO(o2): 'sidebar' => $this->getDocument($language, $version, 'sidebar'),
             ]
         );
         $this->response->setContent($contents);
