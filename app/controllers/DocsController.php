@@ -2,6 +2,7 @@
 
 namespace Docs\Controllers;
 
+use Docs\Cli\Tasks\GeneratePdfTask;
 use Docs\Exception\HttpException;
 use Phalcon\Http\ResponseInterface;
 use Phalcon\Text;
@@ -116,6 +117,7 @@ class DocsController extends BaseController
             [
                 'language'    => $language,
                 'version'     => $version,
+                'homeArray'   => $this->getWordsArray($language, $version),
                 'topicsArray' => $this->getSidebar($language, $version),
                 'menu'        => $this->getDocument($language, $version, $page . '-menu'),
             ]
