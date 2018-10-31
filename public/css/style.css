@@ -3861,7 +3861,7 @@ footer {
 
 .parse-content .hljs {
     font-size: 14px;
-    margin: -6px -12px;
+    margin: -6px -10px;
 }
 
 .parse-content .hljs::-moz-selection {
