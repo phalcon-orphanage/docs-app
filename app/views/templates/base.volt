@@ -13,11 +13,11 @@
         {%- set app_version = config('app.version', '9999') -%}
     {%- endif -%}
 
-    {%- set name = config.get('app').get('name', 'Documentation') -%}
-    {%- set description = config.get('app').get('description', 'Phalcon Framework') -%}
-    {%- set description_long = config.get('app').get('descriptionLong', 'Official Phalcon Documentation') -%}
-    {%- set url = config.get('app').get('url', 'https://docs.phalconphp.com') -%}
-    {%- set keywords = config.get('app').get('keywords', 'php, phalcon, phalcon php, php framework, faster php framework') -%}
+    {%- set name = config.path('app.name', 'Documentation') -%}
+    {%- set description = config.path('app.description', 'Phalcon Framework') -%}
+    {%- set description_long = config.path('app.descriptionLong', 'Official Phalcon Documentation') -%}
+    {%- set url = config.path('app.url', 'https://docs.phalconphp.com') -%}
+    {%- set keywords = config.path('app.keywords', 'php, phalcon, phalcon php, php framework, faster php framework') -%}
 
     {%- block meta -%}{%- endblock -%}
     {%- include "include/icons.volt" with ['url': url] -%}
