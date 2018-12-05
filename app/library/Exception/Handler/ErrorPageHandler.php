@@ -18,6 +18,7 @@
 namespace Docs\Exception\Handler;
 
 use Whoops\Handler\Handler;
+use Phalcon\Http\Response;
 use function Docs\Functions\config;
 use function Docs\Functions\container;
 
@@ -82,10 +83,7 @@ class ErrorPageHandler extends Handler
     private function renderErrorPage()
     {
         $dispatcher = container('dispatcher');
-        $view       = container('viewSimple');
-        $response   = container('response');
-
-        $controller    = config('error.controller', 'error');
+        $controller = config('error.controller', 'error');
         $defaultAction = config('error.action', 'show500');
 
         switch ($this->getException()->getCode()) {
@@ -102,8 +100,49 @@ class ErrorPageHandler extends Handler
         $dispatcher->setActionName($action);
         $dispatcher->dispatch();
 
-        $content = $view->render("$controller/$action", $dispatcher->getParams());
+        $this->safeRenderError("$controller/$action", $dispatcher->getParams());
+    }
 
-        $response->setContent($content)->send();
+    private function safeRenderError($viewName, $viewParams)
+    {
+        if (container()->has('response')) {
+            $response = container('response');
+        } else {
+            $response = new Response();
+        }
+
+        $try = 0;
+        $view = container('viewSimple');
+        do {
+            /**
+             * An error like:
+             *      Phalcon\Mvc\View\Engine\Volt\Compiler::compile(): mstat failed for ...
+             * still may occur
+             */
+            try {
+                $content = $view->render($viewName, $viewParams);
+                $response->setContent($content)->send();
+                break;
+            } catch (\Exception $e) {
+                $try++;
+                usleep($try * 500000);
+                continue;
+            } catch (\Throwable $e) {
+                $try++;
+                usleep($try * 500000);
+                continue;
+            }
+        } while ($try < 10);
+
+
+        if (false == $response->isSent()) {
+            header("Location: " . config('app.url', 'https://docs.phalconphp.com'));
+
+            /**
+             * Why you should use die():
+             * @link http://thedailywtf.com/Articles/WellIntentioned-Destruction.aspx
+             */
+            die();
+        }
     }
 }
