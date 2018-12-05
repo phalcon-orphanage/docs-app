@@ -34,12 +34,17 @@ class ErrorController extends BaseController
 
         $version = $this->getVersion();
 
+        // TODO: It seems we can try detect the requested language
+        $language = 'en';
+
         $this->viewSimple->setVars([
             'sidebar'  => $this->getDocument('en', $version, 'sidebar'),
             'language' => 'en',
             'article'  => '',
             'support'  => config('app.supportEmail', 'support@phalconphp.com'),
             'version'  => $version,
+            'page'     => '',
+            'homeArray'=> $this->getWordsArray($language, $version),
         ]);
     }
 
@@ -51,12 +56,17 @@ class ErrorController extends BaseController
 
         $version = $this->getVersion();
 
+        // TODO: It seems we can try detect the requested language
+        $language = 'en';
+
         $this->viewSimple->setVars([
             'sidebar'  => $this->getDocument('en', $version, 'sidebar'),
             'language' => 'en',
             'article'  => '',
             'support'  => config('app.supportEmail', 'support@phalconphp.com'),
             'version'  => $version,
+            'page'     => '',
+            'homeArray'=> $this->getWordsArray($language, $version),
         ]);
     }
 }
