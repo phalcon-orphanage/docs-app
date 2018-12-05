@@ -10,7 +10,7 @@
     {%- if (environment('development')) -%}
         {%- set app_version = time() -%}
     {%- else -%}
-        {%- set app_version = config('app.version', '9999') -%}
+        {%- set app_version = config.path('app.version', '9999') -%}
     {%- endif -%}
 
     {%- set name = config.path('app.name', 'Documentation') -%}
