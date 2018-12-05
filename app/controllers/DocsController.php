@@ -73,6 +73,7 @@ class DocsController extends BaseController
         $contents = $this->viewSimple->render(
             $renderFile,
             [
+                'page'         => $page,
                 'article'      => $article,
                 'article_menu' => $article_menu ? $article_menu[0] : [],
                 'canonical'    => $canonical,
