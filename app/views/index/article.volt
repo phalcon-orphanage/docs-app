@@ -3,6 +3,7 @@
 {%- block meta -%}
     {%- include "include/meta.volt" with [
         'url': url,
+        'language': language,
         'name': name,
         'description': description,
         'keywords': keywords,

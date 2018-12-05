@@ -4,6 +4,7 @@
     {%- include "include/meta.volt" with [
         'url': url,
         'name': name,
+        'language': language,
         'description': description,
         'keywords': keywords,
         'description_long': description_long,
