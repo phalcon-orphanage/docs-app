@@ -20,7 +20,7 @@
     {%- set keywords = config.path('app.keywords', 'php, phalcon, phalcon php, php framework, faster php framework') -%}
 
     {%- block meta -%}{%- endblock -%}
-    {%- include "include/icons.volt" with ['url': url] -%}
+    {%- include "include/icons.volt" -%}
     {%- include "include/analytics.volt" -%}
 
     {%- block head -%}

@@ -24,8 +24,8 @@
 
     {%- block meta -%}{%- endblock -%}
 
-    {%- include "include/ie-support.volt" with ['app_version': app_version] -%}
-    {%- include "include/icons.volt" with ['url': url] -%}
+    {%- include "include/ie-support.volt" -%}
+    {%- include "include/icons.volt" -%}
     {%- include "include/analytics.volt" -%}
 
     {%- block head -%}
@@ -36,7 +36,7 @@
 </head>
 <body onclick="o2.allNavSlideUp()">
 {%- include 'inc/header.volt' -%}
-{%- include 'inc/advantages.volt' with ['url': url, 'language': language] -%}
+{%- include 'inc/advantages.volt' -%}
 {%- include 'inc/topics.volt' -%}
 {%- include 'inc/support.volt' -%}
 
