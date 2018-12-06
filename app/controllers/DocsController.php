@@ -108,10 +108,10 @@ class DocsController extends BaseController
      */
     public function searchAction(string $language = null, string $version = null): ResponseInterface
     {
-        $language = 'en';
-        $version  = $this->getVersion();
-        $page     = 'introduction';
-
+        $language   = 'en';
+        $version    = $this->getVersion();
+        $page       = 'introduction';
+        $canonical  = Text::reduceSlashes(base_url("{$language}/{$version}/{$page}"));
         $renderFile = 'index/search';
         $contents   = $this->viewSimple->render(
             $renderFile,
@@ -121,6 +121,8 @@ class DocsController extends BaseController
                 'homeArray'   => $this->getWordsArray($language, $version),
                 'topicsArray' => $this->getSidebar($language, $version),
                 'menu'        => $this->getDocument($language, $version, $page . '-menu'),
+                'page'        => $page,
+                'canonical'   => $canonical,
             ]
         );
         $this->response->setContent($contents);
