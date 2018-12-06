@@ -17,6 +17,7 @@
 
 namespace Docs\Exception\Handler;
 
+use Docs\Exception\HttpException;
 use Whoops\Exception\Frame;
 use Whoops\Handler\Handler;
 use function Docs\Functions\app_path;
@@ -53,6 +54,13 @@ class LoggerHandler extends Handler
      */
     public function handle()
     {
+        $exception = $this->getException();
+
+        if ($exception instanceof HttpException) {
+            // Do not log HTTP exceptions like 404, 400, etc
+            return Handler::DONE;
+        }
+
         $response = $this->generateResponse();
 
         if ($logger = $this->getLogger()) {
