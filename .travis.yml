@@ -36,17 +36,17 @@ install:
       fi
 
     - |
-        if [ ! -f $HOME/ext/$PHP_VERSION/phalcon.so ]; then
+        if [ ! -f $HOME/ext/$PHP_VERSION/$PHALCON_VERSION/phalcon.so ]; then
           pushd $HOME/cphalcon/build
           bash ./install --phpize $(phpenv which phpize) --php-config $(phpenv which php-config)
-          mkdir -p $HOME/ext/$PHP_VERSION
-          cp $PHP_EXTENSION_DIR/phalcon.so $HOME/ext/$PHP_VERSION/phalcon.so
+          mkdir -p $HOME/ext/$PHP_VERSION/$PHALCON_VERSION
+          cp $PHP_EXTENSION_DIR/phalcon.so $HOME/ext/$PHP_VERSION/$PHALCON_VERSION/phalcon.so
           popd
         fi
 
     - |
-        if [ -f $HOME/ext/$PHP_VERSION/phalcon.so ]; then
-          cp $HOME/ext/$PHP_VERSION/phalcon.so $PHP_EXTENSION_DIR/phalcon.so
+        if [ -f $HOME/ext/$PHP_VERSION/$PHALCON_VERSION/phalcon.so ] && [ ! -f $PHP_EXTENSION_DIR/phalcon.so ]; then
+          cp $HOME/ext/$PHP_VERSION/$PHALCON_VERSION/phalcon.so $PHP_EXTENSION_DIR/phalcon.so
         fi
 
     - echo extension=phalcon.so >> $(phpenv root)/versions/$(phpenv version-name)/etc/conf.d/travis.ini
@@ -58,8 +58,6 @@ before_script:
 
 script:
     - vendor/bin/phpcs
-    - vendor/bin/phpmd bootstrap text codesize,unusedcode,naming --ignore-violations-on-exit
-    - vendor/bin/phpmd app text codesize,unusedcode,naming --ignore-violations-on-exit
     - vendor/bin/codecept build
     - vendor/bin/codecept run unit
 
