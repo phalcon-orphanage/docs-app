@@ -17,6 +17,7 @@
 
 namespace Docs\Providers\EventsManager;
 
+use Docs\Events\NewRelicTransactionListener;
 use Phalcon\Di\ServiceProviderInterface;
 use Phalcon\DiInterface;
 use Phalcon\Events\Manager;
@@ -40,6 +41,8 @@ class ServiceProvider implements ServiceProviderInterface
             function () {
                 $em = new Manager();
                 $em->enablePriorities(true);
+
+                $em->attach('micro:afterExecuteRoute', new NewRelicTransactionListener());
 
                 return $em;
             }
