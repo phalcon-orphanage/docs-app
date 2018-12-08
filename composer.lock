@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4bacb0ae83b0a4557c707baf02e3e61e",
+    "content-hash": "19f95bae97eec0410819e0bad7d348d8",
     "packages": [
         {
             "name": "dariuszp/cli-progress-bar",
@@ -1240,54 +1240,6 @@
                 "utils"
             ],
             "time": "2017-05-06T17:11:54+00:00"
-        },
-        {
-            "name": "phalcon/ide-stubs",
-            "version": "v3.4.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/phalcon/ide-stubs.git",
-                "reference": "48e7920621dd2086efe39ab1d52aa9b2e1b8dca0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/phalcon/ide-stubs/zipball/48e7920621dd2086efe39ab1d52aa9b2e1b8dca0",
-                "reference": "48e7920621dd2086efe39ab1d52aa9b2e1b8dca0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Phalcon Team",
-                    "email": "team@phalconphp.com",
-                    "homepage": "https://phalconphp.com/en/team"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://github.com/phalcon/ide-stubs/graphs/contributors"
-                }
-            ],
-            "description": "The most complete Phalcon Framework IDE stubs library which enables autocompletion in modern IDEs.",
-            "homepage": "https://phalconphp.com",
-            "keywords": [
-                "Devtools",
-                "Eclipse",
-                "autocomplete",
-                "ide",
-                "netbeans",
-                "phalcon",
-                "phpstorm",
-                "stub",
-                "stubs"
-            ],
-            "time": "2018-09-18T18:54:45+00:00"
         },
         {
             "name": "phar-io/manifest",
@@ -3661,6 +3613,7 @@
     "prefer-lowest": false,
     "platform": {
         "php": ">= 7.0",
+        "ext-json": "*",
         "ext-phalcon": "~3.2"
     },
     "platform-dev": []
