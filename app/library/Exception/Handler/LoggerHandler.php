@@ -110,7 +110,7 @@ class LoggerHandler extends Handler
             $class = $frame->getClass();
 
             $template = "\n%3d. %s->%s() %s:%d%s";
-            if (!$class) {
+            if (null === $class) {
                 // Remove method arrow (->) from output.
                 $template = "\n%3d. %s%s() %s:%d%s";
             }
