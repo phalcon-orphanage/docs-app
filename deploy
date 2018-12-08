@@ -20,7 +20,7 @@ COMPOSER_BIN=$(command -v composer 2>/dev/null)
 
 DOCS_REPO=https://github.com/phalcon/docs
 
-if [ -f .env ]; then
+if [[ -f .env ]]; then
     source .env
 fi
 
@@ -57,7 +57,7 @@ print_help() {
     printf "\n${YELLOW}Options:${NC}"
     printf "\n      ${GREEN}--[no-]install-deps${NC}        Install the application dependencies using the Composer (enabled by default)"
     printf "\n      ${GREEN}--[no-]update-docs${NC}         Update the documentation for all known versions (enabled by default)"
-    printf "\n      ${GREEN}--[no-]pull-changes${NC}        Pull the latests changes from the git repo (enabled by default)"
+    printf "\n      ${GREEN}--[no-]pull-changes${NC}        Pull the latest changes from the git repo (enabled by default)"
     printf "\n      ${GREEN}--[no-]clear-cache${NC}         Clear the cache (enabled by default)"
     printf "\n  ${GREEN}-L, --list-versions${NC}            List known docs versions"
     printf "\n  ${GREEN}-H, --help${NC}                     Show this help message"
