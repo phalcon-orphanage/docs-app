@@ -1,5 +1,5 @@
 <p align="center"><a href="https://docs.phalconphp.com" target="_blank">
-    <img src="https://avatars1.githubusercontent.com/u/1221505" height="100" alt="Phalcon"/>
+    <img src="https://docs.phalconphp.com/images/footer_logo.svg" height="100" alt="Phalcon"/>
 </a></p>
 
 <p align="center">
@@ -9,11 +9,7 @@
 <a href="https://scrutinizer-ci.com/g/phalcon/docs-app/build-status/master"><img src="https://scrutinizer-ci.com/g/phalcon/docs-app/badges/build.png?b=master" alt="Scrutinizer Build Status"></a>
 </p>
 
----
-
 Official [Phalcon][0] documentation website.
-
----
 
 Documentation
 -------------
