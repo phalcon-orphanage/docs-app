@@ -65,18 +65,9 @@ class ServiceProvider implements ServiceProviderInterface
                 }
 
                 $app->notFound(function () {
+                    // todo: custom newrelic error handler
                     throw new HttpException('Not Found', 404);
                 });
-
-                $app->after(function () {
-                    if (extension_loaded('newrelic')) {
-                        $method = $_SERVER['REQUEST_METHOD'] ?? 'GET';
-                        $uri    = $_SERVER['REQUEST_URI'] ?? '/index.php';
-
-                        \newrelic_name_transaction("{$method} {$uri}");
-                    }
-                });
-
 
                 break;
             case 'cli':
