@@ -14,7 +14,7 @@ final class NewRelicTransactionListener
             return;
         }
 
-        $params = $app->getRouter()->getParams();
+        $params  = $app->getRouter()->getParams();
         $handler = $app->getActiveHandler();
 
         if (is_array($handler) && isset($handler[1]) && 'searchAction' === $handler[1]) {
@@ -55,7 +55,7 @@ final class NewRelicTransactionListener
      */
     private function setTransactionName($name)
     {
-        \newrelic_name_transaction("/" . trim($name, "\t\n\r\0\x0B\\/"));
+        \newrelic_name_transaction('/' . trim($name, "\t\n\r\0\x0B\\/"));
     }
 
     /**
