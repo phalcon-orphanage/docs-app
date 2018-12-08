@@ -40,6 +40,7 @@
     },
     "require": {
         "php": ">= 7.0",
+        "ext-json": "*",
         "ext-phalcon": "~3.2",
         "dariuszp/cli-progress-bar": "^1.0",
         "erusev/parsedown": "1.7.*",
@@ -55,7 +56,6 @@
         "codeception/verify": "0.4.*",
         "doctrine/instantiator": "1.0.5",
         "phalcon/dd": "^1.1",
-        "phalcon/ide-stubs": "^3.4",
         "phpdocumentor/reflection-docblock": "^2.0",
         "phpmd/phpmd": "2.6.*",
         "phpunit/phpunit": "6.4.*",
