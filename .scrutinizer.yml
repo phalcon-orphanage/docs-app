@@ -1,7 +1,12 @@
 build:
+  nodes:
+    analysis:
+      tests:
+        override:
+          - php-scrutinizer-run
+
   tests:
     override:
-      - command: php --ri phalcon
       - command: phpcs-run
       - command: vendor/bin/codecept run --coverage-xml
         coverage:
@@ -19,12 +24,6 @@ filter:
     - 'vendor/*'
     - 'docs/*'
     - 'storage/*'
-
-tools:
-  php_analyzer: true
-  php_mess_detector: true
-  php_code_sniffer: true
-  php_loc: true
 
 checks:
   php:
