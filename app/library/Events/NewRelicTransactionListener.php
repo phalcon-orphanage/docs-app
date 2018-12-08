@@ -17,43 +17,43 @@ final class NewRelicTransactionListener
         $params = $app->getRouter()->getParams();
         $page = null;
 
-        // Assume that this URI matched /<lang>/<version>/<page>
-        if (!empty($params[1])) {
-            $this->addTransactionParameter('lang', $params[0]);
-            $this->addTransactionParameter('version', $params[1]);
+        $handler = $app->getActiveHandler();
+        if (is_array($handler) && isset($handler[1]) && 'searchAction' === $handler[1]) {
+            $this->setTransactionName('search');
 
-            // In accordance with the routing we should look
-            // for page name in the $params[2]
-            if (!empty($params[2])) {
-                $page = $params[2];
-            } else {
-                $page = '';
+            $query = parse_query($_SERVER['QUERY_STRING']);
+            if (!empty($query['q'])) {
+                $this->addTransactionParameter('query', $query['q']);
             }
-        } elseif (!empty($params[0])) {
-            $this->addTransactionParameter('lang', $params[0]);
-            $this->addTransactionParameter('version', 'latest');
-        }
-
-        if (null === $page) {
-            $handler = $app->getActiveHandler();
-            if (is_array($handler) && isset($handler[1]) && 'searchAction' === $handler[1]) {
-                $page = 'search';
-
-                $query = parse_query($_SERVER['QUERY_STRING']);
-                if (!empty($query['q'])) {
-                    $this->addTransactionParameter('query', $query['q']);
-                }
-            } else {
-                $page = $_SERVER['REQUEST_URI'];
+        } elseif (!empty($params)) {
+            $lang = 'en';
+            if (!empty($params['l'])) {
+                $lang = $params['l'];
             }
-        }
 
-        $this->setTransactionName($page);
+            $version = 'latest';
+            if (!empty($params['v'])) {
+                $version = $params['v'];
+            }
+
+            $page = 'introduction';
+            if (!empty($params['p'])) {
+                $page = $params['p'];
+            }
+
+            $this->addTransactionParameter('lang', $lang);
+            $this->addTransactionParameter('version', $version);
+
+            $this->setTransactionName($page);
+        } else {
+            $this->setTransactionName('');
+            $this->addTransactionParameter('uri', $_SERVER['REQUEST_URI']);
+        }
     }
 
     private function setTransactionName($name)
     {
-        \newrelic_name_transaction("/{$name}");
+        \newrelic_name_transaction("/" . ltrim($name));
     }
 
     private function addTransactionParameter($parameter, $value)
