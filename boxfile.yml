@@ -36,6 +36,8 @@ run.config:
       - tokenizer
       - xml
       - xmlwriter
+      - fileinfo
+      - zip
     zend_extensions:
       - opcache
     dev_zend_extensions:
