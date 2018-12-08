@@ -2,9 +2,9 @@
 
 namespace Docs\Events;
 
-use function GuzzleHttp\Psr7\parse_query;
 use Phalcon\Events\Event;
 use Phalcon\Mvc\Micro;
+use function GuzzleHttp\Psr7\parse_query;
 
 final class NewRelicTransactionListener
 {
