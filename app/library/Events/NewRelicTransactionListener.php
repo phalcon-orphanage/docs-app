@@ -50,11 +50,18 @@ final class NewRelicTransactionListener
         }
     }
 
+    /**
+     * @param string $name
+     */
     private function setTransactionName($name)
     {
         \newrelic_name_transaction("/" . trim($name, "\t\n\r\0\x0B\\/"));
     }
 
+    /**
+     * @param string $parameter
+     * @param string $value
+     */
     private function addTransactionParameter($parameter, $value)
     {
         \newrelic_add_custom_parameter($parameter, trim($value, "\t\n\r\0\x0B\\/"));
