@@ -1,21 +1,17 @@
 language: php
 
-sudo: false
-dist: trusty
-group: edge
-
 php:
     - 7.0
     - 7.1
     - 7.2
+    - 7.3
 
 git:
     depth: 1
 
 cache:
     apt: true
-    ccache: true
-    timeout: 691200
+    timeout: 604800
     directories:
         - vendor
         - $HOME/.composer/cache
@@ -24,21 +20,36 @@ cache:
 
 env:
     global:
-        - PHALCON_VERSION="v3.3.0"
+        - PHALCON_VERSION="v3.4.2"
+        - PHALCON_URL="https://github.com/phalcon/cphalcon.git"
 
 before_install:
     - export PHP_VERSION=$(php-config --version)
     - export PHP_EXTENSION_DIR=$(php-config --extension-dir)
     - phpenv config-rm xdebug.ini || true
     - if [ -n "$GH_TOKEN" ]; then composer config github-oauth.github.com $GH_TOKEN; fi;
-    - if [ ! -f "$HOME/cphalcon/tests/_ci/phalcon.ini" ]; then git clone -q --depth=1 https://github.com/phalcon/cphalcon.git -b $PHALCON_VERSION $HOME/cphalcon >/dev/null 2>&1; fi;
 
 install:
-    - if [ ! -f $HOME/ext/$PHP_VERSION/phalcon.so ]; then cd $HOME/cphalcon/build && bash ./install --phpize $(phpenv which phpize) --php-config $(phpenv which php-config) && mkdir -p $HOME/ext/$PHP_VERSION && cp $PHP_EXTENSION_DIR/phalcon.so $HOME/ext/$PHP_VERSION/phalcon.so; fi;
-    - if [ -f $HOME/ext/$PHP_VERSION/phalcon.so ]; then cp $HOME/ext/$PHP_VERSION/phalcon.so $PHP_EXTENSION_DIR/phalcon.so; fi;
-    - phpenv config-add $HOME/cphalcon/tests/_ci/phalcon.ini
-    - phpenv config-add $TRAVIS_BUILD_DIR/tests/_ci/memcached.ini
-    - cd $TRAVIS_BUILD_DIR
+    - |
+      if [ ! -f "$HOME/cphalcon/README.md" ]; then
+        git clone -q --depth=1 $PHALCON_URL -b $PHALCON_VERSION $HOME/cphalcon
+      fi
+
+    - |
+        if [ ! -f $HOME/ext/$PHP_VERSION/phalcon.so ]; then
+          pushd $HOME/cphalcon/build
+          bash ./install --phpize $(phpenv which phpize) --php-config $(phpenv which php-config)
+          mkdir -p $HOME/ext/$PHP_VERSION
+          cp $PHP_EXTENSION_DIR/phalcon.so $HOME/ext/$PHP_VERSION/phalcon.so
+          popd
+        fi
+
+    - |
+        if [ -f $HOME/ext/$PHP_VERSION/phalcon.so ]; then
+          cp $HOME/ext/$PHP_VERSION/phalcon.so $PHP_EXTENSION_DIR/phalcon.so
+        fi
+
+    - echo extension=phalcon.so >> $(phpenv root)/versions/$(phpenv version-name)/etc/conf.d/travis.ini
     - travis_retry composer install --prefer-dist --no-interaction
 
 before_script:
@@ -53,11 +64,7 @@ script:
     - vendor/bin/codecept run unit
 
 notifications:
-    email:
-    recipients:
-        - build@phalconphp.com
-    on_success: change
-    on_failure: always
+    email: false
 
 addons:
     hosts:
