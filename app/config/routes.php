@@ -26,7 +26,6 @@ return [
                 '/{l:[a-z]{2}}/{v}'         => 'mainAction',
                 '/{l:[a-z]{2}}/{v}/{p}'     => 'mainAction',
                 '/{l:[a-z]{2}}/{v}/api/{p}' => 'mainAction',
-                '/sitemap.xml'              => 'sitemapAction',
                 '/search'                   => 'searchAction',
             ],
 
