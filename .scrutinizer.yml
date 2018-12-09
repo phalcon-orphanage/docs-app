@@ -1,6 +1,9 @@
 build:
   nodes:
     analysis:
+      dependencies:
+        after:
+          - composer require --dev phalcon/ide-stubs
       tests:
         override:
           - php-scrutinizer-run
