@@ -22,6 +22,8 @@ use function implode;
 
 /**
  * GenerateSitemapTask
+ *
+ * @property \Phalcon\Mvc\View\Simple $viewSimple
  */
 class GenerateSitemapTask extends Task
 {

@@ -129,7 +129,7 @@ class ErrorPageHandler extends Handler
         } while ($try < 10);
 
 
-        if (false == $response->isSent()) {
+        if (false === $response->isSent()) {
             header("Location: " . config('app.url', 'https://docs.phalconphp.com'));
 
             /**
