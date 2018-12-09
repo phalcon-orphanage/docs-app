@@ -20,8 +20,7 @@ build:
     before:
       - cp storage/setup/.env.example .env
       - sed -i -re 's|^APP_ENV=.*|APP_ENV=testing|g' .env
-      - sed -i -re 's|^APP_URL=.*|APP_URL=http://localhost|g' .env
-      - sudo composer self-update
+      - sudo -u scrutinizer composer self-update
 
 filter:
   excluded_paths:
