@@ -17,9 +17,12 @@ use FilesystemIterator;
 use Phalcon\CLI\Task;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
+use function Docs\Functions\config;
 
 /**
  * RegenerateApiTask
+ *
+ * @property \Phalcon\Mvc\View\Simple $viewSimple
  */
 class RegenerateApiTask extends Task
 {
@@ -38,7 +41,7 @@ class RegenerateApiTask extends Task
     public function mainAction()
     {
         $language = 'en';
-        $version  = $this->config->get('app')->get('version');
+        $version  = config('app.version');
 
         $this->scanSources();
 
@@ -494,7 +497,7 @@ class RegenerateApiTask extends Task
                                 $ret['parameters'][$name] = trim($parts[0]);
                             } else {
                                 // throw new Exception(
-                                //     'Failed proccessing parameters in ' . $className . '::' . $methodName
+                                //     'Failed processing parameters in ' . $className . '::' . $methodName
                                 // );
                             }
                         } else {
