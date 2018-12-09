@@ -6,6 +6,7 @@
 <a href="https://scrutinizer-ci.com/g/phalcon/docs-app/build-status/master"><img src="https://scrutinizer-ci.com/g/phalcon/docs-app/badges/build.png?b=master" alt="Build Status"></a>
 <a href="https://scrutinizer-ci.com/g/phalcon/docs-app/?branch=master"><img src="https://scrutinizer-ci.com/g/phalcon/docs-app/badges/quality-score.png?b=master" alt="Code Quality"></a>
 <a href="https://scrutinizer-ci.com/g/phalcon/docs-app/?branch=master"><img src="https://scrutinizer-ci.com/g/phalcon/docs-app/badges/coverage.png?b=master" alt="Code Coverage"></a>
+<a href="https://scrutinizer-ci.com/g/phalcon/docs-app/?branch=master"><img src="https://scrutinizer-ci.com/g/phalcon/docs-app/badges/code-intelligence.svg?b=master" alt="Code Intelligence"></a>
 </p>
 
 Official [Phalcon][0] documentation website.
