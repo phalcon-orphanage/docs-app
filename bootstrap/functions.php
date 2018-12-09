@@ -13,6 +13,7 @@ namespace Docs\Functions;
 
 use Closure;
 use Phalcon\Di;
+use Phalcon\DiInterface;
 
 /**
  * Get the application path.
@@ -97,7 +98,7 @@ function env($key, $default = null)
  *
  * @param  mixed
  *
- * @return mixed|\Phalcon\DiInterface
+ * @return mixed|DiInterface
  */
 function container()
 {
@@ -108,7 +109,7 @@ function container()
         return $default;
     }
 
-    if ($default) {
+    if ($default instanceof DiInterface) {
         return call_user_func_array([$default, 'getShared'], $args);
     }
 
