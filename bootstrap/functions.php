@@ -109,7 +109,7 @@ function container()
         return $default;
     }
 
-    if ($default instanceof DiInterface) {
+    if (null !== $default) {
         return call_user_func_array([$default, 'getShared'], $args);
     }
 
