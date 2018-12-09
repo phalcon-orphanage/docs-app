@@ -1,31 +1,45 @@
-# Phalcon Docs App
+<p align="center"><a href="https://docs.phalconphp.com" target="_blank">
+    <img src="https://docs.phalconphp.com/images/footer_logo.svg" height="100" alt="Phalcon"/>
+</a></p>
 
-[![Build Status](https://travis-ci.org/phalcon/docs-app.svg?branch=master)][:ci:]
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/phalcon/docs-app/badges/quality-score.png?b=master)][:scq:]
-[![Scrutinizer Code Coverage](https://scrutinizer-ci.com/g/phalcon/docs-app/badges/coverage.png?b=master)][:scc:]
-[![Scrutinizer Build Status](https://scrutinizer-ci.com/g/phalcon/docs-app/badges/build.png?b=master)][:sbs:]
+<p align="center">
+<a href="https://scrutinizer-ci.com/g/phalcon/docs-app/build-status/master"><img src="https://scrutinizer-ci.com/g/phalcon/docs-app/badges/build.png?b=master" alt="Build Status"></a>
+<a href="https://scrutinizer-ci.com/g/phalcon/docs-app/?branch=master"><img src="https://scrutinizer-ci.com/g/phalcon/docs-app/badges/quality-score.png?b=master" alt="Code Quality"></a>
+<a href="https://scrutinizer-ci.com/g/phalcon/docs-app/?branch=master"><img src="https://scrutinizer-ci.com/g/phalcon/docs-app/badges/coverage.png?b=master" alt="Code Coverage"></a>
+<a href="https://scrutinizer-ci.com/g/phalcon/docs-app/?branch=master"><img src="https://scrutinizer-ci.com/g/phalcon/docs-app/badges/code-intelligence.svg?b=master" alt="Code Intelligence"></a>
+</p>
 
+Official [Phalcon][0] documentation website.
 
-Phalcon Docs App is an official Phalcon documentation website.
-You can adapt it to your own needs or improve it if you want.
+Documentation
+-------------
+* Official documentation is [located here][1]
+* Translations must be sent to [Crowdin project][2]
 
-Please write us if you have any feedback.
+Community
+---------
+* Follow us on [GitHub][3], [Facebook][4], [Twitter][5] or [Gab.ai][6]
+* Get Phalcon support on [Discord][7] and [Official Forums][8]
 
-## NOTE
+Contributing
+------------
 
-The master branch will always contain the latest stable version. If you wish
-to check older versions or newer ones currently under development, please
-switch to the relevant [branch][:branch:]/[tag][:tags:].
+This work is an open source, community-driven project. See [CONTRIBUTING.md][9]
+for details about contributions to this repository.
 
-## License
+License
+-------
 
-Phalcon Docs App is an open-sourced software licensed under the [New BSD License][:license:].<br>
-© Phalcon Team
+This work licensed under the New BSD License. See the [LICENSE][10] file for more information.
 
-[:ci:]: https://travis-ci.org/phalcon/docs-app
-[:scq:]: https://scrutinizer-ci.com/g/phalcon/docs-app/?branch=master
-[:scc:]: https://scrutinizer-ci.com/g/phalcon/docs-app/?branch=master
-[:sbs:]: https://scrutinizer-ci.com/g/phalcon/docs-app/build-status/master
-[:branch:]: https://github.com/phalcon/docs-app/branches
-[:tags:]: https://github.com/phalcon/docs-app/tags
-[:license:]: ./LICENSE.txt
+[0]: https://phalconphp.com
+[1]: https://docs.zephir-lang.com
+[2]: https://crowdin.com/project/phalcon-documentation
+[3]: https://github.com/phalcon/cphalcon
+[4]: https://phalcon.link/fb
+[5]: https://phalcon.link/t
+[6]: https://phalcon.link/gab
+[7]: https://phalcon.link/discord
+[8]: https://forum.phalconphp.com
+[9]: https://github.com/phalcon/docs-app/blob/master/CONTRIBUTING.md
+[10]: https://github.com/phalcon/docs-app/blob/master/LICENSE.txt

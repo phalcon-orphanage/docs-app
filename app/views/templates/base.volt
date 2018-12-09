@@ -51,6 +51,5 @@
 {%- include 'inc/footer.volt' -%}
 {{- assets.outputJs('footer_js') -}}
 <script type="application/javascript">hljs.initHighlightingOnLoad();</script>
-<script src="//rum-static.pingdom.net/pa-5c085939db2aac00160001db.js" async></script>
 </body>
 </html>

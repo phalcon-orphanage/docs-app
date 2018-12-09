@@ -1,1 +1,4 @@
-*.sql linguist-language=SQL
+*.png                   binary
+
+public/js/highlight/*   linguist-vendored
+public/js/vendors/*     linguist-vendored

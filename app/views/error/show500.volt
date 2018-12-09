@@ -10,20 +10,20 @@
 
 {%- block content -%}
     <section class="documentation-section">
-        <div class="container-fluid ">
+        <div class="container ">
             <div class="row">
-                <div class="col-md-8 col-lg-9 parse-content">
+                <div class="col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1 parse-content">
                     <div>
                         <p class="lead">
                             {{ homeArray[44] }} <a href="{{ 'mailto:' ~ support }}">{{ support }}</a>.
                             {{ homeArray[45] }}
-                            Please check back in a few minutes!
+                        </p>
+                        <p>
+                            <br />
+                            <a class="btn btn-primary" href="{{ url ~ '?from=error500' }}">{{ homeArray[38] }}</a>
                         </p>
                     </div>
                     {{- article -}}
-                </div>
-                <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
-                    <p class="text-right"><em>&mdash; {{ homeArray[38] }}</em></p>
                 </div>
             </div>
         </div>

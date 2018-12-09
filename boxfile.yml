@@ -1,41 +1,43 @@
 run.config:
   engine: php
+
   engine.config:
     runtime: php-7.1
     document_root: public
     allow_url_fopen: 'On'
-    disable_functions:
-      - exec
-      - shell_exec
-      - system
-    expose_php: 'Off'
     max_execution_time: 30
     max_input_time: 60
+    max_input_vars: 1000
     memory_limit: '128M'
     error_reporting: E_ALL
     display_errors: 'stderr'
     register_globals: 'Off'
     register_argc_argv: 'Off'
-    max_input_vars: 1000
+
     default_mimetype: 'text/html'
     default_locale: 'en_US'
+    date_timezone: 'UTC'
+    iconv_internal_encoding: 'UTF-8'
+
     session_save_handler: 'files'
     session_save_path: '/tmp'
     session_length: 3600
     session_autostart: 'false'
-    date_timezone: 'US/Eastern'
-    iconv_internal_encoding: 'UTF-8'
+
     extensions:
       - curl
       - ctype
       - dom
       - json
       - mbstring
-      - phalcon
+      # uncomment after 3.4.2nb1 is replaced
+      # - phalcon
       - simplexml
       - tokenizer
       - xml
       - xmlwriter
+      - fileinfo
+      - zip
     zend_extensions:
       - opcache
     dev_zend_extensions:
@@ -43,6 +45,13 @@ run.config:
         - xdebug
       rm:
         - opcache
+
+  extra_packages:
+    # remove after 3.4.2nb1 is replaced
+    - php71-phalcon-3.3.2
+
   extra_steps:
     - echo "alias phalcon=\'phalcon.php\'" >> /data/var/home/gonano/.bashrc
     - cp /app/storage/setup/xdebug.ini /data/etc/php.dev.d/xdebug.ini
+    # remove after 3.4.2nb1 is replaced
+    - echo "extension=phalcon.so" > /data/etc/php.dev.d/phalcon.ini

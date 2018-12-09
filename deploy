@@ -1,26 +1,21 @@
 #!/usr/bin/env bash
 #
-# Phalcon
-# Copyright (c) 2011-2017 Phalcon Team (https://phalconphp.com)
+# This file is part of the Phalcon Documentation Website.
 #
-# This source file is subject to the New BSD License that is bundled
-# with this package in the file LICENSE.txt.
+# (c) Phalcon Team <team@phalconphp.com>
 #
-# If you did not receive a copy of the license and are unable to
-# obtain it through the world-wide-web, please send an email
-# to license@phalconphp.com so we can send you a copy immediately.
-#
+# For the full copyright and license information, please view
+# the LICENSE.txt file that was distributed with this source code.
 
 CURRENT_DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 WORK_DIR=${CURRENT_DIR}
 
-GIT_BIN=$(command -v git 2>/dev/null)
 PHP_BIN=$(command -v php 2>/dev/null)
 COMPOSER_BIN=$(command -v composer 2>/dev/null)
 
 DOCS_REPO=https://github.com/phalcon/docs
 
-if [ -f .env ]; then
+if [[ -f .env ]]; then
     source .env
 fi
 
@@ -39,7 +34,7 @@ UPDATE_DOCS=1
 PULL_CHANGES=1
 CLEAR_CACHE=1
 
-VERSION=0.12.2
+VERSION=0.12.3
 APP_NAME="Phalcon Docs"
 
 print_version() {
@@ -57,7 +52,7 @@ print_help() {
     printf "\n${YELLOW}Options:${NC}"
     printf "\n      ${GREEN}--[no-]install-deps${NC}        Install the application dependencies using the Composer (enabled by default)"
     printf "\n      ${GREEN}--[no-]update-docs${NC}         Update the documentation for all known versions (enabled by default)"
-    printf "\n      ${GREEN}--[no-]pull-changes${NC}        Pull the latests changes from the git repo (enabled by default)"
+    printf "\n      ${GREEN}--[no-]pull-changes${NC}        Pull the latest changes from the git repo (enabled by default)"
     printf "\n      ${GREEN}--[no-]clear-cache${NC}         Clear the cache (enabled by default)"
     printf "\n  ${GREEN}-L, --list-versions${NC}            List known docs versions"
     printf "\n  ${GREEN}-H, --help${NC}                     Show this help message"
@@ -79,7 +74,7 @@ print_error() {
     printf "${RED}Error: ${1}${NC}\n"
 }
 
-print_loales_dirs() {
+print_locales_dirs() {
     find $(pwd) -maxdepth 1 -type d | grep -v ".git" | grep -v "^.$" | awk -F$(pwd) '{print $2;}' | grep -v "^$" | awk -F'^/' '{print $2;}'
 }
 
@@ -93,13 +88,6 @@ validate_work_dir() {
 validate_versions() {
     if [[ ! -f "${WORK_DIR}/VERSIONS" ]]; then
         echo -e "Unable to locate the VERSIONS file. Exit..."
-        exit ${ST_ERR}
-    fi
-}
-
-validate_git_bin() {
-    if [[ "x${GIT_BIN}" == "x" ]]; then
-        print_error "Unable to locate the git bin. Exit..."
         exit ${ST_ERR}
     fi
 }
@@ -144,11 +132,9 @@ print_versions() {
 }
 
 update_docs() {
-    validate_git_bin
-
     declare docs_path="${WORK_DIR}/docs"
     declare versions=$(print_versions)
-    declare locales=$(print_loales_dirs)
+    declare locales=$(print_locales_dirs)
 
     if [[ ! -d ${docs_path} ]]; then
         print_error "Unable to locate the docs base directory"
@@ -167,26 +153,27 @@ update_docs() {
 
             pushd "${docs_path}/${version}" &> /dev/null
 
-            declare locales=$(print_loales_dirs)
+            declare locales=$(print_locales_dirs)
 
-            ${GIT_BIN} checkout -f  &> /dev/null
-            ${GIT_BIN} pull origin ${version}  &> /dev/null
+            git checkout -f
+            git fetch origin --prune
+            git merge --ff-only origin/${version} || git rebase --preserve-merges origin/${version}
 
             printf "Detected locales in the $version version: " && echo ${locales}
             printf "\n"
             for locale in ${locales}; do
-                printf "Going to add missed docs for: ${docs_path}/${version}/${locale}...\n"
+                printf "Update docs for: ${docs_path}/${version}/${locale} ...\n"
                 cp -vR ${docs_path}/${version}/en/* ${docs_path}/${version}/${locale}/ > /dev/null 2>&1
             done
 
             printf "Discard unwanted changes in working directory: ${docs_path}/${version}\n"
-            ${GIT_BIN} checkout -- .
+            git checkout -- .
 
             popd &> /dev/null
         else
             rm -rf "${docs_path}/${version}"
             mkdir -p "${docs_path}/${version}"
-            ${GIT_BIN} clone -q -b ${version} --depth=1 "${DOCS_REPO}" "${docs_path}/${version}" &> /dev/null
+            git clone -q -b ${version} --depth=1 "${DOCS_REPO}" "${docs_path}/${version}" &> /dev/null
         fi
 
         printf "Done\n\n"
@@ -194,9 +181,7 @@ update_docs() {
 }
 
 pull_latest_changes() {
-    validate_git_bin
-
-    declare current_branch=`${GIT_BIN} rev-parse --abbrev-ref HEAD`
+    declare current_branch=`git rev-parse --abbrev-ref HEAD`
 
     printf "Current branch is ${YELLOW}${current_branch}${NC}.\n"
 
@@ -208,8 +193,9 @@ pull_latest_changes() {
 
         pushd ${WORK_DIR} &> /dev/null
 
-        ${GIT_BIN} checkout -f &> /dev/null
-        ${GIT_BIN} pull origin ${current_branch} &> /dev/null
+        git checkout -f
+        git fetch origin --prune
+        git merge --ff-only origin/${current_branch} || git rebase --preserve-merges origin/${current_branch}
 
         popd &> /dev/null
     fi

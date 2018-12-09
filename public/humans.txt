@@ -10,10 +10,10 @@ Contact: serghei [at] phalconphp.com
 GitHub: @sergeyklay
 From: Kyiv, Ukraine
 
-UI developer: Max Castro
-Contact: max [at] mctekk.com
-GitHub: @kaioken
-From: Dominican Republic
+UI developer: Michael Dzantiev
+Contact:  axel0726 [at] gmail.com
+GitHub: @dzantiev
+From: Russia, Vladikavkaz
 
 /* THANKS */
 
@@ -24,9 +24,9 @@ Now that you're here, why not start contributing as well? :)
 
 /* SITE */
 
-Last update: 2017/07/02
+Last update: 2018/12/08
 Framework: Phalcon
-Language: PHP 7.0
+Language: PHP 7.1
 Doctype: HTML5
 Standards: HTML5, CSS3
 Components: Nginx Server Configs, Twitter Bootstrap, jQuery, Google Fonts, highlight.js

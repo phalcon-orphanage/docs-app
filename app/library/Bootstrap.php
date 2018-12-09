@@ -1,19 +1,13 @@
 <?php
 
 /*
-  +------------------------------------------------------------------------+
-  | Phalcon                                                                |
-  +------------------------------------------------------------------------+
-  | Copyright (c) 2011-2017 Phalcon Team (https://phalconphp.com)          |
-  +------------------------------------------------------------------------+
-  | This source file is subject to the New BSD License that is bundled     |
-  | with this package in the file LICENSE.txt.                             |
-  |                                                                        |
-  | If you did not receive a copy of the license and are unable to         |
-  | obtain it through the world-wide-web, please send an email             |
-  | to license@phalconphp.com so we can send you a copy immediately.       |
-  +------------------------------------------------------------------------+
-*/
+ * This file is part of the Phalcon Documentation Website.
+ *
+ * (c) Phalcon Team <team@phalconphp.com>
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE.txt file that was distributed with this source code.
+ */
 
 namespace Docs;
 
@@ -65,8 +59,10 @@ class Bootstrap
      * Bootstrap constructor.
      *
      * @param string $mode The application mode: "normal" or "cli".
+     *
+     * @throws \InvalidArgumentException
      */
-    public function __construct($mode = 'normal')
+    public function __construct(string $mode = 'normal')
     {
         $this->mode = $mode;
 
@@ -121,7 +117,12 @@ class Bootstrap
      */
     protected function setupEnvironment()
     {
-        $this->environment = env('APP_ENV', 'development');
+        $environment = env('APP_ENV');
+        if (empty($environment) || !is_string($environment)) {
+            $environment = 'development';
+        }
+
+        $this->environment = $environment;
 
         defined('APPLICATION_ENV') || define('APPLICATION_ENV', $this->environment);
 
@@ -144,10 +145,7 @@ class Bootstrap
                 break;
             default:
                 throw new \InvalidArgumentException(
-                    sprintf(
-                        'Invalid application mode. Expected either "normal" or "cli". Got "%s".',
-                        is_scalar($this->mode) ? $this->mode : var_export($this->mode, true)
-                    )
+                    sprintf('Invalid application mode. Expected either "normal" or "cli". Got "%s".', $this->mode)
                 );
         }
     }

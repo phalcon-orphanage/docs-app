@@ -42,6 +42,5 @@
 
 {{- assets.outputJs('footer_js') -}}
 {%- include 'inc/footer.volt' -%}
-<script src="//rum-static.pingdom.net/pa-5c085939db2aac00160001db.js" async></script>
 </body>
 </html>
