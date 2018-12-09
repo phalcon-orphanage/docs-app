@@ -21,6 +21,8 @@ build:
       - cp storage/setup/.env.example .env
       - sed -i -re 's|^APP_ENV=.*|APP_ENV=testing|g' .env
       - sudo -u scrutinizer composer self-update
+      - sudo -u scrutinizer cp storage/setup/nginx.conf /etc/nginx/sites-enabled/docs-app
+      - sudo -u scrutinizer rm /etc/nginx/sites-enabled/default
 
 filter:
   excluded_paths:
