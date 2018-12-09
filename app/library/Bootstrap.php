@@ -59,8 +59,10 @@ class Bootstrap
      * Bootstrap constructor.
      *
      * @param string $mode The application mode: "normal" or "cli".
+     *
+     * @throws \InvalidArgumentException
      */
-    public function __construct($mode = 'normal')
+    public function __construct(string $mode = 'normal')
     {
         $this->mode = $mode;
 
@@ -115,7 +117,12 @@ class Bootstrap
      */
     protected function setupEnvironment()
     {
-        $this->environment = env('APP_ENV', 'development');
+        $environment = env('APP_ENV');
+        if (empty($environment) || !is_string($environment)) {
+            $environment = 'development';
+        }
+
+        $this->environment = $environment;
 
         defined('APPLICATION_ENV') || define('APPLICATION_ENV', $this->environment);
 
@@ -138,10 +145,7 @@ class Bootstrap
                 break;
             default:
                 throw new \InvalidArgumentException(
-                    sprintf(
-                        'Invalid application mode. Expected either "normal" or "cli". Got "%s".',
-                        is_scalar($this->mode) ? $this->mode : var_export($this->mode, true)
-                    )
+                    sprintf('Invalid application mode. Expected either "normal" or "cli". Got "%s".', $this->mode)
                 );
         }
     }

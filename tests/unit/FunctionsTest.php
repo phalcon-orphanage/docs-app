@@ -59,7 +59,7 @@ class FunctionsTest extends Unit
     public function shouldWorkWithEnvFacade()
     {
         $this->assertNull(env('non-existent-key-here'));
-        $this->assertTrue(env('non-existent-key-here', true));
+        $this->assertTrue(true === env('non-existent-key-here', true));
         $this->assertEquals($_ENV['APP_URL'], env('APP_URL'));
     }
 
