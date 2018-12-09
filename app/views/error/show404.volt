@@ -9,7 +9,7 @@
 {%- endblock -%}
 
 {%- block content -%}
-    <section class="documentation">
+    <section class="documentation-section">
         <div class="container ">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1 parse-content">
