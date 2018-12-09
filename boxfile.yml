@@ -30,7 +30,8 @@ run.config:
       - dom
       - json
       - mbstring
-      - phalcon
+      # uncomment after 3.4.2nb1 is replaced
+      # - phalcon
       - simplexml
       - tokenizer
       - xml
@@ -45,6 +46,12 @@ run.config:
       rm:
         - opcache
 
+  extra_packages:
+    # remove after 3.4.2nb1 is replaced
+    - php71-phalcon-3.3.2
+
   extra_steps:
     - echo "alias phalcon=\'phalcon.php\'" >> /data/var/home/gonano/.bashrc
     - cp /app/storage/setup/xdebug.ini /data/etc/php.dev.d/xdebug.ini
+    # remove after 3.4.2nb1 is replaced
+    - echo "extension=phalcon.so" > /data/etc/php.dev.d/phalcon.ini
