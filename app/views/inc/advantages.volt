@@ -4,9 +4,9 @@
             <div class="advantages-item__pictures">
                 {{ filesystem.read('/public/images/icons/advantages-help-icon.svg') }}
             </div>
-            <p class="advantages-item__header">{{ homeArray[34] }}</p>
+            <p class="advantages-item__header">{{ home['what_is_phalcon'] }}</p>
             <p class="advantages-item__description">
-                {{ homeArray[31] }}
+                {{ home['unlike_traditional_frameworks'] }}
             </p>
         </div>
     </a>
@@ -15,9 +15,9 @@
             <div class="advantages-item__pictures">
                 {{ filesystem.read('/public/images/icons/advantages-developer-icon.svg') }}
             </div>
-            <p class="advantages-item__header">{{ homeArray[2] }}</p>
+            <p class="advantages-item__header">{{ home['api_documentation'] }}</p>
             <p class="advantages-item__description">
-                {{ homeArray[1] }}
+                {{ home['incredible_api'] }}
             </p>
         </div>
     </a>
@@ -26,9 +26,9 @@
             <div class="advantages-item__pictures">
                 {{ filesystem.read('/public/images/icons/advantages-community-icon.svg') }}
             </div>
-            <p class="advantages-item__header">{{ homeArray[22] }}</p>
+            <p class="advantages-item__header">{{ home['meet_incubator'] }}</p>
             <p class="advantages-item__description">
-                {{ homeArray[25] }}
+                {{ home['incubator_amazing_features'] }}
             </p>
         </div>
     </a>

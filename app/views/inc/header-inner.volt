@@ -9,7 +9,7 @@
                     {% include 'inc/gse-inner.volt' %}
                 </div>
                 <a href="https://phalcon.link/github" class="link__github" target="_blank">
-                    {{ homeArray[16] }}
+                    {{ home['github'] }}
                     <div class="link__circle-arrow">
                         <div class="link__arrow">
 

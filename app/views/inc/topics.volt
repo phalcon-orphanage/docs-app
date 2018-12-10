@@ -6,9 +6,9 @@
                     <div class="topic-picture-wrapper">
                         {{ filesystem.read('/public/images/icons/topic-head-icon.svg') }}
                     </div>
-                    <h2>{{ homeArray[9] }}</h2>
+                    <h2>{{ home['explore_topics'] }}</h2>
                     <p>
-                        {{ homeArray[33] }}
+                        {{ home['we_did_our_Best'] }}
                     </p>
                     <hr>
                 </div>
@@ -33,7 +33,7 @@
             </div>
             <div class="explore-topic">
                 <a href="javascript:void(0);" class="explore-topic__link" onclick="o2.toggleAllTopic(this)">
-                    {{ homeArray[8] }}
+                    {{ home['explore_all_topics'] }}
                 </a>
             </div>
 

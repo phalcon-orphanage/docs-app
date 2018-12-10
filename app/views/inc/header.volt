@@ -6,16 +6,16 @@
             </div>
             <div class="header-description" itemscope itemtype="https://schema.org/Thing">
                 <h1 class="h1_style" itemprop="description">
-                    <span itemprop="name">Phalcon</span> {{ homeArray[19] }}
+                    <span itemprop="name">Phalcon</span> {{ home['feature_rich'] }}
                 </h1>
                 <p>
-                    {{ homeArray[20] }}
+                    {{ home['innovative_architecture'] }}
                 </p>
                 <div class="header-search">
                     {% include 'inc/gse-inner.volt' %}
                 </div>
                 <a href="https://phalcon.link/github" class="link__github" target="_blank">
-                    {{ homeArray[16] }}
+                    {{ home['github'] }}
                     <div class="link__circle-arrow">
                         <div class="link__arrow"></div>
                     </div>

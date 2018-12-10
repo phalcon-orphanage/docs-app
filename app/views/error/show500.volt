@@ -15,12 +15,12 @@
                 <div class="col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1 parse-content">
                     <div>
                         <p class="lead">
-                            {{ homeArray[44] }} <a href="{{ 'mailto:' ~ support }}">{{ support }}</a>.
-                            {{ homeArray[45] }}
+                            {{ home['apologize'] }} <a href="{{ 'mailto:' ~ support }}">{{ support }}</a>.
+                            {{ home['check_back_later'] }}
                         </p>
                         <p>
                             <br />
-                            <a class="btn btn-primary" href="{{ url ~ '?from=error500' }}">{{ homeArray[38] }}</a>
+                            <a class="btn btn-primary" href="{{ url ~ '?from=error500' }}">{{ home['back_to_main_page'] }}</a>
                         </p>
                     </div>
                     {{- article -}}

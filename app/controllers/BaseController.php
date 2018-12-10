@@ -11,6 +11,7 @@
 
 namespace Docs\Controllers;
 
+use function json_decode;
 use Phalcon\Cache\BackendInterface;
 use Phalcon\Config;
 use Phalcon\Mvc\Controller as PhController;
@@ -215,19 +216,34 @@ class BaseController extends PhController
      *
      * @return array
      */
-    protected function getWordsArray(string $language, string $version): array
+    protected function getHomeArray(string $language, string $version): array
     {
-        $content = $this->getDocument($language, $version, 'home');
+        $key = sprintf('home.%s.%s.cache', $version, $language);
 
-        /**
-         * Split it into an array
-         */
-        $data = str_replace(['<p>', '</p>'], ['', ''], $content);
-        $data = explode(PHP_EOL, $data);
+        if (environment('production') && true === $this->cacheData->exists($key)) {
+            return $this->cacheData->get($key);
+        }
+
+        $pageName    = app_path(
+            sprintf(
+                'docs/%s/%s/home.json',
+                $version,
+                $language
+            )
+        );
+
+        if (true === file_exists($pageName)) {
+            $data = file_get_contents($pageName);
+        } else {
+            // The article does not exist
+            return [];
+        }
+
+        $data = json_decode($data, true);
+        $this->cacheData->save($key, $data);
 
         return $data;
     }
-
     /**
      * @param string $language
      * @param string $version

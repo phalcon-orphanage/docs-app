@@ -7,8 +7,8 @@
                 </div>
             </div>
             <div class="support-description">
-                <h2>{{ homeArray[15] }}</h2>
-                <p>{{ homeArray[35] }}</p>
+                <h2>{{ home['get_support'] }}</h2>
+                <p>{{ home['when_you_are_stuck'] }}</p>
                 <div class="people">
                     {%- for title, social in config.path('social', []) -%}
                         <div class="people__list">

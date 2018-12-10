@@ -85,7 +85,7 @@ class DocsController extends BaseController
                 'article'      => $article,
                 'article_menu' => $article_menu ? $article_menu[0] : [],
                 'canonical'    => $canonical,
-                'homeArray'    => $this->getWordsArray($language, $version),
+                'home'         => $this->getHomeArray($language, $version),
                 'language'     => $language,
                 'menu'         => $this->getDocument($language, $version, $page . '-menu'),
                 'topicsArray'  => $this->getSidebar($language, $version),
