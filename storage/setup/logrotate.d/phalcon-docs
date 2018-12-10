@@ -1,0 +1,20 @@
+# ----------------------------------------------------------------------
+# logrotate configuration example for Phalcon Documentation Website.
+#
+# Note: This is just example. Do not use it as is at production systems.
+# ----------------------------------------------------------------------
+
+/var/log/acme/*.log {
+	daily
+	rotate 7
+	compress
+	delaycompress
+	missingok
+	create 660 nginx www-data
+	nodateext
+	sharedscripts
+	postrotate
+		/bin/kill -SIGUSR1 `cat /var/run/php-fpm/php-fpm.pid 2>/dev/null` 2>/dev/null || true
+		/bin/kill -USR1 $(cat /var/run/nginx.pid 2>/dev/null) 2>/dev/null || :
+	endscript
+}
