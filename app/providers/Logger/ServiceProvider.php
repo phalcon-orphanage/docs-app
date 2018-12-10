@@ -84,7 +84,7 @@ class ServiceProvider implements ServiceProviderInterface
                     $filename = rtrim($filename, '.') . '.log';
                 }
 
-                $logger = new File(app_path(sprintf("storage/logs/%s-%s", date('Ymd'), $filename)));
+                $logger = new File(app_path(sprintf("storage/logs/%s", $filename)));
 
                 $logger->setFormatter(new Line($format, $date));
                 $logger->setLogLevel($level);
