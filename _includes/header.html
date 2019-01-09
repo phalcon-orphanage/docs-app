@@ -1,0 +1,52 @@
+<header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
+  <div class="navbar-nav-scroll">
+    <ul class="navbar-nav bd-navbar-nav flex-row">
+      <li class="nav-item">
+        <a class="nav-link active" href="{{ site.url }}/">Phalcon Documentation v{{ page.version }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex">
+    <li class="nav-item">
+      <a class="nav-link"
+         href="https://phalcon.link/download"
+         rel="noopener">
+        {{ homeStrings['download'] }}
+      </a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-item nav-link dropdown-toggle mr-md-2"
+         href="#"
+         id="bd-versions"
+         data-toggle="dropdown"
+         aria-haspopup="true"
+         aria-expanded="false">
+        {{ homeStrings['community'] }}
+      </a>
+      <div class="dropdown-menu dropdown-menu-right" aria-labelledby="bd-versions">
+        <a class="dropdown-item" href="https://phalcon.link/forum">{{ homeStrings['forum'] }}</a>
+        <a class="dropdown-item" href="https://phalcon.link/blog">{{ homeStrings['blog'] }}</a>
+        <a class="dropdown-item" href="https://phalcon.link/api">{{ homeStrings['api'] }}</a>
+        <a class="dropdown-item" href="https://phalcon.link/resources">{{ homeStrings['resources'] }}</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="https://phalcon.link/f">{{ homeStrings['facebook'] }}</a>
+        <a class="dropdown-item" href="https://phalcon.link/t">{{ homeStrings['twitter'] }}</a>
+        <a class="dropdown-item" href="https://phalcon.link/gab">{{ homeStrings['gab'] }}</a>
+        <a class="dropdown-item" href="https://phalcon.link/discord">{{ homeStrings['discord'] }}</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"
+         href="https://phalcon.link/about" rel="noopener">{{ homeStrings['contribute'] }}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"
+         href="https://phalconphp.com/en/sponsors" rel="noopener">{{ homeStrings['sponsors'] }}</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link"
+         href="https://phalcon.link/fund" rel="noopener">{{ homeStrings['support_us'] }}</a>
+    </li>
+  </ul>
+</header>

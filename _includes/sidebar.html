@@ -1,0 +1,17 @@
+            <nav class="collapse bd-links" id="bd-docs-nav">
+                <div class="bd-toc-item active">
+                    <ul class="nav bd-sidenav">
+                        {% for leftMenu in site.data[leftKey] %}
+                        <li class="toc-entry level-{{ leftMenu.level }}">
+                            {% if leftMenu.external %}
+                            <a href="{{ leftMenu.url }}">
+                            {% else %}
+                            <a{% if '' != leftMenu.url %} href="/{{ page.version }}/{{ page.language }}/{{ leftMenu.url }}"{% endif %}>
+                            {% endif %}
+                                {% if 1 == leftMenu.level %}<strong>{% endif %}{{ leftMenu.text }}{% if 1 == leftMenu.level %}</strong>{% endif %}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </nav>

@@ -1,0 +1,67 @@
+app:
+  title: 'Phalcon Framework Documentation'
+  name: 'Phalcon Framework Documentation'
+  author: 'Phalcon Team'
+  description: 'Official Phalcon Documentation'
+  keywords: 'php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation'
+  avatar: 'https://avatars3.githubusercontent.com/u/1221505?v=4'
+  email: 'team@phalconphp.com'
+  facebook:
+  github: 'phalcon'
+  rss: 'phalcon'
+  twitter: 'zephirlang'
+  analytics: ''
+  language: 'en'
+  version: '3.4'
+  versions: [
+    '3.4',
+    '3.3',
+    '3.2',
+    '3.1',
+    '4.0'
+  ]
+  languages: [
+    'en',
+    'bg-bg',
+    'cs-cz',
+    'de-de',
+    'el-gr',
+    'es-es',
+    'fa-ir',
+    'fr-fr',
+    'hu-hu',
+    'id-id',
+    'it-it',
+    'ja-jp',
+    'ko-kr',
+    'pl-pl',
+    'pt-pt',
+    'ro-ro',
+    'ru-ru',
+    'tr-tr',
+    'uk-ua',
+    'ur-in',
+    'ur-pk',
+    'vi-vn',
+    'zh-cn'
+  ]
+
+include:
+  - /3.1
+  - _redirects
+
+kramdown:
+  input: GFM
+  syntax_highlighter_opts:
+    disable: true
+
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+
+
+

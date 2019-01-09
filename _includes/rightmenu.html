@@ -1,0 +1,10 @@
+<ul class="section-nav">
+    {% assign rightData = site.data[rightKey] %}
+    {% for rightMenu in rightData[script] %}
+    <li class="toc-entry right-menu level-{{ rightMenu.level }}">
+        <a href="{{ rightMenu.url }}">
+            {{ rightMenu.text }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
