@@ -1,0 +1,20 @@
+[submodule "4.0"]
+	path = 4.0
+	url = git@github.com:niden/docs
+	branch = 4.0
+[submodule "3.1"]
+	path = 3.1
+	url = git@github.com:niden/docs
+	branch = 3.1
+[submodule "3.2"]
+	path = 3.2
+	url = git@github.com:niden/docs
+	branch = 3.2
+[submodule "3.3"]
+	path = 3.3
+	url = git@github.com:niden/docs
+	branch = 3.3
+[submodule "3.4"]
+	path = 3.4
+	url = git@github.com:niden/docs
+	branch = 3.4
