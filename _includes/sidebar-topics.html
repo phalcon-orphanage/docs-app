@@ -1,0 +1,18 @@
+<div class="topic-categories">
+    {% for topic in site.data[topicsKey] %}
+    <div class="topic-categories-item">
+        <div class="category-name" onclick="o2.topicsAccordion(this, event)">
+            <span>{{ topic.text }}</span>
+        </div>
+        <ul style="display: none;">
+            {% for item in topic.menu %}
+            <li>
+                <a href="{{ item.url }}">
+                <span>{{ item.text }}</span>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>

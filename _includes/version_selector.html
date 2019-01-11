@@ -1,0 +1,13 @@
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                {{ homeStrings['version'] }} {{ page.version }}
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                {% for version in site.data.verlang.versions %}
+                                                <a href="/{{ version }}/{{ page.language }}/{{ script }}" class="custom-select__list-item">
+                                                    <span>{{ version }}</span>
+                                                </a>
+                                                {% endfor %}
+                                            </div>
+                                        </li>

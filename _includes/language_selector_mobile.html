@@ -1,0 +1,19 @@
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
+                                         alt="{{ site.data.supported[lang].name | strip }}">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    {% for lang in site.data.verlang.languages[page.version] %}
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/{{ page.version }}/{{ lang }}/{{ script }}">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/{{ site.data.supported[lang].crowdin_code }}.png"
+                                                 alt="{{ site.data.supported[lang].name | strip }}">
+                                            <span>{{ site.data.supported[page.language].text }}</span>
+                                        </a>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
