@@ -1,0 +1,1511 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="es-es" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="es-es" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es-es" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/es-es/dispatcher.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/es-es">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/dispatcher" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/es-es/dispatcher" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/es-es/dispatcher" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/es-es/dispatcher" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/es-es/dispatcher" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/es-es/dispatcher" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/dispatcher">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/es-es/dispatcher">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/es-es/dispatcher">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/es-es/dispatcher">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/es-es/dispatcher">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/es-es/dispatcher">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/es-es">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="despachando-controladores">Despachando Controladores</h1>
+
+<p><a href="api/Phalcon_Mvc_Dispatcher">Phalcon\Mvc\Dispatcher</a> is the component responsible for instantiating controllers and executing the required actions on them in an MVC application. Entender su funcionamiento y capacidades nos ayuda a sacarle más provecho a los servicios prestados por el framework.</p>
+
+<p><a name="dispatch-loop"></a></p>
+
+<h2 id="bucle-de-despacho">Bucle de despacho</h2>
+
+<p>Esto es un proceso importante que tiene mucho que ver con el flujo MVC, especialmente con la parte de controlador. El trabajo se produce en el despachador de controladores (dispatcher). Los archivos del controlador son leídos, cargados e instanciados. Entonces se ejecutan las acciones requeridas. Si una acción reenvia (forward) a otro controlador/acción, el dispatcher comienza otra vez. To better illustrate this, the following example shows approximately the process performed within <a href="api/Phalcon_Mvc_Dispatcher">Phalcon\Mvc\Dispatcher</a>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Bucle dispatch 
+while (!$finished) {
+    $finished = true;
+
+    $controllerClass = $controllerName . 'Controller';
+
+    // Instanciamos la clase del controlador mediante autoloaders
+    $controller = new $controllerClass();
+
+    // Ejecutamos la acción
+    call_user_func_array(
+        [
+            $controller,
+            $actionName . 'Action'
+        ],
+        $params
+    );
+
+    // '$finished' debe ser recargado para chequear si el flujo fue enviado a otro controlador
+    $finished = true;
+}
+</code></pre>
+
+<p>El código anterior carece de validaciones, filtros y controles adicionales, pero demuestra el flujo normal de operación del dispatcher.</p>
+
+<p><a name="dispatch-loop-events"></a></p>
+
+<h3 id="eventos-del-bucle-de-despacho">Eventos del bucle de despacho</h3>
+
+<p><a href="api/Phalcon_Mvc_Dispatcher">Phalcon\Mvc\Dispatcher</a> is able to send events to an <a href="/3.4/en/events">EventsManager</a> if it is present. Los eventos se desencadenan mediante el tipo <code>dispatch</code>. Si algún evento devuelve <code>false</code> podría detener la operación activa. Son soportados los siguientes eventos:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre de Evento</th>
+      <th>Activador</th>
+      <th>¿Puede detener la operación?</th>
+      <th>Activa en</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>beforeDispatchLoop</td>
+      <td>Activado antes de entrar en el bucle de despacho. En este momento el distribuidor no sabe si existen el controlador o las acciones a ejecutarse. El dispatcher sólo conoce la información pasada por el Router.</td>
+      <td>Sí</td>
+      <td>Listeners</td>
+    </tr>
+    <tr>
+      <td>beforeDispatch</td>
+      <td>Activado después de entrar en el bucle de despacho. En este momento el dispatcher no sabe si existen el controlador o las acciones a ejecutarse. El dispatcher sólo conoce la información pasada por el Router.</td>
+      <td>Sí</td>
+      <td>Listeners</td>
+    </tr>
+    <tr>
+      <td>beforeExecuteRoute</td>
+      <td>Ejecutado antes de ejecutar el método controlador/acción. En este punto el despachador tiene inicializado el controlador y conoce si existe la acción.</td>
+      <td>Sí</td>
+      <td>Listeners/Controllers</td>
+    </tr>
+    <tr>
+      <td>initialize</td>
+      <td>Permite inicializar globalmente el controlador en la solicitud</td>
+      <td>No</td>
+      <td>Controllers</td>
+    </tr>
+    <tr>
+      <td>afterExecuteRoute</td>
+      <td>Ejecutado después de ejecutar el método controlador/acción. Esta operación no puede ser detenida, solo utilizar esta acción para hacer limpieza después de ejecutar la acción</td>
+      <td>No</td>
+      <td>Listeners/Controllers</td>
+    </tr>
+    <tr>
+      <td>beforeNotFoundAction</td>
+      <td>Se activa cuando la acción no se encuentra en el controlador</td>
+      <td>Sí</td>
+      <td>Listeners</td>
+    </tr>
+    <tr>
+      <td>beforeException</td>
+      <td>Disparado antes de que el dispatcher lance una excepción</td>
+      <td>Sí</td>
+      <td>Listeners</td>
+    </tr>
+    <tr>
+      <td>afterDispatch</td>
+      <td>Ejecutado después de ejecutar el método controlador/acción. Esta operación no puede ser detenida, solo utilizar esta acción para hacer limpieza después de ejecutar la acción</td>
+      <td>Sí</td>
+      <td>Listeners</td>
+    </tr>
+    <tr>
+      <td>afterDispatchLoop</td>
+      <td>Activa después de salir del bucle de despacho</td>
+      <td>No</td>
+      <td>Listeners</td>
+    </tr>
+    <tr>
+      <td>afterBinding</td>
+      <td>Se dispara después de que los modelos están enlazados pero antes de ejecutar la ruta</td>
+      <td>Sí</td>
+      <td>Listeners/Controllers</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The <a href="/3.4/en/tutorial-invo">INVO</a> tutorial shows how to take advantage of dispatching events implementing a security filter with <a href="/3.4/en/acl">Acl</a></p>
+
+<p>En el ejemplo siguiente se muestra cómo adjuntar oyentes (listeners) a este componente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Dispatcher as MvcDispatcher;
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+
+$di-&gt;set(
+    'dispatcher',
+    function () {
+        // Creamos el EventManager
+        $eventsManager = new EventsManager();
+
+        // Adjuntamos un listener al tipo 'dispatch'
+        $eventsManager-&gt;attach(
+            'dispatch',
+            function (Event $event, $dispatcher) {
+                // ...
+            }
+        );
+
+        $dispatcher = new MvcDispatcher();
+
+        // Enlazamos el eventsManager a la vista
+        $dispatcher-&gt;setEventsManager($eventsManager);
+
+        return $dispatcher;
+    },
+    true
+);
+</code></pre>
+
+<p>Un controlador instanciado automáticamente actúa como un detector de eventos de dispatch, así que usted puede implementar métodos como callbacks:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+use Phalcon\Mvc\Dispatcher;
+
+class PostsController extends Controller
+{
+    public function beforeExecuteRoute(Dispatcher $dispatcher)
+    {
+        // Ejecutado antes de cada acción encontrada
+    }
+
+    public function afterExecuteRoute(Dispatcher $dispatcher)
+    {
+        // Ejecutada después de cada acción encontrada
+    }
+}
+</code></pre>
+
+<h5 class="alert alert-warning">Methods on event listeners accept an <a href="api/Phalcon_Events_Event">Phalcon\Events\Event</a> object as their first parameter - methods in controllers do not. </h5>
+
+<p><a name="forwarding"></a></p>
+
+<h2 id="reenvío-a-otras-acciones">Reenvío a otras acciones</h2>
+
+<p>El bucle de despacho nos permite cambiar el flujo de ejecución a otro controlador/acción. Esto es muy útil para comprobar si el usuario puede acceder a ciertas opciones, redirigir a los usuarios a otras pantallas o simplemente reutilizar código.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+
+    public function saveAction($year, $postTitle)
+    {
+        // ... Almacenar algún producto y reenviar al usuario
+
+        // Cambiar el flujo al index action
+        $this-&gt;dispatcher-&gt;forward(
+            [
+                'controller' =&gt; 'posts',
+                'action'     =&gt; 'index',
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>Tenga en cuenta que un <code>forward</code> no es lo mismo que hacer una redirección HTTP. Aunque al parecer consiguen el mismo resultado. El <code>forward</code> no vuelve a cargar la página actual, todo el redireccionamiento se produce en una sola solicitud, mientras que la redirección HTTP necesita de dos solicitudes para completar el proceso.</p>
+
+<p>Más ejemplos de forward:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Cambiar el flujo a otra action en el controlador actual
+$this-&gt;dispatcher-&gt;forward(
+    [
+        'action' =&gt; 'search'
+    ]
+);
+
+// Cambiar el flujo a otra action en el controlador actual pero pasando parámetros
+$this-&gt;dispatcher-&gt;forward(
+    [
+        'action' =&gt; 'search',
+        'params' =&gt; [1, 2, 3]
+    ]
+);
+</code></pre>
+
+<p>Un <code>forward</code> acepta los siguientes parámetros:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parámetro</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>controller</code></td>
+      <td>Un nombre de controlador válido donde reenviar.</td>
+    </tr>
+    <tr>
+      <td><code>action</code></td>
+      <td>Un nombre válido de acción donde reenviar.</td>
+    </tr>
+    <tr>
+      <td><code>params</code></td>
+      <td>Un array de parámetros para la acción.</td>
+    </tr>
+    <tr>
+      <td><code>namespace</code></td>
+      <td>Un espacio de nombres valido donde es parte el controlador.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="forwarding-events-manager"></a></p>
+
+<h3 id="usando-el-administrador-de-eventos">Usando el administrador de eventos</h3>
+
+<p>Puede utilizar el evento <code>dispatcher::beforeForward</code> para cambiar módulos y redirigir de una forma más fácil y limpia:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Di;
+use Phalcon\Events\Manager;
+use Phalcon\Mvc\Dispatcher;
+use Phalcon\Events\Event;
+
+$di = new Di();
+
+$modules = [
+  'backend' =&gt; [
+      'className' =&gt; 'App\Backend\Bootstrap',
+      'path'      =&gt; '/app/Modules/Backend/Bootstrap.php',
+      'metadata'  =&gt; [
+          'controllersNamespace' =&gt; 'App\Backend\Controllers',
+      ],
+  ],
+];
+
+$manager = new Manager();
+
+$manager-&gt;attach(
+  'dispatch:beforeForward',
+  function (Event $event, Dispatcher $dispatcher, array $forward) use ($modules) {
+      $metadata = $modules[$forward['module']]['metadata'];
+      $dispatcher-&gt;setModuleName($forward['module']);
+      $dispatcher-&gt;setNamespaceName($metadata['controllersNamespace']);
+  }
+);
+
+$dispatcher = new Dispatcher();
+$dispatcher-&gt;setDI($di);
+$dispatcher-&gt;setEventsManager($manager);
+$di-&gt;set('dispatcher', $dispatcher);
+$dispatcher-&gt;forward(
+  [
+      'module'     =&gt; 'backend',
+      'controller' =&gt; 'posts',
+      'action'     =&gt; 'index',
+  ]
+);
+
+echo $dispatcher-&gt;getModuleName(); // mostrará 'backend'
+</code></pre>
+
+<p><a name="preparing-parameters"></a></p>
+
+<h2 id="preparando-parámetros">Preparando parámetros</h2>
+
+<p>Thanks to the hook points provided by <a href="api/Phalcon_Mvc_Dispatcher">Phalcon\Mvc\Dispatcher</a> you can easily adapt your application to any URL schema; i.e. you might want your URLs look like: <code>http://example.com/controller/key1/value1/key2/value</code>. Los parámetros se pasan con el orden que se definen en la dirección URL a las acciones, puede transformar y adoptar el esquema que Ud. desee:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Dispatcher;
+use Phalcon\Mvc\Dispatcher as MvcDispatcher;
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+
+$di-&gt;set(
+    'dispatcher',
+    function () {
+        // Crear el EventsManager
+        $eventsManager = new EventsManager();
+
+        // Adjuntar el listener
+        $eventsManager-&gt;attach(
+            'dispatch:beforeDispatchLoop',
+            function (Event $event, $dispatcher) {
+                $params = $dispatcher-&gt;getParams();
+
+                $keyParams = [];
+
+                // Usar parámetros impares como claves y pares como valores
+                foreach ($params as $i =&gt; $value) {
+                    if ($i &amp; 1) {
+                        // Parámetro anterior
+                        $key = $params[$i - 1];
+
+                        $keyParams[$key] = $value;
+                    }
+                }
+
+                // Sobreescribimos los parámetros
+                $dispatcher-&gt;setParams($keyParams);
+            }
+        );
+
+        $dispatcher = new MvcDispatcher();
+
+        $dispatcher-&gt;setEventsManager($eventsManager);
+
+        return $dispatcher;
+    }
+);
+</code></pre>
+
+<p>Si el esquema deseado es: <code>http://example.com/controller/key1:value1/key2:value</code>, utilice el siguiente código:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Dispatcher;
+use Phalcon\Mvc\Dispatcher as MvcDispatcher;
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+
+$di-&gt;set(
+    'dispatcher',
+    function () {
+        // Crear el EventsManager
+        $eventsManager = new EventsManager();
+
+        // Adjuntar el listener
+        $eventsManager-&gt;attach(
+            'dispatch:beforeDispatchLoop',
+            function (Event $event, $dispatcher) {
+                $params = $dispatcher-&gt;getParams();
+
+                $keyParams = [];
+
+                // Separar cada parámetro en pares clave valor
+                foreach ($params as $number =&gt; $value) {
+                    $parts = explode(':', $value);
+
+                    $keyParams[$parts[0]] = $parts[1];
+                }
+
+                // Sobre escribimos los parámetros
+                $dispatcher-&gt;setParams($keyParams);
+            }
+        );
+
+        $dispatcher = new MvcDispatcher();
+
+        $dispatcher-&gt;setEventsManager($eventsManager);
+
+        return $dispatcher;
+    }
+);
+</code></pre>
+
+<p><a name="getting-parameters"></a></p>
+
+<h2 id="obtener-parámetros">Obtener parámetros</h2>
+
+<p>When a route provides named parameters you can receive them in a controller, a view or any other component that extends <a href="api/Phalcon_Di_Injectable">Phalcon\Di\Injectable</a>.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+
+    public function saveAction()
+    {
+        // Obtener el título pasado en la URL como parámetro
+        // o preparado en un evento
+        $title = $this-&gt;dispatcher-&gt;getParam('title');
+
+        // Obtener el año del post pasado en la URL como parámetro
+        // o preparado en un evento además de filtrado
+        $year = $this-&gt;dispatcher-&gt;getParam('year', 'int');
+
+        // ...
+    }
+}
+</code></pre>
+
+<p><a name="preparing-actions"></a></p>
+
+<h2 id="preparación-de-acciones">Preparación de acciones</h2>
+
+<p>También puede definir un esquema arbitrario para acciones <code>before</code> en el bucle de despacho.</p>
+
+<p><a name="preparing-actions-camelizing-action-names"></a></p>
+
+<h3 id="camelizar-acciones">Camelizar acciones</h3>
+
+<p>Si la URL original es: <code>http://example.com/admin/products/show-latest-products</code> y por ejemplo quieres camelizar <code>show-lastest-products</code> a <code>ShowLatestProducts</code>, el siguiente código es necesario:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Text;
+use Phalcon\Mvc\Dispatcher as MvcDispatcher;
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+
+$di-&gt;set(
+    'dispatcher',
+    function () {
+        // Creamos el EventsManager
+        $eventsManager = new EventsManager();
+
+        // Camelizar actions
+        $eventsManager-&gt;attach(
+            'dispatch:beforeDispatchLoop',
+            function (Event $event, $dispatcher) {
+                $dispatcher-&gt;setActionName(
+                    Text::camelize($dispatcher-&gt;getActionName())
+                );
+            }
+        );
+
+        $dispatcher = new MvcDispatcher();
+
+        $dispatcher-&gt;setEventsManager($eventsManager);
+
+        return $dispatcher;
+    }
+);
+</code></pre>
+
+<p><a name="preparing-actions-removing-legacy-extensions"></a></p>
+
+<h3 id="quitar-extensiones">Quitar extensiones</h3>
+
+<p>Si la dirección URL original contiene siempre una extensión <code>.php</code>:</p>
+
+<pre><code class="language-php">http://example.com/admin/products/show-latest-products.php
+http://example.com/admin/products/index.php
+</code></pre>
+
+<p>Se puede quitar antes de despachar al controlador/acción:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Dispatcher as MvcDispatcher;
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+
+$di-&gt;set(
+    'dispatcher',
+    function () {
+        // Creamos un EventsManager
+        $eventsManager = new EventsManager();
+
+        // Quitamos la extensión antes del bucle de despacho
+        $eventsManager-&gt;attach(
+            'dispatch:beforeDispatchLoop',
+            function (Event $event, $dispatcher) {
+                $action = $dispatcher-&gt;getActionName();
+
+                // Quitamos al extensión
+                $action = preg_replace('/\.php$/', '', $action);
+
+                // Reescribimos el action
+                $dispatcher-&gt;setActionName($action);
+            }
+        );
+
+        $dispatcher = new MvcDispatcher();
+
+        $dispatcher-&gt;setEventsManager($eventsManager);
+
+        return $dispatcher;
+    }
+);
+</code></pre>
+
+<p><a name="preparing-actions-inject-model-instances"></a></p>
+
+<h3 id="inyectando-instancias-de-modelos">Inyectando instancias de modelos</h3>
+
+<p>En este ejemplo, el desarrollador quiere inspeccionar los parámetros que recibirá una acción con el fin de inyectar dinámicamente instancias del modelo.</p>
+
+<p>El controlador se ve de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    /**
+     * Ver posts
+     *
+     * @param \Posts $post
+     */
+    public function showAction(Posts $post)
+    {
+        $this-&gt;view-&gt;post = $post;
+    }
+}
+</code></pre>
+
+<p>El método <code>showAction</code> recibe una instancia del modelo <code>\Posts</code>, el desarrollador podría inspeccionar esto antes de despachar la acción preparando el parámetro acordemente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use \Exception;
+use Phalcon\Mvc\Model;
+use Phalcon\Mvc\Dispatcher as MvcDispatcher;
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+use \ReflectionMethod;
+
+$di-&gt;set(
+    'dispatcher',
+    function () {
+        // Creamos un EventsManager
+        $eventsManager = new EventsManager();
+
+        $eventsManager-&gt;attach(
+            'dispatch:beforeDispatchLoop',
+            function (Event $event, $dispatcher) {
+                // Posible nombre de clase del controlador
+                $controllerName = $dispatcher-&gt;getControllerClass();
+
+                // Posible nombre de método
+                $actionName = $dispatcher-&gt;getActiveMethod();
+
+                try {
+                    // Obtenemos el reflection para el método a ser ejecutado
+                    $reflection = new ReflectionMethod($controllerName, $actionName);
+
+                    $parameters = $reflection-&gt;getParameters();
+
+                    // Chequeamos los parámetros
+                    foreach ($parameters as $parameter) {
+                        // Obtenemos el nombre del modelo esperado
+                        $className = $parameter-&gt;getClass()-&gt;name;
+
+                        // Chequeamos si el parámetros es instancia del modelo
+                        if (is_subclass_of($className, Model::class)) {
+                            $model = $className::findFirstById($dispatcher-&gt;getParams()[0]);
+
+                            // Reescribimos el parámetro por la instancia del modelo
+                            $dispatcher-&gt;setParams([$model]);
+                        }
+                    }
+                } catch (Exception $e) {
+                    // Ocurrió una excepción. Quizás la clase o el action no existen?
+                }
+            }
+        );
+
+        $dispatcher = new MvcDispatcher();
+
+        $dispatcher-&gt;setEventsManager($eventsManager);
+
+        return $dispatcher;
+    }
+);
+</code></pre>
+
+<p>The above example has been simplified. A developer can improve it to inject any kind of dependency or model in actions before be executed.</p>
+
+<p>From 3.1.x onwards the dispatcher also comes with an option to handle this internally for all models passed into a controller action by using <a href="api/Phalcon_Mvc_Model_Binder">Phalcon\Mvc\Model\Binder</a>.</p>
+
+<pre><code class="language-php">use Phalcon\Mvc\Dispatcher;
+use Phalcon\Mvc\Model\Binder;
+
+$dispatcher = new Dispatcher();
+
+$dispatcher-&gt;setModelBinder(new Binder());
+
+return $dispatcher;
+</code></pre>
+
+<h5 class="alert alert-warning">Dado que el objeto Binder está utilizando internamente Reflection Api que puede ser pesado, existe la capacidad de establecer el caché. Esto puede hacerse mediante segundo argumento en <code>setModelBinder()</code> que también puede aceptar el nombre del servicio o simplemente pasando la instancia de caché al constructor de <code>Binder</code>. </h5>
+
+<p>It also introduces a new interface <a href="api/Phalcon_Mvc_Model_Binder_BindableInterface">Phalcon\Mvc\Model\Binder\BindableInterface</a> which allows you to define the controllers associated models to allow models binding in base controllers.</p>
+
+<p>For example, you have a base <code>CrudController</code> which your <code>PostsController</code> extends from. Your <code>CrudController</code> looks something like this:</p>
+
+<pre><code class="language-php">use Phalcon\Mvc\Controller;
+use Phalcon\Mvc\Model;
+
+class CrudController extends Controller
+{
+    /**
+     * Mostrar
+     *
+     * @param Model $model
+     */
+    public function showAction(Model $model)
+    {
+        $this-&gt;view-&gt;model = $model;
+    }
+}
+</code></pre>
+
+<p>En el <code>PostsController</code> se debe definir que modelo el controlador está asociado. This is done by implementing the <a href="api/Phalcon_Mvc_Model_Binder_BindableInterface">Phalcon\Mvc\Model\Binder\BindableInterface</a> which will add the <code>getModelName()</code> method from which you can return the model name. Puede devolver un string con un nombre de modelo o un array asociativo donde clave es el nombre del parámetro y el valor el nombre del modelo.</p>
+
+<pre><code class="language-php">use Phalcon\Mvc\Model\Binder\BindableInterface;
+use Models\Posts;
+
+class PostsController extends CrudController implements BindableInterface
+{
+    public static function getModelName()
+    {
+        return Posts::class;
+    }
+}
+</code></pre>
+
+<p>Al declarar el modelo asociado con <code>PostsController</code> el vinculador (binder) puede comprobar en controlador padre el método <code>getModelName()</code> antes de pasar el modelo definido al action.</p>
+
+<p>Si la estructura del proyecto no utiliza un controlador padre, usted puede por supuesto todavía vincular el modelo directamente en la acción del controlador:</p>
+
+<pre><code class="language-php">use Phalcon\Mvc\Controller;
+use Models\Posts;
+
+class PostsController extends Controller
+{
+    /**
+     * Ver posts
+     *
+     * @param Posts $post
+     */
+    public function showAction(Posts $post)
+    {
+        $this-&gt;view-&gt;post = $post;
+    }
+}
+</code></pre>
+
+<h5 class="alert alert-warning">Currently the binder will only use the models primary key to perform a <code>findFirst()</code> on. An example route for the above would be <code>/posts/show/{1}</code> </h5>
+
+<p><a name="handling-404"></a></p>
+
+<h2 id="gestión-de-excepciones-not-found">Gestión de excepciones “Not Found”</h2>
+
+<p>Using the <a href="/3.4/en/events">EventsManager</a> it’s possible to insert a hook point before the dispatcher throws an exception when the controller/action combination wasn’t found:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Exception;
+use Phalcon\Dispatcher;
+use Phalcon\Mvc\Dispatcher as MvcDispatcher;
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+use Phalcon\Mvc\Dispatcher\Exception as DispatchException;
+
+$di-&gt;setShared(
+    'dispatcher',
+    function () {
+        // Creamos un EventsManager
+        $eventsManager = new EventsManager();
+
+        // Adjuntamos un listener
+        $eventsManager-&gt;attach(
+            'dispatch:beforeException',
+            function (Event $event, $dispatcher, Exception $exception) {
+                // Gestor de excepciones 404 
+                if ($exception instanceof DispatchException) {
+                    $dispatcher-&gt;forward(
+                        [
+                            'controller' =&gt; 'index',
+                            'action'     =&gt; 'show404',
+                        ]
+                    );
+
+                    return false;
+                }
+
+                // Modo alternativo, el controlador o el acción no existen
+                switch ($exception-&gt;getCode()) {
+                    case Dispatcher::EXCEPTION_HANDLER_NOT_FOUND:
+                    case Dispatcher::EXCEPTION_ACTION_NOT_FOUND:
+                        $dispatcher-&gt;forward(
+                            [
+                                'controller' =&gt; 'index',
+                                'action'     =&gt; 'show404',
+                            ]
+                        );
+
+                        return false;
+                }
+            }
+        );
+
+        $dispatcher = new MvcDispatcher();
+
+        // Vinculamos el EventsManager con el dispatcher
+        $dispatcher-&gt;setEventsManager($eventsManager);
+
+        return $dispatcher;
+    }
+);
+</code></pre>
+
+<p>Por supuesto, este método puede ser movido en clases plugin independientes, permitiendo que más de una clase tome acciones cuando una excepción se produce en el circuito de despacho:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Exception;
+use Phalcon\Events\Event;
+use Phalcon\Mvc\Dispatcher;
+use Phalcon\Mvc\Dispatcher\Exception as DispatchException;
+
+class ExceptionsPlugin
+{
+    public function beforeException(Event $event, Dispatcher $dispatcher, Exception $exception)
+    {
+        // Acción por defecto
+        $action = 'show503';
+
+        // Gestor de excepciones 404 
+        if ($exception instanceof DispatchException) {
+            $action = 'show404';
+        }
+
+        $dispatcher-&gt;forward(
+            [
+                'controller' =&gt; 'index',
+                'action'     =&gt; $action,
+            ]
+        );
+
+        return false;
+    }
+}
+</code></pre>
+
+<h5 class="alert alert-danger">Las únicas excepciones producidas por el dispatcher y las excepciones producidas en la acción ejecutada son notificadas en los eventos de <code>beforeException</code>. Las excepciones producidas en los listeners o eventos de controladores se redirigen en el último try/catch. </h5>
+
+<p><a name="custom"></a></p>
+
+<h2 id="implementar-tu-propio-despachador">Implementar tu propio despachador</h2>
+
+<p>The <a href="api/Phalcon_Mvc_DispatcherInterface">Phalcon\Mvc\DispatcherInterface</a> interface must be implemented to create your own dispatcher replacing the one provided by Phalcon.</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

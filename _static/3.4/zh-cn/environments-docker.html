@@ -1,0 +1,1129 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="zh-cn" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="zh-cn" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-cn" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/zh-cn/environments-docker.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/zh-cn">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/environments-docker" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/zh-cn/environments-docker" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/zh-cn/environments-docker" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/zh-cn/environments-docker" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/zh-cn/environments-docker" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/zh-cn/environments-docker" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/environments-docker">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/zh-cn/environments-docker">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/zh-cn/environments-docker">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/zh-cn/environments-docker">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/zh-cn/environments-docker">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/zh-cn/environments-docker">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/zh-cn">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="总览">总览</h1>
+
+<p>Phalcon Compose 是社区驱动的，为Phalcon项目打造的，在Docker运行的样板开发环境。 其目的是，使它更易于引导Phalcon应用和在开发或生产环境中运行它们。</p>
+
+<p><a name="dependencies"></a></p>
+
+<h2 id="依赖项">依赖项</h2>
+
+<p>To run this stack on your machine, you need at least:</p>
+
+<ul>
+  <li>Operating System: Windows, Linux, or OS X</li>
+  <li><a href="https://docs.docker.com/installation/">Docker Engine</a> &gt;= 1.10.0</li>
+  <li><a href="https://docs.docker.com/compose/install/">Docker Compose</a> &gt;= 1.6.2</li>
+</ul>
+
+<p><a name="services"></a></p>
+
+<h2 id="服务">服务</h2>
+
+<p>服务包括有：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>服务名称</th>
+      <th>描述</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>mongo</td>
+      <td>MongoDB 服务容器。</td>
+    </tr>
+    <tr>
+      <td>postgres</td>
+      <td>PostgreSQL 服务容器。</td>
+    </tr>
+    <tr>
+      <td>mysql</td>
+      <td>MySQL 数据库容器。</td>
+    </tr>
+    <tr>
+      <td>phpmyadmin</td>
+      <td>MySQL 和 MariaDB 的 web 界面。</td>
+    </tr>
+    <tr>
+      <td>memcached</td>
+      <td>Memcached 服务容器。</td>
+    </tr>
+    <tr>
+      <td>queue</td>
+      <td>Beanstalk 队列服务容器.</td>
+    </tr>
+    <tr>
+      <td>aerospike</td>
+      <td>Aerospike — — 可靠、 高性能、 分布式数据库优化的闪存和 RAM。</td>
+    </tr>
+    <tr>
+      <td>redis</td>
+      <td>Redis数据库容器。</td>
+    </tr>
+    <tr>
+      <td>app</td>
+      <td>PHP 7、 Apache 2 和Composer的容器。</td>
+    </tr>
+    <tr>
+      <td>elasticsearch</td>
+      <td>Elasticsearch 是一个功能强大的开源搜索和分析引擎，使得数据容易搜索。</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="installation"></a></p>
+
+<h2 id="安装">安装</h2>
+
+<p><a name="installation-composer"></a></p>
+
+<h3 id="使用-composer-推荐">使用 Composer (推荐)</h3>
+
+<p>使用Composer，你可以创建一个如下的新项目：</p>
+
+<pre><code class="language-bash">composer create-project phalcon/compose --prefer-dist &lt;folder name&gt;
+</code></pre>
+
+<p>您的输出应该与此类似：</p>
+
+<pre><code class="language-php">Example
+ Installing phalcon/compose (version)
+  - Installing phalcon/compose (version)
+    Loading from cache
+
+Created project in folderName
+&gt; php -r "copy('variables.env.example', 'variables.env');"
+Loading composer repositories with package information
+Updating dependencies (including require-dev)
+Nothing to install or update
+Generating autoload files
+</code></pre>
+
+<p><a name="installation-git"></a></p>
+
+<h3 id="使用-git">使用 Git</h3>
+
+<p>另一种方法来初始化您的项目是通过Git。</p>
+
+<pre><code class="language-bash"> git clone git@github.com:phalcon/phalcon-compose.git
+</code></pre>
+
+<h5 class="alert alert-warning">Make sure that you copy <code>variables.env.example</code> to <code>variables.env</code> and adjust the settings in that file </h5>
+
+<p>将您Phalcon的应用程序，添加到 <code>application</code> 文件夹。</p>
+
+<p><a name="configuration"></a></p>
+
+<h2 id="配置">配置</h2>
+
+<p>添加<code>Phalcon.local</code> （或您首选的主机名 <code>）到您的 &lt;o&gt;/etc/hosts</code> 文件，如下所示：</p>
+
+<pre><code class="language-bash">127.0.0.1 www.phalcon.local phalcon.local
+</code></pre>
+
+<p><a name="usage"></a></p>
+
+<h2 id="用法">用法</h2>
+
+<p>You can now build, create, start, and attach to containers to the environment for your application. To build the containers use following command inside the project root:</p>
+
+<pre><code class="language-php">docker-compose build
+</code></pre>
+
+<p>要启动应用程序并在后台运行容器，可以在项目的根目录内，使用以下命令：</p>
+
+<pre><code class="language-bash"># You can use here your prefered project name with "-p my-app" parameter
+$ docker-compose up -d
+</code></pre>
+
+<p>Now setup your project in the app container using the Phalcon Developer Tools</p>
+
+<p>Replace project in **<project_app_1>** with the name of your project/directory (shown in the output of `docker-compose up -d`)</project_app_1></p>
+
+<p>$ <code>docker exec -t &lt;project_app_1&gt; phalcon project application simple</code></p>
+
+<p>Now you can now launch your application in your browser visiting <code>http://phalcon.local</code> (or the host name you chose above).</p>
+
+<p><a name="setup"></a></p>
+
+<h2 id="设置">设置</h2>
+
+<p>如果您的应用程序使用文件缓存，或将日志写入到文件，你可以设置你的缓存和日志文件夹，如下所示：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>目录</th>
+      <th>路径</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cache</td>
+      <td><code>/project/cache</code></td>
+    </tr>
+    <tr>
+      <td>Logs</td>
+      <td><code>/project/log</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="logs"></a></p>
+
+<h2 id="日志">日志</h2>
+
+<p>对于大多数容器，您可以使用 <code>docker logs 1</code> 命令，访问在您的主机上的日志。</p>
+
+<p><a name="environment-variables"></a></p>
+
+<h2 id="环境变量">环境变量</h2>
+
+<p>你可以通过编辑 <code>variables.env</code> 文件，从外部文件传递多个环境变量到服务容器。</p>
+
+<p><a name="environment-variables-web"></a></p>
+
+<h3 id="web-环境">Web 环境</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>环境变量</th>
+      <th>描述</th>
+      <th>默认</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>WEB_DOCUMENT_ROOT</code></td>
+      <td>Web服务器的文档根目录（容器内）。</td>
+      <td>/project/public</td>
+    </tr>
+    <tr>
+      <td><code>WEB_DOCUMENT_INDEX</code></td>
+      <td>索引文件。</td>
+      <td>index.php</td>
+    </tr>
+    <tr>
+      <td><code>WEB_ALIAS_DOMAIN</code></td>
+      <td>域名别名</td>
+      <td>*.vm</td>
+    </tr>
+    <tr>
+      <td><code>WEB_PHP_SOCKET</code></td>
+      <td>PHP FPM 套接字地址。</td>
+      <td>127.0.0.1:9000</td>
+    </tr>
+    <tr>
+      <td><code>APPLICATION_ENV</code></td>
+      <td>应用程序环境。</td>
+      <td>development</td>
+    </tr>
+    <tr>
+      <td><code>APPLICATION_CACHE</code></td>
+      <td>应用程序缓存的目录 （容器内）。</td>
+      <td>/project/cache</td>
+    </tr>
+    <tr>
+      <td><code>APPLICATION_LOGS</code></td>
+      <td>应用程序日志的目录 （容器内）。</td>
+      <td>/project/logs</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="environment-variables-phpmyadmin"></a></p>
+
+<h3 id="phpmyadmin-变量">phpMyAdmin 变量</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>环境变量</th>
+      <th>描述</th>
+      <th>默认</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>PMA_ARBITRARY</code></td>
+      <td>当设置为1时，只有1个被允许到服务器的连接。</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td><code>PMA_HOST</code></td>
+      <td>定义MySQL服务器地址/主机名。</td>
+      <td>mysql</td>
+    </tr>
+    <tr>
+      <td><code>PMA_HOSTS</code></td>
+      <td>Define comma separated list of address/host names of the MySQL servers. Used only if <code>PMA_HOST</code> is empty.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>PMA_PORT</code></td>
+      <td>定义MySQL服务器的端口。</td>
+      <td>3306</td>
+    </tr>
+    <tr>
+      <td><code>PMA_VERBOSE</code></td>
+      <td>定义MySQL服务器的详细名称。</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>PMA_VERBOSES</code></td>
+      <td>Define comma separated list of verbose names of the MySQL servers. Used only if <code>PMA_VERBOSE</code> is empty.</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>PMA_USER</code></td>
+      <td>定义用户名用于配置身份验证方法。</td>
+      <td>phalcon</td>
+    </tr>
+    <tr>
+      <td><code>PMA_PASSWORD</code></td>
+      <td>定义密码用于配置身份验证方法。</td>
+      <td>secret</td>
+    </tr>
+    <tr>
+      <td><code>PMA_ABSOLUTE_URI</code></td>
+      <td>完全限定的路径 (例如 https://pma.example.net/) 在反向代理使 phpMyAdmin 可用。</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>See also</em></p>
+
+<ul>
+  <li>https://docs.phpmyadmin.net/en/latest/setup.html#installing-using-docker</li>
+  <li>https://docs.phpmyadmin.net/en/latest/config.html#config</li>
+  <li>https://docs.phpmyadmin.net/en/latest/setup.html</li>
+</ul>
+
+<p><a name="xdebug"></a></p>
+
+<h2 id="xdebug-远程调试器-phpstorm">Xdebug 远程调试器 (PhpStorm)</h2>
+
+<p>出于调试目的，您可以设置 Xdebug 通过传递所需的参数 （见 variables.env）。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>环境变量</th>
+      <th>描述</th>
+      <th>默认</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>XDEBUG_REMOTE_HOST</code></td>
+      <td><code>php.ini</code> value for <code>xdebug.remote_host</code> (your host IP).</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><code>XDEBUG_REMOTE_PORT</code></td>
+      <td><code>php.ini</code> value for <code>xdebug.remote_port</code>.</td>
+      <td>9000</td>
+    </tr>
+    <tr>
+      <td><code>XDEBUG_REMOTE_AUTOSTART</code></td>
+      <td><code>php.ini</code> value for <code>xdebug.remote_autostart</code>.</td>
+      <td>Off</td>
+    </tr>
+    <tr>
+      <td><code>XDEBUG_REMOTE_CONNECT_BACK</code></td>
+      <td><code>php.ini</code> value for <code>xdebug.remote_connect_back</code>.</td>
+      <td>Off</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>注意</em>你可以找到你本地的 IP 地址，如下所示：</p>
+
+<pre><code class="language-bash"># Linux/MacOS
+ifconfig en1 | grep inet | awk '{print $2}' | sed 's/addr://' | grep .
+
+# Windows
+ipconfig
+</code></pre>
+
+<p><a name="troubleshooting"></a></p>
+
+<h2 id="疑难解答">疑难解答</h2>
+
+<p><a name="troubleshooting-startup"></a></p>
+
+<h3 id="启动或链接错误">启动或链接错误</h3>
+
+<p>If you got any startup issues you can try to rebuild app container. There will be no loss of data., it is a safe reset:</p>
+
+<pre><code class="language-bash">docker-compose stop
+docker-compose rm --force app
+docker-compose build --no-cache app
+docker-compose up -d
+</code></pre>
+
+<p><a name="troubleshooting-full-reset"></a></p>
+
+<h3 id="完全重置">完全重置</h3>
+
+<p>要重置所有容器，请删除所有数据 （mysql、 elasticsearch 等），但不是 <code>application</code> 文件夹中的项目文件：</p>
+
+<pre><code class="language-bash">docker-compose stop
+docker-compose rm --force
+docker-compose build --no-cache
+docker-compose up -d
+</code></pre>
+
+<p><a name="troubleshooting-dependencies"></a></p>
+
+<h3 id="更新依赖项">更新依赖项</h3>
+
+<p>有时，基础的镜像 (例如 <code>phalconphp/php-apache:ubuntu-16.04</code>) 已经更新。 Phalcon Compose 取决于这些镜像. 你因此将需要更新它们，它始终是好事，确保您有可用的最新功能。 对这些镜像的从属容器，将需要更新和重建：</p>
+
+<pre><code class="language-bash">docker pull mongo:3.4
+docker pull postgres:9.5-alpine
+docker pull mysql:5.7
+docker pull phpmyadmin/phpmyadmin:4.6
+docker pull memcached:1.4-alpine
+docker pull phalconphp/beanstalkd:1.10
+docker pull aerospike:latest
+docker pull redis:3.4-alpine
+docker pull elasticsearch:5.2-alpine
+docker pull phalconphp/php-apache:ubuntu-16.04
+</code></pre>
+
+<p>Linux/苹果 Mac 用户可以使用 <code>make</code> 执行任务：</p>
+
+<pre><code class="language-bash">make pull
+</code></pre>
+
+<p>然后你必须重置所有容器、 删除所有数据，重建服务并重新启动应用程序。</p>
+
+<p>Linux/苹果 Mac 用户可以使用 <code>make</code> 执行任务：</p>
+
+<pre><code class="language-bash">make reset
+</code></pre>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

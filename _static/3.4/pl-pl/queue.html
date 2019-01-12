@@ -1,0 +1,974 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="pl-pl" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="pl-pl" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="pl-pl" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/pl-pl/queue.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/pl-pl">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/queue" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/pl-pl/queue" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/pl-pl/queue" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/pl-pl/queue" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/pl-pl/queue" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/pl-pl/queue" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/queue">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/pl-pl/queue">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/pl-pl/queue">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/pl-pl/queue">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/pl-pl/queue">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/pl-pl/queue">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/pl-pl">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="queueing">Queueing</h1>
+
+<p>Activities like processing videos, resizing images or sending emails aren’t suitable to be executed online or in real time because it may slow the loading time of pages and severely impact the user experience.</p>
+
+<p>The best solution here is to implement background jobs. The web application puts jobs into a queue and which will be processed separately.</p>
+
+<p>While you can find more sophisticated PHP extensions to address queueing in your applications like <a href="http://pecl.php.net/package/amqp">RabbitMQ</a>; Phalcon provides a client for <a href="http://www.igvita.com/2010/05/20/scalable-work-queues-with-beanstalk/">Beanstalk</a>, a job queueing backend inspired by <a href="http://memcached.org/">Memcached</a>. It’s simple, lightweight, and completely specialized for job queueing.</p>
+
+<h5 class="alert alert-danger">Some of the data returned from queue methods require that the module Yaml be installed. Please refer to <a href="http://php.net/manual/book.yaml.php">this</a> for more information. You will need to use Yaml &gt;= 2.0.0 </h5>
+
+<p><a name="put-jobs-in-queue"></a></p>
+
+<h2 id="putting-jobs-into-the-queue">Putting Jobs into the Queue</h2>
+
+<p>After connecting to Beanstalk you can insert as many jobs as required. You can define the message structure according to the needs of the application:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Queue\Beanstalk;
+
+// Connect to the queue
+$queue = new Beanstalk(
+    [
+        'host' =&gt; '192.168.0.21',
+        'port' =&gt; '11300',
+    ]
+);
+
+// Insert the job in the queue
+$queue-&gt;put(
+    [
+        'processVideo' =&gt; 4871,
+    ]
+);
+</code></pre>
+
+<p>Available connection options are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Opcja</th>
+      <th>Description</th>
+      <th>Domyślne</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>host</td>
+      <td>IP where the beanstalk server is located</td>
+      <td>127.0.0.1</td>
+    </tr>
+    <tr>
+      <td>port</td>
+      <td>Connection port</td>
+      <td>11300</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In the above example we stored a message which will allow a background job to process a video. The message is stored in the queue immediately and does not have a certain time to live.</p>
+
+<p>Additional options as: time to run, priority and delay can be passed as second parameter:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Insert the job in the queue with options
+$queue-&gt;put(
+    [
+        'processVideo' =&gt; 4871,
+    ],
+    [
+        'priority' =&gt; 250,
+        'delay'    =&gt; 10,
+        'ttr'      =&gt; 3600,
+    ]
+);
+</code></pre>
+
+<p>The following options are available:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Opcja</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>priority</td>
+      <td>It’s an integer &lt; 2**32. Jobs with smaller priority values will be scheduled before jobs with larger priorities. The most urgent priority is 0; the least urgent priority is 4,294,967,295.</td>
+    </tr>
+    <tr>
+      <td>delay</td>
+      <td>It’s an integer number of seconds to wait before putting the job in the ready queue. The job will be in the ‘delayed’ state during this time.</td>
+    </tr>
+    <tr>
+      <td>ttr</td>
+      <td>Time to run – is an integer number of seconds to allow a worker to run this job. This time is counted from the moment a worker reserves this job.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Every job put into the queue returns a <code>job id</code> which you can use to track the status of the job:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$jobId = $queue-&gt;put(
+    [
+        'processVideo' =&gt; 4871,
+    ]
+);
+</code></pre>
+
+<p><a name="retrieving-messages"></a></p>
+
+<h2 id="retrieving-messages">Retrieving Messages</h2>
+
+<p>Once a job is placed into the queue, those messages can be consumed by a background worker which will have enough time to complete the task:</p>
+
+<pre><code class="language-php">&lt;?php
+
+while (($job = $queue-&gt;peekReady()) !== false) {
+    $message = $job-&gt;getBody();
+
+    var_dump($message);
+
+    $job-&gt;delete();
+}
+</code></pre>
+
+<p>Jobs must be removed from the queue to avoid double processing. If multiple background jobs workers are implemented, jobs must be <code>reserved</code> so other workers don’t re-process them while other workers have them reserved:</p>
+
+<pre><code class="language-php">&lt;?php
+
+while (($job = $queue-&gt;reserve()) !== false) {
+    $message = $job-&gt;getBody();
+
+    var_dump($message);
+
+    $job-&gt;delete();
+}
+</code></pre>
+
+<p>Our client implements a basic set of the features provided by Beanstalkd but enough to allow you to build applications implementing queues.</p>
+
+<h2 id="advanced-topics">Advanced Topics</h2>
+
+<h3 id="multiple-queues">Multiple Queues</h3>
+
+<p>Beanstalkd supports multiple queues (called ‘tubes’) to allow for a single queue server to act as a hub for a variety of workers. Phalcon supports this readily.</p>
+
+<p>Viewing the tubes available on the server, and choosing a tube for the queue object to use:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$tube_array = $queue-&gt;listTubes();
+
+$queue-&gt;choose('myOtherTube');
+</code></pre>
+
+<p>All subsequent work with <code>$queue</code> now manipulates <code>myOtherTube</code> instead of <code>default</code>.</p>
+
+<p>You can view which tube the queue is using as well.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$current_tube = $queue-&gt;listTubeUsed();
+</code></pre>
+
+<h3 id="tube-manipulation">Tube Manipulation</h3>
+
+<p>Tubes can be paused and resumed if needed. The example below pauses <code>myOtherTube</code> for 3 minutes.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$queue-&gt;pauseTube('myOtherTube', 180);
+</code></pre>
+
+<p>Setting the delay to 0 will resume normal operation.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$queue-&gt;pauseTube('myOtherTube', 0);
+</code></pre>
+
+<h3 id="server-status">Server Status</h3>
+
+<p>You can get information about the entire server or specific tubes.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$server_stats = $queue-&gt;stats();
+
+$tube_stats = $queue-&gt;statsTube('myOtherTube');
+
+$server_status = $queue-&gt;readStatus();
+
+</code></pre>
+
+<h3 id="job-management">Job Management</h3>
+
+<p>Beanstalkd supports the ability to manage jobs with both the idea of delaying a job and removing a job from the queue for later processing.</p>
+
+<p>Burying a job is typically used to deal with potential problems outside of the worker that can be resolved. This takes the job and puts it into the buried queue.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$job = $queue-&gt;reserve();
+$job-&gt;bury();
+</code></pre>
+
+<p>A list of buried jobs is stored on the server. You can inspect the first buried job in the queue.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$job_data = $queue-&gt;peekBuried();
+</code></pre>
+
+<p>If the buried queue is empty, this will return <code>false</code>, else it returns a Job object.</p>
+
+<p>You can kick the first [N] buried jobs in the buried queue to put it/them back in the ready queue. Below is an example of kicking the first three buried jobs.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$queue-&gt;kick(3);
+</code></pre>
+
+<p>Releasing jobs back to the ready queue can be done, along with an optional delay. This is handy for transient errors while processing a job. Below is an example of putting a low (100) priority and a 3 minute delay on a job.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$job = $queue-&gt;reserve();
+
+$job-&gt;release(100, 180);
+</code></pre>
+
+<p>Priority and delay are the same as when <code>put</code>ing a job on the queue.</p>
+
+<p>Inspecting a job in the queue can be accomplished with <code>jobPeek($job_id)</code>. The example below attempts to peek at job id 5.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$queue-&gt;jobPeek(5)
+</code></pre>
+
+<p>Jobs that have been <code>delete</code>ed cannot be inspected and will return <code>false</code>. Ready, buried, and delayed jobs will return a Job object.</p>
+
+<h3 id="further-reading">Further Reading</h3>
+
+<p><a href="https://github.com/kr/beanstalkd/blob/master/doc/protocol.txt">The protocol text</a> contains all of the internal operational details of BeanstalkD and is often considered the defacto documentation for BeanstalkD.</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

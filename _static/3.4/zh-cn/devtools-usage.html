@@ -1,0 +1,1110 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="zh-cn" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="zh-cn" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-cn" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/zh-cn/devtools-usage.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/zh-cn">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/devtools-usage" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/zh-cn/devtools-usage" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/zh-cn/devtools-usage" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/zh-cn/devtools-usage" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/zh-cn/devtools-usage" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/zh-cn/devtools-usage" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/devtools-usage">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/zh-cn/devtools-usage">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/zh-cn/devtools-usage">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/zh-cn/devtools-usage">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/zh-cn/devtools-usage">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/zh-cn/devtools-usage">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/zh-cn">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="phalcon开发人员工具">Phalcon开发人员工具</h1>
+
+<p>这些工具是生成骨架代码的有用脚本的集合。 应用程序的核心组件可以通过简单的命令生成, 使您可以轻松地使用 Phalcon开发应用程序。</p>
+
+<h5 class="alert alert-danger">If you prefer to use the web version instead of the console, this <a href="https://blog.phalconphp.com/post/dont-like-command-line-and-consoles-no-problem">blog post</a> offers more information. </h5>
+
+<p><a name="download"></a></p>
+
+<h2 id="下载">下载</h2>
+
+<p>你可以从<a href="https://github.com/phalcon/phalcon-devtools">Github</a>下载或克隆一个跨平台的开发者工具包。</p>
+
+<p><a name="installation"></a></p>
+
+<h2 id="安装">安装</h2>
+
+<p>以下是有关如何在不同平台上安装开发人员工具的详细说明:</p>
+
+<p><a href="/[/3.4/en/devtools-installation#installation-linux">Linux</a> : <a href="/3.4/en/devtools-installation#installation-macos">MacOS</a> : <a href="/3.4/en/devtools-installation#installation-windows">Windows</a></p>
+
+<p><a name="available-commands"></a></p>
+
+<h2 id="可用的命令">可用的命令</h2>
+
+<p>通过输入 typing::code:<code> Phalcon commands</code>，您可以在Phalcon工具中获得一组可用的命令</p>
+
+<pre><code class="language-bash">$ phalcon commands
+
+Phalcon DevTools (3.0.0)
+
+Available commands:
+  commands         (alias of: list, enumerate)
+  controller       (alias of: create-controller)
+  module           (alias of: create-module)
+  model            (alias of: create-model)
+  all-models       (alias of: create-all-models)
+  project          (alias of: create-project)
+  scaffold         (alias of: create-scaffold)
+  migration        (alias of: create-migration)
+  webtools         (alias of: create-webtools)
+</code></pre>
+
+<p><a name="project-skeleton"></a></p>
+
+<h2 id="生成一个项目骨架">生成一个项目骨架</h2>
+
+<p>您可以使用Phalcon工具为您的应用程序生成预定义的项目框架。 默认情况下，项目框架生成器将生成Apache使用的mod_rewrite。 在web服务器文档根上键入以下命令:</p>
+
+<pre><code class="language-bash">$ pwd
+
+/Applications/MAMP/htdocs
+
+$ phalcon create-project store
+</code></pre>
+
+<p>产生以上推荐的项目结构:</p>
+
+<p><img src="/assets/images/content/devtools-usage-01.png" alt="" /></p>
+
+<p>您可以添加参数<code>--help</code>来获得关于某个脚本使用的帮助:</p>
+
+<pre><code class="language-bash">$ phalcon project --help
+
+Phalcon DevTools (3.0.0)
+
+Help:
+  Creates a project
+
+Usage:
+  project [name] [type] [directory] [enable-webtools]
+
+Arguments:
+  help    Shows this help text
+
+Example
+  phalcon project store simple
+
+Options:
+ --name               Name of the new project
+ --enable-webtools    Determines if webtools should be enabled [optional]
+ --directory=s        Base path on which project will be created [optional]
+ --type=s             Type of the application to be generated (cli, micro, simple, modules)
+ --template-path=s    Specify a template path [optional]
+ --use-config-ini     Use a ini file as configuration file [optional]
+ --trace              Shows the trace of the framework in case of exception. [optional]
+ --help               Shows this help
+</code></pre>
+
+<p>从web服务器访问项目将显示:</p>
+
+<p><img src="/assets/images/content/devtools-usage-02.png" alt="" /></p>
+
+<p><a name="generating-controllers"></a></p>
+
+<h2 id="生成控制器">生成控制器</h2>
+
+<p>The command <code>create-controller</code> generates controller skeleton structures. It’s important to invoke this command inside a directory that already has a Phalcon project.</p>
+
+<pre><code class="language-bash">$ phalcon create-controller --name test
+</code></pre>
+
+<p>以下代码由脚本生成:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class TestController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+}
+</code></pre>
+
+<p><a name="database-settings"></a></p>
+
+<h2 id="准备数据库设置">准备数据库设置</h2>
+
+<p>使用开发人员工具生成项目时。 A configuration file can be found in <code>app/config/config.php</code>. 要生成模型或脚手架，需要更改连接到数据库的设置。</p>
+
+<p>Change the database section in your config.php file:</p>
+
+<pre><code class="language-php">&lt;?php
+defined('BASE_PATH') || define('BASE_PATH', getenv('BASE_PATH') ?: realpath(dirname(__FILE__) . '/../..'));
+defined('APP_PATH') || define('APP_PATH', BASE_PATH . '/app');
+
+return new \Phalcon\Config([
+    'database' =&gt; [
+        'adapter'     =&gt; 'Mysql',
+        'host'        =&gt; 'localhost',
+        'username'    =&gt; 'root',
+        'password'    =&gt; 'secret',
+        'dbname'      =&gt; 'test',
+        'charset'     =&gt; 'utf8',
+    ],
+    'application' =&gt; [
+        'appDir'         =&gt; APP_PATH . '/',
+        'controllersDir' =&gt; APP_PATH . '/controllers/',
+        'modelsDir'      =&gt; APP_PATH . '/models/',
+        'migrationsDir'  =&gt; APP_PATH . '/migrations/',
+        'viewsDir'       =&gt; APP_PATH . '/views/',
+        'pluginsDir'     =&gt; APP_PATH . '/plugins/',
+        'libraryDir'     =&gt; APP_PATH . '/library/',
+        'cacheDir'       =&gt; BASE_PATH . '/cache/',
+
+        // This allows the baseUri to be understand project paths that are not in the root directory
+        // of the webpspace.  This will break if the public/index.php entry point is moved or
+        // possibly if the web server rewrite rules are changed. This can also be set to a static path.
+        'baseUri'        =&gt; preg_replace('/public([\/\\])index.php$/', '', $_SERVER["PHP_SELF"]),
+    ]
+]);
+</code></pre>
+
+<p><a name="generating-models"></a></p>
+
+<h2 id="generating-models">Generating Models</h2>
+
+<p>创建模型有几种方法。 您可以从默认数据库连接或有选择地创建所有模型。 Models can have public attributes for the field representations or setters/getters can be used.</p>
+
+<pre><code class="language-bash">Options:
+ --name=s             Table name
+ --schema=s           Name of the schema. [optional]
+ --namespace=s        Model's namespace [optional]
+ --get-set            Attributes will be protected and have setters/getters. [optional]
+ --extends=s          Model extends the class name supplied [optional]
+ --excludefields=l    Excludes fields defined in a comma separated list [optional]
+ --doc                Helps to improve code completion on IDEs [optional]
+ --directory=s        Base path on which project will be created [optional]
+ --force              Rewrite the model. [optional]
+ --trace              Shows the trace of the framework in case of exception. [optional]
+ --mapcolumn          Get some code for map columns. [optional]
+ --abstract           Abstract Model [optional]
+</code></pre>
+
+<p>生成模型的最简单方法是:</p>
+
+<pre><code class="language-bash">$ phalcon model products
+</code></pre>
+
+<pre><code class="language-bash">$ phalcon model --name tablename
+</code></pre>
+
+<p>所有表字段都声明为公共以便直接访问。</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Products extends Model
+{
+    /**
+     * @var integer
+     */
+    public $id;
+
+    /**
+     * @var integer
+     */
+    public $typesId;
+
+    /**
+     * @var string
+     */
+    public $name;
+
+    /**
+     * @var string
+     */
+    public $price;
+
+    /**
+     * @var integer
+     */
+    public $quantity;
+
+    /**
+     * @var string
+     */
+    public $status;
+}
+</code></pre>
+
+<p>通过添加<code>--get-set</code>，您可以使用受保护的变量和公共setter/getter方法生成字段。 这些方法可以帮助在setter/getter方法中实现业务逻辑。</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Products extends Model
+{
+    /**
+     * @var integer
+     */
+    protected $id;
+
+    /**
+     * @var integer
+     */
+    protected $typesId;
+
+    /**
+     * @var string
+     */
+    protected $name;
+
+    /**
+     * @var string
+     */
+    protected $price;
+
+    /**
+     * @var integer
+     */
+    protected $quantity;
+
+    /**
+     * @var string
+     */
+    protected $status;
+
+
+    /**
+     * Method to set the value of field id
+     *
+     * @param integer $id
+     */
+    public function setId($id)
+    {
+        $this-&gt;id = $id;
+    }
+
+    /**
+     * Method to set the value of field typesId
+     *
+     * @param integer $typesId
+     */
+    public function setTypesId($typesId)
+    {
+        $this-&gt;typesId = $typesId;
+    }
+
+    // ...
+
+    /**
+     * Returns the value of field status
+     *
+     * @return string
+     */
+    public function getStatus()
+    {
+        return $this-&gt;status;
+    }
+}
+</code></pre>
+
+<p>模型生成器的一个很好的特性是，它可以在代码生成之间保持开发人员所做的更改。 这允许添加或删除字段和属性，而不必担心会丢失对模型本身所做的更改。 下面的视频展示了它的工作原理:</p>
+
+<div align="center">
+    <iframe src="https://player.vimeo.com/video/39213020" width="500" height="266" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+</div>
+
+<p><a name="crud"></a></p>
+
+<h2 id="curd-脚手架">CURD 脚手架</h2>
+
+<p>脚手架是生成应用程序主要部分的一种快速方法。 如果您希望在单个操作中为新资源创建模型、视图和控制器，那么脚手架就是这项工作的工具。</p>
+
+<p>一旦生成了代码，就必须对其进行定制，以满足您的需求。 许多开发人员完全避免搭建代码，而是选择从头开始编写全部或大部分源代码。 生成的代码可以作为指导，更好地理解框架如何工作或开发原型。 下面的代码显示了基于表<code>products</code>的脚手架:</p>
+
+<pre><code class="language-bash">$ phalcon scaffold --table-name products
+</code></pre>
+
+<p>The scaffold generator will build several files in your application, along with some folders. Here’s a quick overview of what will be generated:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>目的</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>app/controllers/ProductsController.php</code></td>
+      <td>产品控制器</td>
+    </tr>
+    <tr>
+      <td><code>app/models/Products.php</code></td>
+      <td>Products 模型</td>
+    </tr>
+    <tr>
+      <td><code>app/views/layout/products.phtml</code></td>
+      <td>产品的控制器布局</td>
+    </tr>
+    <tr>
+      <td><code>app/views/products/new.phtml</code></td>
+      <td><code>new</code>操作的视图</td>
+    </tr>
+    <tr>
+      <td><code>app/views/products/edit.phtml</code></td>
+      <td><code>edit</code> 操作的视图</td>
+    </tr>
+    <tr>
+      <td><code>app/views/products/search.phtml</code></td>
+      <td><code>search</code> 操作的视图</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>浏览最近生成的控制器时, 您将看到一个搜索窗体和一个用于创建新产品的链接:</p>
+
+<p><img src="/assets/images/content/devtools-usage-03.png" alt="" /></p>
+
+<p>“0&gt;create 页 &lt;/0 &gt; 允许您在” 产品 “模型上创建应用验证的产品。 如果需要其中任何一个, phalcon 将自动验证非空字段并生成警告。</p>
+
+<p><img src="/assets/images/content/devtools-usage-04.png" alt="" /></p>
+
+<p>After performing a search, a pager component is available to show paged results. Use the “Edit” or “Delete” links in front of each result to perform such actions.</p>
+
+<p><img src="/assets/images/content/devtools-usage-05.png" alt="" /></p>
+
+<p><a name="web-interface"></a></p>
+
+<h2 id="工具的-web-接口">工具的 web 接口</h2>
+
+<p>Also, if you prefer, it’s possible to use Phalcon Developer Tools from a web interface. Check out the following screencast to figure out how it works:</p>
+
+<div align="center">
+<iframe src="https://player.vimeo.com/video/42367665" width="500" height="266" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" mark="crwd-mark"></iframe>
+</div>
+
+<p><a name="phpstorm-ide"></a></p>
+
+<h2 id="将工具与-phpstorm-ide-集成">将工具与 phpstorm ide 集成</h2>
+
+<p>The screencast below shows how to integrate developer tools with the <a href="http://www.jetbrains.com/phpstorm/">PhpStorm IDE</a>. 配置步骤可以很容易地适应 php 的其他 ide。</p>
+
+<div align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UbUx_6Cs6r4" frameborder="0" allowfullscreen="" mark="crwd-mark"></iframe>
+</div>
+
+<p><a name="conclusion"></a></p>
+
+<h2 id="结语">结语</h2>
+
+<p>Phalcon开发人员工具提供了一种为应用程序生成代码的简单方法, 从而减少了开发时间和潜在的编码错误。</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

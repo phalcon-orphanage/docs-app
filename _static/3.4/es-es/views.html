@@ -1,0 +1,1907 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="es-es" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="es-es" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es-es" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/es-es/views.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/es-es">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/views" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/es-es/views" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/es-es/views" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/es-es/views" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/es-es/views" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/es-es/views" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/views">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/es-es/views">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/es-es/views">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/es-es/views">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/es-es/views">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/es-es/views">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/es-es">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="usando-vistas">Usando Vistas</h1>
+
+<p>Las vistas representan la interfaz de usuario de tu aplicación. Las vistas son frecuentemente archivos HTML con código PHP incrustado que realizan tareas relacionadas solamente a la presentación de datos. Las vistas llevan a cabo el trabajo de proveer datos al navegador web u otra herramienta que sea utilizada para hacer solicitudes desde tu aplicación.</p>
+
+<p><a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> and <a href="api/Phalcon_Mvc_View_Simple">Phalcon\Mvc\View\Simple</a> are responsible for the managing the view layer of your MVC application.</p>
+
+<p><a name="integrating-views-with-controllers"></a></p>
+
+<h2 id="integrando-vistas-con-controladores">Integrando Vistas con Controladores</h2>
+
+<p>Phalcon pasa automáticamente la ejecución al componente de vista tan pronto como un controlador particular ha completado su ciclo. El componente de vista buscará en la carpeta de vistas, una carpeta llamada como el mismo nombre del último controlador ejecutado y luego para un archivo nombrado como la última acción ejecutada. Por ejemplo, si se hace una petición a la URL <em>http://127.0.0.1/blog/posts/show/301</em>, Phalcon analizará la URL de la sigue manera:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dirección del servidor</th>
+      <th>127.0.0.1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Directorio de Phalcon</td>
+      <td>blog</td>
+    </tr>
+    <tr>
+      <td>Controlador</td>
+      <td>posts</td>
+    </tr>
+    <tr>
+      <td>Acción</td>
+      <td>show</td>
+    </tr>
+    <tr>
+      <td>Parámetro</td>
+      <td>301</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The dispatcher will look for a <code>PostsController</code> and its action <code>showAction</code>. A simple controller file for this example:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+
+    public function showAction($postId)
+    {
+        // Pasamos el parámetro $postId a la vista
+        $this-&gt;view-&gt;postId = $postId;
+    }
+}
+</code></pre>
+
+<p>El método <code>setVar()</code> nos permite crear variables en la vista a demanda, por lo que pueden ser utilizados en la plantilla de la vista. El ejemplo anterior muestra cómo se pasa el parámetro <code>$postId</code> a la respectiva plantilla de la vista.</p>
+
+<p><a name="hierarchical-rendering"></a></p>
+
+<h2 id="renderizado-jerárquico">Renderizado Jerárquico</h2>
+
+<p><a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> supports a hierarchy of files and is the default component for view rendering in Phalcon. Esta jerarquía permite puntos de plantilla comunes (vistas utilizadas comúnmente), así como carpetas con nombre del controlador que definen las respectivas plantillas de vista.</p>
+
+<p>Este componente utiliza por defecto PHP en sí mismo como el motor de la plantilla, por lo tanto, las vistas deben tener la extensión <code>.phtml</code>. Si el directorio de vistas es <em>app/views</em> el componente de vista encontrará automáticamente estos tres archivos de vista.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Archivo</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Vista de la acción</td>
+      <td>app/views/posts/show.phtml</td>
+      <td>Esta es la vista relacionada con la acción. Será mostrada cuando la acción <code>show</code> sea ejecutada.</td>
+    </tr>
+    <tr>
+      <td>Plantilla del controlador</td>
+      <td>app/views/layouts/posts.phtml</td>
+      <td>Esta es la vista relacionada con el controlador. Sólo se mostrará para cada acción ejecutada en el controlador “posts”. Se reutilizará todo el código puesto en ejecución en el diseño de todas las acciones en este controlador.</td>
+    </tr>
+    <tr>
+      <td>Plantilla principal</td>
+      <td>app/views/index.phtml</td>
+      <td>Se trata de la acción principal que se mostrará para cada controlador o acción ejecutada dentro de la aplicación.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>No se requiere implementar todos los archivos antes mencionados. <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> will simply move to the next view level in the hierarchy of files. Si se aplican los 3 archivos, estos se procesaran de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;!-- app/views/posts/show.phtml --&gt;
+
+&lt;h3&gt;Esto muestra la vista!&lt;/h3&gt;
+
+&lt;p&gt;Recibimos el parámetro: &lt;?php echo $postId; ?&gt;&lt;/p&gt;
+</code></pre>
+
+<pre><code class="language-php">&lt;!-- app/views/layouts/posts.phtml --&gt;
+
+&lt;h2&gt;Esta es la plantilla del controlador "posts"!&lt;/h2&gt;
+
+&lt;?php echo $this-&gt;getContent(); ?&gt;
+</code></pre>
+
+<pre><code class="language-php">&lt;!-- app/views/index.phtml --&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Ejemplo&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;Esta es la plantilla principal!&lt;/h1&gt;
+
+        &lt;?php echo $this-&gt;getContent(); ?&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Tenga en cuenta las líneas donde el método <code>$this-&gt;getContent()</code> fue llamado. This method instructs <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> on where to inject the contents of the previous view executed in the hierarchy. Para el ejemplo anterior, la salida sería:</p>
+
+<p>.. figure:: ../_static/img/views-1.png :align: center</p>
+
+<p>El código HTML generado por la solicitud será:</p>
+
+<pre><code class="language-php">&lt;!-- app/views/index.phtml --&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Ejemplo&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;h1&gt;Esta es la plantilla principal!&lt;/h1&gt;
+
+        &lt;!-- app/views/layouts/posts.phtml --&gt;
+
+        &lt;h2&gt;Esta es la plantilla el controlador "posts"!&lt;/h2&gt;
+
+        &lt;!-- app/views/posts/show.phtml --&gt;
+
+        &lt;h3&gt;Esta es la vista!&lt;/h3&gt;
+
+        &lt;p&gt;Recibimos el parámetro: 101&lt;/p&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p><a name="using-templates"></a></p>
+
+<h3 id="usando-plantillas">Usando Plantillas</h3>
+
+<p>Templates are views that can be used to share common view code. They act as controller layouts, so you need to place them in the layouts directory.</p>
+
+<p>Las plantillas se pueden procesar antes del diseño (usando <code>$this-&gt;view-&gt;setTemplateBefore()</code>) o puede hacerse después (usando <code>$this-&gt;view-&gt;setTemplateAfter()</code>). En el ejemplo siguiente se representa la plantilla (<code>layouts/common.phtml</code>) después de la plantilla principal (<code>layouts/posts.phtml</code>):</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function initialize()
+    {
+        $this-&gt;view-&gt;setTemplateAfter('common');
+    }
+
+    public function lastAction()
+    {
+        $this-&gt;flash-&gt;notice(
+            'Estos son los últimos posts'
+        );
+    }
+}
+</code></pre>
+
+<pre><code class="language-php">&lt;!-- app/views/index.phtml --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título del Blog&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;?php echo $this-&gt;getContent(); ?&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<pre><code class="language-php">&lt;!-- app/views/layouts/common.phtml --&gt;
+
+&lt;ul class='menu'&gt;
+    &lt;li&gt;&lt;a href='/'&gt;Página principal&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href='/articles'&gt;Artículos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href='/contact'&gt;Contáctenos&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class='content'&gt;&lt;?php echo $this-&gt;getContent(); ?&gt;&lt;/div&gt;
+</code></pre>
+
+<pre><code class="language-php">&lt;!-- app/views/layouts/posts.phtml --&gt;
+
+&lt;h1&gt;Título del Blog&lt;/h1&gt;
+
+&lt;?php echo $this-&gt;getContent(); ?&gt;
+</code></pre>
+
+<pre><code class="language-php">&lt;!-- app/views/posts/last.phtml --&gt;
+
+&lt;article&gt;
+    &lt;h2&gt;Este es el artículo&lt;/h2&gt;
+    &lt;p&gt;Este es el contenido de la publicación&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article&gt;
+    &lt;h2&gt;Este es otro título&lt;/h2&gt;
+    &lt;p&gt;Este es el contenido de otra publicación&lt;/p&gt;
+&lt;/article&gt;
+</code></pre>
+
+<p>El resultado final será el siguiente:</p>
+
+<pre><code class="language-php">&lt;!-- app/views/index.phtml --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título del Blog&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;!-- app/views/layouts/common.phtml --&gt;
+
+        &lt;ul class='menu'&gt;
+            &lt;li&gt;&lt;a href='/'&gt;Página principal&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href='/articles'&gt;Artículos&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href='/contact'&gt;Contáctenos&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;div class='content'&gt;
+
+            &lt;!-- app/views/layouts/posts.phtml --&gt;
+
+            &lt;h1&gt;Título del Blog&lt;/h1&gt;
+
+            &lt;!-- app/views/posts/last.phtml --&gt;
+
+            &lt;article&gt;
+                &lt;h2&gt;Este es un título&lt;/h2&gt;
+                &lt;p&gt;Este es el contenido de la publicación&lt;/p&gt;
+            &lt;/article&gt;
+
+            &lt;article&gt;
+                &lt;h2&gt;Este es otro título&lt;/h2&gt;
+                &lt;p&gt;Este es el contenido de otra publicación&lt;/p&gt;
+            &lt;/article&gt;
+
+        &lt;/div&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Si hubiéremos usado <code>$this-&gt;view-&gt;setTemplateBefore('common')</code>, este sería el resultado final:</p>
+
+<pre><code class="language-php">&lt;!-- app/views/index.phtml --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Título del Blog&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        &lt;!-- app/views/layouts/posts.phtml --&gt;
+
+        &lt;h1&gt;Título del Blog&lt;/h1&gt;
+
+        &lt;!-- app/views/layouts/common.phtml --&gt;
+
+        &lt;ul class='menu'&gt;
+            &lt;li&gt;&lt;a href='/'&gt;Página principal&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href='/articles'&gt;Artículos&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href='/contact'&gt;Contáctenos&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+
+        &lt;div class='content'&gt;
+
+            &lt;!-- app/views/posts/last.phtml --&gt;
+
+            &lt;article&gt;
+                &lt;h2&gt;Este es un título&lt;/h2&gt;
+                &lt;p&gt;Este es el contenido de la publicación&lt;/p&gt;
+            &lt;/article&gt;
+
+            &lt;article&gt;
+                &lt;h2&gt;Este es otro título&lt;/h2&gt;
+                &lt;p&gt;Este es otro contenido de publicación&lt;/p&gt;
+            &lt;/article&gt;
+
+        &lt;/div&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p><a name="control-rendering-levels"></a></p>
+
+<h3 id="control-de-niveles-de-renderizado">Control de Niveles de Renderizado</h3>
+
+<p>As seen above, <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> supports a view hierarchy. Usted puede necesitar controlar el nivel de renderizado producido por el componente de la vista. El método <code>Phalcon\Mvc\View::setRenderLevel()</code> ofrece esta funcionalidad.</p>
+
+<p>Este método puede ser invocado desde el controlador o desde una capa de vista superior para interferir en el proceso de renderizado.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+
+    public function findAction()
+    {
+        // Esta es una respuesta en Ajax, no es necesario generar ninguna vista
+        $this-&gt;view-&gt;setRenderLevel(
+            View::LEVEL_NO_RENDER
+        );
+
+        // ...
+    }
+
+    public function showAction($postId)
+    {
+        // Solo mostraremos la vista relacionada con la acción
+        $this-&gt;view-&gt;setRenderLevel(
+            View::LEVEL_ACTION_VIEW
+        );
+    }
+}
+</code></pre>
+
+<p>Los niveles de renderizado disponibles son:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Constante de clase</th>
+      <th>Descripción</th>
+      <th style="text-align: center">Orden</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>LEVEL_NO_RENDER</code></td>
+      <td>Indicado para evitar la generación de cualquier tipo de presentación.</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td><code>LEVEL_ACTION_VIEW</code></td>
+      <td>Genera la presentación a la vista asociada a la acción.</td>
+      <td style="text-align: center">1</td>
+    </tr>
+    <tr>
+      <td><code>LEVEL_BEFORE_TEMPLATE</code></td>
+      <td>Genera plantillas de presentación previas al diseño del controlador.</td>
+      <td style="text-align: center">2</td>
+    </tr>
+    <tr>
+      <td><code>LEVEL_LAYOUT</code></td>
+      <td>Genera la presentación en el diseño del controlador.</td>
+      <td style="text-align: center">3</td>
+    </tr>
+    <tr>
+      <td><code>LEVEL_AFTER_TEMPLATE</code></td>
+      <td>Genera la presentación a las plantillas después del diseño del controlador.</td>
+      <td style="text-align: center">4</td>
+    </tr>
+    <tr>
+      <td><code>LEVEL_MAIN_LAYOUT</code></td>
+      <td>Genera la presentación del diseño principal. Archivo views/index.phtml</td>
+      <td style="text-align: center">5</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="disabling-render-levels"></a></p>
+
+<h3 id="deshabilitar-niveles-de-renderizado">Deshabilitar niveles de renderizado</h3>
+
+<p>You can permanently or temporarily disable render levels. A level could be permanently disabled if it isn’t used at all in the whole application:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+
+$di-&gt;set(
+    'view',
+    function () {
+        $view = new View();
+
+        // Desactivar varios niveles
+        $view-&gt;disableLevel(
+            [
+                View::LEVEL_LAYOUT      =&gt; true,
+                View::LEVEL_MAIN_LAYOUT =&gt; true,
+            ]
+        );
+
+        return $view;
+    },
+    true
+);
+</code></pre>
+
+<p>O desactivar temporalmente en alguna parte de la aplicación:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+
+    public function findAction()
+    {
+        $this-&gt;view-&gt;disableLevel(
+            View::LEVEL_MAIN_LAYOUT
+        );
+    }
+}
+</code></pre>
+
+<p><a name="picking-views"></a></p>
+
+<h3 id="selección-de-vistas">Selección de Vistas</h3>
+
+<p>As mentioned above, when <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> is managed by <a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a> the view rendered is the one related with the last controller and action executed. Podría anular esto mediante el método <code>Phalcon\Mvc\View::pick()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class ProductsController extends Controller
+{
+    public function listAction()
+    {
+        // Seleccionar 'views-dir/products/search' como vista a renderizar
+        $this-&gt;view-&gt;pick('products/search');
+
+        // Seleccionar 'views-dir/books/list' como vista a renderizar
+        $this-&gt;view-&gt;pick(
+            [
+                'books',
+            ]
+        );
+
+        // Seleccionar 'views-dir/products/search' como vista a renderizar
+        $this-&gt;view-&gt;pick(
+            [
+                1 =&gt; 'search',
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p><a name="disabling-view"></a></p>
+
+<h3 id="deshabilitar-la-vista">Deshabilitar la vista</h3>
+
+<p>Si su controlador no produce ninguna salida en la vista (o ni siquiera tiene una) es posible deshabilitar el componente de vista, evitando un procesamiento innecesario:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class UsersController extends Controller
+{
+    public function closeSessionAction()
+    {
+        // Cerrar sesión
+        // ...
+
+        // Desactivar la vista para evitar renderizado
+        $this-&gt;view-&gt;disable();
+    }
+}
+</code></pre>
+
+<p>Como alternativa, puede devolver <code>false</code> para producir el mismo resultado:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class UsersController extends Controller
+{
+    public function closeSessionAction()
+    {
+        // ...
+
+        // Desactivar la vista para evitar renderizado
+        return false;
+    }
+}
+</code></pre>
+
+<p>Puede devolver un objeto <code>response</code> para evitar desactivar la vista manualmente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class UsersController extends Controller
+{
+    public function closeSessionAction()
+    {
+        // Cerrar sesión
+        // ...
+
+        // Una redirección HTTP
+        return $this-&gt;response-&gt;redirect('index/index');
+    }
+}
+</code></pre>
+
+<p><a name="simple-rendering"></a></p>
+
+<h2 id="renderizado-simple">Renderizado Simple</h2>
+
+<p><a href="api/Phalcon_Mvc_View_Simple">Phalcon\Mvc\View\Simple</a> is an alternative component to <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a>. It keeps most of the philosophy of <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> but lacks of a hierarchy of files which is, in fact, the main feature of its counterpart.</p>
+
+<p>Este componente permite al desarrollador tener el control de cuando se representa una vista y su ubicación. Además, este componente puede aprovechar la herencia de vistas disponible en los motores de plantilla como <code>Volt</code> y otros.</p>
+
+<p>Por defecto, este componente debe ser sustituido en el contenedor de servicios:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View\Simple as SimpleView;
+
+$di-&gt;set(
+    'view',
+    function () {
+        $view = new SimpleView();
+
+        $view-&gt;setViewsDir('../app/views/');
+
+        return $view;
+    },
+    true
+);
+</code></pre>
+
+<p>Automatic rendering must be disabled in <a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a> (if needed):</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Exception;
+use Phalcon\Mvc\Application;
+
+try {
+    $application = new Application($di);
+
+    $application-&gt;useImplicitView(false);
+
+    $response = $application-&gt;handle();
+
+    $response-&gt;send();
+} catch (Exception $e) {
+    echo $e-&gt;getMessage();
+}
+</code></pre>
+
+<p>Para presentar una vista es necesario llamar explícitamente al método <code>render()</code> indicando la ruta relativa a la vista que desea mostrar:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function indexAction()
+    {
+        // Renderizar 'views-dir/index.phtml'
+        echo $this-&gt;view-&gt;render('index');
+
+        // Renderizar 'views-dir/posts/show.phtml'
+        echo $this-&gt;view-&gt;render('posts/show');
+
+        // Renderizar 'views-dir/index.phtml' pasando variables
+        echo $this-&gt;view-&gt;render(
+            'index',
+            [
+                'posts' =&gt; Posts::find(),
+            ]
+        );
+
+        // Renderizar 'views-dir/posts/show.phtml' pasando variables
+        echo $this-&gt;view-&gt;render(
+            'posts/show',
+            [
+                'posts' =&gt; Posts::find(),
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>This is different to <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> who’s <code>render()</code> method uses controllers and actions as parameters:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$params = [
+    'posts' =&gt; Posts::find(),
+];
+
+// Phalcon\Mvc\View
+$view = new \Phalcon\Mvc\View();
+echo $view-&gt;render('posts', 'show', $params);
+
+// Phalcon\Mvc\View\Simple
+$simpleView = new \Phalcon\Mvc\View\Simple();
+echo $simpleView-&gt;render('posts/show', $params);
+</code></pre>
+
+<p><a name="using-partials"></a></p>
+
+<h2 id="usando-parciales">Usando parciales</h2>
+
+<p>Las plantillas parciales son otra forma de dividir el proceso de renderizado en fragmentos más simples y manejables que pueden ser reutilizados por diferentes partes de la aplicación. Con un parcial, se puede mover el código para representar una pieza particular de una respuesta a su propio archivo.</p>
+
+<p>Una forma de utilizar elementos parciales es tratarlos como el equivalente de subrutinas: como una manera de mover datos de una vista para que su código pueda ser más fácilmente entendido. Por ejemplo, podría tener una vista con este aspecto:</p>
+
+<pre><code class="language-php">&lt;div class='top'&gt;&lt;?php $this-&gt;partial('shared/ad_banner'); ?&gt;&lt;/div&gt;
+
+&lt;div class='content'&gt;
+    &lt;h1&gt;Robots&lt;/h1&gt;
+
+    &lt;p&gt;Revise nuestras ofertas para robots:&lt;/p&gt;
+    ...
+&lt;/div&gt;
+
+&lt;div class='footer'&gt;&lt;?php $this-&gt;partial('shared/footer'); ?&gt;&lt;/div&gt;
+</code></pre>
+
+<p>El método <code>partial()</code> acepta un segundo parámetro como un conjunto de variables o parámetros que sólo existe en el ámbito del parcial:</p>
+
+<pre><code class="language-php">&lt;?php $this-&gt;partial('shared/ad_banner', ['id' =&gt; $site-&gt;id, 'size' =&gt; 'big']); ?&gt;
+</code></pre>
+
+<p><a name="value-transfer"></a></p>
+
+<h2 id="transferencia-de-valores-del-controlador-a-la-vista">Transferencia de valores del controlador a la vista</h2>
+
+<p><a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> is available in each controller using the view variable (<code>$this-&gt;view</code>). Puede utilizar ese objeto para establecer variables directamente a la vista en una acción de controlador mediante el método <code>setVar()</code>.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+
+    public function showAction()
+    {
+        $user  = Users::findFirst();
+        $posts = $user-&gt;getPosts();
+
+        // Pasar todos los nombres de usuarios y las publicaciones a la vista
+        $this-&gt;view-&gt;setVar('username', $user-&gt;username);
+        $this-&gt;view-&gt;setVar('posts', $posts);
+
+        // Utilizando los setters mágicos
+        $this-&gt;view-&gt;username = $user-&gt;username;
+        $this-&gt;view-&gt;posts    = $posts;
+
+        // Pasando más de una variable al mismo tiempo
+        $this-&gt;view-&gt;setVars(
+            [
+                'username' =&gt; $user-&gt;username,
+                'posts'    =&gt; $posts,
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>Se creará una variable con el nombre del primer parámetro de <code>setVar()</code> en la vista, lista para ser utilizada. La variable puede ser de cualquier tipo, desde una simple cadena, entero, etcétera. a una variable con una estructura más compleja como una matriz, colección, etcétera.</p>
+
+<pre><code class="language-php">&lt;h1&gt;
+    Publicaciones de 
+&lt;/h1&gt;
+
+&lt;div class='post'&gt;
+&lt;?php
+
+    foreach ($posts as $post) {
+        echo '&lt;h2&gt;', $post-&gt;title, '&lt;/h2&gt;';
+    }
+
+?&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p><a name="caching-fragments"></a></p>
+
+<h2 id="almacenamiento-en-caché-de-fragmentos-de-la-vista">Almacenamiento en caché de fragmentos de la vista</h2>
+
+<p>A veces cuando desarrollas sitios web dinámicos y algunas áreas de ellos no se actualizan muy a menudo, la salida es exactamente el misma entre las solicitudes. <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> offers caching a part or the whole rendered output to increase performance.</p>
+
+<p><a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> integrates with <code>Phalcon\Cache</code> to provide an easier way to cache output fragments. Puede establecer manualmente un gestor de cacheo o establecerlo a nivel global:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function showAction()
+    {
+        // Cachear una vista usando la configuración por defecto
+        $this-&gt;view-&gt;cache(true);
+    }
+
+    public function showArticleAction()
+    {
+        // Cachear esta vista por una hora
+        $this-&gt;view-&gt;cache(
+            [
+                'lifetime' =&gt; 3600,
+            ]
+        );
+    }
+
+    public function resumeAction()
+    {
+        // Cachear esta vista por un día con la clave 'resume-cache'
+        $this-&gt;view-&gt;cache(
+            [
+                'lifetime' =&gt; 86400,
+                'key'      =&gt; 'resume-cache',
+            ]
+        );
+    }
+
+    public function downloadAction()
+    {
+        // Pasando un servicio personalizado
+        $this-&gt;view-&gt;cache(
+            [
+                'service'  =&gt; 'myCache',
+                'lifetime' =&gt; 86400,
+                'key'      =&gt; 'resume-cache',
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>Cuando no definimos una clave a la caché, el componente crea automáticamente una usando un hash <a href="http://php.net/manual/en/function.md5.php">MD5</a> del nombre del controlador y de la vista que actualmente se están renderizando, en el formato <code>controlador/vista</code>. Es una buena práctica definir una clave para cada acción, así usted puede identificar fácilmente la caché asociada a cada vista.</p>
+
+<p>When the View component needs to cache something it will request a cache service from the services container. The service name convention for this service is <code>viewCache</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Cache\Frontend\Output as OutputFrontend;
+use Phalcon\Cache\Backend\Memcache as MemcacheBackend;
+
+// Configuramos el servicio de cache para las vistas
+$di-&gt;set(
+    'viewCache',
+    function () {
+        // Por defecto, almacenar datos por un día
+        $frontCache = new OutputFrontend(
+            [
+                'lifetime' =&gt; 86400,
+            ]
+        );
+
+        // Configuración de conexión con Memcached
+        $cache = new MemcacheBackend(
+            $frontCache,
+            [
+                'host' =&gt; 'localhost',
+                'port' =&gt; '11211',
+            ]
+        );
+
+        return $cache;
+    }
+);
+</code></pre>
+
+<h5 class="alert alert-warning">The frontend must always be <a href="api/Phalcon_Cache_Frontend_Output">Phalcon\Cache\Frontend\Output</a> and the service <code>viewCache</code> must be registered as always open (not shared) in the services container (DI). </h5>
+
+<p>Al usar vistas, el almacenamiento en caché se puede usar para evitar que los controladores tengan que generar los datos de la vista en cada solicitud.</p>
+
+<p>To achieve this we must identify uniquely each cache with a key. First we verify that the cache does not exist or has expired to make the calculations/queries to display data in the view:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class DownloadController extends Controller
+{
+    public function indexAction()
+    {
+        // Comprobar si existe o ha expirado el cache con clave 'downloads'
+        if ($this-&gt;view-&gt;getCache()-&gt;exists('downloads')) {
+            // Consultar últimas descargas
+            $latest = Downloads::find(
+                [
+                    'order' =&gt; 'created_at DESC',
+                ]
+            );
+
+            $this-&gt;view-&gt;latest = $latest;
+        }
+
+        // Activar el cache con la misma clave 'downloads'
+        $this-&gt;view-&gt;cache(
+            [
+                'key' =&gt; 'downloads',
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>El <a href="https://github.com/phalcon/php-site">sitio alternativo de PHP</a> es un ejemplo de implementación del almacenamiento en fragmentos de caché.</p>
+
+<p><a name="template-engines"></a></p>
+
+<h2 id="motores-de-plantillas">Motores de Plantillas</h2>
+
+<p>Los motores de plantillas ayudan a los diseñadores a crear vistas sin el uso de una sintaxis complicada. Phalcon incluye un motor de plantillas de gran alcance y muy rápido, llamado <code>Volt</code>. <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> allows you to use other template engines instead of plain PHP or Volt.</p>
+
+<p>Usando un motor diferente, generalmente requiere un análisis de texto complejo mediante el uso de bibliotecas PHP externas para generar el resultado final para el usuario. Esto generalmente incrementa el número de recursos que utilizará la aplicación.</p>
+
+<p>If an external template engine is used, <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> provides exactly the same view hierarchy and it’s still possible to access the API inside these templates with a little more effort.</p>
+
+<p>Este componente utiliza adaptadores, estos ayudan a Phalcon a hablar con los motores de plantillas externos en forma unificada, vamos a ver cómo hacer una integración.</p>
+
+<p><a name="custom-template-engine"></a></p>
+
+<h3 id="crea-tu-propio-adaptador-de-motor-de-plantillas">Crea tu propio adaptador de motor de plantillas</h3>
+
+<p>There are many template engines, which you might want to integrate or create one of your own. The first step to start using an external template engine is create an adapter for it.</p>
+
+<p>A template engine adapter is a class that acts as bridge between <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> and the template engine itself. Generalmente sólo hay dos métodos implementados: <code>__construct ()</code> y <code>render()</code>. The first one receives the <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> instance that creates the engine adapter and the DI container used by the application.</p>
+
+<p>The method <code>render()</code> accepts an absolute path to the view file and the view parameters set using <code>$this-&gt;view-&gt;setVar()</code>. You could read or require it when it’s necessary.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\DiInterface;
+use Phalcon\Mvc\Engine;
+
+class MyTemplateAdapter extends Engine
+{
+    /**
+     * Constructor del adaptador
+     *
+     * @param \Phalcon\Mvc\View $view
+     * @param \Phalcon\Di $di
+     */
+    public function __construct($view, DiInterface $di)
+    {
+        // Aquí inicializamos el adaptador
+        parent::__construct($view, $di);
+    }
+
+    /**
+     * Renderizamos una vista usando el motor de plantillas
+     *
+     * @param string $path
+     * @param array $params
+     */
+    public function render($path, $params)
+    {
+        // Accedemos a la vista
+        $view = $this-&gt;_view;
+
+        // Accedemos a las opciones
+        $options = $this-&gt;_options;
+
+        // Renderizamos la vista
+        // ...
+    }
+}
+</code></pre>
+
+<p><a name="changing-template-engine"></a></p>
+
+<h3 id="cambiar-el-motor-de-plantillas">Cambiar el motor de plantillas</h3>
+
+<p>Es posible reemplazar el motor de plantillas completamente o utilizar más de un motor de plantillas al mismo tiempo. El método <code>Phalcon\Mvc\View::registerEngines()</code> acepta una matriz que contiene los datos que definen a los motores de plantillas. La clave de cada motor es la extensión de los archivos que ayudará a distinguir entre uno y otro. Los archivos de plantilla relacionados con un motor en particular deben tener dichas extensiones.</p>
+
+<p>La orden en que los motores se definen con <code>Phalcon\Mvc\View::registerEngines()</code> define la relevancia en la ejecución. If <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> finds two views with the same name but different extensions, it will only render the first one.</p>
+
+<p>If you want to register a template engine or a set of them for each request in the application. You could register it when the view service is created:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+
+// Configurar el componente de vista
+$di-&gt;set(
+    'view',
+    function () {
+        $view = new View();
+
+        // Se requiere un separador de directorios al final
+        $view-&gt;setViewsDir('../app/views/');
+
+        // Establecer el motor
+        $view-&gt;registerEngines(
+            [
+                '.my-html' =&gt; 'MyTemplateAdapter',
+            ]
+        );
+
+        // Utilizar más de un motor de plantillas
+        $view-&gt;registerEngines(
+            [
+                '.my-html' =&gt; 'MyTemplateAdapter',
+                '.phtml'   =&gt; 'Phalcon\Mvc\View\Engine\Php',
+            ]
+        );
+
+        return $view;
+    },
+    true
+);
+</code></pre>
+
+<p>Hay adaptadores disponibles para varios motores de plantillas en la <a href="https://github.com/phalcon/incubator/tree/master/Library/Phalcon/Mvc/View/Engine">incubadora de Phalcon</a></p>
+
+<p><a name="injecting-services"></a></p>
+
+<h2 id="inyectando-servicios-en-la-vista">Inyectando servicios en la vista</h2>
+
+<p>Every view executed is included inside a <a href="api/Phalcon_Di_Injectable">Phalcon\Di\Injectable</a> instance, providing easy access to the application’s service container.</p>
+
+<p>En el ejemplo siguiente se muestra cómo escribir con jQuery una <a href="http://api.jquery.com/jQuery.ajax/">petición ajax</a> utilizando una URL con los convenios del framework. The service <code>url</code> (usually <a href="api/Phalcon_Mvc_Url">Phalcon\Mvc\Url</a>) is injected in the view by accessing a property with the same name:</p>
+
+<pre><code class="language-js">&lt;script type='text/javascript'&gt;
+
+$.ajax({
+    url: '&lt;?php echo $this-&gt;url-&gt;get('cities/get'); ?&gt;'
+})
+.done(function () {
+    alert('Terminado!');
+});
+
+&lt;/script&gt;
+</code></pre>
+
+<p><a name="stand-alone"></a></p>
+
+<h2 id="componente-independiente">Componente independiente</h2>
+
+<p>Todos los componentes de Phalcon pueden utilizarse como <em>pegamento</em> de componentes individualmente porque están debilmente acoplados entre si:</p>
+
+<p><a name="stand-alone-hierarchical-rendering"></a></p>
+
+<h3 id="renderizado-jerárquico-1">Renderizado Jerárquico</h3>
+
+<p>Using <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> in a stand-alone mode can be demonstrated below:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+
+$view = new View();
+
+// Es requerido el separador de directorios al final
+$view-&gt;setViewsDir('../app/views/');
+
+// Pasando variables a las vistas, estás se crearán como variables locales
+$view-&gt;setVar('someProducts', $products);
+$view-&gt;setVar('someFeatureEnabled', true);
+
+// Comenzar el buffer de salida
+$view-&gt;start();
+
+// Renderizar toda la jerarquía relacionada con la vista products/list.phtml
+$view-&gt;render('products', 'list');
+
+// Finalizamos el buffer de salida
+$view-&gt;finish();
+
+echo $view-&gt;getContent();
+</code></pre>
+
+<p>También existe una sintaxis corta:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+
+$view = new View();
+
+echo $view-&gt;getRender(
+    'products',
+    'list',
+    [
+        'someProducts'       =&gt; $products,
+        'someFeatureEnabled' =&gt; true,
+    ],
+    function ($view) {
+        // Configurar aquí cualquier opción extra
+
+        $view-&gt;setViewsDir('../app/views/');
+
+        $view-&gt;setRenderLevel(
+            View::LEVEL_LAYOUT
+        );
+    }
+);
+</code></pre>
+
+<p><a name="stand-alone-simple-rendering"></a></p>
+
+<h3 id="renderizado-simple-1">Renderizado Simple</h3>
+
+<p>Using <a href="api/Phalcon_Mvc_View_Simple">Phalcon\Mvc\View\Simple</a> in a stand-alone mode can be demonstrated below:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View\Simple as SimpleView;
+
+$view = new SimpleView();
+
+// Es requerido el separador de directorios al final
+$view-&gt;setViewsDir('../app/views/');
+
+// Renderizar una vista y regresar el contenido como una cadena
+echo $view-&gt;render('templates/welcomeMail');
+
+// Renderizar una vista pasando parámetros
+echo $view-&gt;render(
+    'templates/welcomeMail',
+    [
+        'email'   =&gt; $email,
+        'content' =&gt; $content,
+    ]
+);
+</code></pre>
+
+<p><a name="events"></a></p>
+
+<h2 id="eventos-de-la-vista">Eventos de la Vista</h2>
+
+<p><a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> and <a href="api/Phalcon_Mvc_View_Simple">Phalcon\Mvc\View\Simple</a> are able to send events to an <code>EventsManager</code> if it is present. Los eventos se desencadenan mediante el tipo <code>view</code>. Si algún evento devuelve false podría detener la operación activa. Son soportados los siguientes eventos:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre de Evento</th>
+      <th>Activador</th>
+      <th style="text-align: center">¿Puede detener la operación?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>beforeRender</td>
+      <td>Activado antes de iniciar el proceso de renderización</td>
+      <td style="text-align: center">Sí</td>
+    </tr>
+    <tr>
+      <td>beforeRenderView</td>
+      <td>Activado antes de renderizar una vista existente</td>
+      <td style="text-align: center">Sí</td>
+    </tr>
+    <tr>
+      <td>afterRenderView</td>
+      <td>Activado después de renderizar una vista existente</td>
+      <td style="text-align: center">No</td>
+    </tr>
+    <tr>
+      <td>afterRender</td>
+      <td>Activado después de completar el proceso de renderizado</td>
+      <td style="text-align: center">No</td>
+    </tr>
+    <tr>
+      <td>notFoundView</td>
+      <td>Activado cuando una vista no se encontró</td>
+      <td style="text-align: center">No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>En el ejemplo siguiente, se muestra cómo adjuntar oyentes (listeners) a este componente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+use Phalcon\Mvc\View;
+
+$di-&gt;set(
+    'view',
+    function () {
+        // Crear un gestor de eventos
+        $eventsManager = new EventsManager();
+
+        // Adjuntar un oyente para el tipo 'view'
+        $eventsManager-&gt;attach(
+            'view',
+            function (Event $event, $view) {
+                echo $event-&gt;getType(), ' - ', $view-&gt;getActiveRenderPath(), PHP_EOL;
+            }
+        );
+
+        $view = new View();
+
+        $view-&gt;setViewsDir('../app/views/');
+
+        // Enlazar el eventsManager con el componente de la vista
+        $view-&gt;setEventsManager($eventsManager);
+
+        return $view;
+    },
+    true
+);
+</code></pre>
+
+<p>En el ejemplo siguiente, se muestra cómo crear un plugin que limpia y repara el código HTML producido por el proceso de renderizado, utilizando la extensión <a href="http://www.php.net/manual/en/book.tidy.php">Tidy</a>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+
+class TidyPlugin
+{
+    public function afterRender(Event $event, $view)
+    {
+        $tidyConfig = [
+            'clean'          =&gt; true,
+            'output-xhtml'   =&gt; true,
+            'show-body-only' =&gt; true,
+            'wrap'           =&gt; 0,
+        ];
+
+        $tidy = tidy_parse_string(
+            $view-&gt;getContent(),
+            $tidyConfig,
+            'UTF8'
+        );
+
+        $tidy-&gt;cleanRepair();
+
+        $view-&gt;setContent(
+            (string) $tidy
+        );
+    }
+}
+
+// Adjuntar el plugin como un oyente
+$eventsManager-&gt;attach(
+    'view:afterRender',
+    new TidyPlugin()
+);
+</code></pre>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

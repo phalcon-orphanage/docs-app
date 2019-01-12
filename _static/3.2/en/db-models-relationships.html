@@ -1,0 +1,1538 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.2/en/db-models-relationships.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.2/en">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.2/en/db-models-relationships" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.2
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/en/db-models-relationships" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/en/db-models-relationships" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/en/db-models-relationships" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/en/db-models-relationships" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/en/db-models-relationships" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.2/en/db-models-relationships">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.2
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/en/db-models-relationships">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/en/db-models-relationships">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/en/db-models-relationships">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/en/db-models-relationships">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/en/db-models-relationships">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/en">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+<h1 id="model-relationships">Model Relationships</h1>
+<p><a name="relationships"></a></p>
+<h2 id="relationships-between-models">Relationships between Models</h2>
+<p>There are four types of relationships: one-on-one, one-to-many, many-to-one and many-to-many. The relationship may be unidirectional or bidirectional, and each can be simple (a one to one model) or more complex (a combination of models). The model manager manages foreign key constraints for these relationships, the definition of these helps referential integrity as well as easy and fast access of related records to a model. Through the implementation of relations, it is easy to access data in related models from each record in a uniform way.</p>
+
+<p><a name="unidirectional"></a></p>
+<h3 id="unidirectional-relationships">Unidirectional relationships</h3>
+<p>Unidirectional relations are those that are generated in relation to one another but not vice versa.</p>
+
+<p><a name="bidirectional"></a></p>
+<h3 id="bidirectional-relations">Bidirectional relations</h3>
+<p>The bidirectional relations build relationships in both models and each model defines the inverse relationship of the other.</p>
+
+<p><a name="defining"></a></p>
+<h3 id="defining-relationships">Defining relationships</h3>
+<p>In Phalcon, relationships must be defined in the <code>initialize()</code> method of a model. The methods <code>belongsTo()</code>, <code>hasOne()</code>, <code>hasMany()</code> and <code>hasManyToMany()</code> define the relationship between one or more fields from the current model to fields in another model. Each of these methods requires 3 parameters: local fields, referenced model, referenced fields.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>hasMany</td>
+      <td>Defines a 1-n relationship</td>
+    </tr>
+    <tr>
+      <td>hasOne</td>
+      <td>Defines a 1-1 relationship</td>
+    </tr>
+    <tr>
+      <td>belongsTo</td>
+      <td>Defines a n-1 relationship</td>
+    </tr>
+    <tr>
+      <td>hasManyToMany</td>
+      <td>Defines a n-n relationship</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following schema shows 3 tables whose relations will serve us as an example regarding relationships:</p>
+
+<pre><code class="language-sql">CREATE TABLE robots (
+    id int(10) unsigned NOT NULL AUTO_INCREMENT,
+    name varchar(70) NOT NULL,
+    type varchar(32) NOT NULL,
+    year int(11) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE robots_parts (
+    id int(10) unsigned NOT NULL AUTO_INCREMENT,
+    robots_id int(10) NOT NULL,
+    parts_id int(10) NOT NULL,
+    created_at DATE NOT NULL,
+    PRIMARY KEY (id),
+    KEY robots_id (robots_id),
+    KEY parts_id (parts_id)
+);
+
+CREATE TABLE parts (
+    id int(10) unsigned NOT NULL AUTO_INCREMENT,
+    name varchar(70) NOT NULL,
+    PRIMARY KEY (id)
+);
+</code></pre>
+
+<ul>
+  <li>The model <code>Robots</code> has many <code>RobotsParts</code>.</li>
+  <li>The model <code>Parts</code> has many <code>RobotsParts</code>.</li>
+  <li>The model <code>RobotsParts</code> belongs to both <code>Robots</code> and <code>Parts</code> models as a many-to-one relation.</li>
+  <li>The model <code>Robots</code> has a relation many-to-many to <code>Parts</code> through <code>RobotsParts</code>.</li>
+</ul>
+
+<p>Check the EER diagram to understand better the relations:</p>
+
+<p><img src="/assets/images/content/models-relationships-eer-1.png" alt="" /></p>
+
+<p>The models with their relations could be implemented as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public function initialize()
+    {
+        $this-&gt;hasMany(
+            'id',
+            'RobotsParts',
+            'robots_id'
+        );
+    }
+}
+</code></pre>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Parts extends Model
+{
+    public $id;
+
+    public $name;
+
+    public function initialize()
+    {
+        $this-&gt;hasMany(
+            'id',
+            'RobotsParts',
+            'parts_id'
+        );
+    }
+}
+</code></pre>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class RobotsParts extends Model
+{
+    public $id;
+
+    public $robots_id;
+
+    public $parts_id;
+
+    public function initialize()
+    {
+        $this-&gt;belongsTo(
+            'robots_id',
+            'Store\Toys\Robots',
+            'id'
+        );
+
+        $this-&gt;belongsTo(
+            'parts_id',
+            'Parts',
+            'id'
+        );
+    }
+}
+</code></pre>
+
+<p>The first parameter indicates the field of the local model used in the relationship; the second indicates the name of the referenced model and the third the field name in the referenced model. You could also use arrays to define multiple fields in the relationship.</p>
+
+<p>Many to many relationships require 3 models and define the attributes involved in the relationship:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public function initialize()
+    {
+        $this-&gt;hasManyToMany(
+            'id',
+            'RobotsParts',
+            'robots_id', 'parts_id',
+            'Parts',
+            'id'
+        );
+    }
+}
+</code></pre>
+
+<p><a name="parameters"></a></p>
+<h4 id="relationships-with-parameters">Relationships with parameters</h4>
+<p>Depending on the needs of our application we might want to store data in one table, that describe different behaviors. For instance you might want to only have a table called <code>parts</code> which has a field <code>type</code> describing the type of the part.</p>
+
+<p>Using relationships, we can get only those parts that relate to our Robot that are of certain type. Defining that constraint in our relationship allows us to let the model do all the work.</p>
+
+<pre><code class="language-php">&lt;?php
+ 
+ namespace Store\Toys;
+ 
+ use Phalcon\Mvc\Model;
+ 
+ class Robots extends Model
+ {
+     public $id;
+ 
+     public $name;
+ 
+     public $type;
+     
+     public function initialize()
+     {
+         $this-&gt;hasMany(
+             'id',
+             Parts::class,
+             'robotId',
+             [
+                 'reusable' =&gt; true, // cache related data
+                 'alias'    =&gt; 'mechanicalParts',
+                 'params'   =&gt; [
+                     'conditions' =&gt; 'robotTypeId = :type:',
+                     'bind'       =&gt; [
+                         'type' =&gt; 4,
+                     ]
+                 ]
+             ]
+         );
+     }
+ }
+</code></pre>
+
+<p><a name="multiple-fields"></a></p>
+<h4 id="multiple-field-relationships">Multiple field relationships</h4>
+<p>There are times where relationships need to be defined on a combination of fields and not only one. Consider the following example:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public $type;
+}
+</code></pre>
+
+<p>and</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Parts extends Model
+{
+    public $id;
+    
+    public $robotId;
+    
+    public $robotType;
+    
+    public $name;
+}
+</code></pre>
+
+<p>In the above we have a <code>Robots</code> model which has three properties. A unique <code>id</code>, a <code>name</code> and a <code>type</code> which defines what this robot is (mechnical, etc.); In the <code>Parts</code> model we also have a <code>name</code> for the part but also fields that tie the robot and its type with a specific part.</p>
+
+<p>Using the relationships options discussed earlier, binding one field between the two models will not return the results we need. For that we can use an array in our relationship:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public $type;
+    
+    public function initialize()
+    {
+        $this-&gt;hasOne(
+            ['id', 'type'],
+            Parts::class,
+            ['robotId', 'robotType'],
+            [
+                'reusable' =&gt; true, // cache related data
+                'alias'    =&gt; 'parts',
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p><strong>NOTE</strong> The field mappings in the relationship are one for one i.e. the first field of the source model array matches the first field of the target array etc. The field count must be identical in both source and target models.</p>
+
+<p><a name="taking-advantage-of"></a></p>
+<h3 id="taking-advantage-of-relationships">Taking advantage of relationships</h3>
+<p>When explicitly defining the relationships between models, it is easy to find related records for a particular record.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst(2);
+
+foreach ($robot-&gt;robotsParts as $robotPart) {
+    echo $robotPart-&gt;parts-&gt;name, "\n";
+}
+</code></pre>
+
+<p>Phalcon uses the magic methods <code>__set</code>/<code>__get</code>/<code>__call</code> to store or retrieve related data using relationships.</p>
+
+<p>By accessing an attribute with the same name as the relationship will retrieve all its related record(s).</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst();
+
+// All the related records in RobotsParts
+$robotsParts = $robot-&gt;robotsParts;
+</code></pre>
+
+<p>Also, you can use a magic getter:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst();
+
+// All the related records in RobotsParts
+$robotsParts = $robot-&gt;getRobotsParts();
+
+// Passing parameters
+$robotsParts = $robot-&gt;getRobotsParts(
+    [
+        'limit' =&gt; 5,
+    ]
+);
+</code></pre>
+
+<p>If the called method has a <code>get</code> prefix <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> will return a <code>findFirst()</code>/<code>find()</code> result. The following example compares retrieving related results with using magic methods and without:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst(2);
+
+// Robots model has a 1-n (hasMany)
+// relationship to RobotsParts then
+$robotsParts = $robot-&gt;robotsParts;
+
+// Only parts that match conditions
+$robotsParts = $robot-&gt;getRobotsParts(
+    [
+        'created_at = :date:',
+        'bind' =&gt; [
+            'date' =&gt; '2015-03-15'
+        ]
+    ]
+);
+
+$robotPart = RobotsParts::findFirst(1);
+
+// RobotsParts model has a n-1 (belongsTo)
+// relationship to RobotsParts then
+$robot = $robotPart-&gt;robots;
+</code></pre>
+
+<p>Getting related records manually:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst(2);
+
+// Robots model has a 1-n (hasMany)
+// relationship to RobotsParts, then
+$robotsParts = RobotsParts::find(
+    [
+        'robots_id = :id:',
+        'bind' =&gt; [
+            'id' =&gt; $robot-&gt;id,
+        ]
+    ]
+);
+
+// Only parts that match conditions
+$robotsParts = RobotsParts::find(
+    [
+        'robots_id = :id: AND created_at = :date:',
+        'bind' =&gt; [
+            'id'   =&gt; $robot-&gt;id,
+            'date' =&gt; '2015-03-15',
+        ]
+    ]
+);
+
+$robotPart = RobotsParts::findFirst(1);
+
+// RobotsParts model has a n-1 (belongsTo)
+// relationship to RobotsParts then
+$robot = Robots::findFirst(
+    [
+        'id = :id:',
+        'bind' =&gt; [
+            'id' =&gt; $robotPart-&gt;robots_id,
+        ]
+    ]
+);
+</code></pre>
+
+<p>The prefix <code>get</code> is used to <code>find()</code>/<code>findFirst()</code> related records. Depending on the type of relation it will use
+<code>find()</code> or <code>findFirst()</code>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Implicit Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Belongs-To</td>
+      <td>Returns a model instance of the related record directly</td>
+      <td>findFirst</td>
+    </tr>
+    <tr>
+      <td>Has-One</td>
+      <td>Returns a model instance of the related record directly</td>
+      <td>findFirst</td>
+    </tr>
+    <tr>
+      <td>Has-Many</td>
+      <td>Returns a collection of model instances of the referenced model</td>
+      <td>find</td>
+    </tr>
+    <tr>
+      <td>Has-Many-to-Many</td>
+      <td>Returns a collection of model instances of the referenced model, it implicitly does ‘inner joins’ with the involved models</td>
+      <td>(complex query)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You can also use the <code>count</code> prefix to return an integer denoting the count of the related records:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst(2);
+
+echo 'The robot has ', $robot-&gt;countRobotsParts(), " parts\n";
+</code></pre>
+
+<p><a name="aliases"></a></p>
+<h3 id="aliasing-relationships">Aliasing Relationships</h3>
+<p>To explain better how aliases work, let’s check the following example:</p>
+
+<p>The <code>robots_similar</code> table has the function to define what robots are similar to others:</p>
+
+<pre><code class="language-sql">mysql&gt; desc robots_similar;
++-------------------+------------------+------+-----+---------+----------------+
+| Field             | Type             | Null | Key | Default | Extra          |
++-------------------+------------------+------+-----+---------+----------------+
+| id                | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| robots_id         | int(10) unsigned | NO   | MUL | NULL    |                |
+| similar_robots_id | int(10) unsigned | NO   |     | NULL    |                |
++-------------------+------------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+</code></pre>
+
+<p>Both <code>robots_id</code> and <code>similar_robots_id</code> have a relation to the model Robots:</p>
+
+<p><img src="/assets/images/content/models-relationships-eer-1.png" alt="" /></p>
+
+<p>A model that maps this table and its relationships is the following:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class RobotsSimilar extends Phalcon\Mvc\Model
+{
+    public function initialize()
+    {
+        $this-&gt;belongsTo(
+            'robots_id',
+            'Store\Toys\Robots',
+            'id'
+        );
+
+        $this-&gt;belongsTo(
+            'similar_robots_id',
+            'Store\Toys\Robots',
+            'id'
+        );
+    }
+}
+</code></pre>
+
+<p>Since both relations point to the same model (Robots), obtain the records related to the relationship could not be clear:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$robotsSimilar = RobotsSimilar::findFirst();
+
+// Returns the related record based on the column (robots_id)
+// Also as is a belongsTo it's only returning one record
+// but the name 'getRobots' seems to imply that return more than one
+$robot = $robotsSimilar-&gt;getRobots();
+
+// but, how to get the related record based on the column (similar_robots_id)
+// if both relationships have the same name?
+</code></pre>
+
+<p>The aliases allow us to rename both relationships to solve these problems:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class RobotsSimilar extends Model
+{
+    public function initialize()
+    {
+        $this-&gt;belongsTo(
+            'robots_id',
+            'Store\Toys\Robots',
+            'id',
+            [
+                'alias' =&gt; 'Robot',
+            ]
+        );
+
+        $this-&gt;belongsTo(
+            'similar_robots_id',
+            'Store\Toys\Robots',
+            'id',
+            [
+                'alias' =&gt; 'SimilarRobot',
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>With the aliasing we can get the related records easily. You can also use the <code>getRelated()</code> method to access the relationship using the alias name:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$robotsSimilar = RobotsSimilar::findFirst();
+
+// Returns the related record based on the column (robots_id)
+$robot = $robotsSimilar-&gt;getRobot();
+$robot = $robotsSimilar-&gt;robot;
+$robot = $robotsSimilar-&gt;getRelated('Robot');
+
+// Returns the related record based on the column (similar_robots_id)
+$similarRobot = $robotsSimilar-&gt;getSimilarRobot();
+$similarRobot = $robotsSimilar-&gt;similarRobot;
+$similarRobot = $robotsSimilar-&gt;getRelated('SimilarRobot');
+</code></pre>
+
+<p><a name="getters-vs-methods"></a></p>
+<h4 id="magic-getters-vs-explicit-methods">Magic Getters vs. Explicit methods</h4>
+<p>Most IDEs and editors with auto-completion capabilities can not infer the correct types when using magic getters (both methods and properties). To overcome that, you can use a class docblock that specifies what magic actions are available, helping the IDE to produce a better auto-completion:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+/**
+ * Model class for the robots table.
+ * @property Simple|RobotsParts[] $robotsParts
+ * @method   Simple|RobotsParts[] getRobotsParts($parameters = null)
+ * @method   integer              countRobotsParts()
+ */
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public function initialize()
+    {
+        $this-&gt;hasMany(
+            'id',
+            'RobotsParts',
+            'robots_id'
+        );
+    }
+}
+</code></pre>
+
+<p><a name="conditionals"></a></p>
+<h2 id="conditionals">Conditionals</h2>
+<p>You can also create relationships based on conditionals. When querying based on the relationship the condition will be automatically appended to the query:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+// Companies have invoices issued to them (paid/unpaid)
+// Invoices model
+class Invoices extends Model
+{
+
+}
+
+// Companies model
+class Companies extends Model
+{
+    public function initialize()
+    {
+        // All invoices relationship
+        $this-&gt;hasMany(
+            'id', 
+            'Invoices', 
+            'inv_id', 
+            [
+                'alias' =&gt; 'Invoices'
+            ]
+        );
+
+        // Paid invoices relationship
+        $this-&gt;hasMany(
+            'id', 
+            'Invoices', 
+            'inv_id', 
+            [
+                'alias'    =&gt; 'InvoicesPaid',
+                'params'   =&gt; [
+                    'conditions' =&gt; "inv_status = 'paid'"
+                ]
+            ]
+        );
+
+        // Unpaid invoices relationship + bound parameters
+        $this-&gt;hasMany(
+            'id', 
+            'Invoices', 
+            'inv_id', 
+            [
+                'alias'    =&gt; 'InvoicesUnpaid',
+                'params'   =&gt; [
+                    'conditions' =&gt; "inv_status &lt;&gt; :status:",
+                    'bind' =&gt; ['status' =&gt; 'unpaid']
+                ]
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>Additionally, you can use the second parameter of <code>getRelated()</code> when accessing your relationship from your model object to further filter or order your relationship:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Unpaid Invoices
+$company = Companies::findFirst(
+    [
+        'conditions' =&gt; 'id = :id:',
+        'bind'       =&gt; ['id' =&gt; 1],
+    ]
+);
+
+$unpaidInvoices = $company-&gt;InvoicesUnpaid;
+$unpaidInvoices = $company-&gt;getInvoicesUnpaid();
+$unpaidInvoices = $company-&gt;getRelated('InvoicesUnpaid');
+$unpaidInvoices = $company-&gt;getRelated(
+    'Invoices', 
+    ['conditions' =&gt; "inv_status = 'paid'"]
+);
+
+// Also ordered
+$unpaidInvoices = $company-&gt;getRelated(
+    'Invoices', 
+    [
+        'conditions' =&gt; "inv_status = 'paid'",
+        'order'      =&gt; 'inv_created_date ASC',
+    ]
+);
+</code></pre>
+
+<p><a name="virtual-foreign-keys"></a></p>
+<h2 id="virtual-foreign-keys">Virtual Foreign Keys</h2>
+<p>By default, relationships do not act like database foreign keys, that is, if you try to insert/update a value without having a valid value in the referenced model, Phalcon will not produce a validation message. You can modify this behavior by adding a fourth parameter when defining a relationship.</p>
+
+<p>The RobotsPart model can be changed to demonstrate this feature:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class RobotsParts extends Model
+{
+    public $id;
+
+    public $robots_id;
+
+    public $parts_id;
+
+    public function initialize()
+    {
+        $this-&gt;belongsTo(
+            'robots_id',
+            'Store\Toys\Robots',
+            'id',
+            [
+                'foreignKey' =&gt; true
+            ]
+        );
+
+        $this-&gt;belongsTo(
+            'parts_id',
+            'Parts',
+            'id',
+            [
+                'foreignKey' =&gt; [
+                    'message' =&gt; 'The part_id does not exist on the Parts model'
+                ]
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>If you alter a <code>belongsTo()</code> relationship to act as foreign key, it will validate that the values inserted/updated on those fields have a valid value on the referenced model. Similarly, if a <code>hasMany()</code>/<code>hasOne()</code> is altered it will validate that the records cannot be deleted if that record is used on a referenced model.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Parts extends Model
+{
+    public function initialize()
+    {
+        $this-&gt;hasMany(
+            'id',
+            'RobotsParts',
+            'parts_id',
+            [
+                'foreignKey' =&gt; [
+                    'message' =&gt; 'The part cannot be deleted because other robots are using it',
+                ]
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>A virtual foreign key can be set up to allow null values as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class RobotsParts extends Model
+{
+    public $id;
+
+    public $robots_id;
+
+    public $parts_id;
+
+    public function initialize()
+    {
+        $this-&gt;belongsTo(
+            'parts_id',
+            'Parts',
+            'id',
+            [
+                'foreignKey' =&gt; [
+                    'allowNulls' =&gt; true,
+                    'message'    =&gt; 'The part_id does not exist on the Parts model',
+                ]
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p><a name="cascade-restrict-actions"></a></p>
+<h3 id="cascaderestrict-actions">Cascade/Restrict actions</h3>
+<p>Relationships that act as virtual foreign keys by default restrict the creation/update/deletion of records to maintain the integrity of data:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+use Phalcon\Mvc\Model\Relation;
+
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public function initialize()
+    {
+        $this-&gt;hasMany(
+            'id',
+            'Parts',
+            'robots_id',
+            [
+                'foreignKey' =&gt; [
+                    'action' =&gt; Relation::ACTION_CASCADE,
+                ]
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>The above code set up to delete all the referenced records (parts) if the master record (robot) is deleted.</p>
+
+<p><a name="storing-related-records"></a></p>
+<h2 id="storing-related-records">Storing Related Records</h2>
+<p>Magic properties can be used to store a record and its related properties:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Create an artist
+$artist = new Artists();
+
+$artist-&gt;name    = 'Shinichi Osawa';
+$artist-&gt;country = 'Japan';
+
+// Create an album
+$album = new Albums();
+
+$album-&gt;name   = 'The One';
+$album-&gt;artist = $artist; // Assign the artist
+$album-&gt;year   = 2008;
+
+// Save both records
+$album-&gt;save();
+</code></pre>
+
+<p>Saving a record and its related records in a has-many relation:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Get an existing artist
+$artist = Artists::findFirst(
+    'name = 'Shinichi Osawa''
+);
+
+// Create an album
+$album = new Albums();
+
+$album-&gt;name   = 'The One';
+$album-&gt;artist = $artist;
+
+$songs = [];
+
+// Create a first song
+$songs[0]           = new Songs();
+$songs[0]-&gt;name     = 'Star Guitar';
+$songs[0]-&gt;duration = '5:54';
+
+// Create a second song
+$songs[1]           = new Songs();
+$songs[1]-&gt;name     = 'Last Days';
+$songs[1]-&gt;duration = '4:29';
+
+// Assign the songs array
+$album-&gt;songs = $songs;
+
+// Save the album + its songs
+$album-&gt;save();
+</code></pre>
+
+<p>Saving the album and the artist at the same time implicitly makes use of a transaction so if anything goes wrong with saving the related records, the parent will not be saved either. Messages are passed back to the user for information regarding any errors.</p>
+
+<p>Note: Adding related entities by overloading the following methods is not possible:</p>
+
+<ul>
+  <li><code>Phalcon\Mvc\Model::beforeSave()</code></li>
+  <li><code>Phalcon\Mvc\Model::beforeCreate()</code></li>
+  <li><code>Phalcon\Mvc\Model::beforeUpdate()</code></li>
+</ul>
+
+<p>You need to overload <code>Phalcon\Mvc\Model::save()</code> for this to work from within a model.</p>
+
+<p><a name="operations-over-resultsets"></a></p>
+<h2 id="operations-over-resultsets">Operations over Resultsets</h2>
+<p>If a resultset is composed of complete objects, model operations can be performed on those objects. For example:</p>
+
+<pre><code class="language-php">&lt;?php
+
+/** @var RobotType $type */
+$type = $robots-&gt;getRelated('type');
+
+$type-&gt;name = 'Some other type';
+$result = $type-&gt;save();
+
+
+// Get the related robot type but only the `name` column
+$type = $robots-&gt;getRelated('type', ['columns' =&gt; 'name']);
+
+$type-&gt;name = 'Some other type';
+
+// This will fail because `$type` is not a complete object
+$result = $type-&gt;save();
+
+</code></pre>
+
+<p><a name="updating-related-records"></a></p>
+<h3 id="updating-related-records">Updating related records</h3>
+<p>Instead of doing this:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$parts = $robots-&gt;getParts();
+
+foreach ($parts as $part) {
+    $part-&gt;stock      = 100;
+    $part-&gt;updated_at = time();
+
+    if ($part-&gt;update() === false) {
+        $messages = $part-&gt;getMessages();
+
+        foreach ($messages as $message) {
+            echo $message;
+        }
+
+        break;
+    }
+}
+</code></pre>
+
+<p>you can do this:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$robots-&gt;getParts()-&gt;update(
+    [
+        'stock'      =&gt; 100,
+        'updated_at' =&gt; time(),
+    ]
+);
+</code></pre>
+
+<p><code>update</code> also accepts an anonymous function to filter what records must be updated:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$data = [
+    'stock'      =&gt; 100,
+    'updated_at' =&gt; time(),
+];
+
+// Update all the parts except those whose type is basic
+$robots-&gt;getParts()-&gt;update(
+    $data,
+    function ($part) {
+        if ($part-&gt;type === Part::TYPE_BASIC) {
+            return false;
+        }
+
+        return true;
+    }
+);
+</code></pre>
+
+<p><a name="deleting-related-records"></a></p>
+<h3 id="deleting-related-records">Deleting related records</h3>
+<p>Instead of doing this:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$parts = $robots-&gt;getParts();
+
+foreach ($parts as $part) {
+    if ($part-&gt;delete() === false) {
+        $messages = $part-&gt;getMessages();
+
+        foreach ($messages as $message) {
+            echo $message;
+        }
+
+        break;
+    }
+}
+</code></pre>
+
+<p>you can do this:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$robots-&gt;getParts()-&gt;delete();
+</code></pre>
+
+<p><code>delete()</code> also accepts an anonymous function to filter what records must be deleted:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Delete only whose stock is greater or equal than zero
+$robots-&gt;getParts()-&gt;delete(
+    function ($part) {
+        if ($part-&gt;stock &lt; 0) {
+            return false;
+        }
+
+        return true;
+    }
+);
+</code></pre>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.2">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

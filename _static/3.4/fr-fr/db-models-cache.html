@@ -1,0 +1,1519 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="fr-fr" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="fr-fr" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fr-fr" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/fr-fr/db-models-cache.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/fr-fr">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/db-models-cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/fr-fr/db-models-cache" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/fr-fr/db-models-cache" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/fr-fr/db-models-cache" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/fr-fr/db-models-cache" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/fr-fr/db-models-cache" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/db-models-cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/fr-fr/db-models-cache">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/fr-fr/db-models-cache">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/fr-fr/db-models-cache">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/fr-fr/db-models-cache">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/fr-fr/db-models-cache">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/fr-fr">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="orm-caching"></a></p>
+
+<h1 id="orm-caching">ORM Caching</h1>
+
+<p>Every application is different. In most applications though, there is data that changes infrequently. One of the most common bottlenecks in terms of performance, is accessing a database. This is due to the complex connection/communication processes that PHP perform with each request to obtain data from the database. Therefore, if we want to achieve good performance, we need to add some layers of caching where the application requires it.</p>
+
+<p>This chapter explains the potential areas where it is possible to implement caching to improve performance. Phalcon gives developers the tools they need to implement cashing where their application needs it.</p>
+
+<p><a name="caching-resultsets"></a></p>
+
+<h2 id="caching-resultsets">Caching Resultsets</h2>
+
+<p>A well established technique to avoid continuously accessing the database, is to cache resultsets that don’t change frequently, using a system with faster access (usually memory).</p>
+
+<p>When <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> requires a service to cache resultsets, it will request it from the Dependency Injection Container. The service name is called <code>modelsCache</code>. Phalcon offers a <a href="/3.4/en/cache">cache</a> component that can store any kind of data. We will now see how we can integrate it with our Models.</p>
+
+<p>First, we will need to register the cache component as a service in the DI container.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Cache\Frontend\Data as FrontendData;
+use Phalcon\Cache\Backend\Memcache as BackendMemcache;
+
+// Set the models cache service
+$di-&gt;set(
+    'modelsCache',
+    function () {
+        // Cache data for one day (default setting)
+        $frontCache = new FrontendData(
+            [
+                'lifetime' =&gt; 86400,
+            ]
+        );
+
+        // Memcached connection settings
+        $cache = new BackendMemcache(
+            $frontCache,
+            [
+                'host' =&gt; 'localhost',
+                'port' =&gt; '11211',
+            ]
+        );
+
+        return $cache;
+    }
+);
+</code></pre>
+
+<p>Phalcon offers complete control in creating and customizing the cache component before registering it as a service in the DI container. Once the cache component is properly set up, resultsets can be cached as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Get products without caching
+$products = Products::find();
+
+// Just cache the resultset. The cache will expire in 1 hour (3600 seconds)
+$products = Products::find(
+    [
+        'cache' =&gt; [
+            'key' =&gt; 'my-cache',
+        ],
+    ]
+);
+
+// Cache the resultset for only for 5 minutes
+$products = Products::find(
+    [
+        'cache' =&gt; [
+            'key'      =&gt; 'my-cache',
+            'lifetime' =&gt; 300,
+        ],
+    ]
+);
+
+// Use the 'cache' service from the DI instead of 'modelsCache'
+$products = Products::find(
+    [
+        'cache' =&gt; [
+            'key'     =&gt; 'my-cache',
+            'service' =&gt; 'cache',
+        ],
+    ]
+);
+</code></pre>
+
+<p>Caching could also be applied to resultsets generated using relationships:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Query some post
+$post = Post::findFirst();
+
+// Get comments related to a post, also cache it
+$comments = $post-&gt;getComments(
+    [
+        'cache' =&gt; [
+            'key' =&gt; 'my-key',
+        ],
+    ]
+);
+
+// Get comments related to a post, setting lifetime
+$comments = $post-&gt;getComments(
+    [
+        'cache' =&gt; [
+            'key'      =&gt; 'my-key',
+            'lifetime' =&gt; 3600,
+        ],
+    ]
+);
+</code></pre>
+
+<p>When a cached resultset needs to be invalidated, you can simply delete it from the cache using the key specified as seen above.</p>
+
+<p>Which resultset to cache and for how long is up to the developer, after having evaluated the needs of the application. Resultsets that change frequently should not be cached, since the cache results will be invalidated quickly. Additionally caching resultsets consumes processing cycles, therefore the cache that was intended to speed up the application actually slows it down. Resultsets that do not change frequently should be cached to minimize the database interactions. The decision on where to use caching and for how long is dictated by the application needs.</p>
+
+<p><a name="forcing-cache"></a></p>
+
+<h2 id="forcing-cache">Forcing Cache</h2>
+
+<p>Earlier we saw how <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> integrates with the caching component provided by the framework. To make a record/resultset cacheable we pass the key <code>cache</code> in the array of parameters:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Cache the resultset for only for 5 minutes
+$products = Products::find(
+    [
+        'cache' =&gt; [
+            'key'      =&gt; 'my-cache',
+            'lifetime' =&gt; 300,
+        ],
+    ]
+);
+</code></pre>
+
+<p>This gives us the freedom to cache specific queries, however if we want to cache globally every query performed over the model, we can override the <code>find()</code>/<code>findFirst()</code> methods to force every query to be cached:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    /**
+     * Implement a method that returns a string key based
+     * on the query parameters
+     */
+    protected static function _createKey($parameters)
+    {
+        $uniqueKey = [];
+
+        foreach ($parameters as $key =&gt; $value) {
+            if (is_scalar($value)) {
+                $uniqueKey[] = $key . ':' . $value;
+            } elseif (is_array($value)) {
+                $uniqueKey[] = $key . ':[' . self::_createKey($value) . ']';
+            }
+        }
+
+        return join(',', $uniqueKey);
+    }
+
+    public static function find($parameters = null)
+    {
+        // Convert the parameters to an array
+        if (!is_array($parameters)) {
+            $parameters = [$parameters];
+        }
+
+        // Check if a cache key wasn't passed
+        // and create the cache parameters
+        if (!isset($parameters['cache'])) {
+            $parameters['cache'] = [
+                'key'      =&gt; self::_createKey($parameters),
+                'lifetime' =&gt; 300,
+            ];
+        }
+
+        return parent::find($parameters);
+    }
+
+    public static function findFirst($parameters = null)
+    {
+        // ...
+    }
+}
+</code></pre>
+
+<p>Accessing the database is several times slower than calculating a cache key. You’re free to implement any key generation strategy you find to better for your needs. Note that a good key avoids collisions as much as possible - meaning that different keys should return unrelated records.</p>
+
+<p>This gives you full control on how the cache should be implemented for each model. If this strategy is common to several models you can create a base class for all of them:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class CacheableModel extends Model
+{
+    protected static function _createKey($parameters)
+    {
+        // ... Create a cache key based on the parameters
+    }
+
+    public static function find($parameters = null)
+    {
+        // ... Custom caching strategy
+    }
+
+    public static function findFirst($parameters = null)
+    {
+        // ... Custom caching strategy
+    }
+}
+</code></pre>
+
+<p>Then use this class as base class for each <code>Cacheable</code> model:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class Robots extends CacheableModel
+{
+
+}
+</code></pre>
+
+<p><a name="caching-phql-queries"></a></p>
+
+<h2 id="caching-phql-queries">Caching PHQL Queries</h2>
+
+<p>Regardless of the syntax we used to create them, all queries in the ORM are handled internally using PHQL. This language gives you much more freedom to create all kinds of queries. Of course these queries can be cached:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT * FROM Cars WHERE name = :name:';
+
+$query = $this-&gt;modelsManager-&gt;createQuery($phql);
+
+$query-&gt;cache(
+    [
+        'key'      =&gt; 'cars-by-name',
+        'lifetime' =&gt; 300,
+    ]
+);
+
+$cars = $query-&gt;execute(
+    [
+        'name' =&gt; 'Audi',
+    ]
+);
+</code></pre>
+
+<p><a name="reusable-related-records"></a></p>
+
+<h2 id="reusable-related-records">Reusable Related Records</h2>
+
+<p>Some models may have relationships with other models. This allows us to easily check the records that relate to instances in memory:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Get some invoice
+$invoice = Invoices::findFirst();
+
+// Get the customer related to the invoice
+$customer = $invoice-&gt;customer;
+
+// Print his/her name
+echo $customer-&gt;name, "\n";
+</code></pre>
+
+<p>This example is very simple, a customer is queried and can be used as required, for example, to show its name. This also applies if we retrieve a set of invoices to show customers that correspond to these invoices:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Get a set of invoices
+// SELECT * FROM invoices;
+$invoices = Invoices::find();
+
+foreach ($invoices as $invoice) {
+    // Get the customer related to the invoice
+    // SELECT * FROM customers WHERE id = ?;
+    $customer = $invoice-&gt;customer;
+
+    // Print his/her name
+    echo $customer-&gt;name, "\n";
+}
+</code></pre>
+
+<p>A customer may have one or more bills so, in this example, the same customer record may be unnecessarily queried several times. To avoid this, we could mark the relationship as reusable; by doing so, we tell the ORM to automatically reuse the records from memory instead of re-querying them again and again:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Invoices extends Model
+{
+    public function initialize()
+    {
+        $this-&gt;belongsTo(
+            'customers_id',
+            'Customer',
+            'id',
+            [
+                'reusable' =&gt; true,
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>Note that this type of cache works in memory only, this means that cached data are released when the request is terminated.</p>
+
+<p><a name="caching-related-records"></a></p>
+
+<h2 id="caching-related-records">Caching Related Records</h2>
+
+<p>When a related record is queried, the ORM internally builds the appropriate condition and gets the required records using <code>find()</code>/<code>findFirst()</code> in the target model according to the following table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+      <th>Implicit Method</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Belongs-To</td>
+      <td>Returns a model instance of the related record directly</td>
+      <td><code>findFirst()</code></td>
+    </tr>
+    <tr>
+      <td>Has-One</td>
+      <td>Returns a model instance of the related record directly</td>
+      <td><code>findFirst()</code></td>
+    </tr>
+    <tr>
+      <td>Has-Many</td>
+      <td>Returns a collection of model instances of the referenced model</td>
+      <td><code>find()</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>This means that when you get a related record you could intercept how the data is obtained by implementing the corresponding method:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Get some invoice
+$invoice = Invoices::findFirst();
+
+// Get the customer related to the invoice
+$customer = $invoice-&gt;customer; // Invoices::findFirst('...');
+
+// Same as above
+$customer = $invoice-&gt;getCustomer(); // Invoices::findFirst('...');
+</code></pre>
+
+<p>Accordingly, we could replace the <code>findFirst()</code> method in the Invoices model and implement the cache we consider most appropriate:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Invoices extends Model
+{
+    public static function findFirst($parameters = null)
+    {
+        // ... Custom caching strategy
+    }
+}
+</code></pre>
+
+<p><a name="caching-related-records-recursively"></a></p>
+
+<h2 id="caching-related-records-recursively">Caching Related Records Recursively</h2>
+
+<p>In this scenario, we assume that every time we query a result we also retrieve their associated records. If we store the records found together with their related entities perhaps we could reduce a bit the overhead required to obtain all entities:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Invoices extends Model
+{
+    protected static function _createKey($parameters)
+    {
+        // ... Create a cache key based on the parameters
+    }
+
+    protected static function _getCache($key)
+    {
+        // Returns data from a cache
+    }
+
+    protected static function _setCache($key, $results)
+    {
+        // Stores data in the cache
+    }
+
+    public static function find($parameters = null)
+    {
+        // Create a unique key
+        $key = self::_createKey($parameters);
+
+        // Check if there are data in the cache
+        $results = self::_getCache($key);
+
+        // Valid data is an object
+        if (is_object($results)) {
+            return $results;
+        }
+
+        $results = [];
+
+        $invoices = parent::find($parameters);
+
+        foreach ($invoices as $invoice) {
+            // Query the related customer
+            $customer = $invoice-&gt;customer;
+
+            // Assign it to the record
+            $invoice-&gt;customer = $customer;
+
+            $results[] = $invoice;
+        }
+
+        // Store the invoices in the cache + their customers
+        self::_setCache($key, $results);
+
+        return $results;
+    }
+
+    public function initialize()
+    {
+        // Add relations and initialize other stuff
+    }
+}
+</code></pre>
+
+<p>Getting the invoices from the cache already obtains the customer data in just one hit, reducing the overall overhead of the operation. Note that this process can also be performed with PHQL following an alternative solution:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Invoices extends Model
+{
+    public function initialize()
+    {
+        // Add relations and initialize other stuff
+    }
+
+    protected static function _createKey($conditions, $params)
+    {
+        // ... Create a cache key based on the parameters
+    }
+
+    public function getInvoicesCustomers($conditions, $params = null)
+    {
+        $phql = 'SELECT Invoices.*, Customers.* FROM Invoices JOIN Customers WHERE ' . $conditions;
+
+        $query = $this-&gt;getModelsManager()-&gt;executeQuery($phql);
+
+        $query-&gt;cache(
+            [
+                'key'      =&gt; self::_createKey($conditions, $params),
+                'lifetime' =&gt; 300,
+            ]
+        );
+
+        return $query-&gt;execute($params);
+    }
+
+}
+</code></pre>
+
+<p><a name="caching-based-on-conditions"></a></p>
+
+<h2 id="caching-based-on-conditions">Caching based on Conditions</h2>
+
+<p>In this scenario, the cache is implemented differently depending on the conditions received. We might decide that the cache backend should be determined by the primary key:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Cache Backend</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1 - 10000</td>
+      <td>mongo1</td>
+    </tr>
+    <tr>
+      <td>10000 - 20000</td>
+      <td>mongo2</td>
+    </tr>
+    <tr>
+      <td>&gt; 20000</td>
+      <td>mongo3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The easiest way to achieve this is by adding a static method to the model that chooses the right cache to be used:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public static function queryCache($initial, $final)
+    {
+        if ($initial &gt;= 1 &amp;&amp; $final &lt; 10000) {
+            $service = 'mongo1';
+        } elseif ($initial &gt;= 10000 &amp;&amp; $final &lt;= 20000) {
+            $service = 'mongo2';
+        } elseif ($initial &gt; 20000) {
+            $service = 'mongo3';
+        }
+
+        return self::find(
+            [
+                'id &gt;= ' . $initial . ' AND id &lt;= ' . $final,
+                'cache' =&gt; [
+                    'service' =&gt; $service,
+                ],
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>This approach solves the problem, however, if we want to add other parameters such orders or conditions we would have to create a more complicated method. Additionally, this method does not work if the data is obtained using related records or a <code>find()</code>/<code>findFirst()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$robots = Robots::find('id &lt; 1000');
+$robots = Robots::find("id &gt; 100 AND type = 'A'");
+$robots = Robots::find("(id &gt; 100 AND type = 'A') AND id &lt; 2000");
+
+$robots = Robots::find(
+    [
+        "(id &gt; ?0 AND type = 'A') AND id &lt; ?1",
+        'bind'  =&gt; [100, 2000],
+        'order' =&gt; 'type',
+    ]
+);
+</code></pre>
+
+<p>To achieve this we need to intercept the intermediate representation (IR) generated by the PHQL parser and thus customize the cache everything possible:</p>
+
+<p>The first is create a custom builder, so we can generate a totally customized query:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model\Query\Builder as QueryBuilder;
+
+class CustomQueryBuilder extends QueryBuilder
+{
+    public function getQuery()
+    {
+        $query = new CustomQuery($this-&gt;getPhql());
+
+        $query-&gt;setDI($this-&gt;getDI());
+
+        if ( is_array($this-&gt;_bindParams) ) {
+            $query-&gt;setBindParams($this-&gt;_bindParams);
+        }
+
+        if ( is_array($this-&gt;_bindTypes) ) {
+            $query-&gt;setBindTypes($this-&gt;_bindTypes);
+        }
+
+        if ( is_array($this-&gt;_sharedLock) ) {
+            $query-&gt;setSharedLock($this-&gt;_sharedLock);
+        }
+
+        return $query;
+    }
+}
+</code></pre>
+
+<p>Instead of directly returning a <a href="api/Phalcon_Mvc_Model_Query">Phalcon\Mvc\Model\Query</a>, our custom builder returns a CustomQuery instance, this class looks like:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model\Query as ModelQuery;
+
+class CustomQuery extends ModelQuery
+{
+    /**
+     * The execute method is overridden
+     */
+    public function execute($params = null, $types = null)
+    {
+        // Parse the intermediate representation for the SELECT
+        $ir = $this-&gt;parse();
+
+        if ( is_array($this-&gt;_bindParams) ) {
+            $params = array_merge($this-&gt;_bindParams, (array)$params);
+        }
+
+        if ( is_array($this-&gt;_bindTypes) ) {
+            $types = array_merge($this-&gt;_bindTypes, (array)$types);
+        }
+
+        // Check if the query has conditions
+        if (isset($ir['where'])) {
+            // The fields in the conditions can have any order
+            // We need to recursively check the conditions tree
+            // to find the info we're looking for
+            $visitor = new CustomNodeVisitor();
+
+            // Recursively visits the nodes
+            $visitor-&gt;visit($ir['where']);
+
+            $initial = $visitor-&gt;getInitial();
+            $final   = $visitor-&gt;getFinal();
+
+            // Select the cache according to the range
+            // ...
+
+            // Check if the cache has data
+            // ...
+        }
+
+        // Execute the query
+        $result = $this-&gt;_executeSelect($ir, $params, $types);
+        $result = $this-&gt;_uniqueRow ? $result-&gt;getFirst() : $result;
+
+        // Cache the result
+        // ...
+
+        return $result;
+    }
+}
+</code></pre>
+
+<p>Implementing a helper (<code>CustomNodeVisitor</code>) that recursively checks the conditions looking for fields that tell us the possible range to be used in the cache:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class CustomNodeVisitor
+{
+    protected $_initial = 0;
+
+    protected $_final = 25000;
+
+    public function visit($node)
+    {
+        switch ($node['type']) {
+            case 'binary-op':
+                $left  = $this-&gt;visit($node['left']);
+                $right = $this-&gt;visit($node['right']);
+
+                if (!$left || !$right) {
+                    return false;
+                }
+
+                if ($left === 'id') {
+                    if ($node['op'] === '&gt;') {
+                        $this-&gt;_initial = $right;
+                    }
+
+                    if ($node['op'] === '=') {
+                        $this-&gt;_initial = $right;
+                    }
+
+                    if ($node['op'] === '&gt;=') {
+                        $this-&gt;_initial = $right;
+                    }
+
+                    if ($node['op'] === '&lt;') {
+                        $this-&gt;_final = $right;
+                    }
+
+                    if ($node['op'] === '&lt;=') {
+                        $this-&gt;_final = $right;
+                    }
+                }
+
+                break;
+
+            case 'qualified':
+                if ($node['name'] === 'id') {
+                    return 'id';
+                }
+
+                break;
+
+            case 'literal':
+                return $node['value'];
+
+            default:
+                return false;
+        }
+    }
+
+    public function getInitial()
+    {
+        return $this-&gt;_initial;
+    }
+
+    public function getFinal()
+    {
+        return $this-&gt;_final;
+    }
+}
+</code></pre>
+
+<p>Finally, we can replace the find method in the Robots model to use the custom classes we’ve created:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public static function find($parameters = null)
+    {
+        if (!is_array($parameters)) {
+            $parameters = [$parameters];
+        }
+
+        $builder = new CustomQueryBuilder($parameters);
+
+        $builder-&gt;from(get_called_class());
+
+        $query = $builder-&gt;getQuery();
+
+        if (isset($parameters['bind'])) {
+            return $query-&gt;execute($parameters['bind']);
+        } else {
+            return $query-&gt;execute();
+        }
+    }
+}
+</code></pre>
+
+<p><a name="caching-phql-execution-plan"></a></p>
+
+<h2 id="caching-phql-execution-plan">Caching PHQL execution plan</h2>
+
+<p>As well as most moderns database systems PHQL internally caches the execution plan, if the same statement is executed several times PHQL reuses the previously generated plan improving performance, for a developer to take better advantage of this is highly recommended build all your SQL statements passing variable parameters as bound parameters:</p>
+
+<pre><code class="language-php">&lt;?php
+
+for ($i = 1; $i &lt;= 10; $i++) {
+    $phql = 'SELECT * FROM Store\Robots WHERE id = ' . $i;
+
+    $robots = $this-&gt;modelsManager-&gt;executeQuery($phql);
+
+    // ...
+}
+</code></pre>
+
+<p>In the above example, ten plans were generated increasing the memory usage and processing in the application. Rewriting the code to take advantage of bound parameters reduces the processing by both ORM and database system:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT * FROM Store\Robots WHERE id = ?0';
+
+for ($i = 1; $i &lt;= 10; $i++) {
+    $robots = $this-&gt;modelsManager-&gt;executeQuery(
+        $phql,
+        [
+            $i,
+        ]
+    );
+
+    // ...
+}
+</code></pre>
+
+<p>Performance can be also improved reusing the PHQL query:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT * FROM Store\Robots WHERE id = ?0';
+
+$query = $this-&gt;modelsManager-&gt;createQuery($phql);
+
+for ($i = 1; $i &lt;= 10; $i++) {
+    $robots = $query-&gt;execute(
+        $phql,
+        [
+            $i,
+        ]
+    );
+
+    // ...
+}
+</code></pre>
+
+<p>Execution plans for queries involving <a href="http://en.wikipedia.org/wiki/Prepared_statement">prepared statements</a> are also cached by most database systems reducing the overall execution time, also protecting your application against <a href="http://en.wikipedia.org/wiki/SQL_injection">SQL Injections</a>.</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

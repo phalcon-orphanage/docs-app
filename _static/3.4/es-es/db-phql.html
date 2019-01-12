@@ -1,0 +1,1718 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="es-es" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="es-es" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es-es" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/es-es/db-phql.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/es-es">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/db-phql" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/es-es/db-phql" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/es-es/db-phql" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/es-es/db-phql" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/es-es/db-phql" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/es-es/db-phql" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/db-phql">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/es-es/db-phql">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/es-es/db-phql">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/es-es/db-phql">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/es-es/db-phql">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/es-es/db-phql">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/es-es">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="lenguaje-de-consulta-de-phalcon-phql">Lenguaje de consulta de Phalcon (PHQL)</h1>
+
+<p>El lenguaje de consulta de Phalcon, PhalconQL o simplemente PHQL es un dialecto de SQL de alto nivel, orientado a objetos que permite escribir consultas utilizando un lenguaje estándar SQL. PHQL se implementa como un analizador (escrito en C) que traduce la sintaxis en la del RDBMS de destino.</p>
+
+<p>Para lograr el mayor rendimiento posible, Phalcon proporciona un analizador que utiliza la misma tecnología como <a href="http://en.wikipedia.org/wiki/Lemon_Parser_Generator">SQLite</a>. Esta tecnología proporciona un pequeño analizador en memoria con un impacto en memoria muy bajo que también es seguro para subprocesos.</p>
+
+<p>El analizador comprueba la sintaxis de la declaración de PHQL, luego construye una representación intermedia de la declaración y finalmente convierte en el dialecto SQL correspondiente del RDBMS de destino.</p>
+
+<p>En PHQL, hemos implementado un conjunto de características para hacer más seguro el acceso a bases de datos:</p>
+
+<ul>
+  <li>Los parámetros enlazados son parte del lenguaje PHQL que lo ayudara a proteger su código</li>
+  <li>PHQL solo permite una sentencia SQL para ser ejecutada por llamada, previniendo de inyecciones</li>
+  <li>PHQL ignora todos los comentarios SQL que generalmente se utilizan en las inyecciones SQL</li>
+  <li>PHQL sólo permite declaraciones de manipulación de datos, evitando alterar o borrar tablas y bases de datos por error o desde el exterior sin autorización</li>
+  <li>PHQL implementa una abstracción de alto nivel que permite manejar tablas como modelos y campos como atributos de clase</li>
+</ul>
+
+<p><a name="usage"></a></p>
+
+<h2 id="ejemplo-de-uso">Ejemplo de Uso</h2>
+
+<p>To better explain how PHQL works consider the following example. We have two models <code>Cars</code> and <code>Brands</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Cars extends Model
+{
+    public $id;
+
+    public $name;
+
+    public $brand_id;
+
+    public $price;
+
+    public $year;
+
+    public $style;
+
+    /**
+     * Este modelo se completa desde la tabla sample_cars
+     */
+    public function getSource()
+    {
+        return 'sample_cars';
+    }
+
+    /**
+     * Un automóvil tiene una sola marca, pero una marca tiene muchos automóviles
+     */
+    public function initialize()
+    {
+        $this-&gt;belongsTo('brand_id', 'Brands', 'id');
+    }
+}
+</code></pre>
+
+<p>Y cada automóvil tiene una marca, por lo que una marca tiene muchos automóviles:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Brands extends Model
+{
+    public $id;
+
+    public $name;
+
+    /**
+     * El modelo Brands se completa desde la tabla 'sample_brands'
+     */
+    public function getSource()
+    {
+        return 'sample_brands';
+    }
+
+    /**
+     * Una marca tiene muchos automóviles
+     */
+    public function initialize()
+    {
+        $this-&gt;hasMany('id', 'Cars', 'brand_id');
+    }
+}
+</code></pre>
+
+<p><a name="creating"></a></p>
+
+<h2 id="crear-consultas-phql">Crear consultas PHQL</h2>
+
+<p>PHQL queries can be created just by instantiating the class <a href="api/Phalcon_Mvc_Model_Query">Phalcon\Mvc\Model\Query</a>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model\Query;
+
+// Instanciar a Query
+$query = new Query(
+    'SELECT * FROM Cars',
+    $this-&gt;getDI()
+);
+
+// Ejecutar una consulta retornando un resultado si lo hay
+$cars = $query-&gt;execute();
+</code></pre>
+
+<p>From a controller or a view, it’s easy to create/execute them using an injected <code>models manager</code> (<a href="api/Phalcon_Mvc_Model_Manager">Phalcon\Mvc\Model\Manager</a>):</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Ejecutando una consulta simple
+$query = $this-&gt;modelsManager-&gt;createQuery('SELECT * FROM Cars');
+$cars  = $query-&gt;execute();
+
+// Con parámetros enlazados
+$query = $this-&gt;modelsManager-&gt;createQuery('SELECT * FROM Cars WHERE name = :name:');
+$cars  = $query-&gt;execute(
+    [
+        'name' =&gt; 'Audi',
+    ]
+);
+</code></pre>
+
+<p>O simplemente ejecutar:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Ejecutando una simple consulta
+$cars = $this-&gt;modelsManager-&gt;executeQuery(
+    'SELECT * FROM Cars'
+);
+
+// Ejecutando con parámetros enlazados
+$cars = $this-&gt;modelsManager-&gt;executeQuery(
+    'SELECT * FROM Cars WHERE name = :name:',
+    [
+        'name' =&gt; 'Audi',
+    ]
+);
+</code></pre>
+
+<p><a name="selecting-records"></a></p>
+
+<h2 id="seleccionando-registros">Seleccionando registros</h2>
+
+<p>Tan familiar como en SQL, PHQL permite consultas de registros con la instrucción SELECT que ya conocemos, excepto que en vez de tablas, usamos las clases de los modelos:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$query = $manager-&gt;createQuery(
+    'SELECT * FROM Cars ORDER BY Cars.name'
+);
+
+$query = $manager-&gt;createQuery(
+    'SELECT Cars.name FROM Cars ORDER BY Cars.name'
+);
+</code></pre>
+
+<p>También se permiten clases en espacios de nombres:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql  = 'SELECT * FROM Formula\Cars ORDER BY Formula\Cars.name';
+$query = $manager-&gt;createQuery($phql);
+
+$phql  = 'SELECT Formula\Cars.name FROM Formula\Cars ORDER BY Formula\Cars.name';
+$query = $manager-&gt;createQuery($phql);
+
+$phql  = 'SELECT c.name FROM Formula\Cars c ORDER BY c.name';
+$query = $manager-&gt;createQuery($phql);
+</code></pre>
+
+<p>La mayor parte del estándar SQL es soportado por PHQL, incluso directivas no estandarizadas como <code>LIMIT</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT c.name FROM Cars AS c WHERE c.brand_id = 21 ORDER BY c.name LIMIT 100';
+
+$query = $manager-&gt;createQuery($phql);
+</code></pre>
+
+<p><a name="result-types"></a></p>
+
+<h3 id="tipo-de-resultado">Tipo de resultado</h3>
+
+<p>Dependiendo del tipo de columnas que estemos consultando, varía el tipo de resultado. If you retrieve a single whole object, then the object returned is a <a href="api/Phalcon_Mvc_Model_Resultset_Simple">Phalcon\Mvc\Model\Resultset\Simple</a>. Este tipo de conjunto de resultados es un conjunto de objetos de modelo completo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT c.* FROM Cars AS c ORDER BY c.name';
+
+$cars = $manager-&gt;executeQuery($phql);
+
+foreach ($cars as $car) {
+    echo 'Nombre: ', $car-&gt;name, "\n";
+}
+</code></pre>
+
+<p>Esto es exactamente lo mismo que:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$cars = Cars::find(
+    [
+        'order' =&gt; 'name'
+    ]
+);
+
+foreach ($cars as $car) {
+    echo 'Nombre: ', $car-&gt;name, "\n";
+}
+</code></pre>
+
+<p>Los objetos completos pueden ser modificados y volverse a guardar en la base de datos debido a que representan un registro completo de la tabla asociada. Hay otros tipos de consultas que no devuelven objetos completos, por ejemplo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT c.id, c.name FROM Cars AS c ORDER BY c.name';
+
+$cars = $manager-&gt;executeQuery($phql);
+
+foreach ($cars as $car) {
+    echo 'Nombre: ', $car-&gt;name, "\n";
+}
+</code></pre>
+
+<p>We are only requesting some fields in the table, therefore those cannot be considered an entire object, so the returned object is still a resultset of type <a href="api/Phalcon_Mvc_Model_Resultset_Simple">Phalcon\Mvc\Model\Resultset\Simple</a>. Sin embargo, cada elemento es un objeto estándar que sólo contiene las dos columnas que fueron solicitadas.</p>
+
+<p>These values that don’t represent complete objects are what we call scalars. PHQL allows you to query all types of scalars: fields, functions, literals, expressions, etc..:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = "SELECT CONCAT(c.id, ' ', c.name) AS id_name FROM Cars AS c ORDER BY c.name";
+
+$cars = $manager-&gt;executeQuery($phql);
+
+foreach ($cars as $car) {
+    echo $car-&gt;id_name, "\n";
+}
+</code></pre>
+
+<p>Como podemos consultar objetos completos o escalares, también podemos consultar ambos a la vez:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT c.price*0.16 AS taxes, c.* FROM Cars AS c ORDER BY c.name';
+
+$result = $manager-&gt;executeQuery($phql);
+</code></pre>
+
+<p>The result in this case is an object <a href="api/Phalcon_Mvc_Model_Resultset_Complex">Phalcon\Mvc\Model\Resultset\Complex</a>. This allows access to both complete objects and scalars at once:</p>
+
+<pre><code class="language-php">&lt;?php
+
+foreach ($result as $row) {
+    echo 'Nombre: ', $row-&gt;cars-&gt;name, "\n";
+    echo 'Precio: ', $row-&gt;cars-&gt;price, "\n";
+    echo 'Impuestos: ', $row-&gt;taxes, "\n";
+}
+</code></pre>
+
+<p>Los escalares se asignan como propiedades de cada ‘fila’, mientras que objetos completos se asignan como propiedades con el nombre de su modelo relacionado.</p>
+
+<p><a name="joins"></a></p>
+
+<h3 id="uniones-joins">Uniones (Joins)</h3>
+
+<p>It’s easy to request records from multiple models using PHQL. Most kinds of Joins are supported. As we defined relationships in the models, PHQL adds these conditions automatically:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT Cars.name AS car_name, Brands.name AS brand_name FROM Cars JOIN Brands';
+
+$rows = $manager-&gt;executeQuery($phql);
+
+foreach ($rows as $row) {
+    echo $row-&gt;car_name, "\n";
+    echo $row-&gt;brand_name, "\n";
+}
+</code></pre>
+
+<p>By default, an INNER JOIN is assumed. You can specify the type of JOIN in the query:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT Cars.*, Brands.* FROM Cars INNER JOIN Brands';
+$rows = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT Cars.*, Brands.* FROM Cars LEFT JOIN Brands';
+$rows = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT Cars.*, Brands.* FROM Cars LEFT OUTER JOIN Brands';
+$rows = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT Cars.*, Brands.* FROM Cars CROSS JOIN Brands';
+$rows = $manager-&gt;executeQuery($phql);
+</code></pre>
+
+<p>También es posible ajustar manualmente las condiciones del JOIN:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT Cars.*, Brands.* FROM Cars INNER JOIN Brands ON Brands.id = Cars.brands_id';
+
+$rows = $manager-&gt;executeQuery($phql);
+</code></pre>
+
+<p>También, las uniones pueden crearse utilizando varias tablas en la cláusula FROM:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT Cars.*, Brands.* FROM Cars, Brands WHERE Brands.id = Cars.brands_id';
+
+$rows = $manager-&gt;executeQuery($phql);
+
+foreach ($rows as $row) {
+    echo 'Automóvil: ', $row-&gt;cars-&gt;name, "\n";
+    echo 'Marca: ', $row-&gt;brands-&gt;name, "\n";
+}
+</code></pre>
+
+<p>Si un alias se utiliza para cambiar el nombre de los modelos en la consulta, los utilizará para nombrar los atributos en cada fila del resultado:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT c.*, b.* FROM Cars c, Brands b WHERE b.id = c.brands_id';
+
+$rows = $manager-&gt;executeQuery($phql);
+
+foreach ($rows as $row) {
+    echo 'Automóvil: ', $row-&gt;c-&gt;name, "\n";
+    echo 'Marca: ', $row-&gt;b-&gt;name, "\n";
+}
+</code></pre>
+
+<p>Cuando el modelo unido tiene una relación muchos a muchos con el modelo <code>from</code>, el modelo intermedio se agrega implícitamente a la consulta generada:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT Artists.name, Songs.name FROM Artists ' .
+        'JOIN Songs WHERE Artists.genre = "Trip-Hop"';
+
+$result = $this-&gt;modelsManager-&gt;executeQuery($phql);
+</code></pre>
+
+<p>Este código ejecuta el siguiente código SQL en MySQL:</p>
+
+<pre><code class="language-sql">SELECT `artists`.`name`, `songs`.`name` FROM `artists`
+INNER JOIN `albums` ON `albums`.`artists_id` = `artists`.`id`
+INNER JOIN `songs` ON `albums`.`songs_id` = `songs`.`id`
+WHERE `artists`.`genre` = 'Trip-Hop'
+</code></pre>
+
+<p><a name="aggregations"></a></p>
+
+<h3 id="agregaciones">Agregaciones</h3>
+
+<p>Los ejemplos siguientes muestran cómo utilizar agregaciones en PHQL:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// ¿Cuánto cuestan todos los automóviles?
+$phql = 'SELECT SUM(price) AS summatory FROM Cars';
+$row  = $manager-&gt;executeQuery($phql)-&gt;getFirst();
+echo $row['summatory'];
+
+// ¿Cuántos automóviles tiene cada marca?
+$phql = 'SELECT Cars.brand_id, COUNT(*) FROM Cars GROUP BY Cars.brand_id';
+$rows = $manager-&gt;executeQuery($phql);
+foreach ($rows as $row) {
+    echo $row-&gt;brand_id, ' ', $row['1'], "\n";
+}
+
+// ¿Cuántos automóviles tiene cada marca?
+$phql = 'SELECT Brands.name, COUNT(*) FROM Cars JOIN Brands GROUP BY 1';
+$rows = $manager-&gt;executeQuery($phql);
+foreach ($rows as $row) {
+    echo $row-&gt;name, ' ', $row['1'], "\n";
+}
+
+$phql = 'SELECT MAX(price) AS maximum, MIN(price) AS minimum FROM Cars';
+$rows = $manager-&gt;executeQuery($phql);
+foreach ($rows as $row) {
+    echo $row['maximum'], ' ', $row['minimum'], "\n";
+}
+
+// Contar marcas usadas distintas
+$phql = 'SELECT COUNT(DISTINCT brand_id) AS brandId FROM Cars';
+$rows = $manager-&gt;executeQuery($phql);
+foreach ($rows as $row) {
+    echo $row-&gt;brandId, "\n";
+}
+</code></pre>
+
+<p><a name="conditions"></a></p>
+
+<h3 id="condiciones">Condiciones</h3>
+
+<p>Conditions allow us to filter the set of records we want to query. The <code>WHERE</code> clause allows to do that:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Condiciones simples
+$phql = 'SELECT * FROM Cars WHERE Cars.name = "Lamborghini Espada"';
+$cars = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT * FROM Cars WHERE Cars.price &gt; 10000';
+$cars = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT * FROM Cars WHERE TRIM(Cars.name) = "Audi R8"';
+$cars = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT * FROM Cars WHERE Cars.name LIKE "Ferrari%"';
+$cars = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT * FROM Cars WHERE Cars.name NOT LIKE "Ferrari%"';
+$cars = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT * FROM Cars WHERE Cars.price IS NULL';
+$cars = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT * FROM Cars WHERE Cars.id IN (120, 121, 122)';
+$cars = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT * FROM Cars WHERE Cars.id NOT IN (430, 431)';
+$cars = $manager-&gt;executeQuery($phql);
+
+$phql = 'SELECT * FROM Cars WHERE Cars.id BETWEEN 1 AND 100';
+$cars = $manager-&gt;executeQuery($phql);
+</code></pre>
+
+<p>También, como parte de PHQL, en los parámetros preparados se escapan automáticamente los datos de entrada, introduciendo más seguridad:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT * FROM Cars WHERE Cars.name = :name:';
+$cars = $manager-&gt;executeQuery(
+    $phql,
+    [
+        'name' =&gt; 'Lamborghini Espada'
+    ]
+);
+
+$phql = 'SELECT * FROM Cars WHERE Cars.name = ?0';
+$cars = $manager-&gt;executeQuery(
+    $phql,
+    [
+        0 =&gt; 'Lamborghini Espada'
+    ]
+);
+</code></pre>
+
+<p><a name="inserting-data"></a></p>
+
+<h2 id="insertando-datos">Insertando datos</h2>
+
+<p>Con PHQL es posible insertar datos mediante la instrucción familiar INSERT:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Insertando sin columnas
+$phql = 'INSERT INTO Cars VALUES (NULL, "Lamborghini Espada", '
+      . '7, 10000.00, 1969, "Grand Tourer")';
+$manager-&gt;executeQuery($phql);
+
+// Especificando las columnas del insertado
+$phql = 'INSERT INTO Cars (name, brand_id, year, style) '
+      . 'VALUES ("Lamborghini Espada", 7, 1969, "Grand Tourer")';
+$manager-&gt;executeQuery($phql);
+
+// Insertando utilizando marcadores
+$phql = 'INSERT INTO Cars (name, brand_id, year, style) '
+      . 'VALUES (:name:, :brand_id:, :year:, :style)';
+$manager-&gt;executeQuery(
+    $phql,
+    [
+        'name'     =&gt; 'Lamborghini Espada',
+        'brand_id' =&gt; 7,
+        'year'     =&gt; 1969,
+        'style'    =&gt; 'Grand Tourer',
+    ]
+);
+</code></pre>
+
+<p>Phalcon no sólo transforma las declaraciones de PHQL a SQL. Todos los eventos y reglas de negocio definidas en el modelo se ejecutan como si creáramos objetos individuales manualmente. Vamos a añadir una regla de negocio en el modelo Cars. Un coche no puede costar menos de $ 10.000:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+use Phalcon\Mvc\Model\Message;
+
+class Cars extends Model
+{
+    public function beforeCreate()
+    {
+        if ($this-&gt;price &lt; 10000) {
+            $this-&gt;appendMessage(
+                new Message('Un automóvil no puede costar menos de $ 10,000')
+            );
+
+            return false;
+        }
+    }
+}
+</code></pre>
+
+<p>Si hiciéramos el siguiente <code>INSERT</code> en los modelos de Cars, la operación no tendrá éxito porque el precio no cumple con la regla de negocio que hemos implementado. Comprobando el estado de la inserción podemos imprimir cualquier mensaje de validación generado internamente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = "INSERT INTO Cars VALUES (NULL, 'Nissan Versa', 7, 9999.00, 2015, 'Sedan')";
+
+$result = $manager-&gt;executeQuery($phql);
+
+if ($result-&gt;success() === false) {
+    foreach ($result-&gt;getMessages() as $message) {
+        echo $message-&gt;getMessage();
+    }
+}
+</code></pre>
+
+<p><a name="updating-data"></a></p>
+
+<h2 id="actualizando-datos">Actualizando datos</h2>
+
+<p>La actualización de filas es muy similar a insertar filas. Como usted sabe, la instrucción para actualizar registros es UPDATE. Cuando se actualiza un registro, los eventos relacionados con la operación de actualización se ejecutarán para cada fila.</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Actualizando una simple columna
+$phql = 'UPDATE Cars SET price = 15000.00 WHERE id = 101';
+$manager-&gt;executeQuery($phql);
+
+// Actualizando múltiples columnas
+$phql = 'UPDATE Cars SET price = 15000.00, type = "Sedan" WHERE id = 101';
+$manager-&gt;executeQuery($phql);
+
+// Actualizando múltiples filas
+$phql = 'UPDATE Cars SET price = 7000.00, type = "Sedan" WHERE brands_id &gt; 5';
+$manager-&gt;executeQuery($phql);
+
+// Usando marcadores
+$phql = 'UPDATE Cars SET price = ?0, type = ?1 WHERE brands_id &gt; ?2';
+$manager-&gt;executeQuery(
+    $phql,
+    [
+        0 =&gt; 7000.00,
+        1 =&gt; 'Sedan',
+        2 =&gt; 5,
+    ]
+);
+</code></pre>
+
+<p>Una instrucción <code>UPDATE</code> realiza la actualización en dos etapas:</p>
+
+<ul>
+  <li>En primer lugar, si el <code>UPDATE</code> tiene una cláusula <code>WHERE</code> se recuperan todos los objetos que coincidan con estos criterios,</li>
+  <li>En segundo lugar, en función de los objetos consultados, actualiza/cambia los atributos solicitados y los almacena en la base de datos relacional</li>
+</ul>
+
+<p>This way of operation allows that events, virtual foreign keys and validations take part of the updating process. In summary, the following code:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'UPDATE Cars SET price = 15000.00 WHERE id &gt; 101';
+
+$result = $manager-&gt;executeQuery($phql);
+
+if ($result-&gt;success() === false) {
+    $messages = $result-&gt;getMessages();
+
+    foreach ($messages as $message) {
+        echo $message-&gt;getMessage();
+    }
+}
+</code></pre>
+
+<p>es algo equivalente a:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$messages = null;
+
+$process = function () use (&amp;$messages) {
+    $cars = Cars::find('id &gt; 101');
+
+    foreach ($cars as $car) {
+        $car-&gt;price = 15000;
+
+        if ($car-&gt;save() === false) {
+            $messages = $car-&gt;getMessages();
+
+            return false;
+        }
+    }
+
+    return true;
+};
+
+$success = $process();
+</code></pre>
+
+<p><a name="deleting-data"></a></p>
+
+<h2 id="borrando-datos">Borrando datos</h2>
+
+<p>Cuando se elimina un registro los eventos relacionados con la operación de eliminación se ejecutarán para cada fila:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Borrando una fila simple
+$phql = 'DELETE FROM Cars WHERE id = 101';
+$manager-&gt;executeQuery($phql);
+
+// Borrando múltiples filas
+$phql = 'DELETE FROM Cars WHERE id &gt; 100';
+$manager-&gt;executeQuery($phql);
+
+// Usando marcadores
+$phql = 'DELETE FROM Cars WHERE id BETWEEN :initial: AND :final:';
+$manager-&gt;executeQuery(
+    $phql,
+    [
+        'initial' =&gt; 1,
+        'final'   =&gt; 100,
+    ]
+);
+</code></pre>
+
+<p><code>DELETE</code> operations are also executed in two phases like <code>UPDATEs</code>. To check if the deletion produces any validation messages you should check the status code returned:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Borrando múltiples filas
+$phql = 'DELETE FROM Cars WHERE id &gt; 100';
+
+$result = $manager-&gt;executeQuery($phql);
+
+if ($result-&gt;success() === false) {
+    $messages = $result-&gt;getMessages();
+
+    foreach ($messages as $message) {
+        echo $message-&gt;getMessage();
+    }
+}
+</code></pre>
+
+<p><a name="query-builder"></a></p>
+
+<h2 id="crear-consultas-utilizando-el-generador-de-consultas">Crear consultas utilizando el generador de consultas</h2>
+
+<p>Está disponible un constructor para crear consultas PHQL sin necesidad de escribir declaraciones de PHQL, también proporciona instalaciones IDE:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Obteniendo un conjunto completo
+$robots = $this-&gt;modelsManager-&gt;createBuilder()
+    -&gt;from('Robots')
+    -&gt;join('RobotsParts')
+    -&gt;orderBy('Robots.name')
+    -&gt;getQuery()
+    -&gt;execute();
+
+// Obteniendo la primer fila
+$robots = $this-&gt;modelsManager-&gt;createBuilder()
+    -&gt;from('Robots')
+    -&gt;join('RobotsParts')
+    -&gt;orderBy('Robots.name')
+    -&gt;getQuery()
+    -&gt;getSingleResult();
+</code></pre>
+
+<p>Es lo mismo que:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = 'SELECT Robots.* FROM Robots JOIN RobotsParts p ORDER BY Robots.name LIMIT 20';
+
+$result = $manager-&gt;executeQuery($phql);
+</code></pre>
+
+<p>Más ejemplos del constructor:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// 'SELECT Robots.* FROM Robots';
+$builder-&gt;from('Robots');
+
+// 'SELECT Robots.*, RobotsParts.* FROM Robots, RobotsParts';
+$builder-&gt;from(
+    [
+        'Robots',
+        'RobotsParts',
+    ]
+);
+
+// 'SELECT * FROM Robots';
+$phql = $builder-&gt;columns('*')
+                -&gt;from('Robots');
+
+// 'SELECT id FROM Robots';
+$builder-&gt;columns('id')
+        -&gt;from('Robots');
+
+// 'SELECT id, name FROM Robots';
+$builder-&gt;columns(['id', 'name'])
+        -&gt;from('Robots');
+
+// 'SELECT Robots.* FROM Robots WHERE Robots.name = 'Voltron'';
+$builder-&gt;from('Robots')
+        -&gt;where("Robots.name = 'Voltron'");
+
+// 'SELECT Robots.* FROM Robots WHERE Robots.id = 100';
+$builder-&gt;from('Robots')
+        -&gt;where(100);
+
+// 'SELECT Robots.* FROM Robots WHERE Robots.type = 'virtual' AND Robots.id &gt; 50';
+$builder-&gt;from('Robots')
+        -&gt;where("type = 'virtual'")
+        -&gt;andWhere('id &gt; 50');
+
+// 'SELECT Robots.* FROM Robots WHERE Robots.type = 'virtual' OR Robots.id &gt; 50';
+$builder-&gt;from('Robots')
+        -&gt;where("type = 'virtual'")
+        -&gt;orWhere('id &gt; 50');
+
+// 'SELECT Robots.* FROM Robots GROUP BY Robots.name';
+$builder-&gt;from('Robots')
+        -&gt;groupBy('Robots.name');
+
+// 'SELECT Robots.* FROM Robots GROUP BY Robots.name, Robots.id';
+$builder-&gt;from('Robots')
+        -&gt;groupBy(['Robots.name', 'Robots.id']);
+
+// 'SELECT Robots.name, SUM(Robots.price) FROM Robots GROUP BY Robots.name';
+$builder-&gt;columns(['Robots.name', 'SUM(Robots.price)'])
+    -&gt;from('Robots')
+    -&gt;groupBy('Robots.name');
+
+// 'SELECT Robots.name, SUM(Robots.price) FROM Robots GROUP BY Robots.name HAVING SUM(Robots.price) &gt; 1000';
+$builder-&gt;columns(['Robots.name', 'SUM(Robots.price)'])
+    -&gt;from('Robots')
+    -&gt;groupBy('Robots.name')
+    -&gt;having('SUM(Robots.price) &gt; 1000');
+
+// 'SELECT Robots.* FROM Robots JOIN RobotsParts';
+$builder-&gt;from('Robots')
+    -&gt;join('RobotsParts');
+
+// 'SELECT Robots.* FROM Robots JOIN RobotsParts AS p';
+$builder-&gt;from('Robots')
+    -&gt;join('RobotsParts', null, 'p');
+
+// 'SELECT Robots.* FROM Robots JOIN RobotsParts ON Robots.id = RobotsParts.robots_id AS p';
+$builder-&gt;from('Robots')
+    -&gt;join('RobotsParts', 'Robots.id = RobotsParts.robots_id', 'p');
+
+// 'SELECT Robots.* FROM Robots
+// JOIN RobotsParts ON Robots.id = RobotsParts.robots_id AS p
+// JOIN Parts ON Parts.id = RobotsParts.parts_id AS t';
+$builder-&gt;from('Robots')
+    -&gt;join('RobotsParts', 'Robots.id = RobotsParts.robots_id', 'p')
+    -&gt;join('Parts', 'Parts.id = RobotsParts.parts_id', 't');
+
+// 'SELECT r.* FROM Robots AS r';
+$builder-&gt;addFrom('Robots', 'r');
+
+// 'SELECT Robots.*, p.* FROM Robots, Parts AS p';
+$builder-&gt;from('Robots')
+    -&gt;addFrom('Parts', 'p');
+
+// 'SELECT r.*, p.* FROM Robots AS r, Parts AS p';
+$builder-&gt;from(['r' =&gt; 'Robots'])
+        -&gt;addFrom('Parts', 'p');
+
+// 'SELECT r.*, p.* FROM Robots AS r, Parts AS p';
+$builder-&gt;from(['r' =&gt; 'Robots', 'p' =&gt; 'Parts']);
+
+// 'SELECT Robots.* FROM Robots LIMIT 10';
+$builder-&gt;from('Robots')
+    -&gt;limit(10);
+
+// 'SELECT Robots.* FROM Robots LIMIT 10 OFFSET 5';
+$builder-&gt;from('Robots')
+        -&gt;limit(10, 5);
+
+// 'SELECT Robots.* FROM Robots WHERE id BETWEEN 1 AND 100';
+$builder-&gt;from('Robots')
+        -&gt;betweenWhere('id', 1, 100);
+
+// 'SELECT Robots.* FROM Robots WHERE id IN (1, 2, 3)';
+$builder-&gt;from('Robots')
+        -&gt;inWhere('id', [1, 2, 3]);
+
+// 'SELECT Robots.* FROM Robots WHERE id NOT IN (1, 2, 3)';
+$builder-&gt;from('Robots')
+        -&gt;notInWhere('id', [1, 2, 3]);
+
+// 'SELECT Robots.* FROM Robots WHERE name LIKE '%Art%';
+$builder-&gt;from('Robots')
+        -&gt;where('name LIKE :name:', ['name' =&gt; '%' . $name . '%']);
+
+// 'SELECT r.* FROM Store\Robots WHERE r.name LIKE '%Art%';
+$builder-&gt;from(['r' =&gt; 'Store\Robots'])
+        -&gt;where('r.name LIKE :name:', ['name' =&gt; '%' . $name . '%']);
+</code></pre>
+
+<p><a name="query-builder-parameters"></a></p>
+
+<h3 id="enlazando-parámetros">Enlazando parámetros</h3>
+
+<p>Los parámetros enlazados, en el generador de consultas, se pueden establecer cuando se construye la consulta o pasarlos todos juntos al ejecutar:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Pasando parámetros en la construcción de la consulta
+$robots = $this-&gt;modelsManager-&gt;createBuilder()
+    -&gt;from('Robots')
+    -&gt;where('name = :name:', ['name' =&gt; $name])
+    -&gt;andWhere('type = :type:', ['type' =&gt; $type])
+    -&gt;getQuery()
+    -&gt;execute();
+
+// Pasando parámetros en la ejecución de la consulta
+$robots = $this-&gt;modelsManager-&gt;createBuilder()
+    -&gt;from('Robots')
+    -&gt;where('name = :name:')
+    -&gt;andWhere('type = :type:')
+    -&gt;getQuery()
+    -&gt;execute(['name' =&gt; $name, 'type' =&gt; $type]);
+</code></pre>
+
+<p><a name="disallow-literals"></a></p>
+
+<h2 id="no-permitir-literales-en-phql">No permitir literales en PHQL</h2>
+
+<p>Los literales pueden desactivarse en PHQL, esto significa que el uso directo de cadenas, números y valores booleanos en las cadenas de PHQL serán rechazados. Si las sentencias PHQL se crean incrustando datos externos sobre ellas, esto podría abrir la aplicación a potenciales inyecciones SQL:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$login  = 'voltron';
+$phql   = "SELECT * FROM Models\Users WHERE login = '$login'";
+$result = $manager-&gt;executeQuery($phql);
+</code></pre>
+
+<p>Si <code>$login</code> es cambiado por <code>' OR ' = '</code>, el PHQL producido sería:</p>
+
+<pre><code class="language-sql">SELECT * FROM Models\Users WHERE login = '' OR '' = ''
+</code></pre>
+
+<p>Que siempre es <code>true</code> no importa cuál sea el login almacenado en la base de datos.</p>
+
+<p>Si los literales no se permiten, las cadenas se pueden usar como parte de una declaración PHQL, por lo tanto, se lanzará una excepción que obligará al desarrollador a usar parámetros enlazados. La misma consulta se puede escribir de una forma segura como esta:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$type   = 'virtual';
+$phql   = 'SELECT Robots.* FROM Robots WHERE Robots.type = :type:';
+$result = $manager-&gt;executeQuery(
+    $phql,
+    [
+        'type' =&gt; $type,
+    ]
+);
+</code></pre>
+
+<p>Se puede deshabilitar los literales de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+Model::setup(
+    [
+        'phqlLiterals' =&gt; false
+    ]
+);
+</code></pre>
+
+<p>Bound parameters can be used even if literals are allowed or not. Disallowing them is just another security decision a developer could take in web applications.</p>
+
+<p><a name="escaping-reserved-words"></a></p>
+
+<h2 id="escapando-palabras-reservadas">Escapando palabras reservadas</h2>
+
+<p>PHQL tiene algunas palabras reservadas, si desea utilizar cualquiera de ellas como atributos o nombres de modelos, necesita escapar esas palabras usando los delimitadores <code>[</code> y <code>]</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql   = 'SELECT * FROM [Update]';
+$result = $manager-&gt;executeQuery($phql);
+
+$phql   = 'SELECT id, [Like] FROM Posts';
+$result = $manager-&gt;executeQuery($phql);
+</code></pre>
+
+<p>Los delimitadores se convierten dinámicamente a delimitadores válidos según el sistema de base de datos donde la aplicación se está ejecutando.</p>
+
+<p><a name="lifecycle"></a></p>
+
+<h2 id="ciclo-de-vida-de-phql">Ciclo de vida de PHQL</h2>
+
+<p>Al ser un lenguaje de alto nivel, PHQL da a los desarrolladores la capacidad de personalizar y adaptar diferentes aspectos con el fin de satisfacer sus necesidades. El siguiente es el ciclo de vida de cada instrucción PHQL ejecutada:</p>
+
+<ul>
+  <li>El PHQL es analizado y convertido en una Representación Intermedia (IR) que es independiente de la implementada por el sistema de base de datos de SQL</li>
+  <li>La IR se convierte en SQL válido según el sistema de base de datos asociado al modelo</li>
+  <li>Las declaraciones PHQL son analizadas una vez y cacheadas en memoria. Las ejecuciones posteriores de la misma instrucción dan como resultado una ejecución ligeramente más rápida</li>
+</ul>
+
+<p><a name="raw-sql"></a></p>
+
+<h2 id="usando-sql-crudo">Usando SQL crudo</h2>
+
+<p>Un sistema de base de datos podría ofrecer extensiones específicas de SQL que no son compatibles con PHQL, en este caso, el uso de SQL crudo puede ser apropiado:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+use Phalcon\Mvc\Model\Resultset\Simple as Resultset;
+
+class Robots extends Model
+{
+    public static function findByCreateInterval()
+    {
+        // Una declaración de SQL cruda
+        $sql = 'SELECT * FROM robots WHERE id &gt; 0';
+
+        // Modelo base
+        $robot = new Robots();
+
+        // Ejecutar la consulta
+        return new Resultset(
+            null,
+            $robot,
+            $robot-&gt;getReadConnection()-&gt;query($sql)
+        );
+    }
+}
+</code></pre>
+
+<p>Si las consultas SQL crudas son comunes en la aplicación, un método genérico se podría añadir a su modelo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+use Phalcon\Mvc\Model\Resultset\Simple as Resultset;
+
+class Robots extends Model
+{
+    public static function findByRawSql($conditions, $params = null)
+    {
+        // Declaración SQL cruda
+        $sql = 'SELECT * FROM robots WHERE $conditions';
+
+        // Modelo base
+        $robot = new Robots();
+
+        // Ejecutar la consulta
+        return new Resultset(
+            null,
+            $robot,
+            $robot-&gt;getReadConnection()-&gt;query($sql, $params)
+        );
+    }
+}
+</code></pre>
+
+<p>El anterior <code>findByRawSql</code> podría utilizarse de sigue manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$robots = Robots::findByRawSql(
+    'id &gt; ?',
+    [
+        10
+    ]
+);
+</code></pre>
+
+<p><a name="troubleshooting"></a></p>
+
+<h2 id="resolución-de-problemas">Resolución de problemas</h2>
+
+<p>Algunas cosas a tener en cuenta cuando se utiliza PHQL:</p>
+
+<ul>
+  <li>Las clases son sensibles a mayúsculas y minúsculas, si una clase no se define con el mismo nombre que fue creada, podría conducir a un comportamiento inesperado en sistemas operativos con los sistemas de archivos que distinguen mayúsculas y minúsculas como Linux.</li>
+  <li>Un conjunto de caracteres correcto debe definirse en la conexión para enlazar parámetros con éxito.</li>
+  <li>Las clases con alias no se reemplazan por clases con espacios de nombres completos, ya que esto solo ocurre en el código PHP y no dentro de las cadenas.</li>
+  <li>Si el renombrado de columna está habilitado, evite el uso de alias de columna con el mismo nombre que las columnas a cambiar de nombre, esto puede confundir la resolución de la consulta.</li>
+</ul>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

@@ -1,0 +1,1398 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="es-es" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="es-es" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es-es" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/es-es/tutorial-rest.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/es-es">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/tutorial-rest" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/es-es/tutorial-rest" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/es-es/tutorial-rest" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/es-es/tutorial-rest" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/es-es/tutorial-rest" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/es-es/tutorial-rest" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/tutorial-rest">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/es-es/tutorial-rest">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/es-es/tutorial-rest">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/es-es/tutorial-rest">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/es-es/tutorial-rest">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/es-es/tutorial-rest">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/es-es">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="basic"></a></p>
+
+<h1 id="tutorial-crear-una-api-rest-simple">Tutorial: Crear una API REST simple</h1>
+
+<p>En este tutorial vamos a explicar cómo crear una aplicación sencilla que proporciona un API <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">RESTful</a> utilizando los diferentes métodos HTTP:</p>
+
+<ul>
+  <li><code>GET</code> para recuperar y buscar datos</li>
+  <li><code>POST</code> para agregar datos</li>
+  <li><code>PUT</code> para actualizar datos</li>
+  <li><code>DELETE</code> para borrar datos</li>
+</ul>
+
+<p><a name="definitions"></a></p>
+
+<h2 id="definición-de-la-api">Definición de la API</h2>
+
+<p>La API consta de los siguientes métodos:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Método</th>
+      <th>URL</th>
+      <th>Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>GET</code></td>
+      <td>/api/robots</td>
+      <td>Recupera todos los robots</td>
+    </tr>
+    <tr>
+      <td><code>GET</code></td>
+      <td>/api/robots/search/Astro</td>
+      <td>Busca robots que contienen ‘Astro’ en su nombre</td>
+    </tr>
+    <tr>
+      <td><code>GET</code></td>
+      <td>/api/robots/2</td>
+      <td>Recupera robots basados en la clave principal</td>
+    </tr>
+    <tr>
+      <td><code>POST</code></td>
+      <td>/api/robots</td>
+      <td>Agrega un nuevo robot</td>
+    </tr>
+    <tr>
+      <td><code>PUT</code></td>
+      <td>/api/robots/2</td>
+      <td>Actualiza robots basados en la clave principal</td>
+    </tr>
+    <tr>
+      <td><code>DELETE</code></td>
+      <td>/api/robots/2</td>
+      <td>Elimina robots basados en la clave principal</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="implementation"></a></p>
+
+<h2 id="creando-la-aplicación">Creando la aplicación</h2>
+
+<p>Como la aplicación es muy simple, no vamos a implementar ningún entorno MVC para desarrollarla. In this case, we will use a <a href="/3.4/en/application-micro">micro application</a> to meet our goal.</p>
+
+<p>La siguiente estructura de archivos es más que suficiente:</p>
+
+<pre><code class="language-php">my-rest-api/
+    models/
+        Robots.php
+    index.php
+    .htaccess
+</code></pre>
+
+<p>En primer lugar, necesitamos un archivo <code>.htaccess</code> que contiene todas las reglas para reescribir la solicitud URI hacia el archivo <code>index.php</code> (punto de entrada de la aplicación):</p>
+
+<pre><code class="language-apacheconfig">&lt;IfModule mod_rewrite.c&gt;
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^((?s).*)$ index.php?_url=/$1 [QSA,L]
+&lt;/IfModule&gt;
+</code></pre>
+
+<p>The bulk of our code will be placed in <code>index.php</code>. The file is created as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Micro;
+
+$app = new Micro();
+
+// Aquí definimos las rutas 
+
+$app-&gt;handle();
+</code></pre>
+
+<p>Ahora vamos a crear las rutas como las hemos definido anteriormente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Micro;
+
+$app = new Micro();
+
+// Recupera todos los robots
+$app-&gt;get(
+    '/api/robots',
+    function () {
+        // Operaciones para recuperar todos los robots
+    }
+);
+
+// Buscar robots que contienen $name en su nombre
+$app-&gt;get(
+    '/api/robots/search/{name}',
+    function ($name) {
+        // Operaciones para recuperar robots con que contienen $name en su nombre
+    }
+);
+
+// Recuperar robots basados en su clave primaria
+$app-&gt;get(
+    '/api/robots/{id:[0-9]+}',
+    function ($id) {
+        // Obtener un robot por su id $id
+    }
+);
+
+// Agregar un nuevo robot
+$app-&gt;post(
+    '/api/robots',
+    function () {
+        // Operación para crear un nuevo robot
+    }
+);
+
+// Actualizar robots basados en su clave primaria
+$app-&gt;put(
+    '/api/robots/{id:[0-9]+}',
+    function ($id) {
+        // Operación para actualizar el robot con id $id
+    }
+);
+
+// Borrar robots basados en su clave primaria
+$app-&gt;delete(
+    '/api/robots/{id:[0-9]+}',
+    function ($id) {
+        // Operación para borrar el robot con id $id
+    }
+);
+
+$app-&gt;handle();
+</code></pre>
+
+<p>Cada ruta se define con un método con el mismo nombre que el método HTTP, como primer parámetro que pasaremos un patrón de ruta, seguido por un controlador. En este caso, el controlador es una función anónima. La siguiente ruta: <code>/api/robots/{id:[0-9]+}</code>, por ejemplo, establece explícitamente que el parámetro <code>id</code> debe tener un formato numérico.</p>
+
+<p>Cuando una ruta definida coincide con el identificador URI solicitando, entonces la aplicación ejecuta el controlador correspondiente.</p>
+
+<p><a name="models"></a></p>
+
+<h2 id="creando-un-modelo">Creando un modelo</h2>
+
+<p>Nuestra API proporciona información sobre <code>robots</code>, estos datos están almacenados en una base de datos. El siguiente modelo nos permite acceder a la tabla de una manera orientada a objetos. Hemos implementado algunas reglas del negocio usando validadores incorporados y validaciones simples. Esto nos da la tranquilidad que guarda datos cumpliendo con los requisitos de nuestra aplicación. Este archivo de modelo debe colocarse en la carpeta <code>models</code>.</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+use Phalcon\Mvc\Model\Message;
+use Phalcon\Validation;
+use Phalcon\Validation\Validator\Uniqueness
+use Phalcon\Validation\Validator\InclusionIn;
+
+
+class Robots extends Model
+{
+    public function validation()
+    {
+        $validator = new Validation();
+
+        // Type must be: droid, mechanical or virtual
+        $validator-&gt;add(
+            "type",
+            new InclusionIn(
+                [
+                    'message' =&gt; 'Type must be "droid", "mechanical", or "virtual"',
+                    'domain' =&gt; [
+                        'droid',
+                        'mechanical',
+                        'virtual',
+                    ],
+                ]
+            )
+        );
+
+        // Robot name must be unique
+        $validator-&gt;add(
+            'name',
+            new Uniqueness(
+                [
+                    'field'   =&gt; 'name',
+                    'message' =&gt; 'The robot name must be unique',
+                ]
+            )
+        );
+
+        // Year cannot be less than zero
+        if ($this-&gt;year &lt; 0) {
+            $this-&gt;appendMessage(
+                new Message('The year cannot be less than zero')
+            );
+        }
+
+        // Check if any messages have been produced
+        if ($this-&gt;validationHasFailed() === true) {
+            return false;
+        }
+    }
+}
+</code></pre>
+
+<p>Ahora, debemos configurar una conexión para ser utilizada por este modelo y cargala dentro de nuestra aplicación [archivo: <code>index.php</code>]:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Loader;
+use Phalcon\Mvc\Micro;
+use Phalcon\Di\FactoryDefault;
+use Phalcon\Db\Adapter\Pdo\Mysql as PdoMysql;
+
+// Utilizar Loader para autocargar nuestros modelos
+$loader = new Loader();
+
+$loader-&gt;registerNamespaces(
+    [
+        'Store\Toys' =&gt; __DIR__ . '/models/',
+    ]
+);
+
+$loader-&gt;register();
+
+$di = new FactoryDefault();
+
+// Configurar el servicio de base de datos
+$di-&gt;set(
+    'db',
+    function () {
+        return new PdoMysql(
+            [
+                'host'     =&gt; 'localhost',
+                'username' =&gt; 'asimov',
+                'password' =&gt; 'zeroth',
+                'dbname'   =&gt; 'robotics',
+            ]
+        );
+    }
+);
+
+// Crear y enlazar el DI a la aplicación
+$app = new Micro($di);
+</code></pre>
+
+<p><a name="retrieving-data"></a></p>
+
+<h2 id="recuperando-datos">Recuperando Datos</h2>
+
+<p>El primer <code>controlador</code> que vamos a implementar es por el método GET que devuelve los robots disponibles. Vamos a utilizar PHQL para realizar esta consulta simple y devolver los resultados en formato JSON. [Archivo: <code>index.php</code>]</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Recuperar todos los robots
+$app-&gt;get(
+    '/api/robots',
+    function () use ($app) {
+        $phql = 'SELECT * FROM Store\Toys\Robots ORDER BY name';
+
+        $robots = $app-&gt;modelsManager-&gt;executeQuery($phql);
+
+        $data = [];
+
+        foreach ($robots as $robot) {
+            $data[] = [
+                'id'   =&gt; $robot-&gt;id,
+                'name' =&gt; $robot-&gt;name,
+            ];
+        }
+
+        echo json_encode($data);
+    }
+);
+</code></pre>
+
+<p><a href="/3.4/en/db-phql">PHQL</a>, allow us to write queries using a high-level, object-oriented SQL dialect that internally translates to the right SQL statements depending on the database system we are using. La cláusula <code>use</code> en la función anónima nos permite pasar algunas variables del ámbito global al local fácilmente.</p>
+
+<p>El controlador de búsqueda por nombre se vería como [archivo: <code>index.php</code>]:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Busqueda de robots con $name en su nombre
+$app-&gt;get(
+    '/api/robots/search/{name}',
+    function ($name) use ($app) {
+        $phql = 'SELECT * FROM Store\Toys\Robots WHERE name LIKE :name: ORDER BY name';
+
+        $robots = $app-&gt;modelsManager-&gt;executeQuery(
+            $phql,
+            [
+                'name' =&gt; '%' . $name . '%'
+            ]
+        );
+
+        $data = [];
+
+        foreach ($robots as $robot) {
+            $data[] = [
+                'id'   =&gt; $robot-&gt;id,
+                'name' =&gt; $robot-&gt;name,
+            ];
+        }
+
+        echo json_encode($data);
+    }
+);
+</code></pre>
+
+<p>Buscando por el campo <code>id</code> es bastante similar, en este caso, también estamos notificando si el robot se encontró o no [archivo: <code>index.php</code>]:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Http\Response;
+
+// Recuperar robots basado en la clave primaria
+$app-&gt;get(
+    '/api/robots/{id:[0-9]+}',
+    function ($id) use ($app) {
+        $phql = 'SELECT * FROM Store\Toys\Robots WHERE id = :id:';
+
+        $robot = $app-&gt;modelsManager-&gt;executeQuery(
+            $phql,
+            [
+                'id' =&gt; $id,
+            ]
+        )-&gt;getFirst();
+
+
+
+        // Crear una respuesta
+        $response = new Response();
+
+        if ($robot === false) {
+            $response-&gt;setJsonContent(
+                [
+                    'status' =&gt; 'NOT-FOUND'
+                ]
+            );
+        } else {
+            $response-&gt;setJsonContent(
+                [
+                    'status' =&gt; 'FOUND',
+                    'data'   =&gt; [
+                        'id'   =&gt; $robot-&gt;id,
+                        'name' =&gt; $robot-&gt;name
+                    ]
+                ]
+            );
+        }
+
+        return $response;
+    }
+);
+</code></pre>
+
+<p><a name="inserting-data"></a></p>
+
+<h2 id="insertando-datos">Insertando datos</h2>
+
+<p>Tomando los datos como una cadena JSON insertada en el cuerpo de la solicitud, también utilizamos PHQL para la inserción [archivo: <code>index.php</code>]:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Http\Response;
+
+// Agregar un nuevo robot
+$app-&gt;post(
+    '/api/robots',
+    function () use ($app) {
+        $robot = $app-&gt;request-&gt;getJsonRawBody();
+
+        $phql = 'INSERT INTO Store\Toys\Robots (name, type, year) VALUES (:name:, :type:, :year:)';
+
+        $status = $app-&gt;modelsManager-&gt;executeQuery(
+            $phql,
+            [
+                'name' =&gt; $robot-&gt;name,
+                'type' =&gt; $robot-&gt;type,
+                'year' =&gt; $robot-&gt;year,
+            ]
+        );
+
+        // Crear una respuesta
+        $response = new Response();
+
+        // Comprobar si la inserción fue exitosa
+        if ($status-&gt;success() === true) {
+            // Cambiar el status de HTTP
+            $response-&gt;setStatusCode(201, 'Creado');
+
+            $robot-&gt;id = $status-&gt;getModel()-&gt;id;
+
+            $response-&gt;setJsonContent(
+                [
+                    'status' =&gt; 'OK',
+                    'data'   =&gt; $robot,
+                ]
+            );
+        } else {
+            // Cambiar el status de HTTP
+            $response-&gt;setStatusCode(409, 'Conflicto');
+
+            // Enviar errores al cliente
+            $errors = [];
+
+            foreach ($status-&gt;getMessages() as $message) {
+                $errors[] = $message-&gt;getMessage();
+            }
+
+            $response-&gt;setJsonContent(
+                [
+                    'status'   =&gt; 'ERROR',
+                    'messages' =&gt; $errors,
+                ]
+            );
+        }
+
+        return $response;
+    }
+);
+</code></pre>
+
+<p><a name="updating-data"></a></p>
+
+<h2 id="actualizando-datos">Actualizando datos</h2>
+
+<p>The data update is similar to insertion. The <code>id</code> passed as parameter indicates what robot must be updated [File: <code>index.php</code>]:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Http\Response;
+
+// Actualizar robots basados en la clave primaria
+$app-&gt;put(
+    '/api/robots/{id:[0-9]+}',
+    function ($id) use ($app) {
+        $robot = $app-&gt;request-&gt;getJsonRawBody();
+
+        $phql = 'UPDATE Store\Toys\Robots SET name = :name:, type = :type:, year = :year: WHERE id = :id:';
+
+        $status = $app-&gt;modelsManager-&gt;executeQuery(
+            $phql,
+            [
+                'id'   =&gt; $id,
+                'name' =&gt; $robot-&gt;name,
+                'type' =&gt; $robot-&gt;type,
+                'year' =&gt; $robot-&gt;year,
+            ]
+        );
+
+        // Crear una respuesta
+        $response = new Response();
+
+        // Comprobar si la inserción fue exitosa
+        if ($status-&gt;success() === true) {
+            $response-&gt;setJsonContent(
+                [
+                    'status' =&gt; 'OK'
+                ]
+            );
+        } else {
+            // Cambiar el status de HTTP
+            $response-&gt;setStatusCode(409, 'Conflicto');
+
+            $errors = [];
+
+            foreach ($status-&gt;getMessages() as $message) {
+                $errors[] = $message-&gt;getMessage();
+            }
+
+            $response-&gt;setJsonContent(
+                [
+                    'status'   =&gt; 'ERROR',
+                    'messages' =&gt; $errors,
+                ]
+            );
+        }
+
+        return $response;
+    }
+);
+</code></pre>
+
+<p><a name="deleting-data"></a></p>
+
+<h2 id="borrando-datos">Borrando datos</h2>
+
+<p>The data delete is similar to update. The <code>id</code> passed as parameter indicates what robot must be deleted [File: <code>index.php</code>]:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Http\Response;
+
+// Borrando robots basados en la clave primaria
+$app-&gt;delete(
+    '/api/robots/{id:[0-9]+}',
+    function ($id) use ($app) {
+        $phql = 'DELETE FROM Store\Toys\Robots WHERE id = :id:';
+
+        $status = $app-&gt;modelsManager-&gt;executeQuery(
+            $phql,
+            [
+                'id' =&gt; $id,
+            ]
+        );
+
+        // Crear una respuesta
+        $response = new Response();
+
+        if ($status-&gt;success() === true) {
+            $response-&gt;setJsonContent(
+                [
+                    'status' =&gt; 'OK'
+                ]
+            );
+        } else {
+            // Cambiar el status de HTTP
+            $response-&gt;setStatusCode(409, 'Conflicto');
+
+            $errors = [];
+
+            foreach ($status-&gt;getMessages() as $message) {
+                $errors[] = $message-&gt;getMessage();
+            }
+
+            $response-&gt;setJsonContent(
+                [
+                    'status'   =&gt; 'ERROR',
+                    'messages' =&gt; $errors,
+                ]
+            );
+        }
+
+        return $response;
+    }
+);
+</code></pre>
+
+<h2 id="creando-una-base-de-datos">Creando una base de datos</h2>
+
+<p>Now we will create database for our application. Run SQL queries as follows:</p>
+
+<pre><code>CREATE DATABASE `robotics`;
+CREATE TABLE `robotics`.`robots` (
+ `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+ `name` varchar(200) COLLATE utf8_bin NOT NULL,
+ `type` varchar(200) COLLATE utf8_bin NOT NULL,
+ `year` smallint(2) unsigned NOT NULL,
+ PRIMARY KEY (`id`)
+)
+</code></pre>
+
+<p><a name="testing"></a></p>
+
+<h2 id="probando-nuestra-aplicación">Probando nuestra aplicación</h2>
+
+<p>Utilizando <a href="http://en.wikipedia.org/wiki/CURL">curl</a> probaremos cada ruta en nuestra aplicación, verificando su correcto funcionamiento.</p>
+
+<p>Obtener todos los robots:</p>
+
+<pre><code class="language-bash">curl -i -X GET http://localhost/my-rest-api/api/robots
+
+HTTP/1.1 200 OK
+Date: Tue, 21 Jul 2015 07:05:13 GMT
+Server: Apache/2.2.22 (Unix) DAV/2
+Content-Length: 117
+Content-Type: text/html; charset=UTF-8
+
+[{"id":"1","name":"Robotina"},{"id":"2","name":"Astro Boy"},{"id":"3","name":"Terminator"}]
+</code></pre>
+
+<p>Buscar un robot por su nombre:</p>
+
+<pre><code class="language-bash">curl -i -X GET http://localhost/my-rest-api/api/robots/search/Astro
+
+HTTP/1.1 200 OK
+Date: Tue, 21 Jul 2015 07:09:23 GMT
+Server: Apache/2.2.22 (Unix) DAV/2
+Content-Length: 31
+Content-Type: text/html; charset=UTF-8
+
+[{"id":"2","name":"Astro Boy"}]
+</code></pre>
+
+<p>Obtener un robot por su id:</p>
+
+<pre><code class="language-bash">curl -i -X GET http://localhost/my-rest-api/api/robots/3
+
+HTTP/1.1 200 OK
+Date: Tue, 21 Jul 2015 07:12:18 GMT
+Server: Apache/2.2.22 (Unix) DAV/2
+Content-Length: 56
+Content-Type: text/html; charset=UTF-8
+
+{"status":"FOUND","data":{"id":"3","name":"Terminator"}}
+</code></pre>
+
+<p>Insertar un nuevo robot:</p>
+
+<pre><code class="language-bash">curl -i -X POST -d '{"name":"C-3PO","type":"droid","year":1977}'
+    http://localhost/my-rest-api/api/robots
+
+HTTP/1.1 201 Created
+Date: Tue, 21 Jul 2015 07:15:09 GMT
+Server: Apache/2.2.22 (Unix) DAV/2
+Content-Length: 75
+Content-Type: text/html; charset=UTF-8
+
+{"status":"OK","data":{"name":"C-3PO","type":"droid","year":1977,"id":"4"}}
+</code></pre>
+
+<p>Intentar insertar un nuevo robot con el nombre de un robot existente:</p>
+
+<pre><code class="language-bash">curl -i -X POST -d '{"name":"C-3PO","type":"droid","year":1977}'
+    http://localhost/my-rest-api/api/robots
+
+HTTP/1.1 409 Conflict
+Date: Tue, 21 Jul 2015 07:18:28 GMT
+Server: Apache/2.2.22 (Unix) DAV/2
+Content-Length: 63
+Content-Type: text/html; charset=UTF-8
+
+{"status":"ERROR","messages":["El nombre del robot debe ser único"]}
+</code></pre>
+
+<p>O actualizar un robot con un tipo desconocido:</p>
+
+<pre><code class="language-bash">curl -i -X PUT -d '{"name":"ASIMO","type":"humanoid","year":2000}'
+    http://localhost/my-rest-api/api/robots/4
+
+HTTP/1.1 409 Conflict
+Date: Tue, 21 Jul 2015 08:48:01 GMT
+Server: Apache/2.2.22 (Unix) DAV/2
+Content-Length: 104
+Content-Type: text/html; charset=UTF-8
+
+{"status":"ERROR","messages":["El valor del campo 'type' debe ser parte de la lista: droid, mechanical, virtual"]}
+</code></pre>
+
+<p>Por último, eliminar un robot:</p>
+
+<pre><code class="language-bash">curl -i -X DELETE http://localhost/my-rest-api/api/robots/4
+
+HTTP/1.1 200 OK
+Date: Tue, 21 Jul 2015 08:49:29 GMT
+Server: Apache/2.2.22 (Unix) DAV/2
+Content-Length: 15
+Content-Type: text/html; charset=UTF-8
+
+{"status":"OK"}
+</code></pre>
+
+<p><a name="conclusion"></a></p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>As we saw, developing a <a href="http://en.wikipedia.org/wiki/Representational_state_transfer">RESTful</a> API with Phalcon is easy using <a href="/3.4/en/application-micro">micro applications</a> and <a href="/3.4/en/db-phql">PHQL</a>.</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

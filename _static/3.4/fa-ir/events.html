@@ -1,0 +1,1537 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="fa-ir" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="fa-ir" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fa-ir" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/fa-ir/events.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/fa-ir">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/events" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/fa-ir/events" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/fa-ir/events" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/fa-ir/events" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/fa-ir/events" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/fa-ir/events" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/events">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/fa-ir/events">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/fa-ir/events">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/fa-ir/events">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/fa-ir/events">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/fa-ir/events">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/fa-ir">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="events-manager">Events Manager</h1>
+
+<p>The purpose of this component is to intercept the execution of most of the other components of the framework by creating ‘hook points’. These hook points allow the developer to obtain status information, manipulate data or change the flow of execution during the process of a component.</p>
+
+<p><a name="naming-convention"></a></p>
+
+<h2 id="naming-convention">Naming Convention</h2>
+
+<p>Phalcon events use namespaces to avoid naming collisions. Each component in Phalcon occupies a different event namespace and you are free to create your own as you see fit. Event names are formatted as <code>component:event</code>. For example, as <a href="api/Phalcon_Db">Phalcon\Db</a> occupies the <code>db</code> namespace, its <code>afterQuery</code> event’s full name is <code>db:afterQuery</code>.</p>
+
+<p>When attaching event listeners to the events manager, you can use <code>component</code> to catch all events from that component (eg. <code>db</code> to catch all of the <a href="api/Phalcon_Db">Phalcon\Db</a> events) or <code>component:event</code> to target a specific event (eg. <code>db:afterQuery</code>).</p>
+
+<p><a name="usage"></a></p>
+
+<h2 id="usage-example">Usage Example</h2>
+
+<p>In the following example, we will use the EventsManager to listen for the <code>afterQuery</code> event produced in a MySQL connection managed by <a href="api/Phalcon_Db">Phalcon\Db</a>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
+
+$eventsManager = new EventsManager();
+
+$eventsManager-&gt;attach(
+    'db:afterQuery',
+    function (Event $event, $connection) {
+        echo $connection-&gt;getSQLStatement();
+    }
+);
+
+$connection = new DbAdapter(
+    [
+        'host'     =&gt; 'localhost',
+        'username' =&gt; 'root',
+        'password' =&gt; 'secret',
+        'dbname'   =&gt; 'invo',
+    ]
+);
+
+// Assign the eventsManager to the db adapter instance
+$connection-&gt;setEventsManager($eventsManager);
+
+// Send a SQL command to the database server
+$connection-&gt;query(
+    'SELECT * FROM products p WHERE p.status = 1'
+);
+</code></pre>
+
+<p>Now every time a query is executed, the SQL statement will be echoed out. The first parameter passed to the lambda function contains contextual information about the event that is running, the second is the source of the event (in this case the connection itself). A third parameter may also be specified which will contain arbitrary data specific to the event.</p>
+
+<h5 class="alert alert-warning">You must explicitly set the Events Manager to a component using the <code>setEventsManager()</code> method in order for that component to trigger events. You can create a new Events Manager instance for each component or you can set the same Events Manager to multiple components as the naming convention will avoid conflicts </h5>
+
+<p>Instead of using lambda functions, you can use event listener classes instead. Event listeners also allow you to listen to multiple events. In this example, we will implement the <a href="api/Phalcon_Db_Profiler">Phalcon\Db\Profiler</a> to detect the SQL statements that are taking longer to execute than expected:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Db\Profiler;
+use Phalcon\Events\Event;
+use Phalcon\Logger;
+use Phalcon\Logger\Adapter\File;
+
+class MyDbListener
+{
+    protected $profiler;
+
+    protected $logger;
+
+    /**
+     * Creates the profiler and starts the logging
+     */
+    public function __construct()
+    {
+        $this-&gt;profiler = new Profiler();
+        $this-&gt;logger   = new Logger('../apps/logs/db.log');
+    }
+
+    /**
+     * This is executed if the event triggered is 'beforeQuery'
+     */
+    public function beforeQuery(Event $event, $connection)
+    {
+        $this-&gt;profiler-&gt;startProfile(
+            $connection-&gt;getSQLStatement()
+        );
+    }
+
+    /**
+     * This is executed if the event triggered is 'afterQuery'
+     */
+    public function afterQuery(Event $event, $connection)
+    {
+        $this-&gt;logger-&gt;log(
+            $connection-&gt;getSQLStatement(),
+            Logger::INFO
+        );
+
+        $this-&gt;profiler-&gt;stopProfile();
+    }
+
+    public function getProfiler()
+    {
+        return $this-&gt;profiler;
+    }
+}
+</code></pre>
+
+<p>Attaching an event listener to the events manager is as simple as:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Create a database listener
+$dbListener = new MyDbListener();
+
+// Listen all the database events
+$eventsManager-&gt;attach(
+    'db',
+    $dbListener
+);
+</code></pre>
+
+<p>The resulting profile data can be obtained from the listener:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Send a SQL command to the database server
+$connection-&gt;execute(
+    'SELECT * FROM products p WHERE p.status = 1'
+);
+
+foreach ($dbListener-&gt;getProfiler()-&gt;getProfiles() as $profile) {
+    echo 'SQL Statement: ', $profile-&gt;getSQLStatement(), '\n';
+    echo 'Start Time: ', $profile-&gt;getInitialTime(), '\n';
+    echo 'Final Time: ', $profile-&gt;getFinalTime(), '\n';
+    echo 'Total Elapsed Time: ', $profile-&gt;getTotalElapsedSeconds(), '\n';
+}
+</code></pre>
+
+<p><a name="components-that-trigger-events"></a></p>
+
+<h2 id="creating-components-that-trigger-events">Creating components that trigger Events</h2>
+
+<p>You can create components in your application that trigger events to an EventsManager. As a consequence, there may exist listeners that react to these events when generated. In the following example we’re creating a component called <code>MyComponent</code>. This component is EventsManager aware (it implements <a href="api/Phalcon_Events_EventsAwareInterface">Phalcon\Events\EventsAwareInterface</a>); when its <code>someTask()</code> method is executed it triggers two events to any listener in the EventsManager:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\EventsAwareInterface;
+use Phalcon\Events\ManagerInterface;
+
+class MyComponent implements EventsAwareInterface
+{
+    protected $eventsManager;
+
+    public function setEventsManager(ManagerInterface $eventsManager)
+    {
+        $this-&gt;eventsManager = $eventsManager;
+    }
+
+    public function getEventsManager()
+    {
+        return $this-&gt;eventsManager;
+    }
+
+    public function someTask()
+    {
+        $this-&gt;eventsManager-&gt;fire('my-component:beforeSomeTask', $this);
+
+        // Do some task
+        echo 'Here, someTask\n';
+
+        $this-&gt;eventsManager-&gt;fire('my-component:afterSomeTask', $this);
+    }
+}
+</code></pre>
+
+<p>Notice that in this example, we’re using the <code>my-component</code> event namespace. Now we need to create an event listener for this component:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+
+class SomeListener
+{
+    public function beforeSomeTask(Event $event, $myComponent)
+    {
+        echo "Here, beforeSomeTask\n";
+    }
+
+    public function afterSomeTask(Event $event, $myComponent)
+    {
+        echo "Here, afterSomeTask\n";
+    }
+}
+</code></pre>
+
+<p>Now let’s make everything work together:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Manager as EventsManager;
+
+// Create an Events Manager
+$eventsManager = new EventsManager();
+
+// Create the MyComponent instance
+$myComponent = new MyComponent();
+
+// Bind the eventsManager to the instance
+$myComponent-&gt;setEventsManager($eventsManager);
+
+// Attach the listener to the EventsManager
+$eventsManager-&gt;attach(
+    'my-component',
+    new SomeListener()
+);
+
+// Execute methods in the component
+$myComponent-&gt;someTask();
+</code></pre>
+
+<p>As <code>someTask()</code> is executed, the two methods in the listener will be executed, producing the following output:</p>
+
+<pre><code class="language-bash">Here, beforeSomeTask
+Here, someTask
+Here, afterSomeTask
+</code></pre>
+
+<p>Additional data may also be passed when triggering an event using the third parameter of <code>fire()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$eventsManager-&gt;fire('my-component:afterSomeTask', $this, $extraData);
+</code></pre>
+
+<p>In a listener the third parameter also receives this data:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+
+// Receiving the data in the third parameter
+$eventsManager-&gt;attach(
+    'my-component',
+    function (Event $event, $component, $data) {
+        print_r($data);
+    }
+);
+
+// Receiving the data from the event context
+$eventsManager-&gt;attach(
+    'my-component',
+    function (Event $event, $component) {
+        print_r($event-&gt;getData());
+    }
+);
+</code></pre>
+
+<p><a name="using-services"></a></p>
+
+<h2 id="using-services-from-the-di">Using Services From The DI</h2>
+
+<p>By extending <a href="api/Phalcon_Mvc_User_Plugin">Phalcon\Mvc\User\Plugin</a>, you can access services from the DI, just like you would in a controller:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+use Phalcon\Mvc\User\Plugin;
+
+class SomeListener extends Plugin
+{
+    public function beforeSomeTask(Event $event, $myComponent)
+    {
+        echo 'Here, beforeSomeTask\n';
+
+        $this-&gt;logger-&gt;debug(
+            'beforeSomeTask has been triggered'
+        );
+    }
+
+    public function afterSomeTask(Event $event, $myComponent)
+    {
+        echo 'Here, afterSomeTask\n';
+
+        $this-&gt;logger-&gt;debug(
+            'afterSomeTask has been triggered'
+        );
+    }
+}
+</code></pre>
+
+<p><a name="propagation-cancellation"></a></p>
+
+<h2 id="event-propagationcancellation">Event Propagation/Cancellation</h2>
+
+<p>Many listeners may be added to the same event manager. This means that for the same type of event, many listeners can be notified. The listeners are notified in the order they were registered in the EventsManager. Some events are cancelable, indicating that these may be stopped preventing other listeners from being notified about the event:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+
+$eventsManager-&gt;attach(
+    'db',
+    function (Event $event, $connection) {
+        // We stop the event if it is cancelable
+        if ($event-&gt;isCancelable()) {
+            // Stop the event, so other listeners will not be notified about this
+            $event-&gt;stop();
+        }
+
+        // ...
+    }
+);
+</code></pre>
+
+<p>By default, events are cancelable - even most of the events produced by the framework are cancelables. You can fire a not-cancelable event by passing <code>false</code> in the fourth parameter of <code>fire()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$eventsManager-&gt;fire('my-component:afterSomeTask', $this, $extraData, false);
+</code></pre>
+
+<p><a name="listener-priorities"></a></p>
+
+<h2 id="listener-priorities">Listener Priorities</h2>
+
+<p>When attaching listeners you can set a specific priority. With this feature you can attach listeners indicating the order in which they must be called:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$eventsManager-&gt;enablePriorities(true);
+
+$eventsManager-&gt;attach('db', new DbListener(), 150); // More priority
+$eventsManager-&gt;attach('db', new DbListener(), 100); // Normal priority
+$eventsManager-&gt;attach('db', new DbListener(), 50);  // Less priority
+</code></pre>
+
+<p><a name="collecting-responses"></a></p>
+
+<h2 id="collecting-responses">Collecting Responses</h2>
+
+<p>The events manager can collect every response returned by every notified listener. This example explains how it works:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Manager as EventsManager;
+
+$eventsManager = new EventsManager();
+
+// Set up the events manager to collect responses
+$eventsManager-&gt;collectResponses(true);
+
+// Attach a listener
+$eventsManager-&gt;attach(
+    'custom:custom',
+    function () {
+        return 'first response';
+    }
+);
+
+// Attach a listener
+$eventsManager-&gt;attach(
+    'custom:custom',
+    function () {
+        return 'second response';
+    }
+);
+
+// Fire the event
+$eventsManager-&gt;fire('custom:custom', null);
+
+// Get all the collected responses
+print_r($eventsManager-&gt;getResponses());
+</code></pre>
+
+<p>The above example produces:</p>
+
+<pre><code class="language-php">    Array ( [0] =&gt; first response [1] =&gt; second response )
+</code></pre>
+
+<p><a name="custom"></a></p>
+
+<h2 id="implementing-your-own-eventsmanager">Implementing your own EventsManager</h2>
+
+<p>The <a href="api/Phalcon_Events_ManagerInterface">Phalcon\Events\ManagerInterface</a> interface must be implemented to create your own EventsManager replacing the one provided by Phalcon.</p>
+
+<p><a name="list"></a></p>
+
+<h2 id="list-of-events">List of Events</h2>
+
+<p>The events available in Phalcon are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Component</th>
+      <th>Event</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACL</td>
+      <td><code>acl:afterCheckAccess</code></td>
+    </tr>
+    <tr>
+      <td>ACL</td>
+      <td><code>acl:beforeCheckAccess</code></td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td><code>application:afterHandleRequest</code></td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td><code>application:afterStartModule</code></td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td><code>application:beforeHandleRequest</code></td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td><code>application:beforeSendResponse</code></td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td><code>application:beforeStartModule</code></td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td><code>application:boot</code></td>
+    </tr>
+    <tr>
+      <td>Application</td>
+      <td><code>application:viewRender</code></td>
+    </tr>
+    <tr>
+      <td>CLI</td>
+      <td><code>dispatch:beforeException</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>afterCreate</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>afterSave</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>afterUpdate</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>afterValidation</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>afterValidationOnCreate</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>afterValidationOnUpdate</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>beforeCreate</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>beforeSave</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>beforeUpdate</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>beforeValidation</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>beforeValidationOnCreate</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>beforeValidationOnUpdate</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>notDeleted</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>notSave</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>notSaved</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>onValidationFails</code></td>
+    </tr>
+    <tr>
+      <td>Collection</td>
+      <td><code>validation</code></td>
+    </tr>
+    <tr>
+      <td>Collection Manager</td>
+      <td><code>collectionManager:afterInitialize</code></td>
+    </tr>
+    <tr>
+      <td>Console</td>
+      <td><code>console:afterHandleTask</code></td>
+    </tr>
+    <tr>
+      <td>Console</td>
+      <td><code>console:afterStartModule</code></td>
+    </tr>
+    <tr>
+      <td>Console</td>
+      <td><code>console:beforeHandleTask</code></td>
+    </tr>
+    <tr>
+      <td>Console</td>
+      <td><code>console:beforeStartModule</code></td>
+    </tr>
+    <tr>
+      <td>Db</td>
+      <td><code>db:afterQuery</code></td>
+    </tr>
+    <tr>
+      <td>Db</td>
+      <td><code>db:beforeQuery</code></td>
+    </tr>
+    <tr>
+      <td>Db</td>
+      <td><code>db:beginTransaction</code></td>
+    </tr>
+    <tr>
+      <td>Db</td>
+      <td><code>db:createSavepoint</code></td>
+    </tr>
+    <tr>
+      <td>Db</td>
+      <td><code>db:commitTransaction</code></td>
+    </tr>
+    <tr>
+      <td>Db</td>
+      <td><code>db:releaseSavepoint</code></td>
+    </tr>
+    <tr>
+      <td>Db</td>
+      <td><code>db:rollbackTransaction</code></td>
+    </tr>
+    <tr>
+      <td>Db</td>
+      <td><code>db:rollbackSavepoint</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:afterExecuteRoute</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:afterDispatch</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:afterDispatchLoop</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:afterInitialize</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:beforeException</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:beforeExecuteRoute</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:beforeDispatch</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:beforeDispatchLoop</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:beforeForward</code></td>
+    </tr>
+    <tr>
+      <td>Dispatcher</td>
+      <td><code>dispatch:beforeNotFoundAction</code></td>
+    </tr>
+    <tr>
+      <td>Loader</td>
+      <td><code>loader:afterCheckClass</code></td>
+    </tr>
+    <tr>
+      <td>Loader</td>
+      <td><code>loader:beforeCheckClass</code></td>
+    </tr>
+    <tr>
+      <td>Loader</td>
+      <td><code>loader:beforeCheckPath</code></td>
+    </tr>
+    <tr>
+      <td>Loader</td>
+      <td><code>loader:pathFound</code></td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td><code>micro:afterHandleRoute</code></td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td><code>micro:afterExecuteRoute</code></td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td><code>micro:beforeExecuteRoute</code></td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td><code>micro:beforeHandleRoute</code></td>
+    </tr>
+    <tr>
+      <td>Micro</td>
+      <td><code>micro:beforeNotFound</code></td>
+    </tr>
+    <tr>
+      <td>Middleware</td>
+      <td><code>afterBinding</code></td>
+    </tr>
+    <tr>
+      <td>Middleware</td>
+      <td><code>afterExecuteRoute</code></td>
+    </tr>
+    <tr>
+      <td>Middleware</td>
+      <td><code>afterHandleRoute</code></td>
+    </tr>
+    <tr>
+      <td>Middleware</td>
+      <td><code>beforeExecuteRoute</code></td>
+    </tr>
+    <tr>
+      <td>Middleware</td>
+      <td><code>beforeHandleRoute</code></td>
+    </tr>
+    <tr>
+      <td>Middleware</td>
+      <td><code>beforeNotFound</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>afterCreate</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>afterDelete</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>afterSave</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>afterUpdate</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>afterValidation</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>afterValidationOnCreate</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>afterValidationOnUpdate</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>beforeDelete</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>notDeleted</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>beforeCreate</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>beforeDelete</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>beforeSave</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>beforeUpdate</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>beforeValidation</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>beforeValidationOnCreate</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>beforeValidationOnUpdate</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>notSave</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>notSaved</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>onValidationFails</code></td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td><code>prepareSave</code></td>
+    </tr>
+    <tr>
+      <td>Models Manager</td>
+      <td><code>modelsManager:afterInitialize</code></td>
+    </tr>
+    <tr>
+      <td>Request</td>
+      <td><code>request:afterAuthorizationResolve</code></td>
+    </tr>
+    <tr>
+      <td>Request</td>
+      <td><code>request:beforeAuthorizationResolve</code></td>
+    </tr>
+    <tr>
+      <td>Router</td>
+      <td><code>router:beforeCheckRoutes</code></td>
+    </tr>
+    <tr>
+      <td>Router</td>
+      <td><code>router:beforeCheckRoute</code></td>
+    </tr>
+    <tr>
+      <td>Router</td>
+      <td><code>router:matchedRoute</code></td>
+    </tr>
+    <tr>
+      <td>Router</td>
+      <td><code>router:notMatchedRoute</code></td>
+    </tr>
+    <tr>
+      <td>Router</td>
+      <td><code>router:afterCheckRoutes</code></td>
+    </tr>
+    <tr>
+      <td>Router</td>
+      <td><code>router:beforeMount</code></td>
+    </tr>
+    <tr>
+      <td>View</td>
+      <td><code>view:afterRender</code></td>
+    </tr>
+    <tr>
+      <td>View</td>
+      <td><code>view:afterRenderView</code></td>
+    </tr>
+    <tr>
+      <td>View</td>
+      <td><code>view:beforeRender</code></td>
+    </tr>
+    <tr>
+      <td>View</td>
+      <td><code>view:beforeRenderView</code></td>
+    </tr>
+    <tr>
+      <td>View</td>
+      <td><code>view:notFoundView</code></td>
+    </tr>
+    <tr>
+      <td>Volt</td>
+      <td><code>compileFilter</code></td>
+    </tr>
+    <tr>
+      <td>Volt</td>
+      <td><code>compileFunction</code></td>
+    </tr>
+    <tr>
+      <td>Volt</td>
+      <td><code>compileStatement</code></td>
+    </tr>
+    <tr>
+      <td>Volt</td>
+      <td><code>resolveExpression</code></td>
+    </tr>
+  </tbody>
+</table>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

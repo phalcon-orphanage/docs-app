@@ -1,0 +1,1428 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="es-es" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="es-es" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es-es" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/es-es/forms.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/es-es">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/forms" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/es-es/forms" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/es-es/forms" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/es-es/forms" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/es-es/forms" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/es-es/forms" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/forms">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/es-es/forms">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/es-es/forms">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/es-es/forms">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/es-es/forms">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/es-es/forms">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/es-es">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="formularios">Formularios</h1>
+
+<p><a href="api/Phalcon_Forms_Form">Phalcon\Forms\Form</a> is a component that helps with the creation and maintenance of forms in web applications.</p>
+
+<p>En el ejemplo siguiente se muestra su uso básico:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Form;
+use Phalcon\Forms\Element\Text;
+use Phalcon\Forms\Element\Select;
+
+$form = new Form();
+
+$form-&gt;add(
+    new Text(
+        'name'
+    )
+);
+
+$form-&gt;add(
+    new Text(
+        'telephone'
+    )
+);
+
+$form-&gt;add(
+    new Select(
+        'telephoneType',
+        [
+            'H' =&gt; 'Hogar',
+            'C' =&gt; 'Movil',
+        ]
+    )
+);
+</code></pre>
+
+<p>Los formularios se pueden representar en función de la definición del formulario:</p>
+
+<pre><code class="language-php">&lt;h1&gt;
+    Contactos
+&lt;/h1&gt;
+
+&lt;form method='post'&gt;
+
+    &lt;p&gt;
+        &lt;label&gt;
+            Nombre
+        &lt;/label&gt;
+
+        &lt;?php echo $form-&gt;render('name'); ?&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;label&gt;
+            Teléfono
+        &lt;/label&gt;
+
+        &lt;?php echo $form-&gt;render('telephone'); ?&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;label&gt;
+            Tipo
+        &lt;/label&gt;
+
+        &lt;?php echo $form-&gt;render('telephoneType'); ?&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;input type='submit' value='Guardar' /&gt;
+    &lt;/p&gt;
+
+&lt;/form&gt;
+</code></pre>
+
+<p>Cada elemento en el formulario se puede representar como sea requerido por el desarrollador. Internally, <a href="api/Phalcon_Tag">Phalcon\Tag</a> is used to produce the correct HTML for each element and you can pass additional HTML attributes as the second parameter of <code>render()</code>:</p>
+
+<pre><code class="language-php">&lt;p&gt;
+    &lt;label&gt;
+        Nombre
+    &lt;/label&gt;
+
+    &lt;?php echo $form-&gt;render('name', ['maxlength' =&gt; 30, 'placeholder' =&gt; 'Escribe tu nombre']); ?&gt;
+&lt;/p&gt;
+</code></pre>
+
+<p>Los atributos HTML también se pueden definir en la definición del elemento:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$form-&gt;add(
+    new Text(
+        'name',
+        [
+            'maxlength'   =&gt; 30,
+            'placeholder' =&gt; 'Escribe tu nombre',
+        ]
+    )
+);
+</code></pre>
+
+<p><a name="initializing"></a></p>
+
+<h2 id="inicializando-formularios">Inicializando formularios</h2>
+
+<p>As seen before, forms can be initialized outside the form class by adding elements to it. You can re-use code or organize your form classes implementing the form in a separated file:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Form;
+use Phalcon\Forms\Element\Text;
+use Phalcon\Forms\Element\Select;
+
+class ContactForm extends Form
+{
+    public function initialize()
+    {
+        $this-&gt;add(
+            new Text(
+                'name'
+            )
+        );
+
+        $this-&gt;add(
+            new Text(
+                'telephone'
+            )
+        );
+
+        $this-&gt;add(
+            new Select(
+                'telephoneType',
+                TelephoneTypes::find(),
+                [
+                    'using' =&gt; [
+                        'id',
+                        'name',
+                    ],
+                    'useEmpty'   =&gt; true,
+                    'emptyText'  =&gt; 'Select one...',
+                    'emptyValue' =&gt; '',
+                ]
+            )
+        );
+    }
+}
+</code></pre>
+
+<p>Ademas, los elementos Select soportan la opción <code>useEmpty</code> para habilitar el uso de un elemento en blanco en la lista de opciones disponibles. Las opciones <code>emptyText</code> y <code>emptyValue</code> son opcionales, pero le permiten personalizar el texto y el valor del elemento en blanco, respectivamente.</p>
+
+<p><a href="api/Phalcon_Forms_Form">Phalcon\Forms\Form</a> extends <a href="api/Phalcon_Di_Injectable">Phalcon\Di\Injectable</a> so you have access to the application services if needed:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Form;
+use Phalcon\Forms\Element\Text;
+use Phalcon\Forms\Element\Hidden;
+
+class ContactForm extends Form
+{
+    /**
+     * Este método retorna el valor por defecto del campo 'csrf'
+     */
+    public function getCsrf()
+    {
+        return $this-&gt;security-&gt;getToken();
+    }
+
+    public function initialize()
+    {
+        // Configurar el mismo formulario como entidad
+        $this-&gt;setEntity($this);
+
+        // Agregamos un elemento de texto para capturar el 'email'
+        $this-&gt;add(
+            new Text(
+                'email'
+            )
+        );
+
+        // Agregamos un elemento oculto para poner el código CSRF
+        $this-&gt;add(
+            new Hidden(
+                'csrf'
+            )
+        );
+    }
+}
+</code></pre>
+
+<p>La entidad asociada al formulario en la inicialización y las opciones de usuario se pasan al constructor del formulario:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Form;
+use Phalcon\Forms\Element\Text;
+use Phalcon\Forms\Element\Hidden;
+
+class UsersForm extends Form
+{
+    /**
+     * Inicializador de formulario
+     *
+     * @param Users $user
+     * @param array $options
+     */
+    public function initialize(Users $user, array $options)
+    {
+        if ($options['edit']) {
+            $this-&gt;add(
+                new Hidden(
+                    'id'
+                )
+            );
+        } else {
+            $this-&gt;add(
+                new Text(
+                    'id'
+                )
+            );
+        }
+
+        $this-&gt;add(
+            new Text(
+                'name'
+            )
+        );
+    }
+}
+</code></pre>
+
+<p>En la creación de instancias del formulario debe utilizar:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$form = new UsersForm(
+    new Users(),
+    [
+        'edit' =&gt; true,
+    ]
+);
+</code></pre>
+
+<p><a name="validation"></a></p>
+
+<h2 id="validación">Validación</h2>
+
+<p>Phalcon forms are integrated with the <a href="/3.4/en/validation">validation</a> component to offer instant validation. Los validadores incorporados o personalizados se pueden configurar para cada elemento:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Element\Text;
+use Phalcon\Validation\Validator\PresenceOf;
+use Phalcon\Validation\Validator\StringLength;
+
+$name = new Text(
+    'name'
+);
+
+$name-&gt;addValidator(
+    new PresenceOf(
+        [
+            'message' =&gt; 'El nombre es obligatorio',
+        ]
+    )
+);
+
+$name-&gt;addValidator(
+    new StringLength(
+        [
+            'min'            =&gt; 10,
+            'messageMinimum' =&gt; 'El nombre es demasiado corto',
+        ]
+    )
+);
+
+$form-&gt;add($name);
+</code></pre>
+
+<p>Entonces usted puede validar el formulario según la entrada introducida por el usuario:</p>
+
+<pre><code class="language-php">&lt;?php
+
+if (!$form-&gt;isValid($_POST)) {
+    $messages = $form-&gt;getMessages();
+
+    foreach ($messages as $message) {
+        echo $message, '&lt;br&gt;';
+    }
+}
+</code></pre>
+
+<p>Los validadores se ejecutan en el mismo orden como fueron registrados.</p>
+
+<p>Por defecto, los mensajes generados por todos que los elementos del formulario se unen, por lo que pueden ser recorridos usando un simple <code>foreach</code>, además, si desea obtener los mensajes separados por campo deberá pasar el valor <code>false</code> en el método <code>getMessages()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+foreach ($form-&gt;getMessages(false) as $attribute =&gt; $messages) {
+    echo 'Mensajes generados para ', $attribute, ':', "\n";
+
+    foreach ($messages as $message) {
+        echo $message, '&lt;br&gt;';
+    }
+}
+</code></pre>
+
+<p>U obtener los mensajes específicos de un elemento:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$messages = $form-&gt;getMessagesFor('name');
+
+foreach ($messages as $message) {
+    echo $message, '&lt;br&gt;';
+}
+</code></pre>
+
+<p><a name="filtering"></a></p>
+
+<h2 id="filtrado">Filtrado</h2>
+
+<p>A form is also able to filter data before it is validated. You can set filters in each element:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Element\Text;
+
+$name = new Text(
+    'name'
+);
+
+// Configurar múltiples filtros
+$name-&gt;setFilters(
+    [
+        'string',
+        'trim',
+    ]
+);
+
+$form-&gt;add($name);
+
+$email = new Text(
+    'email'
+);
+
+// Agregar solo un filtro
+$email-&gt;setFilters(
+    'email'
+);
+
+$form-&gt;add($email);
+</code></pre>
+
+<h5 class="alert alert-info">Learn more about filtering in Phalcon by reading the <a href="/3.4/en/filter">Filter documentation</a> </h5>
+
+<p><a name="entities"></a></p>
+
+<h2 id="formularios-y-entidades">Formularios y Entidades</h2>
+
+<p>Una entidad como una instancia de un modelo, una colección, una instancia plana o una simple clase de PHP puede ser vinculada al formulario con el fin de establecer valores predeterminados en los elementos del formulario o asignar fácilmente los valores del formulario a la entidad:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$robot = Robots::findFirst();
+
+$form = new Form($robot);
+
+$form-&gt;add(
+    new Text(
+        'name'
+    )
+);
+
+$form-&gt;add(
+    new Text(
+        'year'
+    )
+);
+</code></pre>
+
+<p>Una vez que el formulario es representado, si no hay ningún valor por defecto asignado a los elementos, se usarán los provistos por la entidad:</p>
+
+<pre><code class="language-php">&lt;?php echo $form-&gt;render('name'); ?&gt;
+</code></pre>
+
+<p>Puede validar el formulario y asignar los valores de la entrada del usuario de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$form-&gt;bind($_POST, $robot);
+
+// Comprobar si el formulario es válido
+if ($form-&gt;isValid()) {
+    // Guardar la entidad
+    $robot-&gt;save();
+}
+</code></pre>
+
+<p>Asignar una clase simple como entidad, también es posible:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class Preferences
+{
+    public $timezone = 'Europe/Amsterdam';
+
+    public $receiveEmails = 'No';
+}
+</code></pre>
+
+<p>Al utilizar esta clase como entidad, permite al formulario tomar los valores por defecto de ella:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$form = new Form(
+    new Preferences()
+);
+
+$form-&gt;add(
+    new Select(
+        'timezone',
+        [
+            'America/New_York'  =&gt; 'New York',
+            'Europe/Amsterdam'  =&gt; 'Amsterdam',
+            'America/Sao_Paulo' =&gt; 'Sao Paulo',
+            'Asia/Tokyo'        =&gt; 'Tokyo',
+        ]
+    )
+);
+
+$form-&gt;add(
+    new Select(
+        'receiveEmails',
+        [
+            'Yes' =&gt; 'Si, por favor!',
+            'No'  =&gt; 'No, gracias',
+        ]
+    )
+);
+</code></pre>
+
+<p>Entities can implement getters, which have a higher precedence than public properties. These methods give you more freedom to produce values:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class Preferences
+{
+    public $timezone;
+
+    public $receiveEmails;
+
+    public function getTimezone()
+    {
+        return 'Europe/Amsterdam';
+    }
+
+    public function getReceiveEmails()
+    {
+        return 'No';
+    }
+}
+</code></pre>
+
+<p><a name="elements"></a></p>
+
+<h2 id="elementos-de-formulario">Elementos de formulario</h2>
+
+<p>Phalcon provides a set of built-in elements to use in your forms, all these elements are located in the <a href="api/Phalcon_Forms_Element">Phalcon\Forms\Element</a> namespace:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_Text">Phalcon\Forms\Element\Text</a></td>
+      <td>Genera elementos <code>INPUT[type=text]</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_Password">Phalcon\Forms\Element\Password</a></td>
+      <td>Genera elementos <code>INPUT[type=password]</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_Select">Phalcon\Forms\Element\Select</a></td>
+      <td>Genera elementos <code>SELECT</code> basado en opciones</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_Check">Phalcon\Forms\Element\Check</a></td>
+      <td>Genera elementos <code>INPUT[type=check]</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_TextArea">Phalcon\Forms\Element\TextArea</a></td>
+      <td>Genera elementos <code>TEXTAREA</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_Hidden">Phalcon\Forms\Element\Hidden</a></td>
+      <td>Genera elementos <code>INPUT[type=hidden]</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_File">Phalcon\Forms\Element\File</a></td>
+      <td>Genera elementos <code>INPUT[type=file]</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_Date">Phalcon\Forms\Element\Date</a></td>
+      <td>Genera elementos <code>INPUT[type=date]</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_Numeric">Phalcon\Forms\Element\Numeric</a></td>
+      <td>Genera elementos <code>INPUT[type=number]</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_Submit">Phalcon\Forms\Element\Submit</a></td>
+      <td>Genera elementos <code>INPUT[type=submit]</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_Text">Phalcon\Forms\Element\Text</a></td>
+      <td>Genera elementos <code>INPUT[type=text]</code></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Forms_Element_TextArea">Phalcon\Forms\Element\TextArea</a></td>
+      <td>Genera elementos <code>TEXTAREA</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="event-callback"></a></p>
+
+<h2 id="evento-callbacks">Evento Callbacks</h2>
+
+<p>Cuando se implementan formularios como clases, las devoluciones de llamadas: <code>beforeValidation()</code> y <code>afterValidation()</code> se pueden implementar en la clase del formulario para realizar validaciones previas y posteriores:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Form;
+
+class ContactForm extends Form
+{
+    public function beforeValidation()
+    {
+
+    }
+}
+</code></pre>
+
+<p><a name="rendering"></a></p>
+
+<h2 id="presentación-de-formularios">Presentación de formularios</h2>
+
+<p>Puede representar el formulario con total flexibilidad, el siguiente ejemplo muestra cómo representar cada elemento mediante un procedimiento estándar:</p>
+
+<pre><code class="language-php">&lt;form method='post'&gt;
+    &lt;?php
+
+        // Recorrer elementos del formulario
+        foreach ($form as $element) {
+            // Obtener cualquier mensaje generado para el elemento actual
+            $messages = $form-&gt;getMessagesFor(
+                $element-&gt;getName()
+            );
+
+            if (count($messages)) {
+                // Imprimir cada elemento
+                echo '&lt;div class="messages"&gt;';
+
+                foreach ($messages as $message) {
+                    echo $message;
+                }
+
+                echo '&lt;/div&gt;';
+            }
+
+            echo '&lt;p&gt;';
+
+            echo '&lt;label for="', $element-&gt;getName(), '"&gt;', $element-&gt;getLabel(), '&lt;/label&gt;';
+
+            echo $element;
+
+            echo '&lt;/p&gt;';
+        }
+
+    ?&gt;
+
+    &lt;input type='submit' value='Send' /&gt;
+&lt;/form&gt;
+</code></pre>
+
+<p>O reutilizar la lógica en la clase del formulario:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Form;
+
+class ContactForm extends Form
+{
+    public function initialize()
+    {
+        // ...
+    }
+
+    public function renderDecorated($name)
+    {
+        $element  = $this-&gt;get($name);
+
+        // Obtener cualquier mensaje generado por el elemento actual
+        $messages = $this-&gt;getMessagesFor(
+            $element-&gt;getName()
+        );
+
+        if (count($messages)) {
+            // Imprimir cada elemento
+            echo "&lt;div class="messages"&gt;";
+
+            foreach ($messages as $message) {
+                echo $this-&gt;flash-&gt;error($message);
+            }
+
+            echo '&lt;/div&gt;';
+        }
+
+        echo '&lt;p&gt;';
+
+        echo '&lt;label for="', $element-&gt;getName(), '"&gt;', $element-&gt;getLabel(), '&lt;/label&gt;';
+
+        echo $element;
+
+        echo '&lt;/p&gt;';
+    }
+}
+</code></pre>
+
+<p>En la vista:</p>
+
+<pre><code class="language-php">&lt;?php
+
+echo $element-&gt;renderDecorated('name');
+
+echo $element-&gt;renderDecorated('telephone');
+</code></pre>
+
+<p><a name="creating-elements"></a></p>
+
+<h2 id="creando-elementos-de-formulario">Creando elementos de formulario</h2>
+
+<p>Además de los elementos del formulario proporcionados por Phalcon, usted puede crear sus propios elementos personalizados:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Element;
+
+class MyElement extends Element
+{
+    public function render($attributes = null)
+    {
+        $html = // ... Producir HTML
+
+        return $html;
+    }
+}
+</code></pre>
+
+<p><a name="manager"></a></p>
+
+<h2 id="administrador-de-formularios">Administrador de formularios</h2>
+
+<p>Este componente proporciona un gestor de formularios que puede utilizar el desarrollador para registrar formularios y acceder a ellos mediante el localizador de servicios:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Forms\Manager as FormsManager;
+
+$di['forms'] = function () {
+    return new FormsManager();
+};
+</code></pre>
+
+<p>Los formularios se agregan al administrador de formularios y es referenciado por un nombre único:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$this-&gt;forms-&gt;set(
+    'login',
+    new LoginForm()
+);
+</code></pre>
+
+<p>Usando el nombre único, los formularios pueden consultarse en cualquier parte de la aplicación:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$loginForm = $this-&gt;forms-&gt;get('login');
+
+echo $loginForm-&gt;render();
+</code></pre>
+
+<p><a name="external"></a></p>
+
+<h2 id="recursos-externos">Recursos Externos</h2>
+
+<ul>
+  <li><a href="http://vokuro.phalconphp.com">Vökuró</a>, es una aplicación de ejemplo que utiliza el generador de formularios para crear y administrar formularios, <a href="https://github.com/phalcon/vokuro">Código fuente en Github</a></li>
+</ul>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

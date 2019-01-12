@@ -1,0 +1,1301 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="pl-pl" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="pl-pl" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="pl-pl" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/pl-pl/application.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/pl-pl">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/application" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/pl-pl/application" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/pl-pl/application" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/pl-pl/application" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/pl-pl/application" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/pl-pl/application" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/application">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/pl-pl/application">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/pl-pl/application">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/pl-pl/application">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/pl-pl/application">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/pl-pl/application">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/pl-pl">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="mvc-applications">MVC Applications</h1>
+
+<p>All the hard work behind orchestrating the operation of MVC in Phalcon is normally done by <a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a>. This component encapsulates all the complex operations required in the background, instantiating every component needed and integrating it with the project, to allow the MVC pattern to operate as desired.</p>
+
+<p>The following bootstrap code is typical for a Phalcon application:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Application;
+
+// Register autoloaders
+// ...
+
+// Register services
+// ...
+
+// Handle the request
+$application = new Application($di);
+
+try {
+    $response = $application-&gt;handle();
+
+    $response-&gt;send();
+} catch (\Exception $e) {
+    echo 'Exception: ', $e-&gt;getMessage();
+}
+</code></pre>
+
+<p>The core of all the work of the controller occurs when <code>handle()</code> is invoked:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$response = $application-&gt;handle();
+</code></pre>
+
+<p><a name="manual-bootstrapping"></a></p>
+
+<h2 id="manual-bootstrapping">Manual bootstrapping</h2>
+
+<p>If you do not wish to use <a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a>, the code above can be changed as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Get the 'router' service
+$router = $di['router'];
+
+$router-&gt;handle();
+
+$view = $di['view'];
+
+$dispatcher = $di['dispatcher'];
+
+// Pass the processed router parameters to the dispatcher
+
+$dispatcher-&gt;setControllerName(
+    $router-&gt;getControllerName()
+);
+
+$dispatcher-&gt;setActionName(
+    $router-&gt;getActionName()
+);
+
+$dispatcher-&gt;setParams(
+    $router-&gt;getParams()
+);
+
+// Start the view
+$view-&gt;start();
+
+// Dispatch the request
+$dispatcher-&gt;dispatch();
+
+// Render the related views
+$view-&gt;render(
+    $dispatcher-&gt;getControllerName(),
+    $dispatcher-&gt;getActionName(),
+    $dispatcher-&gt;getParams()
+);
+
+// Finish the view
+$view-&gt;finish();
+
+$response = $di['response'];
+
+// Pass the output of the view to the response
+$response-&gt;setContent(
+    $view-&gt;getContent()
+);
+
+// Send the response
+$response-&gt;send();
+</code></pre>
+
+<p>The following replacement of <a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a> lacks of a view component making it suitable for Rest APIs:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Http\ResponseInterface;
+
+// Get the 'router' service
+$router = $di['router'];
+
+$router-&gt;handle();
+
+$dispatcher = $di['dispatcher'];
+
+// Pass the processed router parameters to the dispatcher
+
+$dispatcher-&gt;setControllerName(
+    $router-&gt;getControllerName()
+);
+
+$dispatcher-&gt;setActionName(
+    $router-&gt;getActionName()
+);
+
+$dispatcher-&gt;setParams(
+    $router-&gt;getParams()
+);
+
+// Dispatch the request
+$dispatcher-&gt;dispatch();
+
+// Get the returned value by the last executed action
+$response = $dispatcher-&gt;getReturnedValue();
+
+// Check if the action returned is a 'response' object
+if ($response instanceof ResponseInterface) {
+    // Send the response
+    $response-&gt;send();
+}
+</code></pre>
+
+<p>Yet another alternative that catch exceptions produced in the dispatcher forwarding to other actions consequently:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Http\ResponseInterface;
+
+// Get the 'router' service
+$router = $di['router'];
+
+$router-&gt;handle();
+
+$dispatcher = $di['dispatcher'];
+
+// Pass the processed router parameters to the dispatcher
+
+$dispatcher-&gt;setControllerName(
+    $router-&gt;getControllerName()
+);
+
+$dispatcher-&gt;setActionName(
+    $router-&gt;getActionName()
+);
+
+$dispatcher-&gt;setParams(
+    $router-&gt;getParams()
+);
+
+try {
+    // Dispatch the request
+    $dispatcher-&gt;dispatch();
+} catch (Exception $e) {
+    // An exception has occurred, dispatch some controller/action aimed for that
+
+    // Pass the processed router parameters to the dispatcher
+    $dispatcher-&gt;setControllerName('errors');
+    $dispatcher-&gt;setActionName('action503');
+
+    // Dispatch the request
+    $dispatcher-&gt;dispatch();
+}
+
+// Get the returned value by the last executed action
+$response = $dispatcher-&gt;getReturnedValue();
+
+// Check if the action returned is a 'response' object
+if ($response instanceof ResponseInterface) {
+    // Send the response
+    $response-&gt;send();
+}
+</code></pre>
+
+<p>Although the above implementations are a lot more verbose than the code needed while using <a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a>, offers an alternative in bootstrapping your application. Depending on your needs, you might want to have full control of what should be instantiated or not, or replace certain components with those of your own to extend the default functionality.</p>
+
+<p><a name="single-vs-module"></a></p>
+
+<h2 id="single-or-multi-module-applications">Single or Multi Module Applications</h2>
+
+<p>With this component you can run various types of MVC structures:</p>
+
+<p><a name="single"></a></p>
+
+<h3 id="single-module">Single Module</h3>
+
+<p>Single MVC applications consist of one module only. Namespaces can be used but are not necessary. An application like this would have the following file structure:</p>
+
+<pre><code class="language-php">single/
+    app/
+        controllers/
+        models/
+        views/
+    public/
+        css/
+        img/
+        js/
+</code></pre>
+
+<p>If namespaces are not used, the following bootstrap file could be used to orchestrate the MVC flow:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Loader;
+use Phalcon\Mvc\View;
+use Phalcon\Mvc\Application;
+use Phalcon\Di\FactoryDefault;
+
+$loader = new Loader();
+
+$loader-&gt;registerDirs(
+    [
+        '../apps/controllers/',
+        '../apps/models/',
+    ]
+);
+
+$loader-&gt;register();
+
+$di = new FactoryDefault();
+
+// Registering the view component
+$di-&gt;set(
+    'view',
+    function () {
+        $view = new View();
+
+        $view-&gt;setViewsDir('../apps/views/');
+
+        return $view;
+    }
+);
+
+$application = new Application($di);
+
+try {
+    $response = $application-&gt;handle();
+
+    $response-&gt;send();
+} catch (\Exception $e) {
+    echo $e-&gt;getMessage();
+}
+</code></pre>
+
+<p>If namespaces are used, the following bootstrap can be used:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Loader;
+use Phalcon\Mvc\View;
+use Phalcon\Mvc\Dispatcher;
+use Phalcon\Mvc\Application;
+use Phalcon\Di\FactoryDefault;
+
+$loader = new Loader();
+
+// Use autoloading with namespaces prefixes
+$loader-&gt;registerNamespaces(
+    [
+        'Single\Controllers' =&gt; '../apps/controllers/',
+        'Single\Models'      =&gt; '../apps/models/',
+    ]
+);
+
+$loader-&gt;register();
+
+$di = new FactoryDefault();
+
+// Register the default dispatcher's namespace for controllers
+$di-&gt;set(
+    'dispatcher',
+    function () {
+        $dispatcher = new Dispatcher();
+
+        $dispatcher-&gt;setDefaultNamespace('Single\Controllers');
+
+        return $dispatcher;
+    }
+);
+
+// Register the view component
+$di-&gt;set(
+    'view',
+    function () {
+        $view = new View();
+
+        $view-&gt;setViewsDir('../apps/views/');
+
+        return $view;
+    }
+);
+
+$application = new Application($di);
+
+try {
+    $response = $application-&gt;handle();
+
+    $response-&gt;send();
+} catch (\Exception $e) {
+    echo $e-&gt;getMessage();
+}
+</code></pre>
+
+<p><a name="module"></a></p>
+
+<h3 id="multi-module">Multi Module</h3>
+
+<p>A multi-module application uses the same document root for more than one module. In this case the following file structure can be used:</p>
+
+<pre><code class="language-php">multiple/
+  apps/
+    frontend/
+       controllers/
+       models/
+       views/
+       Module.php
+    backend/
+       controllers/
+       models/
+       views/
+       Module.php
+  public/
+    css/
+    img/
+    js/
+</code></pre>
+
+<p>Each directory in apps/ have its own MVC structure. A Module.php is present to configure specific settings of each module like autoloaders or custom services:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Multiple\Backend;
+
+use Phalcon\Loader;
+use Phalcon\Mvc\View;
+use Phalcon\DiInterface;
+use Phalcon\Mvc\Dispatcher;
+use Phalcon\Mvc\ModuleDefinitionInterface;
+
+class Module implements ModuleDefinitionInterface
+{
+    /**
+     * Register a specific autoloader for the module
+     */
+    public function registerAutoloaders(DiInterface $di = null)
+    {
+        $loader = new Loader();
+
+        $loader-&gt;registerNamespaces(
+            [
+                'Multiple\Backend\Controllers' =&gt; '../apps/backend/controllers/',
+                'Multiple\Backend\Models'      =&gt; '../apps/backend/models/',
+            ]
+        );
+
+        $loader-&gt;register();
+    }
+
+    /**
+     * Register specific services for the module
+     */
+    public function registerServices(DiInterface $di)
+    {
+        // Registering a dispatcher
+        $di-&gt;set(
+            'dispatcher',
+            function () {
+                $dispatcher = new Dispatcher();
+
+                $dispatcher-&gt;setDefaultNamespace('Multiple\Backend\Controllers');
+
+                return $dispatcher;
+            }
+        );
+
+        // Registering the view component
+        $di-&gt;set(
+            'view',
+            function () {
+                $view = new View();
+
+                $view-&gt;setViewsDir('../apps/backend/views/');
+
+                return $view;
+            }
+        );
+    }
+}
+</code></pre>
+
+<p>A special bootstrap file is required to load a multi-module MVC architecture:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router;
+use Phalcon\Mvc\Application;
+use Phalcon\Di\FactoryDefault;
+
+$di = new FactoryDefault();
+
+// Specify routes for modules
+$di-&gt;set(
+    'router',
+    function () {
+        $router = new Router();
+
+        $router-&gt;setDefaultModule('frontend');
+
+        $router-&gt;add(
+            '/login',
+            [
+                'module'     =&gt; 'backend',
+                'controller' =&gt; 'login',
+                'action'     =&gt; 'index',
+            ]
+        );
+
+        $router-&gt;add(
+            '/admin/products/:action',
+            [
+                'module'     =&gt; 'backend',
+                'controller' =&gt; 'products',
+                'action'     =&gt; 1,
+            ]
+        );
+
+        $router-&gt;add(
+            '/products/:action',
+            [
+                'controller' =&gt; 'products',
+                'action'     =&gt; 1,
+            ]
+        );
+
+        return $router;
+    }
+);
+
+// Create an application
+$application = new Application($di);
+
+// Register the installed modules
+$application-&gt;registerModules(
+    [
+        'frontend' =&gt; [
+            'className' =&gt; 'Multiple\Frontend\Module',
+            'path'      =&gt; '../apps/frontend/Module.php',
+        ],
+        'backend'  =&gt; [
+            'className' =&gt; 'Multiple\Backend\Module',
+            'path'      =&gt; '../apps/backend/Module.php',
+        ]
+    ]
+);
+
+try {
+    // Handle the request
+    $response = $application-&gt;handle();
+
+    $response-&gt;send();
+} catch (\Exception $e) {
+    echo $e-&gt;getMessage();
+}
+</code></pre>
+
+<p>If you want to maintain the module configuration in the bootstrap file you can use an anonymous function to register the module:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+
+// Creating a view component
+$view = new View();
+
+// Set options to view component
+// ...
+
+// Register the installed modules
+$application-&gt;registerModules(
+    [
+        'frontend' =&gt; function ($di) use ($view) {
+            $di-&gt;setShared(
+                'view',
+                function () use ($view) {
+                    $view-&gt;setViewsDir('../apps/frontend/views/');
+
+                    return $view;
+                }
+            );
+        },
+        'backend' =&gt; function ($di) use ($view) {
+            $di-&gt;setShared(
+                'view',
+                function () use ($view) {
+                    $view-&gt;setViewsDir('../apps/backend/views/');
+
+                    return $view;
+                }
+            );
+        }
+    ]
+);
+</code></pre>
+
+<p>When <a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a> have modules registered, always is necessary that every matched route returns a valid module. Each registered module has an associated class offering functions to set the module itself up. Each module class definition must implement two methods: <code>registerAutoloaders()</code> and <code>registerServices()</code>, they will be called by <a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a> according to the module to be executed.</p>
+
+<p><a name="events"></a></p>
+
+<h2 id="application-events">Application Events</h2>
+
+<p><a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a> is able to send events to the <a href="/3.4/en/events">EventsManager</a> (if it is present). Events are triggered using the type <code>application</code>. The following events are supported:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event Name</th>
+      <th>Triggered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>boot</code></td>
+      <td>Executed when the application handles its first request</td>
+    </tr>
+    <tr>
+      <td><code>beforeStartModule</code></td>
+      <td>Before initialize a module, only when modules are registered</td>
+    </tr>
+    <tr>
+      <td><code>afterStartModule</code></td>
+      <td>After initialize a module, only when modules are registered</td>
+    </tr>
+    <tr>
+      <td><code>beforeHandleRequest</code></td>
+      <td>Before execute the dispatch loop</td>
+    </tr>
+    <tr>
+      <td><code>afterHandleRequest</code></td>
+      <td>After execute the dispatch loop</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following example demonstrates how to attach listeners to this component:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+
+$eventsManager = new EventsManager();
+
+$application-&gt;setEventsManager($eventsManager);
+
+$eventsManager-&gt;attach(
+    'application',
+    function (Event $event, $application) {
+        // ...
+    }
+);
+</code></pre>
+
+<p><a name="resources"></a></p>
+
+<h2 id="external-resources">External Resources</h2>
+
+<ul>
+  <li><a href="https://github.com/phalcon/mvc">MVC examples on Github</a></li>
+</ul>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

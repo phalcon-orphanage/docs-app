@@ -1,0 +1,1594 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="it-it" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="it-it" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="it-it" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/it-it/cache.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/it-it">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/cache" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/it-it/cache" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/it-it/cache" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/it-it/cache" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/it-it/cache" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/it-it/cache" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/cache">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/it-it/cache">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/it-it/cache">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/it-it/cache">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/it-it/cache">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/it-it/cache">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/it-it">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="improving-performance-with-cache">Improving Performance with Cache</h1>
+
+<p>Phalcon provides the <code>Phalcon\Cache</code> class allowing faster access to frequently used or already processed data. <code>Phalcon\Cache</code> is written in C, achieving higher performance and reducing the overhead when getting items from the backends. This class uses an internal structure of frontend and backend components. Front-end components act as input sources or interfaces, while backend components offer storage options to the class.</p>
+
+<p><a name="implementation"></a></p>
+
+<h2 id="when-to-implement-cache">When to implement cache?</h2>
+
+<p>Although this component is very fast, implementing it in cases that are not needed could lead to a loss of performance rather than gain. We recommend you check this cases before using a cache:</p>
+
+<ul>
+  <li>You are making complex calculations that every time return the same result (changing infrequently)</li>
+  <li>You are using a lot of helpers and the output generated is almost always the same</li>
+  <li>You are accessing database data constantly and these data rarely change</li>
+</ul>
+
+<div class="alert alert-warning">
+    <p>
+        <strong>NOTE</strong> Even after implementing the cache, you should check the hit ratio of your cache over a period of time. This can easily be done, especially in the case of Memcache or Apc, with the relevant tools that the backends provide.
+    </p>
+</div>
+
+<p><a name="caching-behavior"></a></p>
+
+<h2 id="caching-behavior">Caching Behavior</h2>
+
+<p>The caching process is divided into 2 parts:</p>
+
+<ul>
+  <li><strong>Frontend</strong>: This part is responsible for checking if a key has expired and perform additional transformations to the data before storing and after retrieving them from the backend-</li>
+  <li><strong>Backend</strong>: This part is responsible for communicating, writing/reading the data required by the frontend.</li>
+</ul>
+
+<p><a name="factory"></a></p>
+
+<h2 id="factory">Factory</h2>
+
+<p>Instantiating frontend or backend adapters can be achieved by two ways:</p>
+
+<p>Traditional way</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Cache\Backend\File as BackFile;
+use Phalcon\Cache\Frontend\Data as FrontData;
+
+// Create an Output frontend. Cache the files for 2 days
+$frontCache = new FrontData(
+    [
+        'lifetime' =&gt; 172800,
+    ]
+);
+
+// Create the component that will cache from the 'Output' to a 'File' backend
+// Set the cache file directory - it's important to keep the '/' at the end of
+// the value for the folder
+$cache = new BackFile(
+    $frontCache,
+    [
+        'cacheDir' =&gt; '../app/cache/',
+    ]
+);
+</code></pre>
+
+<p>or using the Factory object as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Cache\Frontend\Factory as FFactory;
+use Phalcon\Cache\Backend\Factory as BFactory;
+
+ $options = [
+     'lifetime' =&gt; 172800,
+     'adapter'  =&gt; 'data',
+ ];
+ $frontendCache = FFactory::load($options);
+
+
+$options = [
+    'cacheDir' =&gt; '../app/cache/',
+    'prefix'   =&gt; 'app-data',
+    'frontend' =&gt; $frontendCache,
+    'adapter'  =&gt; 'file',
+];
+
+$backendCache = BFactory::load($options);
+</code></pre>
+
+<p><a name="output-fragments"></a></p>
+
+<h2 id="caching-output-fragments">Caching Output Fragments</h2>
+
+<p>An output fragment is a piece of HTML or text that is cached as is and returned as is. The output is automatically captured from the <code>ob_*</code> functions or the PHP output so that it can be saved in the cache. The following example demonstrates such usage. It receives the output generated by PHP and stores it into a file. The contents of the file are refreshed every 172,800 seconds (2 days).</p>
+
+<p>The implementation of this caching mechanism allows us to gain performance by not executing the helper <code>Phalcon\Tag::linkTo()</code> call whenever this piece of code is called.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Tag;
+use Phalcon\Cache\Backend\File as BackFile;
+use Phalcon\Cache\Frontend\Output as FrontOutput;
+
+// Create an Output frontend. Cache the files for 2 days
+$frontCache = new FrontOutput(
+    [
+        'lifetime' =&gt; 172800,
+    ]
+);
+
+// Create the component that will cache from the 'Output' to a 'File' backend
+// Set the cache file directory - it's important to keep the '/' at the end of
+// the value for the folder
+$cache = new BackFile(
+    $frontCache,
+    [
+        'cacheDir' =&gt; '../app/cache/',
+    ]
+);
+
+// Get/Set the cache file to ../app/cache/my-cache.html
+$content = $cache-&gt;start('my-cache.html');
+
+// If $content is null then the content will be generated for the cache
+if ($content === null) {
+    // Print date and time
+    echo date('r');
+
+    // Generate a link to the sign-up action
+    echo Tag::linkTo(
+        [
+            'user/signup',
+            'Sign Up',
+            'class' =&gt; 'signup-button',
+        ]
+    );
+
+    // Store the output into the cache file
+    $cache-&gt;save();
+} else {
+    // Echo the cached output
+    echo $content;
+}
+</code></pre>
+
+<div class="alert alert-warning">
+    <p>
+        <strong>NOTE</strong> In the example above, our code remains the same, echoing output to the user as it has been doing before. Our cache component transparently captures that output and stores it in the cache file (when the cache is generated) or it sends it back to the user pre-compiled from a previous call, thus avoiding expensive operations.
+    </p>
+</div>
+
+<p><a name="arbitrary-data"></a></p>
+
+<h2 id="caching-arbitrary-data">Caching Arbitrary Data</h2>
+
+<p>Caching just data is equally important for your application. Caching can reduce database load by reusing commonly used (but not updated) data, thus speeding up your application.</p>
+
+<p><a name="backend-file-example"></a></p>
+
+<h3 id="file-backend-example">File Backend Example</h3>
+
+<p>One of the caching adapters is <code>File</code>. The only key area for this adapter is the location of where the cache files will be stored. This is controlled by the <code>cacheDir</code> option which <em>must</em> have a backslash at the end of it.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Cache\Backend\File as BackFile;
+use Phalcon\Cache\Frontend\Data as FrontData;
+
+// Cache the files for 2 days using a Data frontend
+$frontCache = new FrontData(
+    [
+        'lifetime' =&gt; 172800,
+    ]
+);
+
+// Create the component that will cache 'Data' to a 'File' backend
+// Set the cache file directory - important to keep the `/` at the end of
+// the value for the folder
+$cache = new BackFile(
+    $frontCache,
+    [
+        'cacheDir' =&gt; '../app/cache/',
+    ]
+);
+
+$cacheKey = 'robots_order_id.cache';
+
+// Try to get cached records
+$robots = $cache-&gt;get($cacheKey);
+
+if ($robots === null) {
+    // $robots is null because of cache expiration or data does not exist
+    // Make the database call and populate the variable
+    $robots = Robots::find(
+        [
+            'order' =&gt; 'id',
+        ]
+    );
+
+    // Store it in the cache
+    $cache-&gt;save($cacheKey, $robots);
+}
+
+// Use $robots :)
+foreach ($robots as $robot) {
+   echo $robot-&gt;name, '\n';
+}
+</code></pre>
+
+<p><a name="backend-memcached-example"></a></p>
+
+<h3 id="memcached-backend-example">Memcached Backend Example</h3>
+
+<p>The above example changes slightly (especially in terms of configuration) when we are using a Memcached backend.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Cache\Frontend\Data as FrontData;
+use Phalcon\Cache\Backend\Libmemcached as BackMemCached;
+
+// Cache data for one hour
+$frontCache = new FrontData(
+    [
+        'lifetime' =&gt; 3600,
+    ]
+);
+
+// Create the component that will cache 'Data' to a 'Memcached' backend
+// Memcached connection settings
+$cache = new BackMemCached(
+    $frontCache,
+    [
+        'servers' =&gt; [
+            [
+                'host'   =&gt; '127.0.0.1',
+                'port'   =&gt; '11211',
+                'weight' =&gt; '1',
+            ]
+        ]
+    ]
+);
+
+$cacheKey = 'robots_order_id.cache';
+
+// Try to get cached records
+$robots = $cache-&gt;get($cacheKey);
+
+if ($robots === null) {
+    // $robots is null because of cache expiration or data does not exist
+    // Make the database call and populate the variable
+    $robots = Robots::find(
+        [
+            'order' =&gt; 'id',
+        ]
+    );
+
+    // Store it in the cache
+    $cache-&gt;save($cacheKey, $robots);
+}
+
+// Use $robots :)
+foreach ($robots as $robot) {
+   echo $robot-&gt;name, '\n';
+}
+</code></pre>
+
+<div class="alert alert-warning">
+    <p>
+        <strong>NOTE</strong> Calling <code>save()</code> will return a boolean, indicating success (<code>true</code>) or failure (<code>false</code>). Depending on the backend that you use, you will need to look at the relevant logs to identify failures.
+    </p>
+</div>
+
+<p><a name="read"></a></p>
+
+<h2 id="querying-the-cache">Querying the cache</h2>
+
+<p>The elements added to the cache are uniquely identified by a key. In the case of the File backend, the key is the actual filename. To retrieve data from the cache, we just have to call it using the unique key. If the key does not exist, the get method will return null.</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Retrieve products by key 'myProducts'
+$products = $cache-&gt;get('myProducts');
+</code></pre>
+
+<p>If you want to know which keys are stored in the cache you could call the <code>queryKeys</code> method:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Query all keys used in the cache
+$keys = $cache-&gt;queryKeys();
+
+foreach ($keys as $key) {
+    $data = $cache-&gt;get($key);
+
+    echo 'Key=', $key, ' Data=', $data;
+}
+
+// Query keys in the cache that begins with 'my-prefix'
+$keys = $cache-&gt;queryKeys('my-prefix');
+</code></pre>
+
+<p><a name="delete"></a></p>
+
+<h2 id="deleting-data-from-the-cache">Deleting data from the cache</h2>
+
+<p>There are times where you will need to forcibly invalidate a cache entry (due to an update in the cached data). The only requirement is to know the key that the data have been stored with.</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Delete an item with a specific key
+$cache-&gt;delete('someKey');
+
+$keys = $cache-&gt;queryKeys();
+
+// Delete all items from the cache
+foreach ($keys as $key) {
+    $cache-&gt;delete($key);
+}
+</code></pre>
+
+<p><a name="exists"></a></p>
+
+<h2 id="checking-cache-existence">Checking cache existence</h2>
+
+<p>It is possible to check if a cache already exists with a given key:</p>
+
+<pre><code class="language-php">&lt;?php
+
+if ($cache-&gt;exists('someKey')) {
+    echo $cache-&gt;get('someKey');
+} else {
+    echo 'Cache does not exists!';
+}
+</code></pre>
+
+<p><a name="lifetime"></a></p>
+
+<h2 id="lifetime">Lifetime</h2>
+
+<p>A <code>lifetime</code> is a time in seconds that a cache could live without expire. By default, all the created caches use the lifetime set in the frontend creation. You can set a specific lifetime in the creation or retrieving of the data from the cache:</p>
+
+<p>Setting the lifetime when retrieving:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$cacheKey = 'my.cache';
+
+// Setting the cache when getting a result
+$robots = $cache-&gt;get($cacheKey, 3600);
+
+if ($robots === null) {
+    $robots = 'some robots';
+
+    // Store it in the cache
+    $cache-&gt;save($cacheKey, $robots);
+}
+</code></pre>
+
+<p>Setting the lifetime when saving:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$cacheKey = 'my.cache';
+
+$robots = $cache-&gt;get($cacheKey);
+
+if ($robots === null) {
+    $robots = 'some robots';
+
+    // Setting the cache when saving data
+    $cache-&gt;save($cacheKey, $robots, 3600);
+}
+</code></pre>
+
+<p><a name="multi-level"></a></p>
+
+<h2 id="multi-level-cache">Multi-Level Cache</h2>
+
+<p>This feature of the cache component, allows the developer to implement a multi-level cache. This new feature is very useful because you can save the same data in several cache locations with different lifetimes, reading first from the one with the faster adapter and ending with the slowest one until the data expires:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Cache\Multiple;
+use Phalcon\Cache\Backend\Apc as ApcCache;
+use Phalcon\Cache\Backend\File as FileCache;
+use Phalcon\Cache\Frontend\Data as DataFrontend;
+use Phalcon\Cache\Backend\Memcache as MemcacheCache;
+
+$ultraFastFrontend = new DataFrontend(
+    [
+        'lifetime' =&gt; 3600,
+    ]
+);
+
+$fastFrontend = new DataFrontend(
+    [
+        'lifetime' =&gt; 86400,
+    ]
+);
+
+$slowFrontend = new DataFrontend(
+    [
+        'lifetime' =&gt; 604800,
+    ]
+);
+
+// Backends are registered from the fastest to the slower
+$cache = new Multiple(
+    [
+        new ApcCache(
+            $ultraFastFrontend,
+            [
+                'prefix' =&gt; 'cache',
+            ]
+        ),
+        new MemcacheCache(
+            $fastFrontend,
+            [
+                'prefix' =&gt; 'cache',
+                'host'   =&gt; 'localhost',
+                'port'   =&gt; '11211',
+            ]
+        ),
+        new FileCache(
+            $slowFrontend,
+            [
+                'prefix'   =&gt; 'cache',
+                'cacheDir' =&gt; '../app/cache/',
+            ]
+        ),
+    ]
+);
+
+// Save, saves in every backend
+$cache-&gt;save('my-key', $data);
+</code></pre>
+
+<p><a name="adapters-frontend"></a></p>
+
+<h2 id="frontend-adapters">Frontend Adapters</h2>
+
+<p>The available frontend adapters that are used as interfaces or input sources to the cache are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adapter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Frontend_Output">Phalcon\Cache\Frontend\Output</a></td>
+      <td>Read input data from standard PHP output.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Frontend_Data">Phalcon\Cache\Frontend\Data</a></td>
+      <td>It’s used to cache any kind of PHP data (big arrays, objects, text, etc). Data is serialized before stored in the backend.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Frontend_Base64">Phalcon\Cache\Frontend\Base64</a></td>
+      <td>It’s used to cache binary data. The data is serialized using <code>base64_encode</code> before be stored in the backend.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Frontend_Json">Phalcon\Cache\Frontend\Json</a></td>
+      <td>Data is encoded in JSON before be stored in the backend. Decoded after be retrieved. This frontend is useful to share data with other languages or frameworks.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Frontend_Igbinary">Phalcon\Cache\Frontend\Igbinary</a></td>
+      <td>It’s used to cache any kind of PHP data (big arrays, objects, text, etc). Data is serialized using <code>Igbinary</code> before be stored in the backend.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Frontend_None">Phalcon\Cache\Frontend\None</a></td>
+      <td>It’s used to cache any kind of PHP data without serializing them.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="adapters-frontend-custom"></a></p>
+
+<h3 id="implementing-your-own-frontend-adapters">Implementing your own Frontend adapters</h3>
+
+<p>The <a href="api/Phalcon_Cache_FrontendInterface">Phalcon\Cache\FrontendInterface</a> interface must be implemented in order to create your own frontend adapters or extend the existing ones.</p>
+
+<p><a name="adapters-backend"></a></p>
+
+<h2 id="backend-adapters">Backend Adapters</h2>
+
+<p>The backend adapters available to store cache data are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Adapter</th>
+      <th>Description</th>
+      <th>Info</th>
+      <th>Required Extensions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Backend_Apc">Phalcon\Cache\Backend\Apc</a></td>
+      <td>Stores data to the Alternative PHP Cache (APC).</td>
+      <td><a href="http://php.net/apc">APC</a></td>
+      <td><a href="http://pecl.php.net/package/APC">APC</a></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Cache\Backend\Apcu</code></td>
+      <td>Stores data to the APCu (APC without opcode caching)</td>
+      <td><a href="http://php.net/apcu">APCu</a></td>
+      <td><a href="http://pecl.php.net/package/APCu">APCu</a></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Backend_File">Phalcon\Cache\Backend\File</a></td>
+      <td>Stores data to local plain files.</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Backend_Libmemcached">Phalcon\Cache\Backend\Libmemcached</a></td>
+      <td>Stores data to a memcached server.</td>
+      <td><a href="http://www.php.net/memcached">Memcached</a></td>
+      <td><a href="http://pecl.php.net/package/memcached">Memcached</a></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Backend_Memcache">Phalcon\Cache\Backend\Memcache</a></td>
+      <td>Stores data to a memcached server.</td>
+      <td><a href="http://www.php.net/memcache">Memcache</a></td>
+      <td><a href="http://pecl.php.net/package/memcache">Memcache</a></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Backend_Memory">Phalcon\Cache\Backend\Memory</a></td>
+      <td>Stores data in memory</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Backend_Mongo">Phalcon\Cache\Backend\Mongo</a></td>
+      <td>Stores data to Mongo Database.</td>
+      <td><a href="http://mongodb.org/">MongoDB</a></td>
+      <td><a href="http://mongodb.org/">Mongo</a></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Backend_Redis">Phalcon\Cache\Backend\Redis</a></td>
+      <td>Stores data in Redis.</td>
+      <td><a href="http://redis.io/">Redis</a></td>
+      <td><a href="http://pecl.php.net/package/redis">Redis</a></td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Cache_Backend_Xcache">Phalcon\Cache\Backend\Xcache</a></td>
+      <td>Stores data in XCache.</td>
+      <td><a href="http://xcache.lighttpd.net/">XCache</a></td>
+      <td><a href="http://pecl.php.net/package/xcache">XCache</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="note-in-php-7-to-use-phalcon-apc-based-adapter-classes-you-needed-to-install-apcu-and-apcu_bc-package-from-pecl-now-in-phalcon-340-you-can-switch-your-emapc-classes-to-emapcu-and-remove-apcu_bc-keep-in-mind-that-in-phalcon-4-we-will-most-likely-remove-all-apc-classes-alertalert-warning"><strong>NOTE</strong> In PHP 7 to use phalcon <code>apc</code> based adapter classes you needed to install <code>apcu</code> and <code>apcu_bc</code> package from pecl. Now in Phalcon 3.4.0 you can switch your <code>&lt;em&gt;\Apc</code> classes to <code>&lt;/em&gt;\Apcu</code> and remove <code>apcu_bc</code>. Keep in mind that in Phalcon 4 we will most likely remove all <code>*\Apc</code> classes. {.alert.alert-warning}</h5>
+
+<p><a name="adapters-backend-factory"></a></p>
+
+<h3 id="factory-1">Factory</h3>
+
+<p>There are many backend adapters (see <a href="#adapters-backend">Backend Adapters</a>). The one you use will depend on the needs of your application. The following example loads the Backend Cache Adapter class using <code>adapter</code> option, if frontend will be provided as array it will call Frontend Cache Factory</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Cache\Backend\Factory;
+use Phalcon\Cache\Frontend\Data;
+
+$options = [
+    'prefix'   =&gt; 'app-data',
+    'frontend' =&gt; new Data(),
+    'adapter'  =&gt; 'apc',
+];
+$backendCache = Factory::load($options);
+</code></pre>
+
+<p><a name="adapters-backend-custom"></a></p>
+
+<h3 id="implementing-your-own-backend-adapters">Implementing your own Backend adapters</h3>
+
+<p>The <a href="api/Phalcon_Cache_BackendInterface">Phalcon\Cache\BackendInterface</a> interface must be implemented in order to create your own backend adapters or extend the existing ones.</p>
+
+<p><a name="adapters-backend-file"></a></p>
+
+<h3 id="file-backend-options">File Backend Options</h3>
+
+<p>This backend will store cached content into files in the local server. The available options for this backend are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>prefix</code></td>
+      <td>A prefix that is automatically prepended to the cache keys.</td>
+    </tr>
+    <tr>
+      <td><code>cacheDir</code></td>
+      <td>A writable directory on which cached files will be placed.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="adapters-backend-libmemcached"></a></p>
+
+<h3 id="libmemcached-backend-options">Libmemcached Backend Options</h3>
+
+<p>This backend will store cached content on a memcached server. Per default persistent memcached connection pools are used. The available options for this backend are:</p>
+
+<p><strong>General options</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>statsKey</code></td>
+      <td>Used to tracking of cached keys.</td>
+    </tr>
+    <tr>
+      <td><code>prefix</code></td>
+      <td>A prefix that is automatically prepended to the cache keys.</td>
+    </tr>
+    <tr>
+      <td><code>persistent_id</code></td>
+      <td>To create an instance that persists between requests, use <code>persistent_id</code> to specify a unique ID for the instance.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Servers options</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>host</code></td>
+      <td>The <code>memcached</code> host.</td>
+    </tr>
+    <tr>
+      <td><code>port</code></td>
+      <td>The <code>memcached</code> port.</td>
+    </tr>
+    <tr>
+      <td><code>weight</code></td>
+      <td>The weight parameter effects the consistent hashing used to determine which server to read/write keys from.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Client options</strong></p>
+
+<p>Used for setting Memcached options. See <a href="http://php.net/manual/en/memcached.setoptions.php">Memcached::setOptions</a> for more.</p>
+
+<p><strong>Example</strong></p>
+
+<pre><code class="language-php">&lt;?php
+use Phalcon\Cache\Backend\Libmemcached;
+use Phalcon\Cache\Frontend\Data as FrontData;
+
+// Cache data for 2 days
+$frontCache = new FrontData(
+    [
+        'lifetime' =&gt; 172800,
+    ]
+);
+
+// Create the Cache setting memcached connection options
+$cache = new Libmemcached(
+    $frontCache,
+    [
+        'servers' =&gt; [
+            [
+                'host'   =&gt; '127.0.0.1',
+                'port'   =&gt; 11211,
+                'weight' =&gt; 1,
+            ],
+        ],
+        'client' =&gt; [
+            \Memcached::OPT_HASH       =&gt; \Memcached::HASH_MD5,
+            \Memcached::OPT_PREFIX_KEY =&gt; 'prefix.',
+        ],
+        'persistent_id' =&gt; 'my_app_cache',
+    ]
+);
+</code></pre>
+
+<p><a name="adapters-backend-memcache"></a></p>
+
+<h3 id="memcache-backend-options">Memcache Backend Options</h3>
+
+<p>This backend will store cached content on a memcached server. The available options for this backend are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>prefix</code></td>
+      <td>A prefix that is automatically prepended to the cache keys.</td>
+    </tr>
+    <tr>
+      <td><code>host</code></td>
+      <td>The memcached host.</td>
+    </tr>
+    <tr>
+      <td><code>port</code></td>
+      <td>The memcached port.</td>
+    </tr>
+    <tr>
+      <td><code>persistent</code></td>
+      <td>Create a persistent connection to memcached?</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="adapters-backend-apc"></a></p>
+
+<h3 id="apc-backend-options">APC Backend Options</h3>
+
+<p>This backend will store cached content on Alternative PHP Cache (<a href="http://php.net/apc">APC</a>). The available options for this backend are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>prefix</code></td>
+      <td>A prefix that is automatically prepended to the cache keys.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="adapters-backend-apcu"></a></p>
+
+<h3 id="apcu-backend-options">APCU Backend Options</h3>
+
+<p>This backend will store cached content on Alternative PHP Cache (<a href="http://php.net/apcu">APCU</a>). The available options for this backend are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>prefix</code></td>
+      <td>A prefix that is automatically prepended to the cache keys.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="adapters-backend-mongo"></a></p>
+
+<h3 id="mongo-backend-options">Mongo Backend Options</h3>
+
+<p>This backend will store cached content on a MongoDB server (<a href="http://mongodb.org/">MongoDB</a>). The available options for this backend are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>prefix</code></td>
+      <td>A prefix that is automatically prepended to the cache keys.</td>
+    </tr>
+    <tr>
+      <td><code>server</code></td>
+      <td>A MongoDB connection string.</td>
+    </tr>
+    <tr>
+      <td><code>db</code></td>
+      <td>Mongo database name.</td>
+    </tr>
+    <tr>
+      <td><code>collection</code></td>
+      <td>Mongo collection in the database.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="adapters-backend-xcache"></a></p>
+
+<h3 id="xcache-backend-options">XCache Backend Options</h3>
+
+<p>This backend will store cached content on XCache (<a href="http://xcache.lighttpd.net/">XCache</a>). The available options for this backend are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>prefix</code></td>
+      <td>A prefix that is automatically prepended to the cache keys.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="adapters-backend-redis"></a></p>
+
+<h3 id="redis-backend-options">Redis Backend Options</h3>
+
+<p>This backend will store cached content on a Redis server (<a href="http://redis.io/">Redis</a>). The available options for this backend are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>prefix</code></td>
+      <td>A prefix that is automatically prepended to the cache keys.</td>
+    </tr>
+    <tr>
+      <td><code>host</code></td>
+      <td>Redis host.</td>
+    </tr>
+    <tr>
+      <td><code>port</code></td>
+      <td>Redis port.</td>
+    </tr>
+    <tr>
+      <td><code>auth</code></td>
+      <td>Password to authenticate to a password-protected Redis server.</td>
+    </tr>
+    <tr>
+      <td><code>persistent</code></td>
+      <td>Create a persistent connection to Redis.</td>
+    </tr>
+    <tr>
+      <td><code>index</code></td>
+      <td>The index of the Redis database to use.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>There are more adapters available for this components in the <a href="https://github.com/phalcon/incubator">Phalcon Incubator</a></p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

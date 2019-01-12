@@ -1,0 +1,1385 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="es-es" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="es-es" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es-es" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/es-es/tutorial-base.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/es-es">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/tutorial-base" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/es-es/tutorial-base" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/es-es/tutorial-base" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/es-es/tutorial-base" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/es-es/tutorial-base" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/es-es/tutorial-base" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/tutorial-base">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/es-es/tutorial-base">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/es-es/tutorial-base">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/es-es/tutorial-base">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/es-es/tutorial-base">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/es-es/tutorial-base">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/es-es">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="basic"></a></p>
+
+<h1 id="tutorial---básico">Tutorial - básico</h1>
+
+<p>A lo largo de este tutorial, lo guiaremos a través de la creación de una aplicación con un formulario simple de registro comenzando desde cero. La siguiente guía es proporcionada para presentarle aspectos de diseño del framework Phalcon.</p>
+
+<p>Este tutorial cubre la implementación de una aplicación MVC simple, que muestra qué tan rápido y fácil se puede hacerla con Phalcon. Este tutorial lo ayudará a comenzar y a crear una aplicación que puede ampliar para satisfacer muchas necesidades. El código en este tutorial también se puede utilizar como área de juegos para aprender otros conceptos e ideas específicas de Phalcon.</p>
+
+<div class="alert alert-info">
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/75W-emM4wNQ" frameborder="0" allowfullscreen=""></iframe>
+    </p>
+</div>
+
+<p>If you just want to get started you can skip this and create a Phalcon project automatically with our <a href="/3.4/en/devtools-usage">developer tools</a>. (Se recomienda que si no han tenido experiencia o te quedas atascado, vuelvas aquí)</p>
+
+<p>La mejor manera de utilizar esta guía es seguirla y tratar de divertirse. Usted puede obtener el código completo <a href="https://github.com/phalcon/tutorial">aquí</a>. Si quedas atrapado en algún problema que no puedes resolver, por favor, visítenos en <a href="https://phalcon.link/discord">Discord</a> o en nuestro <a href="https://phalcon.link/forum">Foro</a>.</p>
+
+<p><a name="file-structure"></a></p>
+
+<h2 id="estructura-de-archivos">Estructura de archivos</h2>
+
+<p>Una característica clave de Phalcon es ser débilmente acoplado, usted puede construir un proyecto Phalcon con una estructura de directorios que sea conveniente para su aplicación. Dicho esto, cierta uniformidad es útil cuando colabora con otros, por lo que este tutorial utiliza una estructura “Estándar” donde debe sentirse como en casa si han trabajado con otros MVC en el pasado.</p>
+
+<pre><code class="language-text">.
+└── tutorial
+    ├── app
+    │   ├── controllers
+    │   │   ├── IndexController.php
+    │   │   └── SignupController.php
+    │   ├── models
+    │   │   └── Users.php
+    │   └── views
+    └── public
+        ├── css
+        ├── img
+        ├── index.php
+        └── js
+</code></pre>
+
+<div class="alert alert-warning">
+    <p>
+        Nota: Usted no verá un directorio `vendor` ya que todas las dependencias del núcleo de Phalcon se cargan en la memoria a través de la extensión de Phalcon, que usted debe tener instalada. If you missed that part have not installed the Phalcon extension [please go back](/3.4/en/installation) and finish the installation before continuing.
+    </p>
+</div>
+
+<p>If this is all brand new it is recommended that you install the <a href="/3.4/en/devtools-installation">Phalcon Devtools</a> since it leverages PHP’s built-in server you to get your app running without having to configure a web server by adding this <a href="https://github.com/phalcon/phalcon-devtools/blob/master/templates/.htrouter.php">.htrouter</a> to the root of your project.</p>
+
+<p>Otherwise if you want to use Nginx here are some additional setup <a href="/3.4/en/webserver-setup#nginx">here</a>.</p>
+
+<p>Apache can also be used with these additional setup <a href="/3.4/en/webserver-setup#apache">here</a>.</p>
+
+<p>Finally, if you flavor is Cherokee use the setup <a href="/3.4/en/webserver-setup#cherokee">here</a>.</p>
+
+<p><a name="bootstrap"></a></p>
+
+<h2 id="manos-a-la-obra">Manos a la obra</h2>
+
+<p>El primer archivo que necesitas crear es el archivo bootstrap. Este archivo actúa como el punto de entrada y configuración de la aplicación. En este archivo puedes implementar la inicialización de componentes, así como el comportamiento de la aplicación.</p>
+
+<p>Este archivo gestiona 3 cosas:</p>
+
+<ul>
+  <li>Registro de componente cargadores automáticos</li>
+  <li>Configuración de servicios y luego registrarlos en el contenedor de Inyección de dependencias</li>
+  <li>Resolución de las solicitudes HTTP de la aplicación</li>
+</ul>
+
+<p><a name="autoloaders"></a></p>
+
+<h3 id="cargadores-automáticos">Cargadores automáticos</h3>
+
+<p>Los Cargadores Automáticos utilizan un cargador de archivos compatible con <a href="http://www.php-fig.org/psr/psr-4/">PSR-4</a> a través de Phalcon. Otras cosas que se deben agregar al autocargador son sus controladores y modelos. Puede registrar directorios donde se buscarán archivos del namespace de la aplicación. If you want to read about other ways that you can use autoloaders head <a href="/3.4/en/loader#overview">here</a>.</p>
+
+<p>To start, lets register our app’s <code>controllers</code> and <code>models</code> directories. Don’t forget to include the loader from <code>Phalcon\Loader</code>.</p>
+
+<p><code>public/index.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Loader;
+
+// Definimos algunas rutas absolutas en constantes para localizar los recursos
+define('BASE_PATH', dirname(__DIR__));
+define('APP_PATH', BASE_PATH . '/app');
+// ...
+
+$loader = new Loader();
+
+$loader-&gt;registerDirs(
+    [
+        APP_PATH . '/controllers/',
+        APP_PATH . '/models/',
+    ]
+);
+
+$loader-&gt;register();
+</code></pre>
+
+<p><a name="dependency-management"></a></p>
+
+<h3 id="gestión-de-dependencias">Gestión de dependencias</h3>
+
+<p>Debido a que Phalcon esta débilmente acoplado los servicios se registran con el Gestor de Dependencias del framework, por lo que puede ser inyectados automáticamente a componentes y servicios que estén integrados en el contenedor de <a href="https://en.wikipedia.org/wiki/Inversion_of_control">IoC</a>. Con frecuencia se encontrará el término DI que hace referencia a Inyección de Dependencias. La Inyección de Dependencia y la Inversión de Control (IoC) pueden parecer una característica compleja, pero en Phalcon su uso es muy simple y práctico. Contenedor IoC de Phalcon consta de los siguientes conceptos:</p>
+
+<ul>
+  <li>Contenedor de servicio: una bolsa donde almacenamos globalmente los servicios que nuestra aplicación usará para funcionar.</li>
+  <li>Servicio o Componente: objeto de procesamiento de datos que será inyectado en los componentes</li>
+</ul>
+
+<p>Cada vez que el marco requiera un componente o servicio, solicitará el contenedor utilizando un nombre acordado para el servicio. No se olvide de incluir <code>Phalcon\Di</code> con la configuración del contenedor de servicio.</p>
+
+<div class="alert alert-warning">
+    <p>
+        Si sigue interesado en más detalles. por favor, consulte este artículo de [Martin Fowler](https://martinfowler.com/articles/injection.html). Also we have [a great tutorial](/3.4/en/di) covering many use cases.
+    </p>
+</div>
+
+<h3 id="factory-por-defecto">Factory por defecto</h3>
+
+<p>The <a href="api/Phalcon_Di_FactoryDefault">Phalcon\Di\FactoryDefault</a> is a variant of <a href="api/Phalcon_Di">Phalcon\Di</a>. Para facilitar las cosas, registrará automáticamente la mayoría de los componentes que vienen con Phalcon. Le recomendamos que usted registre sus servicios manualmente pero esto se ha incluido para ayudar a reducir la barrera de entrada al acostumbrarse a la gestión de la dependencia. Más tarde, usted puede especificar una vez que se sienta más cómodo con el concepto.</p>
+
+<p>Services can be registered in several ways, but for our tutorial, we’ll use an <a href="http://php.net/manual/en/functions.anonymous.php">anonymous function</a>:</p>
+
+<p><code>public/index.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Di\FactoryDefault;
+
+// ...
+
+// Crear un DI
+$di = new FactoryDefault();
+</code></pre>
+
+<p>En la siguiente parte, registraremos el servicio “vista” indicando el directorio donde el entorno de trabajo encontrará los archivos de las vistas. Como las vistas no corresponden a las clases, no se pueden cargar con un autoloader.</p>
+
+<p><code>public/index.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+
+// ...
+
+// Configurar la vista
+$di-&gt;set(
+    'view',
+    function () {
+        $view = new View();
+        $view-&gt;setViewsDir(APP_PATH . '/views/');
+        return $view;
+    }
+);
+</code></pre>
+
+<p>A continuación, registraremos una URI base para que todas las URIs generadas por Phalcon que coincidan con la ruta base de la aplicación osea “/”. Esto será importante más adelante en este tutorial cuando usemos la clase <code>Phalcon\Tag</code> para generar un hipervínculo.</p>
+
+<p><code>public/index.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Url as UrlProvider;
+
+// ...
+
+// Configuramos el URI base
+$di-&gt;set(
+    'url',
+    function () {
+        $url = new UrlProvider();
+        $url-&gt;setBaseUri('/');
+        return $url;
+    }
+);
+</code></pre>
+
+<p><a name="request"></a></p>
+
+<h3 id="tratar-las-solicitudes-de-la-aplicación">Tratar las solicitudes de la aplicación</h3>
+
+<p>In the last part of this file, we find <a href="api/Phalcon_Mvc_Application">Phalcon\Mvc\Application</a>. Su propósito es inicializar el entorno de la solicitud, rutear la solicitud entrante y luego despachar cualquier acción descubierta; agrega todas las respuestas y las devuelve cuando el proceso se completa.</p>
+
+<p><code>public/index.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Application;
+
+// ...
+
+$application = new Application($di);
+$response = $application-&gt;handle();
+$response-&gt;send();
+</code></pre>
+
+<p><a name="full-example"></a></p>
+
+<h3 id="poniendo-todo-junto">Poniendo todo junto</h3>
+
+<p>El archivo <code>tutorial/public/index.php</code> debería verse como:</p>
+
+<p><code>public/index.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Loader;
+use Phalcon\Mvc\View;
+use Phalcon\Mvc\Application;
+use Phalcon\Di\FactoryDefault;
+use Phalcon\Mvc\Url as UrlProvider;
+
+// Definimos algunas rutas constantes para localizar recursos
+define('BASE_PATH', dirname(__DIR__));
+define('APP_PATH', BASE_PATH . '/app');
+
+// Registramos un autoloader
+$loader = new Loader();
+
+$loader-&gt;registerDirs(
+    [
+        APP_PATH . '/controllers/',
+        APP_PATH . '/models/',
+    ]
+);
+
+$loader-&gt;register();
+
+// Crear un DI
+$di = new FactoryDefault();
+
+// Configurar el componente vista
+$di-&gt;set(
+    'view',
+    function () {
+        $view = new View();
+        $view-&gt;setViewsDir(APP_PATH . '/views/');
+        return $view;
+    }
+);
+
+// Configurar el URI base
+$di-&gt;set(
+    'url',
+    function () {
+        $url = new UrlProvider();
+        $url-&gt;setBaseUri('/');
+        return $url;
+    }
+);
+
+$application = new Application($di);
+
+try {
+    // Gestionar la consulta
+    $response = $application-&gt;handle();
+
+    $response-&gt;send();
+} catch (\Exception $e) {
+    echo 'Excepción: ', $e-&gt;getMessage();
+}
+</code></pre>
+
+<p>Como se puede ver, el archivo de arranque es muy corto y no necesitamos incluir los archivos adicionales. Felicidades has creado una aplicación MVC flexible en menos de 30 líneas de código.</p>
+
+<p><a name="controller"></a></p>
+
+<h2 id="creando-un-controlador">Creando un controlador</h2>
+
+<p>De forma predeterminada, Phalcon buscará un controlador llamado <code>IndexController</code>. Es el punto de partida cuando no se ha añadido ningún controlador o acción en la solicitud. Por ejemplo: <code>http://localhost:8000/</code>. Un <code>IndexController</code> y su <code>IndexAction</code> deben parecerse al siguiente ejemplo:</p>
+
+<p><code>app/controllers/IndexController.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class IndexController extends Controller
+{
+    public function indexAction()
+    {
+        echo '&lt;h1&gt;Hola!&lt;/h1&gt;';
+    }
+}
+</code></pre>
+
+<p>Las clases de controlador deben tener el sufijo <code>Controller</code> y las acciones del controlador deben tener el sufijo <code>Action</code>. Si accede a la aplicación desde su navegador, debería ver algo como esto:</p>
+
+<p><img src="/assets/images/content/tutorial-basic-1.png" alt="" /></p>
+
+<p>¡Felicitaciones! Ahora estás volando con Phalcon.</p>
+
+<p><a name="view"></a></p>
+
+<h2 id="enviando-la-salida-a-una-vista">Enviando la salida a una vista</h2>
+
+<p>Enviar la salida por pantalla es a veces necesario pero no es aceptado como purista asi como la comunidad MVC puede atestiguar. Todo debe ser pasado a la vista, la cual es la responsable de la salida de datos en pantalla. Phalcon buscará una vista con el mismo nombre que la última acción ejecutada dentro de un directorio llamado como el último controlador ejecutado. En nuestro caso (<code>app/views/index/index.phtml</code>):</p>
+
+<p><code>app/views/index/index.phtml</code></p>
+
+<pre><code class="language-php">&lt;?php echo "&lt;h1&gt;Hola!&lt;/h1&gt;";
+</code></pre>
+
+<p>Nuestro controlador (<code>app/controllers/IndexController.php</code>) ahora tiene una definición de acción vacía:</p>
+
+<p><code>app/controllers/IndexController.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class IndexController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+}
+</code></pre>
+
+<p>La salida del navegador debe seguir siendo la misma. El componente estático <code>Phalcon\Mvc\View</code> se crea automáticamente cuando haya terminado la ejecución de la acción. Learn more about views usage <a href="/3.4/en/views">here</a>.</p>
+
+<p><a name="signup-form"></a></p>
+
+<h2 id="diseñar-un-formulario-de-registro">Diseñar un formulario de registro</h2>
+
+<p>Now we will change the <code>index.phtml</code> view file, to add a link to a new controller named “signup”. The goal is to allow users to sign up within our application.</p>
+
+<p><code>app/views/index/index.phtml</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+echo "&lt;h1&gt;Hola!&lt;/h1&gt;";
+
+echo PHP_EOL;
+
+echo PHP_EOL;
+
+echo $this-&gt;tag-&gt;linkTo(
+    'signup',
+    'Registrese Aquí!'
+);
+</code></pre>
+
+<p>El código HTML generado muestra una etiqueta HTML de ancla (<code>&lt;a&gt;</code>) vinculando a un nuevo controlador:</p>
+
+<p><code>app/views/index/index.phtml</code> (renderizado)</p>
+
+<pre><code class="language-html">&lt;h1&gt;Hola!&lt;/h1&gt;
+
+&lt;a href="/signup"&gt;Regístrese aquí!&lt;/a&gt;
+</code></pre>
+
+<p>Para generar la etiqueta usamos la clase <code>Phalcon\Tag</code>. Esta es una clase utilitaria que nos permite crear etiquetas HTML con los convenios del framework en mente. Como esta clase también es un servicio registrado en el DI, usamos <code>$this-&gt;tag</code> para acceder a ella.</p>
+
+<p>A more detailed article regarding HTML generation <a href="/3.4/en/tag">can be found here</a>.</p>
+
+<p><img src="/images/content/tutorial-basic-2.png" alt="" /></p>
+
+<p>Aquí está el controlador de registro (<code>app/controllers/SignupController.php</code>):</p>
+
+<p><code>app/controllers/SignupController.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class SignupController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+}
+</code></pre>
+
+<p>La ausencia de la acción en el index da el pase directo a una vista con la definición de formulario (<code>app/views/signup/index.phtml</code>):</p>
+
+<p><code>app/views/signup/index.phtml</code></p>
+
+<pre><code class="language-html">&lt;h2&gt;Registrarse utilizando este formulario&lt;/h2&gt;
+
+&lt;?php echo $this-&gt;tag-&gt;form("signup/register"); ?&gt;
+
+    &lt;p&gt;
+        &lt;label for="name"&gt;Nombre&lt;/label&gt;
+        &lt;?php echo $this-&gt;tag-&gt;textField("name"); ?&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;label for="email"&gt;E-Mail&lt;/label&gt;
+        &lt;?php echo $this-&gt;tag-&gt;textField("email"); ?&gt;
+    &lt;/p&gt;
+
+    &lt;p&gt;
+        &lt;?php echo $this-&gt;tag-&gt;submitButton("Registrar"); ?&gt;
+    &lt;/p&gt;
+
+&lt;/form&gt;
+</code></pre>
+
+<p>En tu navegador, el formulario debería verse algo como así:</p>
+
+<p><img src="/assets/images/content/tutorial-basic-3.png" alt="" /></p>
+
+<p><a href="api/Phalcon_Tag">Phalcon\Tag</a> also provides useful methods to build form elements.</p>
+
+<p>El método <code>Phalcon\Tag::form()</code> recibe sólo un parámetro, por ejemplo, un URI relativo a un controlador/acción en la aplicación.</p>
+
+<p>Al hacer clic en el botón “Registrar”, usted recibirá una excepción del framework, lo que indica que nos falta la acción <code>register</code> en el controlador <code>signup</code>. Our <code>public/index.php</code> file throws this exception:</p>
+
+<pre><code class="language-bash">Exception: Action "register" was not found on handler "signup"
+</code></pre>
+
+<p>Implementando este método se eliminará la excepción:</p>
+
+<p><code>app/controllers/SignupController.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class SignupController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+
+    public function registerAction()
+    {
+
+    }
+}
+</code></pre>
+
+<p>Si haces clic en el botón “Registrar” otra vez, verás una página en blanco. El nombre y correo electrónico proporcionados por el usuario deben estar guardados en una base de datos. Según las pautas MVC, las interacciones de la base de datos deben hacerse a través de modelos con el fin de garantizar la limpieza de código orientado a objetos.</p>
+
+<p><a name="model"></a></p>
+
+<h2 id="creando-un-modelo">Creando un modelo</h2>
+
+<p>Phalcon brings the first ORM for PHP entirely written in C-language. Instead of increasing the complexity of development, it simplifies it.</p>
+
+<p>Before creating our first model, we need to create a database table outside of Phalcon to map it to. A simple table to store registered users can be created like this:</p>
+
+<p><code>create_users_table.sql</code></p>
+
+<pre><code class="language-sql">CREATE TABLE `users` (
+    `id`    int(10)     unsigned NOT NULL AUTO_INCREMENT,
+    `name`  varchar(70)          NOT NULL,
+    `email` varchar(70)          NOT NULL,
+    PRIMARY KEY (`id`)
+);
+</code></pre>
+
+<p>A model should be located in the <code>app/models</code> directory (<code>app/models/Users.php</code>). The model maps to the “users” table:</p>
+
+<p><code>app/models/Users.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class Users extends Model
+{
+    public $id;
+    public $name;
+    public $email;
+}
+</code></pre>
+
+<p><a name="database-connection"></a></p>
+
+<h2 id="establecer-una-conexión-de-base-de-datos">Establecer una conexión de base de datos</h2>
+
+<p>Para utilizar una conexión de base de datos y, posteriormente, acceder a los datos a través de nuestros modelos, debemos especificarlo en nuestro proceso de arranque. Una conexión de base de datos es justo un servicio mas que tiene nuestra aplicación y que puede ser utilizado para varios componentes:</p>
+
+<p><code>public/index.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Db\Adapter\Pdo\Mysql as DbAdapter;
+
+// Configurar servicio de base de datos
+$di-&gt;set(
+    'db',
+    function () {
+        return new DbAdapter(
+            [
+                'host'     =&gt; '127.0.0.1',
+                'username' =&gt; 'root',
+                'password' =&gt; 'secret',
+                'dbname'   =&gt; 'tutorial1',
+            ]
+        );
+    }
+);
+</code></pre>
+
+<p>With the correct database parameters, our models are ready to work and interact with the rest of the application.</p>
+
+<p><a name="storing-data"></a></p>
+
+<h2 id="almacenando-datos-utilizando-modelos">Almacenando datos utilizando modelos</h2>
+
+<p><code>app/controllers/SignupController.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class SignupController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+
+    public function registerAction()
+    {
+        $user = new Users();
+
+        // Almacenar y comprobar errores
+        $success = $user-&gt;save(
+            $this-&gt;request-&gt;getPost(),
+            [
+                "name",
+                "email",
+            ]
+        );
+
+        if ($success) {
+            echo "¡Gracias por registrarte!";
+        } else {
+            echo "Lo sentimos, se generaron los siguiente problemas: ";
+
+            $messages = $user-&gt;getMessages();
+
+            foreach ($messages as $message) {
+                echo $message-&gt;getMessage(), "&lt;br/&gt;";
+            }
+        }
+
+        $this-&gt;view-&gt;disable();
+    }
+}
+</code></pre>
+
+<p>Al principio del <code>registerAction</code> creamos un objeto de usuario vacío de la clase de Users, que gestiona el registro de un usuario. La clase mapea de propiedades públicas a los campos de la tabla de <code>users</code> en nuestra base de datos. Setting the relevant values in the new record and calling <code>save()</code> will store the data in the database for that record. El método de <code>save()</code> devuelve un valor booleano que indica si el almacenamiento de los datos fue exitoso o no.</p>
+
+<p>El ORM filtra automáticamente la entrada (auto-escape) para evitar inyecciones de SQL así que sólo tenemos que pasar la solicitud al método <code>save()</code>.</p>
+
+<p>Additional validation happens automatically on fields that are defined as not null (required). If we don’t enter any of the required fields in the sign-up form our screen will look like this:</p>
+
+<p><img src="/assets/images/content/tutorial-basic-4.png" alt="" /></p>
+
+<p><a name="list-of-users"></a></p>
+
+<h2 id="lista-de-usuarios">Lista de usuarios</h2>
+
+<p>Ahora veremos como obtener y mostrar los usuarios que tenemos registrados en la base de datos.</p>
+
+<p>Lo primero que tenemos que hacer en nuestra acción <code>indexAction</code> del controlador <code>IndexController</code> es mostrar el resultado de la búsqueda de todos los usuarios, esto se puede hacer simplemente utilizando <code>Users::find()</code>. Veamos como se vería ahora nuestro <code>indexAction</code></p>
+
+<p><code>app/controllers/IndexController.php</code></p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class IndexController extends Controller
+{
+    /**
+     * Bienvenida y lista de usuarios
+     */
+    public function indexAction()
+    {
+        $this-&gt;view-&gt;users = Users::find();
+    }
+}
+</code></pre>
+
+<p>Ahora, en nuestro archivo <code>views/index/index.phtml</code> tendremos acceso a los usuarios encontrados en la base de datos. Estos estarán disponibles en la variable <code>$users</code>. Esta variable tiene el mismo nombre al que usamos en <code>$this-&gt;view-&gt;users</code>.</p>
+
+<p>La vista se verá así:</p>
+
+<p><code>views/index/index.phtml</code></p>
+
+<pre><code class="language-html">&lt;?php
+
+echo "&lt;h1&gt;Hello!&lt;/h1&gt;";
+
+echo $this-&gt;tag-&gt;linkTo(["signup", "¡Regístrate aquí!", 'class' =&gt; 'btn btn-primary']);
+
+if ($users-&gt;count() &gt; 0) {
+    ?&gt;
+    &lt;table class="table table-bordered table-hover"&gt;
+        &lt;thead class="thead-light"&gt;
+        &lt;tr&gt;
+            &lt;th&gt;#&lt;/th&gt;
+            &lt;th&gt;Nombre&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;Cantidad de usuarios: &lt;?php echo $users-&gt;count(); ?&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;/tfoot&gt;
+        &lt;tbody&gt;
+        &lt;?php foreach ($users as $user) { ?&gt;
+            &lt;tr&gt;
+                &lt;td&gt;&lt;?php echo $user-&gt;id; ?&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;?php echo $user-&gt;name; ?&gt;&lt;/td&gt;
+                &lt;td&gt;&lt;?php echo $user-&gt;email; ?&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;?php } ?&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+    &lt;?php
+}
+</code></pre>
+
+<p>As you can see our variables <code>$users</code> can be iterated and counted, this we will see in depth later on when viewing the <a href="/3.4/en/db-models">models</a>.</p>
+
+<p><img src="/images/content/tutorial-basic-5.png" alt="" /></p>
+
+<p><a name="adding-style"></a></p>
+
+<h2 id="agregando-estilos">Agregando estilos</h2>
+
+<p>Para darle un toque de diseño a nuestra primer aplicación agregaremos bootstrap y una pequeña plantilla que será utilizada en todas las vistas.</p>
+
+<p>Agregamos un archivo <code>index.phtml</code> en la carpeta <code>views</code>, con el siguiente contenido:</p>
+
+<p><code>app/views/index.phtml</code></p>
+
+<pre><code class="language-html">&lt;!doctype html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Phalcon Tutorial&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="container"&gt;
+    &lt;?php echo $this-&gt;getContent(); ?&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>The most important thing to highlight in our template is the function <code>getContent()</code> which will give us the content generated by the view. Now, our application will be something like this:</p>
+
+<p><img src="/images/content/tutorial-basic-6.png" alt="" /></p>
+
+<p><a name="conclusion"></a></p>
+
+<h2 id="conclusión">Conclusión</h2>
+
+<p>Como se puede ver, es fácil empezar a construir una aplicación usando Phalcon. El hecho de que Phalcon se ejecute desde una extensión reduce significativamente la huella de los proyectos y le da un aumento considerable en el rendimiento.</p>
+
+<p>If you are ready to learn more check out the <a href="/3.4/en/tutorial-rest">Rest Tutorial</a> next.</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

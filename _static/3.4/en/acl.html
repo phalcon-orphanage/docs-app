@@ -1,0 +1,1266 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/en/acl.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/en">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/acl" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/en/acl" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/en/acl" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/en/acl" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/en/acl" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/en/acl" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/acl">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/en/acl">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/en/acl">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/en/acl">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/en/acl">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/en/acl">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/en">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+<h1 id="access-control-lists-acl">Access Control Lists (ACL)</h1>
+<p><a href="api/Phalcon_Acl">Phalcon\Acl</a> provides an easy and lightweight management of ACLs as well as the permissions attached to them. <a href="http://en.wikipedia.org/wiki/Access_control_list">Access Control Lists</a> (ACL) allow an application to control access to its areas and the underlying objects from requests. You are encouraged to read more about the ACL methodology so as to be familiar with its concepts.</p>
+
+<p>In summary, ACLs have roles and resources. Resources are objects which abide by the permissions defined to them by the ACLs. Roles are objects that request access to resources and can be allowed or denied access by the ACL mechanism.</p>
+
+<p><a name="setup"></a></p>
+<h2 id="creating-an-acl">Creating an ACL</h2>
+<p>This component is designed to initially work in memory. This provides ease of use and speed in accessing every aspect of the list. The <a href="api/Phalcon_Acl">Phalcon\Acl</a> constructor takes as its first parameter an adapter used to retrieve the information related to the control list. An example using the memory adapter is below:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl\Adapter\Memory as AclList;
+
+$acl = new AclList();
+</code></pre>
+
+<p>By default <a href="api/Phalcon_Acl">Phalcon\Acl</a> allows access to action on resources that have not yet been defined. To increase the security level of the access list we can define a <code>deny</code> level as a default access level.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl;
+
+// Default action is deny access
+$acl-&gt;setDefaultAction(
+    Acl::DENY
+);
+</code></pre>
+
+<p><a name="adding-roles"></a></p>
+<h2 id="adding-roles-to-the-acl">Adding Roles to the ACL</h2>
+<p>A role is an object that can or cannot access certain resources in the access list. As an example, we will define roles as groups of people in an organization. The <a href="api/Phalcon_Acl_Role">Phalcon\Acl\Role</a> class is available to create roles in a more structured way. Let’s add some roles to our recently created list:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl\Role;
+
+// Create some roles.
+// The first parameter is the name, the second parameter is an optional description.
+$roleAdmins = new Role('Administrators', 'Super-User role');
+$roleGuests = new Role('Guests');
+
+// Add 'Guests' role to ACL
+$acl-&gt;addRole($roleGuests);
+
+// Add 'Designers' role to ACL without a Phalcon\Acl\Role
+$acl-&gt;addRole('Designers');
+</code></pre>
+
+<p>As you can see, roles are defined directly without using an instance.</p>
+
+<p><a name="adding-resources"></a></p>
+<h2 id="adding-resources">Adding Resources</h2>
+<p>Resources are objects where access is controlled. Normally in MVC applications resources refer to controllers. Although this is not mandatory, the <a href="api/Phalcon_Acl_Resource">Phalcon\Acl\Resource</a> class can be used in defining resources. It’s important to add related actions or operations to a resource so that the ACL can understand what it should to control.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl\Resource;
+
+// Define the 'Customers' resource
+$customersResource = new Resource('Customers');
+
+// Add 'customers' resource with a couple of operations
+
+$acl-&gt;addResource(
+    $customersResource,
+    'search'
+);
+
+$acl-&gt;addResource(
+    $customersResource,
+    [
+        'create',
+        'update',
+    ]
+);
+</code></pre>
+
+<p><a name="access-controls"></a></p>
+<h2 id="defining-access-controls">Defining Access Controls</h2>
+<p>Now that we have roles and resources, it’s time to define the ACL (i.e. which roles can access which resources). This part is very important especially taking into consideration your default access level <code>allow</code> or <code>deny</code>.</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Set access level for roles into resources
+
+$acl-&gt;allow('Guests', 'Customers', 'search');
+
+$acl-&gt;allow('Guests', 'Customers', 'create');
+
+$acl-&gt;deny('Guests', 'Customers', 'update');
+</code></pre>
+
+<p>The <code>allow()</code> method designates that a particular role has granted access to a particular resource. The <code>deny()</code> method does the opposite.</p>
+
+<p><a name="querying"></a></p>
+<h2 id="querying-an-acl">Querying an ACL</h2>
+<p>Once the list has been completely defined. We can query it to check if a role has a given permission or not.</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Check whether role has access to the operations
+
+// Returns 0
+$acl-&gt;isAllowed('Guests', 'Customers', 'edit');
+
+// Returns 1
+$acl-&gt;isAllowed('Guests', 'Customers', 'search');
+
+// Returns 1
+$acl-&gt;isAllowed('Guests', 'Customers', 'create');
+</code></pre>
+
+<p><a name="function-based-access"></a></p>
+<h2 id="function-based-access">Function based access</h2>
+<p>Also you can add as 4th parameter your custom function which must return boolean value. It will be called when you use <code>isAllowed()</code> method. You can pass parameters as associative array to <code>isAllowed()</code> method as 4th argument where key is parameter name in our defined function.</p>
+
+<pre><code class="language-php">&lt;?php
+// Set access level for role into resources with custom function
+$acl-&gt;allow(
+    'Guests',
+    'Customers',
+    'search',
+    function ($a) {
+        return $a % 2 === 0;
+    }
+);
+
+// Check whether role has access to the operation with custom function
+
+// Returns true
+$acl-&gt;isAllowed(
+    'Guests',
+    'Customers',
+    'search',
+    [
+        'a' =&gt; 4,
+    ]
+);
+
+// Returns false
+$acl-&gt;isAllowed(
+    'Guests',
+    'Customers',
+    'search',
+    [
+        'a' =&gt; 3,
+    ]
+);
+</code></pre>
+
+<p>Also if you don’t provide any parameters in <code>isAllowed()</code> method then default behaviour will be <code>Acl::ALLOW</code>. You can change it by using method <code>setNoArgumentsDefaultAction()</code>.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl;
+
+// Set access level for role into resources with custom function
+$acl-&gt;allow(
+    'Guests',
+    'Customers',
+    'search',
+    function ($a) {
+        return $a % 2 === 0;
+    }
+);
+
+// Check whether role has access to the operation with custom function
+
+// Returns true
+$acl-&gt;isAllowed(
+    'Guests',
+    'Customers',
+    'search'
+);
+
+// Change no arguments default action
+$acl-&gt;setNoArgumentsDefaultAction(
+    Acl::DENY
+);
+
+// Returns false
+$acl-&gt;isAllowed(
+    'Guests',
+    'Customers',
+    'search'
+);
+</code></pre>
+
+<p><a name="objects"></a></p>
+<h2 id="objects-as-role-name-and-resource-name">Objects as role name and resource name</h2>
+<p>You can pass objects as <code>roleName</code> and <code>resourceName</code>. Your classes must implement <a href="api/Phalcon_Acl_RoleAware">Phalcon\Acl\RoleAware</a> for <code>roleName</code> and <a href="api/Phalcon_Acl_ResourceAware">Phalcon\Acl\ResourceAware</a> for <code>resourceName</code>.</p>
+
+<p>Our <code>UserRole</code> class</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl\RoleAware;
+
+// Create our class which will be used as roleName
+class UserRole implements RoleAware
+{
+    protected $id;
+
+    protected $roleName;
+
+    public function __construct($id, $roleName)
+    {
+        $this-&gt;id       = $id;
+        $this-&gt;roleName = $roleName;
+    }
+
+    public function getId()
+    {
+        return $this-&gt;id;
+    }
+
+    // Implemented function from RoleAware Interface
+    public function getRoleName()
+    {
+        return $this-&gt;roleName;
+    }
+}
+</code></pre>
+
+<p>And our <code>ModelResource</code> class</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl\ResourceAware;
+
+// Create our class which will be used as resourceName
+class ModelResource implements ResourceAware
+{
+    protected $id;
+
+    protected $resourceName;
+
+    protected $userId;
+
+    public function __construct($id, $resourceName, $userId)
+    {
+        $this-&gt;id           = $id;
+        $this-&gt;resourceName = $resourceName;
+        $this-&gt;userId       = $userId;
+    }
+
+    public function getId()
+    {
+        return $this-&gt;id;
+    }
+
+    public function getUserId()
+    {
+        return $this-&gt;userId;
+    }
+
+    // Implemented function from ResourceAware Interface
+    public function getResourceName()
+    {
+        return $this-&gt;resourceName;
+    }
+}
+</code></pre>
+
+<p>Then you can use them in <code>isAllowed()</code> method.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use UserRole;
+use ModelResource;
+
+// Set access level for role into resources
+$acl-&gt;allow('Guests', 'Customers', 'search');
+$acl-&gt;allow('Guests', 'Customers', 'create');
+$acl-&gt;deny('Guests', 'Customers', 'update');
+
+// Create our objects providing roleName and resourceName
+
+$customer = new ModelResource(
+    1,
+    'Customers',
+    2
+);
+
+$designer = new UserRole(
+    1,
+    'Designers'
+);
+
+$guest = new UserRole(
+    2,
+    'Guests'
+);
+
+$anotherGuest = new UserRole(
+    3,
+    'Guests'
+);
+
+// Check whether our user objects have access to the operation on model object
+
+// Returns false
+$acl-&gt;isAllowed(
+    $designer,
+    $customer,
+    'search'
+);
+
+// Returns true
+$acl-&gt;isAllowed(
+    $guest,
+    $customer,
+    'search'
+);
+
+// Returns true
+$acl-&gt;isAllowed(
+    $anotherGuest,
+    $customer,
+    'search'
+);
+</code></pre>
+
+<p>Also you can access those objects in your custom function in <code>allow()</code> or <code>deny()</code>. They are automatically bind to parameters by type in function.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use UserRole;
+use ModelResource;
+
+// Set access level for role into resources with custom function
+$acl-&gt;allow(
+    'Guests',
+    'Customers',
+    'search',
+    function (UserRole $user, ModelResource $model) { // User and Model classes are necessary
+        return $user-&gt;getId == $model-&gt;getUserId();
+    }
+);
+
+$acl-&gt;allow(
+    'Guests',
+    'Customers',
+    'create'
+);
+
+$acl-&gt;deny(
+    'Guests',
+    'Customers',
+    'update'
+);
+
+// Create our objects providing roleName and resourceName
+
+$customer = new ModelResource(
+    1,
+    'Customers',
+    2
+);
+
+$designer = new UserRole(
+    1,
+    'Designers'
+);
+
+$guest = new UserRole(
+    2,
+    'Guests'
+);
+
+$anotherGuest = new UserRole(
+    3,
+    'Guests'
+);
+
+// Check whether our user objects have access to the operation on model object
+
+// Returns false
+$acl-&gt;isAllowed(
+    $designer,
+    $customer,
+    'search'
+);
+
+// Returns true
+$acl-&gt;isAllowed(
+    $guest,
+    $customer,
+    'search'
+);
+
+// Returns false
+$acl-&gt;isAllowed(
+    $anotherGuest,
+    $customer,
+    'search'
+);
+</code></pre>
+
+<p>You can still add any custom parameters to function and pass associative array in <code>isAllowed()</code> method. Also order doesn’t matter.</p>
+
+<p><a name="roles-inheritance"></a></p>
+<h2 id="roles-inheritance">Roles Inheritance</h2>
+<p>You can build complex role structures using the inheritance that <a href="api/Phalcon_Acl_Role">Phalcon\Acl\Role</a> provides. Roles can inherit from other roles, thus allowing access to supersets or subsets of resources. To use role inheritance, you need to pass the inherited role as the second parameter of the method call, when adding that role in the list.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl\Role;
+
+// ...
+
+// Create some roles
+
+$roleAdmins = new Role('Administrators', 'Super-User role');
+
+$roleGuests = new Role('Guests');
+
+// Add 'Guests' role to ACL
+$acl-&gt;addRole($roleGuests);
+
+// Add 'Administrators' role inheriting from 'Guests' its accesses
+$acl-&gt;addRole($roleAdmins, $roleGuests);
+</code></pre>
+
+<h3 id="setup-relationships-after-adding-roles">Setup relationships after adding roles</h3>
+<p>Or you may prefer to add all of your roles together and then define the inheritance relationships afterwards.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl\Role;
+
+// Create some roles
+$roleAdmins = new Role('Administrators', 'Super-User role');
+$roleGuests = new Role('Guests');
+
+// Add Roles to ACL
+$acl-&gt;addRole($roleGuests);
+$acl-&gt;addRole($roleAdmins);
+
+// Have 'Administrators' role inherit from 'Guests' its accesses
+$acl-&gt;addInherit($roleAdmins, $roleGuests);
+</code></pre>
+
+<p><a name="serialization"></a></p>
+<h2 id="serializing-acl-lists">Serializing ACL lists</h2>
+<p>To improve performance <a href="api/Phalcon_Acl">Phalcon\Acl</a> instances can be serialized and stored in APC, session, text files or a database table so that they can be loaded at will without having to redefine the whole list. You can do that as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl\Adapter\Memory as AclList;
+
+// ...
+
+// Check whether ACL data already exist
+if (!is_file('app/security/acl.data')) {
+    $acl = new AclList();
+
+    // ... Define roles, resources, access, etc
+
+    // Store serialized list into plain file
+    file_put_contents(
+        'app/security/acl.data',
+        serialize($acl)
+    );
+} else {
+    // Restore ACL object from serialized file
+    $acl = unserialize(
+        file_get_contents('app/security/acl.data')
+    );
+}
+
+// Use ACL list as needed
+if ($acl-&gt;isAllowed('Guests', 'Customers', 'edit')) {
+    echo 'Access granted!';
+} else {
+    echo 'Access denied :(';
+}
+</code></pre>
+
+<p>It’s recommended to use the Memory adapter during development and use one of the other adapters in production.</p>
+
+<p><a name="events"></a></p>
+<h2 id="events">Events</h2>
+<p><a href="api/Phalcon_Acl">Phalcon\Acl</a> is able to send events to an <code>EventsManager</code> if it’s present. Events are triggered using the type ‘acl’. Some events when returning boolean false could stop the active operation. The following events are supported:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event Name</th>
+      <th>Triggered</th>
+      <th style="text-align: center">Can stop operation?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>beforeCheckAccess</td>
+      <td>Triggered before checking if a role/resource has access</td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>afterCheckAccess</td>
+      <td>Triggered after checking if a role/resource has access</td>
+      <td style="text-align: center">No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following example demonstrates how to attach listeners to this component:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Acl\Adapter\Memory as AclList;
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+
+// ...
+
+// Create an event manager
+$eventsManager = new EventsManager();
+
+// Attach a listener for type 'acl'
+$eventsManager-&gt;attach(
+    'acl:beforeCheckAccess',
+    function (Event $event, $acl) {
+        echo $acl-&gt;getActiveRole();
+
+        echo $acl-&gt;getActiveResource();
+
+        echo $acl-&gt;getActiveAccess();
+    }
+);
+
+$acl = new AclList();
+
+// Setup the $acl
+// ...
+
+// Bind the eventsManager to the ACL component
+$acl-&gt;setEventsManager($eventsManager);
+</code></pre>
+
+<p><a name="custom-adapters"></a></p>
+<h2 id="implementing-your-own-adapters">Implementing your own adapters</h2>
+<p>The <a href="api/Phalcon_Acl_AdapterInterface">Phalcon\Acl\AdapterInterface</a> interface must be implemented in order to create your own ACL adapters or extend the existing ones.</p>
+
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

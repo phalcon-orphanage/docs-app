@@ -1,0 +1,2076 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="ja-jp" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="ja-jp" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="ja-jp" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/ja-jp/db-layer.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/ja-jp">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/db-layer" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/ja-jp/db-layer" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/ja-jp/db-layer" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/ja-jp/db-layer" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/ja-jp/db-layer" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/ja-jp/db-layer" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/db-layer">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/ja-jp/db-layer">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/ja-jp/db-layer">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/ja-jp/db-layer">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/ja-jp/db-layer">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/ja-jp/db-layer">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/ja-jp">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="データベース抽象化レイヤー">データベース抽象化レイヤー</h1>
+
+<p><a href="api/Phalcon_Db">Phalcon\Db</a> is the component behind <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> that powers the model layer in the framework. これは、C言語で完全に書かれたデータベースシステムのための独立した高レベルの抽象化レイヤーで構成されています。</p>
+
+<p>このコンポーネントは従来のモデルを使用するよりも、データベースを低レベルで操作することができます。</p>
+
+<p><a name="adapters"></a></p>
+
+<h2 id="データベースアダプター">データベースアダプター</h2>
+
+<p>This component makes use of adapters to encapsulate specific database system details. Phalcon uses PDO to connect to databases. The following database engines are supported:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>クラス</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="api/Phalcon_Db_Adapter_Pdo_Mysql">Phalcon\Db\Adapter\Pdo\Mysql</a></td>
+      <td>世界で最も使用されているリレーショナルデータベース管理システム (RDBMS) です。サーバーで動作し、多数のユーザーがいくつかのデータベースにアクセスできます。</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Db_Adapter_Pdo_Postgresql">Phalcon\Db\Adapter\Pdo\Postgresql</a></td>
+      <td>PostgreSQL は、強力なオープンソースのリレーショナルデータベースシステムです。 これは15年以上の積極的な開発と実績のあるアーキテクチャを備えており、信頼性、データの完全性、正確性について高い評価を得ています。</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Db_Adapter_Pdo_Sqlite">Phalcon\Db\Adapter\Pdo\Sqlite</a></td>
+      <td>SQLiteは、自己完結型でサーバレスでゼロ設定のトランザクション型SQLデータベースエンジンを実装したソフトウェアライブラリです</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="adapters-factory"></a></p>
+
+<h3 id="ファクトリー">ファクトリー</h3>
+
+<p><a name="factory"></a></p>
+
+<p>Loads PDO Adapter class using <code>adapter</code> option. For example:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Db\Adapter\Pdo\Factory;
+
+$options = [
+    'host'     =&gt; 'localhost',
+    'dbname'   =&gt; 'blog',
+    'port'     =&gt; 3306,
+    'username' =&gt; 'sigma',
+    'password' =&gt; 'secret',
+    'adapter'  =&gt; 'mysql',
+];
+
+$db = Factory::load($options);
+</code></pre>
+
+<p><a name="adapters-custom"></a></p>
+
+<h3 id="独自のアダプターを実装">独自のアダプターを実装</h3>
+
+<p>The <a href="api/Phalcon_Db_AdapterInterface">Phalcon\Db\AdapterInterface</a> interface must be implemented in order to create your own database adapters or extend the existing ones.</p>
+
+<p><a name="dialects"></a></p>
+
+<h2 id="データベースの方言">データベースの方言</h2>
+
+<p>Phalcon encapsulates the specific details of each database engine in dialects. Those provide common functions and SQL generator to the adapters.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>クラス</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="api/Phalcon_Db_Dialect_Mysql">Phalcon\Db\Dialect\Mysql</a></td>
+      <td>MySQL データベースシステム向けのSQL方言</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Db_Dialect_Postgresql">Phalcon\Db\Dialect\Postgresql</a></td>
+      <td>PostgreSQLデータベースシステム向けのSQL方言</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Db_Dialect_Sqlite">Phalcon\Db\Dialect\Sqlite</a></td>
+      <td>SQLiteデータベースシステム向けのSQL方言</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="dialects-custom"></a></p>
+
+<h3 id="独自の方言を実装します">独自の方言を実装します</h3>
+
+<p>The <a href="api/Phalcon_Db_DialectInterface">Phalcon\Db\DialectInterface</a> interface must be implemented in order to create your own database dialects or extend the existing ones. PHQLが理解するより多くのコマンドやメソッドを追加して、現在の方言を強化できます。</p>
+
+<p>For instance when using the MySQL adapter, you might want to allow PHQL to recognize the <code>MATCH ... AGAINST ...</code> syntax. We associate that syntax with <code>MATCH_AGAINST</code></p>
+
+<p>方言をインスタンス化します。 カスタム関数を追加して、PHQLが、パースプロセス中にこれを検出したときに、理解できるようにします。 次の例では、<code>MATCH_AGAINST</code> と呼ばれる新しいカスタム関数を登録します。 その後、カスタマイズされた方言オブジェクトをDBコネクションに追加するだけです。</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Db\Dialect\MySQL as SqlDialect;
+use Phalcon\Db\Adapter\Pdo\MySQL as Connection;
+
+$dialect = new SqlDialect();
+
+$dialect-&gt;registerCustomFunction(
+    'MATCH_AGAINST',
+    function($dialect, $expression) {
+        $arguments = $expression['arguments'];
+        return sprintf(
+            " MATCH (%s) AGAINST (%)",
+            $dialect-&gt;getSqlExpression($arguments[0]),
+            $dialect-&gt;getSqlExpression($arguments[1])
+         );
+    }
+);
+
+$connection = new Connection(
+    [
+        "host"          =&gt; "localhost",
+        "username"      =&gt; "root",
+        "password"      =&gt; "",
+        "dbname"        =&gt; "test",
+        "dialectClass"  =&gt; $dialect
+    ]
+);
+</code></pre>
+
+<p>PHQLでこの新しい関数を使用できます。この場合、これは適切なSQL構文に翻訳されます:</p>
+
+<pre><code class="language-php">$phql = "
+  SELECT *
+  FROM   Posts
+  WHERE  MATCH_AGAINST(title, :pattern:)";
+
+$posts = $modelsManager-&gt;executeQuery($phql, ['pattern' =&gt; $pattern]);
+</code></pre>
+
+<p><a name="connection"></a></p>
+
+<h2 id="データベースへの接続">データベースへの接続</h2>
+
+<p>接続を作成するためには、アダプター クラスをインスタンス化する必要があります。 接続パラメーターの配列だけが必要です。 次の例は、必須またはオプションのパラメーターを渡す接続を作成する方法を示しています。</p>
+
+<h5 id="mysql-必須要素">MySQL 必須要素</h5>
+
+<pre><code class="language-php">&lt;?php
+
+$config = [
+    'host'     =&gt; '127.0.0.1',
+    'username' =&gt; 'mike',
+    'password' =&gt; 'sigma',
+    'dbname'   =&gt; 'test_db',
+];
+</code></pre>
+
+<h5 id="mysql-オプション">MySQL オプション</h5>
+
+<pre><code class="language-php">$config['persistent'] = false;
+</code></pre>
+
+<h5 id="mysqlの接続を作成">MySQLの接続を作成</h5>
+
+<pre><code class="language-php">$connection = new \Phalcon\Db\Adapter\Pdo\Mysql($config);
+</code></pre>
+
+<h5 id="postgresql-必須要素">PostgreSQL 必須要素</h5>
+
+<pre><code class="language-php">&lt;?php
+
+$config = [
+    'host'     =&gt; 'localhost',
+    'username' =&gt; 'postgres',
+    'password' =&gt; 'secret1',
+    'dbname'   =&gt; 'template',
+];
+</code></pre>
+
+<h5 id="postgresql-オプション">PostgreSQL オプション</h5>
+
+<pre><code class="language-php">$config['schema'] = 'public';
+</code></pre>
+
+<h5 id="postgresqlの接続を作成">PostgreSQLの接続を作成</h5>
+
+<pre><code class="language-php">$connection = new \Phalcon\Db\Adapter\Pdo\Postgresql($config);
+</code></pre>
+
+<h5 id="sqlite-必須要素">SQLite 必須要素</h5>
+
+<pre><code class="language-php">&lt;?php
+
+$config = [
+    'dbname' =&gt; '/path/to/database.db',
+];
+</code></pre>
+
+<h5 id="sqlite接続を作成">SQLite接続を作成</h5>
+
+<pre><code class="language-php">$connection = new \Phalcon\Db\Adapter\Pdo\Sqlite($config);
+</code></pre>
+
+<p><a name="options"></a></p>
+
+<h2 id="pdo-の追加オプションを設定">PDO の追加オプションを設定</h2>
+
+<p><code>options</code>パラメータを渡すことで接続時にPDOオプションを設定できます:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$connection = new \Phalcon\Db\Adapter\Pdo\Mysql(
+    [
+        'host'     =&gt; 'localhost',
+        'username' =&gt; 'root',
+        'password' =&gt; 'sigma',
+        'dbname'   =&gt; 'test_db',
+        'options'  =&gt; [
+            PDO::MYSQL_ATTR_INIT_COMMAND =&gt; "SET NAMES 'UTF8'",
+            PDO::ATTR_CASE               =&gt; PDO::CASE_LOWER,
+        ]
+    ]
+);
+</code></pre>
+
+<p><a name="connection-factory"></a></p>
+
+<h2 id="factoryを使用した接続">Factoryを使用した接続</h2>
+
+<p>単純に<code>ini</code> ファイルを使ってあなたの <code>データベース</code>サービスをデータベースに設定/接続できます。</p>
+
+<pre><code class="language-ini">[database]
+host = TEST_DB_MYSQL_HOST
+username = TEST_DB_MYSQL_USER
+password = TEST_DB_MYSQL_PASSWD
+dbname = TEST_DB_MYSQL_NAME
+port = TEST_DB_MYSQL_PORT
+charset = TEST_DB_MYSQL_CHARSET
+adapter = mysql
+</code></pre>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Config\Adapter\Ini;
+use Phalcon\Di;
+use Phalcon\Db\Adapter\Pdo\Factory;
+
+$di = new Di();
+$config = new Ini('config.ini');
+
+$di-&gt;set('config', $config);
+
+$di-&gt;set(
+    'db', 
+    function () {
+        return Factory::load($this-&gt;config-&gt;database);
+    }
+);
+</code></pre>
+
+<p>上記は適切なデータベース インスタンスを返ます。また、アプリケーションのコードを1 行も変更することがなく、接続資格情報を変更したり、データベース アダプターを変更したりできる利点があります。</p>
+
+<p><a name="finding-rows"></a></p>
+
+<h2 id="行の検索">行の検索</h2>
+
+<p><a href="api/Phalcon_Db">Phalcon\Db</a> provides several methods to query rows from tables. The specific SQL syntax of the target database engine is required in this case:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$sql = 'SELECT id, name FROM robots ORDER BY name';
+
+// データベースシステムへSQLステートメントを送信
+$result = $connection-&gt;query($sql);
+
+// 各robotの名前を表示
+while ($robot = $result-&gt;fetch()) {
+   echo $robot['name'];
+}
+
+// 配列内のすべての行を取得する
+$robots = $connection-&gt;fetchAll($sql);
+foreach ($robots as $robot) {
+   echo $robot['name'];
+}
+
+// 最初の行だけを取得する
+$robot = $connection-&gt;fetchOne($sql);
+</code></pre>
+
+<p>デフォルトで、これらの呼び出しは連想配列と数値インデックスを持つ配列を両方とも作成します。 <code>Phalcon\Db\Result::setFetchMode()</code> を使用してこの動作を変更できます。 このメソッドは、どの種類のインデックスの種類が必要なのかを定義する、定数を受け取ります。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>定数</th>
+      <th>説明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Phalcon\Db::FETCH_NUM</code></td>
+      <td>数字インデックスのある配列を返す</td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Db::FETCH_ASSOC</code></td>
+      <td>関連インデックスのある配列を返す</td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Db::FETCH_BOTH</code></td>
+      <td>関連インデックスと数字インデックスのある配列を返す</td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Db::FETCH_OBJ</code></td>
+      <td>配列ではなく、オブジェクトを返す。</td>
+    </tr>
+  </tbody>
+</table>
+
+<pre><code class="language-php">&lt;?php
+
+$sql = 'SELECT id, name FROM robots ORDER BY name';
+$result = $connection-&gt;query($sql);
+
+$result-&gt;setFetchMode(Phalcon\Db::FETCH_NUM);
+while ($robot = $result-&gt;fetch()) {
+   echo $robot[0];
+}
+</code></pre>
+
+<p>The <code>Phalcon\Db::query()</code> returns an instance of <a href="api/Phalcon_Db_Result_Pdo">Phalcon\Db\Result\Pdo</a>. これらのオブジェクトは、返された resultset に関連した機能(トラバース、特定のレコードのシーク、カウント)をカプセル化します。</p>
+
+<pre><code class="language-php">&lt;?php
+
+$sql = 'SELECT id, name FROM robots';
+$result = $connection-&gt;query($sql);
+
+// resultset のトラバース
+while ($robot = $result-&gt;fetch()) {
+   echo $robot['name'];
+}
+
+// 3番目の row のシーク
+$result-&gt;seek(2);
+$robot = $result-&gt;fetch();
+
+// resultset のカウント
+echo $result-&gt;numRows();
+</code></pre>
+
+<p><a name="binding-parameters"></a></p>
+
+<h2 id="パラメーターのバインド">パラメーターのバインド</h2>
+
+<p>Bound parameters is also supported in <a href="api/Phalcon_Db">Phalcon\Db</a>. バインドされたパラメータを使用することで、パフォーマンスの影響は最小限に抑えられますが、コードがSQLインジェクション攻撃の対象になる可能性を排除するために、この方法を使用することをお勧めします。 文字列と位置指定のプレースホルダーの両方をサポートしています。 パラメータのバインドは、以下のように簡単に実施できます:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// 数値プレースホルダーにバインド
+$sql    = 'SELECT * FROM robots WHERE name = ? ORDER BY name';
+$result = $connection-&gt;query(
+    $sql,
+    [
+        'Wall-E',
+    ]
+);
+
+// 名前つきプレースホルダーにバインド
+$sql     = 'INSERT INTO `robots`(name`, year) VALUES (:name, :year)';
+$success = $connection-&gt;query(
+    $sql,
+    [
+        'name' =&gt; 'Astro Boy',
+        'year' =&gt; 1952,
+    ]
+);
+</code></pre>
+
+<p>数値プレースホルダを使用する場合は、整数を1または2として定義する必要があります。 この場合、 ‘1’または ‘2’は文字列であり数字ではないため、プレースホルダを正常に置き換えることができません。 アダプターのデータはすべて<a href="http://www.php.net/manual/en/pdo.quote.php">PDO Quote</a>を使って自動的にエスケープ処理されます。</p>
+
+<p>この関数は接続文字セットを考慮しているため、接続パラメータまたはデータベースサーバー設定で正しい文字セットを定義することをお勧めします。データセットを格納または取得するときに間違った文字セットが望ましくない影響を及ぼすためです。</p>
+
+<p>Also, you can pass your parameters directly to the <code>execute</code> or <code>query</code> methods. In this case bound parameters are directly passed to PDO:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Binding with PDO placeholders
+$sql    = 'SELECT * FROM robots WHERE name = ? ORDER BY name';
+$result = $connection-&gt;query(
+    $sql,
+    [
+        1 =&gt; 'Wall-E',
+    ]
+);
+</code></pre>
+
+<p><a name="typed-placeholders"></a></p>
+
+<h2 id="型指定されたプレース-ホルダー">型指定されたプレース ホルダー</h2>
+
+<p>プレースホルダーは、SQL インジェクション攻撃を避けるためにパラメーターをバインドすることができます:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = "SELECT * FROM Store\Robots WHERE id &gt; :id:";
+
+$robots = $this-&gt;modelsManager-&gt;executeQuery($phql, ['id' =&gt; 100]);
+</code></pre>
+
+<p>しかし、いくつかのデータベースでは、バインドパラメータが特定のタイプのプレースホルダーを使用する時、追加のアクションが必要になります:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Db\Column;
+
+// ...
+
+$phql = "SELECT * FROM Store\Robots LIMIT :number:";
+$robots = $this-&gt;modelsManager-&gt;executeQuery(
+    $phql,
+    ['number' =&gt; 10],
+    Column::BIND_PARAM_INT
+);
+</code></pre>
+
+<p><code>executeQuery()</code> でバインドタイプを指定する代わりに、パラメーターで型指定されたプレース ホルダーを使用できます:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = "SELECT * FROM Store\Robots LIMIT {number:int}";
+$robots = $this-&gt;modelsManager-&gt;executeQuery(
+    $phql,
+    ['number' =&gt; 10]
+);
+
+$phql = "SELECT * FROM Store\Robots WHERE name &lt;&gt; {name:str}";
+$robots = $this-&gt;modelsManager-&gt;executeQuery(
+    $phql,
+    ['name' =&gt; $name]
+);
+</code></pre>
+
+<p>タイプを指定する必要がない場合は、型を省略することもできます:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = "SELECT * FROM Store\Robots WHERE name &lt;&gt; {name}";
+$robots = $this-&gt;modelsManager-&gt;executeQuery(
+    $phql,
+    ['name' =&gt; $name]
+);
+</code></pre>
+
+<p>型指定されたプレースホルダーは非常に有用です。というのも、静的な配列をプレースホルダーとしてバインドできますが、その際に配列の各要素を単独で渡す必要はないからです:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$phql = "SELECT * FROM Store\Robots WHERE id IN ({ids:array})";
+$robots = $this-&gt;modelsManager-&gt;executeQuery(
+    $phql,
+    ['ids' =&gt; [1, 2, 3, 4]]
+);
+</code></pre>
+
+<p>以下のタイプが使用できます：</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>バインドタイプ</th>
+      <th>バインドタイプ定数</th>
+      <th>例</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>str</td>
+      <td><code>Column::BIND_PARAM_STR</code></td>
+      <td><code>{name:str}</code></td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td><code>Column::BIND_PARAM_INT</code></td>
+      <td><code>{number:int}</code></td>
+    </tr>
+    <tr>
+      <td>double</td>
+      <td><code>Column::BIND_PARAM_DECIMAL</code></td>
+      <td><code>{price:double}</code></td>
+    </tr>
+    <tr>
+      <td>bool</td>
+      <td><code>Column::BIND_PARAM_BOOL</code></td>
+      <td><code>{enabled:bool}</code></td>
+    </tr>
+    <tr>
+      <td>blob</td>
+      <td><code>Column::BIND_PARAM_BLOB</code></td>
+      <td><code>{image:blob}</code></td>
+    </tr>
+    <tr>
+      <td>null</td>
+      <td><code>Column::BIND_PARAM_NULL</code></td>
+      <td><code>{exists:null}</code></td>
+    </tr>
+    <tr>
+      <td>array</td>
+      <td><code>Column::BIND_PARAM_STR</code>の配列</td>
+      <td><code>{codes:array}</code></td>
+    </tr>
+    <tr>
+      <td>array-str</td>
+      <td><code>Column::BIND_PARAM_STR</code>の配列</td>
+      <td><code>{names:array-str}</code></td>
+    </tr>
+    <tr>
+      <td>array-int</td>
+      <td><code>Column::BIND_PARAM_INT</code>の配列</td>
+      <td><code>{flags:array-int}</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="cast-bound-parameter-values"></a></p>
+
+<h2 id="バインドされたパラメータのキャスト">バインドされたパラメータのキャスト</h2>
+
+<p>デフォルトでは、バインドされたパラメーターは PHP ユーザーランドで指定されたバインド型にキャストされていません。このオプションで、PDO でそれらをバインドする前に、Phalconが値をキャストできます。 この問題が発生する一般的な状況は、<code>LIMIT</code>/<code>OFFSET</code> プレース ホルダーの文字列を渡す場合です:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$number = '100';
+$robots = $modelsManager-&gt;executeQuery(
+    'SELECT * FROM Some\Robots LIMIT {number:int}',
+    ['number' =&gt; $number]
+);
+</code></pre>
+
+<p>これは、次の例外を発生します:</p>
+
+<pre><code>Fatal error: Uncaught exception 'PDOException' with message 'SQLSTATE[42000]:
+Syntax error or access violation: 1064 You have an error in your SQL syntax;
+check the manual that corresponds to your MySQL server version for the right
+syntax to use near ''100'' at line 1' in /Users/scott/demo.php:78
+</code></pre>
+
+<p>This happens because 100 is a string variable. It is easily fixable by casting the value to integer first:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$number = '100';
+$robots = $modelsManager-&gt;executeQuery(
+    'SELECT * FROM Some\Robots LIMIT {number:int}',
+    ['number' =&gt; (int) $number]
+);
+</code></pre>
+
+<p>ただしこのソリューションの開発者は、どのようにバインドされているパラメーターが渡されるのか、またそのタイプについての特別な注意を払う必要があります。 このタスクを簡単にし、予期しない例外を回避するために、このキャストを行うように Phalconに指示することができます:</p>
+
+<pre><code class="language-php">&lt;?php
+
+\Phalcon\Db::setup(['forceCasting' =&gt; true]);
+</code></pre>
+
+<p>バインドタイプによって次のアクションが実行されます:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>バインドタイプ</th>
+      <th>アクション</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Column::BIND_PARAM_STR</td>
+      <td>値をネイティブなPHP文字列にキャストします。</td>
+    </tr>
+    <tr>
+      <td>Column::BIND_PARAM_INT</td>
+      <td>値をネイティブなPHP整数にキャストします。</td>
+    </tr>
+    <tr>
+      <td>Column::BIND_PARAM_BOOL</td>
+      <td>値をネイティブなPHP論理型にキャストします。</td>
+    </tr>
+    <tr>
+      <td>Column::BIND_PARAM_DECIMAL</td>
+      <td>値をネイティブなPHP実数型(double) にキャストします。</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="cast-on-hydrate"></a></p>
+
+<h2 id="hydrateでのキャスト">Hydrateでのキャスト</h2>
+
+<p>データベースシステムからの返り値はPDOによって常に文字列型で表現されます。その値が数字型や論理型であっても、文字列型です。 これは、いくつかのカラムの型が、そのサイズ制限により対応する PHP ネイティブ型で表現できないために発生します。 例えば、MySQL の <code>BIGINT</code> は、PHP の 32 ビット整数として表すことができない大きな整数を格納できます。 そのため、PDO とORM は、デフォルトで文字列としてすべての値を残す、安全策を実施します。</p>
+
+<p>ORM が自動的にこれらの型へ対応する PHP ネイティブ型に安全にキャストするように設定できます。</p>
+
+<pre><code class="language-php">&lt;?php
+
+\Phalcon\Mvc\Model::setup(['castOnHydrate' =&gt; true]);
+</code></pre>
+
+<p>このようにして、厳密に演算子を使用したり、変数のタイプを推測させたりすることができます:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$robot = Robots::findFirst();
+if (11 === $robot-&gt;id) {
+    echo $robot-&gt;name;
+}
+</code></pre>
+
+<p><a name="crud"></a></p>
+
+<h2 id="行の挿入更新および削除">行の挿入、更新、および削除</h2>
+
+<p>行を挿入、更新、または削除するには、生のSQLを使用するか、クラスが提供するプリセット関数を使用します:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// 生のSQL文を使用したデータの挿入
+$sql     = 'INSERT INTO `robots`(`name`, `year`) VALUES ('Astro Boy', 1952)';
+$success = $connection-&gt;execute($sql);
+
+// プレースホルダー付き
+$sql     = 'INSERT INTO `robots`(`name`, `year`) VALUES (?, ?)';
+$success = $connection-&gt;execute(
+    $sql,
+    [
+        'Astro Boy',
+        1952,
+    ]
+);
+
+// 必要なSQLを動的に生成する
+$success = $connection-&gt;insert(
+    'robots',
+    [
+        'Astro Boy',
+        1952,
+    ],
+    [
+        'name',
+        'year',
+    ],
+);
+
+// 必要なSQLを動的に生成する（別のシンタックス）
+$success = $connection-&gt;insertAsDict(
+    'robots',
+    [
+        'name' =&gt; 'Astro Boy',
+        'year' =&gt; 1952,
+    ]
+);
+
+// 生のSQL文によるデータの更新
+$sql     = 'UPDATE `robots` SET `name` = 'Astro boy' WHERE `id` = 101';
+$success = $connection-&gt;execute($sql);
+
+// プレースホルダー付き
+$sql     = 'UPDATE `robots` SET `name` = ? WHERE `id` = ?';
+$success = $connection-&gt;execute(
+    $sql,
+    [
+        'Astro Boy',
+        101,
+    ]
+);
+
+// 必要なSQLを動的に生成する
+$success = $connection-&gt;update(
+    'robots',
+    [
+        'name',
+    ],
+    [
+        'New Astro Boy',
+    ],
+    'id = 101' // 注意！ この場合、値はエスケープされません
+);
+
+// 必要なSQLを動的に生成する（別のシンタックス）
+$success = $connection-&gt;updateAsDict(
+    'robots',
+    [
+        'name' =&gt; 'New Astro Boy',
+    ],
+    'id = 101' // 注意！ この場合、値はエスケープされません
+);
+
+// エスケープ条件
+$success = $connection-&gt;update(
+    'robots',
+    [
+        'name',
+    ],
+    [
+        'New Astro Boy',
+    ],
+    [
+        'conditions' =&gt; 'id = ?',
+        'bind'       =&gt; [101],
+        'bindTypes'  =&gt; [PDO::PARAM_INT], // オプションのパラメータ
+    ]
+);
+$success = $connection-&gt;updateAsDict(
+    'robots',
+    [
+        'name' =&gt; 'New Astro Boy',
+    ],
+    [
+        'conditions' =&gt; 'id = ?',
+        'bind'       =&gt; [101],
+        'bindTypes'  =&gt; [PDO::PARAM_INT], // オプションのパラメータ
+    ]
+);
+
+// 生のSQL文を使用したデータの削除
+$sql     = 'DELETE `robots` WHERE `id` = 101';
+$success = $connection-&gt;execute($sql);
+
+// プレースホルダー付き
+$sql     = 'DELETE `robots` WHERE `id` = ?';
+$success = $connection-&gt;execute($sql, [101]);
+
+// 必要なSQLを動的に生成する
+$success = $connection-&gt;delete(
+    'robots',
+    'id = ?',
+    [
+        101,
+    ]
+);
+</code></pre>
+
+<p><a name="transactions"></a></p>
+
+<h2 id="トランザクションとネストしたトランザクション">トランザクションとネストしたトランザクション</h2>
+
+<p>Working with transactions is supported as it is with PDO. Perform data manipulation inside transactions often increase the performance on most database systems:</p>
+
+<pre><code class="language-php">&lt;?php
+
+try {
+    // トランザクション開始
+    $connection-&gt;begin();
+
+    // 複数のSQL文を実行
+    $connection-&gt;execute('DELETE `robots` WHERE `id` = 101');
+    $connection-&gt;execute('DELETE `robots` WHERE `id` = 102');
+    $connection-&gt;execute('DELETE `robots` WHERE `id` = 103');
+
+    // 全てうまくいけばコミット
+    $connection-&gt;commit();
+} catch (Exception $e) {
+    // 例外が発生したらトランザクションをロールバック
+    $connection-&gt;rollback();
+}
+</code></pre>
+
+<p>In addition to standard transactions, <a href="api/Phalcon_Db">Phalcon\Db</a> provides built-in support for <a href="http://en.wikipedia.org/wiki/Nested_transaction">nested transactions</a> (if the database system used supports them). 二回begin()を呼び出すとき、 入れ子になったトランザクションが作成されます:</p>
+
+<pre><code class="language-php">&lt;?php
+
+try {
+    // トランザクション開始
+    $connection-&gt;begin();
+
+    // 複数のSQL文を実行
+    $connection-&gt;execute('DELETE `robots` WHERE `id` = 101');
+
+    try {
+        // 入れ子トランザクション開始
+        $connection-&gt;begin();
+
+        // 入れ子トランザクションのSQL文を実行
+        $connection-&gt;execute('DELETE `robots` WHERE `id` = 102');
+        $connection-&gt;execute('DELETE `robots` WHERE `id` = 103');
+
+        // セーブポイントを作成
+        $connection-&gt;commit();
+    } catch (Exception $e) {
+        // エラー発生、入れ子トランザクションを解放
+        $connection-&gt;rollback();
+    }
+
+    // 継続、他のSQL文を実行
+    $connection-&gt;execute('DELETE `robots` WHERE `id` = 104');
+
+    // 全てうまくいけばコミット
+    $connection-&gt;commit();
+} catch (Exception $e) {
+    // 例外が発生したらトランザクションをロールバック
+    $connection-&gt;rollback();
+}
+</code></pre>
+
+<p><a name="events"></a></p>
+
+<h2 id="データベースのイベント">データベースのイベント</h2>
+
+<p><a href="api/Phalcon_Db">Phalcon\Db</a> is able to send events to a <a href="/3.4/en/events">EventsManager</a> if it’s present. ブール値 false を返すいくつかのイベントは、アクティブな操作を停止することがあります。 以下のイベントがサポートされています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>イベント名</th>
+      <th>トリガー</th>
+      <th style="text-align: center">処理中断が可能</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>afterConnect</code></td>
+      <td>データベースシステムへの接続が成功した後</td>
+      <td style="text-align: center">いいえ</td>
+    </tr>
+    <tr>
+      <td><code>beforeQuery</code></td>
+      <td>データベースシステムへSQLステートメントを送信する前</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>afterQuery</code></td>
+      <td>データベースシステムへSQLステートメントを送信した後</td>
+      <td style="text-align: center">いいえ</td>
+    </tr>
+    <tr>
+      <td><code>beforeDisconnect</code></td>
+      <td>一時的なデータベース接続を切断する前</td>
+      <td style="text-align: center">いいえ</td>
+    </tr>
+    <tr>
+      <td><code>beginTransaction</code></td>
+      <td>トランザクションが実行される前</td>
+      <td style="text-align: center">いいえ</td>
+    </tr>
+    <tr>
+      <td><code>rollbackTransaction</code></td>
+      <td>トランザクションがロールバックされる前</td>
+      <td style="text-align: center">いいえ</td>
+    </tr>
+    <tr>
+      <td><code>commitTransaction</code></td>
+      <td>トランザクションがコミットされる前</td>
+      <td style="text-align: center">いいえ</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Bind an EventsManager to a connection is simple, <a href="api/Phalcon_Db">Phalcon\Db</a> will trigger the events with the type <code>db</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Manager as EventsManager;
+use Phalcon\Db\Adapter\Pdo\Mysql as Connection;
+
+$eventsManager = new EventsManager();
+
+// 全てのデータベースのイベントをリッスン
+$eventsManager-&gt;attach('db', $dbListener);
+
+$connection = new Connection(
+    [
+        'host'     =&gt; 'localhost',
+        'username' =&gt; 'root',
+        'password' =&gt; 'secret',
+        'dbname'   =&gt; 'invo',
+    ]
+);
+
+// イベントマネージャをそのデータベースアダプタのインスタンスへ割り当て
+$connection-&gt;setEventsManager($eventsManager);
+</code></pre>
+
+<p>SQL操作の停止が便利なのは、例えば、あなたが最後のリソースのSQLインジェクションのチェッカーなどを実装しようと思っている場合です:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+
+$eventsManager-&gt;attach(
+    'db:beforeQuery',
+    function (Event $event, $connection) {
+        $sql = $connection-&gt;getSQLStatement();
+
+        // SQL ステートメントに悪意のあるワードがあるか確認
+        if (preg_match('/DROP|ALTER/i', $sql)) {
+            // このアプリケーションではDROPやALTER操作は許可されていません。
+            // これはSQL インジェクションです！
+            return false;
+        }
+
+        // OK
+        return true;
+    }
+);
+</code></pre>
+
+<p><a name="profiling"></a></p>
+
+<h2 id="sql-ステートメントのプロファイリング">SQL ステートメントのプロファイリング</h2>
+
+<p><a href="api/Phalcon_Db">Phalcon\Db</a> includes a profiling component called <a href="api/Phalcon_Db_Profiler">Phalcon\Db\Profiler</a>, that is used to analyze the performance of database operations so as to diagnose performance problems and discover bottlenecks.</p>
+
+<p>Database profiling is really easy With <a href="api/Phalcon_Db_Profiler">Phalcon\Db\Profiler</a>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+use Phalcon\Db\Profiler as DbProfiler;
+
+$eventsManager = new EventsManager();
+
+$profiler = new DbProfiler();
+
+// すべてのデータベースイベントをリッスンします。
+$eventsManager-&gt;attach(
+    'db',
+    function (Event $event, $connection) use ($profiler) {
+        if ($event-&gt;getType() === 'beforeQuery') {
+            $sql = $connection-&gt;getSQLStatement();
+
+            // 接続をしたままプロファイルを開始
+            $profiler-&gt;startProfile($sql);
+        }
+
+        if ($event-&gt;getType() === 'afterQuery') {
+            // プロファイリングを停止
+            $profiler-&gt;stopProfile();
+        }
+    }
+);
+
+// イベントマネージャーに接続を割り当て
+$connection-&gt;setEventsManager($eventsManager);
+
+$sql = 'SELECT buyer_name, quantity, product_name '
+     . 'FROM buyers '
+     . 'LEFT JOIN products ON buyers.pid = products.id';
+
+// SQLステートメントの実行
+$connection-&gt;query($sql);
+
+// プロファイラ内の最後のプロファイルを取得
+$profile = $profiler-&gt;getLastProfile();
+
+echo 'SQL Statement: ', $profile-&gt;getSQLStatement(), "\n";
+echo 'Start Time: ', $profile-&gt;getInitialTime(), "\n";
+echo 'Final Time: ', $profile-&gt;getFinalTime(), "\n";
+echo 'Total Elapsed Time: ', $profile-&gt;getTotalElapsedSeconds(), "\n";
+</code></pre>
+
+<p>You can also create your own profile class based on <a href="api/Phalcon_Db_Profiler">Phalcon\Db\Profiler</a> to record real time statistics of the statements sent to the database system:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Events\Manager as EventsManager;
+use Phalcon\Db\Profiler as Profiler;
+use Phalcon\Db\Profiler\Item as Item;
+
+class DbProfiler extends Profiler
+{
+    /**
+     * DBサーバーへSQLステートメントを送る前に実行
+     */
+    public function beforeStartProfile(Item $profile)
+    {
+        echo $profile-&gt;getSQLStatement();
+    }
+
+    /**
+     * DBサーバーへSQLステートメントを送った後に実行
+     */
+    public function afterEndProfile(Item $profile)
+    {
+        echo $profile-&gt;getTotalElapsedSeconds();
+    }
+}
+
+// イベントマネージャの作成
+$eventsManager = new EventsManager();
+
+// リスナーの作成
+$dbProfiler = new DbProfiler();
+
+// 全データベースイベントをリッスンするリスナーにアタッチ
+$eventsManager-&gt;attach('db', $dbProfiler);
+</code></pre>
+
+<p><a name="logging-statements"></a></p>
+
+<h2 id="sql-ステートメントのロギング">SQL ステートメントのロギング</h2>
+
+<p>Using high-level abstraction components such as <a href="api/Phalcon_Db">Phalcon\Db</a> to access a database, it is difficult to understand which statements are sent to the database system. <a href="api/Phalcon_Logger">Phalcon\Logger</a> interacts with <a href="api/Phalcon_Db">Phalcon\Db</a>, providing logging capabilities on the database abstraction layer.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Logger;
+use Phalcon\Events\Event;
+use Phalcon\Events\Manager as EventsManager;
+use Phalcon\Logger\Adapter\File as FileLogger;
+
+$eventsManager = new EventsManager();
+
+$logger = new FileLogger('app/logs/db.log');
+
+$eventsManager-&gt;attach(
+    'db:beforeQuery',
+    function (Event $event, $connection) use ($logger) {
+        $sql = $connection-&gt;getSQLStatement();
+
+        $logger-&gt;log($sql, Logger::INFO);
+    }
+);
+
+// eventsManagerをdbアダプタインスタンスに割り当てる
+$connection-&gt;setEventsManager($eventsManager);
+
+// 複数のSQL文を実行
+$connection-&gt;insert(
+    'products',
+    [
+        'Hot pepper',
+        3.50,
+    ],
+    [
+        'name',
+        'price',
+    ]
+);
+</code></pre>
+
+<p>上記のように、ファイル<code>app/logs/db.log</code>には次のようなものが含まれます:</p>
+
+<pre><code class="language-bash">[Sun, 29 Apr 12 22:35:26 -0500][DEBUG][Resource Id #77] INSERT INTO products
+(name, price) VALUES ('Hot pepper', 3.50)
+</code></pre>
+
+<p><a name="logger-custom"></a></p>
+
+<h2 id="独自のロガーを実装">独自のロガーを実装</h2>
+
+<p>データベースのクエリのため、独自のロガー クラスを実装できます。それは<code>log</code> と呼ぶ単一のメソッドを実装するクラスを作成することによって行います。 このメソッドは、最初の引数として string を受け入れる必要があります。 ログ オブジェクトを<code>Phalcon\Db::setLogger()</code>に渡して、その時から実行されたすべての SQL ステートメントの結果を記録するメソッドを呼び出せます。</p>
+
+<p><a name="describing-tables"></a></p>
+
+<h2 id="テーブルビューの定義取得">テーブル/ビューの定義取得</h2>
+
+<p><a href="api/Phalcon_Db">Phalcon\Db</a> also provides methods to retrieve detailed information about tables and views:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// test_db データベースのテーブルを取得
+$tables = $connection-&gt;listViews('test_db');
+
+// このデータベースに 'robots' テーブルがあるかどうか
+$exists = $connection-&gt;tableExists('robots');
+
+// 'robots'フィールドから、名前、データタイプ、特別な機能を取得
+$fields = $connection-&gt;describeColumns('robots');
+foreach ($fields as $field) {
+    echo 'Column Type: ', $field['Type'];
+}
+
+// 'robots'テーブルのインデックスを取得
+$indexes = $connection-&gt;describeIndexes('robots');
+foreach ($indexes as $index) {
+    print_r(
+        $index-&gt;getColumns()
+    );
+}
+
+// 'robots'テーブルの外部キーを取得
+$references = $connection-&gt;describeReferences('robots');
+foreach ($references as $reference) {
+    // 参照カラムの表示
+    print_r(
+        $reference-&gt;getReferencedColumns()
+    );
+}
+</code></pre>
+
+<p>テーブルの説明は MySQLの <code>DESCRIBE</code>コマンドとほとんど同じで、次の情報が含まれています。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>フィールド</th>
+      <th>タイプ</th>
+      <th>キー</th>
+      <th>Null</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>フィールド名</td>
+      <td>カラムタイプ</td>
+      <td>プライマリーキーまたはインデックスのカラムかどうか</td>
+      <td>カラムがnullを許可するかどうか</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>ビューに関する情報を取得するメソッドは、サポートされているすべてのデータベースシステムに対しても実装されています:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Get views on the test_db database
+$tables = $connection-&gt;listViews('test_db');
+
+// Is there a view 'robots' in the database?
+$exists = $connection-&gt;viewExists('robots');
+</code></pre>
+
+<p><a name="tables"></a></p>
+
+<h2 id="テーブルの作成変更削除">テーブルの作成/変更/削除</h2>
+
+<p>(MySQL、Postgresql など) データベースシステム は、<code>CREATE</code>、<code>ALTER</code> または <code>DROP</code> などのコマンドを使ってテーブルを作成、変更、削除する機能を提供します。 SQL のシンタックスは、どのデータベースシステムを使用しているかによって異なります。 <code>Phalcon\Db</code> は、テーブルを変更する統一されたインターフェイスを提供しています。ターゲットのストレージシステムに基づいたSQL シンタックスの違いを必要としません。</p>
+
+<p><a name="tables-create"></a></p>
+
+<h3 id="テーブルの作成">テーブルの作成</h3>
+
+<p>テーブルを作成する方法を示します。</p>
+
+<pre><code class="language-php">&lt;?php
+
+use \Phalcon\Db\Column as Column;
+
+$connection-&gt;createTable(
+    'robots',
+    null,
+    [
+       'columns' =&gt; [
+            new Column(
+                'id',
+                [
+                    'type'          =&gt; Column::TYPE_INTEGER,
+                    'size'          =&gt; 10,
+                    'notNull'       =&gt; true,
+                    'autoIncrement' =&gt; true,
+                    'primary'       =&gt; true,
+                ]
+            ),
+            new Column(
+                'name',
+                [
+                    'type'    =&gt; Column::TYPE_VARCHAR,
+                    'size'    =&gt; 70,
+                    'notNull' =&gt; true,
+                ]
+            ),
+            new Column(
+                'year',
+                [
+                    'type'    =&gt; Column::TYPE_INTEGER,
+                    'size'    =&gt; 11,
+                    'notNull' =&gt; true,
+                ]
+            ),
+        ]
+    ]
+);
+</code></pre>
+
+<p><code>Phalcon\Db::createTable()</code> は、テーブルを表す連想配列を受けつけます。 Columns are defined with the class <a href="api/Phalcon_Db_Column">Phalcon\Db\Column</a>. カラムの定義に使用できるオプションを次の表で示します。</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>オプション</th>
+      <th>説明</th>
+      <th style="text-align: center">オプション</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>type</code></td>
+      <td>カラムタイプ Must be a <a href="api/Phalcon_Db_Column">Phalcon\Db\Column</a> constant (see below for a list)</td>
+      <td style="text-align: center">いいえ</td>
+    </tr>
+    <tr>
+      <td><code>primary</code></td>
+      <td>そのカラムがテーブルのプライマリーキーの部分だった場合は true です。</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>size</code></td>
+      <td><code>VARCHAR</code> や <code>INTEGER</code> のような種類のカラムは指定のサイズになります。</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>scale</code></td>
+      <td><code>DECIMAL</code> または <code>NUMBER</code> カラムでサイズを指定します。どのくらい多くの桁を保持すべきかを示します。</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>unsigned</code></td>
+      <td><code>INTEGER</code> カラムは符号付きまたは符号なしの可能性があります。 このオプションは他のタイプのカラムに適用されません。</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>notNull</code></td>
+      <td>カラムが、nullを格納できるかどうか。</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>default</code></td>
+      <td>デフォルト値 (<code>'notNull' =&gt; true</code>の場合に使用する)</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>autoIncrement</code></td>
+      <td>この属性を使用すると、オートインクリメントされた整数が自動的に入力されます。 テーブル内で1カラムだけ、この属性を持つことができます。</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>bind</code></td>
+      <td><code>BIND_TYPE _*</code>定数の1つで、カラムをバインドしてから保存する必要があります</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>first</code></td>
+      <td>このカラムは、最初の位置に置かれなければなりません。</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>after</code></td>
+      <td>このカラムは、指定されたカラムの後に置く必要があります。</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a href="api/Phalcon_Db">Phalcon\Db</a> supports the following database column types:</p>
+
+<ul>
+  <li><code>Phalcon\Db\Column::TYPE_INTEGER</code></li>
+  <li><code>Phalcon\Db\Column::TYPE_DATE</code></li>
+  <li><code>Phalcon\Db\Column::TYPE_VARCHAR</code></li>
+  <li><code>Phalcon\Db\Column::TYPE_DECIMAL</code></li>
+  <li><code>Phalcon\Db\Column::TYPE_DATETIME</code></li>
+  <li><code>Phalcon\Db\Column::TYPE_CHAR</code></li>
+  <li><code>Phalcon\Db\Column::TYPE_TEXT</code></li>
+</ul>
+
+<p><code>Phalcon\Db::createTable()</code> に渡された連想配列は、次のキーを持てます:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>インデックス</th>
+      <th>説明</th>
+      <th style="text-align: center">オプション</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>columns</code></td>
+      <td>An array with a set of table columns defined with <a href="api/Phalcon_Db_Column">Phalcon\Db\Column</a></td>
+      <td style="text-align: center">いいえ</td>
+    </tr>
+    <tr>
+      <td><code>indexes</code></td>
+      <td>An array with a set of table indexes defined with <a href="api/Phalcon_Db_Index">Phalcon\Db\Index</a></td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>references</code></td>
+      <td>An array with a set of table references (foreign keys) defined with <a href="api/Phalcon_Db_Reference">Phalcon\Db\Reference</a></td>
+      <td style="text-align: center">はい</td>
+    </tr>
+    <tr>
+      <td><code>options</code></td>
+      <td>テーブルの作成オプションの配列。 これらのオプションは多くの場合、マイグレーションで生成されたデータベースシステムに関係します。</td>
+      <td style="text-align: center">はい</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="tables-altering"></a></p>
+
+<h3 id="テーブルの変更">テーブルの変更</h3>
+
+<p>アプリケーションが大きくなるにつれて、リファクタリングや新しい機能の追加の一環として、データベースを変更する必要が生じる場合があります。 すべてのデータベースシステムで既存のカラムを変更したり、既存のカラムの間にカラムを追加することはできません。 <a href="api/Phalcon_Db">Phalcon\Db</a> is limited by these constraints.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Db\Column as Column;
+
+// 新しいカラムの追加
+$connection-&gt;addColumn(
+    'robots',
+    null,
+    new Column(
+        'robot_type',
+        [
+            'type'    =&gt; Column::TYPE_VARCHAR,
+            'size'    =&gt; 32,
+            'notNull' =&gt; true,
+            'after'   =&gt; 'name',
+        ]
+    )
+);
+
+// 既存カラムの修正
+$connection-&gt;modifyColumn(
+    'robots',
+    null,
+    new Column(
+        'name',
+        [
+            'type'    =&gt; Column::TYPE_VARCHAR,
+            'size'    =&gt; 40,
+            'notNull' =&gt; true,
+        ]
+    )
+);
+
+// 'name' カラムの削除
+$connection-&gt;dropColumn(
+    'robots',
+    null,
+    'name'
+);
+</code></pre>
+
+<p><a name="tables-dropping"></a></p>
+
+<h3 id="テーブルの削除">テーブルの削除</h3>
+
+<p>現在のデータベースから既存のテーブルをドロップするには、<code>dropTable</code> メソッドを使用します。 カスタム データベースからテーブルを削除するには、2 番目のパラメーターでデータベースの名前を指定します。 テーブル削除の例:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// アクティブなデータベースから 'robots' テーブルを削除
+$connection-&gt;dropTable('robots');
+
+// 'machines' データベースから 'robots' テーブルを削除 
+$connection-&gt;dropTable('robots', 'machines');
+</code></pre>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

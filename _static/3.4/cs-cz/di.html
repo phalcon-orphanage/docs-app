@@ -1,0 +1,2098 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="cs-cz" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="cs-cz" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="cs-cz" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/cs-cz/di.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/cs-cz">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/di" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/cs-cz/di" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/cs-cz/di" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/cs-cz/di" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/cs-cz/di" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/cs-cz/di" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/di">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/cs-cz/di">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/cs-cz/di">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/cs-cz/di">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/cs-cz/di">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/cs-cz/di">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/cs-cz">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="di-service-location"></a></p>
+
+<h1 id="dependency-injection--service-location">Dependency Injection / Service Location</h1>
+
+<p><a name="di-explained"></a></p>
+
+<h2 id="di-explained">DI explained</h2>
+
+<p>The following example is a bit long, but it attempts to explain why Phalcon uses service location and dependency injection. First, let’s assume we are developing a component called <code>SomeComponent</code>. This performs some task. Our component has a dependency, that is a connection to a database.</p>
+
+<p>In this first example, the connection is created inside the component. Although this is a perfectly valid implementation, it is impartical, due to the fact that we cannot change the connection parameters or the type of the database system because the component only works as created.</p>
+
+<pre><code class="language-php">&lt;?php
+
+class SomeComponent
+{
+    /**
+     * The instantiation of the connection is hardcoded inside
+     * the component, therefore it's difficult replace it externally
+     * or change its behavior
+     */
+    public function someDbTask()
+    {
+        $connection = new Connection(
+            [
+                'host'     =&gt; 'localhost',
+                'username' =&gt; 'root',
+                'password' =&gt; 'secret',
+                'dbname'   =&gt; 'invo',
+            ]
+        );
+
+        // ...
+    }
+}
+
+$some = new SomeComponent();
+
+$some-&gt;someDbTask();
+</code></pre>
+
+<p>To solve this shortcoming, we have created a setter that injects the dependency externally before using it. This is also a valid implementation but has its shortcomings:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class SomeComponent
+{
+    private $connection;
+
+    /**
+     * Sets the connection externally
+     *
+     * @param Connection $connection
+     */
+    public function setConnection(Connection $connection)
+    {
+        $this-&gt;connection = $connection;
+    }
+
+    public function someDbTask()
+    {
+        $connection = $this-&gt;connection;
+
+        // ...
+    }
+}
+
+$some = new SomeComponent();
+
+// Create the connection
+$connection = new Connection(
+    [
+        'host'     =&gt; 'localhost',
+        'username' =&gt; 'root',
+        'password' =&gt; 'secret',
+        'dbname'   =&gt; 'invo',
+    ]
+);
+
+// Inject the connection in the component
+$some-&gt;setConnection($connection);
+
+$some-&gt;someDbTask();
+</code></pre>
+
+<p>Now consider that we use this component in different parts of the application and then we will need to create the connection several times before passing it to the component. Using a global registry pattern, we can store the connection object there and reuse it whenever we need it.</p>
+
+<pre><code class="language-php">&lt;?php
+
+class Registry
+{
+    /**
+     * Returns the connection
+     */
+    public static function getConnection()
+    {
+        return new Connection(
+            [
+                'host'     =&gt; 'localhost',
+                'username' =&gt; 'root',
+                'password' =&gt; 'secret',
+                'dbname'   =&gt; 'invo',
+            ]
+        );
+    }
+}
+
+class SomeComponent
+{
+    protected $connection;
+
+    /**
+     * Sets the connection externally
+     *
+     * @param Connection $connection
+     */
+    public function setConnection(Connection $connection)
+    {
+        $this-&gt;connection = $connection;
+    }
+
+    public function someDbTask()
+    {
+        $connection = $this-&gt;connection;
+
+        // ...
+    }
+}
+
+$some = new SomeComponent();
+
+// Pass the connection defined in the registry
+$some-&gt;setConnection(Registry::getConnection());
+
+$some-&gt;someDbTask();
+</code></pre>
+
+<p>Now, let’s imagine that we must implement two methods in the component, the first always needs to create a new connection and the second always needs to use a shared connection:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class Registry
+{
+    protected static $connection;
+
+    /**
+     * Creates a connection
+     *
+     * @return Connection
+     */
+    protected static function createConnection(): Connection
+    {
+        return new Connection(
+            [
+                'host'     =&gt; 'localhost',
+                'username' =&gt; 'root',
+                'password' =&gt; 'secret',
+                'dbname'   =&gt; 'invo',
+            ]
+        );
+    }
+
+    /**
+     * Creates a connection only once and returns it
+     *
+     * @return Connection
+     */
+    public static function getSharedConnection(): Connection
+    {
+        if (self::$connection === null) {
+            self::$connection = self::createConnection();
+        }
+
+        return self::$connection;
+    }
+
+    /**
+     * Always returns a new connection
+     *
+     * @return Connection
+     */
+    public static function getNewConnection(): Connection
+    {
+        return self::createConnection();
+    }
+}
+
+class SomeComponent
+{
+    protected $connection;
+
+    /**
+     * Sets the connection externally
+     *
+     * @param Connection $connection
+     */
+    public function setConnection(Connection $connection)
+    {
+        $this-&gt;connection = $connection;
+    }
+
+    /**
+     * This method always needs the shared connection
+     */
+    public function someDbTask()
+    {
+        $connection = $this-&gt;connection;
+
+        // ...
+    }
+
+    /**
+     * This method always needs a new connection
+     *
+     * @param Connection $connection
+     */
+    public function someOtherDbTask(Connection $connection)
+    {
+
+    }
+}
+
+$some = new SomeComponent();
+
+// This injects the shared connection
+$some-&gt;setConnection(
+    Registry::getSharedConnection()
+);
+
+$some-&gt;someDbTask();
+
+// Here, we always pass a new connection as parameter
+$some-&gt;someOtherDbTask(
+    Registry::getNewConnection()
+);
+</code></pre>
+
+<p>So far we have seen how dependency injection solved our problems. Passing dependencies as arguments instead of creating them internally in the code makes our application more maintainable and decoupled. However, in the long-term, this form of dependency injection has some disadvantages.</p>
+
+<p>For instance, if the component has many dependencies, we will need to create multiple setter arguments to pass the dependencies or create a constructor that pass them with many arguments, additionally creating dependencies before using the component, every time, makes our code not as maintainable as we would like:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Create the dependencies or retrieve them from the registry
+$connection = new Connection();
+$session    = new Session();
+$fileSystem = new FileSystem();
+$filter     = new Filter();
+$selector   = new Selector();
+
+// Pass them as constructor parameters
+$some = new SomeComponent($connection, $session, $fileSystem, $filter, $selector);
+
+// ... Or using setters
+$some-&gt;setConnection($connection);
+$some-&gt;setSession($session);
+$some-&gt;setFileSystem($fileSystem);
+$some-&gt;setFilter($filter);
+$some-&gt;setSelector($selector);
+</code></pre>
+
+<p>Think if we had to create this object in many parts of our application. In the future, if we do not require any of the dependencies, we need to go through the entire code base to remove the parameter in any constructor or setter where we injected the code. To solve this, we return again to a global registry to create the component. However, it adds a new layer of abstraction before creating the object:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class SomeComponent
+{
+    // ...
+
+    /**
+     * Define a factory method to create SomeComponent instances injecting its dependencies
+     */
+    public static function factory()
+    {
+        $connection = new Connection();
+        $session    = new Session();
+        $fileSystem = new FileSystem();
+        $filter     = new Filter();
+        $selector   = new Selector();
+
+        return new self($connection, $session, $fileSystem, $filter, $selector);
+    }
+}
+</code></pre>
+
+<p>Now we find ourselves back where we started, we are again building the dependencies inside of the component! We must find a solution that keeps us from repeatedly falling into bad practices.</p>
+
+<p>A practical and elegant way to solve these problems is using a container for dependencies. The containers act as the global registry that we saw earlier. Using the container for dependencies as a bridge to obtain the dependencies allows us to reduce the complexity of our component:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Di;
+use Phalcon\DiInterface;
+
+class SomeComponent
+{
+    protected $di;
+
+    public function __construct(DiInterface $di)
+    {
+        $this-&gt;di = $di;
+    }
+
+    public function someDbTask()
+    {
+        // Get the connection service
+        // Always returns a new connection
+        $connection = $this-&gt;di-&gt;get('db');
+    }
+
+    public function someOtherDbTask()
+    {
+        // Get a shared connection service,
+        // this will return the same connection every time
+        $connection = $this-&gt;di-&gt;getShared('db');
+
+        // This method also requires an input filtering service
+        $filter = $this-&gt;di-&gt;get('filter');
+    }
+}
+
+$di = new Di();
+
+// Register a 'db' service in the container
+$di-&gt;set(
+    'db',
+    function () {
+        return new Connection(
+            [
+                'host'     =&gt; 'localhost',
+                'username' =&gt; 'root',
+                'password' =&gt; 'secret',
+                'dbname'   =&gt; 'invo',
+            ]
+        );
+    }
+);
+
+// Register a 'filter' service in the container
+$di-&gt;set(
+    'filter',
+    function () {
+        return new Filter();
+    }
+);
+
+// Register a 'session' service in the container
+$di-&gt;set(
+    'session',
+    function () {
+        return new Session();
+    }
+);
+
+// Pass the service container as unique parameter
+$some = new SomeComponent($di);
+
+$some-&gt;someDbTask();
+</code></pre>
+
+<p>The component can now simply access the service it requires when it needs it, if it does not require a service it is not even initialized, saving resources. The component is now highly decoupled. For example, we can replace the manner in which connections are created, their behavior or any other aspect of them and that would not affect the component.</p>
+
+<p><a href="api/Phalcon_Di">Phalcon\Di</a> is a component implementing Dependency Injection and Location of services and it’s itself a container for them.</p>
+
+<p>Since Phalcon is highly decoupled, <a href="api/Phalcon_Di">Phalcon\Di</a> is essential to integrate the different components of the framework. The developer can also use this component to inject dependencies and manage global instances of the different classes used in the application.</p>
+
+<p>Basically, this component implements the <a href="http://en.wikipedia.org/wiki/Inversion_of_control">Inversion of Control</a> pattern. Applying this, the objects do not receive their dependencies using setters or constructors, but requesting a service dependency injector. This reduces the overall complexity since there is only one way to get the required dependencies within a component.</p>
+
+<p>Additionally, this pattern increases testability in the code, thus making it less prone to errors.</p>
+
+<p><a name="registering-services"></a></p>
+
+<h2 id="registering-services-in-the-container">Registering services in the Container</h2>
+
+<p>The framework itself or the developer can register services. When a component A requires component B (or an instance of its class) to operate, it can request component B from the container, rather than creating a new instance component B.</p>
+
+<p>This way of working gives us many advantages:</p>
+
+<ul>
+  <li>We can easily replace a component with one created by ourselves or a third party.</li>
+  <li>We have full control of the object initialization, allowing us to set these objects, as needed before delivering them to components.</li>
+  <li>We can get global instances of components in a structured and unified way.</li>
+</ul>
+
+<p>Services can be registered using several types of definitions:</p>
+
+<p><a name="simple-registration"></a></p>
+
+<h3 id="simple-registration">Simple Registration</h3>
+
+<p>As seen before, there are several ways to register services. These we call simple:</p>
+
+<p><a name="simple-registration-string"></a></p>
+
+<h4 id="string">String</h4>
+
+<p>This type expects the name of a valid class, returning an object of the specified class, if the class is not loaded it will be instantiated using an auto-loader. This type of definition does not allow to specify arguments for the class constructor or parameters:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Return new Phalcon\Http\Request();
+$di-&gt;set(
+    'request',
+    'Phalcon\Http\Request'
+);
+</code></pre>
+
+<p><a name="class-instances"></a></p>
+
+<h4 id="class-instances">Class instances</h4>
+
+<p>This type expects an object. Due to the fact that object does not need to be resolved as it is already an object, one could say that it is not really a dependency injection, however it is useful if you want to force the returned dependency to always be the same object/value:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Http\Request;
+
+// Return new Phalcon\Http\Request();
+$di-&gt;set(
+    'request',
+    new Request()
+);
+</code></pre>
+
+<p><a name="closures-anonymous-functions"></a></p>
+
+<h4 id="closuresanonymous-functions">Closures/Anonymous functions</h4>
+
+<p>This method offers greater freedom to build the dependency as desired, however, it is difficult to change some of the parameters externally without having to completely change the definition of dependency:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Db\Adapter\Pdo\Mysql as PdoMysql;
+
+$di-&gt;set(
+    'db',
+    function () {
+        return new PdoMysql(
+            [
+                'host'     =&gt; 'localhost',
+                'username' =&gt; 'root',
+                'password' =&gt; 'secret',
+                'dbname'   =&gt; 'blog',
+            ]
+        );
+    }
+);
+</code></pre>
+
+<p>Some of the limitations can be overcome by passing additional variables to the closure’s environment:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Config;
+use Phalcon\Db\Adapter\Pdo\Mysql as PdoMysql;
+
+$config = new Config(
+    [
+        'host'     =&gt; '127.0.0.1',
+        'username' =&gt; 'user',
+        'password' =&gt; 'pass',
+        'dbname'   =&gt; 'my_database',
+    ]
+);
+
+// Using the $config variable in the current scope
+$di-&gt;set(
+    'db',
+    function () use ($config) {
+        return new PdoMysql(
+            [
+                'host'     =&gt; $config-&gt;host,
+                'username' =&gt; $config-&gt;username,
+                'password' =&gt; $config-&gt;password,
+                'dbname'   =&gt; $config-&gt;name,
+            ]
+        );
+    }
+);
+</code></pre>
+
+<p>You can also access other DI services using the <code>get()</code> method:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Config;
+use Phalcon\Db\Adapter\Pdo\Mysql as PdoMysql;
+
+$di-&gt;set(
+    'config',
+    function () {
+        return new Config(
+            [
+                'host'     =&gt; '127.0.0.1',
+                'username' =&gt; 'user',
+                'password' =&gt; 'pass',
+                'dbname'   =&gt; 'my_database',
+            ]
+        );
+    }
+);
+
+// Using the 'config' service from the DI
+$di-&gt;set(
+    'db',
+    function () {
+        $config = $this-&gt;get('config');
+
+        return new PdoMysql(
+            [
+                'host'     =&gt; $config-&gt;host,
+                'username' =&gt; $config-&gt;username,
+                'password' =&gt; $config-&gt;password,
+                'dbname'   =&gt; $config-&gt;name,
+            ]
+        );
+    }
+);
+</code></pre>
+
+<p><a name="complex-registration"></a></p>
+
+<h3 id="complex-registration">Complex Registration</h3>
+
+<p>If it is required to change the definition of a service without instantiating/resolving the service, then, we need to define the services using the array syntax. Define a service using an array definition can be a little more verbose:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Logger\Adapter\File as LoggerFile;
+
+// Register a service 'logger' with a class name and its parameters
+$di-&gt;set(
+    'logger',
+    [
+        'className' =&gt; 'Phalcon\Logger\Adapter\File',
+        'arguments' =&gt; [
+            [
+                'type'  =&gt; 'parameter',
+                'value' =&gt; '../apps/logs/error.log',
+            ]
+        ]
+    ]
+);
+
+// Using an anonymous function
+$di-&gt;set(
+    'logger',
+    function () {
+        return new LoggerFile('../apps/logs/error.log');
+    }
+);
+</code></pre>
+
+<p>Both service registrations above produce the same result. The array definition however, allows for alteration of the service parameters if needed:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Change the service class name
+$di
+    -&gt;getService('logger')
+    -&gt;setClassName('MyCustomLogger');
+
+// Change the first parameter without instantiating the logger
+$di
+    -&gt;getService('logger')
+    -&gt;setParameter(
+        0,
+        [
+            'type'  =&gt; 'parameter',
+            'value' =&gt; '../apps/logs/error.log',
+        ]
+    );
+</code></pre>
+
+<p>In addition by using the array syntax you can use three types of dependency injection:</p>
+
+<p><a name="constructor-injection"></a></p>
+
+<h4 id="constructor-injection">Constructor Injection</h4>
+
+<p>This injection type passes the dependencies/arguments to the class constructor. Let’s pretend we have the following component:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace SomeApp;
+
+use Phalcon\Http\Response;
+
+class SomeComponent
+{
+    /**
+     * @var Response
+     */
+    protected $response;
+
+    protected $someFlag;
+
+
+
+    public function __construct(Response $response, $someFlag)
+    {
+        $this-&gt;response = $response;
+        $this-&gt;someFlag = $someFlag;
+    }
+}
+</code></pre>
+
+<p>The service can be registered this way:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$di-&gt;set(
+    'response',
+    [
+        'className' =&gt; 'Phalcon\Http\Response'
+    ]
+);
+
+$di-&gt;set(
+    'someComponent',
+    [
+        'className' =&gt; 'SomeApp\SomeComponent',
+        'arguments' =&gt; [
+            [
+                'type' =&gt; 'service',
+                'name' =&gt; 'response',
+            ],
+            [
+                'type'  =&gt; 'parameter',
+                'value' =&gt; true,
+            ],
+        ]
+    ]
+);
+</code></pre>
+
+<p>The service ‘response’ (<a href="api/Phalcon_Http_Response">Phalcon\Http\Response</a>) is resolved to be passed as the first argument of the constructor, while the second is a boolean value (true) that is passed as it is.</p>
+
+<p><a name="setter-injection"></a></p>
+
+<h4 id="setter-injection">Setter Injection</h4>
+
+<p>Classes may have setters to inject optional dependencies, our previous class can be changed to accept the dependencies with setters:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace SomeApp;
+
+use Phalcon\Http\Response;
+
+class SomeComponent
+{
+    /**
+     * @var Response
+     */
+    protected $response;
+
+    protected $someFlag;
+
+
+
+    public function setResponse(Response $response)
+    {
+        $this-&gt;response = $response;
+    }
+
+    public function setFlag($someFlag)
+    {
+        $this-&gt;someFlag = $someFlag;
+    }
+}
+</code></pre>
+
+<p>A service with setter injection can be registered as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$di-&gt;set(
+    'response',
+    [
+        'className' =&gt; 'Phalcon\Http\Response',
+    ]
+);
+
+$di-&gt;set(
+    'someComponent',
+    [
+        'className' =&gt; 'SomeApp\SomeComponent',
+        'calls'     =&gt; [
+            [
+                'method'    =&gt; 'setResponse',
+                'arguments' =&gt; [
+                    [
+                        'type' =&gt; 'service',
+                        'name' =&gt; 'response',
+                    ]
+                ]
+            ],
+            [
+                'method'    =&gt; 'setFlag',
+                'arguments' =&gt; [
+                    [
+                        'type'  =&gt; 'parameter',
+                        'value' =&gt; true,
+                    ]
+                ]
+            ]
+        ]
+    ]
+);
+</code></pre>
+
+<p><a name="properties-injection"></a></p>
+
+<h4 id="properties-injection">Properties Injection</h4>
+
+<p>A less common strategy is to inject dependencies or parameters directly into public attributes of the class:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace SomeApp;
+
+use Phalcon\Http\Response;
+
+class SomeComponent
+{
+    /**
+     * @var Response
+     */
+    public $response;
+
+    public $someFlag;
+}
+</code></pre>
+
+<p>A service with properties injection can be registered as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$di-&gt;set(
+    'response',
+    [
+        'className' =&gt; 'Phalcon\Http\Response',
+    ]
+);
+
+$di-&gt;set(
+    'someComponent',
+    [
+        'className'  =&gt; 'SomeApp\SomeComponent',
+        'properties' =&gt; [
+            [
+                'name'  =&gt; 'response',
+                'value' =&gt; [
+                    'type' =&gt; 'service',
+                    'name' =&gt; 'response',
+                ],
+            ],
+            [
+                'name'  =&gt; 'someFlag',
+                'value' =&gt; [
+                    'type'  =&gt; 'parameter',
+                    'value' =&gt; true,
+                ],
+            ]
+        ]
+    ]
+);
+</code></pre>
+
+<p>Supported parameter types include the following:</p>
+
+<table>
+  <tr>
+    <th>
+      Type
+    </th>
+    
+    <th>
+      Description
+    </th>
+    
+    <th>
+      Example
+    </th>
+  </tr>
+  
+  <tr>
+    <td>
+      parameter
+    </td>
+    
+    <td>
+      Represents a literal value to be passed as parameter
+    </td>
+    
+    <td>
+      <pre><code>php['type' =&gt; 'parameter', 'value' =&gt; 1234]</code></pre>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      service
+    </td>
+    
+    <td>
+      Represents another service in the service container
+    </td>
+    
+    <td>
+      <pre><code>php['type' =&gt; 'service', 'name' =&gt; 'request']</code></pre>
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      instance
+    </td>
+    
+    <td>
+      Represents an object that must be built dynamically
+    </td>
+    
+    <td>
+      <pre><code>php['type' =&gt; 'instance', 'className' =&gt; 'DateTime', 'arguments' =&gt; ['now']]</code></pre>
+    </td>
+  </tr>
+</table>
+
+<p>Resolving a service whose definition is complex may be slightly slower than simple definitions seen previously. However, these provide a more robust approach to define and inject services.</p>
+
+<p>Mixing different types of definitions is allowed, everyone can decide what is the most appropriate way to register the services according to the application needs.</p>
+
+<p><a name="array-syntax"></a></p>
+
+<h3 id="array-syntax">Array Syntax</h3>
+
+<p>The array syntax is also allowed to register services:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Di;
+use Phalcon\Http\Request;
+
+// Create the Dependency Injector Container
+$di = new Di();
+
+// By its class name
+$di['request'] = 'Phalcon\Http\Request';
+
+// Using an anonymous function, the instance will be lazy loaded
+$di['request'] = function () {
+    return new Request();
+};
+
+// Registering an instance directly
+$di['request'] = new Request();
+
+// Using an array definition
+$di['request'] = [
+    'className' =&gt; 'Phalcon\Http\Request',
+];
+</code></pre>
+
+<p>In the examples above, when the framework needs to access the request data, it will ask for the service identified as ‘request’ in the container. The container in turn will return an instance of the required service. A developer might eventually replace a component when he/she needs.</p>
+
+<p>Each of the methods (demonstrated in the examples above) used to set/register a service has advantages and disadvantages. It is up to the developer and the particular requirements that will designate which one is used.</p>
+
+<p>Setting a service by a string is simple, but lacks flexibility. Setting services using an array offers a lot more flexibility, but makes the code more complicated. The lambda function is a good balance between the two, but could lead to more maintenance than one would expect.</p>
+
+<p><a href="api/Phalcon_Di">Phalcon\Di</a> offers lazy loading for every service it stores. Unless the developer chooses to instantiate an object directly and store it in the container, any object stored in it (via array, string, etc.) will be lazy loaded i.e. instantiated only when requested.</p>
+
+<p><a name="loading-from-yaml"></a></p>
+
+<h3 id="loading-services-from-yaml-files">Loading services from YAML files</h3>
+
+<p>This feature will let you set your services in <code>yaml</code> files or just in plain php. For example you can load services using a <code>yaml</code> file like this:</p>
+
+<pre><code class="language-yaml">config:
+  className: \Phalcon\Config
+  shared: true
+</code></pre>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Di;
+
+$di = new Di();
+$di-&gt;loadFromYaml('services.yml');
+$di-&gt;get('config'); // will properly return config service
+</code></pre>
+
+<div class="alert alert-danger">
+    <p>
+        This approach requires that the module Yaml be installed. Please refer to <a href="http://php.net/manual/book.yaml.php">this</a> for more information.
+    </p>
+</div>
+
+<p><a name="resolving-services"></a></p>
+
+<h2 id="resolving-services">Resolving Services</h2>
+
+<p>Obtaining a service from the container is a matter of simply calling the ‘get’ method. A new instance of the service will be returned:</p>
+
+<pre><code class="language-php">$request = $di-&gt;get('request');
+</code></pre>
+
+<p>Or by calling through the magic method:</p>
+
+<pre><code class="language-php">$request = $di-&gt;getRequest();
+</code></pre>
+
+<p>Or using the array-access syntax:</p>
+
+<pre><code class="language-php">$request = $di['request'];
+</code></pre>
+
+<p>Arguments can be passed to the constructor by adding an array parameter to the method ‘get’:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// new MyComponent('some-parameter', 'other')
+$component = $di-&gt;get(
+    'MyComponent',
+    [
+        'some-parameter',
+        'other',
+    ]
+);
+</code></pre>
+
+<p><a name="envents"></a></p>
+
+<h3 id="events">Events</h3>
+
+<p><a href="api/Phalcon_Di">Phalcon\Di</a> is able to send events to an <a href="/3.4/en/events">EventsManager</a> if it is present. Events are triggered using the type ‘di’. Some events when returning boolean false could stop the active operation. The following events are supported:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event Name</th>
+      <th>Triggered</th>
+      <th style="text-align: center">Can stop operation?</th>
+      <th style="text-align: center">Triggered on</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>beforeServiceResolve</td>
+      <td>Triggered before resolve service. Listeners receive the service name and the parameters passed to it.</td>
+      <td style="text-align: center">No</td>
+      <td style="text-align: center">Listeners</td>
+    </tr>
+    <tr>
+      <td>afterServiceResolve</td>
+      <td>Triggered after resolve service. Listeners receive the service name, instance, and the parameters passed to it.</td>
+      <td style="text-align: center">No</td>
+      <td style="text-align: center">Listeners</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="shared-services"></a></p>
+
+<h2 id="shared-services">Shared services</h2>
+
+<p>Services can be registered as ‘shared’ services this means that they always will act as <a href="http://en.wikipedia.org/wiki/Singleton_pattern">singletons</a>. Once the service is resolved for the first time the same instance of it is returned every time a consumer retrieve the service from the container:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Session\Adapter\Files as SessionFiles;
+
+// Register the session service as 'always shared'
+$di-&gt;setShared(
+    'session',
+    function () {
+        $session = new SessionFiles();
+
+        $session-&gt;start();
+
+        return $session;
+    }
+);
+
+// Locates the service for the first time
+$session = $di-&gt;get('session');
+
+// Returns the first instantiated object
+$session = $di-&gt;getSession();
+</code></pre>
+
+<p>An alternative way to register shared services is to pass ‘true’ as third parameter of ‘set’:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Register the session service as 'always shared'
+$di-&gt;set(
+    'session',
+    function () {
+        // ...
+    },
+    true
+);
+</code></pre>
+
+<p>If a service isn’t registered as shared and you want to be sure that a shared instance will be accessed every time the service is obtained from the DI, you can use the ‘getShared’ method:</p>
+
+<pre><code class="language-php">$request = $di-&gt;getShared('request');
+</code></pre>
+
+<p><a name="manipulating-services-individually"></a></p>
+
+<h2 id="manipulating-services-individually">Manipulating services individually</h2>
+
+<p>Once a service is registered in the service container, you can retrieve it to manipulate it individually:</p>
+
+<pre><code class="language-php">    &lt;?php
+
+    use Phalcon\Http\Request;
+
+    // Register the 'request' service
+    $di-&gt;set('request', 'Phalcon\Http\Request');
+
+    // Get the service
+    $requestService = $di-&gt;getService('request');
+
+    // Change its definition
+    $requestService-&gt;setDefinition(
+        function () {
+            return new Request();
+        }
+    );
+
+    // Change it to shared
+    $requestService-&gt;setShared(true);
+
+    // Resolve the service (return a Phalcon\Http\Request instance)
+    $request = $requestService-&gt;resolve();
+</code></pre>
+
+<p><a name="instantiating-classes-service-container"></a></p>
+
+<h2 id="instantiating-classes-via-the-service-container">Instantiating classes via the Service Container</h2>
+
+<p>When you request a service to the service container, if it can’t find out a service with the same name it’ll try to load a class with the same name. With this behavior we can replace any class by another simply by registering a service with its name:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Register a controller as a service
+$di-&gt;set(
+    'IndexController',
+    function () {
+        $component = new Component();
+
+        return $component;
+    },
+    true
+);
+
+// Register a controller as a service
+$di-&gt;set(
+    'MyOtherComponent',
+    function () {
+        // Actually returns another component
+        $component = new AnotherComponent();
+
+        return $component;
+    }
+);
+
+// Create an instance via the service container
+$myComponent = $di-&gt;get('MyOtherComponent');
+</code></pre>
+
+<p>You can take advantage of this, always instantiating your classes via the service container (even if they aren’t registered as services). The DI will fallback to a valid autoloader to finally load the class. By doing this, you can easily replace any class in the future by implementing a definition for it.</p>
+
+<p><a name="automatic-injecting-di-itself"></a></p>
+
+<h2 id="automatic-injecting-of-the-di-itself">Automatic Injecting of the DI itself</h2>
+
+<p>If a class or component requires the DI itself to locate services, the DI can automatically inject itself to the instances it creates, to do this, you need to implement the <a href="api/Phalcon_Di_InjectionAwareInterface">Phalcon\Di\InjectionAwareInterface</a> in your classes:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\DiInterface;
+use Phalcon\Di\InjectionAwareInterface;
+
+class MyClass implements InjectionAwareInterface
+{
+    /**
+     * @var DiInterface
+     */
+    protected $di;
+
+
+    public function setDi(DiInterface $di)
+    {
+        $this-&gt;di = $di;
+    }
+
+    public function getDi()
+    {
+        return $this-&gt;di;
+    }
+}
+</code></pre>
+
+<p>Then once the service is resolved, the <code>$di</code> will be passed to <code>setDi()</code> automatically:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Register the service
+$di-&gt;set('myClass', 'MyClass');
+
+// Resolve the service (NOTE: $myClass-&gt;setDi($di) is automatically called)
+$myClass = $di-&gt;get('myClass');
+</code></pre>
+
+<p><a name="organizing-services-files"></a></p>
+
+<h2 id="organizing-services-in-files">Organizing services in files</h2>
+
+<p>You can better organize your application by moving the service registration to individual files instead of doing everything in the application’s bootstrap:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$di-&gt;set(
+    'router',
+    function () {
+        return include '../app/config/routes.php';
+    }
+);
+</code></pre>
+
+<p>Then in the file (<code>'../app/config/routes.php'</code>) return the object resolved:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$router = new MyRouter();
+
+$router-&gt;post('/login');
+
+return $router;
+</code></pre>
+
+<p><a name="accessing-di-static-way"></a></p>
+
+<h2 id="accessing-the-di-in-a-static-way">Accessing the DI in a static way</h2>
+
+<p>If needed you can access the latest DI created in a static function in the following way:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Di;
+
+class SomeComponent
+{
+    public static function someMethod()
+    {
+        // Get the session service
+        $session = Di::getDefault()-&gt;getSession();
+    }
+}
+</code></pre>
+
+<p><a name="service-providers"></a></p>
+
+<h2 id="service-providers">Service Providers</h2>
+
+<p>Using the <code>ServiceProviderInterface</code> you now register services by context. You can move all your <code>$di-&gt;set()</code> calls to classes like this:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Di\ServiceProviderInterface;
+use Phalcon\DiInterface;
+use Phalcon\Di;
+use Phalcon\Config\Adapter\Ini;
+
+class SomeServiceProvider implements ServiceProviderInterface
+{
+    public function register(DiInterface $di)
+    {
+        $di-&gt;set(
+            'config', 
+            function () {
+                return new Ini('config.ini');
+            }
+        );
+    }
+}
+
+$di = new Di();
+$di-&gt;register(new SomeServiceProvider());
+var_dump($di-&gt;get('config')); // will return properly our config
+</code></pre>
+
+<p><a name="factory-default-di"></a></p>
+
+<h2 id="factory-default-di">Factory Default DI</h2>
+
+<p>Although the decoupled character of Phalcon offers us great freedom and flexibility, maybe we just simply want to use it as a full-stack framework. To achieve this, the framework provides a variant of <a href="api/Phalcon_Di">Phalcon\Di</a> called <a href="api/Phalcon_Di_FactoryDefault">Phalcon\Di\FactoryDefault</a>. This class automatically registers the appropriate services bundled with the framework to act as full-stack.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Di\FactoryDefault;
+
+$di = new FactoryDefault();
+</code></pre>
+
+<p><a name="service-name-conventions"></a></p>
+
+<h2 id="service-name-conventions">Service Name Conventions</h2>
+
+<p>Although you can register services with the names you want, Phalcon has a several naming conventions that allow it to get the the correct (built-in) service when you need it.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Service Name</th>
+      <th>Description</th>
+      <th>Default</th>
+      <th style="text-align: center">Shared</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>assets</td>
+      <td>Assets Manager</td>
+      <td><a href="api/Phalcon_Assets_Manager">Phalcon\Assets\Manager</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>annotations</td>
+      <td>Annotations Parser</td>
+      <td><a href="api/Phalcon_Annotations_Adapter_Memory">Phalcon\Annotations\Adapter\Memory</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>cookies</td>
+      <td>HTTP Cookies Management Service</td>
+      <td><a href="api/Phalcon_Http_Response_Cookies">Phalcon\Http\Response\Cookies</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>crypt</td>
+      <td>Encrypt/Decrypt data</td>
+      <td><a href="api/Phalcon_Crypt">Phalcon\Crypt</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>db</td>
+      <td>Low-Level Database Connection Service</td>
+      <td><a href="api/Phalcon_Db">Phalcon\Db</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>dispatcher</td>
+      <td>Controllers Dispatching Service</td>
+      <td><a href="api/Phalcon_Mvc_Dispatcher">Phalcon\Mvc\Dispatcher</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>eventsManager</td>
+      <td>Events Management Service</td>
+      <td><a href="api/Phalcon_Events_Manager">Phalcon\Events\Manager</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>escaper</td>
+      <td>Contextual Escaping</td>
+      <td><a href="api/Phalcon_Escaper">Phalcon\Escaper</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>flash</td>
+      <td>Flash Messaging Service</td>
+      <td><a href="api/Phalcon_Flash_Direct">Phalcon\Flash\Direct</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>flashSession</td>
+      <td>Flash Session Messaging Service</td>
+      <td><a href="api/Phalcon_Flash_Session">Phalcon\Flash\Session</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>filter</td>
+      <td>Input Filtering Service</td>
+      <td><a href="api/Phalcon_Filter">Phalcon\Filter</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>modelsCache</td>
+      <td>Cache backend for models cache</td>
+      <td>None</td>
+      <td style="text-align: center">No</td>
+    </tr>
+    <tr>
+      <td>modelsManager</td>
+      <td>Models Management Service</td>
+      <td><a href="api/Phalcon_Mvc_Model_Manager">Phalcon\Mvc\Model\Manager</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>modelsMetadata</td>
+      <td>Models Meta-Data Service</td>
+      <td><a href="api/Phalcon_Mvc_Model_MetaData_Memory">Phalcon\Mvc\Model\MetaData\Memory</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>request</td>
+      <td>HTTP Request Environment Service</td>
+      <td><a href="api/Phalcon_Http_Request">Phalcon\Http\Request</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>response</td>
+      <td>HTTP Response Environment Service</td>
+      <td><a href="api/Phalcon_Http_Response">Phalcon\Http\Response</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>router</td>
+      <td>Routing Service</td>
+      <td><a href="api/Phalcon_Mvc_Router">Phalcon\Mvc\Router</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>security</td>
+      <td>Security helpers</td>
+      <td><a href="api/Phalcon_Security">Phalcon\Security</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>session</td>
+      <td>Session Service</td>
+      <td><a href="api/Phalcon_Session_Adapter_Files">Phalcon\Session\Adapter\Files</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>sessionBag</td>
+      <td>Session Bag service</td>
+      <td><a href="api/Phalcon_Session_Bag">Phalcon\Session\Bag</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>tag</td>
+      <td>HTML generation helpers</td>
+      <td><a href="api/Phalcon_Tag">Phalcon\Tag</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>transactionManager</td>
+      <td>Models Transaction Manager Service</td>
+      <td><a href="api/Phalcon_Mvc_Model_Transaction_Manager">Phalcon\Mvc\Model\Transaction\Manager</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>url</td>
+      <td>URL Generator Service</td>
+      <td><a href="api/Phalcon_Mvc_Url">Phalcon\Mvc\Url</a></td>
+      <td style="text-align: center">Yes</td>
+    </tr>
+    <tr>
+      <td>viewsCache</td>
+      <td>Cache backend for views fragments</td>
+      <td>None</td>
+      <td style="text-align: center">No</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="implementing-your-own-di"></a></p>
+
+<h2 id="implementing-your-own-di">Implementing your own DI</h2>
+
+<p>The <a href="api/Phalcon_DiInterface">Phalcon\DiInterface</a> interface must be implemented to create your own DI replacing the one provided by Phalcon or extend the current one.</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

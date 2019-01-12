@@ -1,0 +1,721 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.3/en/api/Phalcon_Security_Random.html" rel="canonical">
+        <title>Phalcon Framework Documentation - Phalcon\Security\Random</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation - Phalcon\Security\Random">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation - Phalcon\Security\Random">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.3/en">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.3/en/Phalcon_Security_Random" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.3
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/en/Phalcon_Security_Random" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/en/Phalcon_Security_Random" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/en/Phalcon_Security_Random" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/en/Phalcon_Security_Random" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/en/Phalcon_Security_Random" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.3/en/Phalcon_Security_Random">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.3
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/en/Phalcon_Security_Random">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/en/Phalcon_Security_Random">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/en/Phalcon_Security_Random">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/en/Phalcon_Security_Random">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/en/Phalcon_Security_Random">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/en">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <h1 id="class-phalconsecurityrandom">Class <strong>Phalcon\Security\Random</strong></h1>
+
+<p><a href="https://github.com/phalcon/cphalcon/tree/v3.3.0/phalcon/security/random.zep" class="btn btn-default btn-sm">Source on GitHub</a></p>
+
+<p>Secure random number generator class.</p>
+
+<p>Provides secure random number generator which is suitable for generating
+session key in HTTP cookies, etc.</p>
+
+<p>It supports following secure random number generators:</p>
+
+<ul>
+  <li>random_bytes (PHP 7)</li>
+  <li>libsodium</li>
+  <li>openssl, libressl</li>
+  <li>/dev/urandom</li>
+</ul>
+
+<p><code>Phalcon\Security\Random</code> could be mainly useful for:</p>
+
+<ul>
+  <li>Key generation (e.g. generation of complicated keys)</li>
+  <li>Generating random passwords for new user accounts</li>
+  <li>Encryption systems</li>
+</ul>
+
+<pre><code class="language-php">&lt;?php
+
+$random = new \Phalcon\Security\Random();
+
+// Random binary string
+$bytes = $random-&gt;bytes();
+
+// Random hex string
+echo $random-&gt;hex(10); // a29f470508d5ccb8e289
+echo $random-&gt;hex(10); // 533c2f08d5eee750e64a
+echo $random-&gt;hex(11); // f362ef96cb9ffef150c9cd
+echo $random-&gt;hex(12); // 95469d667475125208be45c4
+echo $random-&gt;hex(13); // 05475e8af4a34f8f743ab48761
+
+// Random base62 string
+echo $random-&gt;base62(); // z0RkwHfh8ErDM1xw
+
+// Random base64 string
+echo $random-&gt;base64(12); // XfIN81jGGuKkcE1E
+echo $random-&gt;base64(12); // 3rcq39QzGK9fUqh8
+echo $random-&gt;base64();   // DRcfbngL/iOo9hGGvy1TcQ==
+echo $random-&gt;base64(16); // SvdhPcIHDZFad838Bb0Swg==
+
+// Random URL-safe base64 string
+echo $random-&gt;base64Safe();           // PcV6jGbJ6vfVw7hfKIFDGA
+echo $random-&gt;base64Safe();           // GD8JojhzSTrqX7Q8J6uug
+echo $random-&gt;base64Safe(8);          // mGyy0evy3ok
+echo $random-&gt;base64Safe(null, true); // DRrAgOFkS4rvRiVHFefcQ==
+
+// Random UUID
+echo $random-&gt;uuid(); // db082997-2572-4e2c-a046-5eefe97b1235
+echo $random-&gt;uuid(); // da2aa0e2-b4d0-4e3c-99f5-f5ef62c57fe2
+echo $random-&gt;uuid(); // 75e6b628-c562-4117-bb76-61c4153455a9
+echo $random-&gt;uuid(); // dc446df1-0848-4d05-b501-4af3c220c13d
+
+// Random number between 0 and $len
+echo $random-&gt;number(256); // 84
+echo $random-&gt;number(256); // 79
+echo $random-&gt;number(100); // 29
+echo $random-&gt;number(300); // 40
+
+// Random base58 string
+echo $random-&gt;base58();   // 4kUgL2pdQMSCQtjE
+echo $random-&gt;base58();   // Umjxqf7ZPwh765yR
+echo $random-&gt;base58(24); // qoXcgmw4A9dys26HaNEdCRj9
+echo $random-&gt;base58(7);  // 774SJD3vgP
+
+</code></pre>
+
+<p>This class partially borrows SecureRandom library from Ruby</p>
+
+<h2 id="methods">Methods</h2>
+<p>public  <strong>bytes</strong> ([<em>mixed</em> $len])</p>
+
+<p>Generates a random binary string
+The <code>Random::bytes</code> method returns a string and accepts as input an int
+representing the length in bytes to be returned.
+If $len is not specified, 16 is assumed. It may be larger in future.
+The result may contain any byte: “x00” - “xFF”.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$random = new \Phalcon\Security\Random();
+
+$bytes = $random-&gt;bytes();
+var_dump(bin2hex($bytes));
+// Possible output: string(32) "00f6c04b144b41fad6a59111c126e1ee"
+
+</code></pre>
+
+<p>public  <strong>hex</strong> ([<em>mixed</em> $len])</p>
+
+<p>Generates a random hex string
+If $len is not specified, 16 is assumed. It may be larger in future.
+The length of the result string is usually greater of $len.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$random = new \Phalcon\Security\Random();
+
+echo $random-&gt;hex(10); // a29f470508d5ccb8e289
+
+</code></pre>
+
+<p>public  <strong>base58</strong> ([<em>mixed</em> $len])</p>
+
+<p>Generates a random base58 string
+If $len is not specified, 16 is assumed. It may be larger in future.
+The result may contain alphanumeric characters except 0, O, I and l.
+It is similar to <code>Phalcon\Security\Random:base64</code> but has been modified to avoid both non-alphanumeric
+characters and letters which might look ambiguous when printed.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$random = new \Phalcon\Security\Random();
+
+echo $random-&gt;base58(); // 4kUgL2pdQMSCQtjE
+
+</code></pre>
+
+<p>public  <strong>base62</strong> ([<em>mixed</em> $len])</p>
+
+<p>Generates a random base62 string
+If $len is not specified, 16 is assumed. It may be larger in future.
+It is similar to <code>Phalcon\Security\Random:base58</code> but has been modified to provide the largest value that can
+safely be used in URLs without needing to take extra characters into consideration because it is [A-Za-z0-9].</p>
+
+<pre><code class="language-php">&lt;?php
+
+$random = new \Phalcon\Security\Random();
+
+echo $random-&gt;base62(); // z0RkwHfh8ErDM1xw
+
+</code></pre>
+
+<p>public  <strong>base64</strong> ([<em>mixed</em> $len])</p>
+
+<p>Generates a random base64 string
+If $len is not specified, 16 is assumed. It may be larger in future.
+The length of the result string is usually greater of $len.
+Size formula: 4 * ($len / 3) and this need to be rounded up to a multiple of 4.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$random = new \Phalcon\Security\Random();
+
+echo $random-&gt;base64(12); // 3rcq39QzGK9fUqh8
+
+</code></pre>
+
+<p>public  <strong>base64Safe</strong> ([<em>mixed</em> $len], [<em>mixed</em> $padding])</p>
+
+<p>Generates a random URL-safe base64 string
+If $len is not specified, 16 is assumed. It may be larger in future.
+The length of the result string is usually greater of $len.
+By default, padding is not generated because “=” may be used as a URL delimiter.
+The result may contain A-Z, a-z, 0-9, “-“ and “_”. “=” is also used if $padding is true.
+See RFC 3548 for the definition of URL-safe base64.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$random = new \Phalcon\Security\Random();
+
+echo $random-&gt;base64Safe(); // GD8JojhzSTrqX7Q8J6uug
+
+</code></pre>
+
+<p>public  <strong>uuid</strong> ()</p>
+
+<p>Generates a v4 random UUID (Universally Unique IDentifier)
+The version 4 UUID is purely random (except the version). It doesn’t contain meaningful
+information such as MAC address, time, etc. See RFC 4122 for details of UUID.
+This algorithm sets the version number (4 bits) as well as two reserved bits.
+All other bits (the remaining 122 bits) are set using a random or pseudorandom data source.
+Version 4 UUIDs have the form xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx where x is any hexadecimal
+digit and y is one of 8, 9, A, or B (e.g., f47ac10b-58cc-4372-a567-0e02b2c3d479).</p>
+
+<pre><code class="language-php">&lt;?php
+
+$random = new \Phalcon\Security\Random();
+
+echo $random-&gt;uuid(); // 1378c906-64bb-4f81-a8d6-4ae1bfcdec22
+
+</code></pre>
+
+<p>public  <strong>number</strong> (<em>mixed</em> $len)</p>
+
+<p>Generates a random number between 0 and $len
+Returns an integer: 0 &lt;= result &lt;= $len.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$random = new \Phalcon\Security\Random();
+
+echo $random-&gt;number(16); // 8
+
+</code></pre>
+
+<p>protected  <strong>base</strong> (<em>mixed</em> $alphabet, <em>mixed</em> $base, [<em>mixed</em> $n])</p>
+
+<p>Generates a random string based on the number ($base) of characters ($alphabet).
+If $n is not specified, 16 is assumed. It may be larger in future.</p>
+
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.3">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

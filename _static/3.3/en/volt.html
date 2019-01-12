@@ -1,0 +1,2485 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.3/en/volt.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.3/en">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.3/en/volt" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.3
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/en/volt" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/en/volt" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/en/volt" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/en/volt" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/en/volt" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.3/en/volt">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.3
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/en/volt">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/en/volt">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/en/volt">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/en/volt">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/en/volt">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/en">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+<h1 id="volt-template-engine">Volt: Template Engine</h1>
+<p>Volt is an ultra-fast and designer friendly templating language written in C for PHP. It provides you a set of helpers to write views in an easy way. Volt is highly integrated with other components of Phalcon, just as you can use it as a stand-alone component in your applications.</p>
+
+<p><img src="/assets/images/content/volt.jpg" alt="" /></p>
+
+<p>Volt is inspired by <a href="http://jinja.pocoo.org/">Jinja</a>, originally created by <a href="https://github.com/mitsuhiko">Armin Ronacher</a>. Therefore many developers will be in familiar territory using the same syntax they have been using with similar template engines. Volt’s syntax and features have been enhanced with more elements and of course with the performance that developers have been accustomed to while working with Phalcon.</p>
+
+<p><a name="introduction"></a></p>
+<h2 id="introduction">Introduction</h2>
+<p>Volt views are compiled to pure PHP code, so basically they save the effort of writing PHP code manually:</p>
+
+<pre><code class="language-twig">
+{# app/views/products/show.volt #}
+
+{% block last_products %}
+
+{% for product in products %}
+    * Name: {{ product.name|e }}
+    {% if product.status === 'Active' %}
+       Price: {{ product.price + product.taxes/100 }}
+    {% endif  %}
+{% endfor  %}
+
+{% endblock %}
+
+</code></pre>
+
+<p><a name="setup"></a></p>
+<h2 id="activating-volt">Activating Volt</h2>
+<p>As with other templating engines, you may register Volt in the view component, using a new extension or reusing the standard <code>.phtml</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+use Phalcon\Mvc\View\Engine\Volt;
+
+// Register Volt as a service
+$di-&gt;set(
+    'voltService',
+    function ($view, $di) {
+        $volt = new Volt($view, $di);
+
+        $volt-&gt;setOptions(
+            [
+                'compiledPath'      =&gt; '../app/compiled-templates/',
+                'compiledExtension' =&gt; '.compiled',
+            ]
+        );
+
+        return $volt;
+    }
+);
+
+// Register Volt as template engine
+$di-&gt;set(
+    'view',
+    function () {
+        $view = new View();
+
+        $view-&gt;setViewsDir('../app/views/');
+
+        $view-&gt;registerEngines(
+            [
+                '.volt' =&gt; 'voltService',
+            ]
+        );
+
+        return $view;
+    }
+);
+</code></pre>
+
+<p>Use the standard <code>.phtml</code> extension:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$view-&gt;registerEngines(
+    [
+        '.phtml' =&gt; 'voltService',
+    ]
+);
+</code></pre>
+
+<p>You don’t have to specify the Volt Service in the DI; you can also use the Volt engine with the default settings:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$view-&gt;registerEngines(
+    [
+        '.volt' =&gt; Phalcon\Mvc\View\Engine\Volt::class,
+    ]
+);
+</code></pre>
+<p>`
+If you do not want to reuse Volt as a service, you can pass an anonymous function to register the engine instead of a service name:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View;
+use Phalcon\Mvc\View\Engine\Volt;
+
+// Register Volt as template engine with an anonymous function
+$di-&gt;set(
+    'view',
+    function () {
+        $view = new View();
+
+        $view-&gt;setViewsDir('../app/views/');
+
+        $view-&gt;registerEngines(
+            [
+                '.volt' =&gt; function ($view, $di) {
+                    $volt = new Volt($view, $di);
+
+                    // Set some options here
+
+                    return $volt;
+                }
+            ]
+        );
+
+        return $view;
+    }
+);
+</code></pre>
+
+<p>The following options are available in Volt:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Option</th>
+      <th>Description</th>
+      <th>Default</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>autoescape</code></td>
+      <td>Enables globally autoescape of HTML</td>
+      <td><code>false</code></td>
+    </tr>
+    <tr>
+      <td><code>compileAlways</code></td>
+      <td>Tell Volt if the templates must be compiled in each request or only when they change</td>
+      <td><code>false</code></td>
+    </tr>
+    <tr>
+      <td><code>compiledExtension</code></td>
+      <td>An additional extension appended to the compiled PHP file</td>
+      <td><code>.php</code></td>
+    </tr>
+    <tr>
+      <td><code>compiledPath</code></td>
+      <td>A writable path where the compiled PHP templates will be placed</td>
+      <td><code>./</code></td>
+    </tr>
+    <tr>
+      <td><code>compiledSeparator</code></td>
+      <td>Volt replaces the directory separators / and \ by this separator in order to create a single file in the compiled directory</td>
+      <td><code>%%</code></td>
+    </tr>
+    <tr>
+      <td><code>prefix</code></td>
+      <td>Allows to prepend a prefix to the templates in the compilation path</td>
+      <td><code>null</code></td>
+    </tr>
+    <tr>
+      <td><code>stat</code></td>
+      <td>Whether Phalcon must check if exists differences between the template file and its compiled path</td>
+      <td><code>true</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The compilation path is generated according to the above options, if the developer wants total freedom defining the compilation path, an anonymous function can be used to generate it, this function receives the relative path to the template in the views directory. The following examples show how to change the compilation path dynamically:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Just append the .php extension to the template path
+// leaving the compiled templates in the same directory
+$volt-&gt;setOptions(
+    [
+        'compiledPath' =&gt; function ($templatePath) {
+            return $templatePath . '.php';
+        }
+    ]
+);
+
+// Recursively create the same structure in another directory
+$volt-&gt;setOptions(
+    [
+        'compiledPath' =&gt; function ($templatePath) {
+            $dirName = dirname($templatePath);
+
+            if (!is_dir('cache/' . $dirName)) {
+                mkdir('cache/' . $dirName , 0777 , true);
+            }
+
+            return 'cache/' . $dirName . '/'. $templatePath . '.php';
+        }
+    ]
+);
+</code></pre>
+
+<p><a name="basic-usage"></a></p>
+<h2 id="basic-usage">Basic Usage</h2>
+<p>A view consists of Volt code, PHP and HTML. A set of special delimiters is available to enter into Volt mode. <code>{% ... %}</code> is used to execute statements such as for-loops or assign values and <code>{{ ... }}</code>,
+prints the result of an expression to the template.</p>
+
+<p>Below is a minimal template that illustrates a few basics:</p>
+
+<pre><code class="language-twig">
+{# app/views/posts/show.phtml #}
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;{{ title }} - An example blog&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+
+        {% if show_navigation %}
+            &lt;ul id='navigation'&gt;
+                {% for item in menu %}
+                    &lt;li&gt;
+                        &lt;a href='{{ item.href }}'&gt;
+                            {{ item.caption }}
+                        &lt;/a&gt;
+                    &lt;/li&gt;
+                {% endfor %}
+            &lt;/ul&gt;
+        {% endif %}
+
+        &lt;h1&gt;{{ post.title }}&lt;/h1&gt;
+
+        &lt;div class='content'&gt;
+            {{ post.content }}
+        &lt;/div&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+<p>Using <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a> you can pass variables from the controller to the views. In the above example, four variables were passed to the view: <code>show_navigation</code>, <code>menu</code>, <code>title</code> and <code>post</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function showAction()
+    {
+        $post = Post::findFirst();
+        $menu = Menu::findFirst();
+
+        $this-&gt;view-&gt;show_navigation = true;
+        $this-&gt;view-&gt;menu            = $menu;
+        $this-&gt;view-&gt;title           = $post-&gt;title;
+        $this-&gt;view-&gt;post            = $post;
+
+        // Or...
+
+        $this-&gt;view-&gt;setVar('show_navigation', true);
+        $this-&gt;view-&gt;setVar('menu',            $menu);
+        $this-&gt;view-&gt;setVar('title',           $post-&gt;title);
+        $this-&gt;view-&gt;setVar('post',            $post);
+    }
+}
+</code></pre>
+
+<p><a name="variables"></a></p>
+<h2 id="variables">Variables</h2>
+<p>Object variables may have attributes which can be accessed using the syntax: <code>foo.bar</code>. If you are passing arrays, you have to use the square bracket syntax: <code>foo['bar']</code></p>
+
+<pre><code class="language-twig">
+{{ post.title }} {# for $post-&gt;title #}
+{{ post['title'] }} {# for $post['title'] #}
+
+</code></pre>
+
+<p><a name="filters"></a></p>
+<h2 id="filters">Filters</h2>
+<p>Variables can be formatted or modified using filters. The pipe operator <code>|</code> is used to apply filters to variables:</p>
+
+<pre><code class="language-twig">
+{{ post.title|e }}
+{{ post.content|striptags }}
+{{ name|capitalize|trim }}
+
+</code></pre>
+
+<p>The following is the list of available built-in filters in Volt:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Filter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>abs</code></td>
+      <td>Applies the <a href="http://php.net/manual/en/function.abs.php">abs</a> PHP function to a value.</td>
+    </tr>
+    <tr>
+      <td><code>capitalize</code></td>
+      <td>Capitalizes a string by applying the <a href="http://php.net/manual/en/function.ucwords.php">ucwords</a> PHP function to the value</td>
+    </tr>
+    <tr>
+      <td><code>convert_encoding</code></td>
+      <td>Converts a string from one charset to another</td>
+    </tr>
+    <tr>
+      <td><code>default</code></td>
+      <td>Sets a default value in case that the evaluated expression is empty (is not set or evaluates to a falsy value)</td>
+    </tr>
+    <tr>
+      <td><code>e</code></td>
+      <td>Applies <code>Phalcon\Escaper-&gt;escapeHtml()</code> to the value</td>
+    </tr>
+    <tr>
+      <td><code>escape</code></td>
+      <td>Applies <code>Phalcon\Escaper-&gt;escapeHtml()</code> to the value</td>
+    </tr>
+    <tr>
+      <td><code>escape_attr</code></td>
+      <td>Applies <code>Phalcon\Escaper-&gt;escapeHtmlAttr()</code> to the value</td>
+    </tr>
+    <tr>
+      <td><code>escape_css</code></td>
+      <td>Applies <code>Phalcon\Escaper-&gt;escapeCss()</code> to the value</td>
+    </tr>
+    <tr>
+      <td><code>escape_js</code></td>
+      <td>Applies <code>Phalcon\Escaper-&gt;escapeJs()</code> to the value</td>
+    </tr>
+    <tr>
+      <td><code>format</code></td>
+      <td>Formats a string using <a href="http://php.net/manual/en/function.sprintf.php">sprintf</a>.</td>
+    </tr>
+    <tr>
+      <td><code>json_encode</code></td>
+      <td>Converts a value into its <a href="http://php.net/manual/en/function.json-encode.php">JSON</a> representation</td>
+    </tr>
+    <tr>
+      <td><code>json_decode</code></td>
+      <td>Converts a value from its <a href="http://php.net/manual/en/function.json-encode.php">JSON</a> representation to a PHP representation</td>
+    </tr>
+    <tr>
+      <td><code>join</code></td>
+      <td>Joins the array parts using a separator <a href="http://php.net/manual/en/function.join.php">join</a></td>
+    </tr>
+    <tr>
+      <td><code>keys</code></td>
+      <td>Returns the array keys using <a href="http://php.net/manual/en/function.array-keys.php">array_keys</a></td>
+    </tr>
+    <tr>
+      <td><code>left_trim</code></td>
+      <td>Applies the <a href="http://php.net/manual/en/function.ltrim.php">ltrim</a> PHP function to the value. Removing extra spaces</td>
+    </tr>
+    <tr>
+      <td><code>length</code></td>
+      <td>Counts the string length or how many items are in an array or object</td>
+    </tr>
+    <tr>
+      <td><code>lower</code></td>
+      <td>Change the case of a string to lowercase</td>
+    </tr>
+    <tr>
+      <td><code>nl2br</code></td>
+      <td>Changes newlines <code>\n</code> by line breaks (<code>&lt;br /&gt;</code>). Uses the PHP function <a href="http://php.net/manual/en/function.nl2br.php">nl2br</a></td>
+    </tr>
+    <tr>
+      <td><code>right_trim</code></td>
+      <td>Applies the <a href="http://php.net/manual/en/function.rtrim.php">rtrim</a> PHP function to the value. Removing extra spaces</td>
+    </tr>
+    <tr>
+      <td><code>sort</code></td>
+      <td>Sorts an array using the PHP function <a href="http://php.net/manual/en/function.asort.php">asort</a></td>
+    </tr>
+    <tr>
+      <td><code>stripslashes</code></td>
+      <td>Applies the <a href="http://php.net/manual/en/function.stripslashes.php">stripslashes</a> PHP function to the value. Removing escaped quotes</td>
+    </tr>
+    <tr>
+      <td><code>striptags</code></td>
+      <td>Applies the <a href="http://php.net/manual/en/function.striptags.php">striptags</a> PHP function to the value. Removing HTML tags</td>
+    </tr>
+    <tr>
+      <td><code>trim</code></td>
+      <td>Applies the <a href="http://php.net/manual/en/function.trim.php">trim</a> PHP function to the value. Removing extra spaces</td>
+    </tr>
+    <tr>
+      <td><code>upper</code></td>
+      <td>Change the case of a string to uppercase</td>
+    </tr>
+    <tr>
+      <td><code>url_encode</code></td>
+      <td>Applies the <a href="http://php.net/manual/en/function.urlencode.php">urlencode</a> PHP function to the value</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Examples:</p>
+
+<pre><code class="language-twig">
+{# e or escape filter #}
+{{ '&lt;h1&gt;Hello&lt;h1&gt;'|e }}
+{{ '&lt;h1&gt;Hello&lt;h1&gt;'|escape }}
+
+{# trim filter #}
+{{ '   hello   '|trim }}
+
+{# striptags filter #}
+{{ '&lt;h1&gt;Hello&lt;h1&gt;'|striptags }}
+
+{# slashes filter #}
+{{ ''this is a string''|slashes }}
+
+{# stripslashes filter #}
+{{ '\'this is a string\''|stripslashes }}
+
+{# capitalize filter #}
+{{ 'hello'|capitalize }}
+
+{# lower filter #}
+{{ 'HELLO'|lower }}
+
+{# upper filter #}
+{{ 'hello'|upper }}
+
+{# length filter #}
+{{ 'robots'|length }}
+{{ [1, 2, 3]|length }}
+
+{# nl2br filter #}
+{{ 'some\ntext'|nl2br }}
+
+{# sort filter #}
+{% set sorted = [3, 1, 2]|sort %}
+
+{# keys filter #}
+{% set keys = ['first': 1, 'second': 2, 'third': 3]|keys %}
+
+{# join filter #}
+{% set joined = 'a'..'z'|join(',') %}
+
+{# format filter #}
+{{ 'My real name is %s'|format(name) }}
+
+{# json_encode filter #}
+{% set encoded = robots|json_encode %}
+
+{# json_decode filter #}
+{% set decoded = '{'one':1,'two':2,'three':3}'|json_decode %}
+
+{# url_encode filter #}
+{{ post.permanent_link|url_encode }}
+
+{# convert_encoding filter #}
+{{ 'désolé'|convert_encoding('utf8', 'latin1') }}
+
+</code></pre>
+
+<p><a name="comments"></a></p>
+<h2 id="comments">Comments</h2>
+<p>Comments may also be added to a template using the <code>{# ... #}</code> delimiters. All text inside them is just ignored in the final output:</p>
+
+<pre><code class="language-twig">
+{# note: this is a comment
+    {% set price = 100; %}
+#}
+
+</code></pre>
+
+<p><a name="control-structures"></a></p>
+<h2 id="list-of-control-structures">List of Control Structures</h2>
+<p>Volt provides a set of basic but powerful control structures for use in templates:</p>
+
+<p><a name="control-structures-for"></a></p>
+<h3 id="for">For</h3>
+<p>Loop over each item in a sequence. The following example shows how to traverse a set of ‘robots’ and print his/her name:</p>
+
+<pre><code class="language-twig">
+&lt;h1&gt;Robots&lt;/h1&gt;
+&lt;ul&gt;
+    {% for robot in robots %}
+        &lt;li&gt;
+            {{ robot.name|e }}
+        &lt;/li&gt;
+    {% endfor %}
+&lt;/ul&gt;
+
+</code></pre>
+
+<p>for-loops can also be nested:</p>
+
+<pre><code class="language-twig">
+&lt;h1&gt;Robots&lt;/h1&gt;
+{% for robot in robots %}
+    {% for part in robot.parts %}
+        Robot: {{ robot.name|e }} Part: {{ part.name|e }} &lt;br /&gt;
+    {% endfor %}
+{% endfor %}
+
+</code></pre>
+
+<p>You can get the element <code>keys</code> as in the PHP counterpart using the following syntax:</p>
+
+<pre><code class="language-twig">
+{% set numbers = ['one': 1, 'two': 2, 'three': 3] %}
+
+{% for name, value in numbers %}
+    Name: {{ name }} Value: {{ value }}
+{% endfor %}
+
+</code></pre>
+
+<p>An <code>if</code> evaluation can be optionally set:</p>
+
+<pre><code class="language-twig">
+{% set numbers = ['one': 1, 'two': 2, 'three': 3] %}
+
+{% for value in numbers if value &lt; 2 %}
+    Value: {{ value }}
+{% endfor %}
+
+{% for name, value in numbers if name !== 'two' %}
+    Name: {{ name }} Value: {{ value }}
+{% endfor %}
+
+</code></pre>
+
+<p>If an <code>else</code> is defined inside the <code>for</code>, it will be executed if the expression in the iterator result in zero iterations:</p>
+
+<pre><code class="language-twig">
+&lt;h1&gt;Robots&lt;/h1&gt;
+{% for robot in robots %}
+    Robot: {{ robot.name|e }} Part: {{ part.name|e }} &lt;br /&gt;
+{% else %}
+    There are no robots to show
+{% endfor %}
+
+</code></pre>
+
+<p>Alternative syntax:</p>
+
+<pre><code class="language-twig">
+&lt;h1&gt;Robots&lt;/h1&gt;
+{% for robot in robots %}
+    Robot: {{ robot.name|e }} Part: {{ part.name|e }} &lt;br /&gt;
+{% elsefor %}
+    There are no robots to show
+{% endfor %}
+
+</code></pre>
+
+<p><a name="control-structures-loops"></a></p>
+<h3 id="loop-controls">Loop Controls</h3>
+<p>The <code>break</code> and <code>continue</code> statements can be used to exit from a loop or force an iteration in the current block:</p>
+
+<pre><code class="language-twig">
+{# skip the even robots #}
+{% for index, robot in robots %}
+    {% if index is even %}
+        {% continue %}
+    {% endif %}
+    ...
+{% endfor %}
+
+</code></pre>
+
+<pre><code class="language-twig">
+{# exit the foreach on the first even robot #}
+{% for index, robot in robots %}
+    {% if index is even %}
+        {% break %}
+    {% endif %}
+    ...
+{% endfor %}
+
+</code></pre>
+
+<p><a name="control-structures-if"></a></p>
+<h3 id="if">If</h3>
+<p>As PHP, an <code>if</code> statement checks if an expression is evaluated as true or false:</p>
+
+<pre><code class="language-twig">
+&lt;h1&gt;Cyborg Robots&lt;/h1&gt;
+&lt;ul&gt;
+    {% for robot in robots %}
+        {% if robot.type === 'cyborg' %}
+            &lt;li&gt;{{ robot.name|e }}&lt;/li&gt;
+        {% endif %}
+    {% endfor %}
+&lt;/ul&gt;
+
+</code></pre>
+
+<p>The else clause is also supported:</p>
+
+<pre><code class="language-twig">
+&lt;h1&gt;Robots&lt;/h1&gt;
+&lt;ul&gt;
+    {% for robot in robots %}
+        {% if robot.type === 'cyborg' %}
+            &lt;li&gt;{{ robot.name|e }}&lt;/li&gt;
+        {% else %}
+            &lt;li&gt;{{ robot.name|e }} (not a cyborg)&lt;/li&gt;
+        {% endif %}
+    {% endfor %}
+&lt;/ul&gt;
+
+</code></pre>
+
+<p>The <code>elseif</code> control flow structure can be used together with if to emulate a <code>switch</code> block:</p>
+
+<pre><code class="language-twig">
+{% if robot.type === 'cyborg' %}
+    Robot is a cyborg
+{% elseif robot.type === 'virtual' %}
+    Robot is virtual
+{% elseif robot.type === 'mechanical' %}
+    Robot is mechanical
+{% endif %}
+
+</code></pre>
+
+<p><a name="controls-structures-switch"></a></p>
+<h3 id="switch">Switch</h3>
+<p>An alternative to the <code>if</code> statement is <code>switch</code>, allowing you to create logical execution paths in your application:</p>
+
+<pre><code class="language-twig">
+{% switch foo %}
+    {% case 0 %}
+    {% case 1 %}
+    {% case 2 %}
+        "foo" is less than 3 but not negative
+        {% break %}
+    {% case 3 %}
+        "foo" is 3
+        {% break %}
+    {% default %}
+        "foo" is {{ foo }}
+{% endswitch %}
+
+
+</code></pre>
+
+<p>The <code>switch</code> statement executes statement by statement, therefore the <code>break</code> statement is necessary in some cases. Any output (including whitespace) between a switch statement and the first <code>case</code> will result in a syntax error. Empty lines and whitespaces can therefore be cleared to reduce the number of errors <a href="http://php.net/control-structures.alternative-syntax">see here</a>.</p>
+
+<h4 id="case-without-switch"><code>case</code> without <code>switch</code></h4>
+<pre><code class="language-twig">
+{% case EXPRESSION %}
+
+</code></pre>
+<p>Will throw <code>Fatal error: Uncaught Phalcon\Mvc\View\Exception: Unexpected CASE</code>.</p>
+
+<h4 id="switch-without-endswitch"><code>switch</code> without <code>endswitch</code></h4>
+<pre><code class="language-twig">
+{% switch EXPRESSION %}
+
+Will throw `Fatal error: Uncaught Phalcon\Mvc\View\Exception: Syntax error, unexpected EOF in ..., there is a 'switch' block without 'endswitch'`.
+</code></pre>
+
+<h4 id="default-without-switch"><code>default</code> without <code>switch</code></h4>
+<pre><code class="language-twig">
+{% default %}
+
+</code></pre>
+<p>Will not throw an error because <code>default</code> is a reserved word for filters like <code>{{ EXPRESSION | default(VALUE) }}</code> but in this case the expression will only output an empty char ‘’ .</p>
+
+<h4 id="nested-switch">nested <code>switch</code></h4>
+<pre><code class="language-twig">
+{% switch EXPRESSION %}
+  {% switch EXPRESSION %}
+  {% endswitch %}
+{% endswitch %}
+
+</code></pre>
+
+<p>Will throw <code>Fatal error: Uncaught Phalcon\Mvc\View\Exception: A nested switch detected. There is no nested switch-case statements support in ... on line ...</code></p>
+
+<h4 id="a-switch-without-an-expression">a <code>switch</code> without an expression</h4>
+<pre><code class="language-twig">
+{% switch %}
+  {% case EXPRESSION %}
+      {% break %}
+{% endswitch %}
+
+</code></pre>
+
+<p>Will throw <code>Fatal error: Uncaught Phalcon\Mvc\View\Exception: Syntax error, unexpected token %} in ... on line ...</code></p>
+
+<p><a name="control-structures-loop"></a></p>
+<h3 id="loop-context">Loop Context</h3>
+<p>A special variable is available inside <code>for</code> loops providing you information about</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>loop.index</code></td>
+      <td>The current iteration of the loop. (1 indexed)</td>
+    </tr>
+    <tr>
+      <td><code>loop.index0</code></td>
+      <td>The current iteration of the loop. (0 indexed)</td>
+    </tr>
+    <tr>
+      <td><code>loop.revindex</code></td>
+      <td>The number of iterations from the end of the loop (1 indexed)</td>
+    </tr>
+    <tr>
+      <td><code>loop.revindex0</code></td>
+      <td>The number of iterations from the end of the loop (0 indexed)</td>
+    </tr>
+    <tr>
+      <td><code>loop.first</code></td>
+      <td>True if in the first iteration.</td>
+    </tr>
+    <tr>
+      <td><code>loop.last</code></td>
+      <td>True if in the last iteration.</td>
+    </tr>
+    <tr>
+      <td><code>loop.length</code></td>
+      <td>The number of items to iterate</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Example:</p>
+
+<pre><code class="language-twig">
+{% for robot in robots %}
+    {% if loop.first %}
+        &lt;table&gt;
+            &lt;tr&gt;
+                &lt;th&gt;#&lt;/th&gt;
+                &lt;th&gt;Id&lt;/th&gt;
+                &lt;th&gt;Name&lt;/th&gt;
+            &lt;/tr&gt;
+    {% endif %}
+            &lt;tr&gt;
+                &lt;td&gt;{{ loop.index }}&lt;/td&gt;
+                &lt;td&gt;{{ robot.id }}&lt;/td&gt;
+                &lt;td&gt;{{ robot.name }}&lt;/td&gt;
+            &lt;/tr&gt;
+    {% if loop.last %}
+        &lt;/table&gt;
+    {% endif %}
+{% endfor %}
+
+</code></pre>
+
+<p><a name="assignments"></a></p>
+<h2 id="assignments">Assignments</h2>
+<p>Variables may be changed in a template using the instruction <code>set</code>:</p>
+
+<pre><code class="language-twig">
+{% set fruits = ['Apple', 'Banana', 'Orange'] %}
+
+{% set name = robot.name %}
+
+</code></pre>
+
+<p>Multiple assignments are allowed in the same instruction:</p>
+
+<pre><code class="language-twig">
+{% set fruits = ['Apple', 'Banana', 'Orange'], name = robot.name, active = true %}
+
+</code></pre>
+
+<p>Additionally, you can use compound assignment operators:</p>
+
+<pre><code class="language-twig">
+{% set price += 100.00 %}
+
+{% set age *= 5 %}
+
+</code></pre>
+
+<p>The following operators are available:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>=</code></td>
+      <td>Standard Assignment</td>
+    </tr>
+    <tr>
+      <td><code>+=</code></td>
+      <td>Addition assignment</td>
+    </tr>
+    <tr>
+      <td><code>-=</code></td>
+      <td>Subtraction assignment</td>
+    </tr>
+    <tr>
+      <td><code>\*=</code></td>
+      <td>Multiplication assignment</td>
+    </tr>
+    <tr>
+      <td><code>/=</code></td>
+      <td>Division assignment</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="expressions"></a></p>
+<h2 id="expressions">Expressions</h2>
+<p>Volt provides a basic set of expression support, including literals and common operators. A expression can be evaluated and printed using the <code>{{</code> and <code>}}</code> delimiters:</p>
+
+<pre><code class="language-twig">
+{{ (1 + 1) * 2 }}
+
+</code></pre>
+
+<p>If an expression needs to be evaluated without be printed the <code>do</code> statement can be used:</p>
+
+<pre><code class="language-twig">
+{% do (1 + 1) * 2 %}
+
+</code></pre>
+
+<p><a name="expressions-literals"></a></p>
+<h3 id="literals">Literals</h3>
+<p>The following literals are supported:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Filter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>'this is a string'</code></td>
+      <td>Text between double quotes or single quotes are handled as strings</td>
+    </tr>
+    <tr>
+      <td><code>100.25</code></td>
+      <td>Numbers with a decimal part are handled as doubles/floats</td>
+    </tr>
+    <tr>
+      <td><code>100</code></td>
+      <td>Numbers without a decimal part are handled as integers</td>
+    </tr>
+    <tr>
+      <td><code>false</code></td>
+      <td>Constant ‘false’ is the boolean false value</td>
+    </tr>
+    <tr>
+      <td><code>true</code></td>
+      <td>Constant ‘true’ is the boolean true value</td>
+    </tr>
+    <tr>
+      <td><code>null</code></td>
+      <td>Constant ‘null’ is the Null value</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="expressions-arrays"></a></p>
+<h3 id="arrays">Arrays</h3>
+<p>Whether you’re using PHP 5.3 or &gt;= 5.4 you can create arrays by enclosing a list of values in square brackets:</p>
+
+<pre><code class="language-twig">
+{# Simple array #}
+{{ ['Apple', 'Banana', 'Orange'] }}
+
+{# Other simple array #}
+{{ ['Apple', 1, 2.5, false, null] }}
+
+{# Multi-Dimensional array #}
+{{ [[1, 2], [3, 4], [5, 6]] }}
+
+{# Hash-style array #}
+{{ ['first': 1, 'second': 4/2, 'third': '3'] }}
+
+</code></pre>
+
+<p>Curly braces also can be used to define arrays or hashes:</p>
+
+<pre><code class="language-twig">
+{% set myArray = {'Apple', 'Banana', 'Orange'} %}
+{% set myHash  = {'first': 1, 'second': 4/2, 'third': '3'} %}
+
+</code></pre>
+
+<p><a name="expressions-math"></a></p>
+<h3 id="math">Math</h3>
+<p>You may make calculations in templates using the following operators:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Operator</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code>+</code></td>
+      <td>Perform an adding operation. <code>{{ 2 + 3 }}</code> returns 5</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>-</code></td>
+      <td>Perform a substraction operation <code>{{ 2 - 3 }}</code> returns -1</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>*</code></td>
+      <td>Perform a multiplication operation <code>{{ 2 * 3 }}</code> returns 6</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>/</code></td>
+      <td>Perform a division operation <code>{{ 10 / 2 }}</code> returns 5</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>%</code></td>
+      <td>Calculate the remainder of an integer division <code>{{ 10 % 3 }}</code> returns 1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="expressions-comparisons"></a></p>
+<h3 id="comparisons">Comparisons</h3>
+<p>The following comparison operators are available:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Operator</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code>==</code></td>
+      <td>Check whether both operands are equal</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>!=</code></td>
+      <td>Check whether both operands aren’t equal</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>&lt;&gt;</code></td>
+      <td>Check whether both operands aren’t equal</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>&gt;</code></td>
+      <td>Check whether left operand is greater than right operand</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>&lt;</code></td>
+      <td>Check whether left operand is less than right operand</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>&lt;=</code></td>
+      <td>Check whether left operand is less or equal than right operand</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>&gt;=</code></td>
+      <td>Check whether left operand is greater or equal than right operand</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>===</code></td>
+      <td>Check whether both operands are identical</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>!==</code></td>
+      <td>Check whether both operands aren’t identical</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="expressions-logic"></a></p>
+<h3 id="logic">Logic</h3>
+<p>Logic operators are useful in the <code>if</code> expression evaluation to combine multiple tests:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Operator</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><code>or</code></td>
+      <td>Return true if the left or right operand is evaluated as true</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>and</code></td>
+      <td>Return true if both left and right operands are evaluated as true</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>not</code></td>
+      <td>Negates an expression</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><code>( expr )</code></td>
+      <td>Parenthesis groups expressions</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="expressions-other-operators"></a></p>
+<h3 id="other-operators">Other Operators</h3>
+<p>Additional operators seen the following operators are available:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>~</code></td>
+      <td>Concatenates both operands <code>{{ 'hello ' ~ 'world' }}</code></td>
+    </tr>
+    <tr>
+      <td><code>|</code></td>
+      <td>Applies a filter in the right operand to the left <code>{{ 'hello'|uppercase }}</code></td>
+    </tr>
+    <tr>
+      <td><code>..</code></td>
+      <td>Creates a range <code>{{ 'a'..'z' }}</code> <code>{{ 1..10 }}</code></td>
+    </tr>
+    <tr>
+      <td><code>is</code></td>
+      <td>Same as == (equals), also performs tests</td>
+    </tr>
+    <tr>
+      <td><code>in</code></td>
+      <td>To check if an expression is contained into other expressions <code>if 'a' in 'abc'</code></td>
+    </tr>
+    <tr>
+      <td><code>is not</code></td>
+      <td>Same as != (not equals)</td>
+    </tr>
+    <tr>
+      <td><code>'a' ? 'b' : 'c'</code></td>
+      <td>Ternary operator. The same as the PHP ternary operator</td>
+    </tr>
+    <tr>
+      <td><code>++</code></td>
+      <td>Increments a value</td>
+    </tr>
+    <tr>
+      <td><code>--</code></td>
+      <td>Decrements a value</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following example shows how to use operators:</p>
+
+<pre><code class="language-twig">
+{% set robots = ['Voltron', 'Astro Boy', 'Terminator', 'C3PO'] %}
+
+{% for index in 0..robots|length %}
+    {% if robots[index] is defined %}
+        {{ 'Name: ' ~ robots[index] }}
+    {% endif %}
+{% endfor %}
+
+</code></pre>
+
+<p><a name="tests"></a></p>
+<h2 id="tests">Tests</h2>
+<p>Tests can be used to test if a variable has a valid expected value. The operator <code>is</code> is used to perform the tests:</p>
+
+<pre><code class="language-twig">
+{% set robots = ['1': 'Voltron', '2': 'Astro Boy', '3': 'Terminator', '4': 'C3PO'] %}
+
+{% for position, name in robots %}
+    {% if position is odd %}
+        {{ name }}
+    {% endif %}
+{% endfor %}
+
+</code></pre>
+
+<p>The following built-in tests are available in Volt:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>defined</code></td>
+      <td>Checks if a variable is defined (<code>isset()</code>)</td>
+    </tr>
+    <tr>
+      <td><code>divisibleby</code></td>
+      <td>Checks if a value is divisible by other value</td>
+    </tr>
+    <tr>
+      <td><code>empty</code></td>
+      <td>Checks if a variable is empty</td>
+    </tr>
+    <tr>
+      <td><code>even</code></td>
+      <td>Checks if a numeric value is even</td>
+    </tr>
+    <tr>
+      <td><code>iterable</code></td>
+      <td>Checks if a value is iterable. Can be traversed by a ‘for’ statement</td>
+    </tr>
+    <tr>
+      <td><code>numeric</code></td>
+      <td>Checks if value is numeric</td>
+    </tr>
+    <tr>
+      <td><code>odd</code></td>
+      <td>Checks if a numeric value is odd</td>
+    </tr>
+    <tr>
+      <td><code>sameas</code></td>
+      <td>Checks if a value is identical to other value</td>
+    </tr>
+    <tr>
+      <td><code>scalar</code></td>
+      <td>Checks if value is scalar (not an array or object)</td>
+    </tr>
+    <tr>
+      <td><code>type</code></td>
+      <td>Checks if a value is of the specified type</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>More examples:</p>
+
+<pre><code class="language-twig">
+{% if robot is defined %}
+    The robot variable is defined
+{% endif %}
+
+{% if robot is empty %}
+    The robot is null or isn't defined
+{% endif %}
+
+{% for key, name in [1: 'Voltron', 2: 'Astroy Boy', 3: 'Bender'] %}
+    {% if key is even %}
+        {{ name }}
+    {% endif %}
+{% endfor %}
+
+{% for key, name in [1: 'Voltron', 2: 'Astroy Boy', 3: 'Bender'] %}
+    {% if key is odd %}
+        {{ name }}
+    {% endif %}
+{% endfor %}
+
+{% for key, name in [1: 'Voltron', 2: 'Astroy Boy', 'third': 'Bender'] %}
+    {% if key is numeric %}
+        {{ name }}
+    {% endif %}
+{% endfor %}
+
+{% set robots = [1: 'Voltron', 2: 'Astroy Boy'] %}
+{% if robots is iterable %}
+    {% for robot in robots %}
+        ...
+    {% endfor %}
+{% endif %}
+
+{% set world = 'hello' %}
+{% if world is sameas('hello') %}
+    {{ 'it's hello' }}
+{% endif %}
+
+{% set external = false %}
+{% if external is type('boolean') %}
+    {{ 'external is false or true' }}
+{% endif %}
+
+</code></pre>
+
+<p><a name="macros"></a></p>
+<h2 id="macros">Macros</h2>
+<p>Macros can be used to reuse logic in a template, they act as PHP functions, can receive parameters and return values:</p>
+
+<pre><code class="language-twig">
+{# Macro 'display a list of links to related topics' #}
+{%- macro related_bar(related_links) %}
+    &lt;ul&gt;
+        {%- for link in related_links %}
+            &lt;li&gt;
+                &lt;a href='{{ url(link.url) }}' title='{{ link.title|striptags }}'&gt;
+                    {{ link.text }}
+                &lt;/a&gt;
+            &lt;/li&gt;
+        {%- endfor %}
+    &lt;/ul&gt;
+{%- endmacro %}
+
+{# Print related links #}
+{{ related_bar(links) }}
+
+&lt;div&gt;This is the content&lt;/div&gt;
+
+{# Print related links again #}
+{{ related_bar(links) }}
+
+</code></pre>
+
+<p>When calling macros, parameters can be passed by name:</p>
+
+<pre><code class="language-twig">
+{%- macro error_messages(message, field, type) %}
+    &lt;div&gt;
+        &lt;span class='error-type'&gt;{{ type }}&lt;/span&gt;
+        &lt;span class='error-field'&gt;{{ field }}&lt;/span&gt;
+        &lt;span class='error-message'&gt;{{ message }}&lt;/span&gt;
+    &lt;/div&gt;
+{%- endmacro %}
+
+{# Call the macro #}
+{{ error_messages('type': 'Invalid', 'message': 'The name is invalid', 'field': 'name') }}
+
+</code></pre>
+
+<p>Macros can return values:</p>
+
+<pre><code class="language-twig">
+{%- macro my_input(name, class) %}
+    {% return text_field(name, 'class': class) %}
+{%- endmacro %}
+
+{# Call the macro #}
+{{ '&lt;p&gt;' ~ my_input('name', 'input-text') ~ '&lt;/p&gt;' }}
+
+</code></pre>
+
+<p>And receive optional parameters:</p>
+
+<pre><code class="language-twig">
+{%- macro my_input(name, class='input-text') %}
+    {% return text_field(name, 'class': class) %}
+{%- endmacro %}
+
+{# Call the macro #}
+{{ '&lt;p&gt;' ~ my_input('name') ~ '&lt;/p&gt;' }}
+{{ '&lt;p&gt;' ~ my_input('name', 'input-text') ~ '&lt;/p&gt;' }}
+
+</code></pre>
+
+<p><a name="tag-helpers"></a></p>
+<h2 id="using-tag-helpers">Using Tag Helpers</h2>
+<p>Volt is highly integrated with <a href="api/Phalcon_Tag">Phalcon\Tag</a>, so it’s easy to use the helpers provided by that component in a Volt template:</p>
+
+<pre><code class="language-twig">
+{{ javascript_include('js/jquery.js') }}
+
+{{ form('products/save', 'method': 'post') }}
+
+    &lt;label for='name'&gt;Name&lt;/label&gt;
+    {{ text_field('name', 'size': 32) }}
+
+    &lt;label for='type'&gt;Type&lt;/label&gt;
+    {{ select('type', productTypes, 'using': ['id', 'name']) }}
+
+    {{ submit_button('Send') }}
+
+{{ end_form() }}
+
+</code></pre>
+
+<p>The following PHP is generated:</p>
+
+<pre><code class="language-php">&lt;?php echo Phalcon\Tag::javascriptInclude('js/jquery.js') ?&gt;
+
+&lt;?php echo Phalcon\Tag::form(array('products/save', 'method' =&gt; 'post')); ?&gt;
+
+    &lt;label for='name'&gt;Name&lt;/label&gt;
+    &lt;?php echo Phalcon\Tag::textField(array('name', 'size' =&gt; 32)); ?&gt;
+
+    &lt;label for='type'&gt;Type&lt;/label&gt;
+    &lt;?php echo Phalcon\Tag::select(array('type', $productTypes, 'using' =&gt; array('id', 'name'))); ?&gt;
+
+    &lt;?php echo Phalcon\Tag::submitButton('Send'); ?&gt;
+
+
+{{ end_form() }}
+
+</code></pre>
+
+<p>To call a <a href="api/Phalcon_Tag">Phalcon\Tag</a> helper, you only need to call an uncamelized version of the method:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Volt function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>Phalcon\Tag::checkField</code></td>
+      <td><code>check_field</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::dateField</code></td>
+      <td><code>date_field</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::emailField</code></td>
+      <td><code>email_field</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::endForm</code></td>
+      <td><code>end_form</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::fileField</code></td>
+      <td><code>file_field</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::form</code></td>
+      <td><code>form</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::friendlyTitle</code></td>
+      <td><code>friendly_title</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::getTitle</code></td>
+      <td><code>get_title</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::hiddenField</code></td>
+      <td><code>hidden_field</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::image</code></td>
+      <td><code>image</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::javascriptInclude</code></td>
+      <td><code>javascript_include</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::linkTo</code></td>
+      <td><code>link_to</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::numericField</code></td>
+      <td><code>numeric_field</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::passwordField</code></td>
+      <td><code>password_field</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::radioField</code></td>
+      <td><code>radio_field</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::select</code></td>
+      <td><code>select</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::selectStatic</code></td>
+      <td><code>select_static</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::stylesheetLink</code></td>
+      <td><code>stylesheet_link</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::submitButton</code></td>
+      <td><code>submit_button</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::textArea</code></td>
+      <td><code>text_area</code></td>
+    </tr>
+    <tr>
+      <td><code>Phalcon\Tag::textField</code></td>
+      <td><code>text_field</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="functions"></a></p>
+<h2 id="functions">Functions</h2>
+<p>The following built-in functions are available in Volt:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>content</code></td>
+      <td>Includes the content produced in a previous rendering stage</td>
+    </tr>
+    <tr>
+      <td><code>get_content</code></td>
+      <td>Same as <code>content</code></td>
+    </tr>
+    <tr>
+      <td><code>partial</code></td>
+      <td>Dynamically loads a partial view in the current template</td>
+    </tr>
+    <tr>
+      <td><code>super</code></td>
+      <td>Render the contents of the parent block</td>
+    </tr>
+    <tr>
+      <td><code>time</code></td>
+      <td>Calls the PHP function with the same name</td>
+    </tr>
+    <tr>
+      <td><code>date</code></td>
+      <td>Calls the PHP function with the same name</td>
+    </tr>
+    <tr>
+      <td><code>dump</code></td>
+      <td>Calls the PHP function <code>var_dump()</code></td>
+    </tr>
+    <tr>
+      <td><code>version</code></td>
+      <td>Returns the current version of the framework</td>
+    </tr>
+    <tr>
+      <td><code>constant</code></td>
+      <td>Reads a PHP constant</td>
+    </tr>
+    <tr>
+      <td><code>url</code></td>
+      <td>Generate a URL using the ‘url’ service</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="view-integrations"></a></p>
+<h2 id="view-integration">View Integration</h2>
+<p>Also, Volt is integrated with <a href="api/Phalcon_Mvc_View">Phalcon\Mvc\View</a>, you can play with the view hierarchy and include partials as well:</p>
+
+<pre><code class="language-twig">
+{{ content() }}
+
+&lt;!-- Simple include of a partial --&gt;
+&lt;div id='footer'&gt;{{ partial('partials/footer') }}&lt;/div&gt;
+
+&lt;!-- Passing extra variables --&gt;
+&lt;div id='footer'&gt;{{ partial('partials/footer', ['links': links]) }}&lt;/div&gt;
+
+</code></pre>
+
+<p>A partial is included in runtime, Volt also provides <code>include</code>, this compiles the content of a view and returns its contents as part of the view which was included:</p>
+
+<pre><code class="language-twig">
+{# Simple include of a partial #}
+&lt;div id='footer'&gt;
+    {% include 'partials/footer' %}
+&lt;/div&gt;
+
+{# Passing extra variables #}
+&lt;div id='footer'&gt;
+    {% include 'partials/footer' with ['links': links] %}
+&lt;/div&gt;
+
+</code></pre>
+
+<p><a name="view-integration-include"></a></p>
+<h3 id="include">Include</h3>
+<p><code>include</code> has a special behavior that will help us improve performance a bit when using Volt, if you specify the extension when including the file and it exists when the template is compiled, Volt can inline the contents of the template in the parent template where it’s included. Templates aren’t inlined if the <code>include</code> have variables passed with <code>with</code>:</p>
+
+<pre><code class="language-twig">
+{# The contents of 'partials/footer.volt' is compiled and inlined #}
+&lt;div id='footer'&gt;
+    {% include 'partials/footer.volt' %}
+&lt;/div&gt;
+
+</code></pre>
+
+<p><a name="view-integration-partial-vs-include"></a></p>
+<h3 id="partial-vs-include">Partial vs Include</h3>
+<p>Keep the following points in mind when choosing to use the <code>partial</code> function or <code>include</code>:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>partial</code></td>
+      <td>allows you to include templates made in Volt and in other template engines as well</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>allows you to pass an expression like a variable allowing to include the content of other view dynamically</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>is better if the content that you have to include changes frequently</td>
+    </tr>
+    <tr>
+      <td><code>includes</code></td>
+      <td>copies the compiled content into the view which improves the performance</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>only allows to include templates made with Volt</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>requires an existing template at compile time</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="template-inheritance"></a></p>
+<h2 id="template-inheritance">Template Inheritance</h2>
+<p>With template inheritance you can create base templates that can be extended by others templates allowing to reuse code. A base template define <em>blocks</em> than can be overridden by a child template. Let’s pretend that we have the following base template:</p>
+
+<pre><code class="language-twig">
+{# templates/base.volt #}
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        {% block head %}
+            &lt;link rel='stylesheet' href='style.css' /&gt;
+        {% endblock %}
+
+        &lt;title&gt;{% block title %}{% endblock %} - My Webpage&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;div id='content'&gt;{% block content %}{% endblock %}&lt;/div&gt;
+
+        &lt;div id='footer'&gt;
+            {% block footer %}&amp;copy; Copyright 2015, All rights reserved.{% endblock %}
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+<p>From other template we could extend the base template replacing the blocks:</p>
+
+<pre><code class="language-twig">
+{% extends 'templates/base.volt' %}
+
+{% block title %}Index{% endblock %}
+
+{% block head %}&lt;style type='text/css'&gt;.important { color: #336699; }&lt;/style&gt;{% endblock %}
+
+{% block content %}
+    &lt;h1&gt;Index&lt;/h1&gt;
+    &lt;p class='important'&gt;Welcome on my awesome homepage.&lt;/p&gt;
+{% endblock %}
+
+</code></pre>
+
+<p>Not all blocks must be replaced at a child template, only those that are needed. The final output produced will be the following:</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;style type='text/css'&gt;.important { color: #336699; }&lt;/style&gt;
+
+        &lt;title&gt;Index - My Webpage&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;div id='content'&gt;
+            &lt;h1&gt;Index&lt;/h1&gt;
+            &lt;p class='important'&gt;Welcome on my awesome homepage.&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div id='footer'&gt;
+            &amp;copy; Copyright 2015, All rights reserved.
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p><a name="template-inheritance-multiple"></a></p>
+<h3 id="multiple-inheritance">Multiple Inheritance</h3>
+<p>Extended templates can extend other templates. The following example illustrates this:</p>
+
+<pre><code class="language-twig">
+{# main.volt #}
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Title&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        {% block content %}{% endblock %}
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+
+<p>Template <code>layout.volt</code> extends <code>main.volt</code></p>
+
+<pre><code class="language-twig">
+{# layout.volt #}
+{% extends 'main.volt' %}
+
+{% block content %}
+
+    &lt;h1&gt;Table of contents&lt;/h1&gt;
+
+{% endblock %}
+
+</code></pre>
+
+<p>Finally a view that extends <code>layout.volt</code>:</p>
+
+<pre><code class="language-twig">
+{# index.volt #}
+{% extends 'layout.volt' %}
+
+{% block content %}
+
+    {{ super() }}
+
+    &lt;ul&gt;
+        &lt;li&gt;Some option&lt;/li&gt;
+        &lt;li&gt;Some other option&lt;/li&gt;
+    &lt;/ul&gt;
+
+{% endblock %}
+
+</code></pre>
+
+<p>Rendering <code>index.volt</code> produces:</p>
+
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Title&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+
+        &lt;h1&gt;Table of contents&lt;/h1&gt;
+
+        &lt;ul&gt;
+            &lt;li&gt;Some option&lt;/li&gt;
+            &lt;li&gt;Some other option&lt;/li&gt;
+        &lt;/ul&gt;
+
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+<p>Note the call to the function <code>super()</code>. With that function it’s possible to render the contents of the parent block. As partials, the path set to <code>extends</code> is a relative path under the current views directory (i.e. <code>app/views/</code>).</p>
+
+<h5 class="alert alert-warning">By default, and for performance reasons, Volt only checks for changes in the children templates to know when to re-compile to plain PHP again, so it is recommended initialize Volt with the option <code>'compileAlways' =&gt; true</code>. Thus, the templates are compiled always taking into account changes in the parent templates. </h5>
+
+<p><a name="autoescape"></a></p>
+<h2 id="autoescape-mode">Autoescape mode</h2>
+<p>You can enable auto-escaping of all variables printed in a block using the autoescape mode:</p>
+
+<pre><code class="language-twig">
+Manually escaped: {{ robot.name|e }}
+
+{% autoescape true %}
+    Autoescaped: {{ robot.name }}
+    {% autoescape false %}
+        No Autoescaped: {{ robot.name }}
+    {% endautoescape %}
+{% endautoescape %}
+
+</code></pre>
+
+<p><a name="extending"></a></p>
+<h2 id="extending-volt">Extending Volt</h2>
+<p>Unlike other template engines, Volt itself is not required to run the compiled templates. Once the templates are compiled there is no dependence on Volt. With performance independence in mind, Volt only acts as a compiler for PHP templates.</p>
+
+<p>The Volt compiler allow you to extend it adding more functions, tests or filters to the existing ones.</p>
+
+<p><a name="extending-functions"></a></p>
+<h3 id="functions-1">Functions</h3>
+<p>Functions act as normal PHP functions, a valid string name is required as function name. Functions can be added using two strategies, returning a simple string or using an anonymous function. Always is required that the chosen strategy returns a valid PHP string expression:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View\Engine\Volt;
+
+$volt = new Volt($view, $di);
+
+$compiler = $volt-&gt;getCompiler();
+
+// This binds the function name 'shuffle' in Volt to the PHP function 'str_shuffle'
+$compiler-&gt;addFunction('shuffle', 'str_shuffle');
+</code></pre>
+
+<p>Register the function with an anonymous function. This case we use <code>$resolvedArgs</code> to pass the arguments exactly as were passed in the arguments:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$compiler-&gt;addFunction(
+    'widget',
+    function ($resolvedArgs, $exprArgs) {
+        return 'MyLibrary\Widgets::get(' . $resolvedArgs . ')';
+    }
+);
+</code></pre>
+
+<p>Treat the arguments independently and unresolved:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$compiler-&gt;addFunction(
+    'repeat',
+    function ($resolvedArgs, $exprArgs) use ($compiler) {
+        // Resolve the first argument
+        $firstArgument = $compiler-&gt;expression($exprArgs[0]['expr']);
+
+        // Checks if the second argument was passed
+        if (isset($exprArgs[1])) {
+            $secondArgument = $compiler-&gt;expression($exprArgs[1]['expr']);
+        } else {
+            // Use '10' as default
+            $secondArgument = '10';
+        }
+
+        return 'str_repeat(' . $firstArgument . ', ' . $secondArgument . ')';
+    }
+);
+</code></pre>
+
+<p>Generate the code based on some function availability:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$compiler-&gt;addFunction(
+    'contains_text',
+    function ($resolvedArgs, $exprArgs) {
+        if (function_exists('mb_stripos')) {
+            return 'mb_stripos(' . $resolvedArgs . ')';
+        } else {
+            return 'stripos(' . $resolvedArgs . ')';
+        }
+    }
+);
+</code></pre>
+
+<p>Built-in functions can be overridden adding a function with its name:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Replace built-in function dump
+$compiler-&gt;addFunction('dump', 'print_r');
+</code></pre>
+
+<p><a name="extending-filters"></a></p>
+<h3 id="filters-1">Filters</h3>
+<p>A filter has the following form in a template: leftExpr|name(optional-args). Adding new filters is similar as seen with the functions:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// This creates a filter 'hash' that uses the PHP function 'md5'
+$compiler-&gt;addFilter('hash', 'md5');
+</code></pre>
+
+<pre><code class="language-php">&lt;?php
+
+$compiler-&gt;addFilter(
+    'int',
+    function ($resolvedArgs, $exprArgs) {
+        return 'intval(' . $resolvedArgs . ')';
+    }
+);
+</code></pre>
+
+<p>Built-in filters can be overridden adding a function with its name:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Replace built-in filter 'capitalize'
+$compiler-&gt;addFilter('capitalize', 'lcfirst');
+</code></pre>
+
+<p><a name="extending-extensions"></a></p>
+<h3 id="extensions">Extensions</h3>
+<p>With extensions the developer has more flexibility to extend the template engine, and override the compilation of a specific instruction, change the behavior of an expression or operator, add functions/filters, and more.</p>
+
+<p>An extension is a class that implements the events triggered by Volt as a method of itself. For example, the class below allows to use any PHP function in Volt:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class PhpFunctionExtension
+{
+    /**
+     * This method is called on any attempt to compile a function call
+     */
+    public function compileFunction($name, $arguments)
+    {
+        if (function_exists($name)) {
+            return $name . '('. $arguments . ')';
+        }
+    }
+}
+</code></pre>
+
+<p>The above class implements the method <code>compileFunction</code> which is invoked before any attempt to compile a function call in any template. The purpose of the extension is to verify if a function to be compiled is a PHP function allowing to call it from the template. Events in extensions must return valid PHP code, this will be used as result of the compilation instead of the one generated by Volt. If an event doesn’t return an string the compilation is done using the default behavior provided by the engine.</p>
+
+<p>The following compilation events are available to be implemented in extensions:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Event/Method</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>compileFunction</code></td>
+      <td>Triggered before trying to compile any function call in a template</td>
+    </tr>
+    <tr>
+      <td><code>compileFilter</code></td>
+      <td>Triggered before trying to compile any filter call in a template</td>
+    </tr>
+    <tr>
+      <td><code>resolveExpression</code></td>
+      <td>Triggered before trying to compile any expression. This allows the developer to override operators</td>
+    </tr>
+    <tr>
+      <td><code>compileStatement</code></td>
+      <td>Triggered before trying to compile any expression. This allows the developer to override any statement</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Volt extensions must be in registered in the compiler making them available in compile time:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Register the extension in the compiler
+$compiler-&gt;addExtension(
+    new PhpFunctionExtension()
+);
+</code></pre>
+
+<p><a name="caching-view-fragments"></a></p>
+<h2 id="caching-view-fragments">Caching view fragments</h2>
+<p>With Volt it’s easy cache view fragments. This caching improves performance preventing that the contents of a block from being executed by PHP each time the view is displayed:</p>
+
+<pre><code class="language-twig">
+{% cache 'sidebar' %}
+    &lt;!-- generate this content is slow so we are going to cache it --&gt;
+{% endcache %}
+
+</code></pre>
+
+<p>Setting a specific number of seconds:</p>
+
+<pre><code class="language-twig">
+{# cache the sidebar by 1 hour #}
+{% cache 'sidebar' 3600 %}
+    &lt;!-- generate this content is slow so we are going to cache it --&gt;
+{% endcache %}
+
+</code></pre>
+
+<p>Any valid expression can be used as cache key:</p>
+
+<pre><code class="language-twig">
+{% cache ('article-' ~ post.id) 3600 %}
+
+    &lt;h1&gt;{{ post.title }}&lt;/h1&gt;
+
+    &lt;p&gt;{{ post.content }}&lt;/p&gt;
+
+{% endcache %}
+
+</code></pre>
+
+<p>The caching is done by the <code>Phalcon\Cache</code> component via the view component. Learn more about how this integration works in the section <a href="/3.3/en/views#caching-fragments">Caching View Fragments</a>.</p>
+
+<p><a name="services-in-templates"></a></p>
+<h2 id="inject-services-into-a-template">Inject Services into a Template</h2>
+<p>If a service container (DI) is available for Volt, you can use the services by only accessing the name of the service in the template:</p>
+
+<pre><code class="language-twig">
+{# Inject the 'flash' service #}
+&lt;div id='messages'&gt;{{ flash.output() }}&lt;/div&gt;
+
+{# Inject the 'security' service #}
+&lt;input type='hidden' name='token' value='{{ security.getToken() }}'&gt;
+
+</code></pre>
+
+<p><a name="stand-alone"></a></p>
+<h2 id="stand-alone-component">Stand-alone component</h2>
+<p>Using Volt in a stand-alone mode can be demonstrated below:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\View\Engine\Volt\Compiler as VoltCompiler;
+
+// Create a compiler
+$compiler = new VoltCompiler();
+
+// Optionally add some options
+$compiler-&gt;setOptions(
+    [
+        // ...
+    ]
+);
+
+// Compile a template string returning PHP code
+echo $compiler-&gt;compileString(
+    "hello"
+);
+
+// Compile a template in a file specifying the destination file
+$compiler-&gt;compileFile(
+    'layouts/main.volt',
+    'cache/layouts/main.volt.php'
+);
+
+// Compile a template in a file based on the options passed to the compiler
+$compiler-&gt;compile(
+    'layouts/main.volt'
+);
+
+// Require the compiled templated (optional)
+require $compiler-&gt;getCompiledTemplatePath();
+</code></pre>
+
+<h2 id="external-resources">External Resources</h2>
+<ul>
+  <li>A bundle for Sublime/Textmate is available <a href="https://github.com/phalcon/volt-sublime-textmate">here</a></li>
+  <li><a href="https://album-o-rama.phalconphp.com">Album-O-Rama</a> is a sample application using Volt as template engine, <a href="https://github.com/phalcon/album-o-rama">Github</a></li>
+  <li><a href="https://phalconphp.com">Our website</a> is running using Volt as template engine, <a href="https://github.com/phalcon/website">Github</a></li>
+  <li><a href="https://forum.phalconphp.com">Phosphorum</a>, the Phalcon’s forum, also uses Volt, <a href="https://github.com/phalcon/forum">Github</a></li>
+  <li><a href="https://vokuro.phalconphp.com">Vökuró</a>, is another sample application that use Volt, <a href="https://github.com/phalcon/vokuro">Github</a></li>
+</ul>
+
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.3">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

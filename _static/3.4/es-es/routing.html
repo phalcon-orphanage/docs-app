@@ -1,0 +1,2064 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="es-es" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="es-es" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es-es" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/es-es/routing.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/es-es">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/routing" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/es-es/routing" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/es-es/routing" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/es-es/routing" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/es-es/routing" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/es-es/routing" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/routing">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/es-es/routing">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/es-es/routing">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/es-es/routing">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/es-es/routing">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/es-es/routing">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/es-es">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="enrutamiento">Enrutamiento</h1>
+
+<p>El componente router le permite definir las rutas que se asignan a los controladores o gestores que deben recibir la solicitud. Un router simplemente procesa un URI para determinar esta información. El router tiene dos modos: MVC y match mode. El primer modo es ideal para trabajar con aplicaciones de MVC.</p>
+
+<p><a name="defining"></a></p>
+
+<h2 id="definición-de-rutas">Definición de rutas</h2>
+
+<p><a href="api/Phalcon_Mvc_Router">Phalcon\Mvc\Router</a> provides advanced routing capabilities. En el modo MVC, se puede definir rutas y asignarlas a controladores/acciones. Una ruta se define de la siguiente manera:</p>
+
+<pre><code class="language-php">&amp;lt;?php
+
+use Phalcon\Mvc\Router;
+
+// Crear un Router
+$router = new Router();
+
+// Definir una ruta
+$router-&amp;gt;add(
+    '/admin/users/my-profile',
+    [
+        'controller' =&amp;gt; 'users',
+        'action'     =&amp;gt; 'profile',
+    ]
+);
+
+// Otra ruta
+$router-&amp;gt;add(
+    '/admin/users/change-password',
+    [
+        'controller' =&amp;gt; 'users',
+        'action'     =&amp;gt; 'changePassword',
+    ]
+);
+
+$router-&amp;gt;handle();
+</code></pre>
+
+<p>El primer parámetro del método <code>add()</code> es el patrón que quieres coincidir, opcionalmente, el segundo parámetro es para definir los caminos.
+En este caso, si el URI es ‘/admin/users/my-profile’, entonces se ejecutará del controlador ‘users’ la acción ‘profile’. It’s important to remember that the router does not execute the controller and action, it only collects this information to inform the correct component (i.e. <a href="api/Phalcon_Mvc_Dispatcher">Phalcon\Mvc\Dispatcher</a>) that this is the controller/action it should execute.</p>
+
+<p>Una aplicación puede tener muchos caminos y definir rutas una por una puede ser una tarea engorrosa. En estos casos podemos crear rutas más flexibles:</p>
+
+<pre><code class="language-php">&amp;lt;?php
+
+use Phalcon\Mvc\Router;
+
+// Crear el router
+$router = new Router();
+
+// Definir una ruta
+$router-&amp;gt;add(
+    '/admin/:controller/a/:action/:params',
+    [
+        'controller' =&amp;gt; 1,
+        'action'     =&amp;gt; 2,
+        'params'     =&amp;gt; 3,
+    ]
+);
+``` es el patrón que quieres coincidir, opcionalmente, el segundo parámetro es para definir los caminos.
+En este caso, si el URI es '/admin/users/my-profile', entonces se ejecutará del controlador 'users' la acción 'profile'. It's important to remember that the router does not execute the controller and action, it only collects this information to inform the correct component (i.e. [Phalcon\Mvc\Dispatcher](api/Phalcon_Mvc_Dispatcher)) that this is the controller/action it should execute.
+
+Una aplicación puede tener muchos caminos y definir rutas una por una puede ser una tarea engorrosa. En estos casos podemos crear rutas más flexibles:
+
+```php
+&amp;lt;?php
+
+use Phalcon\Mvc\Router;
+
+// Crear el router
+$router = new Router();
+
+// Definir una ruta
+$router-&amp;gt;add(
+    '/admin/:controller/a/:action/:params',
+    [
+        'controller' =&amp;gt; 1,
+        'action'     =&amp;gt; 2,
+        'params'     =&amp;gt; 3,
+    ]
+);
+&lt;/code&gt;
+
+In the example above, we're using wildcards to make a route valid for many URIs. For example, by accessing the following URL (`/admin/users/a/delete/dave/301`) would produce:
+
+| Controlador | Acción | Parámetro | Parámetro |
+|:-----------:|:------:|:---------:|:---------:|
+|    users    | delete |   dave    |    301    |
+
+El método `add()` recibe un patrón que opcionalmente se han predefinido los marcadores de posición y los modificadores de la expresión regular. Todos los patrones de enrutamiento deben comenzar con un carácter de barra diagonal (`/`). La sintaxis de expresión regular utilizada es igual a las [expresiones regulares PCRE](http://www.php.net/manual/en/book.pcre.php). Tenga en cuenta que, no es necesario añadir los delimitadores de expresión regular. Todos los patrones de ruta no distinguen entre mayúsculas y minúsculas.
+
+El segundo parámetro define cómo las partes coincidentes deben enlazar al controlador/acción/parámetros. Las partes coincidentes son marcadores o subpatrones delimitados por paréntesis (corchetes redondeados). En el ejemplo anterior, el primer subpatrón de coincidencia (`:controller`) es la parte del controlador de la ruta, el segundo la acción y así sucesivamente.
+
+These placeholders help writing regular expressions that are more readable for developers and easier to understand. The following placeholders are supported:
+
+| Marcador       | Expresión regular        | Uso                                                                                                                  |
+| -------------- | ------------------------ | -------------------------------------------------------------------------------------------------------------------- |
+| `/:module`     | `/([a-zA-Z0-9\_\-]+)` | Coincide con un nombre de módulo válido con caracteres alfanuméricos únicamente                                      |
+| `/:controller` | `/([a-zA-Z0-9\_\-]+)` | Coincide con un nombre de controlador válido con caracteres alfanuméricos únicamente                                 |
+| `/:action`     | `/([a-zA-Z0-9_-]+)`      | Coincide con un nombre de acción válido con caracteres alfanuméricos únicamente                                      |
+| `/:params`     | `(/.*)*`                 | Coincide con una lista de palabras opcionales, separadas por barras. Sólo utilice este marcador al final de una ruta |
+| `/:namespace`  | `/([a-zA-Z0-9\_\-]+)` | Coincide con un nombre de espacio de nombres de nivel único                                                          |
+| `/:int`        | `/([0-9]+)`              | Coincide con un parámetro entero                                                                                     |
+
+Los nombres de controlador son camelizados, esto significa que los caracteres (`-`) y (`_`) se quitan y el siguiente carácter se transformará en mayúscula. Por ejemplo, some_controller se convierte en SomeController.
+
+Puesto que puede agregar tantas rutas como necesite mediante el método `add()`, el orden en que se agregan rutas indican su relevancia, las últimas rutas añadidas tienen más importancia que las primeras. Internally, all defined routes are traversed in reverse order until [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) finds the one that matches the given URI and processes it, while ignoring the rest.
+
+&lt;a name='defining-named-parameters'&gt;&lt;/a&gt;
+
+### Parámetros con nombres
+
+El ejemplo siguiente muestra cómo definir nombres a los parámetros de ruta:
+
+```php
+&lt;?php
+
+$router-&gt;add(
+    '/news/([0-9]{4})/([0-9]{2})/([0-9]{2})/:params',
+    [
+        'controller' =&gt; 'posts',
+        'action'     =&gt; 'show',
+        'year'       =&gt; 1, // ([0-9]{4})
+        'month'      =&gt; 2, // ([0-9]{2})
+        'day'        =&gt; 3, // ([0-9]{2})
+        'params'     =&gt; 4, // :params
+    ]
+);
+</code></pre>
+
+<p>En el ejemplo anterior, la ruta no define una parte <code>controlador</code> o <code>acción</code>. Estas partes se reemplazan por valores fijos (<code>posts</code> and <code>show</code>). El usuario no sabrá el controlador realmente enviado por la solicitud. Dentro del controlador, se puede acceder a los parámetros nombrados de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class PostsController extends Controller
+{
+    public function indexAction()
+    {
+
+    }
+
+    public function showAction()
+    {
+        // Obtener el parámetro 'año'
+        $year = $this-&gt;dispatcher-&gt;getParam('year');
+
+        // Obtener el parámetro 'mes'
+        $month = $this-&gt;dispatcher-&gt;getParam('month');
+
+        // Obtener el parámetro 'día'
+        $day = $this-&gt;dispatcher-&gt;getParam('day');
+
+        // ...
+    }
+}
+</code></pre>
+
+<p>Tenga en cuenta que los valores de los parámetros se obtienen del despachador. Esto sucede porque es el componente que finalmente interactua con los controladores de su aplicación. Además, también hay otra forma de crear parámetros con nombre como parte del patrón:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$router-&gt;add(
+    '/documentation/{chapter}/{name}.{type:[a-z]+}',
+    [
+        'controller' =&gt; 'documentation',
+        'action'     =&gt; 'show',
+    ]
+);
+</code></pre>
+
+<p>Puede acceder a sus valores de la misma manera que antes:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Controller;
+
+class DocumentationController extends Controller
+{
+    public function showAction()
+    {
+        // Obtener el parámetro 'nombre'
+        $name = $this-&gt;dispatcher-&gt;getParam('name');
+
+        // Obtener el parámetro 'tipo'
+        $type = $this-&gt;dispatcher-&gt;getParam('type');
+
+        // ...
+    }
+}
+</code></pre>
+
+<p><a name="defining-short-syntax"></a></p>
+
+<h3 id="sintaxis-corta">Sintaxis corta</h3>
+
+<p>If you don’t like using an array to define the route paths, an alternative syntax is also available. The following examples produce the same result:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Forma corta
+$router-&gt;add(
+    '/posts/{year:[0-9]+}/{title:[a-z\-]+}',
+    'Posts::show'
+);
+
+// Forma Array 
+$router-&gt;add(
+    '/posts/([0-9]+)/([a-z\-]+)',
+    [
+       'controller' =&gt; 'posts',
+       'action'     =&gt; 'show',
+       'year'       =&gt; 1,
+       'title'      =&gt; 2,
+    ]
+);
+</code></pre>
+
+<p><a name="defining-mixed-parameters"></a></p>
+
+<h3 id="mezcla-de-array-y-sintaxis-corta">Mezcla de array y sintaxis corta</h3>
+
+<p>La matriz y la sintaxis corta se pueden mezclar para definir una ruta; en este caso, observe que los parámetros con nombre se agregan automáticamente a las rutas de ruta según la posición en la que se definieron:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// La primera posición se debe omitir porque se usa para
+// el parámetro nombrado 'país'
+$router-&gt;add(
+    '/news/{country:[a-z]{2}}/([a-z+])/([a-z\-+])',
+    [
+        'section' =&gt; 2, // Las posiciones comienzan con 2
+        'article' =&gt; 3,
+    ]
+);
+</code></pre>
+
+<p><a name="defining-route-to-modules"></a></p>
+
+<h3 id="enrutamiento-a-los-módulos">Enrutamiento a los módulos</h3>
+
+<p>You can define routes whose paths include modules. This is specially suitable to multi-module applications. It’s possible define a default route that includes a module wildcard:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router;
+
+$router = new Router(false);
+
+$router-&gt;add(
+    '/:module/:controller/:action/:params',
+    [
+        'module'     =&gt; 1,
+        'controller' =&gt; 2,
+        'action'     =&gt; 3,
+        'params'     =&gt; 4,
+    ]
+);
+</code></pre>
+
+<p>In this case, the route always must have the module name as part of the URL. For example, the following URL: <code>/admin/users/edit/sonny</code>, will be processed as:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Módulo</th>
+      <th style="text-align: center">Controlador</th>
+      <th style="text-align: center">Acción</th>
+      <th style="text-align: center">Parámetro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">admin</td>
+      <td style="text-align: center">users</td>
+      <td style="text-align: center">edit</td>
+      <td style="text-align: center">sonny</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>O puede vincular rutas específicas a módulos específicos:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$router-&gt;add(
+    '/login',
+    [
+        'module'     =&gt; 'backend',
+        'controller' =&gt; 'login',
+        'action'     =&gt; 'index',
+    ]
+);
+
+$router-&gt;add(
+    '/products/:action',
+    [
+        'module'     =&gt; 'frontend',
+        'controller' =&gt; 'products',
+        'action'     =&gt; 1,
+    ]
+);
+</code></pre>
+
+<p>O agréguelos a namespaces específicos:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$router-&gt;add(
+    '/:namespace/login',
+    [
+        'namespace'  =&gt; 1,
+        'controller' =&gt; 'login',
+        'action'     =&gt; 'index',
+    ]
+);
+</code></pre>
+
+<p>Los nombres de Namespaces/class se deben pasar separados:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$router-&gt;add(
+    '/login',
+    [
+        'namespace'  =&gt; 'Backend\Controllers',
+        'controller' =&gt; 'login',
+        'action'     =&gt; 'index',
+    ]
+);
+</code></pre>
+
+<p><a name="defining-http-method-restrictions"></a></p>
+
+<h3 id="restricciones-del-método-http">Restricciones del método HTTP</h3>
+
+<p>Cuando agrega una ruta usando simplemente <code>add()</code>, la ruta se habilitará para cualquier método HTTP. A veces podemos restringir una ruta a un método específico, esto es especialmente útil al crear aplicaciones RESTful:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Esta ruta solo se combinará si el método HTTP es GET
+$router-&gt;addGet(
+    '/products/edit/{id}',
+    'Products::edit'
+);
+
+// Esta ruta solo se combinará si el método HTTP es POST
+$router-&gt;addPost(
+    '/products/save',
+    'Products::save'
+);
+
+// Esta ruta se combinará si el método HTTP es POST o PUT
+$router-&gt;add(
+    '/products/update',
+    'Products::update'
+)-&gt;via(
+    [
+        'POST',
+        'PUT',
+    ]
+);
+</code></pre>
+
+<p><a name="defining-using-conversors"></a></p>
+
+<h3 id="utilizando-conversores">Utilizando conversores</h3>
+
+<p>Conversors allow you to freely transform the route’s parameters before passing them to the dispatcher. The following examples show how to use them:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// El nombre de la acción permite guiones, una acción puede ser: /products/new-ipod-nano-4-generation
+$route = $router-&gt;add(
+    '/products/{slug:[a-z\-]+}',
+    [
+        'controller' =&gt; 'products',
+        'action'     =&gt; 'show',
+    ]
+);
+
+$route-&gt;convert(
+    'slug',
+    function ($slug) {
+        // Transformar la slug quitando los guiones
+        return str_replace('-', '', $slug);
+    }
+);
+</code></pre>
+
+<p>Another use case for conversors is binding a model into a route. This allows the model to be passed into the defined action directly:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Este ejemplo se basa en la suposición de que el ID se está utilizando como parámetro en la url:
+ /products/4
+$route = $router-&gt;add(
+    '/products/{id}',
+    [
+        'controller' =&gt; 'products',
+        'action'     =&gt; 'show',
+    ]
+);
+
+$route-&gt;convert(
+    'id',
+    function ($id) {
+        // Obtener el modelo
+        return Product::findFirstById($id);
+    }
+);
+</code></pre>
+
+<p><a name="defining-groups-of-routes"></a></p>
+
+<h3 id="grupos-de-rutas">Grupos de rutas</h3>
+
+<p>Si un conjunto de rutas tiene caminos comunes, se pueden agrupar para mantenerlas fácilmente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router;
+use Phalcon\Mvc\Router\Group as RouterGroup;
+
+$router = new Router();
+
+// Crea un grupo con un módulo y un controlador común
+$blog = new RouterGroup(
+    [
+        'module'     =&gt; 'blog',
+        'controller' =&gt; 'index',
+    ]
+);
+
+// Todas las rutas comienzan con /blog
+$blog-&gt;setPrefix('/blog');
+
+// Agrega una ruta al grupo
+$blog-&gt;add(
+    '/save',
+    [
+        'action' =&gt; 'save',
+    ]
+);
+
+// Agregue otra ruta al grupo
+$blog-&gt;add(
+    '/edit/{id}',
+    [
+        'action' =&gt; 'edit',
+    ]
+);
+
+// Esta ruta se asigna a un controlador diferente al predeterminado
+$blog-&gt;add(
+    '/blog',
+    [
+        'controller' =&gt; 'blog',
+        'action'     =&gt; 'index',
+    ]
+);
+
+// Agregue el grupo al enrutador
+$router-&gt;mount($blog);
+</code></pre>
+
+<p>Puede mover grupos de rutas a archivos separados para mejorar la organización y la reutilización de código en la aplicación:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router\Group as RouterGroup;
+
+class BlogRoutes extends RouterGroup
+{
+    public function initialize()
+    {
+        // Rutas predeterminadas
+        $this-&gt;setPaths(
+            [
+                'module'    =&gt; 'blog',
+                'namespace' =&gt; 'Blog\Controllers',
+            ]
+        );
+
+        // Todas las rutas comienzan con /blog
+        $this-&gt;setPrefix('/blog');
+
+        // Agrega una ruta al grupo
+        $this-&gt;add(
+            '/save',
+            [
+                'action' =&gt; 'save',
+            ]
+        );
+
+        // Agregue otra ruta al grupo
+        $this-&gt;add(
+            '/edit/{id}',
+            [
+                'action' =&gt; 'edit',
+            ]
+        );
+
+        // Esta ruta se asigna a un controlador diferente al predeterminado
+        $this-&gt;add(
+            '/blog',
+            [
+                'controller' =&gt; 'blog',
+                'action'     =&gt; 'index',
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>Luego monte el grupo en el router:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Agregue el grupo al enrutador
+$router-&gt;mount(
+    new BlogRoutes()
+);
+</code></pre>
+
+<p><a name="matching"></a></p>
+
+<h2 id="rutas-coincidentes">Rutas coincidentes</h2>
+
+<p>Se debe pasar un URI válido al Router para que pueda procesarlo y encontrar una ruta coincidente. De forma predeterminada, el URI de enrutamiento se toma de la variable <code>$_GET['_url']</code> creada por el módulo de motor de re-escritura. Un par de reglas de re-escritura que funcionan muy bien con Phalcon son:</p>
+
+<pre><code class="language-apacheconfig">RewriteEngine On
+RewriteCond   %{REQUEST_FILENAME} !-d
+RewriteCond   %{REQUEST_FILENAME} !-f
+RewriteRule   ^((?s).*)$ index.php?_url=/$1 [QSA,L]
+</code></pre>
+
+<p>In this configuration, any requests to files or folders that don’t exist will be sent to <code>index.php</code>. The following example shows how to use this component in stand-alone mode:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router;
+
+// Creando un enrutador
+$router = new Router();
+
+// Definir rutas aquí si alguna
+// ...
+
+// Tomando el URI de $_GET['_url']
+$router-&gt;handle();
+
+// O estableciendo el valor de URI directamente
+$router-&gt;handle('/employees/edit/17');
+
+// Obtener el controlador procesado
+echo $router-&gt;getControllerName();
+
+// Obtener la acción procesada
+echo $router-&gt;getActionName();
+
+// Obtener la ruta correspondiente
+$route = $router-&gt;getMatchedRoute();
+</code></pre>
+
+<p><a name="naming"></a></p>
+
+<h2 id="nombres-de-rutas">Nombres de rutas</h2>
+
+<p>Each route that is added to the router is stored internally as a <a href="api/Phalcon_Mvc_Router_Route">Phalcon\Mvc\Router\Route</a> object. Esa clase encapsula todos los detalles de cada ruta. Por ejemplo, podemos darle un nombre a una ruta para identificarlo de manera única en nuestra aplicación. Esto es especialmente útil si desea crear URLs a partir de él.</p>
+
+<pre><code class="language-php">&lt;?php
+
+$route = $router-&gt;add(
+    '/posts/{year}/{title}',
+    'Posts::show'
+);
+
+$route-&gt;setName('show-posts');
+</code></pre>
+
+<p>Then, using for example the component <a href="api/Phalcon_Mvc_Url">Phalcon\Mvc\Url</a> we can build routes from its name:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Returns /posts/2012/phalcon-1-0-released
+echo $url-&gt;get(
+    [
+        'for'   =&gt; 'show-posts',
+        'year'  =&gt; '2012',
+        'title' =&gt; 'phalcon-1-0-released',
+    ]
+);
+</code></pre>
+
+<p><a name="usage"></a></p>
+
+<h2 id="ejemplos-de-uso">Ejemplos de Uso</h2>
+
+<p>Los siguientes son ejemplos de rutas personalizadas:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Coincidencia '/system/admin/a/edit/7001'
+$router-&gt;add(
+    '/system/:controller/a/:action/:params',
+    [
+        'controller' =&gt; 1,
+        'action'     =&gt; 2,
+        'params'     =&gt; 3,
+    ]
+);
+
+// Coincidencia '/es/news'
+$router-&gt;add(
+    '/([a-z]{2})/:controller',
+    [
+        'controller' =&gt; 2,
+        'action'     =&gt; 'index',
+        'language'   =&gt; 1,
+    ]
+);
+
+// Coincidencia '/es/news'
+$router-&gt;add(
+    '/{language:[a-z]{2}}/:controller',
+    [
+        'controller' =&gt; 2,
+        'action'     =&gt; 'index',
+    ]
+);
+
+// Coincidencia '/admin/posts/edit/100'
+$router-&gt;add(
+    '/admin/:controller/:action/:int',
+    [
+        'controller' =&gt; 1,
+        'action'     =&gt; 2,
+        'id'         =&gt; 3,
+    ]
+);
+
+// Coincidencia '/posts/2015/02/some-cool-content'
+$router-&gt;add(
+    '/posts/([0-9]{4})/([0-9]{2})/([a-z\-]+)',
+    [
+        'controller' =&gt; 'posts',
+        'action'     =&gt; 'show',
+        'year'       =&gt; 1,
+        'month'      =&gt; 2,
+        'title'      =&gt; 3,
+    ]
+);
+
+// Coincidencia '/manual/en/translate.adapter.html'
+$router-&gt;add(
+    '/manual/([a-z]{2})/([a-z\.]+)\.html',
+    [
+        'controller' =&gt; 'manual',
+        'action'     =&gt; 'show',
+        'language'   =&gt; 1,
+        'file'       =&gt; 2,
+    ]
+);
+
+// Coincidencia /feed/fr/le-robots-hot-news.atom
+$router-&gt;add(
+    '/feed/{lang:[a-z]+}/{blog:[a-z\-]+}\.{type:[a-z\-]+}',
+    'Feed::get'
+);
+
+// Coincidencia /api/v1/users/peter.json
+$router-&gt;add(
+    '/api/(v1|v2)/{method:[a-z]+}/{param:[a-z]+}\.(json|xml)',
+    [
+        'controller' =&gt; 'api',
+        'version'    =&gt; 1,
+        'format'     =&gt; 4,
+    ]
+);
+</code></pre>
+
+<h5 class="alert alert-warning">Ten cuidado con los caracteres permitidos en una expresión regular para los controladores y los espacios de nombres. Éstos se convierten en nombres de clase y a su vez estos son pasados a través del sistema de archivos y podrían ser utilizados por atacantes para leer archivos no autorizados. Una expresión regular segura puede ser así: <code>/([a-zA-Z0-9\_\-]+)</code> </h5>
+
+<p><a name="default-behavior"></a></p>
+
+<h2 id="comportamiento-predeterminado">Comportamiento predeterminado</h2>
+
+<p><a href="api/Phalcon_Mvc_Router">Phalcon\Mvc\Router</a> has a default behavior that provides a very simple routing that always expects a URI that matches the following pattern: <code>/:controller/:action/:params</code></p>
+
+<p>Por ejemplo, para una URL como esta <code>http://phalconphp.com/documentation/show/about.html</code>, este router lo traducirá de la siguiente manera:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Controlador</th>
+      <th style="text-align: center">Acción</th>
+      <th style="text-align: center">Parámetro</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">documentation</td>
+      <td style="text-align: center">show</td>
+      <td style="text-align: center">about.html</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Si no desea que el router tenga este comportamiento, debe crear el router pasando <code>false</code> como primer parámetro:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router;
+
+// Crea el enrutador sin rutas predeterminadas
+$router = new Router(false);
+</code></pre>
+
+<p><a name="default-route"></a></p>
+
+<h2 id="establecer-la-ruta-por-defecto">Establecer la ruta por defecto</h2>
+
+<p>Cuando se accede a su aplicación sin ninguna ruta, la ruta ‘/’ se usa para determinar qué rutas se deben usar para mostrar la página inicial en su sitio web/aplicación:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$router-&gt;add(
+    '/',
+    [
+        'controller' =&gt; 'index',
+        'action'     =&gt; 'index',
+    ]
+);
+</code></pre>
+
+<p><a name="not-found-paths"></a></p>
+
+<h2 id="rutas-no-encontradas">Rutas No Encontradas</h2>
+
+<p>Si ninguna de las rutas especificadas en el router coincide, puede definir un grupo de rutas para usar en este escenario:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Establecer camino 404
+$router-&gt;notFound(
+    [
+        'controller' =&gt; 'index',
+        'action'     =&gt; 'route404',
+    ]
+);
+</code></pre>
+
+<p>Esto es tipicamente para una página Error 404.</p>
+
+<blockquote>
+  <p>Esto sólo funcionará si el router se creó sin rutas predeterminadas, osea: <code>$router = Phalcon\Mvc\Router(false);</code></p>
+</blockquote>
+
+<p><a name="default-paths"></a></p>
+
+<h2 id="configurar-rutas-por-defecto">Configurar rutas por defecto</h2>
+
+<p>It’s possible to define default values for the module, controller or action. When a route is missing any of those paths they can be automatically filled by the router:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Establecer un predeterminado específico
+$router-&gt;setDefaultModule('backend');
+$router-&gt;setDefaultNamespace('Backend\Controllers');
+$router-&gt;setDefaultController('index');
+$router-&gt;setDefaultAction('index');
+
+// Using an array
+$router-&gt;setDefaults(
+    [
+        'controller' =&gt; 'index',
+        'action'     =&gt; 'index',
+    ]
+);
+</code></pre>
+
+<p><a name="extra-slashes"></a></p>
+
+<h2 id="tratar-con-barras-extra-o-finales">Tratar con barras extra o finales</h2>
+
+<p>A veces se puede acceder a una ruta con barras posteriores extras. Esas barras adicionales llevarían a producir un estado no-encontrado en el despachador. Puede configurar el router para eliminar automáticamente las barras desde el final de la ruta administrada:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router;
+
+$router = new Router();
+
+// Eliminar barras diagonales automáticamente
+$router-&gt;removeExtraSlashes(true);
+</code></pre>
+
+<p>O bien, puede modificar rutas específicas para aceptar opcionalmente barras inclinadas posteriores:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// El patrón [/]{0,1} permite a esta ruta tener opcionalmente una barra al final
+$router-&gt;add(
+    '/{language:[a-z]{2}}/:controller[/]{0,1}',
+    [
+        'controller' =&gt; 2,
+        'action'     =&gt; 'index',
+    ]
+);
+</code></pre>
+
+<p><a name="callbacks"></a></p>
+
+<h2 id="coincidencias-por-llamada-de-retorno">Coincidencias por llamada de retorno</h2>
+
+<p>A veces, las rutas solo deben coincidir si cumplen con condiciones específicas. Puede agregar condiciones arbitrarias a las rutas usando la devolución de llamada <code>beforeMatch()</code>. Si esta función devuelve <code>false</code>, la ruta se tratará como no-coincidente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$route = $router-&gt;add('/login',
+    [
+        'module'     =&gt; 'admin',
+        'controller' =&gt; 'session',
+    ]
+);
+
+$route-&gt;beforeMatch(
+    function ($uri, $route) {
+        // Comprobar si la consulta fue hecha con Ajax
+        if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) &amp;&amp; $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest') {
+            return false;
+        }
+
+        return true;
+    }
+);
+</code></pre>
+
+<p>Puede volver a utilizar estas condiciones adicionales en las clases:</p>
+
+<pre><code class="language-php">&lt;?php
+
+class AjaxFilter
+{
+    public function check()
+    {
+        return $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest';
+    }
+}
+</code></pre>
+
+<p>Y usa esta clase en lugar de la función anónima:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$route = $router-&gt;add(
+    '/get/info/{id}',
+    [
+        'controller' =&gt; 'products',
+        'action'     =&gt; 'info',
+    ]
+);
+
+$route-&gt;beforeMatch(
+    [
+        new AjaxFilter(),
+        'check'
+    ]
+);
+</code></pre>
+
+<p>A partir de Phalcon 3, hay otra forma de comprobar esto:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$route = $router-&gt;add(
+    '/login',
+    [
+        'module'     =&gt; 'admin',
+        'controller' =&gt; 'session',
+    ]
+);
+
+$route-&gt;beforeMatch(
+    function ($uri, $route) {
+        /**
+         * @var string $uri
+         * @var \Phalcon\Mvc\Router\Route $route
+         * @var \Phalcon\DiInterface $this
+         * @var \Phalcon\Http\Request $request
+         */
+        $request = $this-&gt;getShared('request');
+
+        // Verifica si la solicitud fue hecha con Ajax
+        return $request-&gt;isAjax();
+    }
+);
+</code></pre>
+
+<p><a name="hostname-constraints"></a></p>
+
+<h2 id="restricciones-de-nombre-de-host">Restricciones de nombre de host</h2>
+
+<p>El router le permite establecer restricciones de nombre de host, esto significa que las rutas específicas o un grupo de rutas pueden restringirse para que solo coincidan si la ruta también cumple con la restricción de nombre de host:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$route = $router-&gt;add(
+    '/login',
+    [
+        'module'     =&gt; 'admin',
+        'controller' =&gt; 'session',
+        'action'     =&gt; 'login',
+    ]
+);
+
+$route-&gt;setHostName('admin.company.com');
+</code></pre>
+
+<p>El nombre de host también se puede pasar como expresiones regulares:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$route = $router-&gt;add(
+    '/login',
+    [
+        'module'     =&gt; 'admin',
+        'controller' =&gt; 'session',
+        'action'     =&gt; 'login',
+    ]
+);
+
+$route-&gt;setHostName('([a-z]+).company.com');
+</code></pre>
+
+<p>En grupos de rutas, puede configurar una restricción de nombre de host que se aplique a todas las rutas del grupo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router\Group as RouterGroup;
+
+// Crear un grupo con un módulo y un controlador en común
+$blog = new RouterGroup(
+    [
+        'module'     =&gt; 'blog',
+        'controller' =&gt; 'posts',
+    ]
+);
+
+// Restricción de nombre de host
+$blog-&gt;setHostName('blog.mycompany.com');
+
+// Todas las rutas comienzan con /blog
+$blog-&gt;setPrefix('/blog');
+
+// Ruta por defecto
+$blog-&gt;add(
+    '/',
+    [
+        'action' =&gt; 'index',
+    ]
+);
+
+// Agregar una ruta por defecto
+$blog-&gt;add(
+    '/save',
+    [
+        'action' =&gt; 'save',
+    ]
+);
+
+// Agregar otra ruta al grupo
+$blog-&gt;add(
+    '/edit/{id}',
+    [
+        'action' =&gt; 'edit',
+    ]
+);
+
+// Agregar el grupo al router
+$router-&gt;mount($blog);
+</code></pre>
+
+<p><a name="uri-sources"></a></p>
+
+<h2 id="fuentes-uri">Fuentes URI</h2>
+
+<p>Por defecto, la información del URI se obtiene de la variable <code>$_GET['_url']</code>, esto es pasado por Rewrite-Engine a Phalcon, también puede usar <code>$_SERVER['REQUEST_URI']</code> si es necesario:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router;
+
+// ...
+
+// Usar $_GET['_url'] (por defecto)
+$router-&gt;setUriSource(
+    Router::URI_SOURCE_GET_URL
+);
+
+// Usar $_SERVER['REQUEST_URI']
+$router-&gt;setUriSource(
+    Router::URI_SOURCE_SERVER_REQUEST_URI
+);
+</code></pre>
+
+<p>O puede pasar manualmente el URI al método <code>handle()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$router-&gt;handle('/some/route/to/handle');
+</code></pre>
+
+<h5 class="alert alert-danger">Ten en cuenta que al usar <code>Router::URI_SOURCE_GET_URL</code> la Uri sera decodificada automáticamente porque se basa en la solicitud <code>$_REQUEST</code> superglobal. Sin embargo, en este momento, si usas <code>Router::URI_SOURCE_SERVER_REQUEST_URI</code> la Uri no será decodificada automáticamente. Esto cambiará en la siguiente versión mayor.</h5>
+
+<p><a name="testing"></a></p>
+
+<h2 id="probando-tus-rutas">Probando tus rutas</h2>
+
+<p>Como este componente no tiene dependencias, puede crear un archivo como se muestra a continuación para probar sus rutas:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router;
+
+// Estas rutas simulan URIs reales
+$testRoutes = [
+    '/',
+    '/index',
+    '/index/index',
+    '/index/test',
+    '/products',
+    '/products/index/',
+    '/products/show/101',
+];
+
+$router = new Router();
+
+// Agregar aquí las rutas personalizadas
+// ...
+
+// Probar cada ruta
+foreach ($testRoutes as $testRoute) {
+    // Gestionar la ruta
+    $router-&gt;handle($testRoute);
+
+    echo 'Probando ', $testRoute, '&lt;br&gt;';
+
+    // Comprobar si alguna ruta coincidio
+    if ($router-&gt;wasMatched()) {
+        echo 'Controlador: ', $router-&gt;getControllerName(), '&lt;br&gt;';
+        echo 'Acción: ', $router-&gt;getActionName(), '&lt;br&gt;';
+    } else {
+        echo "La ruta no coincidió con ninguna ruta&lt;br&gt;";
+    }
+
+    echo '&lt;br&gt;';
+}
+</code></pre>
+
+<p><a name="events"></a></p>
+
+<h2 id="eventos">Eventos</h2>
+
+<p>Like many other components, routers also have events. None of the events can stop the operation. Below is a list of available events</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Evento</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>router:beforeCheckRoutes</code></td>
+      <td>Activado antes de comprobar todas las rutas cargadas</td>
+    </tr>
+    <tr>
+      <td><code>router:beforeCheckRoute</code></td>
+      <td>Activado antes de comprobar una ruta</td>
+    </tr>
+    <tr>
+      <td><code>router:matchedRoute</code></td>
+      <td>Se activa cuando una ruta coincidente es encontrada</td>
+    </tr>
+    <tr>
+      <td><code>router:notMatchedRoute</code></td>
+      <td>Activado cuando ninguna ruta coincidente es encontrada</td>
+    </tr>
+    <tr>
+      <td><code>router:afterCheckRoutes</code></td>
+      <td>Activado después de comprobar todas las rutas</td>
+    </tr>
+    <tr>
+      <td><code>router:beforeMount</code></td>
+      <td>Se activa cuando se monta una nueva ruta</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><a name="annotations"></a></p>
+
+<h2 id="anotaciones-de-router">Anotaciones de Router</h2>
+
+<p>This component provides a variant that’s integrated with the <a href="/3.4/en/annotations">annotations</a> service. Al usar esta estrategia, puede escribir las rutas directamente en los controladores en lugar de agregarlas en el registro del servicio:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router\Annotations as RouterAnnotations;
+
+$di['router'] = function () {
+    // Usar las anotaciones del router. Pasamos el valor false ya que no queremos que el router agregue los patrones por defecto
+    $router = new RouterAnnotations(false);
+
+    // Leer las anotaciones desde ProductsController si las URI comienzan con /api/products
+    $router-&gt;addResource('Products', '/api/products');
+
+    return $router;
+};
+</code></pre>
+
+<p>Las anotaciones se pueden definir de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+/**
+ * @RoutePrefix('/api/products')
+ */
+class ProductsController
+{
+    /**
+     * @Get(
+     *     '/'
+     * )
+     */
+    public function indexAction()
+    {
+
+    }
+
+    /**
+     * @Get(
+     *     '/edit/{id:[0-9]+}',
+     *     name='edit-robot'
+     * )
+     */
+    public function editAction($id)
+    {
+
+    }
+
+    /**
+     * @Route(
+     *     '/save',
+     *     methods={'POST', 'PUT'},
+     *     name='save-robot'
+     * )
+     */
+    public function saveAction()
+    {
+
+    }
+
+    /**
+     * @Route(
+     *     '/delete/{id:[0-9]+}',
+     *     methods='DELETE',
+     *     conversors={
+     *         id='MyConversors::checkId'
+     *     }
+     * )
+     */
+    public function deleteAction($id)
+    {
+
+    }
+
+    public function infoAction($id)
+    {
+
+    }
+}
+</code></pre>
+
+<p>Only methods marked with valid annotations are used as routes. List of annotations supported:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RoutePrefix</td>
+      <td>Un prefijo que se antepone a cada ruta URI. Esta anotación debe colocarse en el docblock de la clase</td>
+      <td><code>@RoutePrefix('/api/products')</code></td>
+    </tr>
+    <tr>
+      <td>Route</td>
+      <td>Esta anotación marca un método como una ruta. Esta anotación debe colocarse en un docblock método</td>
+      <td><code>@Route('/api/products/show')</code></td>
+    </tr>
+    <tr>
+      <td>Get</td>
+      <td>Esta anotación marca el método como una ruta restringida al método <code>GET</code> de HTTP</td>
+      <td><code>@Get('/api/products/search')</code></td>
+    </tr>
+    <tr>
+      <td>Post</td>
+      <td>Esta anotación marca el método como una ruta restringida al método <code>POST</code> de HTTP</td>
+      <td><code>@Post('/api/products/save')</code></td>
+    </tr>
+    <tr>
+      <td>Put</td>
+      <td>Esta anotación marca el método como una ruta restringida al método <code>PUT</code> de HTTP</td>
+      <td><code>@Put('/api/products/save')</code></td>
+    </tr>
+    <tr>
+      <td>Delete</td>
+      <td>Esta anotación marca el método como una ruta restringida al método <code>DELETE</code> de HTTP</td>
+      <td><code>@Delete('/api/products/delete/{id}')</code></td>
+    </tr>
+    <tr>
+      <td>Options</td>
+      <td>Esta anotación marca el método como una ruta restringida al método <code>OPTIONS</code> de HTTP</td>
+      <td><code>@Option('/api/products/info')</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Para las anotaciones que agregan rutas, se admiten los siguientes parámetros:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Uso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>methods</td>
+      <td>Define uno o más métodos HTTP que la ruta debe cumplir</td>
+      <td><code>@Route('/api/products', methods={'GET', 'POST'})</code></td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>Define el nombre de la ruta</td>
+      <td><code>@Route('/api/products', name='get-products')</code></td>
+    </tr>
+    <tr>
+      <td>paths</td>
+      <td>Un arreglo de rutas como el pasado en <code>Phalcon\Mvc\Router::add()</code></td>
+      <td><code>@Route('/posts/{id}/{slug}', paths={module='backend'})</code></td>
+    </tr>
+    <tr>
+      <td>conversors</td>
+      <td>Un hash del conversor para aplicar a los parámetros</td>
+      <td><code>@Route('/posts/{id}/{slug}', conversors={id='MyConversor::getId'})</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Si está utilizando módulos en su aplicación, es mejor utilizar el método <code>addModuleResource()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router\Annotations as RouterAnnotations;
+
+$di['router'] = function () {
+    // Usar las anotaciones del router
+    $router = new RouterAnnotations(false);
+
+    // Leer las anotaciones desde Backend\Controllers\ProductsController si la URI comienza con /api/products
+    $router-&gt;addModuleResource('backend', 'Products', '/api/products');
+
+    return $router;
+};
+</code></pre>
+
+<p><a name="registration"></a></p>
+
+<h2 id="registro-de-instancia-de-router">Registro de instancia de Router</h2>
+
+<p>Puede registrar el router durante el registro del servicio con el inyector de dependencia Phalcon para que esté disponible dentro de los controladores.</p>
+
+<p>Necesita agregar el código a continuación en su archivo bootstrap (por ejemplo, <code>index.php</code> o <code>app/config/services.php</code> si utiliza <a href="http://phalconphp.com/en/download/tools">Phalcon Developer Tools</a>.</p>
+
+<pre><code class="language-php">&lt;?php
+
+/**
+ * Add routing capabilities
+ */
+$di-&gt;set(
+    'router',
+    function () {
+        require __DIR__ . '/../app/config/routes.php';
+
+        return $router;
+    }
+);
+</code></pre>
+
+<p>Necesita crear <code>app/config/routes.php</code> y agregar el código de inicialización del router, por ejemplo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Router;
+
+$router = new Router();
+
+$router-&gt;add(
+    '/login',
+    [
+        'controller' =&gt; 'login',
+        'action'     =&gt; 'index',
+    ]
+);
+
+$router-&gt;add(
+    '/products/:action',
+    [
+        'controller' =&gt; 'products',
+        'action'     =&gt; 1,
+    ]
+);
+
+return $router;
+</code></pre>
+
+<p><a name="custom"></a></p>
+
+<h2 id="implementar-tu-propio-router">Implementar tu propio Router</h2>
+
+<p>Debe implementar la interfaz <code>Phalcon\Mvc\RouterInterface</code> para crear su propio enrutador reemplazando uno proporcionado por Phalcon.</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

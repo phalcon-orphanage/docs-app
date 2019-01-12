@@ -1,0 +1,2648 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="es-es" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="es-es" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="es-es" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/es-es/db-models.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/es-es">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/db-models" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/es-es/db-models" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/es-es/db-models" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/es-es/db-models" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/es-es/db-models" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/es-es/db-models" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/db-models">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/es-es/db-models">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/es-es/db-models">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/es-es/db-models">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/es-es/db-models">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/es-es/db-models">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/es-es">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="working-with"></a></p>
+
+<h1 id="trabajando-con-modelos">Trabajando con Modelos</h1>
+
+<p>Un modelo representa la información (datos) de la aplicación y las reglas para manipular estos datos. Los modelos se utilizan principalmente para gestionar las reglas de interacción con una tabla de base de datos correspondiente. En la mayoría de los casos, cada tabla de la base de datos corresponderá a un modelo en su aplicación. La mayor parte de la lógica de negocio de su aplicación se concentrará en los modelos.</p>
+
+<p><a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> is the base for all models in a Phalcon application. Proporciona independencia de base de datos, funcionalidades básicas de CRUD (Crear Leer Actualizar Eliminar, por sus siglas en inglés), capacidades de búsqueda avanzadas y la capacidad para crear relaciones con otros modelos, entre otros servicios. <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> avoids the need of having to use SQL statements because it translates methods dynamically to the respective database engine operations.</p>
+
+<h5 class="alert alert-warning">Los modelos están diseñados para trabajar con la base de datos en una capa de alto nivel de abstracción. If you need to work with databases at a lower level check out the <a href="api/Phalcon_Db">Phalcon\Db</a> component documentation.</h5>
+
+<p><a name="creating"></a></p>
+
+<h2 id="creación-de-modelos">Creación de Modelos</h2>
+
+<p>A model is a class that extends from <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a>. Its class name should be in camel case notation:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class RobotParts extends Model
+{
+
+}
+</code></pre>
+
+<h5 class="alert alert-warning">Si usa PHP 5.4/5.5 se recomienda declarar cada columna que sea parte del modelo con el fin de ahorrar memoria y reducir la asignación de memoria. </h5>
+
+<p>Por defecto, el modelo <code>Store\Toys\RobotParts</code> se asigna a la tabla <code>robot_parts</code>. Si desea especificar manualmente otro nombre para la tabla asignada, puede utilizar el método <code>setSource()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class RobotParts extends Model
+{
+    public function initialize()
+    {
+        $this-&gt;setSource('toys_robot_parts');
+    }
+}
+</code></pre>
+
+<p>The model <code>RobotParts</code> now maps to <code>toys_robot_parts</code> table. The <code>initialize()</code> method helps with setting up this model with a custom behavior i.e. a different table.</p>
+
+<p>El método <code>initialize()</code> se llama sólo una vez durante la solicitud. Este método pretende realizar inicializaciones que se aplican para todas las instancias del modelo creado dentro de la aplicación. Si desea realizar tareas de inicialización para cada instancia creada del modelo puede usar el método <code>onConstruct()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class RobotParts extends Model
+{
+    public function onConstruct()
+    {
+        // ...
+    }
+}
+</code></pre>
+
+<p><a name="properties-setters-getters"></a></p>
+
+<h3 id="propiedades-públicas-vs-settersgetters">Propiedades públicas vs. Setters/Getters</h3>
+
+<p>Los modelos pueden ser implementados con propiedades públicas, lo que significa que cada propiedad puede ser leída y actualizada desde cualquier parte del código que ha instanciado esa clase de modelo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public $price;
+}
+</code></pre>
+
+<p>Otra implementación es usar las funciones getters y setter, que controlan las propiedades que están públicamente disponibles para ese modelo. El beneficio de la utilización de setters y getters es que el desarrollador puede realizar transformaciones y validaciones en los valores para el modelo, lo cual es imposible tratándose de propiedades públicas. Además getters y setters permiten futuros cambios sin cambiar la interfaz de la clase modelo. Así que si cambia un nombre de campo, el único cambio necesario será en la propiedad privada del modelo referido en el getter / setter relevante y en ninguna otra parte del código.</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use InvalidArgumentException;
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    protected $id;
+
+    protected $name;
+
+    protected $price;
+
+    public function getId()
+    {
+        return $this-&gt;id;
+    }
+
+    public function setName($name)
+    {
+        // ¿El nombre es muy corto?
+        if (strlen($name) &lt; 10) {
+            throw new InvalidArgumentException(
+                'El nombre es muy corto'
+            );
+        }
+
+        $this-&gt;name = $name;
+    }
+
+    public function getName()
+    {
+        return $this-&gt;name;
+    }
+
+    public function setPrice($price)
+    {
+        // Precios negativos no están permitidos
+        if ($price &lt; 0) {
+            throw new InvalidArgumentException(
+                "El precio no puede ser negativo"
+            );
+        }
+
+        $this-&gt;price = $price;
+    }
+
+    public function getPrice()
+    {
+        // Convertir el valor a double antes de usarse
+        return (double) $this-&gt;price;
+    }
+}
+</code></pre>
+
+<p>Las propiedades públicas proporcionan menor complejidad en el desarrollo. Sin embargo los getters/setters puede aumentar fuertemente la testabilidad, extensibilidad y mantenimiento de aplicaciones. Los desarrolladores pueden decidir qué estrategia es más apropiada para la aplicación que va a crear, dependiendo de las necesidades de la aplicación. El ORM es compatible con ambos esquemas de definición de propiedades.</p>
+
+<h5 class="alert alert-warning">Los guiones bajos "_" en los nombres de propiedades pueden ser problemáticos al usar getters y setters. </h5>
+
+<p>Si utilizas guiones bajos en los nombres de sus propiedades, deberá utilizar camel case en las declaraciones de getter/setter para poder usar los métodos mágicos. (p. ej. <code>$model-&gt;getPropertyName</code> en lugar de <code>$model-&gt;getProperty_name</code>, <code>$model-&gt;findByPropertyName</code> en lugar de <code>$model-&gt;findByProperty_name</code>, etcétera.). Como gran parte del sistema espera el uso de camel case, y los guiones bajos se quitan, es aconsejable nombrar sus propiedades en la forma que se muestra a través de la documentación. Puede utilizar un mapa de columna (como se describe anteriormente) para asegurar la correcta asignación de sus propiedades a sus contrapartes de la base de datos.</p>
+
+<p><a name="records-to-objects"></a></p>
+
+<h2 id="comprensión-de-registros-a-objetos">Comprensión de Registros a Objetos</h2>
+
+<p>Every instance of a model represents a row in the table. You can easily access record data by reading object properties. For example, for a table ‘robots’ with the records:</p>
+
+<pre><code class="language-sql">mysql&gt; select * from robots;
++----+------------+------------+------+
+| id | name       | type       | year |
++----+------------+------------+------+
+|  1 | Robotina   | mechanical | 1972 |
+|  2 | Astro Boy  | mechanical | 1952 |
+|  3 | Terminator | cyborg     | 2029 |
++----+------------+------------+------+
+3 rows in set (0.00 sec)
+</code></pre>
+
+<p>Podría encontrar cierto registro por su clave primaria y luego imprimir su nombre:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+// Buscar registro con id = 3
+$robot = Robots::findFirst(3);
+
+// Imprimir 'Terminator'
+echo $robot-&gt;name;
+</code></pre>
+
+<p>Una vez que el registro está en la memoria, puede hacer modificaciones a sus datos y guardar los cambios:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst(3);
+
+$robot-&gt;name = 'RoboCop';
+
+$robot-&gt;save();
+</code></pre>
+
+<p>As you can see, there is no need to use raw SQL statements. <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> provides high database abstraction for web applications.</p>
+
+<p><a name="finding-records"></a></p>
+
+<h2 id="búsqueda-de-registros">Búsqueda de registros</h2>
+
+<p><a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> also offers several methods for querying records. The following examples will show you how to query one or more records from a model:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+// ¿Cuantos robots hay?
+$robots = Robots::find();
+echo 'Hay ', count($robots), "\n";
+
+// ¿Cuántos robots mecánicos hay?
+$robots = Robots::find("type = 'mechanical'");
+echo 'Hay ', count($robots), "\n";
+
+// Obtener e imprimir robots virtuales ordenados por nombre
+$robots = Robots::find(
+    [
+        "type = 'virtual'",
+        'order' =&gt; 'name',
+    ]
+);
+foreach ($robots as $robot) {
+    echo $robot-&gt;name, "\n";
+}
+
+// Obtener los primeros 100 robots virtuales ordenados por nombre
+$robots = Robots::find(
+    [
+        "type = 'virtual'",
+        'order' =&gt; 'name',
+        'limit' =&gt; 100,
+    ]
+);
+foreach ($robots as $robot) {
+   echo $robot-&gt;name, "\n";
+}
+</code></pre>
+
+<h5 class="alert alert-warning">Si desea buscar registros mediante datos externos (como la entrada del usuario) o datos variables, debe utilizar <a href="#binding-parameters">Parámetros enlazados</a>`.</h5>
+
+<p>También puede utilizar el método <code>findFirst()</code> para obtener sólo el primer registro que coincida con el criterio dado:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+// ¿Cuál es el primer robot de la tabla?
+$robot = Robots::findFirst();
+echo 'El nombre del robot es ', $robot-&gt;name, "\n";
+
+// ¿Cuál es el primer robot mecánico de la tabla?
+$robot = Robots::findFirst("type = 'mechanical'");
+echo 'El nombre del primer robot mecánico es ', $robot-&gt;name, "\n";
+
+// Obtener el primer robot virtual ordenado por nombre
+$robot = Robots::findFirst(
+    [
+        "type = 'virtual'",
+        'order' =&gt; 'name',
+    ]
+);
+
+echo 'Ell nombre del primer robot virtual es ', $robot-&gt;name, "\n";
+</code></pre>
+
+<p>Ambos métodos <code>find()</code> y <code>findFirst()</code> aceptan un array asociativo, especificando los criterios de búsqueda:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst(
+    [
+        "type = 'virtual'",
+        'order' =&gt; 'name DESC',
+        'limit' =&gt; 30,
+    ]
+);
+
+$robots = Robots::find(
+    [
+        'conditions' =&gt; 'type = ?1',
+        'bind'       =&gt; [
+            1 =&gt; 'virtual',
+        ]
+    ]
+);
+</code></pre>
+
+<p>Las opciones disponibles de consulta son:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Parámetro</th>
+      <th>Descripción</th>
+      <th>Ejemplo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>conditions</code></td>
+      <td>Condiciones de búsqueda para la operación de búsqueda. Se utiliza para extraer sólo los registros que cumplan con un criterio especificado. By default <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> assumes the first parameter are the conditions.</td>
+      <td><code>'conditions' =&gt; "name LIKE 'steve%'"</code></td>
+    </tr>
+    <tr>
+      <td><code>columns</code></td>
+      <td>Retorna las columnas especificadas en vez de todas las columnas del modelo. When using this option an incomplete object is returned</td>
+      <td><code>'columns' =&gt; 'id, name'</code></td>
+    </tr>
+    <tr>
+      <td><code>bind</code></td>
+      <td>Se utiliza junto a las opciones, mediante la sustitución de marcadores y escapando los valores para aumentar la seguridad</td>
+      <td><code>'bind' =&gt; ['status' =&gt; 'A', 'type' =&gt; 'some-time']</code></td>
+    </tr>
+    <tr>
+      <td><code>bindTypes</code></td>
+      <td>Al enlazar parámetros, puede utilizar este parámetro para definir el tipo de datos de los parámetros y aumentar aún más la seguridad</td>
+      <td><code>'bindTypes' =&gt; [Column::BIND_PARAM_STR, Column::BIND_PARAM_INT]</code></td>
+    </tr>
+    <tr>
+      <td><code>order</code></td>
+      <td>Es utilizado para ordenar el conjunto de resultados. Utilice uno o más campos separados por comas.</td>
+      <td><code>'order' =&gt; 'name DESC, status'</code></td>
+    </tr>
+    <tr>
+      <td><code>limit</code></td>
+      <td>Limitar los resultados de la consulta a cierto rango</td>
+      <td><code>'limit' =&gt; 10</code></td>
+    </tr>
+    <tr>
+      <td><code>offset</code></td>
+      <td>Desplazar los resultados de la consulta por una cierta cantidad</td>
+      <td><code>'offset' =&gt; 5</code></td>
+    </tr>
+    <tr>
+      <td><code>group</code></td>
+      <td>Permite recopilar datos a través de múltiples registros y agrupar los resultados de una o más columnas</td>
+      <td><code>'group' =&gt; 'name, status'</code></td>
+    </tr>
+    <tr>
+      <td><code>for_update</code></td>
+      <td>With this option, <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> reads the latest available data, setting exclusive locks on each row it reads</td>
+      <td><code>'for_update' =&gt; true</code></td>
+    </tr>
+    <tr>
+      <td><code>shared_lock</code></td>
+      <td>With this option, <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> reads the latest available data, setting shared locks on each row it reads</td>
+      <td><code>'shared_lock' =&gt; true</code></td>
+    </tr>
+    <tr>
+      <td><code>cache</code></td>
+      <td>Almacenar en caché el conjunto de resultados, reduciendo el acceso continuo al sistema relacional</td>
+      <td><code>'cache' =&gt; ['lifetime' =&gt; 3600, 'key' =&gt; 'my-find-key']</code></td>
+    </tr>
+    <tr>
+      <td><code>hydration</code></td>
+      <td>Establece la estrategia de hidratación para representar cada registro devuelto en el resultado</td>
+      <td><code>'hydration' =&gt; Resultset::HYDRATE_OBJECTS</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Si lo prefiere, también hay disponible una manera de crear consultas de una manera orientada a objetos, en lugar de utilizar un array de parámetros:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robots = Robots::query()
+    -&gt;where('type = :type:')
+    -&gt;andWhere('year &lt; 2000')
+    -&gt;bind(['type' =&gt; 'mechanical'])
+    -&gt;order('name')
+    -&gt;execute();
+</code></pre>
+
+<p>The static method <code>query()</code> returns a <a href="api/Phalcon_Mvc_Model_Criteria">Phalcon\Mvc\Model\Criteria</a> object that is friendly with IDE autocompleters.</p>
+
+<p>All the queries are internally handled as <a href="/3.4/en/db-phql">PHQL</a> queries. PHQL es un lenguaje de alto nivel, orientado a objetos y similar a SQL. Este lenguaje le proporciona más características para realizar consultas como unir otros modelos, definir grupos, agregar agregaciones, etcétera.</p>
+
+<p>Por último, el método <code>findFirstBy&lt;nombre de la propiedad&gt;()</code>. Este método amplía al método <code>findFirst()</code> mencionado anteriormente. Le permite realizar rápidamente una recuperación de una tabla utilizando el nombre de la propiedad en el método en sí mismo y se pasa un parámetro que contiene los datos que desea buscar en la columna. Veamos un ejemplo, tomando el modelo de Robots visto anteriormente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public $price;
+}
+</code></pre>
+
+<p>Tenemos tres propiedades a trabajar aquí: <code>$id</code>, <code>$name</code> y <code>$price</code>. Entonces supongamos que deseamos recuperar el primer registro en la tabla con el nombre de ‘Terminator’. Esto podría escribirse como:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$name = 'Terminator';
+
+$robot = Robots::findFirstByName($name);
+
+if ($robot) {
+    echo 'El primer robot con el nombre ' . $name . ' costo ' . $robot-&gt;price . '.';
+} else {
+    echo 'No se encontraron Robots con el nombre' . $name . '.';
+}
+</code></pre>
+
+<p>Tenga en cuenta que se utilizó ‘Name’ en el método y se paso la variable <code>$name</code>, que contiene el nombre que buscamos en nuestra tabla. Observe también que cuando encontramos una coincidencia con nuestra consulta, todas las otras propiedades también están disponibles para nosotros.</p>
+
+<p><a name="resultsets"></a></p>
+
+<h3 id="conjuntos-de-resultados">Conjuntos de resultados</h3>
+
+<p>While <code>findFirst()</code> returns directly an instance of the called class (when there is data to be returned), the <code>find()</code> method returns a <a href="api/Phalcon_Mvc_Model_Resultset_Simple">Phalcon\Mvc\Model\Resultset\Simple</a>. Se trata de un objeto que encapsula toda la funcionalidad que un conjunto de resultados, como recorrer los registros, buscar registros específicos, contar, etcétera.</p>
+
+<p>Estos objetos son más poderosos que los array regulares. One of the greatest features of the <a href="api/Phalcon_Mvc_Model_Resultset">Phalcon\Mvc\Model\Resultset</a> is that at any time there is only one record in memory. Esto ayuda enormemente en la gestión de memoria especialmente cuando se trabaja con grandes cantidades de datos.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+// Obtener todos los robots
+$robots = Robots::find();
+
+// Recorrerlos con un foreach
+foreach ($robots as $robot) {
+    echo $robot-&gt;name, "\n";
+}
+
+// Recorrerlos con un while
+$robots-&gt;rewind();
+
+while ($robots-&gt;valid()) {
+    $robot = $robots-&gt;current();
+
+    echo $robot-&gt;name, "\n";
+
+    $robots-&gt;next();
+}
+
+// Contar cuantos elementos hay en el resultset
+echo count($robots);
+
+// Otra forma alternativa de contar los elementos del resultset
+echo $robots-&gt;count();
+
+// Mover el cursor interno al tercer robot
+$robots-&gt;seek(2);
+
+$robot = $robots-&gt;current();
+
+// Acceder a un robot por su posición en el resultset
+$robot = $robots[5];
+
+// Chequear si hay un registro en determinada posición
+if (isset($robots[3])) {
+   $robot = $robots[3];
+}
+
+// Obtener el primer registro del resultset
+$robot = $robots-&gt;getFirst();
+
+// Obtener el último registro
+$robot = $robots-&gt;getLast();
+</code></pre>
+
+<p>Los conjuntos de resultados o Resultset de Phalcon emulan cursores desplazables, usted puede conseguir cualquier fila sólo por acceder a su posición, o moviendo el puntero interno a una posición específica. Tenga en cuenta que algunos sistemas de base de datos no soportan cursores desplazables, Esto obliga a volver a ejecutar la consulta para retroceder el cursor hasta el principio y obtener el registro en la posición solicitada. Del mismo modo, si un resultado es recorrido varias veces, la consulta debe ser ejecutada el mismo número de veces.</p>
+
+<p>Como almacenar resultados de grandes consultas en la memoria podrían consumir muchos recursos, los conjuntos de resultados se obtienen de la base de datos en fragmentos de 32 filas para reducir la necesidad de volver a ejecutar la solicitud en demasiadas ocasiones.</p>
+
+<p>Tenga en cuenta que los conjuntos de resultados pueden ser serializados y almacenados en caché. <a href="api/Phalcon_Cache">Phalcon\Cache</a> can help with that task. However, serializing data causes <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> to retrieve all the data from the database in an array, thus consuming more memory while this process takes place.</p>
+
+<pre><code class="language-php">&lt;?php
+
+// Consultar todos los registros desde el modelo Parts
+$parts = Parts::find();
+
+// Almacenar el resultset en un archivo
+file_put_contents(
+    'cache.txt',
+    serialize($parts)
+);
+
+// Obtener las partes desde el archivo
+$parts = unserialize(
+    file_get_contents('cache.txt')
+);
+
+// Recorrer las partes
+foreach ($parts as $part) {
+    echo $part-&gt;id;
+}
+</code></pre>
+
+<p><a name="custom-resultsets"></a></p>
+
+<h3 id="conjuntos-de-resultados-personalizados">Conjuntos de resultados personalizados</h3>
+
+<p>Hay veces que la lógica de la aplicación requiere manipulación adicional de los datos que se recupera de la base de datos. Anteriormente, extenderiamos el modelo y encapsulariamos la funcionalidad en una clase del modelo o de un trait, regresando a la llama, generalmente, un array con los datos transformados.</p>
+
+<p>Con los conjuntos de resultados personalizados, no es necesario seguir haciendo este trabajo. El conjunto de resultados personalizado encapsulará la funcionalidad que de otro modo estaría en el modelo y puede ser reutilizado por otros modelos, manteniendo así el código <a href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>. This way, the <code>find()</code> method will no longer return the default <a href="api/Phalcon_Mvc_Model_Resultset">Phalcon\Mvc\Model\Resultset</a>, but instead the custom one. Phalcon permite hacer esto mediante el uso de la función <code>getResultsetClass()</code> en el modelo.</p>
+
+<p>Primero tenemos que definir la clase resultset:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Application\Mvc\Model\Resultset;
+
+use \Phalcon\Mvc\Model\Resultset\Simple;
+
+class Custom extends Simple
+{
+    public function getSomeData() {
+        /** CÓDIGO */
+    }
+}
+</code></pre>
+
+<p>En el modelo, configuramos la clase en el <code>getResultsetClass()</code> de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Phalcon\Test\Models\Statistics;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function getSource()
+    {
+        return 'robots';
+    }
+
+    public function getResultsetClass()
+    {
+    return 'Application\Mvc\Model\Resultset\Custom';
+    }
+}
+</code></pre>
+
+<p>y finalmente en el código tenemos algo como esto:</p>
+
+<pre><code class="language-php">&lt;?php
+
+/**
+ * Buscar robots
+ */
+$robots = Robots::find(
+    [
+        'conditions' =&gt; 'date between "2017-01-01" AND "2017-12-31"',
+        'order'      =&gt; 'date'
+    ]
+);
+
+/**
+ * Enviar datos a la vista
+ */
+$this-&gt;view-&gt;mydata = $robots-&gt;getSomeData();
+</code></pre>
+
+<p><a name="filters"></a></p>
+
+<h3 id="filtrar-conjuntos-de-resultados">Filtrar Conjuntos de Resultados</h3>
+
+<p>La manera más eficiente para filtrar datos es establecer algunos criterios de búsqueda, las bases de datos utilizan índices en las tablas para devolver los datos más rápidamente. Phalcon además permite filtrar los datos mediante PHP usando cualquier recurso que no está disponible en la base de datos:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$customers = Customers::find();
+
+$customers = $customers-&gt;filter(
+    function ($customer) {
+        // Retornar solo clientes con un email valido
+        if (filter_var($customer-&gt;email, FILTER_VALIDATE_EMAIL)) {
+            return $customer;
+        }
+    }
+);
+</code></pre>
+
+<p><a name="binding-parameters"></a></p>
+
+<h3 id="enlazando-parámetros">Enlazando parámetros</h3>
+
+<p>Bound parameters are also supported in <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a>. Recomendamos utilizar esta metodología con el fin de eliminar la posibilidad de que su código sea vulnerable a ataques de inyección SQL. Se admiten dos tipos de marcadores: por nombre o numérico. El enlazado de parámetros se hace simplemente de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+// Consultamos por Robots enlazando parámetros con marcadores de nombre
+// Parámetros cuyas claves son iguales a los marcadores
+$robots = Robots::find(
+    [
+        'name = :name: AND type = :type:',
+        'bind' =&gt; [
+            'name' =&gt; 'Robotina',
+            'type' =&gt; 'maid',
+        ],
+    ]
+);
+
+// Consultando robots enlazando parámetros con marcadores numéricos
+$robots = Robots::find(
+    [
+        'name = ?1 AND type = ?2',
+        'bind' =&gt; [
+            1 =&gt; 'Robotina',
+            2 =&gt; 'maid',
+        ],
+    ]
+);
+
+// Consultamos los robots enlazando ambos tipos de parámetros
+// Los parámetros cuyas claves son iguales a los marcadores
+$robots = Robots::find(
+    [
+        'name = :name: AND type = ?1',
+        'bind' =&gt; [
+            'name' =&gt; 'Robotina',
+            1      =&gt; 'maid',
+        ],
+    ]
+);
+</code></pre>
+
+<p>Cuando se utilizan a marcadores numéricos, Ud. necesita definirlos como enteros es decir, <code>1</code> o <code>2</code>. En este caso <code>'1'</code> o <code>'2'</code> son considerados como cadenas de texto y no como números, por lo que el marcador de posición no podría sustituirse con éxito.</p>
+
+<p>Las cadenas de texto se escapan automáticamente usando <a href="http://php.net/manual/en/pdo.prepared-statements.php">PDO</a>. Esta función tiene en cuenta el conjunto de caracteres de conexión, por lo que se recomienda definir el conjunto de caracteres correcto en los parámetros de conexión o en la configuración de la base de datos, un conjunto de caracteres incorrecto producirá efectos no deseados al almacenar o recuperar datos.</p>
+
+<p>Además puede establecer el parámetro <code>bindTypes</code>, este permite definir cómo los parámetros deben regirse según su tipo de datos:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Db\Column;
+use Store\Toys\Robots;
+
+// Enlazando parámetros
+$parameters = [
+    'name' =&gt; 'Robotina',
+    'year' =&gt; 2008,
+];
+
+// Clasificación de tipos
+$types = [
+    'name' =&gt; Column::BIND_PARAM_STR,
+    'year' =&gt; Column::BIND_PARAM_INT,
+];
+
+// Consulta de robots enlazando parámetros con marcadores de nombre
+$robots = Robots::find(
+    [
+        'name = :name: AND year = :year:',
+        'bind'      =&gt; $parameters,
+        'bindTypes' =&gt; $types,
+    ]
+);
+</code></pre>
+
+<h5 class="alert alert-warning">Puesto que el tipo de enlace por defecto es <code>Phalcon\Db\Column::BIND_PARAM_STR</code>, no hay necesidad para especificar el parámetro <code>bindTypes</code> si todas las columnas son de ese tipo.</h5>
+
+<p>Si vincula arrays en parámetros enlazados, tenga en cuenta que las claves deben numerarse desde cero:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$array = ['a','b','c']; // $array: [[0] =&gt; 'a', [1] =&gt; 'b', [2] =&gt; 'c']
+
+unset($array[1]); // $array: [[0] =&gt; 'a', [2] =&gt; 'c']
+
+// Ahora tenemos que numerar las claves
+$array = array_values($array); // $array: [[0] =&gt; 'a', [1] =&gt; 'c']
+
+$robots = Robots::find(
+    [
+        'letter IN ({letter:array})',
+        'bind' =&gt; [
+            'letter' =&gt; $array
+        ]
+    ]
+);
+</code></pre>
+
+<h5 class="alert alert-warning">Los parámetros enlazados están disponibles para todos los métodos de consulta como <code>find()</code> y <code>findFirst()</code> como así también en los métodos de cálculo como <code>count()</code>, <code>sum()</code>, <code>average()</code> etcétera. </h5>
+
+<p>Si está utilizando los “buscadores”, por ejemplo <code>find()</code>, <code>findFirst()</code>, etc., los parámetros enlazados se usan automáticamente:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+// Consulta explicita utilizando parámetros enlazados
+$robots = Robots::find(
+    [
+        'name = ?0',
+        'bind' =&gt; [
+            'Ultron',
+        ],
+    ]
+);
+
+// Consulta implícita utilizando parámetros enlazados
+$robots = Robots::findByName('Ultron');
+</code></pre>
+
+<p><a name="preparing-records"></a></p>
+
+<h2 id="inicializando-y-preparando-registros-buscados">Inicializando y preparando registros buscados</h2>
+
+<p>Puede ser el caso que después de obtener un registro de la base de datos sea necesario inicializar los datos, antes de ser utilizados por la aplicación. Puede implementar el método <code>afterFetch()</code> en un modelo, este evento se ejecutará justo después de crear la instancia y asignarle los datos:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public $status;
+
+    public function beforeSave()
+    {
+        // Convertir de array a string
+        $this-&gt;status = join(',', $this-&gt;status);
+    }
+
+    public function afterFetch()
+    {
+        // Convertir de string a array
+        $this-&gt;status = explode(',', $this-&gt;status);
+    }
+
+    public function afterSave()
+    {
+        // Convertir de string a array
+        $this-&gt;status = explode(',', $this-&gt;status);
+    }
+}
+</code></pre>
+
+<p>Si utilizas getters/setters en vez de propiedades públicas, puede inicializar el campo una vez que se accede:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public $id;
+
+    public $name;
+
+    public $status;
+
+    public function getStatus()
+    {
+        return explode(',', $this-&gt;status);
+    }
+}
+</code></pre>
+
+<p><a name="calculations"></a></p>
+
+<h2 id="generar-cálculos">Generar Cálculos</h2>
+
+<p>Los cálculos (o agregados) son funciones de ayuda comúnmente utilizadas por sistemas de bases de datos tales como <code>COUNT</code>, <code>SUM</code>, <code>MAX</code>, <code>MIN</code> o <code>AVG</code>. <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> allows to use these functions directly from the exposed methods.</p>
+
+<p>Ejemplos de COUNT:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// ¿Cuántos empleados hay?
+$rowcount = Employees::count();
+
+// ¿Cuántas áreas diferentes están asignadas a los empleados?
+$rowcount = Employees::count(
+    [
+        'distinct' =&gt; 'area',
+    ]
+);
+
+// ¿Cuántos empleados hay en el área de testing?
+$rowcount = Employees::count(
+    "area = 'Testing'"
+);
+
+// Contar empleados agrupando los resultados por sus áreas
+$group = Employees::count(
+    [
+        'group' =&gt; 'area',
+    ]
+);
+foreach ($group as $row) {
+   echo 'Hay ', $row-&gt;rowcount, ' empleados en ', $row-&gt;area;
+}
+
+// Contar empleados agrupándolos por sus áreas y ordenándolos por la cuenta
+$group = Employees::count(
+    [
+        'group' =&gt; 'area',
+        'order' =&gt; 'rowcount',
+    ]
+);
+
+// Evitar inyecciones SQL utilizando parámetros enlazados
+$group = Employees::count(
+    [
+        'type &gt; ?0',
+        'bind' =&gt; [
+            $type
+        ],
+    ]
+);
+</code></pre>
+
+<p>Ejemplos de SUM:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// ¿A cuánto asciende el salario de todos los empleados?
+$total = Employees::sum(
+    [
+        'column' =&gt; 'salary',
+    ]
+);
+
+// ¿Cuánto suma el salario de todos los empleados del área de ventas?
+$total = Employees::sum(
+    [
+        'column'     =&gt; 'salary',
+        'conditions' =&gt; "area = 'Sales'",
+    ]
+);
+
+// Generar una agrupación de salarios por cada área
+$group = Employees::sum(
+    [
+        'column' =&gt; 'salary',
+        'group'  =&gt; 'area',
+    ]
+);
+foreach ($group as $row) {
+   echo 'La sumatoria de los salarios del área ', $row-&gt;area, ' es ', $row-&gt;sumatory;
+}
+
+// Generar grupo de salario por cada área ordenando salario de mayor a menor
+$group = Employees::sum(
+    [
+        'column' =&gt; 'salary',
+        'group'  =&gt; 'area',
+        'order'  =&gt; 'sumatory DESC',
+    ]
+);
+
+// Evitar inyecciones SQL utilizando parámetros enlazados
+$group = Employees::sum(
+    [
+        'conditions' =&gt; 'area &gt; ?0',
+        'bind'       =&gt; [
+            $area
+        ],
+    ]
+);
+</code></pre>
+
+<p>Ejemplos de AVERAGE:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// ¿Cuál es el salario promedio de todos los empleados?
+$average = Employees::average(
+    [
+        'column' =&gt; 'salary',
+    ]
+);
+
+// ¿Cuál es el salario promedio de los empleados en el área de ventas?
+$average = Employees::average(
+    [
+        'column'     =&gt; 'salary',
+        'conditions' =&gt; "area = 'Sales'",
+    ]
+);
+
+// Evitar inyecciones SQL utilizando parámetros enlazados
+$average = Employees::average(
+    [
+        'column'     =&gt; 'age',
+        'conditions' =&gt; 'area &gt; ?0',
+        'bind'       =&gt; [
+            $area
+        ],
+    ]
+);
+</code></pre>
+
+<p>Ejemplos MIN/MAX:</p>
+
+<pre><code class="language-php">&lt;?php
+
+// ¿Cuál es la edad máxima de todos los empleados?
+$age = Employees::maximum(
+    [
+        'column' =&gt; 'age',
+    ]
+);
+
+// ¿Cuál es la edad máxima en el área de ventas?
+$age = Employees::maximum(
+    [
+        'column'     =&gt; 'age',
+        'conditions' =&gt; "area = 'Sales'",
+    ]
+);
+
+// ¿Cuál es el salario mínimo de todos los empleados?
+$salary = Employees::minimum(
+    [
+        'column' =&gt; 'salary',
+    ]
+);
+</code></pre>
+
+<p><a name="create-update-records"></a></p>
+
+<h2 id="crearactualizar-registros">Crear/Actualizar Registros</h2>
+
+<p>El método <code>Phalcon\Mvc\Model::save()</code> le permite crear o actualizar registros, según sea si ya existen en la tabla asociada al modelo o no. The save method is called internally by the create and update methods of <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a>. Para que funcione como se espera, es necesario haber definido correctamente una clave primaria en la entidad para determinar si un registro debe ser actualizado o creado.</p>
+
+<p>El método también ejecutará los validadores asociados, claves externas virtuales y eventos que se definen en el modelo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = new Robots();
+
+$robot-&gt;type = 'mechanical';
+$robot-&gt;name = 'Astro Boy';
+$robot-&gt;year = 1952;
+
+if ($robot-&gt;save() === false) {
+    echo "No podemos almacenar el robot: \n";
+
+    $messages = $robot-&gt;getMessages();
+
+    foreach ($messages as $message) {
+        echo $message, "\n";
+    }
+} else {
+    echo 'Genial, un nuevo robot fue guardado correctamente!';
+}
+</code></pre>
+
+<p>Se puede pasar un array al método <code>save</code> para evitar asignar cada columna manualmente. <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> will check if there are setters implemented for the columns passed in the array giving priority to them instead of assign directly the values of the attributes:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = new Robots();
+
+$robot-&gt;save(
+    [
+        'type' =&gt; 'mechanical',
+        'name' =&gt; 'Astro Boy',
+        'year' =&gt; 1952,
+    ]
+);
+</code></pre>
+
+<p>Los valores se asignan directamente o a través del array de atributos, se escapan/sanitizan según el tipo de datos relacionados con atributo. Por lo que puede pasar un array inseguro sin preocuparse de posibles inyecciones de SQL:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = new Robots();
+
+$robot-&gt;save($_POST);
+</code></pre>
+
+<h5 class="alert alert-warning">Sin precauciones, la asignación masiva podría permitir a los atacantes establecer el valor de cualquier columna de la base de datos. Sólo utilice esta característica si desea permitir a un usuario insertar o actualizar todas las columnas en el modelo, incluso si los campos no están en la forma presentada. </h5>
+
+<p>Además usted puede establecer un parámetro adicional en <code>save</code> para definir una lista blanca de campos que pueden ser tenidos en cuenta al hacer la asignación en masa:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = new Robots();
+
+$robot-&gt;save(
+    $_POST,
+    [
+        'name',
+        'type',
+    ]
+);
+</code></pre>
+
+<p><a name="create-update-with-confidence"></a></p>
+
+<h3 id="crearactualizar-con-confianza">Crear/actualizar con confianza</h3>
+
+<p>Cuando una aplicación tiene mucha competencia, nosotros podríamos estar esperando crear un registro pero realmente estamos actualizadolo. Esto podría ocurrir si usamos <code>Phalcon\Mvc\Model::save()</code> para conservar los registros de la base de datos. Si queremos estar absolutamente seguros que se ha creado o actualizado un registro, podemos cambiar el uso de la función <code>save()</code> por <code>create()</code> o <code>update()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = new Robots();
+
+$robot-&gt;type = 'mechanical';
+$robot-&gt;name = 'Astro Boy';
+$robot-&gt;year = 1952;
+
+// Este registro solo debe ser creado
+if ($robot-&gt;create() === false) {
+    echo "Oh no! no pudimos guardar el robot: \n";
+
+    $messages = $robot-&gt;getMessages();
+
+    foreach ($messages as $message) {
+        echo $message, "\n";
+    }
+} else {
+    echo 'Genial, se creo un nuevo robot!';
+}
+</code></pre>
+
+<p>Los métodos de <code>create</code> y <code>update</code> también aceptan un array de valores como parámetro.</p>
+
+<p><a name="delete-records"></a></p>
+
+<h2 id="eliminar-registros">Eliminar Registros</h2>
+
+<p>The <code>Phalcon\Mvc\Model::delete()</code> method allows to delete a record. You can use it as follows:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst(11);
+
+if ($robot !== false) {
+    if ($robot-&gt;delete() === false) {
+        echo "Lo sentimos, no se puedo borrar el robot: \n";
+
+        $messages = $robot-&gt;getMessages();
+
+        foreach ($messages as $message) {
+            echo $message, "\n";
+        }
+    } else {
+        echo 'El robot fue borrado correctamente!';
+    }
+}
+</code></pre>
+
+<p>También puede eliminar muchos registro recorriendo un conjunto de resultados con un <code>foreach</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robots = Robots::find(
+    "type = 'mechanical'"
+);
+
+foreach ($robots as $robot) {
+    if ($robot-&gt;delete() === false) {
+        echo "Lo sentimos, no pudimos borrar el robot: \n";
+
+        $messages = $robot-&gt;getMessages();
+
+        foreach ($messages as $message) {
+            echo $message, "\n";
+        }
+    } else {
+        echo 'El robot fue borrado correctamente!';
+    }
+}
+</code></pre>
+
+<p>Los siguientes eventos están disponibles para definir reglas de negocios personalizadas que se pueden ejecutar cuando se realiza una operación de eliminación:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Operación</th>
+      <th>Nombre</th>
+      <th style="text-align: center">¿Puede detener la operación?</th>
+      <th>Explicación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Deleting</td>
+      <td>afterDelete</td>
+      <td style="text-align: center">No</td>
+      <td>Se ejecuta después de la operación de eliminación</td>
+    </tr>
+    <tr>
+      <td>Deleting</td>
+      <td>beforeDelete</td>
+      <td style="text-align: center">Sí</td>
+      <td>Se ejecuta antes de la operación de eliminación</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Con los eventos antes mencionados también se pueden definir reglas de negocio en los modelos:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function beforeDelete()
+    {
+        if ($this-&gt;status === 'A') {
+            echo "El robot esta activo, no puede ser borrado";
+
+            return false;
+        }
+
+        return true;
+    }
+}
+</code></pre>
+
+<p><a name="hydration-modes"></a></p>
+
+<h2 id="modos-de-hidratación">Modos de hidratación</h2>
+
+<p>Como se mencionó anteriormente, los conjuntos de resultados son colecciones de objetos completos, esto significa que cada resultado devuelto es un objeto que representa una fila en la base de datos. Estos objetos pueden ser modificados y guardados otra vez para persistir:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robots = Robots::find();
+
+// Modificando un conjunto de resultados de objectos completos
+foreach ($robots as $robot) {
+    $robot-&gt;year = 2000;
+
+    $robot-&gt;save();
+}
+</code></pre>
+
+<p>A veces se obtienen registros sólo para ser presentados a un usuario en modo de sólo lectura, en estos casos puede ser útil cambiar la forma en que están representados los registros para facilitar su manejo. La estrategia utilizada para representar objetos en un conjunto de resultados se llama ‘modo de hidratación’ o ‘hydration mode’:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model\Resultset;
+use Store\Toys\Robots;
+
+$robots = Robots::find();
+
+// Retornar cada robot como un array
+$robots-&gt;setHydrateMode(
+    Resultset::HYDRATE_ARRAYS
+);
+
+foreach ($robots as $robot) {
+    echo $robot['year'], PHP_EOL;
+}
+
+// Retornar cada robot como un stdClass
+$robots-&gt;setHydrateMode(
+    Resultset::HYDRATE_OBJECTS
+);
+
+foreach ($robots as $robot) {
+    echo $robot-&gt;year, PHP_EOL;
+}
+
+// Retornar cada robot como una instancia de Robots 
+$robots-&gt;setHydrateMode(
+    Resultset::HYDRATE_RECORDS
+);
+
+foreach ($robots as $robot) {
+    echo $robot-&gt;year, PHP_EOL;
+}
+</code></pre>
+
+<p>El modo de hidratación también puede ser pasado como un parámetro de <code>find</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model\Resultset;
+use Store\Toys\Robots;
+
+$robots = Robots::find(
+    [
+        'hydration' =&gt; Resultset::HYDRATE_ARRAYS,
+    ]
+);
+
+foreach ($robots as $robot) {
+    echo $robot['year'], PHP_EOL;
+}
+</code></pre>
+
+<p><a name="table-prefixes"></a></p>
+
+<h2 id="prefijos-de-tablas">Prefijos de Tablas</h2>
+
+<p>Si desea que todas sus tablas tengan cierto prefijo sin configurarlo en todos los modelos, se puede utilizar el <code>Phalcon\Mvc\Model\Manager</code> y el método <code>setModelPrefix()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model\Manager;
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+
+}
+
+$manager = new Manager();
+$manager-&gt;setModelPrefix('wp_');
+$robots = new Robots(null, null, $manager);
+echo $robots-&gt;getSource(); // regresará wp_robots
+</code></pre>
+
+<p><a name="identity-columns"></a></p>
+
+<h2 id="columnas-de-identidad-auto-generadas">Columnas de identidad auto generadas</h2>
+
+<p>Algunos modelos pueden tener columnas de identidad. Estas columnas suelen ser la clave primaria de la tabla asignada. <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> can recognize the identity column omitting it in the generated SQL <code>INSERT</code>, so the database system can generate an auto-generated value for it. Siempre después de la creación de un registro, se registrará el valor generado por el sistema de base de datos para el campo de identidad:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$robot-&gt;save();
+
+echo 'El ID generado es: ', $robot-&gt;id;
+</code></pre>
+
+<p><a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> is able to recognize the identity column. Dependiendo del sistema de base de datos, las columnas pueden ser columnas seriales como en PostgreSQL o columnas auto_increment en MySQL.</p>
+
+<p>PostgreSQL utiliza secuencias para generar valores auto-numeric, por defecto, Phalcon intenta obtener el valor generado de la secuencia <code>table_field_seq</code>, por ejemplo: <code>robots_id_seq</code>, si esa secuencia tiene un nombre diferente, el método ` getSequenceName()` debe aplicarse:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function getSequenceName()
+    {
+        return 'robots_sequence_name';
+    }
+}
+</code></pre>
+
+<p><a name="skipping-columns"></a></p>
+
+<h2 id="saltando-columnas">Saltando columnas</h2>
+
+<p>To tell <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> that always omits some fields in the creation and/or update of records in order to delegate the database system the assignation of the values by a trigger or a default:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function initialize()
+    {
+        // Saltando campos o columnas en ambas operaciones de INSERT/UPDATE
+        $this-&gt;skipAttributes(
+            [
+                'year',
+                'price',
+            ]
+        );
+
+        // Saltar solo cuando se crea
+        $this-&gt;skipAttributesOnCreate(
+            [
+                'created_at',
+            ]
+        );
+
+        // Saltar solo cuando se actualiza
+        $this-&gt;skipAttributesOnUpdate(
+            [
+                'modified_in',
+            ]
+        );
+    }
+}
+</code></pre>
+
+<p>Esto omitirá globalmente estos campos en cada operación de <code>INSERT</code>/<code>UPDATE</code> en la aplicación. Si quiere ignorar diferentes atributos en diferentes operaciones de <code>INSERT</code>/<code>UPDATE</code> puede especificar un segundo parámetro (boolean) - <code>true</code> para el reemplazo. Forzando un valor por defecto se puede hacer de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+use Phalcon\Db\RawValue;
+
+$robot = new Robots();
+
+$robot-&gt;name       = 'Bender';
+$robot-&gt;year       = 1999;
+$robot-&gt;created_at = new RawValue('default');
+
+$robot-&gt;create();
+</code></pre>
+
+<p>Un callback también puede ser utilizado para crear una asignación condicional de valores por defecto:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+use Phalcon\Db\RawValue;
+
+class Robots extends Model
+{
+    public function beforeCreate()
+    {
+        if ($this-&gt;price &gt; 10000) {
+            $this-&gt;type = new RawValue('default');
+        }
+    }
+}
+</code></pre>
+
+<h5 class="alert alert-warning">Never use a <a href="api/Phalcon_Db_RawValue">Phalcon\Db\RawValue</a> to assign external data (such as user input) or variable data. El valor de estos campos se omite al enlazar parámetros a la consulta. Por lo tanto podría utilizarse para atacar la aplicación con inyección SQL. </h5>
+
+<p><a name="dynamic-updates"></a></p>
+
+<h2 id="actualización-dinámica">Actualización Dinámica</h2>
+
+<p>Las instrucciones de <code>UPDATE</code> en SQL son creadas, por defecto, con todas las columnas definidas en el modelo (actualización completa de filas utilizando todos los campos). Usted puede especificar que modelos pueden realizar actualizaciones dinámicas, en este caso, sólo los campos que habían cambiado se utilizan para crear la instrucción SQL final.</p>
+
+<p>En algunos casos esto podría mejorar el rendimiento al reducir el tráfico entre la aplicación y el servidor de base de datos, esto ayuda especialmente cuando la tabla tiene campos blob o text:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function initialize()
+    {
+        $this-&gt;useDynamicUpdate(true);
+    }
+}
+</code></pre>
+
+<p><a name="column-mapping"></a></p>
+
+<h2 id="mapeo-de-columnas-independiente">Mapeo de columnas independiente</h2>
+
+<p>ORM soporta mapas de columnas independientes, lo que permite al desarrollador utilizar nombres de columnas diferentes en el modelo a los de la tabla. Phalcon reconocerá los nuevos nombres de columna y renombrará en consecuencia para que coincida con las respectivas columnas de la base de datos. Esta es una gran característica cuando uno necesita cambiar el nombre de campos en la base de datos sin tener que preocuparse por todas las consultas en el código. Un cambio en el mapa de columnas y el modelo se encargará del resto. Por ejemplo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public $code;
+
+    public $theName;
+
+    public $theType;
+
+    public $theYear;
+
+    public function columnMap()
+    {
+        // Las claves son los nombres reales en la tabla y 
+        // sus valores en la aplicación
+        return [
+            'id'       =&gt; 'code',
+            'the_name' =&gt; 'theName',
+            'the_type' =&gt; 'theType',
+            'the_year' =&gt; 'theYear',
+        ];
+    }
+}
+</code></pre>
+
+<p>Naturalmente puede utilizar los nuevos nombres en el código:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+// Buscar un robot por su nombre
+$robot = Robots::findFirst(
+    "theName = 'Voltron'"
+);
+
+echo $robot-&gt;theName, "\n";
+
+// Obtener robots ordenados por tipo
+$robot = Robots::find(
+    [
+        'order' =&gt; 'theType DESC',
+    ]
+);
+
+foreach ($robots as $robot) {
+    echo 'Código: ', $robot-&gt;code, "\n";
+}
+
+// Crear un robot
+$robot = new Robots();
+
+$robot-&gt;code    = '10101';
+$robot-&gt;theName = 'Bender';
+$robot-&gt;theType = 'Industrial';
+$robot-&gt;theYear = 2999;
+
+$robot-&gt;save();
+</code></pre>
+
+<p>Considere lo siguiente al renombrar sus columnas:</p>
+
+<ul>
+  <li>Referencias a atributos en relaciones/validadores deben utilizar los nuevos nombres</li>
+  <li>Hacer referencia a nombres de columna reales resultará en una excepción por el ORM</li>
+</ul>
+
+<p>El mapa de columnas independiente le permite:</p>
+
+<ul>
+  <li>Escribir aplicaciones que utilizan sus propios convenciones</li>
+  <li>Eliminar prefijos/sufijos del proveedor en tu código</li>
+  <li>Cambiar nombres de columnas sin cambiar su código de aplicación</li>
+</ul>
+
+<p><a name="record-snapshots"></a></p>
+
+<h2 id="instantáneas-de-registros">Instantáneas de registros</h2>
+
+<p>Modelos específicos pueden establecer para mantener una instantánea del registro cuando se consultan. Puede utilizar esta función para implementar la auditorias o simplemente para saber qué campos se cambian según los datos consultados de la persistencia:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function initialize()
+    {
+        $this-&gt;keepSnapshots(true);
+    }
+}
+</code></pre>
+
+<p>Al activar esta función la aplicación consume un poco más de memoria para mantener los valores originales de la persistencia. En los modelos que tienen esta característica activada puede comprobar qué campos se modifican de la siguiente manera:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+// Obtener un registro de la base de datos
+$robot = Robots::findFirst();
+
+// Modificar una columna
+$robot-&gt;name = 'Other name';
+
+var_dump($robot-&gt;getChangedFields()); // ['name']
+
+var_dump($robot-&gt;hasChanged('name')); // true
+
+var_dump($robot-&gt;hasChanged('type')); // false
+</code></pre>
+
+<p>Las instantáneas son actualizadas en la creación/actualización del modelo. Utilizando <code>hasUpdated()</code> y <code>getUpdatedFields()</code> se puede comprobar si los campos se actualizaron después de un crear, guardar o actualizar, pero potencialmente podría causar problemas para su aplicación si ejecuta <code>getChangedFields()</code> en <code>afterUpdate()</code>, <code>afterSave()</code> o <code>afterCreate()</code>.</p>
+
+<p>Puede desactivar esta funcionalidad mediante el uso de:</p>
+
+<pre><code class="language-php">Phalcon\Mvc\Model::setup(
+    [
+        'updateSnapshotOnSave' =&gt; false,
+    ]
+);
+</code></pre>
+
+<p>o si prefiere en su <code>php.ini</code></p>
+
+<pre><code class="language-ini">phalcon.orm.update_snapshot_on_save = 0
+</code></pre>
+
+<p>Utilizando esta funcionalidad tendrá el siguiente efecto:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+class User extends Model
+{
+  public function initialize()
+  {
+      $this-&gt;keepSnapshots(true);
+  }
+}
+
+$user       = new User();
+$user-&gt;name = 'Test User';
+$user-&gt;create();
+var_dump($user-&gt;getChangedFields());
+$user-&gt;login = 'testuser';
+var_dump($user-&gt;getChangedFields());
+$user-&gt;update();
+var_dump($user-&gt;getChangedFields());
+</code></pre>
+
+<p>On Phalcon 3.4.0 and later it is:</p>
+
+<pre><code class="language-php">array(0) {
+}
+array(1) {
+[0]=&gt; 
+    string(5) "login"
+}
+array(0) {
+}
+</code></pre>
+
+<p><code>getUpdatedFields()</code> devolverá debidamente los campos actualizados o como mencionamos anteriormente usted puede volver al comportamiento anterior estableciendo el valor ini pertinente.</p>
+
+<p><a name="different-schemas"></a></p>
+
+<h2 id="apuntando-a-un-esquema-diferente">Apuntando a un esquema diferente</h2>
+
+<p>Si un modelo está asignado a una tabla que está en un esquema/base de datos diferente del predeterminado. Puede utilizar el método <code>setSchema()</code> para definirlo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function initialize()
+    {
+        $this-&gt;setSchema('toys');
+    }
+}
+</code></pre>
+
+<p><a name="multiple-databases"></a></p>
+
+<h2 id="configuración-de-múltiples-bases-de-datos">Configuración de múltiples bases de datos</h2>
+
+<p>En Phalcon, todos los modelos pueden pertenecer a la misma conexión de base de datos o tener una individual. Actually, when <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> needs to connect to the database it requests the <code>db</code> service in the application’s services container. Usted puede sobrescribir este servicio configurándolo en el método <code>initialize()</code>:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Db\Adapter\Pdo\Mysql as MysqlPdo;
+use Phalcon\Db\Adapter\Pdo\PostgreSQL as PostgreSQLPdo;
+
+// Este servicio retorna una base de datos MySQL
+$di-&gt;set(
+    'dbMysql',
+    function () {
+        return new MysqlPdo(
+            [
+                'host'     =&gt; 'localhost',
+                'username' =&gt; 'root',
+                'password' =&gt; 'secret',
+                'dbname'   =&gt; 'invo',
+            ]
+        );
+    }
+);
+
+// Este servicio retorna una base de datos PostgreSQL
+$di-&gt;set(
+    'dbPostgres',
+    function () {
+        return new PostgreSQLPdo(
+            [
+                'host'     =&gt; 'localhost',
+                'username' =&gt; 'postgres',
+                'password' =&gt; '',
+                'dbname'   =&gt; 'invo',
+            ]
+        );
+    }
+);
+</code></pre>
+
+<p>Luego, en el método <code>initialize()</code>, definimos el servicio de conexión para el modelo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function initialize()
+    {
+        $this-&gt;setConnectionService('dbPostgres');
+    }
+}
+</code></pre>
+
+<p>Pero Phalcon le ofrece más flexibilidad, puede definir la conexión que debe utilizar para <code>read</code> y para <code>write</code>. Esto es especialmente útil para balancear la carga a sus bases de datos implementando de una arquitectura master-slave:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function initialize()
+    {
+        $this-&gt;setReadConnectionService('dbSlave');
+
+        $this-&gt;setWriteConnectionService('dbMaster');
+    }
+}
+</code></pre>
+
+<p>El ORM también proporciona instalaciones de Sharding Horizontal, por lo que le permite implementar una selección de ‘fragmentos’ según las condiciones actuales de la consulta:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    /**
+     * Selecciona dinámicamente un fragmento
+     *
+     * @param array $intermediate
+     * @param array $bindParams
+     * @param array $bindTypes
+     */
+    public function selectReadConnection($intermediate, $bindParams, $bindTypes)
+    {
+        // Comprueba si hay un 'where' en la consulta select
+        if (isset($intermediate['where'])) {
+            $conditions = $intermediate['where'];
+
+            // Escoger el posible fragmento acorde al acondición
+            if ($conditions['left']['name'] === 'id') {
+                $id = $conditions['right']['value'];
+
+                if ($id &gt; 0 &amp;&amp; $id &lt; 10000) {
+                    return $this-&gt;getDI()-&gt;get('dbShard1');
+                }
+
+                if ($id &gt; 10000) {
+                    return $this-&gt;getDI()-&gt;get('dbShard2');
+                }
+            }
+        }
+
+        // Utilizar el fragmento por defecto
+        return $this-&gt;getDI()-&gt;get('dbShard0');
+    }
+}
+</code></pre>
+
+<p>El método <code>selectReadConnection()</code> es utilizado para elegir la conexión correcta, este método intercepta cualquier consulta nueva ejecutada:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Store\Toys\Robots;
+
+$robot = Robots::findFirst('id = 101');
+</code></pre>
+
+<p><a name="injecting-services-into-models"></a></p>
+
+<h2 id="inyectando-servicios-en-modelos">Inyectando servicios en modelos</h2>
+
+<p>Si requiere acceder a los servicios de la aplicación dentro de un modelo, en el ejemplo se explica cómo hacerlo:</p>
+
+<pre><code class="language-php">&lt;?php
+
+namespace Store\Toys;
+
+use Phalcon\Mvc\Model;
+
+class Robots extends Model
+{
+    public function notSaved()
+    {
+        // Obtener el servicio flash desde el contenedor DI 
+        $flash = $this-&gt;getDI()-&gt;getFlash();
+
+        $messages = $this-&gt;getMessages();
+
+        // Mostrar mensajes de validación
+        foreach ($messages as $message) {
+            $flash-&gt;error($message);
+        }
+    }
+}
+</code></pre>
+
+<p>El evento <code>notSaved</code> se desencadena cada vez que falla una acción de <code>create</code> o <code>update</code>. Así que estamos mostrando los mensajes de validación obteniendo el servicio <code>flash</code> del contenedor DI. Haciendo esto, no tenemos que imprimir los mensajes después de cada save.</p>
+
+<p><a name="disabling-enabling-features"></a></p>
+
+<h2 id="deshabilitarhabilitar-características">Deshabilitar/habilitar características</h2>
+
+<p>En el ORM se ha implementado un mecanismo que permite activar o desactivar opciones globalmente sobre la marcha o características específicas. Según cómo utilice el ORM puede deshabilitar lo que usted no está usando. Estas opciones también pueden ser temporalmente desactivadas si es necesario:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Mvc\Model;
+
+Model::setup(
+    [
+        'events'         =&gt; false,
+        'columnRenaming' =&gt; false,
+    ]
+);
+</code></pre>
+
+<p>Las opciones disponibles son:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Opción</th>
+      <th>Descripción</th>
+      <th style="text-align: center">Predeterminado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>astCache</td>
+      <td>Habilita o inhabilita los eventos de callbacks, hooks y notificaciones de todos los modelos</td>
+      <td style="text-align: center"><code>null</code></td>
+    </tr>
+    <tr>
+      <td>cacheLevel</td>
+      <td>Establece el nivel de caché para el ORM</td>
+      <td style="text-align: center"><code>3</code></td>
+    </tr>
+    <tr>
+      <td>castOnHydrate</td>
+      <td> </td>
+      <td style="text-align: center"><code>false</code></td>
+    </tr>
+    <tr>
+      <td>columnRenaming</td>
+      <td>Activa/desactiva el renombrado de columnas</td>
+      <td style="text-align: center"><code>true</code></td>
+    </tr>
+    <tr>
+      <td>disableAssignSetters</td>
+      <td>Permite deshabilitar setters en el modelo</td>
+      <td style="text-align: center"><code>false</code></td>
+    </tr>
+    <tr>
+      <td>enableImplicitJoins</td>
+      <td> </td>
+      <td style="text-align: center"><code>true</code></td>
+    </tr>
+    <tr>
+      <td>enableLiterals</td>
+      <td> </td>
+      <td style="text-align: center"><code>true</code></td>
+    </tr>
+    <tr>
+      <td>escapeIdentifiers</td>
+      <td> </td>
+      <td style="text-align: center"><code>true</code></td>
+    </tr>
+    <tr>
+      <td>events</td>
+      <td>Habilita o inhabilita las devoluciones de llamada, ganchos y notificaciones de eventos de todos los modelos</td>
+      <td style="text-align: center"><code>true</code></td>
+    </tr>
+    <tr>
+      <td>exceptionOnFailedSave</td>
+      <td>Activa/desactiva lanzar una excepción cuando se produce un fallo en <code>save()</code></td>
+      <td style="text-align: center"><code>false</code></td>
+    </tr>
+    <tr>
+      <td>forceCasting</td>
+      <td> </td>
+      <td style="text-align: center"><code>false</code></td>
+    </tr>
+    <tr>
+      <td>ignoreUnknownColumns</td>
+      <td>Activa/desactiva ignorar columnas desconocidas en el modelo</td>
+      <td style="text-align: center"><code>false</code></td>
+    </tr>
+    <tr>
+      <td>lateStateBinding</td>
+      <td>Activa/desactiva el enlace de estado tardío del método <code>Phalcon\Mvc\Model::cloneResultMap()</code></td>
+      <td style="text-align: center"><code>false</code></td>
+    </tr>
+    <tr>
+      <td>notNullValidations</td>
+      <td>El ORM valida automáticamente las columnas no nulas en la tabla asignada</td>
+      <td style="text-align: center"><code>true</code></td>
+    </tr>
+    <tr>
+      <td>parserCache</td>
+      <td> </td>
+      <td style="text-align: center"><code>null</code></td>
+    </tr>
+    <tr>
+      <td>phqlLiterals</td>
+      <td>Habilita o inhabilita literales en el analizador PHQL</td>
+      <td style="text-align: center"><code>true</code></td>
+    </tr>
+    <tr>
+      <td>uniqueCacheId</td>
+      <td> </td>
+      <td style="text-align: center"><code>3</code></td>
+    </tr>
+    <tr>
+      <td>updateSnapshotOnSave</td>
+      <td>Habilita o inhabilita la actualización instantáneas en <code>save()</code></td>
+      <td style="text-align: center"><code>true</code></td>
+    </tr>
+    <tr>
+      <td>virtualForeignKeys</td>
+      <td>Activa/desactiva las claves externas virtuales</td>
+      <td style="text-align: center"><code>true</code></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="alert alert-warning">
+    <p>
+        <strong>Nota</strong> <code>Phalcon\Mvc\Model::assign()</code> (que se utiliza cuando se crea/actualiza/guarda el modelo) siempre utiliza setters si existen cuando se pasan los argumentos de datos, incluso cuando es requerido o necesario. Esto agregará sobrecarga adicional a su solicitud. Se puede cambiar este comportamiento mediante la adición de <code>phalcon.orm.disable_assign_setters = 1</code> al archivo ini, simplemente utilice <code>$this-&gt;property = value</code>.
+    </p>
+</div>
+
+<p><a name="stand-alone-component"></a></p>
+
+<h2 id="componente-independiente">Componente independiente</h2>
+
+<p>Using <a href="api/Phalcon_Mvc_Model">Phalcon\Mvc\Model</a> in a stand-alone mode can be demonstrated below:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Di;
+use Phalcon\Mvc\Model;
+use Phalcon\Mvc\Model\Manager as ModelsManager;
+use Phalcon\Db\Adapter\Pdo\Sqlite as Connection;
+use Phalcon\Mvc\Model\Metadata\Memory as MetaData;
+
+$di = new Di();
+
+// Configurar una conexión
+$di-&gt;set(
+    'db',
+    new Connection(
+        [
+            'dbname' =&gt; 'sample.db',
+        ]
+    )
+);
+
+// Configurar un gestor de modelos
+$di-&gt;set(
+    'modelsManager',
+    new ModelsManager()
+);
+
+// Utilizar el adaptador de metadata en memoria u otro
+$di-&gt;set(
+    'modelsMetadata',
+    new MetaData()
+);
+
+// Crear un modelo
+class Robots extends Model
+{
+
+}
+
+// Usar el modelo
+echo Robots::count();
+</code></pre>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

@@ -1,0 +1,1310 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="de-de" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="de-de" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="de-de" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/de-de/validation.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/de-de">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/validation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/de-de/validation" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/de-de/validation" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/de-de/validation" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/de-de/validation" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/de-de/validation" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/validation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/de-de/validation">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/de-de/validation">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/de-de/validation">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/de-de/validation">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/de-de/validation">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/de-de">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <p><a name="overview"></a></p>
+
+<h1 id="validation">Validation</h1>
+
+<p><a href="api/Phalcon_Validation">Phalcon\Validation</a> is an independent validation component that validates an arbitrary set of data. This component can be used to implement validation rules on data objects that do not belong to a model or collection.</p>
+
+<p>The following example shows its basic usage:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation;
+use Phalcon\Validation\Validator\Email;
+use Phalcon\Validation\Validator\PresenceOf;
+
+$validation = new Validation();
+
+$validation-&gt;add(
+    'name',
+    new PresenceOf(
+        [
+            'message' =&gt; 'The name is required',
+        ]
+    )
+);
+
+$validation-&gt;add(
+    'email',
+    new PresenceOf(
+        [
+            'message' =&gt; 'The e-mail is required',
+        ]
+    )
+);
+
+$validation-&gt;add(
+    'email',
+    new Email(
+        [
+            'message' =&gt; 'The e-mail is not valid',
+        ]
+    )
+);
+
+$messages = $validation-&gt;validate($_POST);
+
+if (count($messages)) {
+    foreach ($messages as $message) {
+        echo $message, '&lt;br&gt;';
+    }
+}
+</code></pre>
+
+<p>The loosely-coupled design of this component allows you to create your own validators along with the ones provided by the framework.</p>
+
+<p><a name="initializing"></a></p>
+
+<h2 id="initializing-validation">Initializing Validation</h2>
+
+<p>Validation chains can be initialized in a direct manner by just adding validators to the <a href="api/Phalcon_Validation">Phalcon\Validation</a> object. You can put your validations in a separate file for better re-use code and organization:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation;
+use Phalcon\Validation\Validator\Email;
+use Phalcon\Validation\Validator\PresenceOf;
+
+class MyValidation extends Validation
+{
+    public function initialize()
+    {
+        $this-&gt;add(
+            'name',
+            new PresenceOf(
+                [
+                    'message' =&gt; 'The name is required',
+                ]
+            )
+        );
+
+        $this-&gt;add(
+            'email',
+            new PresenceOf(
+                [
+                    'message' =&gt; 'The e-mail is required',
+                ]
+            )
+        );
+
+        $this-&gt;add(
+            'email',
+            new Email(
+                [
+                    'message' =&gt; 'The e-mail is not valid',
+                ]
+            )
+        );
+    }
+}
+</code></pre>
+
+<p>Then initialize and use your own validator:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$validation = new MyValidation();
+
+$messages = $validation-&gt;validate($_POST);
+
+if (count($messages)) {
+    foreach ($messages as $message) {
+        echo $message, '&lt;br&gt;';
+    }
+}
+</code></pre>
+
+<p><a name="validators"></a></p>
+
+<h2 id="validators">Validators</h2>
+
+<p>Phalcon exposes a set of built-in validators for this component:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Class</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Alnum">Phalcon\Validation\Validator\Alnum</a></td>
+      <td>Validates that a field’s value is only alphanumeric character(s).</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Alpha">Phalcon\Validation\Validator\Alpha</a></td>
+      <td>Validates that a field’s value is only alphabetic character(s).</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Date">Phalcon\Validation\Validator\Date</a></td>
+      <td>Validates that a field’s value is a valid date.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Digit">Phalcon\Validation\Validator\Digit</a></td>
+      <td>Validates that a field’s value is only numeric character(s).</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_File">Phalcon\Validation\Validator\File</a></td>
+      <td>Validates that a field’s value is a correct file.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Uniqueness">Phalcon\Validation\Validator\Uniqueness</a></td>
+      <td>Validates that a field’s value is unique in the related model.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Numericality">Phalcon\Validation\Validator\Numericality</a></td>
+      <td>Validates that a field’s value is a valid numeric value.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_PresenceOf">Phalcon\Validation\Validator\PresenceOf</a></td>
+      <td>Validates that a field’s value is not null or empty string.</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Identical">Phalcon\Validation\Validator\Identical</a></td>
+      <td>Validates that a field’s value is the same as a specified value</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Email">Phalcon\Validation\Validator\Email</a></td>
+      <td>Validates that field contains a valid email format</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_ExclusionIn">Phalcon\Validation\Validator\ExclusionIn</a></td>
+      <td>Validates that a value is not within a list of possible values</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_InclusionIn">Phalcon\Validation\Validator\InclusionIn</a></td>
+      <td>Validates that a value is within a list of possible values</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Regex">Phalcon\Validation\Validator\Regex</a></td>
+      <td>Validates that the value of a field matches a regular expression</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_StringLength">Phalcon\Validation\Validator\StringLength</a></td>
+      <td>Validates the length of a string</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Between">Phalcon\Validation\Validator\Between</a></td>
+      <td>Validates that a value is between two values</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Confirmation">Phalcon\Validation\Validator\Confirmation</a></td>
+      <td>Validates that a value is the same as another present in the data</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Url">Phalcon\Validation\Validator\Url</a></td>
+      <td>Validates that field contains a valid URL</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_CreditCard">Phalcon\Validation\Validator\CreditCard</a></td>
+      <td>Validates a credit card number</td>
+    </tr>
+    <tr>
+      <td><a href="api/Phalcon_Validation_Validator_Callback">Phalcon\Validation\Validator\Callback</a></td>
+      <td>Validates using callback function</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The following example explains how to create additional validators for this component:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation;
+use Phalcon\Validation\Message;
+use Phalcon\Validation\Validator;
+
+class IpValidator extends Validator
+{
+    /**
+     * Executes the validation
+     *
+     * @param Validation $validator
+     * @param string     $attribute
+     * @return boolean
+     */
+    public function validate(Validation $validator, $attribute)
+    {
+        $value = $validator-&gt;getValue($attribute);
+
+        if (!filter_var($value, FILTER_VALIDATE_IP, FILTER_FLAG_IPV4 | FILTER_FLAG_IPV6)) {
+            $message = $this-&gt;getOption('message');
+
+            if (!$message) {
+                $message = 'The IP is not valid';
+            }
+
+            $validator-&gt;appendMessage(
+                new Message($message, $attribute, 'Ip')
+            );
+
+            return false;
+        }
+
+        return true;
+    }
+}
+</code></pre>
+
+<p>It is important that validators return a valid boolean value indicating if the validation was successful or not.</p>
+
+<p><a name="callback"></a></p>
+
+<h2 id="callback-validator">Callback Validator</h2>
+
+<p>By using <a href="api/Phalcon_Validation_Validator_Callback">Phalcon\Validation\Validator\Callback</a> you can execute custom function which must return boolean or new validator class which will be used to validate the same field. By returning <code>true</code> validation will be successful, returning <code>false</code> will mean validation failed. When executing this validator Phalcon will pass data depending what it is - if it’s an entity (i.e. a model, a <code>stdClass</code> etc.) then entity will be passed, otherwise data (i.e an array like <code>$_POST</code>). There is example:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use \Phalcon\Validation;
+use \Phalcon\Validation\Validator\Callback;
+use \Phalcon\Validation\Validator\PresenceOf;
+
+$validation = new Validation();
+$validation-&gt;add(
+    'amount',
+    new Callback(
+        [
+            'callback' =&gt; function($data) {
+                return $data['amount'] % 2 == 0;
+            },
+            'message'  =&gt; 'Only even number of products are accepted'
+        ]
+    )
+);
+$validation-&gt;add(
+    'amount',
+    new Callback(
+        [
+            'callback' =&gt; function($data) {
+                if($data['amount'] % 2 == 0) {
+                    return $data['amount'] != 2;
+                }
+
+                return true;
+            },
+            'message' =&gt; "You can't buy 2 products"
+        ]
+    )
+);
+$validation-&gt;add(
+    'description',
+    new Callback(
+        [
+            'callback' =&gt; function($data) {
+                if($data['amount'] &gt;= 10) {
+                    return new PresenceOf(
+                        [
+                            'message' =&gt; 'You must write why you need so big amount.'
+                        ]
+                    );
+                }
+
+                return true;
+            }
+        ]
+    )
+);
+
+$messages = $validation-&gt;validate(['amount' =&gt; 1]);  // will return message from first validator
+$messages = $validation-&gt;validate(['amount' =&gt; 2]);  // will return message from second validator
+$messages = $validation-&gt;validate(['amount' =&gt; 10]); // will return message from validator returned by third validator
+</code></pre>
+
+<p><a name="messages"></a></p>
+
+<h2 id="validation-messages">Validation Messages</h2>
+
+<p><a href="api/Phalcon_Validation">Phalcon\Validation</a> has a messaging subsystem that provides a flexible way to output or store the validation messages generated during the validation processes.</p>
+
+<p>Each message consists of an instance of the class <a href="api/Phalcon_Validation_Message">Phalcon\Validation\Message</a>. The set of messages generated can be retrieved with the <code>getMessages()</code> method. Each message provides extended information like the attribute that generated the message or the message type:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$messages = $validation-&gt;validate();
+
+if (count($messages)) {
+    foreach ($messages as $message) {
+        echo 'Message: ', $message-&gt;getMessage(), "\n";
+        echo 'Field: ', $message-&gt;getField(), "\n";
+        echo 'Type: ', $message-&gt;getType(), "\n";
+    }
+}
+</code></pre>
+
+<p>You can pass a <code>message</code> parameter to change/translate the default message in each validator, even it’s possible to use the wildcard <code>:field</code> in the message to be replaced by the label of the field:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation\Validator\Email;
+
+$validation-&gt;add(
+    'email',
+    new Email(
+        [
+            'message' =&gt; 'The e-mail is not valid',
+        ]
+    )
+);
+</code></pre>
+
+<p>By default, the <code>getMessages()</code> method returns all the messages generated during validation. You can filter messages for a specific field using the <code>filter()</code> method:</p>
+
+<pre><code class="language-php">&lt;?php
+
+$messages = $validation-&gt;validate();
+
+if (count($messages)) {
+    // Filter only the messages generated for the field 'name'
+    $filteredMessages = $messages-&gt;filter('name');
+
+    foreach ($filteredMessages as $message) {
+        echo $message;
+    }
+}
+</code></pre>
+
+<p><a name="filtering"></a></p>
+
+<h2 id="filtering-of-data">Filtering of Data</h2>
+
+<p>Data can be filtered prior to the validation ensuring that malicious or incorrect data is not validated.</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation;
+
+$validation = new Validation();
+
+$validation-&gt;add(
+    'name',
+    new PresenceOf(
+        [
+            'message' =&gt; 'The name is required',
+        ]
+    )
+);
+
+$validation-&gt;add(
+    'email',
+    new PresenceOf(
+        [
+            'message' =&gt; 'The email is required',
+        ]
+    )
+);
+
+// Filter any extra space
+$validation-&gt;setFilters('name', 'trim');
+$validation-&gt;setFilters('email', 'trim');
+</code></pre>
+
+<p>Filtering and sanitizing is performed using the <a href="/3.4/en/filter">filter</a> component. You can add more filters to this component or use the built-in ones.</p>
+
+<p><a name="events"></a></p>
+
+<h2 id="validation-events">Validation Events</h2>
+
+<p>When validations are organized in classes, you can implement the <code>beforeValidation()</code> and <code>afterValidation()</code> methods to perform additional checks, filters, clean-up, etc. If the <code>beforeValidation()</code> method returns false the validation is automatically cancelled:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation;
+
+class LoginValidation extends Validation
+{
+    public function initialize()
+    {
+        // ...
+    }
+
+    /**
+     * Executed before validation
+     *
+     * @param array $data
+     * @param object $entity
+     * @param Phalcon\Validation\Message\Group $messages
+     * @return bool
+     */
+    public function beforeValidation($data, $entity, $messages)
+    {
+        if ($this-&gt;request-&gt;getHttpHost() !== 'admin.mydomain.com') {
+            $messages-&gt;appendMessage(
+                new Message('Only users can log on in the administration domain')
+            );
+
+            return false;
+        }
+
+        return true;
+    }
+
+    /**
+     * Executed after validation
+     *
+     * @param array $data
+     * @param object $entity
+     * @param Phalcon\Validation\Message\Group $messages
+     */
+    public function afterValidation($data, $entity, $messages)
+    {
+        // ... Add additional messages or perform more validations
+    }
+}
+</code></pre>
+
+<p><a name="cancelling"></a></p>
+
+<h2 id="cancelling-validations">Cancelling Validations</h2>
+
+<p>By default all validators assigned to a field are tested regardless if one of them have failed or not. You can change this behavior by telling the validation component which validator may stop the validation:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation;
+use Phalcon\Validation\Validator\Regex;
+use Phalcon\Validation\Validator\PresenceOf;
+
+$validation = new Validation();
+
+$validation-&gt;add(
+    'telephone',
+    new PresenceOf(
+        [
+            'message'      =&gt; 'The telephone is required',
+            'cancelOnFail' =&gt; true,
+        ]
+    )
+);
+
+$validation-&gt;add(
+    'telephone',
+    new Regex(
+        [
+            'message' =&gt; 'The telephone is required',
+            'pattern' =&gt; '/\+44 [0-9]+/',
+        ]
+    )
+);
+
+$validation-&gt;add(
+    'telephone',
+    new StringLength(
+        [
+            'messageMinimum' =&gt; 'The telephone is too short',
+            'min'            =&gt; 2,
+        ]
+    )
+);
+</code></pre>
+
+<p>The first validator has the option <code>cancelOnFail</code> with a value of <code>true</code>, therefore if that validator fails the remaining validators in the chain are not executed.</p>
+
+<p>If you are creating custom validators you can dynamically stop the validation chain by setting the <code>cancelOnFail</code> option:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation;
+use Phalcon\Validation\Message;
+use Phalcon\Validation\Validator;
+
+class MyValidator extends Validator
+{
+    /**
+     * Executes the validation
+     *
+     * @param Phalcon\Validation $validator
+     * @param string $attribute
+     * @return boolean
+     */
+    public function validate(Validation $validator, $attribute)
+    {
+        // If the attribute value is name we must stop the chain
+        if ($attribute === 'name') {
+            $validator-&gt;setOption('cancelOnFail', true);
+        }
+
+        // ...
+    }
+}
+</code></pre>
+
+<p><a name="empty-values"></a></p>
+
+<h2 id="avoid-validating-empty-values">Avoid validating empty values</h2>
+
+<p>You can pass the option <code>allowEmpty</code> to all the built-in validators to avoid the validation to be performed if an empty value is passed:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation;
+use Phalcon\Validation\Validator\Regex;
+
+$validation = new Validation();
+
+$validation-&gt;add(
+    'telephone',
+    new Regex(
+        [
+            'message'    =&gt; 'The telephone is required',
+            'pattern'    =&gt; '/\+44 [0-9]+/',
+            'allowEmpty' =&gt; true,
+        ]
+    )
+);
+</code></pre>
+
+<p><a name="recursive"></a></p>
+
+<h2 id="recursive-validation">Recursive Validation</h2>
+
+<p>You can also run Validation instances within another via the <code>afterValidation()</code> method. In this example, validating the <code>CompanyValidation</code> instance will also check the <code>PhoneValidation</code> instance:</p>
+
+<pre><code class="language-php">&lt;?php
+
+use Phalcon\Validation;
+
+class CompanyValidation extends Validation
+{
+    /**
+     * @var PhoneValidation
+     */
+    protected $phoneValidation;
+
+    public function initialize()
+    {
+        $this-&gt;phoneValidation = new PhoneValidation();
+    }
+
+    public function afterValidation($data, $entity, $messages)
+    {
+        $phoneValidationMessages = $this-&gt;phoneValidation-&gt;validate(
+            $data['phone']
+        );
+
+        $messages-&gt;appendMessages(
+            $phoneValidationMessages
+        );
+    }
+}
+</code></pre>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>

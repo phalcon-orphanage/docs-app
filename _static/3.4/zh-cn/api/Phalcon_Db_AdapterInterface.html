@@ -1,0 +1,973 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="zh-cn" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="zh-cn" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="zh-cn" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547266080100021829"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="https://phalcon-docs4.netlify.com/3.4/zh-cn/api/Phalcon_Db_AdapterInterface.html" rel="canonical">
+        <title>Phalcon Framework Documentation - Phalcon\Db\AdapterInterface</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation - Phalcon\Db\AdapterInterface">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="https://phalcon-docs4.netlify.com">
+        <meta property="og:title" content="Phalcon Framework Documentation - Phalcon\Db\AdapterInterface">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="https://phalcon-docs4.netlify.com/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547266080100021829" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547266080100021829" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/zh-cn">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/zh-cn/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/zh-cn/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/zh-cn/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/zh-cn/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/zh-cn/Phalcon_Db_AdapterInterface" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/Phalcon_Db_AdapterInterface">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/zh-cn/Phalcon_Db_AdapterInterface">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/zh-cn/Phalcon_Db_AdapterInterface">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/zh-cn/Phalcon_Db_AdapterInterface">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/zh-cn/Phalcon_Db_AdapterInterface">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/zh-cn/Phalcon_Db_AdapterInterface">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        
+
+
+
+
+
+
+
+                        <section class="documentation-section">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-8 col-lg-9 parse-content">
+                                        <div>
+                                            <a class="article-content-edit-link pull-right"
+                                               href="https://crowdin.com/project/phalcon-documentation/zh-cn">
+                                                
+                                            </a>
+                                            <br>
+                                        </div>
+                                        <h1 id="interface-phalcondbadapterinterface">Interface <strong>Phalcon\Db\AdapterInterface</strong></h1>
+
+<p><a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/db/adapterinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a></p>
+
+<h2 id="methods">Methods</h2>
+
+<p>abstract public <strong>fetchOne</strong> (<em>mixed</em> $sqlQuery, [<em>mixed</em> $fetchMode], [<em>mixed</em> $placeholders])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>fetchAll</strong> (<em>mixed</em> $sqlQuery, [<em>mixed</em> $fetchMode], [<em>mixed</em> $placeholders])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>insert</strong> (<em>mixed</em> $table, <em>array</em> $values, [<em>mixed</em> $fields], [<em>mixed</em> $dataTypes])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>update</strong> (<em>mixed</em> $table, <em>mixed</em> $fields, <em>mixed</em> $values, [<em>mixed</em> $whereCondition], [<em>mixed</em> $dataTypes])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>delete</strong> (<em>mixed</em> $table, [<em>mixed</em> $whereCondition], [<em>mixed</em> $placeholders], [<em>mixed</em> $dataTypes])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getColumnList</strong> (<em>mixed</em> $columnList)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>limit</strong> (<em>mixed</em> $sqlQuery, <em>mixed</em> $number)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>tableExists</strong> (<em>mixed</em> $tableName, [<em>mixed</em> $schemaName])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>viewExists</strong> (<em>mixed</em> $viewName, [<em>mixed</em> $schemaName])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>forUpdate</strong> (<em>mixed</em> $sqlQuery)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>sharedLock</strong> (<em>mixed</em> $sqlQuery)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>createTable</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName, <em>array</em> $definition)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>dropTable</strong> (<em>mixed</em> $tableName, [<em>mixed</em> $schemaName], [<em>mixed</em> $ifExists])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>createView</strong> (<em>mixed</em> $viewName, <em>array</em> $definition, [<em>mixed</em> $schemaName])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>dropView</strong> (<em>mixed</em> $viewName, [<em>mixed</em> $schemaName], [<em>mixed</em> $ifExists])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>addColumn</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName, <a href="/3.4/en/api/Phalcon_Db_ColumnInterface">Phalcon\Db\ColumnInterface</a> $column)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>modifyColumn</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName, <a href="/3.4/en/api/Phalcon_Db_ColumnInterface">Phalcon\Db\ColumnInterface</a> $column, [<a href="/3.4/en/api/Phalcon_Db_ColumnInterface">Phalcon\Db\ColumnInterface</a> $currentColumn])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>dropColumn</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName, <em>mixed</em> $columnName)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>addIndex</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName, <a href="/3.4/en/api/Phalcon_Db_IndexInterface">Phalcon\Db\IndexInterface</a> $index)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>dropIndex</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName, <em>mixed</em> $indexName)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>addPrimaryKey</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName, <a href="/3.4/en/api/Phalcon_Db_IndexInterface">Phalcon\Db\IndexInterface</a> $index)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>dropPrimaryKey</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>addForeignKey</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName, <a href="/3.4/en/api/Phalcon_Db_ReferenceInterface">Phalcon\Db\ReferenceInterface</a> $reference)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>dropForeignKey</strong> (<em>mixed</em> $tableName, <em>mixed</em> $schemaName, <em>mixed</em> $referenceName)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getColumnDefinition</strong> (<a href="/3.4/en/api/Phalcon_Db_ColumnInterface">Phalcon\Db\ColumnInterface</a> $column)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>listTables</strong> ([<em>mixed</em> $schemaName])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>listViews</strong> ([<em>mixed</em> $schemaName])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getDescriptor</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getConnectionId</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getSQLStatement</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getRealSQLStatement</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getSQLVariables</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getSQLBindTypes</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getType</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getDialectType</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getDialect</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>connect</strong> ([<em>array</em> $descriptor])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>query</strong> (<em>mixed</em> $sqlStatement, [<em>mixed</em> $placeholders], [<em>mixed</em> $dataTypes])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>execute</strong> (<em>mixed</em> $sqlStatement, [<em>mixed</em> $placeholders], [<em>mixed</em> $dataTypes])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>affectedRows</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>close</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>escapeIdentifier</strong> (<em>mixed</em> $identifier)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>escapeString</strong> (<em>mixed</em> $str)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>lastInsertId</strong> ([<em>mixed</em> $sequenceName])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>begin</strong> ([<em>mixed</em> $nesting])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>rollback</strong> ([<em>mixed</em> $nesting])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>commit</strong> ([<em>mixed</em> $nesting])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>isUnderTransaction</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getInternalHandler</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>describeIndexes</strong> (<em>mixed</em> $table, [<em>mixed</em> $schema])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>describeReferences</strong> (<em>mixed</em> $table, [<em>mixed</em> $schema])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>tableOptions</strong> (<em>mixed</em> $tableName, [<em>mixed</em> $schemaName])</p>
+
+<p>…</p>
+
+<p>abstract public <strong>useExplicitIdValue</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getDefaultIdValue</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>supportSequences</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>createSavepoint</strong> (<em>mixed</em> $name)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>releaseSavepoint</strong> (<em>mixed</em> $name)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>rollbackSavepoint</strong> (<em>mixed</em> $name)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>setNestedTransactionsWithSavepoints</strong> (<em>mixed</em> $nestedTransactionsWithSavepoints)</p>
+
+<p>…</p>
+
+<p>abstract public <strong>isNestedTransactionsWithSavepoints</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>getNestedTransactionSavepointName</strong> ()</p>
+
+<p>…</p>
+
+<p>abstract public <strong>describeColumns</strong> (<em>mixed</em> $table, [<em>mixed</em> $schema])</p>
+
+<p>…</p>
+
+                                    </div>
+                                    <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                        <div class="topic-search">
+    <form class="bd-search d-flex align-items-center">
+        <input type="search"
+               class="form-control"
+               id="docs-search"
+               placeholder=""
+               aria-label=""
+               autocomplete="off"
+               data-siteurl="https://phalcon-docs4.netlify.com"
+               data-docs-version="3.4">
+        <button class="btn btn-link bd-search-docs-toggle d-md-none p-0 ml-3"
+                type="button"
+                data-toggle="collapse"
+                data-target="#bd-docs-nav"
+                aria-controls="bd-docs-nav"
+                aria-expanded="false"
+                aria-label="Toggle docs navigation">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 viewbox="0 0 30 30"
+                 width="30"
+                 height="30"
+                 focusable="false">
+                <title>Menu</title>
+                <path stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M4 7h22M4 15h22M4 23h22"></path>
+            </svg>
+        </button>
+    </form>
+</div>
+                                        <div class="topic-categories">
+    
+</div>
+
+                                        <div class="article-menu">
+    <ul>
+        
+        
+    </ul>
+</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547266080100021829"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547266080100021829"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
