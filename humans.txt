@@ -24,10 +24,7 @@ Now that you're here, why not start contributing as well? :)
 
 /* SITE */
 
-Last update: 2018/12/08
-Framework: Phalcon
-Language: PHP 7.1
+Last update: 2019-01-10
 Doctype: HTML5
 Standards: HTML5, CSS3
-Components: Nginx Server Configs, Twitter Bootstrap, jQuery, Google Fonts, highlight.js
-
+Components: Jekyll, Netlify, Twitter Bootstrap, jQuery, Google Fonts, highlight.js
