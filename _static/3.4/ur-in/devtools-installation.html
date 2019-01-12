@@ -1,0 +1,775 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="ur-in" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="ur-in" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="ur-in" class="no-js">
+<!--<![endif]-->
+
+
+
+
+
+
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <script type="text/javascript" src="/assets/js/viewport-min-width.js?v1547319779866581049"></script>
+        <meta name="description"
+              content="Official Phalcon Documentation">
+        <meta name="keywords" content="php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation">
+        <meta name="author" href="/humans.txt">
+        <meta name="generator" content="Phalcon Team - Jekyll - Netlify">
+
+        <link href="http://0.0.0.0:4000/3.4/ur-in/devtools-installation.html" rel="canonical">
+        <title>Phalcon Framework Documentation</title>
+
+        <!-- Twitter -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="@zephirlang">
+        <meta name="twitter:creator" content="@zephirlang">
+        <meta name="twitter:title" content="Phalcon Framework Documentation">
+        <meta name="twitter:description" content="Official Phalcon Documentation">
+        <meta name="twitter:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <!-- Facebook -->
+        <meta property="og:url" content="http://0.0.0.0:4000">
+        <meta property="og:title" content="Phalcon Framework Documentation">
+        <meta property="og:description" content="Official Phalcon Documentation">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://assets.phalconphp.com/phalcon/logo.png">
+
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-square70x70logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-70x70.png">
+        <meta name="msapplication-TileImage"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-144x144.png">
+        <meta name="msapplication-square150x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-150x150.png">
+        <meta name="msapplication-wide310x150logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x150.png">
+        <meta name="msapplication-square310x310logo"
+              content="https://assets.phalconphp.com/phalcon/icons/mstile-310x310.png">
+
+        <link rel="apple-touch-icon"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon.png">
+
+        <link rel="apple-touch-icon-precomposed"
+              sizes="57x57"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="60x60"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="72x72"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="76x76"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="114x114"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="120x120"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="144x144"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon-precomposed"
+              sizes="152x152"
+              href="https://assets.phalconphp.com/phalcon/icons/apple-touch-icon-152x152.png">
+
+        <link rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-16x16.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-32x32.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="96x96"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-96x96.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="128x128"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-128x128.png">
+        <link rel="icon"
+              type="image/png"
+              sizes="196x196"
+              href="https://assets.phalconphp.com/phalcon/icons/favicon-196x196.png">
+        <link rel="shortcut icon"
+              type="image/png"
+              href="https://assets.phalconphp.com/phalcon/favicon.ico"/>
+
+        <link rel="alternate"
+              type="application/rss+xml"
+              title=" - "
+              href="http://0.0.0.0:4000/feed.xml">
+
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha256-eSi1q2PG6J7g7ib17yAaWMcrr5GrtohYChqibrV7PBE="
+              crossorigin="anonymous" />
+        <link rel="stylesheet" href="/assets/css/monokai.css?v1547319779866581049" />
+        <link rel="stylesheet" href="/assets/css/style.css?v1547319779866581049" />
+
+        <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+                integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+                crossorigin="anonymous"></script>
+        
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90300500-6"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90300500-6');
+    </script>
+
+    </head>
+
+
+<body onclick="o2.allNavSlideUp()">
+    <header class="header-image-doc">
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="clearfix">
+                    <div class="row">
+                        <div class="col-md-2 col-sm-3  col-xs-8">
+                            <div class="header-image__logo-wrapper">
+                                <a href="/3.4/ur-in">
+                                    <img class="logo-img" src="/assets/images/header_logo.svg" alt="logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-sm-9 top-menu">
+
+                            <div class="nav-icon" onclick="o2.showMobileMenu();">
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                                <div class="nav-line"></div>
+                            </div>
+                            <nav class="header-nav">
+                                <ul>
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ur-IN.png"
+                                                 alt="">
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            
+                                                <a href="/3.4/en/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                         alt="English (US)">
+                                                    English (US)
+                                                </a>
+                                            
+                                                <a href="/3.4/cs-cz/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                         alt="Czech">
+                                                    Czech
+                                                </a>
+                                            
+                                                <a href="/3.4/de-de/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                         alt="German">
+                                                    German
+                                                </a>
+                                            
+                                                <a href="/3.4/es-es/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                         alt="Spanish">
+                                                    Spanish
+                                                </a>
+                                            
+                                                <a href="/3.4/fa-ir/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                         alt="Persian">
+                                                    Persian
+                                                </a>
+                                            
+                                                <a href="/3.4/fr-fr/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                         alt="French">
+                                                    French
+                                                </a>
+                                            
+                                                <a href="/3.4/id-id/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                         alt="Indonesian">
+                                                    Indonesian
+                                                </a>
+                                            
+                                                <a href="/3.4/it-it/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                         alt="Italian">
+                                                    Italian
+                                                </a>
+                                            
+                                                <a href="/3.4/ja-jp/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                         alt="Japanese">
+                                                    Japanese
+                                                </a>
+                                            
+                                                <a href="/3.4/pl-pl/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                         alt="Polish">
+                                                    Polish
+                                                </a>
+                                            
+                                                <a href="/3.4/ru-ru/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                         alt="Russian">
+                                                    Russian
+                                                </a>
+                                            
+                                                <a href="/3.4/tr-tr/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                         alt="Turkish">
+                                                    Turkish
+                                                </a>
+                                            
+                                                <a href="/3.4/uk-ua/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                         alt="Ukrainian">
+                                                    Ukrainian
+                                                </a>
+                                            
+                                                <a href="/3.4/zh-cn/devtools-installation" class="custom-select__list-item">
+                                                    <img class="lang-image"
+                                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                         alt="Chinese Simplified">
+                                                    Chinese Simplified
+                                                </a>
+                                            
+                                        </div>
+                                    </li>
+
+                                        <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                            <div class="nav-item__selected custom-select__version">
+                                                 3.4
+                                                <span class="caret"></span>
+                                            </div>
+                                            <div class="nav-item__list" onclick="event.stopPropagation();">
+                                                
+                                                <a href="/3.4/ur-in/devtools-installation" class="custom-select__list-item">
+                                                    <span>3.4</span>
+                                                </a>
+                                                
+                                                <a href="/3.3/ur-in/devtools-installation" class="custom-select__list-item">
+                                                    <span>3.3</span>
+                                                </a>
+                                                
+                                                <a href="/3.2/ur-in/devtools-installation" class="custom-select__list-item">
+                                                    <span>3.2</span>
+                                                </a>
+                                                
+                                                <a href="/3.1/ur-in/devtools-installation" class="custom-select__list-item">
+                                                    <span>3.1</span>
+                                                </a>
+                                                
+                                                <a href="/4.0/ur-in/devtools-installation" class="custom-select__list-item">
+                                                    <span>4.0</span>
+                                                </a>
+                                                
+                                            </div>
+                                        </li>
+
+                                    <li class="nav-item" onclick="o2.toggleState(this, event);">
+                                        <div class="nav-item_selected">
+                                            
+                                            <span class="caret"></span>
+                                        </div>
+                                        <div class="nav-item__list">
+                                            <a href="https://phalcon.link/forum" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/blog" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/resources" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <div class="nav-item__divider"></div>
+                                            <a href="https://phalcon.link/f" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/t" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                            <a href="https://phalcon.link/gab" class="custom-select__list-item" target="_blank">
+                                                
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/about">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/sponsors">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/fund">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="https://phalcon.link/download">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header-nav-mobile">
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    <img class="lang-image"
+                                         src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ur-IN.png"
+                                         alt="">
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/en/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/en-US.png"
+                                                 alt="English (US)">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/cs-cz/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/cs.png"
+                                                 alt="Czech">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/de-de/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/de.png"
+                                                 alt="German">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/es-es/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/es-ES.png"
+                                                 alt="Spanish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fa-ir/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fa.png"
+                                                 alt="Persian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/fr-fr/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/fr.png"
+                                                 alt="French">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/id-id/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/id.png"
+                                                 alt="Indonesian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/it-it/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/it.png"
+                                                 alt="Italian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ja-jp/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ja.png"
+                                                 alt="Japanese">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/pl-pl/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/pl.png"
+                                                 alt="Polish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/ru-ru/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/ru.png"
+                                                 alt="Russian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/tr-tr/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/tr.png"
+                                                 alt="Turkish">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/uk-ua/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/uk.png"
+                                                 alt="Ukrainian">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-sm-3 col-xs-6">
+                                        <a href="/3.4/zh-cn/devtools-installation">
+                                            <img class="lang-image"
+                                                 src="https://d2srrzh48sp2nh.cloudfront.net/31cd209e/images/flags/zh-CN.png"
+                                                 alt="Chinese Simplified">
+                                            <span></span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this,event)">
+                                     3.4
+                                    <span class="caret"></span>
+                                </div>
+
+                                <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.4/ur-in/devtools-installation">
+                                            <span>3.4</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.3/ur-in/devtools-installation">
+                                            <span>3.3</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.2/ur-in/devtools-installation">
+                                            <span>3.2</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/3.1/ur-in/devtools-installation">
+                                            <span>3.1</span>
+                                        </a>
+                                    </li>
+                                    
+                                    <li class="nav-item nav-item-li col-xs-12">
+                                        <a href="/4.0/ur-in/devtools-installation">
+                                            <span>4.0</span>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <div>
+                                <div class="nav-item nav-item-accordion" onclick="o2.topicsAccordion(this, event)">
+                                    
+                                    <span class="caret"></span>
+                                </div>
+                                <ul style="display:none;">
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/forum" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/blog" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/resources" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/f" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/t" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                    <li class="nav-item nav-item-li">
+                                        <a href="https://phalcon.link/gab" target="_blank">
+                                            
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/about">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/sponsors">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/fund">
+                                    
+                                </a>
+                            </div>
+                            <div class="nav-item">
+                                <a href="https://phalcon.link/download">
+                                    
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid article-page-wrap">
+        <div class="row">
+            <div>
+                <div class="col-md-2 sidebar hidden-xs">
+                    <div class="sidebar--spacer">&nbsp;</div>
+                </div>
+                <div class="m-t-md m-b-lg" id="articles">
+                    <div class="article-content">
+                        <p><a name="overview"></a></p>
+
+<h1 id="phalcon-developer-tools-on-linux">Phalcon Developer Tools on Linux</h1>
+
+<p>These steps will guide you through the process of installing Phalcon Developer Tools for Linux.</p>
+
+<p><a name="prerequisites"></a></p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>The Phalcon PHP extension is required to run Phalcon Tools. If you haven’t installed it yet, please see the <a href="/3.4/en//installation">Installation</a> section for instructions.</p>
+
+<p><a name="installation"></a></p>
+
+<h2 id="installation">Installation</h2>
+
+<p>You can download a cross platform package containing the developer tools from from <a href="https://github.com/phalcon/phalcon-devtools">Github</a>.</p>
+
+<p><a name="installation-linux"></a></p>
+
+<h3 id="linux">Linux</h3>
+
+<p>Open a terminal and type the command below:</p>
+
+<pre><code class="language-bash">git clone git://github.com/phalcon/phalcon-devtools.git
+</code></pre>
+
+<p><img src="/assets/images/content/devtools-linux-1.png" alt="" /></p>
+
+<p>Then enter the folder where the tools were cloned and execute <code>. ./phalcon.sh</code>, (don’t forget the dot at beginning of the command):</p>
+
+<pre><code class="language-bash">cd phalcon-devtools/
+. ./phalcon.sh
+</code></pre>
+
+<p><img src="/assets/images/content/devtools-linux-2.png" alt="" /></p>
+
+<p>Create a symbolic link to the phalcon.php script:</p>
+
+<pre><code class="language-bash">ln -s ~/phalcon-devtools/phalcon.php /usr/bin/phalcon
+chmod ugo+x /usr/bin/phalcon
+</code></pre>
+
+<p><a name="installation-mac"></a></p>
+
+<h3 id="macos">macOS</h3>
+
+<p>Open a terminal and type the command below:</p>
+
+<pre><code class="language-bash">git clone git://github.com/phalcon/phalcon-devtools.git
+</code></pre>
+
+<p><img src="/assets/images/content/devtools-mac-1.png" alt="" /></p>
+
+<p>Then enter the folder where the tools were cloned and execute <code>. ./phalcon.sh</code>, (don’t forget the dot at beginning of the command):</p>
+
+<pre><code class="language-bash">cd phalcon-devtools/
+. ./phalcon.sh
+</code></pre>
+
+<p><img src="/assets/images/content/devtools-mac-2.png" alt="" /></p>
+
+<p>Next, we’ll create a symbolic link to the <code>phalcon.php</code> script. On El Capitan and newer versions of macOS:</p>
+
+<pre><code class="language-bash">ln -s ~/phalcon-devtools/phalcon.php /usr/local/bin/phalcon
+chmod ugo+x /usr/local/bin/phalcon
+</code></pre>
+
+<p>if you are running an older version:</p>
+
+<pre><code class="language-bash">ln -s ~/phalcon-devtools/phalcon.php /usr/bin/phalcon
+chmod ugo+x /usr/bin/phalcon
+</code></pre>
+
+<p><a name="installation-windows"></a></p>
+
+<h3 id="windows">Windows</h3>
+
+<p>On the Windows platform, you need to configure the system <code>PATH</code> to include Phalcon tools as well as the PHP executable. If you download the Phalcon tools as a zip archive, extract it on any path of your local drive i.e. <code>c:\phalcon-tools</code>. You will need this path in the steps below. Edit the file <code>phalcon.bat</code> by right clicking on the file and selecting <code>Edit</code>:</p>
+
+<p><img src="/assets/images/content/devtools-windows-1.png" alt="" /></p>
+
+<p>Change the path to the one you installed the Phalcon tools (<code>set PTOOLSPATH=C:\phalcon-tools</code>):</p>
+
+<p><img src="/assets/images/content/devtools-windows-2.png" alt="" /></p>
+
+<p>Save the changes.</p>
+
+<p><a name="installation-windows-system-path"></a></p>
+
+<h4 id="adding-php-and-tools-to-your-system-path">Adding PHP and Tools to your system PATH</h4>
+
+<p>Because the scripts are written in PHP, you need to install it on your machine. Depending on your PHP installation, the executable can be located in various places. Search for the file <code>php.exe</code> and copy its path. For instance, using WAMPP you will locate the PHP executable in a location like this: <code>C:\wamp\bin\php\&lt;php version&gt;\php.exe</code> (where <code>&lt;php version&gt;</code> is the version of PHP that WAMPP comes bundled with).</p>
+
+<p>From the Windows start menu, right mouse click on the <code>Computer</code> icon and select <code>Properties</code>:</p>
+
+<p><img src="/assets/images/content/devtools-windows-3.png" alt="" /></p>
+
+<p>Click the <code>Advanced</code> tab and then the button <code>Environment Variables</code>:</p>
+
+<p><img src="/assets/images/content/devtools-windows-4.png" alt="" /></p>
+
+<p>At the bottom, look for the section <code>System variables</code> and edit the variable <code>Path</code>:</p>
+
+<p><img src="/assets/images/content/devtools-windows-5.png" alt="" /></p>
+
+<p>Be very careful on this step! You need to append at the end of the long string the path where your <code>php.exe</code> was located and the path where Phalcon tools are installed. Use the <code>;</code> character to separate the different paths in the variable:</p>
+
+<p><img src="/assets/images/content/devtools-windows-6.png" alt="" /></p>
+
+<p>Accept the changes made by clicking <code>OK</code> and close the dialogs opened. From the start menu click on the option <code>Run</code>. If you can’t find this option, press <code>Windows Key</code> + <code>R</code>.</p>
+
+<p><img src="/assets/images/content/devtools-windows-7.png" alt="" /></p>
+
+<p>Type <code>cmd</code> and press enter to open the windows command line utility:</p>
+
+<p><img src="/assets/images/content/devtools-windows-8.png" alt="" /></p>
+
+<p>Type the commands <code>php -v</code> and <code>phalcon</code> and you will see something like this:</p>
+
+<p><img src="/assets/images/content/devtools-windows-9.png" alt="" /></p>
+
+<p>Congratulations you now have Phalcon tools installed!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer>
+    <div class="container">
+        <div class="footer-wrapper clearfix">
+
+            <div class="footer-link-container">
+                <a class="footer-link" href="/">
+                    <img class="footer-logo-img" src="/assets/images/footer_logo.svg" alt="logo">
+                </a>
+                <a class="footer-link" href="https://phalcon.link/about" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/sponsors" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/fund" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://phalcon.link/download" target="_blank">
+                    
+                </a>
+                <a class="footer-link" href="https://license.phalconphp.com/" target="_blank">
+                     New BSD
+                </a>
+            </div>
+
+            <div class="footer-copyright">
+                <a href="https://odva.pro/" target="_blank" class="o2-link">
+                    <span></span> <img src="/assets/images/logo-o2.svg" alt="logo o2">
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="/assets/js/main.min.js?v1547319779866581049"></script>
+<script type="text/javascript" src="/assets/js/highlight/highlight.pack.js?v1547319779866581049"></script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+<script type="application/javascript">hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
