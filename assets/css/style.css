@@ -1933,8 +1933,15 @@ hr {
 .container-fluid:after,
 .row:before,
 .row:after {
-    content: " ";
+    content: "";
     display: table;
+}
+
+/**
+Fixing bootstrap columns for safari
+ */
+.row:before, .row:after {
+    display: inline-block !important;
 }
 
 .clearfix:after,
@@ -2488,9 +2495,9 @@ input.submit-review-button:hover {
 }
 
 .header-nav {
-    margin-top: 60px;
+    margin-top: 30px;
     float: right;
-    margin-left: 30px;
+    margin-bottom: 10px;
 }
 
 .header-nav-mobile {
@@ -2575,7 +2582,8 @@ input.submit-review-button:hover {
 
 .header-image__logo-wrapper {
     width: 200px;
-    margin-top: 35px;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .nav-icon {
@@ -3689,19 +3697,6 @@ footer {
     background-size: contain;
     right: 34px;
     top: 43px;
-}
-
-.topic-search {
-    text-align: left;
-    position: relative;
-    border-top: 2px solid #e1e8ee;
-    padding: 10px 10px 10px 10px;
-    font-family: "Roboto-Medium", sans-serif;
-    font-size: 16px;
-    color: #358ed7;
-    -webkit-transition: all .3s;
-    transition: all .3s;
-    display: block;
 }
 
 .column-padding {

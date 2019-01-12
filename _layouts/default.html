@@ -12,20 +12,7 @@
 <body onclick="o2.allNavSlideUp()">
 {% include header.html %}
 
-    <div class="container-fluid article-page-wrap">
-        <div class="row">
-            <div>
-                <div class="col-md-2 sidebar hidden-xs">
-                    <div class="sidebar--spacer">&nbsp;</div>
-                </div>
-                <div class="m-t-md m-b-lg" id="articles">
-                    <div class="article-content">
-                        {{ content }}
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+{{ content }}
 
 {% include footer.html %}
 {% include footer_js.html %}
