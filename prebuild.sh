@@ -6,13 +6,13 @@ cp -v ./4.0/en/meta-home.json           ./_data/4-0-en-meta-home.json
 cp -v ./4.0/en/meta-topics.json         ./_data/4-0-en-meta-topics.json
 cp -v ./4.0/en/meta-articles.json       ./_data/4-0-en-meta-articles.json
 
-cp -v ./_static/3.1/en/meta-home.json           ./_data/3.1-en-meta-home.json
-cp -v ./_static/3.1/en/meta-topics.json         ./_data/3.1-en-meta-topics.json
-cp -v ./_static/3.1/en/meta-articles.json       ./_data/3.1-en-meta-articles.json
+cp -v ./_static/3.1/en/meta-home.json           ./_data/3-1-en-meta-home.json
+cp -v ./_static/3.1/en/meta-topics.json         ./_data/3-1-en-meta-topics.json
+cp -v ./_static/3.1/en/meta-articles.json       ./_data/3-1-en-meta-articles.json
 
-cp -v ./_static/3.2/en/meta-home.json           ./_data/3.2-en-meta-home.json
-cp -v ./_static/3.2/en/meta-topics.json         ./_data/3.2-en-meta-topics.json
-cp -v ./_static/3.2/en/meta-articles.json       ./_data/3.2-en-meta-articles.json
+cp -v ./_static/3.2/en/meta-home.json           ./_data/3-2-en-meta-home.json
+cp -v ./_static/3.2/en/meta-topics.json         ./_data/3-2-en-meta-topics.json
+cp -v ./_static/3.2/en/meta-articles.json       ./_data/3-2-en-meta-articles.json
 
 cp -v ./_static/3.3/en/meta-home.json           ./_data/3.3-en-meta-home.json
 cp -v ./_static/3.3/en/meta-topics.json         ./_data/3.3-en-meta-topics.json
