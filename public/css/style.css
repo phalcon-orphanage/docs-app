@@ -2,7 +2,7 @@
 /* ********************** */
 /* Slider */
 .slick-slider {
-    position: relative;
+    position: relative
     display: block;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -1933,8 +1933,15 @@ hr {
 .container-fluid:after,
 .row:before,
 .row:after {
-    content: " ";
+    content: "";
     display: table;
+}
+
+/**
+Fixing bootstrap columns for safari
+ */
+.row:before, .row:after{
+ display: inline-block !important;
 }
 
 .clearfix:after,
