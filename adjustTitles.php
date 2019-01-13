@@ -1,10 +1,10 @@
 <?php
 
-$version = '3.4';
+$version = '4.0';
 $folder  = __DIR__ . '/' . $version . '/';
 
 $template = "---
-layout: default
+layout: article
 language: '%s'
 version: '%s'
 ---

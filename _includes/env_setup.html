@@ -1,5 +1,5 @@
-{% assign script = page.name | replace: '.md', '' %}
-{% assign url = page.url | replace: '.html', '' %}
+{% assign script      = page.name | replace: '.md', '' %}
+{% assign url         = page.url | replace: '.html', '' %}
 {% assign keyPrefix   = page.version | replace: '.', '-' | append: '-' | append: page.language %}
 {% assign homeKey     = keyPrefix | append: '-meta-home' %}
 {% assign topicsKey   = keyPrefix | append: '-meta-topics' %}

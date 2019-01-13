@@ -3,35 +3,35 @@
         {% assign articles = site.data[articlesKey] %}
         {% for menu1 in articles[script] %}
         <li>
-            <a href="{{ menu1.url }}"{% if script == menu1.url %} class="active"{% endif %}>
+            <a href="{{ script }}#{{ menu1.url }}"{% if script == menu1.url %} class="active"{% endif %}>
                 {{ menu1.text }}
             </a>
             {% if menu1.menu %}
             <ul>
                 {% for menu2 in menu1.menu %}
                 <li>
-                    <a href="{{ menu2.url }}"{% if script == menu2.url %} class="active"{% endif %}>
+                    <a href="{{ script }}#{{ menu2.url }}"{% if script == menu2.url %} class="active"{% endif %}>
                         {{ menu2.text }}
                     </a>
                     {% if menu2.menu %}
                     <ul>
                         {% for menu3 in menu2.menu %}
                         <li>
-                            <a href="{{ menu3.url }}"{% if script == menu3.url %} class="active"{% endif %}>
+                            <a href="{{ script }}#{{ menu3.url }}"{% if script == menu3.url %} class="active"{% endif %}>
                                 {{ menu3.text }}
                             </a>
                             {% if menu3.menu %}
                             <ul>
                                 {% for menu4 in menu3.menu %}
                                 <li>
-                                    <a href="{{ menu4.url }}"{% if script == menu4.url %} class="active"{% endif %}>
+                                    <a href="{{ script }}#{{ menu4.url }}"{% if script == menu4.url %} class="active"{% endif %}>
                                         {{ menu4.text }}
                                     </a>
                                     {% if menu4.menu %}
                                     <ul>
                                         {% for menu5 in menu4.menu %}
                                         <li>
-                                            <a href="{{ menu5.url }}"{% if script == menu5.url %} class="active"{% endif %}>
+                                            <a href="{{ script }}#{{ menu5.url }}"{% if script == menu5.url %} class="active"{% endif %}>
                                                 {{ menu5.text }}
                                             </a>
                                         </li>
