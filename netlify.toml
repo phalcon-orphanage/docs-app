@@ -1,3 +1,3 @@
 [build]
-  command = "git submodule update --remote --merge && ./prebuild.sh && jekyll build && ./afterbuild.sh"
+  command = "git submodule update --remote --merge && ./prebuild.sh && jekyll build"
   publish = "_site/"
