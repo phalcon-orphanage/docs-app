@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'zh-cn'
 version: '3.4'
 title: 'Phalcon\Db\Adapter\Pdo\Postgresql'

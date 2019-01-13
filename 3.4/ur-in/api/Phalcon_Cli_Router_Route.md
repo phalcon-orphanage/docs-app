@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'ur-in'
 version: '3.4'
 title: 'Phalcon\Cli\Router\Route'

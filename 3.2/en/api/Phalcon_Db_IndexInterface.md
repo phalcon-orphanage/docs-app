@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'en'
 version: '3.2'
 title: 'Phalcon\Db\IndexInterface'

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'fa-ir'
 version: '3.4'
 title: 'Phalcon\Cache\Backend\Mongo'

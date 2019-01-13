@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'de-de'
 version: '3.4'
 title: 'Phalcon\Filter\UserFilterInterface'

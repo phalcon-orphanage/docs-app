@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'es-es'
 version: '3.4'
 title: 'Phalcon\Queue\Beanstalk'

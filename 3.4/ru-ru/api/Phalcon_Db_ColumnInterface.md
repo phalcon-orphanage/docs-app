@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'ru-ru'
 version: '3.4'
 title: 'Phalcon\Db\ColumnInterface'

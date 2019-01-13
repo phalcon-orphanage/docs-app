@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'ja-jp'
 version: '3.4'
 title: 'Phalcon\Mvc\EntityInterface'

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'tr-tr'
 version: '3.4'
 title: 'Phalcon\Mvc\Model\ResultsetInterface'

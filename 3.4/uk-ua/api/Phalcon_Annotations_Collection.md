@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'uk-ua'
 version: '3.4'
 title: 'Phalcon\Annotations\Collection'

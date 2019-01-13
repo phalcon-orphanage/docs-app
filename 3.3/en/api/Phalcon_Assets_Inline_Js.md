@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'en'
 version: '3.3'
 title: 'Phalcon\Assets\Inline\Js'

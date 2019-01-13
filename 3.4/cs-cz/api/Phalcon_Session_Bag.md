@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: article
 language: 'cs-cz'
 version: '3.4'
 title: 'Phalcon\Session\Bag'
