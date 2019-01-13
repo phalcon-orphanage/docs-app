@@ -7,7 +7,7 @@
         <ul style="display: none;">
             {% for item in topic.menu %}
             <li>
-                <a href="{{ item.url }}">
+                <a href="/{{ page.version }}/{{ page.language }}/{{ item.url }}">
                 <span>{{ item.text }}</span>
                 </a>
             </li>
