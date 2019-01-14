@@ -7,11 +7,11 @@ title: 'Phalcon\Db\Profiler\Item'
 
 # Class **Phalcon\Db\Profiler\Item**
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/db/profiler/item.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/db/profiler/item.zep" class="btn btn-default btn-sm">源码在GitHub</a>
 
 This class identifies each profile in a Phalcon\Db\Profiler
 
-## Methods
+## 方法
 
 public **setSqlStatement** (*mixed* $sqlStatement)
 
