@@ -1,6 +1,13 @@
+---
+layout: article
+language: 'fr-fr'
+version: '4.0'
+title: 'Phalcon\CryptInterface'
+---
+
 # Interface **Phalcon\CryptInterface**
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/cryptinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cryptinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
 

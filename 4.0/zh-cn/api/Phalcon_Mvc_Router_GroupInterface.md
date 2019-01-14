@@ -7,7 +7,7 @@ title: 'Phalcon\Mvc\Router\GroupInterface'
 
 # Interface **Phalcon\Mvc\Router\GroupInterface**
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/router/groupinterface.zep" class="btn btn-default btn-sm">源码在GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/router/groupinterface.zep" class="btn btn-default btn-sm">源码在GitHub</a>
 
 ## 方法
 

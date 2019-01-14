@@ -7,7 +7,7 @@ title: 'Phalcon\Annotations\ReaderInterface'
 
 # Interface **Phalcon\Annotations\ReaderInterface**
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/annotations/readerinterface.zep" class="btn btn-default btn-sm">源码在GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/annotations/readerinterface.zep" class="btn btn-default btn-sm">源码在GitHub</a>
 
 ## 方法
 

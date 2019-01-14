@@ -11,6 +11,14 @@ title: 'Phalcon\Acl'
 
 ## Constants
 
+```php
 *integer* **ALLOW**
+```
 
+* * *
+
+```php
 *integer* **DENY**
+```
+
+* * *
