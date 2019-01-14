@@ -309,7 +309,7 @@ $acl->isAllowed('guest', 'reports', 'add');
 ```
 
 
-** WIP BELOW **
+** WIP BELOW - NEEDS REWRITING **
 <a name='function-based-access'></a>
 ## Function based access
 Also you can add as 4th parameter your custom function which must return boolean value. It will be called when you use `isAllowed()` method. You can pass parameters as associative array to `isAllowed()` method as 4th argument where key is parameter name in our defined function.
