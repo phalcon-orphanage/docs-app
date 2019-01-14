@@ -1,3 +1,0 @@
-### Phalcon Framework - Docs
-
-
