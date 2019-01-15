@@ -312,6 +312,8 @@ $acl->isAllowed('guest', 'reports', 'add');
 ** WIP BELOW - NEEDS REWRITING **
 <a name='function-based-access'></a>
 ## Function based access
+Depending on the needs of your application, you might need another layer of calculations to allow or deny access to users through the ACL. The method `isAllowed()` accepts a 4th parameter.
+
 Also you can add as 4th parameter your custom function which must return boolean value. It will be called when you use `isAllowed()` method. You can pass parameters as associative array to `isAllowed()` method as 4th argument where key is parameter name in our defined function.
 
 ```php
