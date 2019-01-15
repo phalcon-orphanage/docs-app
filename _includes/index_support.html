@@ -1,0 +1,58 @@
+    <section class="support-section">
+    <div class="container">
+        <div class="support-wrapper">
+            <div class="divider-icon">
+                <div class="divider-icon-wrapper">
+                    <img src="/assets/images/icons/divider-topic-icon.png" alt="">
+                </div>
+            </div>
+            <div class="support-description">
+                <h2>{{ homeStrings['get_support'] }}</h2>
+                <p>{{ homeStrings['when_you_are_stuck'] }}</p>
+                <div class="people">
+                    {% for social in site.social %}
+                    <div class="people__list">
+                        <a href="{{ social.url }}" title="{{ social.text }}" target="_blank">
+                            <img src="{{ social.image }}" alt="{{ social.text }}">
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="contact-us-container clearfix">
+                <div class="contact-us__image-wrapper">
+                    <svg version="1.1"
+                         id="Capa_1"
+                         xmlns="http://www.w3.org/2000/svg"
+                         xmlns:xlink="http://www.w3.org/1999/xlink"
+                         x="0px"
+                         y="0px"
+                         viewBox="0 0 60 60"
+                         style="enable-background:new 0 0 60 60;"
+                         xml:space="preserve">
+                        <g fill="#c3cfd8">
+                            <path d="M27,15.984h6c0.553,0,1-0.447,1-1s-0.447-1-1-1h-6c-0.553,0-1,0.447-1,1S26.447,15.984,27,15.984z"/>
+                            <path d="M42,29.984h-6c-0.553,0-1,0.447-1,1s0.447,1,1,1h6c0.553,0,1-0.447,1-1S42.553,29.984,42,29.984z"/>
+                            <path d="M18,23.984h5c0.553,0,1-0.447,1-1s-0.447-1-1-1h-5c-0.553,0-1,0.447-1,1S17.447,23.984,18,23.984z"/>
+                            <path d="M30,22.984c0,0.553,0.447,1,1,1h7c0.553,0,1-0.447,1-1s-0.447-1-1-1h-7C30.447,21.984,30,22.431,30,22.984z"/>
+                            <path d="M27,23.984c0.27,0,0.52-0.11,0.71-0.29c0.18-0.19,0.29-0.45,0.29-0.71s-0.11-0.521-0.29-0.71c-0.38-0.37-1.04-0.37-1.42,0c-0.181,0.189-0.29,0.45-0.29,0.71s0.109,0.52,0.29,0.71C26.479,23.873,26.74,23.984,27,23.984z"/>
+                            <path d="M32,29.984H22c-0.553,0-1,0.447-1,1s0.447,1,1,1h10c0.553,0,1-0.447,1-1S32.553,29.984,32,29.984z"/>
+                            <path d="M18,31.984c0.27,0,0.52-0.11,0.71-0.29c0.18-0.19,0.29-0.45,0.29-0.71s-0.11-0.521-0.29-0.71c-0.38-0.37-1.061-0.37-1.42,0c-0.181,0.189-0.29,0.45-0.29,0.71s0.1,0.52,0.29,0.71C17.47,31.873,17.729,31.984,18,31.984z"/>
+                            <path d="M42,23.984c0.26,0,0.52-0.11,0.71-0.29c0.18-0.19,0.29-0.45,0.29-0.71s-0.11-0.521-0.29-0.71c-0.38-0.37-1.04-0.37-1.42,0c-0.181,0.189-0.29,0.439-0.29,0.71c0,0.27,0.109,0.52,0.29,0.71C41.479,23.873,41.729,23.984,42,23.984z"/>
+                            <polygon points="0,27.52 0,58.645 20.354,42.988 	"/>
+                            <polygon points="22.34,43.984 1.54,59.984 58.46,59.984 37.66,43.984 	"/>
+                            <path d="M7.902,30.986l13.747,10.998h16.701l13.747-10.998l6.992-5.286L54,20.962V8.984H41.135l-8.593-8c-1.385-1.289-3.698-1.29-5.085,0.001l-8.592,7.999H6v11.978l-5.09,4.738L7.902,30.986z M8,10.984h8.717h26.566H52V19.1v9.403l-14.351,11.48H22.351L8,28.503V19.1V10.984z"/>
+                            <polygon points="39.646,42.988 60,58.645 60,27.52 	"/>
+                        </g>
+                    </svg>
+                </div>
+                <div class="contact-us__description">
+                    <h2>{{ homeStrings['contact_us'] }}</h2>
+                    <p>{{ homeStrings['questions_contact_us'] }}</p>
+                </div>
+                <a href="mailto:team@phalconphp.com">{{ homeStrings['write_to_us_now'] }}</a>
+            </div>
+        </div>
+    </div>
+</section>
