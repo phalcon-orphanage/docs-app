@@ -17,10 +17,35 @@ app:
 include:
   - _redirects
 
+#kramdown:
+#  input: GFM
+#  syntax_highlighter_opts:
+#    disable: true
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
 kramdown:
   input: GFM
-  syntax_highlighter_opts:
-    disable: true
+  syntax_highlighter: rouge
+  hard_wrap: false
+  auto_ids: true
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed
+
 
 exclude:
   - vendor
