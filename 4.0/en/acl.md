@@ -3,9 +3,6 @@ layout: article
 language: 'en'
 version: '4.0'
 ---
-##### This article reflects v4.0 and has not yet been revised
-{:.alert .alert-danger}
-
 <a name='overview'></a>
 # Access Control Lists (ACL)
 [Phalcon\Acl](api/Phalcon_Acl) provides an easy and lightweight management of ACLs as well as the permissions attached to them. [Access Control Lists](https://en.wikipedia.org/wiki/Access_control_list) (ACL) allow an application to control access to its areas and the underlying objects from requests. 
