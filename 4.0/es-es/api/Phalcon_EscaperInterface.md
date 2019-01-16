@@ -1,9 +1,8 @@
----
-layout: article
-language: 'es-es'
-version: '4.0'
-title: 'Phalcon\EscaperInterface'
----
+* * *
+
+layout: article language: 'es-es' version: '4.0' title: 'Phalcon\EscaperInterface'
+
+* * *
 
 # Interface **Phalcon\EscaperInterface**
 

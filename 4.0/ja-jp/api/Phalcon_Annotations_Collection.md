@@ -4,14 +4,13 @@ language: 'ja-jp'
 version: '4.0'
 title: 'Phalcon\Annotations\Collection'
 ---
-
 # Class **Phalcon\Annotations\Collection**
 
 *implements* [Iterator](https://php.net/manual/en/class.iterator.php), [Traversable](https://php.net/manual/en/class.traversable.php), [Countable](https://php.net/manual/en/class.countable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/annotations/collection.zep" class="btn btn-default btn-sm">GitHub上のソース</a>
 
-アノテーションのコレクションを表します。このクラスはアノテーションのグループを簡単に走査できます。
+Represents a collection of annotations. This class allows to traverse a group of annotations easily
 
 ```php
 <?php
@@ -43,7 +42,7 @@ public **rewind** ()
 
 内部のイテレータを巻き戻します。
 
-public [Phalcon\Annotations\Annotation](api/Phalcon_Annotations_Annotation) **current** ()
+public [Phalcon\Annotations\Annotation](Phalcon_Annotations_Annotation) **current** ()
 
 イテレータ中の現在のアノテーションを返します。
 

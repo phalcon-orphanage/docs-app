@@ -1,9 +1,8 @@
----
-layout: article
-language: 'uk-ua'
-version: '4.0'
-title: 'Phalcon\Translate\AdapterInterface'
----
+* * *
+
+layout: article language: 'uk-ua' version: '4.0' title: 'Phalcon\Translate\AdapterInterface'
+
+* * *
 
 # Interface **Phalcon\Translate\AdapterInterface**
 

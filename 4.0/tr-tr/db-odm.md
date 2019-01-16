@@ -3,8 +3,7 @@ layout: article
 language: 'tr-tr'
 version: '4.0'
 ---
-
-##### This article reflects v4.0 and has not yet been revised
+##### This article reflects v3.4 and has not yet been revised
 
 {:.alert .alert-danger}
 
@@ -702,7 +701,7 @@ Another type of events is available when the data validation process finds any i
 
 <a name='ids-vs-primary-keys'></a>
 
-## Örtülü Kimliklere karşılık Öncelikli Kullanıcı Anahtarları
+## Implicit Ids vs. User Primary Keys
 
 By default [Phalcon\Mvc\Collection](api/Phalcon_Mvc_Collection) assumes that the `_id` attribute is automatically generated using [MongoIds](https://www.php.net/manual/en/class.mongoid.php).
 

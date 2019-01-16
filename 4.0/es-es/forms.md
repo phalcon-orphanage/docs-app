@@ -3,8 +3,7 @@ layout: article
 language: 'es-es'
 version: '4.0'
 ---
-
-##### This article reflects v4.0 and has not yet been revised
+##### This article reflects v3.4 and has not yet been revised
 
 {:.alert .alert-danger}
 
@@ -648,7 +647,7 @@ class MyElement extends Element
 {
     public function render($attributes = null)
     {
-        $html = // ... Producir algún HTML
+        $html = // ... Produce some HTML
 
         return $html;
     }

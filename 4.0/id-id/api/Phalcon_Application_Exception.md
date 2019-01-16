@@ -4,10 +4,9 @@ language: 'id-id'
 version: '4.0'
 title: 'Phalcon\Application\Exception'
 ---
-
 # Class **Phalcon\Application\Exception**
 
-*extends* class [Phalcon\Exception](api/Phalcon_Exception)
+*extends* class [Phalcon\Exception](Phalcon_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

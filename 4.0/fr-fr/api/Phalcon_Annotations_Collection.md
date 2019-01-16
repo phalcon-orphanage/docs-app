@@ -4,7 +4,6 @@ language: 'fr-fr'
 version: '4.0'
 title: 'Phalcon\Annotations\Collection'
 ---
-
 # Class **Phalcon\Annotations\Collection**
 
 *implements* [Iterator](https://php.net/manual/en/class.iterator.php), [Traversable](https://php.net/manual/en/class.traversable.php), [Countable](https://php.net/manual/en/class.countable.php)
@@ -43,7 +42,7 @@ public **rewind** ()
 
 Rewinds the internal iterator
 
-public [Phalcon\Annotations\Annotation](api/Phalcon_Annotations_Annotation) **current** ()
+public [Phalcon\Annotations\Annotation](Phalcon_Annotations_Annotation) **current** ()
 
 Returns the current annotation in the iterator
 

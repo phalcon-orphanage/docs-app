@@ -1,9 +1,8 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Events\EventsAwareInterface'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Events\EventsAwareInterface'
+
+* * *
 
 # Interface **Phalcon\Events\EventsAwareInterface**
 
@@ -11,7 +10,7 @@ title: 'Phalcon\Events\EventsAwareInterface'
 
 ## 方法
 
-abstract public **setEventsManager** ([Phalcon\Events\ManagerInterface](api/Phalcon_Events_ManagerInterface) $eventsManager)
+abstract public **setEventsManager** ([Phalcon\Events\ManagerInterface](Phalcon_Events_ManagerInterface) $eventsManager)
 
 ...
 

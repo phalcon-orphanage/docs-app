@@ -1,9 +1,8 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Cli\TaskInterface'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Cli\TaskInterface'
+
+* * *
 
 # Interface **Phalcon\Cli\TaskInterface**
 

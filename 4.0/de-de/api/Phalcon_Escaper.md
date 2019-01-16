@@ -1,13 +1,12 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Escaper'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Escaper'
+
+* * *
 
 # Class **Phalcon\Escaper**
 
-*implements* [Phalcon\EscaperInterface](api/Phalcon_EscaperInterface)
+*implements* [Phalcon\EscaperInterface](Phalcon_EscaperInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/escaper.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

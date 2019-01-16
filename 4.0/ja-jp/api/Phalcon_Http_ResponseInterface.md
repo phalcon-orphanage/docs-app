@@ -1,9 +1,8 @@
----
-layout: article
-language: 'ja-jp'
-version: '4.0'
-title: 'Phalcon\Http\ResponseInterface'
----
+* * *
+
+layout: article language: 'ja-jp' version: '4.0' title: 'Phalcon\Http\ResponseInterface'
+
+* * *
 
 # Interface **Phalcon\Http\ResponseInterface**
 

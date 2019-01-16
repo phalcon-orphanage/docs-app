@@ -1,9 +1,8 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Events\EventInterface'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Events\EventInterface'
+
+* * *
 
 # Interface **Phalcon\Events\EventInterface**
 

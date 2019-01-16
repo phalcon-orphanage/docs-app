@@ -4,7 +4,6 @@ language: 'de-de'
 version: '4.0'
 title: 'Phalcon\Cache\FrontendInterface'
 ---
-
 # Interface **Phalcon\Cache\FrontendInterface**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cache/frontendinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>

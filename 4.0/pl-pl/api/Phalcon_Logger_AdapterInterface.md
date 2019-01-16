@@ -1,9 +1,8 @@
----
-layout: article
-language: 'pl-pl'
-version: '4.0'
-title: 'Phalcon\Logger\AdapterInterface'
----
+* * *
+
+layout: article language: 'pl-pl' version: '4.0' title: 'Phalcon\Logger\AdapterInterface'
+
+* * *
 
 # Interface **Phalcon\Logger\AdapterInterface**
 
@@ -11,7 +10,7 @@ title: 'Phalcon\Logger\AdapterInterface'
 
 ## Metody
 
-abstract public **setFormatter** ([Phalcon\Logger\FormatterInterface](api/Phalcon_Logger_FormatterInterface) $formatter)
+abstract public **setFormatter** ([Phalcon\Logger\FormatterInterface](/4.0/en/api/Phalcon_Logger_FormatterInterface) $formatter)
 
 ...
 

@@ -1,13 +1,12 @@
----
-layout: article
-language: 'cs-cz'
-version: '4.0'
-title: 'Phalcon\Crypt\Mismatch'
----
+* * *
+
+layout: article language: 'cs-cz' version: '4.0' title: 'Phalcon\Crypt\Mismatch'
+
+* * *
 
 # Class **Phalcon\Crypt\Mismatch**
 
-*extends* class [Phalcon\Crypt\Exception](api/Phalcon_Crypt_Exception)
+*extends* class [Phalcon\Crypt\Exception](Phalcon_Crypt_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

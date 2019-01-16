@@ -1,9 +1,8 @@
----
-layout: article
-language: 'cs-cz'
-version: '4.0'
-title: 'Phalcon\Filter\UserFilterInterface'
----
+* * *
+
+layout: article language: 'cs-cz' version: '4.0' title: 'Phalcon\Filter\UserFilterInterface'
+
+* * *
 
 # Interface **Phalcon\Filter\UserFilterInterface**
 

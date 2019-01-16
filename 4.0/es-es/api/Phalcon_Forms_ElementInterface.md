@@ -1,9 +1,8 @@
----
-layout: article
-language: 'es-es'
-version: '4.0'
-title: 'Phalcon\Forms\ElementInterface'
----
+* * *
+
+layout: article language: 'es-es' version: '4.0' title: 'Phalcon\Forms\ElementInterface'
+
+* * *
 
 # Interface **Phalcon\Forms\ElementInterface**
 
@@ -11,7 +10,7 @@ title: 'Phalcon\Forms\ElementInterface'
 
 ## Métodos
 
-abstract public **setForm** ([Phalcon\Forms\Form](api/Phalcon_Forms_Form) $form)
+abstract public **setForm** ([Phalcon\Forms\Form](Phalcon_Forms_Form) $form)
 
 ...
 
@@ -43,7 +42,7 @@ abstract public **addValidators** (*array* $validators, [*mixed* $merge])
 
 ...
 
-abstract public **addValidator** ([Phalcon\Validation\ValidatorInterface](api/Phalcon_Validation_ValidatorInterface) $validator)
+abstract public **addValidator** ([Phalcon\Validation\ValidatorInterface](Phalcon_Validation_ValidatorInterface) $validator)
 
 ...
 
@@ -119,11 +118,11 @@ abstract public **hasMessages** ()
 
 ...
 
-abstract public **setMessages** ([Phalcon\Validation\Message\Group](api/Phalcon_Validation_Message_Group) $group)
+abstract public **setMessages** ([Phalcon\Validation\Message\Group](Phalcon_Validation_Message_Group) $group)
 
 ...
 
-abstract public **appendMessage** ([Phalcon\Validation\MessageInterface](api/Phalcon_Validation_MessageInterface) $message)
+abstract public **appendMessage** ([Phalcon\Validation\MessageInterface](Phalcon_Validation_MessageInterface) $message)
 
 ...
 

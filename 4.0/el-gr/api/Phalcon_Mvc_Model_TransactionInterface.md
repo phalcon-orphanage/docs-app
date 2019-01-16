@@ -1,9 +1,8 @@
----
-layout: article
-language: 'el-gr'
-version: '4.0'
-title: 'Phalcon\Mvc\Model\TransactionInterface'
----
+* * *
+
+layout: article language: 'el-gr' version: '4.0' title: 'Phalcon\Mvc\Model\TransactionInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\Model\TransactionInterface**
 
@@ -11,7 +10,7 @@ title: 'Phalcon\Mvc\Model\TransactionInterface'
 
 ## Methods
 
-abstract public **setTransactionManager** ([Phalcon\Mvc\Model\Transaction\ManagerInterface](api/Phalcon_Mvc_Model_Transaction_ManagerInterface) $manager)
+abstract public **setTransactionManager** ([Phalcon\Mvc\Model\Transaction\ManagerInterface](Phalcon_Mvc_Model_Transaction_ManagerInterface) $manager)
 
 ...
 
@@ -51,6 +50,6 @@ abstract public **isValid** ()
 
 ...
 
-abstract public **setRollbackedRecord** ([Phalcon\Mvc\ModelInterface](api/Phalcon_Mvc_ModelInterface) $record)
+abstract public **setRollbackedRecord** ([Phalcon\Mvc\ModelInterface](Phalcon_Mvc_ModelInterface) $record)
 
 ...

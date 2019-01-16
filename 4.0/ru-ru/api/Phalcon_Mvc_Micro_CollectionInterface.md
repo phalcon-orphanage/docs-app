@@ -4,7 +4,6 @@ language: 'ru-ru'
 version: '4.0'
 title: 'Phalcon\Mvc\Micro\CollectionInterface'
 ---
-
 # Interface **Phalcon\Mvc\Micro\CollectionInterface**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/micro/collectioninterface.zep" class="btn btn-default btn-sm">Исходный код на GitHub</a>

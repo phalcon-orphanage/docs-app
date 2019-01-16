@@ -1,9 +1,8 @@
----
-layout: article
-language: 'fr-fr'
-version: '4.0'
-title: 'Phalcon\CryptInterface'
----
+* * *
+
+layout: article language: 'fr-fr' version: '4.0' title: 'Phalcon\CryptInterface'
+
+* * *
 
 # Interface **Phalcon\CryptInterface**
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'cs-cz'
-version: '4.0'
-title: 'Phalcon\Db\Profiler\Item'
----
+* * *
+
+layout: article language: 'cs-cz' version: '4.0' title: 'Phalcon\Db\Profiler\Item'
+
+* * *
 
 # Class **Phalcon\Db\Profiler\Item**
 

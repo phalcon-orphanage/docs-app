@@ -1,9 +1,8 @@
----
-layout: article
-language: 'pl-pl'
-version: '4.0'
-title: 'Phalcon\Debug'
----
+* * *
+
+layout: article language: 'pl-pl' version: '4.0' title: 'Phalcon\Debug'
+
+* * *
 
 # Class **Phalcon\Debug**
 

@@ -4,10 +4,9 @@ language: 'id-id'
 version: '4.0'
 title: 'Phalcon\Cache\Frontend\Json'
 ---
-
 # Class **Phalcon\Cache\Frontend\Json**
 
-*implements* [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface)
+*implements* [Phalcon\Cache\FrontendInterface](Phalcon_Cache_FrontendInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cache/frontend/json.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

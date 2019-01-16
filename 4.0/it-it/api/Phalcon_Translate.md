@@ -1,9 +1,8 @@
----
-layout: article
-language: 'it-it'
-version: '4.0'
-title: 'Phalcon\Translate'
----
+* * *
+
+layout: article language: 'it-it' version: '4.0' title: 'Phalcon\Translate'
+
+* * *
 
 # Abstract class **Phalcon\Translate**
 

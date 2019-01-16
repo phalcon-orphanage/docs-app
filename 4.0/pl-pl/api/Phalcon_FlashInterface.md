@@ -1,9 +1,8 @@
----
-layout: article
-language: 'pl-pl'
-version: '4.0'
-title: 'Phalcon\FlashInterface'
----
+* * *
+
+layout: article language: 'pl-pl' version: '4.0' title: 'Phalcon\FlashInterface'
+
+* * *
 
 # Interface **Phalcon\FlashInterface**
 

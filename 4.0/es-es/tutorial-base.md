@@ -3,8 +3,7 @@ layout: article
 language: 'es-es'
 version: '4.0'
 ---
-
-##### This article reflects v4.0 and has not yet been revised
+##### This article reflects v3.4 and has not yet been revised
 
 {:.alert .alert-danger}
 
@@ -133,7 +132,7 @@ use Phalcon\Di\FactoryDefault;
 
 // ...
 
-// Crear un DI
+// Create a DI
 $di = new FactoryDefault();
 ```
 

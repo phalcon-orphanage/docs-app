@@ -1,9 +1,8 @@
----
-layout: article
-language: 'fa-ir'
-version: '4.0'
-title: 'Phalcon\Paginator\AdapterInterface'
----
+* * *
+
+layout: article language: 'fa-ir' version: '4.0' title: 'Phalcon\Paginator\AdapterInterface'
+
+* * *
 
 # Interface **Phalcon\Paginator\AdapterInterface**
 

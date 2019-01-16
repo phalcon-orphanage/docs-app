@@ -1,9 +1,8 @@
----
-layout: article
-language: 'pl-pl'
-version: '4.0'
-title: 'Phalcon\Image'
----
+* * *
+
+layout: article language: 'pl-pl' version: '4.0' title: 'Phalcon\Image'
+
+* * *
 
 # Class **Phalcon\Image**
 

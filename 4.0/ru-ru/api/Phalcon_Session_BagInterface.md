@@ -4,7 +4,6 @@ language: 'ru-ru'
 version: '4.0'
 title: 'Phalcon\Session\BagInterface'
 ---
-
 # Interface **Phalcon\Session\BagInterface**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/session/baginterface.zep" class="btn btn-default btn-sm">Исходный код на GitHub</a>

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Config'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Config'
+
+* * *
 
 # Class **Phalcon\Config**
 
@@ -117,7 +116,7 @@ unset($config["database"]);
 
 ```
 
-public **merge** ([Phalcon\Config](api/Phalcon_Config) $config)
+public **merge** ([Phalcon\Config](Phalcon_Config) $config)
 
 Merges a configuration into the current one
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'fa-ir'
-version: '4.0'
-title: 'Phalcon\DispatcherInterface'
----
+* * *
+
+layout: article language: 'fa-ir' version: '4.0' title: 'Phalcon\DispatcherInterface'
+
+* * *
 
 # Interface **Phalcon\DispatcherInterface**
 

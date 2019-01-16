@@ -1,9 +1,8 @@
----
-layout: article
-language: 'tr-tr'
-version: '4.0'
-title: 'Phalcon\Mvc\Model\Transaction\ManagerInterface'
----
+* * *
+
+layout: article language: 'tr-tr' version: '4.0' title: 'Phalcon\Mvc\Model\Transaction\ManagerInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\Model\Transaction\ManagerInterface**
 
@@ -31,11 +30,11 @@ abstract public **rollback** ([*mixed* $collect])
 
 ...
 
-abstract public **notifyRollback** ([Phalcon\Mvc\Model\TransactionInterface](api/Phalcon_Mvc_Model_TransactionInterface) $transaction)
+abstract public **notifyRollback** ([Phalcon\Mvc\Model\TransactionInterface](/4.0/en/api/Phalcon_Mvc_Model_TransactionInterface) $transaction)
 
 ...
 
-abstract public **notifyCommit** ([Phalcon\Mvc\Model\TransactionInterface](api/Phalcon_Mvc_Model_TransactionInterface) $transaction)
+abstract public **notifyCommit** ([Phalcon\Mvc\Model\TransactionInterface](/4.0/en/api/Phalcon_Mvc_Model_TransactionInterface) $transaction)
 
 ...
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'ru-ru'
-version: '4.0'
-title: 'Phalcon\DiInterface'
----
+* * *
+
+layout: article language: 'ru-ru' version: '4.0' title: 'Phalcon\DiInterface'
+
+* * *
 
 # Interface **Phalcon\DiInterface**
 
@@ -37,7 +36,7 @@ abstract public **getShared** (*mixed* $name, [*mixed* $parameters])
 
 ...
 
-abstract public **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](api/Phalcon_Di_ServiceInterface) $rawDefinition)
+abstract public **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](Phalcon_Di_ServiceInterface) $rawDefinition)
 
 ...
 
@@ -61,7 +60,7 @@ abstract public **getServices** ()
 
 ...
 
-abstract public static **setDefault** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+abstract public static **setDefault** ([Phalcon\DiInterface](Phalcon_DiInterface) $dependencyInjector)
 
 ...
 

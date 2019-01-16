@@ -1,13 +1,12 @@
----
-layout: article
-language: 'it-it'
-version: '4.0'
-title: 'Phalcon\Crypt\Exception'
----
+* * *
+
+layout: article language: 'it-it' version: '4.0' title: 'Phalcon\Crypt\Exception'
+
+* * *
 
 # Class **Phalcon\Crypt\Exception**
 
-*extends* class [Phalcon\Exception](api/Phalcon_Exception)
+*extends* class [Phalcon\Exception](Phalcon_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

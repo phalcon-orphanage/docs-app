@@ -4,7 +4,6 @@ language: 'ru-ru'
 version: '4.0'
 title: 'Phalcon\ValidationInterface'
 ---
-
 # Interface **Phalcon\ValidationInterface**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/validationinterface.zep" class="btn btn-default btn-sm">Исходный код на GitHub</a>
@@ -15,11 +14,11 @@ abstract public **validate** ([*mixed* $data], [*mixed* $entity])
 
 ...
 
-abstract public **add** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](api/Phalcon_Validation_ValidatorInterface) $validator)
+abstract public **add** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](Phalcon_Validation_ValidatorInterface) $validator)
 
 ...
 
-abstract public **rule** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](api/Phalcon_Validation_ValidatorInterface) $validator)
+abstract public **rule** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](Phalcon_Validation_ValidatorInterface) $validator)
 
 ...
 
@@ -63,7 +62,7 @@ abstract public **getLabel** (*mixed* $field)
 
 ...
 
-abstract public **appendMessage** ([Phalcon\Validation\MessageInterface](api/Phalcon_Validation_MessageInterface) $message)
+abstract public **appendMessage** ([Phalcon\Validation\MessageInterface](Phalcon_Validation_MessageInterface) $message)
 
 ...
 

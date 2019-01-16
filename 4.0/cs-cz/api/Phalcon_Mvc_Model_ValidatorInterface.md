@@ -1,9 +1,8 @@
----
-layout: article
-language: 'cs-cz'
-version: '4.0'
-title: 'Phalcon\Mvc\Model\ValidatorInterface'
----
+* * *
+
+layout: article language: 'cs-cz' version: '4.0' title: 'Phalcon\Mvc\Model\ValidatorInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\Model\ValidatorInterface**
 
@@ -15,6 +14,6 @@ abstract public **getMessages** ()
 
 ...
 
-abstract public **validate** ([Phalcon\Mvc\EntityInterface](api/Phalcon_Mvc_EntityInterface) $record)
+abstract public **validate** ([Phalcon\Mvc\EntityInterface](Phalcon_Mvc_EntityInterface) $record)
 
 ...

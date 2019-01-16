@@ -1,9 +1,8 @@
----
-layout: article
-language: 'pl-pl'
-version: '4.0'
-title: 'Phalcon\Mvc\View\EngineInterface'
----
+* * *
+
+layout: article language: 'pl-pl' version: '4.0' title: 'Phalcon\Mvc\View\EngineInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\View\EngineInterface**
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'ru-ru'
-version: '4.0'
-title: 'Phalcon\Di\InjectionAwareInterface'
----
+* * *
+
+layout: article language: 'ru-ru' version: '4.0' title: 'Phalcon\Di\InjectionAwareInterface'
+
+* * *
 
 # Interface **Phalcon\Di\InjectionAwareInterface**
 
@@ -11,7 +10,7 @@ title: 'Phalcon\Di\InjectionAwareInterface'
 
 ## Methods
 
-abstract public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+abstract public **setDI** ([Phalcon\DiInterface](Phalcon_DiInterface) $dependencyInjector)
 
 ...
 

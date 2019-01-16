@@ -1,9 +1,8 @@
----
-layout: article
-language: 'tr-tr'
-version: '4.0'
-title: 'Phalcon\Db\IndexInterface'
----
+* * *
+
+layout: article language: 'tr-tr' version: '4.0' title: 'Phalcon\Db\IndexInterface'
+
+* * *
 
 # Interface **Phalcon\Db\IndexInterface**
 

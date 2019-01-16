@@ -6,9 +6,9 @@ title: 'Phalcon\Translate\Factory'
 ---
 # Class **Phalcon\Translate\Factory**
 
-*extends* abstract class [Phalcon\Factory](api/Phalcon_Factory)
+*extends* abstract class [Phalcon\Factory](Phalcon_Factory)
 
-*implements* [Phalcon\FactoryInterface](api/Phalcon_FactoryInterface)
+*implements* [Phalcon\FactoryInterface](Phalcon_FactoryInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/translate/factory.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -32,8 +32,8 @@ $translate = Factory::load($options);
 
 ## Metody
 
-public static **load** ([Phalcon\Config](api/Phalcon_Config) | *array* $config)
+public static **load** ([Phalcon\Config](Phalcon_Config) | *array* $config)
 
-protected static **loadClass** (*mixed* $namespace, *mixed* $config) inherited from [Phalcon\Factory](api/Phalcon_Factory)
+protected static **loadClass** (*mixed* $namespace, *mixed* $config) inherited from [Phalcon\Factory](Phalcon_Factory)
 
 ...

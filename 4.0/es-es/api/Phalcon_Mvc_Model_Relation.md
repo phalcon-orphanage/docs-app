@@ -4,10 +4,9 @@ language: 'es-es'
 version: '4.0'
 title: 'Phalcon\Mvc\Model\Relation'
 ---
-
 # Class **Phalcon\Mvc\Model\Relation**
 
-*implements* [Phalcon\Mvc\Model\RelationInterface](api/Phalcon_Mvc_Model_RelationInterface)
+*implements* [Phalcon\Mvc\Model\RelationInterface](Phalcon_Mvc_Model_RelationInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/model/relation.zep" class="btn btn-default btn-sm">Código fuente en GitHub</a>
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Db\ReferenceInterface'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Db\ReferenceInterface'
+
+* * *
 
 # Interface **Phalcon\Db\ReferenceInterface**
 

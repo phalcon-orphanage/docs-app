@@ -1,9 +1,8 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Http\CookieInterface'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Http\CookieInterface'
+
+* * *
 
 # Interface **Phalcon\Http\CookieInterface**
 

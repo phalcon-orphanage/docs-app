@@ -3,8 +3,7 @@ layout: article
 language: 'ja-jp'
 version: '4.0'
 ---
-
-##### This article reflects v4.0 and has not yet been revised
+##### This article reflects v3.4 and has not yet been revised
 
 {:.alert .alert-danger}
 
@@ -34,7 +33,7 @@ This component makes use of adapters to encapsulate specific database system det
 
 <a name='factory'></a>
 
-Loads PDO Adapter class using `adapter` option. For example:
+Loads PDO Adapter class using `adapter` option. 例えば:
 
 ```php
 <?php

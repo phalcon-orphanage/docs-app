@@ -1,13 +1,12 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Di'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Di'
+
+* * *
 
 # Class **Phalcon\Di**
 
-*implements* [Phalcon\DiInterface](api/Phalcon_DiInterface), [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
+*implements* [Phalcon\DiInterface](Phalcon_DiInterface), [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/di.zep" class="btn btn-default btn-sm">源码在GitHub</a>
 
@@ -48,7 +47,7 @@ public **__construct** ()
 
 Phalcon\Di constructor
 
-public **setInternalEventsManager** ([Phalcon\Events\ManagerInterface](api/Phalcon_Events_ManagerInterface) $eventsManager)
+public **setInternalEventsManager** ([Phalcon\Events\ManagerInterface](Phalcon_Events_ManagerInterface) $eventsManager)
 
 Sets the internal event manager
 
@@ -72,7 +71,7 @@ public **attempt** (*mixed* $name, *mixed* $definition, [*mixed* $shared])
 
 Attempts to register a service in the services container Only is successful if a service hasn't been registered previously with the same name
 
-public **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](api/Phalcon_Di_ServiceInterface) $rawDefinition)
+public **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](Phalcon_Di_ServiceInterface) $rawDefinition)
 
 Sets a service using a raw Phalcon\Di\Service definition
 
@@ -138,7 +137,7 @@ public **__call** (*mixed* $method, [*mixed* $arguments])
 
 Magic method to get or set services using setters/getters
 
-public **register** ([Phalcon\Di\ServiceProviderInterface](api/Phalcon_Di_ServiceProviderInterface) $provider)
+public **register** ([Phalcon\Di\ServiceProviderInterface](Phalcon_Di_ServiceProviderInterface) $provider)
 
 Registers a service provider.
 
@@ -160,7 +159,7 @@ class SomeServiceProvider implements ServiceProviderInterface
 
 ```
 
-public static **setDefault** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+public static **setDefault** ([Phalcon\DiInterface](Phalcon_DiInterface) $dependencyInjector)
 
 Set a default dependency injection container to be obtained into static methods
 
@@ -247,6 +246,6 @@ return [
 
 ```
 
-protected **loadFromConfig** ([Phalcon\Config](api/Phalcon_Config) $config)
+protected **loadFromConfig** ([Phalcon\Config](Phalcon_Config) $config)
 
 Loads services from a Config object.

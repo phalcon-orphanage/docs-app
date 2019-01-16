@@ -1,9 +1,8 @@
----
-layout: article
-language: 'it-it'
-version: '4.0'
-title: 'Phalcon\Db\ColumnInterface'
----
+* * *
+
+layout: article language: 'it-it' version: '4.0' title: 'Phalcon\Db\ColumnInterface'
+
+* * *
 
 # Interface **Phalcon\Db\ColumnInterface**
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Paginator\AdapterInterface'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Paginator\AdapterInterface'
+
+* * *
 
 # Interface **Phalcon\Paginator\AdapterInterface**
 

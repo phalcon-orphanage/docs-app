@@ -1,9 +1,8 @@
----
-layout: article
-language: 'es-es'
-version: '4.0'
-title: 'Phalcon\Cache\Multiple'
----
+* * *
+
+layout: article language: 'es-es' version: '4.0' title: 'Phalcon\Cache\Multiple'
+
+* * *
 
 # Class **Phalcon\Cache\Multiple**
 
@@ -72,11 +71,11 @@ $cache->save("my-key", $data);
 
 ## Métodos
 
-public **__construct** ([[Phalcon\Cache\BackendInterface](api/Phalcon_Cache_BackendInterface) $backends])
+public **__construct** ([[Phalcon\Cache\BackendInterface](Phalcon_Cache_BackendInterface) $backends])
 
 Phalcon\Cache\Multiple constructor
 
-public **push** ([Phalcon\Cache\BackendInterface](api/Phalcon_Cache_BackendInterface) $backend)
+public **push** ([Phalcon\Cache\BackendInterface](Phalcon_Cache_BackendInterface) $backend)
 
 Adds a backend
 

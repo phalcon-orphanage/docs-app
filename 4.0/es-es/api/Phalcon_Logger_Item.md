@@ -1,9 +1,8 @@
----
-layout: article
-language: 'es-es'
-version: '4.0'
-title: 'Phalcon\Logger\Item'
----
+* * *
+
+layout: article language: 'es-es' version: '4.0' title: 'Phalcon\Logger\Item'
+
+* * *
 
 # Class **Phalcon\Logger\Item**
 

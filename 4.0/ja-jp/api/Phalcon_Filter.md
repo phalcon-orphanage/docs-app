@@ -1,13 +1,12 @@
----
-layout: article
-language: 'ja-jp'
-version: '4.0'
-title: 'Phalcon\Filter'
----
+* * *
+
+layout: article language: 'ja-jp' version: '4.0' title: 'Phalcon\Filter'
+
+* * *
 
 # Class **Phalcon\Filter**
 
-*implements* [Phalcon\FilterInterface](api/Phalcon_FilterInterface)
+*implements* [Phalcon\FilterInterface](Phalcon_FilterInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/filter.zep" class="btn btn-default btn-sm">GitHub上のソース</a>
 

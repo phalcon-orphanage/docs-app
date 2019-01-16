@@ -1,9 +1,8 @@
----
-layout: article
-language: 'it-it'
-version: '4.0'
-title: 'Phalcon\Session\BagInterface'
----
+* * *
+
+layout: article language: 'it-it' version: '4.0' title: 'Phalcon\Session\BagInterface'
+
+* * *
 
 # Interface **Phalcon\Session\BagInterface**
 

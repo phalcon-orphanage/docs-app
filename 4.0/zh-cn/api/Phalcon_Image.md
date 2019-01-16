@@ -1,9 +1,8 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Image'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Image'
+
+* * *
 
 # Class **Phalcon\Image**
 

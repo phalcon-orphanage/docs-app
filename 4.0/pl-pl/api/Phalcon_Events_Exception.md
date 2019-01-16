@@ -1,13 +1,12 @@
----
-layout: article
-language: 'pl-pl'
-version: '4.0'
-title: 'Phalcon\Events\Exception'
----
+* * *
+
+layout: article language: 'pl-pl' version: '4.0' title: 'Phalcon\Events\Exception'
+
+* * *
 
 # Class **Phalcon\Events\Exception**
 
-*extends* class [Phalcon\Exception](api/Phalcon_Exception)
+*extends* class [Phalcon\Exception](Phalcon_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Validation\Message\Group'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Validation\Message\Group'
+
+* * *
 
 # Class **Phalcon\Validation\Message\Group**
 
@@ -19,7 +18,7 @@ public **__construct** ([*array* $messages])
 
 Phalcon\Validation\Message\Group constructor
 
-public [Phalcon\Validation\Message](api/Phalcon_Validation_Message) **offsetGet** (*int* $index)
+public [Phalcon\Validation\Message](Phalcon_Validation_Message) **offsetGet** (*int* $index)
 
 Gets an attribute a message using the array syntax
 
@@ -32,7 +31,7 @@ print_r(
 
 ```
 
-public **offsetSet** (*int* $index, [Phalcon\Validation\Message](api/Phalcon_Validation_Message) $message)
+public **offsetSet** (*int* $index, [Phalcon\Validation\Message](Phalcon_Validation_Message) $message)
 
 Sets an attribute using the array-syntax
 
@@ -67,7 +66,7 @@ unset($message["database"]);
 
 ```
 
-public **appendMessage** ([Phalcon\Validation\MessageInterface](api/Phalcon_Validation_MessageInterface) $message)
+public **appendMessage** ([Phalcon\Validation\MessageInterface](Phalcon_Validation_MessageInterface) $message)
 
 Appends a message to the group
 
@@ -80,7 +79,7 @@ $messages->appendMessage(
 
 ```
 
-public **appendMessages** ([Phalcon\Validation\MessageInterface](api/Phalcon_Validation_MessageInterface) $messages)
+public **appendMessages** ([Phalcon\Validation\MessageInterface](Phalcon_Validation_MessageInterface) $messages)
 
 Appends an array of messages to the group
 
@@ -119,6 +118,6 @@ public **valid** ()
 
 Check if the current message in the iterator is valid
 
-public static [Phalcon\Validation\Message\Group](api/Phalcon_Validation_Message_Group) **__set_state** (*array* $group)
+public static [Phalcon\Validation\Message\Group](Phalcon_Validation_Message_Group) **__set_state** (*array* $group)
 
 Magic __set_state helps to re-build messages variable when exporting

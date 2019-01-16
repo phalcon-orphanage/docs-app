@@ -4,7 +4,6 @@ language: 'cs-cz'
 version: '4.0'
 title: 'Phalcon\Mvc\Model\Query\Lang'
 ---
-
 # Abstract class **Phalcon\Mvc\Model\Query\Lang**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/model/query/lang.zep" class="btn btn-default btn-sm">Source on GitHub</a>

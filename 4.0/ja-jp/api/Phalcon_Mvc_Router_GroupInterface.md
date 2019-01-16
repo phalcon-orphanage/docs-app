@@ -1,9 +1,8 @@
----
-layout: article
-language: 'ja-jp'
-version: '4.0'
-title: 'Phalcon\Mvc\Router\GroupInterface'
----
+* * *
+
+layout: article language: 'ja-jp' version: '4.0' title: 'Phalcon\Mvc\Router\GroupInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\Router\GroupInterface**
 

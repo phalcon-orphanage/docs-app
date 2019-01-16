@@ -1,13 +1,12 @@
----
-layout: article
-language: 'el-gr'
-version: '4.0'
-title: 'Phalcon\Session\Exception'
----
+* * *
+
+layout: article language: 'el-gr' version: '4.0' title: 'Phalcon\Session\Exception'
+
+* * *
 
 # Class **Phalcon\Session\Exception**
 
-*extends* class [Phalcon\Exception](api/Phalcon_Exception)
+*extends* class [Phalcon\Exception](Phalcon_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

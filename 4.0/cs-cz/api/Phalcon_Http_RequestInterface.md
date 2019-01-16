@@ -1,9 +1,8 @@
----
-layout: article
-language: 'cs-cz'
-version: '4.0'
-title: 'Phalcon\Http\RequestInterface'
----
+* * *
+
+layout: article language: 'cs-cz' version: '4.0' title: 'Phalcon\Http\RequestInterface'
+
+* * *
 
 # Interface **Phalcon\Http\RequestInterface**
 

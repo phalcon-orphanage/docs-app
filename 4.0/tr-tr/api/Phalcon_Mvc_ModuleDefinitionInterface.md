@@ -1,9 +1,8 @@
----
-layout: article
-language: 'tr-tr'
-version: '4.0'
-title: 'Phalcon\Mvc\ModuleDefinitionInterface'
----
+* * *
+
+layout: article language: 'tr-tr' version: '4.0' title: 'Phalcon\Mvc\ModuleDefinitionInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\ModuleDefinitionInterface**
 
@@ -11,10 +10,10 @@ title: 'Phalcon\Mvc\ModuleDefinitionInterface'
 
 ## Methods
 
-abstract public **registerAutoloaders** ([[Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector])
+abstract public **registerAutoloaders** ([[Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector])
 
 ...
 
-abstract public **registerServices** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+abstract public **registerServices** ([Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector)
 
 ...

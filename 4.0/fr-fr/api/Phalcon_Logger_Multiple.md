@@ -1,9 +1,8 @@
----
-layout: article
-language: 'fr-fr'
-version: '4.0'
-title: 'Phalcon\Logger\Multiple'
----
+* * *
+
+layout: article language: 'fr-fr' version: '4.0' title: 'Phalcon\Logger\Multiple'
+
+* * *
 
 # Class **Phalcon\Logger\Multiple**
 
@@ -25,11 +24,11 @@ public **getLogLevel** ()
 
 ...
 
-public **push** ([Phalcon\Logger\AdapterInterface](api/Phalcon_Logger_AdapterInterface) $logger)
+public **push** ([Phalcon\Logger\AdapterInterface](Phalcon_Logger_AdapterInterface) $logger)
 
 Pushes a logger to the logger tail
 
-public **setFormatter** ([Phalcon\Logger\FormatterInterface](api/Phalcon_Logger_FormatterInterface) $formatter)
+public **setFormatter** ([Phalcon\Logger\FormatterInterface](Phalcon_Logger_FormatterInterface) $formatter)
 
 Sets a global formatter
 

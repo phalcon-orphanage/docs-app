@@ -1,9 +1,8 @@
----
-layout: article
-language: 'fa-ir'
-version: '4.0'
-title: 'Phalcon\Db\ResultInterface'
----
+* * *
+
+layout: article language: 'fa-ir' version: '4.0' title: 'Phalcon\Db\ResultInterface'
+
+* * *
 
 # Interface **Phalcon\Db\ResultInterface**
 

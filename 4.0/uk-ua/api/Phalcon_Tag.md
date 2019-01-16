@@ -1,9 +1,8 @@
----
-layout: article
-language: 'uk-ua'
-version: '4.0'
-title: 'Phalcon\Tag'
----
+* * *
+
+layout: article language: 'uk-ua' version: '4.0' title: 'Phalcon\Tag'
+
+* * *
 
 # Class **Phalcon\Tag**
 
@@ -45,7 +44,7 @@ public static **renderAttributes** (*mixed* $code, *array* $attributes)
 
 Renders parameters keeping order in their HTML attributes
 
-public static **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+public static **setDI** ([Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injector container.
 

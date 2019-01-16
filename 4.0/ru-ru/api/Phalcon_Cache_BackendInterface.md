@@ -4,7 +4,6 @@ language: 'ru-ru'
 version: '4.0'
 title: 'Phalcon\Cache\BackendInterface'
 ---
-
 # Interface **Phalcon\Cache\BackendInterface**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cache/backendinterface.zep" class="btn btn-default btn-sm">Исходный код на GitHub</a>

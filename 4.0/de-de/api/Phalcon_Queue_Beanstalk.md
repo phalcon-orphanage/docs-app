@@ -1,9 +1,8 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Queue\Beanstalk'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Queue\Beanstalk'
+
+* * *
 
 # Class **Phalcon\Queue\Beanstalk**
 

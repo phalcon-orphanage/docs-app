@@ -1,9 +1,8 @@
----
-layout: article
-language: 'uk-ua'
-version: '4.0'
-title: 'Phalcon\Validation\MessageInterface'
----
+* * *
+
+layout: article language: 'uk-ua' version: '4.0' title: 'Phalcon\Validation\MessageInterface'
+
+* * *
 
 # Interface **Phalcon\Validation\MessageInterface**
 

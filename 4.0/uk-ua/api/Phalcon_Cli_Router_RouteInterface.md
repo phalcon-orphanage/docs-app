@@ -1,9 +1,8 @@
----
-layout: article
-language: 'uk-ua'
-version: '4.0'
-title: 'Phalcon\Cli\Router\RouteInterface'
----
+* * *
+
+layout: article language: 'uk-ua' version: '4.0' title: 'Phalcon\Cli\Router\RouteInterface'
+
+* * *
 
 # Interface **Phalcon\Cli\Router\RouteInterface**
 

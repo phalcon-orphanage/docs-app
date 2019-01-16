@@ -1,9 +1,8 @@
----
-layout: article
-language: 'uk-ua'
-version: '4.0'
-title: 'Phalcon\Security\Random'
----
+* * *
+
+layout: article language: 'uk-ua' version: '4.0' title: 'Phalcon\Security\Random'
+
+* * *
 
 # Class **Phalcon\Security\Random**
 

@@ -3,8 +3,7 @@ layout: article
 language: 'ja-jp'
 version: '4.0'
 ---
-
-##### This article reflects v4.0 and has not yet been revised
+##### This article reflects v3.4 and has not yet been revised
 
 {:.alert .alert-danger}
 
@@ -193,7 +192,7 @@ sites:
       to:  /home/vagrant/workspace/phalcon/public
 ```
 
-You can use the `type` parameter to specify the type of Nginx configuration for the site. For example:
+You can use the `type` parameter to specify the type of Nginx configuration for the site. 例えば:
 
 ```yaml
 sites:

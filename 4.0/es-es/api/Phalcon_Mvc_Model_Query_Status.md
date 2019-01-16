@@ -4,10 +4,9 @@ language: 'es-es'
 version: '4.0'
 title: 'Phalcon\Mvc\Model\Query\Status'
 ---
-
 # Class **Phalcon\Mvc\Model\Query\Status**
 
-*implements* [Phalcon\Mvc\Model\Query\StatusInterface](api/Phalcon_Mvc_Model_Query_StatusInterface)
+*implements* [Phalcon\Mvc\Model\Query\StatusInterface](Phalcon_Mvc_Model_Query_StatusInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/model/query/status.zep" class="btn btn-default btn-sm">Código fuente en GitHub</a>
 
@@ -37,7 +36,7 @@ if ($status->success() === true) {
 
 ## Métodos
 
-public **__construct** (*mixed* $success, [[Phalcon\Mvc\ModelInterface](api/Phalcon_Mvc_ModelInterface) $model])
+public **__construct** (*mixed* $success, [[Phalcon\Mvc\ModelInterface](Phalcon_Mvc_ModelInterface) $model])
 
 public **getModel** ()
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'pl-pl'
-version: '4.0'
-title: 'Phalcon\Db\RawValue'
----
+* * *
+
+layout: article language: 'pl-pl' version: '4.0' title: 'Phalcon\Db\RawValue'
+
+* * *
 
 # Class **Phalcon\Db\RawValue**
 

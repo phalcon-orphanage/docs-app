@@ -1,9 +1,8 @@
----
-layout: article
-language: 'ja-jp'
-version: '4.0'
-title: 'Phalcon\Mvc\ViewBaseInterface'
----
+* * *
+
+layout: article language: 'ja-jp' version: '4.0' title: 'Phalcon\Mvc\ViewBaseInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\ViewBaseInterface**
 

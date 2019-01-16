@@ -1,9 +1,8 @@
----
-layout: article
-language: 'fa-ir'
-version: '4.0'
-title: 'Phalcon\Session\AdapterInterface'
----
+* * *
+
+layout: article language: 'fa-ir' version: '4.0' title: 'Phalcon\Session\AdapterInterface'
+
+* * *
 
 # Interface **Phalcon\Session\AdapterInterface**
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'it-it'
-version: '4.0'
-title: 'Phalcon\Cache\FrontendInterface'
----
+* * *
+
+layout: article language: 'it-it' version: '4.0' title: 'Phalcon\Cache\FrontendInterface'
+
+* * *
 
 # Interface **Phalcon\Cache\FrontendInterface**
 

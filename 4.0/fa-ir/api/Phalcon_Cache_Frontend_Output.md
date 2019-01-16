@@ -1,13 +1,12 @@
----
-layout: article
-language: 'fa-ir'
-version: '4.0'
-title: 'Phalcon\Cache\Frontend\Output'
----
+* * *
+
+layout: article language: 'fa-ir' version: '4.0' title: 'Phalcon\Cache\Frontend\Output'
+
+* * *
 
 # Class **Phalcon\Cache\Frontend\Output**
 
-*implements* [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface)
+*implements* [Phalcon\Cache\FrontendInterface](Phalcon_Cache_FrontendInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cache/frontend/output.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

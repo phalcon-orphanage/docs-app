@@ -1,9 +1,8 @@
----
-layout: article
-language: 'id-id'
-version: '4.0'
-title: 'Phalcon\Forms\Manager'
----
+* * *
+
+layout: article language: 'id-id' version: '4.0' title: 'Phalcon\Forms\Manager'
+
+* * *
 
 # Class **Phalcon\Forms\Manager**
 
@@ -23,6 +22,6 @@ public **has** (*mixed* $name)
 
 Checks if a form is registered in the forms manager
 
-public **set** (*mixed* $name, [Phalcon\Forms\Form](api/Phalcon_Forms_Form) $form)
+public **set** (*mixed* $name, [Phalcon\Forms\Form](/4.0/en/api/Phalcon_Forms_Form) $form)
 
 Registers a form in the Forms Manager

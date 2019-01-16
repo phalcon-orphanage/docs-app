@@ -1,9 +1,8 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Registry'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Registry'
+
+* * *
 
 # Final class **Phalcon\Registry**
 

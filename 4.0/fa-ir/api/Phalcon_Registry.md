@@ -1,9 +1,8 @@
----
-layout: article
-language: 'fa-ir'
-version: '4.0'
-title: 'Phalcon\Registry'
----
+* * *
+
+layout: article language: 'fa-ir' version: '4.0' title: 'Phalcon\Registry'
+
+* * *
 
 # Final class **Phalcon\Registry**
 

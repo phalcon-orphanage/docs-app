@@ -1,9 +1,8 @@
----
-layout: article
-language: 'fa-ir'
-version: '4.0'
-title: 'Phalcon\Http\Response\HeadersInterface'
----
+* * *
+
+layout: article language: 'fa-ir' version: '4.0' title: 'Phalcon\Http\Response\HeadersInterface'
+
+* * *
 
 # Interface **Phalcon\Http\Response\HeadersInterface**
 

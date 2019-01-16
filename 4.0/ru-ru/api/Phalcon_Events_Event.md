@@ -1,13 +1,12 @@
----
-layout: article
-language: 'ru-ru'
-version: '4.0'
-title: 'Phalcon\Events\Event'
----
+* * *
+
+layout: article language: 'ru-ru' version: '4.0' title: 'Phalcon\Events\Event'
+
+* * *
 
 # Class **Phalcon\Events\Event**
 
-*implements* [Phalcon\Events\EventInterface](api/Phalcon_Events_EventInterface)
+*implements* [Phalcon\Events\EventInterface](Phalcon_Events_EventInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/events/event.zep" class="btn btn-default btn-sm">Исходный код на GitHub</a>
 

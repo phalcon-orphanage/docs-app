@@ -4,7 +4,6 @@ language: 'tr-tr'
 version: '4.0'
 title: 'Phalcon\Exception'
 ---
-
 # Class **Phalcon\Exception**
 
 *extends* class [Exception](https://php.net/manual/en/class.exception.php)

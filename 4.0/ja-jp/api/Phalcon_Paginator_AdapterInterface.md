@@ -1,9 +1,8 @@
----
-layout: article
-language: 'ja-jp'
-version: '4.0'
-title: 'Phalcon\Paginator\AdapterInterface'
----
+* * *
+
+layout: article language: 'ja-jp' version: '4.0' title: 'Phalcon\Paginator\AdapterInterface'
+
+* * *
 
 # Interface **Phalcon\Paginator\AdapterInterface**
 

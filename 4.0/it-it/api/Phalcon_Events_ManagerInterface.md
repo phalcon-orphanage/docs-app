@@ -1,9 +1,8 @@
----
-layout: article
-language: 'it-it'
-version: '4.0'
-title: 'Phalcon\Events\ManagerInterface'
----
+* * *
+
+layout: article language: 'it-it' version: '4.0' title: 'Phalcon\Events\ManagerInterface'
+
+* * *
 
 # Interface **Phalcon\Events\ManagerInterface**
 

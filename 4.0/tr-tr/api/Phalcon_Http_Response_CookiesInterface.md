@@ -1,9 +1,8 @@
----
-layout: article
-language: 'tr-tr'
-version: '4.0'
-title: 'Phalcon\Http\Response\CookiesInterface'
----
+* * *
+
+layout: article language: 'tr-tr' version: '4.0' title: 'Phalcon\Http\Response\CookiesInterface'
+
+* * *
 
 # Interface **Phalcon\Http\Response\CookiesInterface**
 

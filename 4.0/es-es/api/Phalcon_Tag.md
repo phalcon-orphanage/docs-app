@@ -4,7 +4,6 @@ language: 'es-es'
 version: '4.0'
 title: 'Phalcon\Tag'
 ---
-
 # Class **Phalcon\Tag**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/tag.zep" class="btn btn-default btn-sm">Código fuente en GitHub</a>
@@ -45,7 +44,7 @@ public static **renderAttributes** (*mixed* $code, *array* $attributes)
 
 Construye parámetros manteniendo el orden en sus atributos HTML
 
-public static **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+public static **setDI** ([Phalcon\DiInterface](Phalcon_DiInterface) $dependencyInjector)
 
 Define el contenedor del inyector de dependencias.
 
@@ -546,7 +545,7 @@ Antepone un texto al título del documento actual
 
 public static **getTitle** ([*mixed* $tags])
 
-Obtiene el título del documento actual. El titulo será automáticamente limpiado (escaped)
+Gets the current document title. The title will be automatically escaped.
 
 ```php
 <?php

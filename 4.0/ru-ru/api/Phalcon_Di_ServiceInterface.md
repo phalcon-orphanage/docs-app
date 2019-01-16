@@ -1,9 +1,8 @@
----
-layout: article
-language: 'ru-ru'
-version: '4.0'
-title: 'Phalcon\Di\ServiceInterface'
----
+* * *
+
+layout: article language: 'ru-ru' version: '4.0' title: 'Phalcon\Di\ServiceInterface'
+
+* * *
 
 # Interface **Phalcon\Di\ServiceInterface**
 
@@ -31,7 +30,7 @@ abstract public **getDefinition** ()
 
 ...
 
-abstract public **resolve** ([*mixed* $parameters], [[Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector])
+abstract public **resolve** ([*mixed* $parameters], [[Phalcon\DiInterface](Phalcon_DiInterface) $dependencyInjector])
 
 ...
 

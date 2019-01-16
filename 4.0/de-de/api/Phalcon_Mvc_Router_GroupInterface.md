@@ -4,7 +4,6 @@ language: 'de-de'
 version: '4.0'
 title: 'Phalcon\Mvc\Router\GroupInterface'
 ---
-
 # Interface **Phalcon\Mvc\Router\GroupInterface**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/router/groupinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>

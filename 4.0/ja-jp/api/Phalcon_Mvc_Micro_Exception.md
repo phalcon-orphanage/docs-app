@@ -4,10 +4,9 @@ language: 'ja-jp'
 version: '4.0'
 title: 'Phalcon\Mvc\Micro\Exception'
 ---
-
 # Class **Phalcon\Mvc\Micro\Exception**
 
-*extends* class [Phalcon\Exception](api/Phalcon_Exception)
+*extends* class [Phalcon\Exception](Phalcon_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

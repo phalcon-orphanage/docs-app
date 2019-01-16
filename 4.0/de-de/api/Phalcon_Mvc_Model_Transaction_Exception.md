@@ -4,10 +4,9 @@ language: 'de-de'
 version: '4.0'
 title: 'Phalcon\Mvc\Model\Transaction\Exception'
 ---
-
 # Class **Phalcon\Mvc\Model\Transaction\Exception**
 
-*extends* class [Phalcon\Mvc\Model\Exception](api/Phalcon_Mvc_Model_Exception)
+*extends* class [Phalcon\Mvc\Model\Exception](Phalcon_Mvc_Model_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

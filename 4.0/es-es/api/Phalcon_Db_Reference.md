@@ -1,13 +1,12 @@
----
-layout: article
-language: 'es-es'
-version: '4.0'
-title: 'Phalcon\Db\Reference'
----
+* * *
+
+layout: article language: 'es-es' version: '4.0' title: 'Phalcon\Db\Reference'
+
+* * *
 
 # Class **Phalcon\Db\Reference**
 
-*implements* [Phalcon\Db\ReferenceInterface](api/Phalcon_Db_ReferenceInterface)
+*implements* [Phalcon\Db\ReferenceInterface](Phalcon_Db_ReferenceInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/db/reference.zep" class="btn btn-default btn-sm">Código fuente en GitHub</a>
 

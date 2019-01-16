@@ -1,13 +1,12 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Mvc\View\Engine\Volt\Exception'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Mvc\View\Engine\Volt\Exception'
+
+* * *
 
 # Class **Phalcon\Mvc\View\Engine\Volt\Exception**
 
-*extends* class [Phalcon\Mvc\View\Exception](api/Phalcon_Mvc_View_Exception)
+*extends* class [Phalcon\Mvc\View\Exception](Phalcon_Mvc_View_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

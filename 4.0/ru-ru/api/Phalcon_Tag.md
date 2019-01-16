@@ -4,7 +4,6 @@ language: 'ru-ru'
 version: '4.0'
 title: 'Phalcon\Tag'
 ---
-
 # Class **Phalcon\Tag**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/tag.zep" class="btn btn-default btn-sm">Исходный код на GitHub</a>
@@ -45,7 +44,7 @@ public static **renderAttributes** (*mixed* $code, *array* $attributes)
 
 Renders parameters keeping order in their HTML attributes
 
-public static **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+public static **setDI** ([Phalcon\DiInterface](Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injector container.
 

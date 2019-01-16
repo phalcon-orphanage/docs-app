@@ -4,7 +4,6 @@ language: 'ja-jp'
 version: '4.0'
 title: 'Phalcon\Acl\AdapterInterface'
 ---
-
 # Interface **Phalcon\Acl\AdapterInterface**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/acl/adapterinterface.zep" class="btn btn-default btn-sm">GitHub上のソース</a>

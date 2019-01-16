@@ -1,9 +1,8 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Kernel'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Kernel'
+
+* * *
 
 # Class **Phalcon\Kernel**
 

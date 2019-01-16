@@ -1,13 +1,12 @@
----
-layout: article
-language: 'fr-fr'
-version: '4.0'
-title: 'Phalcon\Db\Column'
----
+* * *
+
+layout: article language: 'fr-fr' version: '4.0' title: 'Phalcon\Db\Column'
+
+* * *
 
 # Class **Phalcon\Db\Column**
 
-*implements* [Phalcon\Db\ColumnInterface](api/Phalcon_Db_ColumnInterface)
+*implements* [Phalcon\Db\ColumnInterface](Phalcon_Db_ColumnInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/db/column.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

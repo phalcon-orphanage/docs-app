@@ -1,9 +1,8 @@
----
-layout: article
-language: 'tr-tr'
-version: '4.0'
-title: 'Phalcon\Db'
----
+* * *
+
+layout: article language: 'tr-tr' version: '4.0' title: 'Phalcon\Db'
+
+* * *
 
 # Abstract class **Phalcon\Db**
 

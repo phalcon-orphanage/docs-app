@@ -1,13 +1,12 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Http\Response\Headers'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Http\Response\Headers'
+
+* * *
 
 # Class **Phalcon\Http\Response\Headers**
 
-*implements* [Phalcon\Http\Response\HeadersInterface](api/Phalcon_Http_Response_HeadersInterface)
+*implements* [Phalcon\Http\Response\HeadersInterface](Phalcon_Http_Response_HeadersInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/http/response/headers.zep" class="btn btn-default btn-sm">源码在GitHub</a>
 

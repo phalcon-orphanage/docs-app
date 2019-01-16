@@ -1,9 +1,8 @@
----
-layout: article
-language: 'fa-ir'
-version: '4.0'
-title: 'Phalcon\Db\IndexInterface'
----
+* * *
+
+layout: article language: 'fa-ir' version: '4.0' title: 'Phalcon\Db\IndexInterface'
+
+* * *
 
 # Interface **Phalcon\Db\IndexInterface**
 

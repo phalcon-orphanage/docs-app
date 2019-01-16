@@ -1,13 +1,12 @@
----
-layout: article
-language: 'cs-cz'
-version: '4.0'
-title: 'Phalcon\Cli\Router\Exception'
----
+* * *
+
+layout: article language: 'cs-cz' version: '4.0' title: 'Phalcon\Cli\Router\Exception'
+
+* * *
 
 # Class **Phalcon\Cli\Router\Exception**
 
-*extends* class [Phalcon\Exception](api/Phalcon_Exception)
+*extends* class [Phalcon\Exception](Phalcon_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

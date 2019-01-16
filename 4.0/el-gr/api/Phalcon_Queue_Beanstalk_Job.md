@@ -1,9 +1,8 @@
----
-layout: article
-language: 'el-gr'
-version: '4.0'
-title: 'Phalcon\Queue\Beanstalk\Job'
----
+* * *
+
+layout: article language: 'el-gr' version: '4.0' title: 'Phalcon\Queue\Beanstalk\Job'
+
+* * *
 
 # Class **Phalcon\Queue\Beanstalk\Job**
 
@@ -17,7 +16,7 @@ public **getId** ()
 
 public **getBody** ()
 
-public **__construct** ([Phalcon\Queue\Beanstalk](api/Phalcon_Queue_Beanstalk) $queue, *mixed* $id, *mixed* $body)
+public **__construct** ([Phalcon\Queue\Beanstalk](Phalcon_Queue_Beanstalk) $queue, *mixed* $id, *mixed* $body)
 
 public **delete** ()
 

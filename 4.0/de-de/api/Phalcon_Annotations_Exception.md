@@ -4,7 +4,6 @@ language: 'de-de'
 version: '4.0'
 title: 'Phalcon\Annotations\Exception'
 ---
-
 # Class **Phalcon\Annotations\Exception**
 
 *extends* class [Exception](https://php.net/manual/en/class.exception.php)

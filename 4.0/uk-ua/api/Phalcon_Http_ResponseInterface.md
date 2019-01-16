@@ -1,9 +1,8 @@
----
-layout: article
-language: 'uk-ua'
-version: '4.0'
-title: 'Phalcon\Http\ResponseInterface'
----
+* * *
+
+layout: article language: 'uk-ua' version: '4.0' title: 'Phalcon\Http\ResponseInterface'
+
+* * *
 
 # Interface **Phalcon\Http\ResponseInterface**
 

@@ -1,9 +1,8 @@
----
-layout: article
-language: 'uk-ua'
-version: '4.0'
-title: 'Phalcon\Mvc\UrlInterface'
----
+* * *
+
+layout: article language: 'uk-ua' version: '4.0' title: 'Phalcon\Mvc\UrlInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\UrlInterface**
 

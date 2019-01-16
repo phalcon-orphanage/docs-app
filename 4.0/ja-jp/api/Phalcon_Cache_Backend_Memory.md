@@ -4,16 +4,15 @@ language: 'ja-jp'
 version: '4.0'
 title: 'Phalcon\Cache\Backend\Memory'
 ---
-
 # Class **Phalcon\Cache\Backend\Memory**
 
-*extends* abstract class [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+*extends* abstract class [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
-*implements* [Phalcon\Cache\BackendInterface](api/Phalcon_Cache_BackendInterface), [Serializable](https://php.net/manual/en/class.serializable.php)
+*implements* [Phalcon\Cache\BackendInterface](Phalcon_Cache_BackendInterface), [Serializable](https://php.net/manual/en/class.serializable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cache/backend/memory.zep" class="btn btn-default btn-sm">GitHub上のソース</a>
 
-メモリにコンテンツを保管します。リクエストが終了したときにデータを失います。
+Stores content in memory. Data is lost when the request is finished
 
 ```php
 <?php
@@ -86,50 +85,50 @@ public **unserialize** (*mixed* $data)
 
 Required for interface \Serializable
 
-public **getFrontend** () inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **getFrontend** () inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 ...
 
-public **setFrontend** (*mixed* $frontend) inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **setFrontend** (*mixed* $frontend) inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 ...
 
-public **getOptions** () inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **getOptions** () inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 ...
 
-public **setOptions** (*mixed* $options) inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **setOptions** (*mixed* $options) inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 ...
 
-public **getLastKey** () inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **getLastKey** () inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 ...
 
-public **setLastKey** (*mixed* $lastKey) inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **setLastKey** (*mixed* $lastKey) inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 ...
 
-public **__construct** ([Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface) $frontend, [*array* $options]) inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **__construct** ([Phalcon\Cache\FrontendInterface](Phalcon_Cache_FrontendInterface) $frontend, [*array* $options]) inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 Phalcon\Cache\Backend constructor
 
-public *mixed* **start** (*int* | *string* $keyName, [*int* $lifetime]) inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public *mixed* **start** (*int* | *string* $keyName, [*int* $lifetime]) inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
-キャッシュを開始します。このkeynameは作成したフラグメントの特定に使用できます。
+キャッシュを開始します。 このkeynameは作成したフラグメントの特定に使用できます。
 
-public **stop** ([*mixed* $stopBuffer]) inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **stop** ([*mixed* $stopBuffer]) inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 キャッシュしたコンテンツを保存しないで、フロントエンドを停止します。
 
-public **isFresh** () inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **isFresh** () inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 直前のキャッシュが新鮮なものか、それともキャッシュされているかをチェックします。
 
-public **isStarted** () inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public **isStarted** () inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 このキャッシュのバッファリングが開始しているか、そうでないかをチェックします。
 
-public *int* **getLifetime** () inherited from [Phalcon\Cache\Backend](api/Phalcon_Cache_Backend)
+public *int* **getLifetime** () inherited from [Phalcon\Cache\Backend](Phalcon_Cache_Backend)
 
 直前のライフタイムのセットを取得します。

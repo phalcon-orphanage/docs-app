@@ -1,13 +1,12 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Session\Adapter'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Session\Adapter'
+
+* * *
 
 # Abstract class **Phalcon\Session\Adapter**
 
-*implements* [Phalcon\Session\AdapterInterface](api/Phalcon_Session_AdapterInterface)
+*implements* [Phalcon\Session\AdapterInterface](Phalcon_Session_AdapterInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/session/adapter.zep" class="btn btn-default btn-sm">源码在GitHub</a>
 

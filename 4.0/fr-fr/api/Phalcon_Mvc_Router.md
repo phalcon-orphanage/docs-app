@@ -4,10 +4,9 @@ language: 'fr-fr'
 version: '4.0'
 title: 'Phalcon\Mvc\Router'
 ---
-
 # Class **Phalcon\Mvc\Router**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\RouterInterface](api/Phalcon_Mvc_RouterInterface), [Phalcon\Events\EventsAwareInterface](api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Di\InjectionAwareInterface](Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\RouterInterface](Phalcon_Mvc_RouterInterface), [Phalcon\Events\EventsAwareInterface](Phalcon_Events_EventsAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/router.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -50,7 +49,7 @@ public **__construct** ([*mixed* $defaultRoutes])
 
 Phalcon\Mvc\Router constructor
 
-public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+public **setDI** ([Phalcon\DiInterface](Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injector
 
@@ -58,7 +57,7 @@ public **getDI** ()
 
 Returns the internal dependency injector
 
-public **setEventsManager** ([Phalcon\Events\ManagerInterface](api/Phalcon_Events_ManagerInterface) $eventsManager)
+public **setEventsManager** ([Phalcon\Events\ManagerInterface](Phalcon_Events_ManagerInterface) $eventsManager)
 
 Sets the events manager
 
@@ -193,7 +192,7 @@ public **addConnect** (*mixed* $pattern, [*mixed* $paths], [*mixed* $position])
 
 Adds a route to the router that only match if the HTTP method is CONNECT
 
-public **mount** ([Phalcon\Mvc\Router\GroupInterface](api/Phalcon_Mvc_Router_GroupInterface) $group)
+public **mount** ([Phalcon\Mvc\Router\GroupInterface](Phalcon_Mvc_Router_GroupInterface) $group)
 
 Mounts a group of routes in the router
 

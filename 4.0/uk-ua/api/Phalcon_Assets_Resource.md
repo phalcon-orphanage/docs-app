@@ -4,10 +4,9 @@ language: 'uk-ua'
 version: '4.0'
 title: 'Phalcon\Assets\Resource'
 ---
-
 # Class **Phalcon\Assets\Resource**
 
-*implements* [Phalcon\Assets\ResourceInterface](api/Phalcon_Assets_ResourceInterface)
+*implements* [Phalcon\Assets\ResourceInterface](Phalcon_Assets_ResourceInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/assets/resource.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

@@ -1,13 +1,12 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Filter\Exception'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Filter\Exception'
+
+* * *
 
 # Class **Phalcon\Filter\Exception**
 
-*extends* class [Phalcon\Exception](api/Phalcon_Exception)
+*extends* class [Phalcon\Exception](Phalcon_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

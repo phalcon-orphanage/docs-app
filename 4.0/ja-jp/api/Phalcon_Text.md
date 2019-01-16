@@ -1,9 +1,8 @@
----
-layout: article
-language: 'ja-jp'
-version: '4.0'
-title: 'Phalcon\Text'
----
+* * *
+
+layout: article language: 'ja-jp' version: '4.0' title: 'Phalcon\Text'
+
+* * *
 
 # Abstract class **Phalcon\Text**
 

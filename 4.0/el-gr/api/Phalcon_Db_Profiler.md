@@ -1,9 +1,8 @@
----
-layout: article
-language: 'el-gr'
-version: '4.0'
-title: 'Phalcon\Db\Profiler'
----
+* * *
+
+layout: article language: 'el-gr' version: '4.0' title: 'Phalcon\Db\Profiler'
+
+* * *
 
 # Class **Phalcon\Db\Profiler**
 
@@ -38,7 +37,7 @@ echo "Total Elapsed Time: ", $profile->getTotalElapsedSeconds(), "\n";
 
 ## Methods
 
-public [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler) **startProfile** (*string* $sqlStatement, [*mixed* $sqlVariables], [*mixed* $sqlBindTypes])
+public [Phalcon\Db\Profiler](Phalcon_Db_Profiler) **startProfile** (*string* $sqlStatement, [*mixed* $sqlVariables], [*mixed* $sqlBindTypes])
 
 Starts the profile of a SQL sentence
 

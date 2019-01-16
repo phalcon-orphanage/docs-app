@@ -1,9 +1,8 @@
----
-layout: article
-language: 'uk-ua'
-version: '4.0'
-title: 'Phalcon\Mvc\ViewBaseInterface'
----
+* * *
+
+layout: article language: 'uk-ua' version: '4.0' title: 'Phalcon\Mvc\ViewBaseInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\ViewBaseInterface**
 

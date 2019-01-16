@@ -1,13 +1,12 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Flash'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Flash'
+
+* * *
 
 # Abstract class **Phalcon\Flash**
 
-*implements* [Phalcon\FlashInterface](api/Phalcon_FlashInterface), [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\FlashInterface](Phalcon_FlashInterface), [Phalcon\Di\InjectionAwareInterface](Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/flash.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -39,11 +38,11 @@ public **getEscaperService** ()
 
 Returns the Escaper Service
 
-public **setEscaperService** ([Phalcon\EscaperInterface](api/Phalcon_EscaperInterface) $escaperService)
+public **setEscaperService** ([Phalcon\EscaperInterface](Phalcon_EscaperInterface) $escaperService)
 
 Sets the Escaper Service
 
-public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+public **setDI** ([Phalcon\DiInterface](Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injector
 
@@ -122,6 +121,6 @@ public **clear** ()
 
 Clears accumulated messages when implicit flush is disabled
 
-abstract public **message** (*mixed* $type, *mixed* $message) inherited from [Phalcon\FlashInterface](api/Phalcon_FlashInterface)
+abstract public **message** (*mixed* $type, *mixed* $message) inherited from [Phalcon\FlashInterface](Phalcon_FlashInterface)
 
 ...

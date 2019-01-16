@@ -4,7 +4,6 @@ language: 'ja-jp'
 version: '4.0'
 title: 'Phalcon\Annotations\AdapterInterface'
 ---
-
 # Interface **Phalcon\Annotations\AdapterInterface**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/annotations/adapterinterface.zep" class="btn btn-default btn-sm">GitHub上のソース</a>
@@ -13,7 +12,7 @@ title: 'Phalcon\Annotations\AdapterInterface'
 
 ## メソッド
 
-abstract public **setReader** ([Phalcon\Annotations\ReaderInterface](api/Phalcon_Annotations_ReaderInterface) $reader)
+abstract public **setReader** ([Phalcon\Annotations\ReaderInterface](Phalcon_Annotations_ReaderInterface) $reader)
 
 アノテーションパーサーを設定します。
 

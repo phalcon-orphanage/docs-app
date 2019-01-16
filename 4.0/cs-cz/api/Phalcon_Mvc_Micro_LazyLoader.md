@@ -4,7 +4,6 @@ language: 'cs-cz'
 version: '4.0'
 title: 'Phalcon\Mvc\Micro\LazyLoader'
 ---
-
 # Class **Phalcon\Mvc\Micro\LazyLoader**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/micro/lazyloader.zep" class="btn btn-default btn-sm">Source on GitHub</a>
@@ -25,6 +24,6 @@ public *mixed* **__call** (*string* $method, *array* $arguments)
 
 Initializes the internal handler, calling functions on it
 
-public *mixed* **callMethod** (*string* $method, *array* $arguments, [[Phalcon\Mvc\Model\BinderInterface](api/Phalcon_Mvc_Model_BinderInterface) $modelBinder])
+public *mixed* **callMethod** (*string* $method, *array* $arguments, [[Phalcon\Mvc\Model\BinderInterface](Phalcon_Mvc_Model_BinderInterface) $modelBinder])
 
 Calling __call method

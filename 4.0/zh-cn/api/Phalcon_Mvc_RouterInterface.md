@@ -1,9 +1,8 @@
----
-layout: article
-language: 'zh-cn'
-version: '4.0'
-title: 'Phalcon\Mvc\RouterInterface'
----
+* * *
+
+layout: article language: 'zh-cn' version: '4.0' title: 'Phalcon\Mvc\RouterInterface'
+
+* * *
 
 # Interface **Phalcon\Mvc\RouterInterface**
 
@@ -75,7 +74,7 @@ abstract public **addConnect** (*mixed* $pattern, [*mixed* $paths])
 
 ...
 
-abstract public **mount** ([Phalcon\Mvc\Router\GroupInterface](api/Phalcon_Mvc_Router_GroupInterface) $group)
+abstract public **mount** ([Phalcon\Mvc\Router\GroupInterface](Phalcon_Mvc_Router_GroupInterface) $group)
 
 ...
 

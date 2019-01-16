@@ -4,7 +4,6 @@ language: 'ja-jp'
 version: '4.0'
 title: 'Phalcon\Assets\Collection'
 ---
-
 # Class **Phalcon\Assets\Collection**
 
 *implements* [Countable](https://php.net/manual/en/class.countable.php), [Iterator](https://php.net/manual/en/class.iterator.php), [Traversable](https://php.net/manual/en/class.traversable.php)
@@ -67,15 +66,15 @@ public **__construct** ()
 
 Phalcon\Assets\Collection constructor
 
-public **add** ([Phalcon\Assets\Resource](api/Phalcon_Assets_Resource) $resource)
+public **add** ([Phalcon\Assets\Resource](Phalcon_Assets_Resource) $resource)
 
 リソースをコレクションに追加します。
 
-public **addInline** ([Phalcon\Assets\Inline](api/Phalcon_Assets_Inline) $code)
+public **addInline** ([Phalcon\Assets\Inline](Phalcon_Assets_Inline) $code)
 
 インラインコードをコレクションに追加します。
 
-public **has** ([Phalcon\Assets\ResourceInterface](api/Phalcon_Assets_ResourceInterface) $resource)
+public **has** ([Phalcon\Assets\ResourceInterface](Phalcon_Assets_ResourceInterface) $resource)
 
 このリソースがコレクションに加えられているかどうかをチェックします。
 
@@ -100,7 +99,7 @@ public **addInlineCss** (*mixed* $content, [*mixed* $filter], [*mixed* $attribut
 
 インラインCSSをコレクションに追加します。
 
-public [Phalcon\Assets\Collection](api/Phalcon_Assets_Collection) **addJs** (*string* $path, [*boolean* $local], [*boolean* $filter], [*array* $attributes])
+public [Phalcon\Assets\Collection](Phalcon_Assets_Collection) **addJs** (*string* $path, [*boolean* $local], [*boolean* $filter], [*array* $attributes])
 
 Javascriptリソースをコレクションに追加します。
 
@@ -172,10 +171,10 @@ public **getRealTargetPath** (*mixed* $basePath)
 
 フィルター または結合したコレクションの書き込み先の完全な位置を返します。
 
-public **addFilter** ([Phalcon\Assets\FilterInterface](api/Phalcon_Assets_FilterInterface) $filter)
+public **addFilter** ([Phalcon\Assets\FilterInterface](Phalcon_Assets_FilterInterface) $filter)
 
 フィルターをコレクションに追加します。
 
-final protected **addResource** ([Phalcon\Assets\ResourceInterface](api/Phalcon_Assets_ResourceInterface) $resource)
+final protected **addResource** ([Phalcon\Assets\ResourceInterface](Phalcon_Assets_ResourceInterface) $resource)
 
 リソースまたはインラインコードをコレクションに追加します。

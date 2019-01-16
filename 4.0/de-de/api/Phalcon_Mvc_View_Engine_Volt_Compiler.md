@@ -1,13 +1,12 @@
----
-layout: article
-language: 'de-de'
-version: '4.0'
-title: 'Phalcon\Mvc\View\Engine\Volt\Compiler'
----
+* * *
+
+layout: article language: 'de-de' version: '4.0' title: 'Phalcon\Mvc\View\Engine\Volt\Compiler'
+
+* * *
 
 # Class **Phalcon\Mvc\View\Engine\Volt\Compiler**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Di\InjectionAwareInterface](Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/view/engine/volt/compiler.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -26,9 +25,9 @@ require $compiler->getCompiledTemplatePath();
 
 ## Methods
 
-public **__construct** ([[Phalcon\Mvc\ViewBaseInterface](api/Phalcon_Mvc_ViewBaseInterface) $view])
+public **__construct** ([[Phalcon\Mvc\ViewBaseInterface](Phalcon_Mvc_ViewBaseInterface) $view])
 
-public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
+public **setDI** ([Phalcon\DiInterface](Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injector
 
