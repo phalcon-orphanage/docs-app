@@ -148,9 +148,9 @@ $acl->addSubject('reports', ['list', 'add']);
 
 <a name='access-controls'></a>
 ## Defining Access Controls
-After both the `Operations` and `Subjects` have been defined, we need to tie them together so that the access list can be created. This is the most important step in the operation since a small mistake here can provide access for subjects to operations that the developer does not intend to. As mentioned earlier, the default access action for [Phalcon\Acl](api/Phalcon_Acl) is `Acl::DENY`, following the [whitelist](https://en.wikipedia.org/wiki/Whitelisting) approach. 
+After both the `Operations` and `Subjects` have been defined, we need to tie them together so that the access list can be created. This is the most important step in the operation since a small mistake here can allow access to operations for subjects that the developer does not intend to. As mentioned earlier, the default access action for [Phalcon\Acl](api/Phalcon_Acl) is `Acl::DENY`, following the [whitelist](https://en.wikipedia.org/wiki/Whitelisting) approach. 
 
-To tie `Operations` and `Subjects` together we use the `allow()` and `deny()` methods that the [Phalcon\Acl\Memory](api/Phalcon_Acl_Memory) exposes.
+To tie `Operations` and `Subjects` together we use the `allow()` and `deny()` methods exposed by the [Phalcon\Acl\Memory](api/Phalcon_Acl_Memory) class.
 
 ```php
 <?php
@@ -214,13 +214,10 @@ $acl->allow('*', '*', 'view');
 
 Similarly the above gives access to any operation, any subject that has the `view` action. In a MVC application, the above is the equivalent of allowing any group to access any controller that exposes a `viewAction`. 
 
-
-<div class="alert alert-danger" markdown="1">
-Please be **VERY** careful when using the `*` wildcard. It is very easy for a mistake to happen and the wildcard, although it seems convenient for certain instances, allowing users to access areas of your application that they are not supposed to. The best way to be 100% sure is to write tests specifically to test the permissions and the ACL. These can be done in the `unit` test suite by instantiating the component and then checking the `isAllowed()` if it is `true` or `false`. 
-
-
-[Codeception](https://codeception.com) is the chosen testing framework for Phalcon and there are plenty of tests in our github repository (`tests` folder) to offer guidance and ideas.
-</div>
+> Please be **VERY** careful when using the `*` wildcard. It is very easy to make a mistake and the wildcard, although it seems convenient, it may allow users to access areas of your application that they are not supposed to. The best way to be 100% sure is to write tests specifically to test the permissions and the ACL. These can be done in the `unit` test suite by instantiating the component and then checking the `isAllowed()` if it is `true` or `false`.
+>
+> [Codeception](https://codeception.com) is the chosen testing framework for Phalcon and there are plenty of tests in our github repository (`tests` folder) to offer guidance and ideas.
+{:.alert .alert-danger}
 
 ```php
 $acl->deny('guest', '*', 'view');
@@ -322,7 +319,7 @@ $acl->allow(
 );
 ```
 
-Now that the callable is defined in the ACL, we will need to call the `isAllowed()` with an array as the fourth parameter:
+Now that the callable is defined in the ACL, we will need to call the `isAllowed()` method with an array as the fourth parameter:
 
 ```php
 <?php
@@ -371,7 +368,7 @@ $acl->isAllowed(
 );
 ```
 
-> The fourth parameter must be an array. Each array element represents a parameter that your anonymous function accepts. The key of the element is the name of the parameter, while the value is the value that the parameter of the function will accept
+> The fourth parameter must be an array. Each array element represents a parameter that your anonymous function accepts. The key of the element is the name of the parameter, while the value is what will be passed as the value of that the parameter of to the function.
 {:.alert .alert-info}
 
 You can also omit to pass the fourth parameter to `isAllowed()` if you wish. The default action for a call to `isAllowed()` without the last parameter is `Acl::DENY`. To change this behavior, you can make a call to `setNoArgumentsDefaultAction()`: 
