@@ -4,9 +4,9 @@ language: 'en'
 version: '4.0'
 title: 'Phalcon\Acl\Operation'
 ---
-# Class [Phalcon\Acl\Operation](api/Phalcon_Acl_Operation)
+# Class [Phalcon\Acl\Operation](Phalcon_Acl_Operation)
 
-**implements**{:.language-php .highlighter-rouge .highligter .hljs-keyword} [Phalcon\Acl\OperationInterface](api/Phalcon_Acl_OperationInterface)
+**implements**{:.language-php .highlighter-rouge .highligter .hljs-keyword} [Phalcon\Acl\OperationInterface](Phalcon_Acl_OperationInterface)
 
 [Source on Github](https://github.com/phalcon/cphalcon/tree/v{{ page.version }}.0/phalcon/acl/operation.zep)
 

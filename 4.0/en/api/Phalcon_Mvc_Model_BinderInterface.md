@@ -19,7 +19,7 @@ abstract public  **getCache** ()
 ...
 
 
-abstract public  **setCache** ([Phalcon\Cache\BackendInterface](api/Phalcon_Cache_BackendInterface) $cache)
+abstract public  **setCache** ([Phalcon\Cache\BackendInterface](Phalcon_Cache_BackendInterface) $cache)
 
 ...
 

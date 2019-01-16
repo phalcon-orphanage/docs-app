@@ -6,7 +6,7 @@ title: 'Phalcon\Db\Exception'
 ---
 # Class **Phalcon\Db\Exception**
 
-*extends* class [Phalcon\Exception](api/Phalcon_Exception)
+*extends* class [Phalcon\Exception](Phalcon_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

@@ -11,7 +11,7 @@ title: 'Phalcon\Annotations\AdapterInterface'
 This interface must be implemented by adapters in Phalcon\Annotations
 
 ## Methods
-abstract public  **setReader** ([Phalcon\Annotations\ReaderInterface](api/Phalcon_Annotations_ReaderInterface) $reader)
+abstract public  **setReader** ([Phalcon\Annotations\ReaderInterface](Phalcon_Annotations_ReaderInterface) $reader)
 
 Sets the annotations parser
 
