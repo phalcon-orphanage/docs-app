@@ -52,7 +52,7 @@ Please check the following links for instructions on how to generate the backtra
 <a name='pull-request-checklist'></a>
 ## Pull Request Checklist
 - Pull requests to the `master` branch are not accepted. Please fork the repository and create your branch from the necessary "source" branch, for instance `4.0.x` and if need be rebase your branch before submitting your pull request. If there are collisions, we will ask you to rebase your branch again.
-- Add tests to your pull request or adjust existing ones. This is very important since it helps justify your pull request. Please check our [testing](https://github.com/phalcon/cphalcon/blob/master/tests/README.md) page for more information on how to set up a test environment and how to write tests.
+- Add tests to your pull request or adjust existing ones. This is very important since it helps justify your pull request. Please check our [testing](testing-environment) page for more information on how to set up a test environment and how to write tests.
 - Since Phalcon is written in [Zephir](https://zephir-lang.com), please do not submit commits that modify the C generated files directly
 - Phalcon follows a specific coding style. Please install the `editorconfig` plugin in your favorite IDE to take advantage of the supplied `.editorconfig` file that comes with this repository and not to have to worry about coding standards. All tests (PHP code), follow the [PSR-2](https://www.php-fig.org/psr/) standard
 - Remove any change to `ext/kernel`, `*.zep.c` and `*.zep.h` files before submitting the pull request
