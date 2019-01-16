@@ -4,13 +4,17 @@ language: 'zh-cn'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # 数据库抽象层
 
-[Phalcon\Db](api/Phalcon_Db) is the component behind [Phalcon\Mvc\Model](api/Phalcon_Mvc_Model) that powers the model layer in the framework. 它是由数据库系统完全用 C 编写的一个独立的高级别抽象层
+[Phalcon\Db](api/Phalcon_Db) is the component behind [Phalcon\Mvc\Model](api/Phalcon_Mvc_Model) that powers the model layer in the framework. It consists of an independent high-level abstraction layer for database systems completely written in C.
 
-此组件允许比使用传统模式更低的级别的数据库操作。
+This component allows for a lower level database manipulation than using traditional models.
 
 <a name='adapters'></a>
 
@@ -59,7 +63,7 @@ The [Phalcon\Db\AdapterInterface](api/Phalcon_Db_AdapterInterface) interface mus
 
 ## 数据库语言
 
-Phalcon封装在方言中每个数据库引擎的具体细节。那些向适配器提供常见的函数和 SQL 生成器。
+Phalcon encapsulates the specific details of each database engine in dialects. Those provide common functions and SQL generator to the adapters.
 
 | 类                                                                     | 描述                        |
 | --------------------------------------------------------------------- | ------------------------- |
@@ -353,7 +357,7 @@ $success = $connection->query(
 );
 ```
 
-When using numeric placeholders, you will need to define them as integers i.e. 1 or 2. In this case '1' or '2' are considered strings and not numbers, so the placeholder could not be successfully replaced. With any adapter data are automatically escaped using [PDO Quote](http://www.php.net/manual/en/pdo.quote.php).
+When using numeric placeholders, you will need to define them as integers i.e. 1 or 2. In this case '1' or '2' are considered strings and not numbers, so the placeholder could not be successfully replaced. With any adapter data are automatically escaped using [PDO Quote](https://www.php.net/manual/en/pdo.quote.php).
 
 This function takes into account the connection charset, so its recommended to define the correct charset in the connection parameters or in your database server configuration, as a wrong charset will produce undesired effects when storing or retrieving data.
 
@@ -688,7 +692,7 @@ try {
 }
 ```
 
-In addition to standard transactions, [Phalcon\Db](api/Phalcon_Db) provides built-in support for [nested transactions](http://en.wikipedia.org/wiki/Nested_transaction) (if the database system used supports them). When you call begin() for a second time a nested transaction is created:
+In addition to standard transactions, [Phalcon\Db](api/Phalcon_Db) provides built-in support for [nested transactions](https://en.wikipedia.org/wiki/Nested_transaction) (if the database system used supports them). When you call begin() for a second time a nested transaction is created:
 
 ```php
 <?php
@@ -730,7 +734,7 @@ try {
 
 ## Database Events
 
-[Phalcon\Db](api/Phalcon_Db) is able to send events to a [EventsManager](/3.4/en/events) if it's present. 一些事件可以停止操作，当返回布尔值 false 时。 以下事件被支持︰
+[Phalcon\Db](api/Phalcon_Db) is able to send events to a [EventsManager](/4.0/en/events) if it's present. 一些事件可以停止操作，当返回布尔值 false 时。 以下事件被支持︰
 
 | 事件名称                  | 触发器                                                  | 可以停止操作吗？ |
 | --------------------- | ---------------------------------------------------- |:--------:|

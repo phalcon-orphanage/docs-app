@@ -7,7 +7,7 @@ title: 'Phalcon\Flash\Exception'
 
 # Class **Phalcon\Flash\Exception**
 
-*extends* class [Phalcon\Exception](/4.0/en/api/Phalcon_Exception)
+*extends* class [Phalcon\Exception](api/Phalcon_Exception)
 
 *implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 

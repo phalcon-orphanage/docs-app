@@ -7,7 +7,7 @@ title: 'Phalcon\Di\Service'
 
 # Class **Phalcon\Di\Service**
 
-*implements* [Phalcon\Di\ServiceInterface](/4.0/en/api/Phalcon_Di_ServiceInterface)
+*implements* [Phalcon\Di\ServiceInterface](api/Phalcon_Di_ServiceInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/di/service.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -52,7 +52,7 @@ public *mixed* **getDefinition** ()
 
 Returns the service definition
 
-public *mixed* **resolve** ([*array* $parameters], [[Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector])
+public *mixed* **resolve** ([*array* $parameters], [[Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector])
 
 Resolves the service
 

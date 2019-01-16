@@ -11,6 +11,6 @@ title: 'Phalcon\Mvc\Micro\MiddlewareInterface'
 
 ## Metody
 
-abstract public **call** ([Phalcon\Mvc\Micro](/4.0/en/api/Phalcon_Mvc_Micro) $application)
+abstract public **call** ([Phalcon\Mvc\Micro](api/Phalcon_Mvc_Micro) $application)
 
 ...

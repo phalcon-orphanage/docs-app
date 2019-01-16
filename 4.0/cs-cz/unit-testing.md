@@ -4,6 +4,10 @@ language: 'cs-cz'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Přehled
@@ -226,7 +230,7 @@ PHPUnit 3.7.23 by Sebastian Bergmann.
 
 Configuration read from /var/www/tests/phpunit.xml
 
-Time: 3 ms, Memory: 3.45Mb
+Time: 3 ms, Memory: 4.05Mb
 
 There was 1 failure:
 
@@ -245,4 +249,4 @@ FAILURES!
 Tests: 1, Assertions: 2, Failures: 1.
 ```
 
-Now you can start building your Unit Tests. You can view a [good guide here](http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/). We also recommend reading the PHPUnit documentation if you're not familiar with PHPUnit.
+Now you can start building your Unit Tests. You can view a [good guide here](https://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/). We also recommend reading the PHPUnit documentation if you're not familiar with PHPUnit.

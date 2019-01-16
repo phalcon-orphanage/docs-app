@@ -7,7 +7,7 @@ title: 'Phalcon\Db\AdapterInterface'
 
 # Interface **Phalcon\Db\AdapterInterface**
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/db/adapterinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/db/adapterinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
 
@@ -71,11 +71,11 @@ abstract public **dropView** (*mixed* $viewName, [*mixed* $schemaName], [*mixed*
 
 ...
 
-abstract public **addColumn** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\ColumnInterface](/3.4/en/api/Phalcon_Db_ColumnInterface) $column)
+abstract public **addColumn** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\ColumnInterface](api/Phalcon_Db_ColumnInterface) $column)
 
 ...
 
-abstract public **modifyColumn** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\ColumnInterface](/3.4/en/api/Phalcon_Db_ColumnInterface) $column, [[Phalcon\Db\ColumnInterface](/3.4/en/api/Phalcon_Db_ColumnInterface) $currentColumn])
+abstract public **modifyColumn** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\ColumnInterface](api/Phalcon_Db_ColumnInterface) $column, [[Phalcon\Db\ColumnInterface](api/Phalcon_Db_ColumnInterface) $currentColumn])
 
 ...
 
@@ -83,7 +83,7 @@ abstract public **dropColumn** (*mixed* $tableName, *mixed* $schemaName, *mixed*
 
 ...
 
-abstract public **addIndex** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\IndexInterface](/3.4/en/api/Phalcon_Db_IndexInterface) $index)
+abstract public **addIndex** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\IndexInterface](api/Phalcon_Db_IndexInterface) $index)
 
 ...
 
@@ -91,7 +91,7 @@ abstract public **dropIndex** (*mixed* $tableName, *mixed* $schemaName, *mixed* 
 
 ...
 
-abstract public **addPrimaryKey** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\IndexInterface](/3.4/en/api/Phalcon_Db_IndexInterface) $index)
+abstract public **addPrimaryKey** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\IndexInterface](api/Phalcon_Db_IndexInterface) $index)
 
 ...
 
@@ -99,7 +99,7 @@ abstract public **dropPrimaryKey** (*mixed* $tableName, *mixed* $schemaName)
 
 ...
 
-abstract public **addForeignKey** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\ReferenceInterface](/3.4/en/api/Phalcon_Db_ReferenceInterface) $reference)
+abstract public **addForeignKey** (*mixed* $tableName, *mixed* $schemaName, [Phalcon\Db\ReferenceInterface](api/Phalcon_Db_ReferenceInterface) $reference)
 
 ...
 
@@ -107,7 +107,7 @@ abstract public **dropForeignKey** (*mixed* $tableName, *mixed* $schemaName, *mi
 
 ...
 
-abstract public **getColumnDefinition** ([Phalcon\Db\ColumnInterface](/3.4/en/api/Phalcon_Db_ColumnInterface) $column)
+abstract public **getColumnDefinition** ([Phalcon\Db\ColumnInterface](api/Phalcon_Db_ColumnInterface) $column)
 
 ...
 

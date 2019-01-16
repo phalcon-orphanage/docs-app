@@ -4,13 +4,17 @@ language: 'ja-jp'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 # スポンサーになる
 
-私たちの活動を後援し、Phalcon の開発を促進したい方のために、予算に応じた様々なオプションを用意しています。 私たちの活動を支援することによって、不具合の改善や新規機能の開発を高速にし、プロジェクトの安定性を確保するための活動に多くの時間を費やすことができるようになります。
+For those that wish to sponsor our work and further the development of Phalcon, we offer various sponsorship options that will fit any budget. Sponsoring our work allows us to devote more time to the project, offer faster responses to bugs and features and ensure the projects's stability.
 
 <a href="https://phalcon.link/fund">
 <button class="btn button-small btn-danger">
-    パトロンになる！
+    Become a Patron!
 </button>
 </a>
 

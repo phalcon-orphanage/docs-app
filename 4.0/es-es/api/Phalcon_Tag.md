@@ -45,7 +45,7 @@ public static **renderAttributes** (*mixed* $code, *array* $attributes)
 
 Construye parámetros manteniendo el orden en sus atributos HTML
 
-public static **setDI** ([Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector)
+public static **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
 
 Define el contenedor del inyector de dependencias.
 

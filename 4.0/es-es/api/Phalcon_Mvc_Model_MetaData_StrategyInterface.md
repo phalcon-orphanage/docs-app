@@ -11,10 +11,10 @@ title: 'Phalcon\Mvc\Model\MetaData\StrategyInterface'
 
 ## Métodos
 
-abstract public **getMetaData** ([Phalcon\Mvc\ModelInterface](/4.0/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector)
+abstract public **getMetaData** ([Phalcon\Mvc\ModelInterface](api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
 
 ...
 
-abstract public **getColumnMaps** ([Phalcon\Mvc\ModelInterface](/4.0/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector)
+abstract public **getColumnMaps** ([Phalcon\Mvc\ModelInterface](api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
 
 ...

@@ -7,7 +7,7 @@ title: 'Phalcon\Cache\Frontend\None'
 
 # Class **Phalcon\Cache\Frontend\None**
 
-*implements* [Phalcon\Cache\FrontendInterface](/4.0/en/api/Phalcon_Cache_FrontendInterface)
+*implements* [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cache/frontend/none.zep" class="btn btn-default btn-sm">GitHub上のソース</a>
 

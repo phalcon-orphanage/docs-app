@@ -43,7 +43,7 @@ public **rewind** ()
 
 内部のイテレータを巻き戻します。
 
-public [Phalcon\Annotations\Annotation](/4.0/en/api/Phalcon_Annotations_Annotation) **current** ()
+public [Phalcon\Annotations\Annotation](api/Phalcon_Annotations_Annotation) **current** ()
 
 イテレータ中の現在のアノテーションを返します。
 

@@ -4,6 +4,10 @@ language: 'tr-tr'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='working-with'></a>
 
 # Working with Models
@@ -729,7 +733,7 @@ class Robots extends Model
 }
 ```
 
-Eğer gönderici / ayarlayıcıları ortak özelliklerle birlikte / hariç olarak kullanırsanız, erişildiği zaman alanı kullanabilirsiniz:
+If you use getters/setters instead of/or together with public properties, you can initialize the field once it is accessed:
 
 ```php
 <?php

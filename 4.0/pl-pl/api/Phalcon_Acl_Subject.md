@@ -4,9 +4,9 @@ language: 'pl-pl'
 version: '4.0'
 title: 'Phalcon\Acl\Subject'
 ---
-# Class [Phalcon\Acl\Subject](/4.0/en/api/Phalcon_Acl_Subject)
+# Class [Phalcon\Acl\Subject](api/Phalcon_Acl_Subject)
 
-**implements**{:.c-mod} [Phalcon\Acl\SubjectInterface](/4.0/en/api/Phalcon_Acl_SubjectInterface)
+**implements**{:.c-mod} [Phalcon\Acl\SubjectInterface](api/Phalcon_Acl_SubjectInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/acl/subject.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

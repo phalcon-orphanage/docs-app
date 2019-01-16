@@ -4,6 +4,10 @@ language: 'cs-cz'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Phalcon Developer Tools on Linux
@@ -14,7 +18,7 @@ These steps will guide you through the process of installing Phalcon Developer T
 
 ## Požadavky
 
-The Phalcon PHP extension is required to run Phalcon Tools. If you haven't installed it yet, please see the [Installation](/3.4/en//installation) section for instructions.
+The Phalcon PHP extension is required to run Phalcon Tools. If you haven't installed it yet, please see the [Installation](/4.0/en//installation) section for instructions.
 
 <a name='installation'></a>
 

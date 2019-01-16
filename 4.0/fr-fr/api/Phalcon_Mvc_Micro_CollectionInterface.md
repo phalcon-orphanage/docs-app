@@ -7,7 +7,7 @@ title: 'Phalcon\Mvc\Micro\CollectionInterface'
 
 # Interface **Phalcon\Mvc\Micro\CollectionInterface**
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/micro/collectioninterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/micro/collectioninterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
 

@@ -7,9 +7,9 @@ title: 'Phalcon\Cache\Frontend\Data'
 
 # Class **Phalcon\Cache\Frontend\Data**
 
-*implements* [Phalcon\Cache\FrontendInterface](/3.4/en/api/Phalcon_Cache_FrontendInterface)
+*implements* [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface)
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/cache/frontend/data.zep" class="btn btn-default btn-sm">源码在GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cache/frontend/data.zep" class="btn btn-default btn-sm">源码在GitHub</a>
 
 Allows to cache native PHP data in a serialized form
 

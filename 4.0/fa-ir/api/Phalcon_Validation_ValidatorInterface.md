@@ -19,6 +19,6 @@ abstract public **getOption** (*mixed* $key, [*mixed* $defaultValue])
 
 ...
 
-abstract public **validate** ([Phalcon\Validation](/4.0/en/api/Phalcon_Validation) $validation, *mixed* $attribute)
+abstract public **validate** ([Phalcon\Validation](api/Phalcon_Validation) $validation, *mixed* $attribute)
 
 ...

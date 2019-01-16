@@ -7,7 +7,7 @@ title: 'Phalcon\Annotations\Adapter'
 
 # Abstract class **Phalcon\Annotations\Adapter**
 
-*implements* [Phalcon\Annotations\AdapterInterface](/4.0/en/api/Phalcon_Annotations_AdapterInterface)
+*implements* [Phalcon\Annotations\AdapterInterface](api/Phalcon_Annotations_AdapterInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/annotations/adapter.zep" class="btn btn-default btn-sm">Исходный код на GitHub</a>
 
@@ -15,7 +15,7 @@ This is the base class for Phalcon\Annotations adapters
 
 ## Methods
 
-public **setReader** ([Phalcon\Annotations\ReaderInterface](/4.0/en/api/Phalcon_Annotations_ReaderInterface) $reader)
+public **setReader** ([Phalcon\Annotations\ReaderInterface](api/Phalcon_Annotations_ReaderInterface) $reader)
 
 Sets the annotations parser
 

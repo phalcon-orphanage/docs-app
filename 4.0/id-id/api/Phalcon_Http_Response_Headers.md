@@ -7,9 +7,9 @@ title: 'Phalcon\Http\Response\Headers'
 
 # Class **Phalcon\Http\Response\Headers**
 
-*implements* [Phalcon\Http\Response\HeadersInterface](/3.4/en/api/Phalcon_Http_Response_HeadersInterface)
+*implements* [Phalcon\Http\Response\HeadersInterface](api/Phalcon_Http_Response_HeadersInterface)
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/response/headers.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/http/response/headers.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 This class is a bag to manage the response headers
 

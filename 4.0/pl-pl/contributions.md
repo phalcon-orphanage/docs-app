@@ -4,6 +4,10 @@ language: 'pl-pl'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='contributing'></a>
 
 # Contributing to Phalcon
@@ -79,6 +83,6 @@ If you have any questions about how to use Phalcon, please see the [support page
 
 If you have any changes or new features in mind, please fill an [NFR](/4.0/en/new-feature-request).
 
-Dziękujemy!
+Thanks!
 
 <3 Phalcon Team

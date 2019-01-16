@@ -7,7 +7,7 @@ title: 'Phalcon\Security'
 
 # Class **Phalcon\Security**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/4.0/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/security.zep" class="btn btn-default btn-sm">GitHub上のソース</a>
 
@@ -65,7 +65,7 @@ public **__construct** ()
 
 Phalcon\Security constructor
 
-public **setDI** ([Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector)
+public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injector
 

@@ -13,7 +13,7 @@ title: 'Phalcon\Annotations\AdapterInterface'
 
 ## メソッド
 
-abstract public **setReader** ([Phalcon\Annotations\ReaderInterface](/4.0/en/api/Phalcon_Annotations_ReaderInterface) $reader)
+abstract public **setReader** ([Phalcon\Annotations\ReaderInterface](api/Phalcon_Annotations_ReaderInterface) $reader)
 
 アノテーションパーサーを設定します。
 

@@ -4,6 +4,10 @@ language: 'fr-fr'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Validation
@@ -349,7 +353,7 @@ $validation->setFilters('name', 'trim');
 $validation->setFilters('email', 'trim');
 ```
 
-Filtering and sanitizing is performed using the [filter](/3.4/en/filter) component. You can add more filters to this component or use the built-in ones.
+Filtering and sanitizing is performed using the [filter](/4.0/en/filter) component. You can add more filters to this component or use the built-in ones.
 
 <a name='events'></a>
 

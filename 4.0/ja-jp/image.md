@@ -4,6 +4,10 @@ language: 'ja-jp'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Images
@@ -52,7 +56,7 @@ The [Phalcon\Image\AdapterInterface](api/Phalcon_Image_AdapterInterface) interfa
 
 ## Saving and rendering images
 
-イメージコンポーネントのさまざまな機能から始める前に、これらのイメージをどのように保存しレンダリングするかを理解しましょう。
+Before we begin with the various features of the image component, it's worth understanding how to save and render these images.
 
 ```php
 <?php
@@ -106,7 +110,7 @@ $image->save('image.jpg', 80);
 
 ## Resizing images
 
-画面のリサイズにはいくつかのモードがあります。
+There are several modes of resizing:
 
 * `\Phalcon\Image::WIDTH`
 * `\Phalcon\Image::HEIGHT`
@@ -120,7 +124,7 @@ $image->save('image.jpg', 80);
 
 ### `\Phalcon\Image::WIDTH`
 
-画像の高さはその比率を保存するように自動的に調整されます。もし高さを指定した場合無視します。
+The height will automatically be generated to keep the proportions the same; if you specify a height, it will be ignored.
 
 ```php
 <?php
@@ -140,7 +144,7 @@ $image->save('resized-image.jpg');
 
 ### `\Phalcon\Image::HEIGHT`
 
-画像の幅はその比率を保存するように自動的に調整されます。もし幅を指定した場合無視します。
+The width will automatically be generated to keep the proportions the same; if you specify a width, it will be ignored.
 
 ```php
 <?php

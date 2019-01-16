@@ -4,6 +4,10 @@ language: 'ru-ru'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 # New Feature Request
 
 A NFR is a short document explaining how a new feature request must be submitted, how it can be implemented, and how it can help core developers and others to understand implement it.

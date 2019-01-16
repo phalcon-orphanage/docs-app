@@ -4,23 +4,27 @@ language: 'ru-ru'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Введение
 
-Phalcon Compose является средой разработки на общественных началах для Phalcon проектов, которые запускаются в Docker контейнерах. Его цель заключается в том, чтобы сделать разворачивание Phalcon приложения лёгким, независимо от окружения (development, production).
+Phalcon Compose is a community driven boilerplate development environment for Phalcon projects that runs on Docker. Its purpose is to make it easier to bootstrap Phalcon applications and run them on development or production environments.
 
 <a name='dependencies'></a>
 
 ## Зависимости
 
-Чтобы запустить этот стек на вашей машине, вам нужно по крайней мере: * Операционная система: Windows, Linux или macOs * [Docker Engine](https://docs.docker.com/installation/) >= 1.10.0 * [Docker Compose](https://docs.docker.com/compose/install/) >= 1.6.2
+To run this stack on your machine, you need at least: * Operating System: Windows, Linux, or OS X * [Docker Engine](https://docs.docker.com/installation/) >= 1.10.0 * [Docker Compose](https://docs.docker.com/compose/install/) >= 1.6.2
 
 <a name='services'></a>
 
 ## Сервисы
 
-Ниже перечислены предоставляемые сервисы:
+Services included are:
 
 | Название сервиса | Описание                                                                                                                                          |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -43,7 +47,7 @@ Phalcon Compose является средой разработки на обще
 
 ### С помощью Composer (рекомендуется)
 
-С помощью Composer, можно создать новый проект следующим образом:
+Using Composer, you can create a new project as follows:
 
 ```bash
 composer create-project phalcon/compose --prefer-dist путь-к-папке-с-проектом
@@ -75,7 +79,7 @@ Another way to initialize your project is with Git.
  git clone git@github.com:phalcon/phalcon-compose.git
 ```
 
-<h5 class='alert alert-warning'>Убедитесь, что вы скопировали <code>variables.env.example</code> <code>variables.env</code> и настроили параметры в этом файле </h5>
+<h5 class='alert alert-warning'>Make sure that you copy <code>variables.env.example</code> to <code>variables.env</code> and adjust the settings in that file </h5>
 
 Add your Phalcon Application into `application` folder.
 

@@ -4,6 +4,10 @@ language: 'ru-ru'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Использование представлений
@@ -501,7 +505,7 @@ class UsersController extends Controller
 
 This component allows the developer to have control of when a view is rendered and its location. In addition, this component can leverage of view inheritance available in template engines such as `Volt` and others.
 
-Компонент представлений по-умолчанию должен быть заменён в сервис контейнере:
+The default component must be replaced in the service container:
 
 ```php
 <?php

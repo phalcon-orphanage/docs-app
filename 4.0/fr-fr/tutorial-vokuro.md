@@ -4,6 +4,10 @@ language: 'fr-fr'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Tutorial: Vökuró
@@ -32,7 +36,7 @@ vokuro/
     schemas/
 ```
 
-This project follows a quite similar structure to INVO. Once you open the application in your browser `http://localhost/vokuro` you'll see something like this:
+This project follows a quite similar structure to INVO. Once you open the application in your browser `https://localhost/vokuro` you'll see something like this:
 
 ![](/assets/images/content/tutorial-vokuro-1.png)
 

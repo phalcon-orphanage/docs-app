@@ -7,7 +7,7 @@ title: 'Phalcon\Http\Response\Cookies'
 
 # Class **Phalcon\Http\Response\Cookies**
 
-*implements* [Phalcon\Http\Response\CookiesInterface](/4.0/en/api/Phalcon_Http_Response_CookiesInterface), [Phalcon\Di\InjectionAwareInterface](/4.0/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\Response\CookiesInterface](api/Phalcon_Http_Response_CookiesInterface), [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/http/response/cookies.zep" class="btn btn-default btn-sm">Исходный код на GitHub</a>
 
@@ -15,7 +15,7 @@ This class is a bag to manage the cookies A cookies bag is automatically registe
 
 ## Methods
 
-public **setDI** ([Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector)
+public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injector
 
@@ -23,13 +23,13 @@ public **getDI** ()
 
 Returns the internal dependency injector
 
-public **setSignKey** (*string* $signKey = null): [Phalcon\Http\CookieInterface](/4.0/en/api/Phalcon_Http_CookieInterface)
+public **setSignKey** (*string* $signKey = null): [Phalcon\Http\CookieInterface](api/Phalcon_Http_CookieInterface)
 
 Sets the cookie's sign key. The `$signKey` MUST be at least 32 characters long and generated using a cryptographically secure pseudo random generator.
 
 You can use `null` to disable cookie signing.
 
-See: [Phalcon\Security\Random](/4.0/en/api/Phalcon_Security_Random) Throws: [Phalcon\Http\Cookie\Exception](/4.0/en/api/Phalcon_Http_Cookie_Exception)
+See: [Phalcon\Security\Random](api/Phalcon_Security_Random) Throws: [Phalcon\Http\Cookie\Exception](api/Phalcon_Http_Cookie_Exception)
 
 public **useEncryption** (*mixed* $useEncryption)
 

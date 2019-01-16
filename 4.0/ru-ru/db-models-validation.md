@@ -4,6 +4,10 @@ language: 'ru-ru'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Валидация моделей
@@ -165,7 +169,7 @@ class Robots extends Model
 
 ## События при ошибках валидации
 
-Другой доступный тип событий - когда в процессе проверки данных выявляются какие-либо несоответствия:
+Another type of events are available when the data validation process finds any inconsistency:
 
 | Операция                         | Название            | Пояснение                                                                              |
 | -------------------------------- | ------------------- | -------------------------------------------------------------------------------------- |

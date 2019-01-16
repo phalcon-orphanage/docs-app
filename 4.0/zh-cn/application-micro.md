@@ -4,11 +4,15 @@ language: 'zh-cn'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 # 微型应用
 
-Phalcon 提供一个非常 '轻' 的应用，因此您可以用很少的的 PHP 代码创建 'Micro' 应用。
+Phalcon offers a very 'thin' application, so that you can create 'Micro' applications with minimal PHP code.
 
-微应用程序，适合小的应用，这样会有很低的资源开销。 Such applications are for instance our `[website](https://github.com/phalcon/website), this website ([docs](https://github.com/phalcon/docs)), our [store](https://github.com/phalcon/store), APIs, prototypes etc.
+Micro applications are suitable for small applications that will have very low overhead. Such applications are for instance our `[website](https://github.com/phalcon/website), this website ([docs](https://github.com/phalcon/docs)), our [store](https://github.com/phalcon/store), APIs, prototypes etc.
 
 ```php
 <?php
@@ -55,9 +59,9 @@ Defining routes in a [Phalcon\Mvc\Micro](api/Phalcon_Mvc_Micro) application is v
 
 ### 安装程序
 
-Routing is handled by the [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) object. [[Info](/3.4/en/routing)]
+Routing is handled by the [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) object. [[Info](/4.0/en/routing)]
 
-<h5 class='alert alert-warning'>路由必须总是以 <code>/</code> 开头</h5>
+<h5 class='alert alert-warning'>Routes must always start with <code>/</code></h5>
 
 Usually, the starting route in an application is the route `/`, and in most cases it is accessed via the GET HTTP method:
 
@@ -126,7 +130,7 @@ Each method has its advantages and disadvantages. It all depends on the design a
 
 In order for routes to work, certain configuration changes need to be made in your web server's configuration for your particular site.
 
-Those changes are outlined in the [rewrite rules](/3.4/en/rewrite-rules).
+Those changes are outlined in the [rewrite rules](/4.0/en/rewrite-rules).
 
 <a name='routing-handlers'></a>
 
@@ -651,7 +655,7 @@ $app->get(
 );
 ```
 
-Additional information: [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) [Info](/3.4/en/routing)
+Additional information: [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) [Info](/4.0/en/routing)
 
 <a name='routing-redirections'></a>
 
@@ -1587,7 +1591,7 @@ class RequestMiddleware implements MiddlewareInterface
 
 This middleware is responsible for manipulating our response and sending it back to the caller as a JSON string. Therefore we need to attach it to the `after` event of our Micro application.
 
-<h5 class='alert alert-warning'>我们打算使用 <code>call</code> 方法这个中间件，因为我们有近执行整个请求周期。</h5>
+<h5 class='alert alert-warning'>We are going to be using the <code>call</code> method for this middleware, since we have nearly executed the whole request cycle.</h5>
 
 ```php
 <?php
@@ -1632,7 +1636,7 @@ class ResponseMiddleware implements MiddlewareInterface
 
 Models can be used in Micro applications, so long as we instruct the application how it can find the relevant classes with an autoloader.
 
-<h5 class='alert alert-warning'>有关 <code>db</code> 服务必须在你 Di 容器注册。</h5>
+<h5 class='alert alert-warning'>The relevant <code>db</code> service must be registered in your Di container.</h5>
 
 ```php
 <?php

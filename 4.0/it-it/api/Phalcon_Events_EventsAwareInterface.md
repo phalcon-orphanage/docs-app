@@ -11,7 +11,7 @@ title: 'Phalcon\Events\EventsAwareInterface'
 
 ## Methods
 
-abstract public **setEventsManager** ([Phalcon\Events\ManagerInterface](/4.0/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+abstract public **setEventsManager** ([Phalcon\Events\ManagerInterface](api/Phalcon_Events_ManagerInterface) $eventsManager)
 
 ...
 

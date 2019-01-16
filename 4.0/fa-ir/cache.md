@@ -4,6 +4,10 @@ language: 'fa-ir'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Improving Performance with Cache
@@ -41,7 +45,7 @@ The caching process is divided into 2 parts:
 
 Instantiating frontend or backend adapters can be achieved by two ways:
 
-حالت سنتی
+Traditional way
 
 ```php
 <?php

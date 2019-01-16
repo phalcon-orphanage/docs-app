@@ -11,10 +11,10 @@ title: 'Phalcon\Mvc\Collection\BehaviorInterface'
 
 ## 方法
 
-abstract public **notify** (*mixed* $type, [Phalcon\Mvc\CollectionInterface](/4.0/en/api/Phalcon_Mvc_CollectionInterface) $collection)
+abstract public **notify** (*mixed* $type, [Phalcon\Mvc\CollectionInterface](api/Phalcon_Mvc_CollectionInterface) $collection)
 
 ...
 
-abstract public **missingMethod** ([Phalcon\Mvc\CollectionInterface](/4.0/en/api/Phalcon_Mvc_CollectionInterface) $collection, *mixed* $method, [*mixed* $arguments])
+abstract public **missingMethod** ([Phalcon\Mvc\CollectionInterface](api/Phalcon_Mvc_CollectionInterface) $collection, *mixed* $method, [*mixed* $arguments])
 
 ...

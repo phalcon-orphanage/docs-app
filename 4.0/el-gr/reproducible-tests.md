@@ -4,6 +4,10 @@ language: 'el-gr'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 If you have found a bug it is important to add relevant reproducibility information to your issue to allow us to reproduce the bug and fix it quicker. If you have the application publicly on Github please submit the repository address along with the issue description. You can also use [Gist](https://gist.github.com/) to post any code you want to share with us.
 
 <a name="overview"></a>

@@ -4,11 +4,15 @@ language: 'tr-tr'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='setup'></a>
 
 # Web Server Kurulumu
 
-Phalcon uygulmasını doğru çalıştırabilmek için web sunucunuzun yönlendirme ayarlarının düzgün işleyecek şekilde yapılandırmanız gerekmektedir. Popüler sunucu yazılımları için kurulum yönergeleri:
+In order for the routing of the Phalcon application to work, you will need to set up your web server to process the redirects properly. Setup instructions for popular web servers are:
 
 <a name='php-fpm'></a>
 
@@ -54,7 +58,7 @@ Then point your browser to https://localhost:8000/ to check if everything is wor
 
 ## Nginx
 
-[Nginx](https://wiki.nginx.org/Main) is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Unlike traditional servers, Nginx doesn't rely on threads to handle requests. Bunun yerine nesneye dayalı (asenkron) bir mimari kullanır. Bu mimari küçük ama daha önemlisi tahmin edilen bellek miktarından daha azını kullanır. Böylelikle sistem kaynaklarını verimli şekilde kullanarak bunları ölçümleyebilir.
+[Nginx](https://wiki.nginx.org/Main) is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Unlike traditional servers, Nginx doesn't rely on threads to handle requests. Instead it uses a much more scalable event-driven (asynchronous) architecture. This architecture uses small, but more importantly, predictable amounts of memory under load.
 
 Phalcon with Nginx and PHP-FPM provide a powerful set of tools that offer maximum performance for your PHP applications.
 

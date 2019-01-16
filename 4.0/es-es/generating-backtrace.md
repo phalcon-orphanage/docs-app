@@ -4,11 +4,15 @@ language: 'es-es'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 # Generar una traza inversa
 
-A veces debido a defectos de la segmentación, Phalcon puede provocar que algunos de procesos del servidor web fallen. Por favor, ayúdanos a identificar el problema añadiendo un backtrace a tu informe de fallo.
+Sometimes due to segmentation faults, Phalcon could crash some of your web server processes. Please help us to identify the problem by adding a crash backtrace to your bug report.
 
-Por favor sigue estas indicaciones para entender cómo generar el backtrace.
+Please follow this guide to understand how to generate the backtrace.
 
 <https://bugs.php.net/bugs-generating-backtrace.php>
 

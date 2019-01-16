@@ -4,6 +4,10 @@ language: 'ru-ru'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Increasing Performance
@@ -16,7 +20,7 @@ Get faster applications requires refine many aspects: server, client, network, d
 
 Each application is different, the permanent profiling is important to understand where performance can be increased. Profiling gives us a real picture on what is really slow and what does not. Profiles can vary between a request and another, so it is important to make enough measurements to make conclusions.
 
-Профилирование с XDebug
+Profiling with XDebug
 
 [XDebug](https://xdebug.org/docs) provides an easier way to profile PHP applications, just install the extension and enable profiling in the php.ini:
 

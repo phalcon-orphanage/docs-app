@@ -4,9 +4,9 @@ language: 'pl-pl'
 version: '4.0'
 title: 'Phalcon\Acl\Operation'
 ---
-# Class [Phalcon\Acl\Operation](/4.0/en/api/Phalcon_Acl_Operation)
+# Class [Phalcon\Acl\Operation](api/Phalcon_Acl_Operation)
 
-**implements**{:.c-mod} [Phalcon\Acl\OperationInterface](/4.0/en/api/Phalcon_Acl_OperationInterface)
+**implements**{:.c-mod} [Phalcon\Acl\OperationInterface](api/Phalcon_Acl_OperationInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/acl/operation.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

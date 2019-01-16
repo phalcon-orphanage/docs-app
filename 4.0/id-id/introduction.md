@@ -4,6 +4,10 @@ language: 'id-id'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 # Welcome
 
 Welcome to the documentation for the Phalcon framework.

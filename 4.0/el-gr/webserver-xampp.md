@@ -4,6 +4,10 @@ language: 'el-gr'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Installation on XAMPP
@@ -56,7 +60,7 @@ If you can see the phalcon version in the `phpinfo()` output, congratulations!, 
 
 ## Screencast
 
-Το παρακάτω screencast είναι ένας βήμα προς βήμα οδηγός για να εγκαταστήσετε το Phalcon στα Windows:
+The following screencast is a step by step guide to install Phalcon on Windows:
 
 <div align="center">
   <iframe src="https://player.vimeo.com/video/40265988" 

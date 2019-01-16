@@ -7,7 +7,7 @@ title: 'Phalcon\Mvc\Model\Criteria'
 
 # Class **Phalcon\Mvc\Model\Criteria**
 
-*implements* [Phalcon\Mvc\Model\CriteriaInterface](/4.0/en/api/Phalcon_Mvc_Model_CriteriaInterface), [Phalcon\Di\InjectionAwareInterface](/4.0/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\CriteriaInterface](api/Phalcon_Mvc_Model_CriteriaInterface), [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/model/criteria.zep" class="btn btn-default btn-sm">Código fuente en GitHub</a>
 
@@ -28,7 +28,7 @@ $robots = Robots::query()
 
 ## Métodos
 
-public **setDI** ([Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector)
+public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
 
 Sets the DependencyInjector container
 
@@ -56,7 +56,7 @@ public **distinct** (*mixed* $distinct)
 
 Sets SELECT DISTINCT / SELECT ALL flag
 
-public [Phalcon\Mvc\Model\Criteria](/4.0/en/api/Phalcon_Mvc_Model_Criteria) **columns** (*string* | *array* $columns)
+public [Phalcon\Mvc\Model\Criteria](api/Phalcon_Mvc_Model_Criteria) **columns** (*string* | *array* $columns)
 
 Sets the columns to be queried
 
@@ -258,7 +258,7 @@ public *array* **getParams** ()
 
 Returns all the parameters defined in the criteria
 
-public static **fromInput** ([Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector, *mixed* $modelName, *array* $data, [*mixed* $operator])
+public static **fromInput** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector, *mixed* $modelName, *array* $data, [*mixed* $operator])
 
 Builds a Phalcon\Mvc\Model\Criteria based on an input array like $_POST
 

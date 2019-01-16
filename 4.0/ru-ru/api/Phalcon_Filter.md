@@ -7,7 +7,7 @@ title: 'Phalcon\Filter'
 
 # Class **Phalcon\Filter**
 
-*implements* [Phalcon\FilterInterface](/4.0/en/api/Phalcon_FilterInterface)
+*implements* [Phalcon\FilterInterface](api/Phalcon_FilterInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/filter.zep" class="btn btn-default btn-sm">Исходный код на GitHub</a>
 

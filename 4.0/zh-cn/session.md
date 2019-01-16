@@ -4,6 +4,10 @@ language: 'zh-cn'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # 在会话中存储数据
@@ -201,7 +205,7 @@ class UserController extends Controller
 }
 ```
 
-在组件：
+In a component:
 
 ```php
 <?php

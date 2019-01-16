@@ -7,9 +7,9 @@ title: 'Phalcon\Http\Request'
 
 # Class **Phalcon\Http\Request**
 
-*implements* [Phalcon\Http\RequestInterface](/3.4/en/api/Phalcon_Http_RequestInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\RequestInterface](api/Phalcon_Http_RequestInterface), [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di_InjectionAwareInterface)
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/request.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/http/request.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 Encapsulates request information for easy and secure access from application controllers.
 
@@ -42,7 +42,7 @@ public **setHttpMethodParameterOverride** (*mixed* $httpMethodParameterOverride)
 
 ...
 
-public **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injector
 
@@ -323,7 +323,7 @@ echo $headers["Authorization"]; // Basic cGhhbGNvbjpzZWNyZXQ=
 
 public **getHTTPReferer** ()
 
-Gets web page that refers active request. ie: http://www.google.com
+Gets web page that refers active request. ie: https://www.google.com
 
 final protected **_getBestQuality** (*array* $qualityParts, *mixed* $name)
 

@@ -4,15 +4,19 @@ language: 'es-es'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Depuración de aplicaciones
 
 ![](/assets/images/content/xdebug-1.jpg)
 
-PHP ofrece herramientas para depurar aplicaciones con avisos, advertencias, errores y excepciones. The [Exception class](https://www.php.net/manual/en/language.exceptions.php) offers information such as the file, line, message, numeric code, backtrace etc. en donde se produjo un error. Los frameworks orientados a objetos como Phalcon principalmente utilizan esta clase para encapsular esta funcionalidad y proporcionar información al desarrollador o el usuario.
+PHP offers tools to debug applications with notices, warnings, errors and exceptions. The [Exception class](https://www.php.net/manual/en/language.exceptions.php) offers information such as the file, line, message, numeric code, backtrace etc. on where an error occurred. OOP frameworks like Phalcon mainly use this class to encapsulate this functionality and provide information back to the developer or user.
 
-A pesar de estar escrito en C, que Phalcon ejecuta métodos en el espacio de usuario de PHP, proporcionando la capacidad de depuración al igual que cualquier otra aplicación o framework escrito en PHP.
+Despite being written in C, Phalcon executes methods in the PHP userland, providing the debug capability that any other application or framework written in PHP has.
 
 <a name='catching-exceptions'></a>
 
@@ -212,7 +216,7 @@ The following screencast shows a Xdebug session with Phalcon:
 
 Once you have xdebug installed, you can use its API to get a more detailed information about exceptions and messages.
 
-<h5 class='alert alert-warning'>Le recomendamos utilizar la última versión de Xdebug para una mejor compatibilidad con Phalcon </h5>
+<h5 class='alert alert-warning'>We highly recommend using the latest version of XDebug for a better compatibility with Phalcon </h5>
 
 The following example implements [xdebug_print_function_stack](https://xdebug.org/docs/stack_trace) to stop the execution and generate a backtrace:
 

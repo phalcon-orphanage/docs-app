@@ -4,6 +4,10 @@ language: 'ru-ru'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Введение
@@ -200,7 +204,7 @@ sites:
 
 The default type is `phalcon`. If the desired type is not allowed or not available `phalcon` will be used as fallback.
 
-Доступные типы:
+Available types:
 
 * `phalcon`
 * `slayer`

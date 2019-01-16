@@ -4,13 +4,17 @@ language: 'cs-cz'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 # Staňte se sponzorem
 
-Pro všechny, kteří chtějí podpořit naši práci a další vývoj Phalcon frameworku, nabízíme možnosti které vyhoví každému rozpočtu. Sponzorování naší práce dovolí vývojářům vyhradit si více času na projekt a tím nabídnout rychlejší reakce v opravě bugů, přidávání nových funkcí a tím zajistit větší stabilitu frameworku.
+For those that wish to sponsor our work and further the development of Phalcon, we offer various sponsorship options that will fit any budget. Sponsoring our work allows us to devote more time to the project, offer faster responses to bugs and features and ensure the projects's stability.
 
 <a href="https://phalcon.link/fund">
 <button class="btn button-small btn-danger">
-    Staňte se patronem!
+    Become a Patron!
 </button>
 </a>
 

@@ -11,10 +11,10 @@ title: 'Phalcon\Mvc\Model\BehaviorInterface'
 
 ## メソッド
 
-abstract public **notify** (*mixed* $type, [Phalcon\Mvc\ModelInterface](/4.0/en/api/Phalcon_Mvc_ModelInterface) $model)
+abstract public **notify** (*mixed* $type, [Phalcon\Mvc\ModelInterface](api/Phalcon_Mvc_ModelInterface) $model)
 
 ...
 
-abstract public **missingMethod** ([Phalcon\Mvc\ModelInterface](/4.0/en/api/Phalcon_Mvc_ModelInterface) $model, *mixed* $method, [*mixed* $arguments])
+abstract public **missingMethod** ([Phalcon\Mvc\ModelInterface](api/Phalcon_Mvc_ModelInterface) $model, *mixed* $method, [*mixed* $arguments])
 
 ...

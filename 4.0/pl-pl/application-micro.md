@@ -4,6 +4,10 @@ language: 'pl-pl'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 # Micro Applications
 
 Phalcon offers a very 'thin' application, so that you can create 'Micro' applications with minimal PHP code.

@@ -7,7 +7,7 @@ title: 'Phalcon\Cache\Frontend\Data'
 
 # Class **Phalcon\Cache\Frontend\Data**
 
-*implements* [Phalcon\Cache\FrontendInterface](/4.0/en/api/Phalcon_Cache_FrontendInterface)
+*implements* [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cache/frontend/data.zep" class="btn btn-default btn-sm">Código fuente en GitHub</a>
 

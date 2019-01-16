@@ -7,7 +7,7 @@ title: 'Phalcon\Assets\Filters\Cssmin'
 
 # Class **Phalcon\Assets\Filters\Cssmin**
 
-*implements* [Phalcon\Assets\FilterInterface](/4.0/en/api/Phalcon_Assets_FilterInterface)
+*implements* [Phalcon\Assets\FilterInterface](api/Phalcon_Assets_FilterInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/assets/filters/cssmin.zep" class="btn btn-default btn-sm">源码在GitHub</a>
 

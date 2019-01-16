@@ -1,6 +1,6 @@
 ---
 layout: article
-language: 'cz-cz'
+language: 'cs-cz'
 version: '4.0'
 title: 'API Index'
 ---

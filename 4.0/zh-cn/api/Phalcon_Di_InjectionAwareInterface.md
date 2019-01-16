@@ -11,7 +11,7 @@ title: 'Phalcon\Di\InjectionAwareInterface'
 
 ## 方法
 
-abstract public **setDI** ([Phalcon\DiInterface](/4.0/en/api/Phalcon_DiInterface) $dependencyInjector)
+abstract public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector)
 
 ...
 

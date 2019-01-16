@@ -7,7 +7,7 @@ title: 'Phalcon\Cli\Router\RouteInterface'
 
 # Interface **Phalcon\Cli\Router\RouteInterface**
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/cli/router/routeinterface.zep" class="btn btn-default btn-sm">源码在GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/cli/router/routeinterface.zep" class="btn btn-default btn-sm">源码在GitHub</a>
 
 ## 方法
 

@@ -4,17 +4,21 @@ language: 'ru-ru'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Шифрование/дешифрование
 
 Phalcon provides encryption facilities via the [Phalcon\Crypt](api/Phalcon_Crypt) component. This class offers simple object-oriented wrappers to the [openssl](https://www.php.net/manual/en/book.openssl.php) PHP's encryption library.
 
-По умолчанию данный компонент использует надежный алгоритм шифрования AES-256-CFB.
+By default, this component provides secure encryption using AES-256-CFB.
 
 The cipher AES-256 is used among other places in SSL/TLS across the Internet. It's considered among the top ciphers. In theory it's not crackable since the combinations of keys are massive. Although NSA has categorized this in [Suite B](https://en.wikipedia.org/wiki/NSA_Suite_B_Cryptography), they have also recommended using higher than 128-bit keys for encryption.
 
-<h5 class='alert alert-warning'>Вы должны использовать длину ключа, соответствующую текущему алгоритму. Для алгоритма по-умолчанию она составляет 32 байта.</h5>
+<h5 class='alert alert-warning'>You must use a key length corresponding to the current algorithm. For the algorithm used by default it is 32 bytes.</h5>
 
 <a name='usage'></a>
 

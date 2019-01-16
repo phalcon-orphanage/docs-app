@@ -4,6 +4,10 @@
         "url": "/introduction",
         "menu": [
             {
+                "text": "Introduction",
+                "url": "/introduction"
+            },
+            {
                 "text": "Release Notes",
                 "url": "https://github.com/phalcon/cphalcon/blob/4.0.x/CHANGELOG.md",
                 "external": true
@@ -23,7 +27,7 @@
         "url": "",
         "menu": [
             {
-                "text": "Genel Bakış",
+                "text": "Overview",
                 "url": "/contributions"
             },
             {
@@ -229,7 +233,7 @@
                 "url": "/db-models-cache"
             },
             {
-                "text": "Olaylar",
+                "text": "Events",
                 "url": "/db-models-events"
             },
             {

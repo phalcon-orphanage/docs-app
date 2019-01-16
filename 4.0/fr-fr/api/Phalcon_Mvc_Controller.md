@@ -7,11 +7,11 @@ title: 'Phalcon\Mvc\Controller'
 
 # Abstract class **Phalcon\Mvc\Controller**
 
-*extends* abstract class [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+*extends* abstract class [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\ControllerInterface](/3.4/en/api/Phalcon_Mvc_ControllerInterface)
+*implements* [Phalcon\Events\EventsAwareInterface](api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\ControllerInterface](api/Phalcon_Mvc_ControllerInterface)
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/controller.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v4.0.0/phalcon/mvc/controller.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 Every application controller should extend this class that encapsulates all the controller functionality
 
@@ -55,22 +55,22 @@ final public **__construct** ()
 
 Phalcon\Mvc\Controller constructor
 
-public **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public **setDI** ([Phalcon\DiInterface](api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable)
 
 Sets the dependency injector
 
-public **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public **getDI** () inherited from [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable)
 
 Returns the internal dependency injector
 
-public **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public **setEventsManager** ([Phalcon\Events\ManagerInterface](api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable)
 
 Sets the event manager
 
-public **getEventsManager** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public **getEventsManager** () inherited from [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable)
 
 Returns the internal event manager
 
-public **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable)
 
 Magic method __get

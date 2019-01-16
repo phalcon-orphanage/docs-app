@@ -17,7 +17,7 @@ public static **selectField** (*array* $parameters, [*array* $data])
 
 Genera una etiqueta SELECT
 
-private static **_optionsFromResultset** ([Phalcon\Mvc\Model\Resultset](/4.0/en/api/Phalcon_Mvc_Model_Resultset) $resultset, *array* $using, *mixed* $value, *string* $closeOption)
+private static **_optionsFromResultset** ([Phalcon\Mvc\Model\Resultset](api/Phalcon_Mvc_Model_Resultset) $resultset, *array* $using, *mixed* $value, *string* $closeOption)
 
 Genera etiquetas OPTION basadas en un Resultset
 

@@ -48,7 +48,7 @@ try {
 
 ```
 
-## Константы
+## Constants
 
 *integer* **FETCH_LAZY**
 

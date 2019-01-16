@@ -4,11 +4,15 @@ language: 'ru-ru'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 # Микроприложения
 
-С помощью Phalcon можно создавать приложения по типу “Микрофреймворк”. Для этого, необходимо написать всего лишь несколько строк кода.
+Phalcon offers a very 'thin' application, so that you can create 'Micro' applications with minimal PHP code.
 
-Микроприложения подходят для небольших приложений, которые будут иметь очень низкие накладные расходы. Such applications are for instance our `[website](https://github.com/phalcon/website), this website ([docs](https://github.com/phalcon/docs)), our [store](https://github.com/phalcon/store), APIs, prototypes etc.
+Micro applications are suitable for small applications that will have very low overhead. Such applications are for instance our `[website](https://github.com/phalcon/website), this website ([docs](https://github.com/phalcon/docs)), our [store](https://github.com/phalcon/store), APIs, prototypes etc.
 
 ```php
 <?php
@@ -57,7 +61,7 @@ Defining routes in a [Phalcon\Mvc\Micro](api/Phalcon_Mvc_Micro) application is v
 
 Routing is handled by the [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) object. [[Info](/4.0/en/routing)]
 
-<h5 class='alert alert-warning'>Маршруты всегда должны начинаться с <code>/</code></h5>
+<h5 class='alert alert-warning'>Routes must always start with <code>/</code></h5>
 
 Usually, the starting route in an application is the route `/`, and in most cases it is accessed via the GET HTTP method:
 
@@ -613,7 +617,7 @@ $orders->get('/delete/{id}', 'deleteAction');
 $app->mount($orders);
 ```
 
-<h5 class='alert alert-warning'>Имя с которым мы связываем каждый маршрут имеет суффикс <code>Action</code>. Это не обязательно, Ваш метод может называться как угодно.</h5>
+<h5 class='alert alert-warning'>The name that we bind each route has a suffix of <code>Action</code>. This is not necessary, your method can be called anything you like.</h5>
 
 <a name='routing-parameters'></a>
 
@@ -1090,7 +1094,7 @@ Middleware can be attached to a micro application in 3 different events. Those a
 | after   | После выполнения обработчика                    |
 | final   | После того, как был отправлен ответ вызывающему |
 
-<h5 class='alert alert-warning'>Вы можете прикрепить так много middleware-классов, сколько пожелаете, к любому из событий перечисленных выше. Они будут выполнены последовательно, когда соответствующее событие сработает.</h5>
+<h5 class='alert alert-warning'>You can attach as many middleware classes as you want in each of the above events. They will be executed sequentially when the relevant event fires.</h5>
 
 <a name='middleware-attached-events-before'></a>
 
@@ -1286,7 +1290,7 @@ class CacheMiddleware implements MiddlewareInterface
 
 ## События в Middleware
 
-The [events](#events) that are triggered for our application also trigger inside a class that implements the [Phalcon\Mvc\Micro\MiddlewareInterface](api/Phalcon_Mvc_Micro_MiddlewareInterface). Это обеспечивает большую гибкость и более широкие возможности для разработчиков, поскольку можем взаимодействовать с обработкой запроса.
+The [events](#events) that are triggered for our application also trigger inside a class that implements the [Phalcon\Mvc\Micro\MiddlewareInterface](api/Phalcon_Mvc_Micro_MiddlewareInterface). This offers great flexibility and power for developers since we can interact with the request process.
 
 <a name='middleware-events-api'></a>
 
@@ -1585,7 +1589,7 @@ class RequestMiddleware implements MiddlewareInterface
 
 This middleware is responsible for manipulating our response and sending it back to the caller as a JSON string. Therefore we need to attach it to the `after` event of our Micro application.
 
-<h5 class='alert alert-warning'>Мы будем использовать метод <code>call</code> для этого middleware, так как мы выполнили почти весь цикл запроса.</h5>
+<h5 class='alert alert-warning'>We are going to be using the <code>call</code> method for this middleware, since we have nearly executed the whole request cycle.</h5>
 
 ```php
 <?php
@@ -1630,7 +1634,7 @@ class ResponseMiddleware implements MiddlewareInterface
 
 Models can be used in Micro applications, so long as we instruct the application how it can find the relevant classes with an autoloader.
 
-<h5 class='alert alert-warning'>Соответствующий<code>db</code> сервис должен быть зарегистрирован в Ваше DI контейнере.</h5>
+<h5 class='alert alert-warning'>The relevant <code>db</code> service must be registered in your Di container.</h5>
 
 ```php
 <?php

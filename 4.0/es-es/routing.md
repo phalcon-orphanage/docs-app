@@ -4,17 +4,21 @@ language: 'es-es'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # Ruteo
 
-El componente router le permite definir las rutas que se asignan a los controladores o gestores que deben recibir la solicitud. Un router simplemente procesa un URI para determinar esta información. El router tiene dos modos: MVC y match mode. El primer modo es ideal para trabajar con aplicaciones de MVC.
+The router component allows you to define routes that are mapped to controllers or handlers that should receive the request. A router simply parses a URI to determine this information. The router has two modes: MVC mode and match-only mode. The first mode is ideal for working with MVC applications.
 
 <a name='defining'></a>
 
 ## Definición de rutas
 
-[Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) provides advanced routing capabilities. En el modo MVC, se puede definir rutas y asignarlas a controladores/acciones. Una ruta se define de la siguiente manera:
+[Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) provides advanced routing capabilities. In MVC mode, you can define routes and map them to controllers/actions that you require. A route is defined as follows:
 
 ```php
 <?php
@@ -696,7 +700,7 @@ $router->add(
 );
 ```
 
-<h5 class='alert alert-warning'>Ten cuidado con los caracteres permitidos en una expresión regular para los controladores y los espacios de nombres. Éstos se convierten en nombres de clase y a su vez estos son pasados a través del sistema de archivos y podrían ser utilizados por atacantes para leer archivos no autorizados. Una expresión regular segura puede ser así: <code>/([a-zA-Z0-9\_\-]+)</code> </h5>
+<h5 class='alert alert-warning'>Beware of characters allowed in regular expression for controllers and namespaces. As these become class names and in turn they're passed through the file system could be used by attackers to read unauthorized files. A safe regular expression is: <code>/([a-zA-Z0-9\_\-]+)</code> </h5>
 
 <a name='default-behavior'></a>
 
@@ -1028,7 +1032,7 @@ Or you can manually pass a URI to the `handle()` method:
 $router->handle('/some/route/to/handle');
 ```
 
-<h5 class='alert alert-danger'>Ten en cuenta que al usar <code>Router::URI_SOURCE_GET_URL</code> la Uri sera decodificada automáticamente porque se basa en la solicitud <code>$_REQUEST</code> superglobal. Sin embargo, en este momento, si usas <code>Router::URI_SOURCE_SERVER_REQUEST_URI</code> la Uri no será decodificada automáticamente. Esto cambiará en la siguiente versión mayor.</h5>
+<h5 class='alert alert-danger'>Please note that using <code>Router::URI_SOURCE_GET_URL</code> automatically decodes the Uri, because it is based on the <code>$_REQUEST</code> superglobal. However, for the time being, using <code>Router::URI_SOURCE_SERVER_REQUEST_URI</code> will not automatically decode the Uri for you. This will change in the next major release.</h5>
 
 <a name='testing'></a>
 
@@ -1080,7 +1084,7 @@ foreach ($testRoutes as $testRoute) {
 
 ## Eventos
 
-Como muchos otros componentes, los enrutadores tambien tienen eventos. Nunguno de ellos puede detener la operación en curso. A continuación una lista de los eventos disponibles
+Like many other components, routers also have events. None of the events can stop the operation. Below is a list of available events
 
 | Evento                     | Descripción                                            |
 | -------------------------- | ------------------------------------------------------ |

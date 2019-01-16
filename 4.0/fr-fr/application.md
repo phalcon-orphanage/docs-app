@@ -4,6 +4,10 @@ language: 'fr-fr'
 version: '4.0'
 ---
 
+##### This article reflects v4.0 and has not yet been revised
+
+{:.alert .alert-danger}
+
 <a name='overview'></a>
 
 # MVC Applications
@@ -538,7 +542,7 @@ When [Phalcon\Mvc\Application](api/Phalcon_Mvc_Application) have modules registe
 
 ## Application Events
 
-[Phalcon\Mvc\Application](api/Phalcon_Mvc_Application) is able to send events to the [EventsManager](/3.4/en/events) (if it is present). Events are triggered using the type `application`. The following events are supported:
+[Phalcon\Mvc\Application](api/Phalcon_Mvc_Application) is able to send events to the [EventsManager](/4.0/en/events) (if it is present). Events are triggered using the type `application`. The following events are supported:
 
 | Event Name            | Triggered                                                    |
 | --------------------- | ------------------------------------------------------------ |
