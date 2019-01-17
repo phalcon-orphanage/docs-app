@@ -9,11 +9,11 @@ Phalcon is an open source project and relies heavily on volunteer efforts and co
 
 Please take a few moments to review this document to understand the contribution process and make it as efficient as possible for all. By following these guidelines, we can have faster resolution of issues, better communication and we can all move the project forward!
 
-The Phalcon source code (along with documentation, websites etc.) is stored in [Github](https://github.com). You can browse our repositories in our [organization page](https://github.com/phalcon).
+The Phalcon source code (along with documentation, websites etc.) is stored in [GitHub](https://github.com). You can browse our repositories in our [organization page](https://github.com/phalcon).
  
 <a name='contributions'></a>
 ## Contributions
-If you wish to contribute to Phalcon, you can do so by issuing a [Github pull request](https://help.github.com/articles/using-pull-requests/). 
+If you wish to contribute to Phalcon, you can do so by issuing a [GitHub pull request](https://help.github.com/articles/using-pull-requests/). 
 
 When you create a pull request, we have a handy template to help you describe what is the scope of the pull request. It is very important and helpful to the community that you add tests to your pull request. Each pull request will be reviewed by a core contributor (someone with permissions to merge pull requests). Based on the type and content of the pull request, it could be:
 * merged immediately or 
@@ -32,7 +32,7 @@ When you create a pull request, we have a handy template to help you describe wh
 
 <a name='bug-report-checklist'></a>
 ## Bug Report Checklist
-- Make sure you are using the latest released version of Phalcon before creating an issue in Github.
+- Make sure you are using the latest released version of Phalcon before creating an issue in GitHub.
 - Only bugs found in the latest released version of Phalcon will be addressed.
 - We have a handy template when creating an issue to help you provide as much information for the core team to reproduce and address. Being able to reproduce a bug significantly reduces the time to find the cause and fix it. Scripts of even failing tests are more than appreciated. Please check how to create the [reproducible tests](reproducible-tests) page for more information.
 - As part of your report, please include additional information such as the OS, PHP version, Phalcon version, web server, memory etc.
@@ -56,8 +56,9 @@ Please check the following links for instructions on how to generate the backtra
 - Since Phalcon is written in [Zephir](https://zephir-lang.com), please do not submit commits that modify the C generated files directly
 - Phalcon follows a specific coding style. Please install the `editorconfig` plugin in your favorite IDE to take advantage of the supplied `.editorconfig` file that comes with this repository and not to have to worry about coding standards. All tests (PHP code), follow the [PSR-2](https://www.php-fig.org/psr/) standard
 - Remove any change to `ext/kernel`, `*.zep.c` and `*.zep.h` files before submitting the pull request
+- More information [here](new-pull-request)
 
-Before submit **new functionality**, please open a [NFR](/4.0/en/new-feature-request) as a new issue on GitHub to discuss the impact of including the functionality or changes in the core extension. Once the functionality is approved, make sure your PR contains the following:
+Before submitting **new functionality**, please open a [NFR](/4.0/en/new-feature-request) as a new issue on GitHub to discuss the impact of including the functionality or changes in the core extension. Once the functionality is approved, make sure your PR contains the following:
 
 - An update to the `CHANGELOG.md`
 - Unit Tests
