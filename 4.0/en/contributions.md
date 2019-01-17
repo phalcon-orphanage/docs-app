@@ -24,6 +24,17 @@ When you create a pull request, we have a handy template to help you describe wh
 > Please make sure that the target branch that you send your pull request is correct and that you have already rebased your code. Pull requests to the **master** branch are not allowed
 {:.alert .alert-danger}
 
+## Documentation
+If programming in Zephir seems daunting, there are plenty of areas that you can contribute. You can always check the documentation for any typographic or context errors. You could also enhance the documentation with more examples in the respective pages.
+
+All you have to do is go to our [docs](https://github.com/phalcon/docs) repository, fork it, make the changes and send us a pull request.
+
+> Note that changes to the `docs` repository are allowed **only** to the English documents (`en` folder).
+{:.alert .alert-warning}
+
+## Translations
+If you wish to contribute to Phalcon by translating our documents in your native tongue, you can utilize the excellent service of our friends at [Crowdin](https://crowdin.com). Our project is located [here](https://crowdin.com/project/phalcon-documentation). If your language is not listed, please send us a message so that we can add it.
+
 <a name='questions-and-support'></a>
 ## Questions and Support
 
