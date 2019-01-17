@@ -3713,7 +3713,6 @@ footer {
 
 .topic-categories {
     padding-top: 28px;
-    width: 358px;
     margin-bottom: 17px;
 }
 
@@ -3910,7 +3909,6 @@ footer {
 .article-menu {
     padding: 32px 0 42px;
     border: 2px solid #f7f7f7;
-    width: 358px;
     margin-bottom: 17px;
 }
 
@@ -7446,4 +7444,8 @@ body {
 
 .article-page-wrap .row div:first-child{
   width: 100%;
+}
+
+.topic-search {
+  margin-bottom: 30px;
 }
