@@ -90,7 +90,11 @@
                         <ul>
                             {% for topicItem in topic.menu %}
                             <li>
-                                <a href="/{{ page.version |}}/{{ page.language }}/{{ topicItem.url }}">
+                                {% if topicItem.external %}
+                                <a href="{{ topicItem.url }}">
+                                {% else %}
+                                <a href="/{{ page.version |}}/{{ page.language }}{{ topicItem.url }}">
+                                {% endif %}
                                 <div class="topic-item-icon-wrapper">
                                     <img src="/assets/images/icons/topic-item-icon.svg" alt="">
                                 </div>
