@@ -1,14 +1,27 @@
 # Defaults
-/                           /4.0/en/
-/en                         /4.0/en/
+/                           /3.4/en/
+/en                         /3.4/en/
 
-/latest/en                  /4.0/en/
-/latest/en/*                /4.0/en/:splat
+/latest/en                  /3.4/en/
+/latest/en/*                /3.4/en/:splat
+
+/en/3.4                     /3.4/en/
+/en/3.4/*                   /3.4/en/:splat
+/en/latest                  /3.4/en/
+/en/latest/*                /3.4/en/:splat
+
+# For now the default will be 3.4
+# /                           /4.0/en/
+# /en                         /4.0/en/
+#
+# /latest/en                  /4.0/en/
+# /latest/en/*                /4.0/en/:splat
+#
+# /en/latest                  /4.0/en/
+# /en/latest/*                /4.0/en/:splat
 
 /en/4.0                     /4.0/en/
 /en/4.0/*                   /4.0/en/:splat
-/en/latest                  /4.0/en/
-/en/latest/*                /4.0/en/:splat
 
 # 3.1
 /ar/3.1/api/*               /3.1/en/api/:splat
