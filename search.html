@@ -17,13 +17,18 @@ layout: default
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-8 col-lg-9 parse-content">
-                                    <div>
-                                        <a class="article-content-edit-link pull-right"
-                                           href="https://crowdin.com/project/phalcon-documentation/{{ page.language }}">
-                                            {{ homeStrings['edit_on_crowdin'] }}
-                                        </a>
-                                        <br>
-                                    </div>
+                                    <script>
+                                        (function () {
+                                            var cx = '007152425143001603290:aizf4rnowwu';
+                                            var gcse = document.createElement('script');
+                                            gcse.type = 'text/javascript';
+                                            gcse.async = true;
+                                            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                            var s = document.getElementsByTagName('script')[0];
+                                            s.parentNode.insertBefore(gcse, s);
+                                        })();
+                                    </script>
+                                    <gcse:searchresults-only></gcse:searchresults-only>
                                     {{ content }}
                                 </div>
                                 <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
