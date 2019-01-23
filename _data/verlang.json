@@ -1,0 +1,52 @@
+{
+  "versions": [
+    "3.4",
+    "3.3",
+    "3.2",
+    "3.1",
+    "4.0"
+  ],
+  "languages": {
+    "3.1": [
+      "en"
+    ],
+    "3.2": [
+      "en"
+    ],
+    "3.3": [
+      "en"
+    ],
+    "3.4": [
+      "en",
+      "cs-cz",
+      "de-de",
+      "es-es",
+      "fa-ir",
+      "fr-fr",
+      "id-id",
+      "it-it",
+      "ja-jp",
+      "pl-pl",
+      "ru-ru",
+      "tr-tr",
+      "uk-ua",
+      "zh-cn"
+    ],
+    "4.0": [
+      "en",
+      "cs-cz",
+      "el-gr",
+      "es-es",
+      "fa-ir",
+      "fr-fr",
+      "id-id",
+      "it-it",
+      "ja-jp",
+      "pl-pl",
+      "ru-ru",
+      "tr-tr",
+      "uk-ua",
+      "zh-cn"
+    ]
+  }
+}

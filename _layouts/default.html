@@ -1,0 +1,19 @@
+<!doctype html>
+<!--[if IE 8]>
+<html lang="{{ page.language | default: en }}" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]>
+<html lang="{{ page.language | default: en }}" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="{{ page.language | default: en }}" class="no-js">
+<!--<![endif]-->
+{% include env_setup.html %}
+{% include head.html %}
+
+<body onclick="o2.allNavSlideUp()">
+
+{{ content }}
+
+{% include footer.html %}
+{% include footer_js.html %}
+</body>
+</html>
