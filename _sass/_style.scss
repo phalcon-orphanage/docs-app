@@ -3044,14 +3044,15 @@ footer {
 
 .list-head__circle-number {
     float: left;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 26px;
     height: 26px;
     -webkit-border-radius: 50%;
     border-radius: 50%;
     background-color: #7dc855;
     margin: auto;
-    padding-top: 4px;
     text-align: center;
     color: white;
 }
