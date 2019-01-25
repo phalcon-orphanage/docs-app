@@ -172,6 +172,36 @@
 /vi/3.4/db-models-advanced     /3.4/en/db-models
 /zh/3.4/db-models-advanced     /3.4/zh-cn/db-models
 
+# Dead link checker
+/3.3/ex-es/*                   /3.4/es-es/:splat
+/3.3/ex-es/*                   /3.3/en/:splat
+/3.2/ex-es/*                   /3.2/en/:splat
+/3.1/ex-es/*                   /3.1/en/:splat
+/3.3/fr-fr/*                   /3.3/en/:splat
+/3.2/fr-fr/*                   /3.2/en/:splat
+/3.1/fr-fr/*                   /3.1/en/:splat
+/3.3/fa-ir/*                   /3.3/en/:splat
+/3.2/fa-ir/*                   /3.2/en/:splat
+/3.1/fa-ir/*                   /3.1/en/:splat
+/3.3/es-es/*                   /3.3/en/:splat
+/3.2/es-es/*                   /3.2/en/:splat
+/3.1/es-es/*                   /3.1/en/:splat
+/3.3/cs-cz/*                   /3.3/en/:splat
+/3.2/cs-cz/*                   /3.2/en/:splat
+/3.1/cs-cz/*                   /3.1/en/:splat
+/3.3/de-de/*                   /3.3/en/:splat
+/3.2/de-de/*                   /3.2/en/:splat
+/3.1/de-de/*                   /3.1/en/:splat
+/3.3/ja-jp/*                   /3.3/en/:splat
+/3.2/ja-jp/*                   /3.2/en/:splat
+/3.1/ja-jp/*                   /3.1/en/:splat
+/3.3/it-it/*                   /3.3/en/:splat
+/3.2/it-it/*                   /3.2/en/:splat
+/3.1/it-it/*                   /3.1/en/:splat
+/3.3/pl-pl/*                   /3.3/en/:splat
+/3.2/pl-pl/*                   /3.2/en/:splat
+/3.1/pl-pl/*                   /3.1/en/:splat
+
 # 3.1
 /ar/3.1/api/*               /3.1/en/api/:splat
 /ar/3.1/*                   /3.1/en/:splat
