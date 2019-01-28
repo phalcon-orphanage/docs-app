@@ -3208,7 +3208,7 @@
       "url": "#sample"
     }
   ],
-    "upgrade": [
+  "upgrade": [
     {
       "text": "Filter",
       "url": "#filter",
@@ -3256,7 +3256,7 @@
       ]
     }
   ],
-"url": [
+  "url": [
     {
       "text": "Generating URLs and Paths",
       "url": "#overview"

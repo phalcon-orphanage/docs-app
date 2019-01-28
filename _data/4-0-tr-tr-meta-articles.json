@@ -298,7 +298,6 @@
       "menu": [
         {
           "text": "Available events",
-
           "url": "#events-available-events",
           "menu": [
             {
@@ -321,7 +320,6 @@
       "menu": [
         {
           "text": "Attached events",
-
           "url": "#",
           "menu": [
             {
@@ -343,17 +341,14 @@
         },
         {
           "text": "Implementation",
-
           "url": "#"
         },
         {
           "text": "Setup",
-
           "url": "#"
         },
         {
           "text": "Events in Middleware",
-
           "url": "#",
           "menu": [
             {
@@ -427,12 +422,10 @@
       "menu": [
         {
           "text": "Single Module",
-
           "url": "#single"
         },
         {
           "text": "Multi Module",
-
           "url": "#module"
         }
       ]
@@ -473,12 +466,10 @@
       "menu": [
         {
           "text": "Built-In Filters",
-
           "url": "#builtin-filters"
         },
         {
           "text": "Custom Filters",
-
           "url": "#custom-filters"
         }
       ]
@@ -515,17 +506,14 @@
       "menu": [
         {
           "text": "Caching Arbitrary Data",
-
           "url": "#arbitrary-data"
         },
         {
           "text": "File Backend Example",
-
           "url": "#backend-file-example"
         },
         {
           "text": "Memcached Backend Example",
-
           "url": "#backend-memcached-example"
         }
       ]
@@ -556,7 +544,6 @@
       "menu": [
         {
           "text": "Implementing your own Frontend adapters",
-
           "url": "#adapters-frontend-custom"
         }
       ]
@@ -567,52 +554,42 @@
       "menu": [
         {
           "text": "Factory",
-
           "url": "#adapters-backend-factory"
         },
         {
           "text": "Implementing your own Backend adapters",
-
           "url": "#adapters-backend-custom"
         },
         {
           "text": "File Backend Options",
-
           "url": "#adapters-backend-file"
         },
         {
           "text": "Libmemcached Arka Plan Seçenekleri",
-
           "url": "#adapters-backend-libmemcached"
         },
         {
           "text": "Memcache Backend Options",
-
           "url": "#adapters-backend-memcache"
         },
         {
           "text": "APC Arka Plan Seçenekleri",
-
           "url": "#adapters-backend-apc"
         },
         {
           "text": "APCU Arka Plan Seçenekleri",
-
           "url": "#adapters-backend-apcu"
         },
         {
           "text": "Mongo Arka Plan Seçenekleri",
-
           "url": "#adapters-backend-mongo"
         },
         {
           "text": "XCache Arka Plan Seçenekleri",
-
           "url": "#adapters-backend-xcache"
         },
         {
           "text": "Redis Arka Plan Seçenekleri",
-
           "url": "#adapters-backend-redis"
         }
       ]
@@ -625,7 +602,6 @@
       "menu": [
         {
           "text": "Factory",
-
           "url": "#factory"
         }
       ]
@@ -674,7 +650,6 @@
       "menu": [
         {
           "text": "Generating a backtrace",
-
           "url": "#bug-report-generating-backtrace"
         }
       ]
@@ -781,12 +756,10 @@
       "menu": [
         {
           "text": "Factory",
-
           "url": "#adapters-factory"
         },
         {
           "text": "Kendi Bağdaştırıcılarını Uygulama",
-
           "url": "#adapters-custom"
         }
       ]
@@ -797,7 +770,6 @@
       "menu": [
         {
           "text": "Implementing your own dialects",
-
           "url": "#dialects-custom"
         }
       ]
@@ -852,17 +824,14 @@
       "menu": [
         {
           "text": "Creating Tables",
-
           "url": "#tables-create"
         },
         {
           "text": "Altering Tables",
-
           "url": "#tables-altering"
         },
         {
           "text": "Dropping Tables",
-
           "url": "#tables-dropping"
         }
       ]
@@ -883,17 +852,14 @@
       "menu": [
         {
           "text": "Defining Columns",
-
           "url": "#class-anatomy-columns"
         },
         {
           "text": "Defining Indexes",
-
           "url": "#class-anatomy-indexes"
         },
         {
           "text": "Defining References",
-
           "url": "#class-anatomy-references"
         }
       ]
@@ -978,12 +944,10 @@
       "menu": [
         {
           "text": "Implementing Events in the Model's class",
-
           "url": "#events-in-models"
         },
         {
           "text": "Using a custom Events Manager",
-
           "url": "#custom-events-manager"
         }
       ]
@@ -1012,12 +976,10 @@
       "menu": [
         {
           "text": "Database Introspection Strategy",
-
           "url": "#strategies-database-introspection",
           "menu": [
             {
               "text": "Annotations Strategy",
-    
               "url": "#strategies-annotations"
             }
           ]
@@ -1040,44 +1002,36 @@
       "menu": [
         {
           "text": "Unidirectional relationships",
-
           "url": "#unidirectional"
         },
         {
           "text": "Bidirectional relations",
-
           "url": "#bidirectional"
         },
         {
           "text": "Defining relationships",
-
           "url": "#defining",
           "menu": [
             {
               "text": "Multiple field relationships",
-              
               "url": "#multiple-fields"
             },
             {
               "text": "Relationships with parameters",
-              
               "url": "#parameters"
             }
           ]
         },
         {
           "text": "Taking advantage of relationships",
-
           "url": "#taking-advantage-of"
         },
         {
           "text": "Aliasing Relationships",
-
           "url": "#aliases",
           "menu": [
             {
               "text": "Magic Getters vs. Explicit methods",
-              
               "url": "#getters-vs-methods"
             }
           ]
@@ -1090,7 +1044,6 @@
       "menu": [
         {
           "text": "Cascade/Restrict actions",
-
           "url": "#cascade-restrict-actions"
         }
       ]
@@ -1105,12 +1058,10 @@
       "menu": [
         {
           "text": "Updating related records",
-
           "url": "#updating-related-records"
         },
         {
           "text": "Deleting related records",
-
           "url": "#deleting-related-records"
         }
       ]
@@ -1163,7 +1114,6 @@
       "menu": [
         {
           "text": "Public properties vs. Setters/Getters",
-
           "url": "#properties-setters-getters"
         }
       ]
@@ -1178,17 +1128,14 @@
       "menu": [
         {
           "text": "Model Resultsets",
-
           "url": "#resultsets"
         },
         {
           "text": "Filtering Resultsets",
-
           "url": "#filters"
         },
         {
           "text": "Binding Parameters",
-
           "url": "#binding-parameters"
         }
       ]
@@ -1207,7 +1154,6 @@
       "menu": [
         {
           "text": "Create/Update with Confidence",
-
           "url": "#create-update-with-confidence"
         }
       ]
@@ -1296,22 +1242,18 @@
       "menu": [
         {
           "text": "Validation Messages",
-
           "url": "#validation-messages"
         },
         {
           "text": "Validation Events and Events Manager",
-
           "url": "#events"
         },
         {
           "text": "Implementing a Business Rule",
-
           "url": "#business-rules"
         },
         {
           "text": "Validating Data Integrity",
-
           "url": "#data-integrity"
         }
       ]
@@ -1386,22 +1328,18 @@
       "menu": [
         {
           "text": "Result Types",
-
           "url": "#result-types"
         },
         {
           "text": "Joins",
-
           "url": "#joins"
         },
         {
           "text": "Aggregations",
-
           "url": "#aggregations"
         },
         {
           "text": "Conditions",
-
           "url": "#conditions"
         }
       ]
@@ -1424,7 +1362,6 @@
       "menu": [
         {
           "text": "Bound Parameters",
-
           "url": "#query-builder-parameters"
         }
       ]
@@ -1487,22 +1424,18 @@
       "menu": [
         {
           "text": "Linux",
-
           "url": "#installation-linux"
         },
         {
           "text": "MacOS",
-
           "url": "#installation-mac"
         },
         {
           "text": "Windows",
-
           "url": "#installation-windows",
           "menu": [
             {
               "text": "Adding PHP and Tools to your system PATH",
-              
               "url": "#installation-windows-system-path"
             }
           ]
@@ -1575,51 +1508,42 @@
       "menu": [
         {
           "text": "Simple Registration",
-
           "url": "#simple-registration",
           "menu": [
             {
               "text": "String",
-              
               "url": "#simple-registration-string"
             },
             {
               "text": "Class instances",
-              
               "url": "#class-instances"
             },
             {
               "text": "Closures/Anonymous functions",
-              
               "url": "#closures-anonymous-functions"
             }
           ]
         },
         {
           "text": "Complex Registration",
-
           "url": "#complex-registration",
           "menu": [
             {
               "text": "Constructor Injection",
-              
               "url": "#constructor-injection"
             },
             {
               "text": "Kurucu Enjeksiyonu",
-              
               "url": "#setter-injection"
             },
             {
               "text": "Enjeksiyon Özellikleri",
-              
               "url": "#properties-injection"
             }
           ]
         },
         {
           "text": "Array Syntax",
-
           "url": "#array-syntax"
         }
       ]
@@ -1630,7 +1554,6 @@
       "menu": [
         {
           "text": "Olaylar",
-
           "url": "#events"
         }
       ]
@@ -1704,17 +1627,14 @@
       "menu": [
         {
           "text": "Camelize action names",
-
           "url": "#preparing-actions-camelizing-action-names"
         },
         {
           "text": "Remove legacy extensions",
-
           "url": "#preparing-actions-removing-legacy-extensions"
         },
         {
           "text": "Inject model instances",
-
           "url": "#preparing-actions-inject-model-instances"
         }
       ]
@@ -1747,12 +1667,10 @@
       "menu": [
         {
           "text": "With Composer (recommended)",
-
           "url": "#installation-composer"
         },
         {
           "text": "With Git",
-
           "url": "#installation-git"
         }
       ]
@@ -1779,12 +1697,10 @@
       "menu": [
         {
           "text": "Web environment",
-
           "url": "#environment-variables-web"
         },
         {
           "text": "phpMyAdmin variables",
-
           "url": "#environment-variables-phpmyadmin"
         }
       ]
@@ -1799,17 +1715,14 @@
       "menu": [
         {
           "text": "Startup or linking errors",
-
           "url": "#troubleshooting-startup"
         },
         {
           "text": "Full reset",
-
           "url": "#troubleshooting-full-reset"
         },
         {
           "text": "Updating dependencies",
-
           "url": "#troubleshooting-dependencies"
         }
       ]
@@ -1872,12 +1785,10 @@
       "menu": [
         {
           "text": "Installing the Vagrant Box",
-
           "url": "#installation-vagrant-box"
         },
         {
           "text": "Installing the Phalcon Box",
-
           "url": "#installation-phalcon-box"
         }
       ]
@@ -1888,44 +1799,36 @@
       "menu": [
         {
           "text": "Setting your provider",
-
           "url": "#installation-configuration-setting-provider"
         },
         {
           "text": "Memory and CPU",
-
           "url": "#installation-configuration-memory-cpu"
         },
         {
           "text": "Shared folders",
-
           "url": "#installation-configuration-shared-folders"
         },
         {
           "text": "Nginx sites",
-
           "url": "#installation-configuration-nginx",
           "menu": [
             {
               "text": "Custom Nginx configuration",
-              
               "url": "#installation-configuration-custom-nginx"
             },
             {
               "text": "Configuring the `hosts` file",
-              
               "url": "#installation-configuration-hosts"
             }
           ]
         },
         {
           "text": "Install additional packages",
-
           "url": "#installation-aditional-packages"
         },
         {
           "text": "Launching the Phalcon Box",
-
           "url": "#installation-launching-phalcon-box"
         }
       ]
@@ -1936,95 +1839,78 @@
       "menu": [
         {
           "text": "Accessing Phalcon Box globally",
-
           "url": "#daily-usage-accessing-box-globally",
           "menu": [
             {
               "text": "Mac || Linux",
-              
               "url": "#daily-usage-accessing-box-globally-mac-linux"
             },
             {
               "text": "Windows",
-              
               "url": "#daily-usage-accessing-box-globally-windows"
             }
           ]
         },
         {
           "text": "Connecting via SSH",
-
           "url": "#daily-usage-ssh"
         },
         {
           "text": "Connecting to databases",
-
           "url": "#daily-usage-databases"
         },
         {
           "text": "Adding additional sites",
-
           "url": "#daily-usage-additional-sites"
         },
         {
           "text": "Environment variables",
-
           "url": "#daily-usage-environment-variables",
           "menu": [
             {
               "text": "Global variables",
-              
               "url": "#daily-usage-environment-global-variables"
             },
             {
               "text": "Site variables",
-              
               "url": "#daily-usage-environment-site-variables"
             }
           ]
         },
         {
           "text": "Ports",
-
           "url": "#daily-usage-ports",
           "menu": [
             {
               "text": "Forwarding additional ports",
-              
               "url": "#daily-usage-ports-forwarding"
             }
           ]
         },
         {
           "text": "Sharing your environment",
-
           "url": "#daily-usage-sharing-environment"
         },
         {
           "text": "Network interfaces",
-
           "url": "#daily-usage-network-interfaces"
         },
         {
           "text": "Updating Phalcon Box",
-
           "url": "#daily-usage-updating-box"
         },
         {
           "text": "Provider specific settings",
-
           "url": "#daily-usage-provider-settings",
           "menu": [
             {
               "text": "VirtualBox",
-              
               "url": "#daily-usage-provider-settings-virtualbox"
             }
           ]
         },
         {
           "text": "Mail catcher",
-
           "url": "#daily-usage-mail-catcher"
         }
       ]
@@ -2241,12 +2127,10 @@
       "menu": [
         {
           "text": "Factory",
-
           "url": "#adapters-factory"
         },
         {
           "text": "Kendi Bağdaştırıcılarını Uygulama",
-
           "url": "#adapters-custom"
         }
       ]
@@ -2261,22 +2145,18 @@
       "menu": [
         {
           "text": "`Image::WIDTH`",
-
           "url": "#resizing-width"
         },
         {
           "text": "`Image::HEIGHT`",
-
           "url": "#resizing-height"
         },
         {
           "text": "`Image::NONE`",
-
           "url": "#resizing-none"
         },
         {
           "text": "`Image::TENSILE`",
-
           "url": "#resizing-tensile"
         }
       ]
@@ -2317,17 +2197,14 @@
       "menu": [
         {
           "text": "Hardware",
-
           "url": "#requirements-hardware"
         },
         {
           "text": "Software",
-
           "url": "#requirements-software",
           "menu": [
             {
               "text": "Optional depending on the needs of your application",
-              
               "url": "#requirements-software-optional"
             }
           ]
@@ -2340,146 +2217,120 @@
       "menu": [
         {
           "text": "Linux",
-
           "url": "#installation-linux",
           "menu": [
             {
               "text": "DEB based distributions (CentOS, Fedora, etc.)",
-              
               "url": "#installation-linux-deb",
               "menu": [
                 {
                   "text": "Repository installation",
-                  
                   "url": "#installation-linux-deb-repository"
                 },
                 {
                   "text": "Stable releases",
-                  
                   "url": "#installation-linux-debian-repository-stable"
                 },
                 {
                   "text": "Nightly releases",
-                  
                   "url": "#installation-linux-debian-repository-nightly"
                 },
                 {
                   "text": "Phalcon installation",
-                  
                   "url": "#installation-linux-debian-phalcon",
                   "menu": [
                     {
                       "text": "PHP 5.x",
-                      
                       "url": "#installation-linux-debian-phalcon-php5"
                     },
                     {
                       "text": "PHP 7",
-
                       "url": "#installation-linux-debian-phalcon-php7"
                     }
                   ]
                 },
                 {
                   "text": "Additional PPAs",
-                  
                   "url": "#installation-linux-debian-other-ppa"
                 }
               ]
             },
             {
               "text": "RPM based distributions (CentOS, Fedora, etc.)",
-              
               "url": "#installation-linux-rpm",
               "menu": [
                 {
                   "text": "Repository installation",
-                  
                   "url": "#installation-linux-rpm-repository"
                 },
                 {
                   "text": "Stable releases",
-                  
                   "url": "#installation-linux-rpm-repository-stable",
                   "menu": [
                     {
                       "text": "Nightly releases",
-                      
                       "url": "#installation-linux-rpm-repository-nightly"
                     }
                   ]
                 },
                 {
                   "text": "Phalcon installation",
-                  
                   "url": "#installation-linux-rpm-phalcon",
                   "menu": [
                     {
                       "text": "PHP 5.x",
-                      
                       "url": "#installation-linux-rpm-phalcon-php5"
                     },
                     {
                       "text": "PHP 7",
-                      
                       "url": "#installation-linux-rpm-phalcon-php7"
                     }
                   ]
                 },
                 {
                   "text": "Additional RPMs",
-                  
                   "url": "#installation-linux-rpm-other-rpm"
                 }
               ]
             },
             {
               "text": "FreeBSD",
-    
               "url": "#installation-freebsd"
             },
             {
               "text": "Gentoo",
-    
               "url": "#installation-gentoo"
             }
           ]
         },
         {
           "text": "macOS",
-
           "url": "#installation-macos",
           "menu": [
             {
               "text": "Brew",
-              
               "url": "#installation-macos-brew"
             },
             {
               "text": "MacPorts",
-              
               "url": "#installation-macos-macports"
             }
           ]
         },
         {
           "text": "Windows",
-
           "url": "#installation-windows"
         },
         {
           "text": "Compile from Sources",
-
           "url": "#installation-sources"
         },
         {
           "text": "Advanced Compilation",
-
           "url": "#installation-sources-advanced"
         },
         {
           "text": "Testing",
-
           "url": "#installation-testing"
         }
       ]
@@ -2559,12 +2410,10 @@
       "menu": [
         {
           "text": "Line Formatter",
-
           "url": "#message-formatting-line"
         },
         {
           "text": "Implementing your own formatters",
-
           "url": "#message-formatting-custom"
         }
       ]
@@ -2575,27 +2424,22 @@
       "menu": [
         {
           "text": "Stream Logger",
-
           "url": "#usage-stream"
         },
         {
           "text": "File Logger",
-
           "url": "#usage-file"
         },
         {
           "text": "Syslog Logger",
-
           "url": "#usage-syslog"
         },
         {
           "text": "FirePHP Logger",
-
           "url": "#usage-firephp"
         },
         {
           "text": "Kendi Bağdaştırıcılarını Uygulama",
-
           "url": "#usage-custom"
         }
       ]
@@ -2648,12 +2492,10 @@
       "menu": [
         {
           "text": "Profiling with Xhprof",
-
           "url": "#profiling-server-xhprof"
         },
         {
           "text": "Profiling SQL Statements",
-
           "url": "#profiling-server-sql-statements"
         }
       ]
@@ -2664,17 +2506,14 @@
       "menu": [
         {
           "text": "Profile with Chrome/Firefox",
-
           "url": "#profiling-client-chrome-firefox"
         },
         {
           "text": "Yahoo! YSlow",
-
           "url": "#profiling-client-yslow"
         },
         {
           "text": "Profile with Speed Tracer",
-
           "url": "#profiling-client-speed-tracer"
         }
       ]
@@ -2773,17 +2612,14 @@
       "menu": [
         {
           "text": "Setting an Expiration Time",
-
           "url": "#http-cache-expiration-time"
         },
         {
           "text": "Cache-Control",
-
           "url": "#http-cache-control"
         },
         {
           "text": "E-Tag",
-
           "url": "#http-cache-etag"
         }
       ]
@@ -2800,37 +2636,30 @@
       "menu": [
         {
           "text": "Parameters with Names",
-
           "url": "#defining-named-parameters"
         },
         {
           "text": "Short Syntax",
-
           "url": "#defining-short-syntax"
         },
         {
           "text": "Mixing Array and Short Syntax",
-
           "url": "#defining-mixed-parameters"
         },
         {
           "text": "Routing to Modules",
-
           "url": "#defining-route-to-modules"
         },
         {
           "text": "HTTP Method Restrictions",
-
           "url": "#defining-http-method-restrictions"
         },
         {
           "text": "Using conversors",
-
           "url": "#defining-using-conversors"
         },
         {
           "text": "Groups of Routes",
-
           "url": "#defining-groups-of-routes"
         }
       ]
@@ -2933,7 +2762,6 @@
       "menu": [
         {
           "text": "Factory",
-
           "url": "#start-factory"
         }
       ]
@@ -2998,17 +2826,14 @@
       "menu": [
         {
           "text": "From Controllers",
-
           "url": "#helper-values-form-controllers"
         },
         {
           "text": "From the Request",
-
           "url": "#helper-values-from-request"
         },
         {
           "text": "Specifying values directly",
-
           "url": "#helper-values-directly"
         }
       ]
@@ -3023,22 +2848,18 @@
       "menu": [
         {
           "text": "Images",
-
           "url": "#static-content-helpers-images"
         },
         {
           "text": "Stylesheets",
-
           "url": "#static-content-helpers-stylesheets"
         },
         {
           "text": "Javascript",
-
           "url": "#static-content-helpers-javascript"
         },
         {
           "text": "HTML5 elements - generic HTML helper",
-
           "url": "#static-content-helpers-html5"
         }
       ]
@@ -3063,7 +2884,6 @@
       "menu": [
         {
           "text": "Factory",
-
           "url": "#adapters-factory"
         }
       ]
@@ -3092,22 +2912,18 @@
       "menu": [
         {
           "text": "Autoloaders",
-
           "url": "#autoloaders"
         },
         {
           "text": "Dependency Management",
-
           "url": "#dependency-management"
         },
         {
           "text": "Handling the application request",
-
           "url": "#request"
         },
         {
           "text": "Putting everything together",
-
           "url": "#full-example"
         }
       ]
@@ -3184,12 +3000,10 @@
       "menu": [
         {
           "text": "Events Management",
-
           "url": "#events-manager"
         },
         {
           "text": "Getting the ACL list",
-
           "url": "#acl"
         }
       ]
@@ -3343,7 +3157,7 @@
       ]
     }
   ],
-"url": [
+  "url": [
     {
       "text": "Generating URLs and Paths",
       "url": "#overview"
@@ -3430,27 +3244,22 @@
       "menu": [
         {
           "text": "Using Templates",
-
           "url": "#using-templates"
         },
         {
           "text": "Control Rendering Levels",
-
           "url": "#control-rendering-levels"
         },
         {
           "text": "Disabling render levels",
-
           "url": "#disabling-render-levels"
         },
         {
           "text": "Picking Views",
-
           "url": "#picking-views"
         },
         {
           "text": "Disabling the view",
-
           "url": "#disabling-view"
         }
       ]
@@ -3477,12 +3286,10 @@
       "menu": [
         {
           "text": "Creating your own Template Engine Adapter",
-
           "url": "#custom-template-engine"
         },
         {
           "text": "Changing the Template Engine",
-
           "url": "#changing-template-engine"
         }
       ]
@@ -3497,12 +3304,10 @@
       "menu": [
         {
           "text": "Hierarchical Rendering",
-
           "url": "#stand-alone-hierarchical-rendering"
         },
         {
           "text": "Simple Rendering",
-
           "url": "#stand-alone-simple-rendering"
         }
       ]
@@ -3547,71 +3352,58 @@
       "menu": [
         {
           "text": "For",
-
           "url": "#control-structures-for"
         },
         {
           "text": "Loop Controls",
-
           "url": "#control-structures-loops",
           "menu": [
             {
               "text": "If",
-              
               "url": "#control-structures-if"
             },
             {
               "text": "Switch",
-              
               "url": "#control-structures-switch"
             }
           ]
         },
         {
           "text": "Loop Context",
-
           "url": "#control-structures-loop",
           "menu": [
             {
               "text": "Assignments",
-              
               "url": "#assignments"
             },
             {
               "text": "Expressions",
-              
               "url": "#expressions"
             }
           ]
         },
         {
           "text": "Literals",
-
           "url": "#expressions-literals"
         },
         {
           "text": "Arrays",
-
           "url": "#expressions-arrays"
         },
         {
           "text": "Math",
-
           "url": "#expressions-math"
         },
         {
           "text": "Comparisons",
-
           "url": "#expressions-comparisons"
         },
         {
           "text": "Logic",
-
           "url": "#expressions-logic"
         },
         {
           "text": "Other Operators",
-
           "url": "#expressions-other-operators"
         }
       ]
@@ -3638,12 +3430,10 @@
       "menu": [
         {
           "text": "Include",
-
           "url": "#view-integration-include"
         },
         {
           "text": "Partial vs Include",
-
           "url": "#view-integration-partial-vs-include"
         }
       ]
@@ -3654,7 +3444,6 @@
       "menu": [
         {
           "text": "Çoklu Katılım",
-
           "url": "#template-inheritance-multiple"
         }
       ]
@@ -3669,17 +3458,14 @@
       "menu": [
         {
           "text": "Functions",
-
           "url": "#extending-functions"
         },
         {
           "text": "Filters",
-
           "url": "#extending-filters"
         },
         {
           "text": "Extensions",
-
           "url": "#extending-extensions"
         }
       ]
