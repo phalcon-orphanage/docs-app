@@ -1,9 +1,13 @@
-{% if page.upgrade %}
 <div class="topic-search">
     <div class="alert alert-info text-center">
+        {% if page.upgrade %}
         <a href="/{{ page.version }}/{{ page.language }}/upgrade{{ page.upgrade }}">
             <strong>Upgrade Instructions</strong>
         </a>
+        <br>
+        {% endif %}
+        <a href="https://crowdin.com/project/phalcon-documentation/{{ page.language }}">
+            <strong>{{ homeStrings['edit_on_crowdin'] }}</strong>
+        </a>
     </div>
 </div>
-{% endif %}

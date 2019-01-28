@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% include env_setup.html %}
+{% include env-setup.html %}
 
 {% include header.html %}
 
@@ -18,17 +18,41 @@ layout: default
                             <div class="row">
                                 <div class="col-md-8 col-lg-9 parse-content docSearch-content">
                                     <div>
-                                        <a class="article-content-edit-link pull-right"
-                                           href="https://crowdin.com/project/phalcon-documentation/{{ page.language }}">
-                                            {{ homeStrings['edit_on_crowdin'] }}
-                                        </a>
-                                        <br>
+                                        {{ content }}
                                     </div>
-                                    {{ content }}
+                                    {% if page.version == '4.0' and page.category %}
+                                    <div>
+                                        <div class="row">
+                                            {% assign elements = site.data[articlesKey][page.category] %}
+                                            {% for menu in elements %}
+                                                {% assign matchScript = script | prepend: '/' %}
+                                                {% if matchScript == menu.url %}
+                                                    {% if forloop.first != true %}
+                                                    {% assign previous = forloop.index | minus: 2 %}
+                                            <div class="col">
+                                                <a class="article-content-edit-link right"
+                                                   href="/{{ page.version }}/{{ page.language }}{{ elements[previous]['url'] }}">
+                                                    {{ elements[previous]['text'] }}
+                                                </a>
+                                            </div>
+                                                    {% endif %}
+                                                    {% if forloop.last != true %}
+                                            <div class="col">
+                                                <a class="article-content-edit-link right"
+                                                   href="/{{ page.version }}/{{ page.language }}{{ elements[forloop.index]['url'] }}">
+                                                    {{ elements[forloop.index]['text'] }}
+                                                </a>
+                                            </div>
+                                                    {% endif %}
+                                                {% endif %}
+                                            {% endfor %}
+                                        </div>
+                                    </div>
+                                    {% endif %}
                                 </div>
                                 <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
                                     <!--{ include sidebar-search.html }-->
-                                    {% include sidebar-upgrade.html %}
+                                    {% include sidebar-links.html %}
                                     {% include sidebar-topics.html %}
                                     {% include sidebar-articles.html %}
                                 </div>
