@@ -3246,44 +3246,6 @@
       ]
     }
   ],
-  "upgrade": [
-    {
-      "text": "ALC",
-      "url": "#acl",
-      "menu": [
-        {
-          "text": "Overview",
-          "url": "#acl-overview"
-        },
-        {
-          "text": "Changed",
-          "url": "#acl-changed"
-        }
-      ]
-    },
-    {
-      "text": "Filter",
-      "url": "#filter",
-      "menu": [
-        {
-          "text": "Overview",
-          "url": "#filter-overview"
-        },
-        {
-          "text": "Using the FactoryDefault",
-          "url": "#filter-di-factorydefault"
-        },
-        {
-          "text": "Using a custom Di",
-          "url": "#filter-di-custom"
-        },
-        {
-          "text": "Constants",
-          "url": "#filter-constants"
-        }
-      ]
-    }
-  ],
   "url": [
     {
       "text": "Generating URLs and Paths",
