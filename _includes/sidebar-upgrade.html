@@ -1,0 +1,9 @@
+{% if page.upgrade %}
+<div class="topic-search">
+    <div class="alert alert-info">
+        <a href="/{{ page.version }}/{{ page.language }}/upgrade{{ page.upgrade }}">
+            <strong>Upgrade Instructions</strong>
+        </a>
+    </div>
+</div>
+{% endif %}
