@@ -17,38 +17,7 @@ layout: default
                         <div class="container-fluid">
                             <div class="row">
                                 <div class="col-md-8 col-lg-9 parse-content docSearch-content">
-                                    <div>
-                                        {{ content }}
-                                    </div>
-                                    {% if page.version == '4.0' and page.category %}
-                                    <div>
-                                        <div class="row">
-                                            {% assign elements = site.data[articlesKey][page.category] %}
-                                            {% for menu in elements %}
-                                                {% assign matchScript = script | prepend: '/' %}
-                                                {% if matchScript == menu.url %}
-                                                    {% if forloop.first != true %}
-                                                    {% assign previous = forloop.index | minus: 2 %}
-                                            <div class="col">
-                                                <a class="article-content-edit-link right"
-                                                   href="/{{ page.version }}/{{ page.language }}{{ elements[previous]['url'] }}">
-                                                    {{ elements[previous]['text'] }}
-                                                </a>
-                                            </div>
-                                                    {% endif %}
-                                                    {% if forloop.last != true %}
-                                            <div class="col">
-                                                <a class="article-content-edit-link right"
-                                                   href="/{{ page.version }}/{{ page.language }}{{ elements[forloop.index]['url'] }}">
-                                                    {{ elements[forloop.index]['text'] }}
-                                                </a>
-                                            </div>
-                                                    {% endif %}
-                                                {% endif %}
-                                            {% endfor %}
-                                        </div>
-                                    </div>
-                                    {% endif %}
+                                    {{ content }}
                                 </div>
                                 <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
                                     <!--{ include sidebar-search.html }-->
@@ -58,8 +27,39 @@ layout: default
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-md-6">left</div>
-                                <div class="col-md-6 text-right">right</div>
+                                {% assign previousText = '' %}
+                                {% assign previousUrl = '' %}
+                                {% assign nextText = '' %}
+                                {% assign nextUrl = '' %}
+                                {% if page.version == '4.0' and page.category %}
+                                    {% assign elements = site.data[articlesKey][page.category] %}
+                                    {% for menu in elements %}
+                                        {% assign matchScript = script | prepend: '/' %}
+                                        {% if matchScript == menu.url %}
+                                            {% if forloop.first != true %}
+                                                {% assign previous = forloop.index | minus: 2 %}
+                                                {% assign previousText = elements[previous]['text'] %}
+                                                {% assign previousUrl = elements[previous]['url'] %}
+                                            {% endif %}
+
+                                            {% if forloop.last != true %}
+                                                {% assign nextText = elements[forloop.index]['text'] %}
+                                                {% assign nextUrl = elements[forloop.index]['url'] %}
+                                            {% endif %}
+                                        {% endif %}
+                                    {% endfor %}
+                                {% endif %}
+
+                                <div class="col-md-6">
+                                    <a href="/{{ page.version }}/{{ page.language }}{{ previousUrl }}">
+                                        {{ previousText }}
+                                    </a>
+                                </div>
+                                <div class="col-md-6 text-right">
+                                    <a href="/{{ page.version }}/{{ page.language }}{{ nextUrl }}">
+                                        {{ nextText }}
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </section>
