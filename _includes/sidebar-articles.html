@@ -1,3 +1,17 @@
+{% if page.version == '4.0' %}
+<div class="article-menu">
+    <ul>
+        {% assign articles = site.data[articlesKey] %}
+        {% for article in articles[page.category] %}
+        <li>
+            <a href="{{ script }}/{{ article.url }}"{% if script == article.url %} class="active"{% endif %}>
+                {{ article.text }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% else %}
 <div class="article-menu">
     <ul>
         {% assign articles = site.data[articlesKey] %}
@@ -54,3 +68,4 @@
         {% endfor %}
     </ul>
 </div>
+{% endif %}
