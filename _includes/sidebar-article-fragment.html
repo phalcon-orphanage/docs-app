@@ -1,0 +1,12 @@
+        <li>
+            <a href="/{{ page.version }}/{{ page.language }}{{ include.item.url }}"{% if include.script == include.item.url %} class="active"{% endif %}>
+                {{ include.item.text }}
+            </a>
+            {% if include.item.menu %}
+            <ul>
+                {% for itemMenu in include.item.menu %}
+                {% include sidebar-article-fragment.html script=include.script item=itemMenu %}
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>

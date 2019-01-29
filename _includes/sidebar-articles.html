@@ -1,13 +1,15 @@
 {% if page.version == '4.0' %}
+    {% assign collectionKey = page.category %}
+{% else %}
+    {% assign collectionKey = script %}
+{% endif %}
+
+{% if page.version == '4.0' %}
 <div class="article-menu">
     <ul>
         {% assign articles = site.data[articlesKey] %}
         {% for article in articles[page.category] %}
-        <li>
-            <a href="{{ script }}/{{ article.url }}"{% if script == article.url %} class="active"{% endif %}>
-                {{ article.text }}
-            </a>
-        </li>
+            {% include sidebar-article-fragment.html item=article %}
         {% endfor %}
     </ul>
 </div>
