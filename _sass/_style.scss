@@ -7446,3 +7446,15 @@ body {
 .topic-search {
   margin-bottom: 30px;
 }
+
+.navigation {
+  color: #5e6977;
+}
+
+.article-navigation a {
+  text-decoration: none !important;
+  border-bottom: 1px solid transparent;
+  &:hover {
+    border-bottom: 1px solid #b5c0d1;
+  }
+}

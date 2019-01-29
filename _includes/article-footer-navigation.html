@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-                                    <div class="row">
+                                    <div class="row article-navigation">
                                         {% assign previousText = '' %}
                                         {% assign previousUrl = '' %}
                                         {% assign nextText = '' %}
@@ -27,7 +27,7 @@ layout: default
                                         <div class="col-md-6">
                                             {% if previousText != "" %}
                                             <a href="/{{ page.version }}/{{ page.language }}{{ previousUrl }}">
-                                                <span class="btn btn-primary">
+                                                <span class="navigation">
                                                     {{ previousText }}
                                                 </span>
                                             </a>
@@ -36,7 +36,7 @@ layout: default
                                         <div class="col-md-6 text-right">
                                             {% if nextText != "" %}
                                             <a href="/{{ page.version }}/{{ page.language }}{{ nextUrl }}">
-                                                <span class="btn btn-primary">
+                                                <span class="navigation">
                                                     {{ nextText }}
                                                 </span>
                                             </a>
