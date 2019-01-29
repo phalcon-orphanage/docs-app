@@ -1,10 +1,10 @@
 <!doctype html>
 <!--[if IE 8]>
-<html lang="{{ page.language | default: en }}" class="ie8 no-js"> <![endif]-->
+<html lang="{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]>
-<html lang="{{ page.language | default: en }}" class="ie9 no-js"> <![endif]-->
+<html lang="{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" class="ie9 no-js"> <![endif]-->
 <!--[if !IE]><!-->
-<html lang="{{ page.language | default: en }}" class="no-js">
+<html lang="{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" class="no-js">
 <!--<![endif]-->
 {% include env-setup.html %}
 {% include head.html %}

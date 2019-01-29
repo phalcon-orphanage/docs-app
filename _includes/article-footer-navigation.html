@@ -1,0 +1,45 @@
+---
+layout: default
+---
+                                    <div class="row">
+                                        {% assign previousText = '' %}
+                                        {% assign previousUrl = '' %}
+                                        {% assign nextText = '' %}
+                                        {% assign nextUrl = '' %}
+                                        {% if page.version == '4.0' and page.category %}
+                                            {% assign elements = site.data[articlesKey][page.category] %}
+                                            {% for menu in elements %}
+                                                {% assign matchScript = script | prepend: '/' %}
+                                                {% if matchScript == menu.url %}
+                                                    {% if forloop.first != true %}
+                                                        {% assign previous = forloop.index | minus: 2 %}
+                                                        {% assign previousText = elements[previous]['text'] %}
+                                                        {% assign previousUrl = elements[previous]['url'] %}
+                                                    {% endif %}
+
+                                                    {% if forloop.last != true %}
+                                                        {% assign nextText = elements[forloop.index]['text'] %}
+                                                        {% assign nextUrl = elements[forloop.index]['url'] %}
+                                                    {% endif %}
+                                                {% endif %}
+                                            {% endfor %}
+                                        {% endif %}
+                                        <div class="col-md-6">
+                                            {% if previousText != "" %}
+                                            <a href="/{{ page.version }}/{{ page.language }}{{ previousUrl }}">
+                                                <span class="btn btn-primary">
+                                                    {{ previousText }}
+                                                </span>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                        <div class="col-md-6 text-right">
+                                            {% if nextText != "" %}
+                                            <a href="/{{ page.version }}/{{ page.language }}{{ nextUrl }}">
+                                                <span class="btn btn-primary">
+                                                    {{ nextText }}
+                                                </span>
+                                            </a>
+                                            {% endif %}
+                                        </div>
+                                    </div>
