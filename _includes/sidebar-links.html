@@ -8,11 +8,11 @@
         <br>
         {% endif %}
         {% if page.language != 'en' %}
-        <a href="https://github.com/phalcon/docs/tree/4.0/en">
+        <a href="https://crowdin.com/project/phalcon-documentation/{{ site.data.supported[page.language]['iso_639_1'] }}">
             <strong>{{ homeStrings['edit_on_crowdin'] }}</strong>
         </a>
         {% else %}
-        <a href="https://crowdin.com/project/phalcon-documentation/{{ site.data.supported[page.language]['iso_639_1'] }}">
+        <a href="https://github.com/phalcon/docs/tree/4.0/en">
             <strong>{{ homeStrings['edit_on_github'] }}</strong>
         </a>
         {% endif %}
