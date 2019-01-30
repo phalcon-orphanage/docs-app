@@ -218,7 +218,7 @@
         {
           "text": "Methods - Verbs",
           "level": 2,
-          "url": "routing-verbs",
+          "url": "/application-micro#routing-verbs",
           "menu": [
             {
               "text": "delete",
