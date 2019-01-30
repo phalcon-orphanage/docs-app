@@ -7,7 +7,11 @@
         <ul style="display: none;">
             {% for item in topic.menu %}
             <li>
-                <a href="/{{ page.version }}/{{ page.language }}{{ item.url }}">
+                {% if item.external %}
+                <a href="{{ item.url }}">
+                {% else %}
+                <a href="/{{ page.version }}/{{ page.language }}{{ item.url }}">    
+                {% endif %}
                 <span>{{ item.text }}</span>
                 </a>
             </li>
