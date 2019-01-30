@@ -1,52 +1,52 @@
 {
   "acl": [
     {
-      "text": "Overview",
-      "url": "/acl#overview"
+      "text": "ACL",
+      "url": "/acl"
     },
     {
       "text": "Creating an ACL",
-      "url": "/acl#setup"
+      "url": "/acl-setup"
     },
     {
-      "text": "Adding Roles to the ACL",
-      "url": "/acl#adding-roles"
+      "text": "Adding Operations",
+      "url": "/acl-adding-operations"
     },
     {
-      "text": "Adding Resources",
-      "url": "/acl#adding-resources"
+      "text": "Adding Subjects",
+      "url": "/acl-adding-subjects"
     },
     {
       "text": "Defining Access Controls",
-      "url": "/acl#access-controls"
+      "url": "/acl-access-controls"
     },
     {
       "text": "Querying an ACL",
-      "url": "/acl#querying"
+      "url": "/acl-querying"
     },
     {
       "text": "Function based access",
-      "url": "/acl#function-based-access"
+      "url": "/acl-function-based-access"
     },
     {
-      "text": "Objects as role name and resource name",
-      "url": "/acl#objects"
+      "text": "Objects as Operation and Subject name",
+      "url": "/acl-objects"
     },
     {
-      "text": "Roles Inheritance",
-      "url": "/acl#roles-inheritance"
+      "text": "Operations Inheritance",
+      "url": "/acl-operations-inheritance"
     },
     {
       "text": "Serializing ACL lists",
-      "url": "/acl#serialization"
+      "url": "/acl-serialization"
     },
     {
       "text": "Events",
-      "url": "/acl#events"
+      "url": "/acl-events"
     },
     {
       "text": "Implementing your own adapters",
-      "url": "/acl#custom-adapters"
+      "url": "/acl-custom-adapters"
     }
   ],
   "annotations": [
@@ -1978,43 +1978,43 @@
   "filter": [
     {
       "text": "Filtering and Sanitizing",
-      "url": "/filter#overview"
+      "url": "/filter"
     },
     {
-      "text": "Types of Built-in Filters",
-      "url": "/filter#types"
+      "text": "Built-in Sanitizers",
+      "url": "/filter-sanitizers"
     },
     {
       "text": "Sanitizing data",
-      "url": "/filter#sanitizing"
+      "url": "/filter-sanitizing"
     },
     {
       "text": "Sanitizing from Controllers",
-      "url": "/filter#sanitizing-from-controllers"
+      "url": "/filter-sanitizing-from-controllers"
     },
     {
-      "text": "Filtering Action Parameters",
-      "url": "/filter#filtering-action-parameters"
+      "text": "Sanitizing Action Parameters",
+      "url": "/filter-sanitizing-action-parameters"
     },
     {
       "text": "Filtering data",
-      "url": "/filter#filtering-data"
+      "url": "/filter-sanitizing-data"
     },
     {
-      "text": "Combining Filters",
-      "url": "/filter#combining-filters"
+      "text": "Combining Sanitizers",
+      "url": "/filter-combining-sanitizers"
     },
     {
       "text": "Adding Sanitizers",
-      "url": "/filter#adding-filters"
+      "url": "/filter-adding-sanitizers"
     },
     {
       "text": "Complex Sanitizing and Filtering",
-      "url": "/filter#complex-sanitization-filtering"
+      "url": "/filter-complex-sanitization-filtering"
     },
     {
       "text": "Implementing your own Filter",
-      "url": "/filter#custom"
+      "url": "/filter-custom"
     }
   ],
   "flash": [
@@ -2365,70 +2365,52 @@
       "url": "/loader#troubleshooting"
     }
   ],
-  "logging": [
+  "logger": [
     {
-      "text": "Logging",
-      "url": "/logging#overview"
+      "text": "Logger",
+      "url": "/logger"
     },
     {
       "text": "Adapters",
-      "url": "/logging#adapters"
+      "url": "/logger-adapters"
     },
     {
-      "text": "Factory",
-      "url": "/logging#adapters-factory"
+      "text": "Creating a Logger component",
+      "url": "/logger-creating"
     },
     {
-      "text": "Creating a Log",
-      "url": "/logging#creating"
-    },
-    {
-      "text": "Transactions",
-      "url": "/logging#transactions"
-    },
-    {
-      "text": "Logging to Multiple Handlers",
-      "url": "/logging#multiple-handlers"
+      "text": "Logging to Multiple adapters",
+      "url": "/logger-multiple"
     },
     {
       "text": "Message Formatting",
-      "url": "/logging#message-formatting",
+      "url": "/logger-message-formatting",
       "menu": [
         {
-          "text": "Line Formatter",
-          "url": "/logging#message-formatting-line"
+          "text": "Line",
+          "url": "/logger-message-formatting-line"
         },
         {
-          "text": "Implementing your own formatters",
-          "url": "/logging#message-formatting-custom"
+          "text": "JSON",
+          "url": "/logger-message-formatting-json"
+        },
+        {
+          "text": "Syslog",
+          "url": "/logger-message-formatting-syslog"
+        },
+        {
+          "text": "Custom",
+          "url": "/logger-message-formatting-custom"
         }
       ]
     },
     {
-      "text": "Adapters",
-      "url": "/logging#usage",
-      "menu": [
-        {
-          "text": "Stream Logger",
-          "url": "/logging#usage-stream"
-        },
-        {
-          "text": "File Logger",
-          "url": "/logging#usage-file"
-        },
-        {
-          "text": "Syslog Logger",
-          "url": "/logging#usage-syslog"
-        },
-        {
-          "text": "FirePHP Logger",
-          "url": "/logging#usage-firephp"
-        },
-        {
-          "text": "Implementing your own adapters",
-          "url": "/logging#usage-custom"
-        }
-      ]
+      "text": "Interpolation",
+      "url": "/logger-interpolation"
+    },
+    {
+      "text": "Examples",
+      "url": "/logger-examples"
     }
   ],
   "mvc": [
@@ -2855,6 +2837,92 @@
       "url": "/tag#custom-helpers"
     }
   ],
+  "testing-environment": [
+    {
+      "text": "Overview",
+      "url": "#overview"
+    },
+    {
+      "text": "Overview",
+      "url": "#overview"
+    },
+    {
+      "text": "The problem",
+      "url": "#problem"
+    },
+    {
+      "text": "Solution",
+      "url": "#solution"
+    },
+    {
+      "text": "Installation",
+      "url": "#installation"
+    },
+    {
+      "text": "Running the environment",
+      "url": "#running",
+      "menu": [
+        {
+          "text": "Fork the repository",
+          "url": "#running-fork"
+        },
+        {
+          "text": "Clone the fork",
+          "url": "#running-clone"
+        },
+        {
+          "text": "Copy the boxfile",
+          "url": "#running-boxfile"
+        },
+        {
+          "text": "Configure nanobox",
+          "url": "#running-nanobox-configure"
+        },
+        {
+          "text": "Run nanobox",
+          "url": "#running-nanobox-run"
+        },
+        {
+          "text": "Composer",
+          "url": "#running-composer"
+        },
+        {
+          "text": "Check Zephir",
+          "url": "#running-zephir"
+        },
+        {
+          "text": "Compile Phalcon",
+          "url": "#running-compile"
+        },
+        {
+          "text": "Check extensions",
+          "url": "#running-extensions"
+        }
+      ]
+    },
+    {
+      "text": "Running tests",
+      "url": "#tests",
+      "menu": [
+        {
+          "text": "Unit",
+          "url": "#tests-unit"
+        },
+        {
+          "text": "Integration",
+          "url": "#tests-integration"
+        }
+      ]
+    },
+    {
+      "text": "Development",
+      "url": "#development"
+    },
+    {
+      "text": "Services",
+      "url": "#services"
+    }
+  ],
   "translate": [
     {
       "text": "Multi-lingual Support",
@@ -3075,6 +3143,24 @@
       "url": "/tutorial-vokuro#sign-up"
     }
   ],
+  "use-case": [
+    {
+      "text": "Use Case",
+      "url": "#overview"
+    },
+    {
+      "text": "Requirements",
+      "url": "#requirements"
+    },
+    {
+      "text": "Groups",
+      "url": "#groups"
+    },
+    {
+      "text": "Endpoints",
+      "url": "#endpoints"
+    }
+  ],
   "unit-testing": [
     {
       "text": "Unit Testing",
@@ -3095,6 +3181,44 @@
     {
       "text": "Sample Unit Test",
       "url": "/unit-testing#sample"
+    }
+  ],
+  "upgrade": [
+    {
+      "text": "ALC",
+      "url": "#acl",
+      "menu": [
+        {
+          "text": "Overview",
+          "url": "#acl-overview"
+        },
+        {
+          "text": "Changed",
+          "url": "#acl-changed"
+        }
+      ]
+    },
+    {
+      "text": "Filtr",
+      "url": "#filter",
+      "menu": [
+        {
+          "text": "Overview",
+          "url": "#filter-overview"
+        },
+        {
+          "text": "Using the FactoryDefault",
+          "url": "#filter-di-factorydefault"
+        },
+        {
+          "text": "Using a custom Di",
+          "url": "#filter-di-custom"
+        },
+        {
+          "text": "Constants",
+          "url": "#filter-constants"
+        }
+      ]
     }
   ],
   "url": [

@@ -1,65 +1,65 @@
 {
   "acl": [
     {
-      "text": "Overview",
-      "url": "/acl#overview"
+      "text": "ACL",
+      "url": "/acl"
     },
     {
-      "text": "Creating an ACL",
-      "url": "/acl#setup"
+      "text": "Δημιουργώντας Λίστες Ελέγχου Πρόσβασης",
+      "url": "/acl-setup"
     },
     {
-      "text": "Adding Roles to the ACL",
-      "url": "/acl#adding-roles"
+      "text": "Adding Operations",
+      "url": "/acl-adding-operations"
     },
     {
-      "text": "Adding Resources",
-      "url": "/acl#adding-resources"
+      "text": "Adding Subjects",
+      "url": "/acl-adding-subjects"
     },
     {
-      "text": "Defining Access Controls",
-      "url": "/acl#access-controls"
+      "text": "Καθορισμός ελέγχων πρόσβασης",
+      "url": "/acl-access-controls"
     },
     {
-      "text": "Querying an ACL",
-      "url": "/acl#querying"
+      "text": "Αναζητώντας ένα ACL",
+      "url": "/acl-querying"
     },
     {
-      "text": "Function based access",
-      "url": "/acl#function-based-access"
+      "text": "Πρόσβαση βασισμένη σε λειτουργίες",
+      "url": "/acl-function-based-access"
     },
     {
-      "text": "Objects as role name and resource name",
-      "url": "/acl#objects"
+      "text": "Objects as Operation and Subject name",
+      "url": "/acl-objects"
     },
     {
-      "text": "Roles Inheritance",
-      "url": "/acl#roles-inheritance"
+      "text": "Operations Inheritance",
+      "url": "/acl-operations-inheritance"
     },
     {
-      "text": "Serializing ACL lists",
-      "url": "/acl#serialization"
+      "text": "Σειρογραφία Λίστες ACL",
+      "url": "/acl-serialization"
     },
     {
-      "text": "Events",
-      "url": "/acl#events"
+      "text": "Γεγονότα",
+      "url": "/acl-events"
     },
     {
       "text": "Implementing your own adapters",
-      "url": "/acl#custom-adapters"
+      "url": "/acl-custom-adapters"
     }
   ],
   "annotations": [
     {
-      "text": "Overview",
+      "text": "Επισκόπηση",
       "url": "/annotations#overview"
     },
     {
-      "text": "Factory",
+      "text": "Εργοστάσιο",
       "url": "/annotations#setup"
     },
     {
-      "text": "Adding Roles to the ACL",
+      "text": "Προσθήκη ρόλων",
       "url": "/annotations#factory"
     },
     {
@@ -71,7 +71,7 @@
       "url": "/annotations#types"
     },
     {
-      "text": "Practical Usage",
+      "text": "Πρακτική χρήση",
       "url": "/annotations#usage",
       "menu": [
         {
@@ -105,7 +105,7 @@
       "url": "/application-cli#creating-cli-application"
     },
     {
-      "text": "Structure",
+      "text": "Δομή",
       "url": "/application-cli#structure"
     },
     {
@@ -113,7 +113,7 @@
       "url": "/application-cli#creating-bootstrap"
     },
     {
-      "text": "Tasks",
+      "text": "Εργασίες",
       "url": "/application-cli#tasks"
     },
     {
@@ -127,57 +127,57 @@
   ],
   "application-micro": [
     {
-      "text": "Creating a Micro Application",
+      "text": "Δημιουργώντας μια μικροεφαρμογή",
       "url": "/application-micro#creating-micro-application"
     },
     {
-      "text": "Routing",
+      "text": "Δρομολόγηση",
       "url": "/application-micro#routing",
       "menu": [
         {
-          "text": "Setup",
+          "text": "Ρύθμιση",
           "url": "/application-micro#routing-setup",
           "menu": [
             {
-              "text": "Application object",
+              "text": "Αντικείμενο εφαρμογής",
               "url": "/application-micro#routing-setup-application"
             },
             {
-              "text": "Router object",
+              "text": "Αντικείμενο του δρομολογητή",
               "url": "/application-micro#routing-setup-router"
             }
           ]
         },
         {
-          "text": "Rewrite Rules",
+          "text": "Κανόνες αναγραφής",
           "url": "/application-micro#rewrite-rules"
         },
         {
-          "text": "Handlers",
+          "text": "Χειριστές",
           "url": "/application-micro#routing-handlers",
           "menu": [
             {
-              "text": "Definitions",
+              "text": "Ορισμοί",
               "url": "/application-micro#routing-handlers-definitions",
               "menu": [
                 {
-                  "text": "Anonymous Function",
+                  "text": "Ανώνυμη συνάρτηση",
                   "url": "/application-micro#routing-handlers-anonymous-function"
                 },
                 {
-                  "text": "Function",
+                  "text": "Συνάρτηση",
                   "url": "/application-micro#routing-handlers-function"
                 },
                 {
-                  "text": "Static Method",
+                  "text": "Στατική μέθοδος",
                   "url": "/application-micro#routing-handlers-static-method"
                 },
                 {
-                  "text": "Method in an Object",
+                  "text": "Μέθοδος σε ένα αντικείμενο",
                   "url": "/application-micro#routing-handlers-object-method"
                 },
                 {
-                  "text": "Controllers",
+                  "text": "Ελεγκτές",
                   "url": "/application-micro#routing-handlers-controllers"
                 }
               ]
@@ -187,19 +187,19 @@
               "url": "/application-micro#routing-handlers-controllers-lazy-loading",
               "menu": [
                 {
-                  "text": "Use case",
+                  "text": "Περίπτωση Χρήσης",
                   "url": "/application-micro#routing-handlers-controllers-lazy-loading-use-case"
                 }
               ]
             },
             {
-              "text": "Not Found (404)",
+              "text": "Δεν βρέθηκε (404)",
               "url": "/application-micro#routing-handlers-not-found"
             }
           ]
         },
         {
-          "text": "Methods - Verbs",
+          "text": "Μέθοδοι - ρήματα",
           "url": "/application-micro#routing-verbs",
           "menu": [
             {
@@ -237,19 +237,19 @@
           ]
         },
         {
-          "text": "Collections",
+          "text": "Συλλογές",
           "url": "/application-micro#routing-collections"
         },
         {
-          "text": "Parameters",
+          "text": "Παράμετροι",
           "url": "/application-micro#routing-parameters"
         },
         {
-          "text": "Redirections",
+          "text": "Ανακατευθύνσεις",
           "url": "/application-micro#routing-redirections"
         },
         {
-          "text": "URLs for Routes",
+          "text": "Διευθύνσεις URL για τις διαδρομές",
           "url": "/application-micro#routing-urls-for-routes"
         }
       ]
@@ -259,7 +259,7 @@
       "url": "/application-micro#dependency-injector"
     },
     {
-      "text": "Responses",
+      "text": "Ανταπόκρισεις",
       "url": "/application-micro#responses",
       "menu": [
         {
@@ -267,7 +267,7 @@
           "url": "/application-micro#responses-direct-output"
         },
         {
-          "text": "Including another file",
+          "text": "Συμπεριλαμβάνοντας ένα άλλο αρχείο",
           "url": "/application-micro#responses-include"
         },
         {
@@ -275,15 +275,15 @@
           "url": "/application-micro#responses-direct-output-json"
         },
         {
-          "text": "New Response object",
+          "text": "Νέο αντικείμενο Ανταπόκρισης",
           "url": "/application-micro#responses-new-response-object"
         },
         {
-          "text": "Application Response",
+          "text": "Ανταπόκριση εφαρμογής",
           "url": "/application-micro#responses-application-response"
         },
         {
-          "text": "Return Application Response",
+          "text": "Επιστρέφωντας Ανταπόκριση εφαρμογής",
           "url": "/application-micro#responses-return-application-response"
         },
         {
@@ -293,19 +293,19 @@
       ]
     },
     {
-      "text": "Events",
+      "text": "Γεγονότα",
       "url": "/application-micro#events",
       "menu": [
         {
-          "text": "Available events",
+          "text": "Διαθέσιμα γεγονότα",
           "url": "/application-micro#events-available-events",
           "menu": [
             {
-              "text": "Authentication example",
+              "text": "Παράδειγμα ελέγχου ταυτότητας",
               "url": "/application-micro#events-available-events-authentication"
             },
             {
-              "text": "Not found example",
+              "text": "Δεν βρέθηκε παράδειγμα",
               "url": "/application-micro#events-available-events-not-found"
             }
           ]
@@ -313,11 +313,11 @@
       ]
     },
     {
-      "text": "Middleware",
+      "text": "Ενδιάμεσο λογισμικό",
       "url": "/application-micro#middleware",
       "menu": [
         {
-          "text": "Attached events",
+          "text": "Συνημμένα γεγονότα",
           "url": "/application-micro#middleware-attached-events",
           "menu": [
             {
@@ -335,49 +335,49 @@
           ]
         },
         {
-          "text": "Setup",
+          "text": "Ρύθμιση",
           "url": "/application-micro#middleware-setup"
         },
         {
-          "text": "Implementation",
+          "text": "Εφαρμογή",
           "url": "/application-micro#middleware-implementation"
         },
         {
-          "text": "Events in Middleware",
+          "text": "Γεγονότα στο Ενδιάμεσο Λογισμικό",
           "url": "/application-micro#middleware-events",
           "menu": [
             {
-              "text": "API example",
+              "text": "Παράδειγμα API",
               "url": "/application-micro#middleware-events-api"
             },
             {
-              "text": "Firewall Middleware",
+              "text": "Firewall Ενδιάμεσο Λογισμικό (Middleware)",
               "url": "/application-micro#middleware-events-api-firewall"
             },
             {
-              "text": "Not Found Middleware",
+              "text": "Δε βρέθηκε Ενδιάμεσο Λογισμικό (Middleware)",
               "url": "/application-micro#middleware-events-api-not-found"
             },
             {
-              "text": "Redirect Middleware",
+              "text": "Αντικατεύθυνσης Ενδιάμεσο Λογισμικό (Middleware)",
               "url": "/application-micro#middleware-events-api-redirect"
             },
             {
-              "text": "CORS Middleware",
+              "text": "CORS Ενδιάμεσο Λογισμικό (Middleware)",
               "url": "/application-micro#middleware-events-api-cors"
             },
             {
-              "text": "Request Middleware",
+              "text": "Αίτησης Ενδιάμεσο Λογισμικό (Middleware)",
               "url": "/application-micro#middleware-events-api-request"
             },
             {
-              "text": "Response Middleware",
+              "text": "Ανταπόκρισης Ενδιάμεσο Λογισμικό (Middleware)",
               "url": "/application-micro#middleware-events-api-response"
             }
           ]
         },
         {
-          "text": "Models",
+          "text": "Μοντέλα",
           "url": "/application-micro#models"
         },
         {
@@ -385,11 +385,11 @@
           "url": "/application-micro#model-instances"
         },
         {
-          "text": "Views",
+          "text": "Προβολές",
           "url": "/application-micro#views"
         },
         {
-          "text": "Error Handling",
+          "text": "Χειρισμός σφαλμάτων",
           "url": "/application-micro#error-handling"
         }
       ]
@@ -397,7 +397,7 @@
   ],
   "application": [
     {
-      "text": "Overview",
+      "text": "Επισκόπηση",
       "url": "/application#overview"
     },
     {
@@ -429,11 +429,11 @@
   ],
   "assets": [
     {
-      "text": "Overview",
+      "text": "Επισκόπηση",
       "url": "/assets#overview"
     },
     {
-      "text": "Adding Resources",
+      "text": "Προσθήκη πόρων",
       "url": "/assets#add"
     },
     {
@@ -457,7 +457,7 @@
           "url": "/assets#builtin-filters"
         },
         {
-          "text": "Custom Filters",
+          "text": "Προσαρμοσμένα Φίλτρα",
           "url": "/assets#custom-filters"
         }
       ]
@@ -467,7 +467,7 @@
       "url": "/assets#custom-output"
     },
     {
-      "text": "Improving performance",
+      "text": "Βελτίωση απόδοσης",
       "url": "/assets#improving-performance"
     }
   ],
@@ -621,15 +621,15 @@
   ],
   "contributions": [
     {
-      "text": "Contributing to Phalcon",
+      "text": "Συμβάλλοντας στο Phalcon",
       "url": "/contributions#contributing"
     },
     {
-      "text": "Contributions",
+      "text": "Συνεισφορές",
       "url": "/contributions#contributions"
     },
     {
-      "text": "Questions and Support",
+      "text": "Ερωτήσεις και Υποστήρηξη",
       "url": "/contributions#file-adapter"
     },
     {
@@ -657,7 +657,7 @@
   ],
   "controllers": [
     {
-      "text": "Overview",
+      "text": "Επισκόπηση",
       "url": "/controllers#overview"
     },
     {
@@ -695,11 +695,11 @@
   ],
   "cookies": [
     {
-      "text": "Cookies Management",
+      "text": "Διαχείριση cookies",
       "url": "/cookies#overview"
     },
     {
-      "text": "Basic Usage",
+      "text": "Βασική Χρήση",
       "url": "/cookies#usage"
     },
     {
@@ -709,7 +709,7 @@
   ],
   "crypt": [
     {
-      "text": "Encryption/Decryption",
+      "text": "Κρυπτογράφηση/αποκρυπτογράφηση",
       "url": "/crypt$overview"
     },
     {
@@ -717,7 +717,7 @@
       "url": "/crypt$usage"
     },
     {
-      "text": "Encryption Options",
+      "text": "Επιλογές κρυπτογράφησης",
       "url": "/crypt$options"
     },
     {
@@ -729,7 +729,7 @@
       "url": "/crypt$service"
     },
     {
-      "text": "Links",
+      "text": "Σύνδεσμοι",
       "url": "/crypt$links"
     }
   ],
@@ -811,15 +811,15 @@
       "url": "/db-layer#tables",
       "menu": [
         {
-          "text": "Creating Tables",
+          "text": "Δημιουργία πινάκων",
           "url": "/db-layer#tables-create"
         },
         {
-          "text": "Altering Tables",
+          "text": "Αλλαγή πινάκων",
           "url": "/db-layer#tables-altering"
         },
         {
-          "text": "Dropping Tables",
+          "text": "Διαγραφή πινάκων",
           "url": "/db-layer#tables-dropping"
         }
       ]
@@ -985,7 +985,7 @@
       "url": "/db-models-relationships#overview"
     },
     {
-      "text": "Relationships between Models",
+      "text": "Σχέσεις μεταξύ των μοντέλων",
       "url": "/db-models-relationships#relationships",
       "menu": [
         {
@@ -1057,7 +1057,7 @@
   ],
   "db-models-transactions": [
     {
-      "text": "Model Transactions",
+      "text": "Συναλλαγές Μοντέλων",
       "url": "/db-models-transactions#overview"
     },
     {
@@ -1097,7 +1097,7 @@
       "url": "/db-models#working-with"
     },
     {
-      "text": "Creating Models",
+      "text": "Δημιουργία μοντέλων",
       "url": "/db-models#creating",
       "menu": [
         {
@@ -1303,7 +1303,7 @@
       "url": "/db-phql#overview"
     },
     {
-      "text": "Usage Example",
+      "text": "Παράδειγμα χρήσης",
       "url": "/db-phql#usage"
     },
     {
@@ -1403,7 +1403,7 @@
       "url": "/devtools-installation#overview"
     },
     {
-      "text": "Prerequisites",
+      "text": "Προϋποθέσεις",
       "url": "/devtools-installation#prerequisites"
     },
     {
@@ -1437,7 +1437,7 @@
       "url": "/devtools-usage#overview"
     },
     {
-      "text": "Download",
+      "text": "Λήψη",
       "url": "/devtools-usage#download"
     },
     {
@@ -1541,7 +1541,7 @@
       "url": "/di#resolving-services",
       "menu": [
         {
-          "text": "Events",
+          "text": "Γεγονότα",
           "url": "/di#events"
         }
       ]
@@ -1641,7 +1641,7 @@
       "url": "/environments-docker#overview"
     },
     {
-      "text": "Dependencies",
+      "text": "Εξαρτήσεις",
       "url": "/environments-docker#dependencies"
     },
     {
@@ -1725,7 +1725,7 @@
       "url": "/environments-nanobox#overview"
     },
     {
-      "text": "Create a New Project",
+      "text": "Δημιουργήστε ένα νέο έργο",
       "url": "/environments-nanobox#create-project"
     },
     {
@@ -1759,7 +1759,7 @@
       "url": "/environments-vagrant#overview"
     },
     {
-      "text": "Requirements",
+      "text": "Προϋποθέσεις",
       "url": "/environments-vagrant#requirements"
     },
     {
@@ -1978,43 +1978,43 @@
   "filter": [
     {
       "text": "Filtering and Sanitizing",
-      "url": "/filter#overview"
+      "url": "/filter"
     },
     {
-      "text": "Types of Built-in Filters",
-      "url": "/filter#types"
+      "text": "Built-in Sanitizers",
+      "url": "/filter-sanitizers"
     },
     {
       "text": "Sanitizing data",
-      "url": "/filter#sanitizing"
+      "url": "/filter-sanitizing"
     },
     {
       "text": "Sanitizing from Controllers",
-      "url": "/filter#sanitizing-from-controllers"
+      "url": "/filter-sanitizing-from-controllers"
     },
     {
-      "text": "Filtering Action Parameters",
-      "url": "/filter#filtering-action-parameters"
+      "text": "Sanitizing Action Parameters",
+      "url": "/filter-sanitizing-action-parameters"
     },
     {
       "text": "Filtering data",
-      "url": "/filter#filtering-data"
+      "url": "/filter-sanitizing-data"
     },
     {
-      "text": "Combining Filters",
-      "url": "/filter#combining-filters"
+      "text": "Combining Sanitizers",
+      "url": "/filter-combining-sanitizers"
     },
     {
       "text": "Adding Sanitizers",
-      "url": "/filter#adding-filters"
+      "url": "/filter-adding-sanitizers"
     },
     {
       "text": "Complex Sanitizing and Filtering",
-      "url": "/filter#complex-sanitization-filtering"
+      "url": "/filter-complex-sanitization-filtering"
     },
     {
       "text": "Implementing your own Filter",
-      "url": "/filter#custom"
+      "url": "/filter-custom"
     }
   ],
   "flash": [
@@ -2105,7 +2105,7 @@
   ],
   "image": [
     {
-      "text": "Images",
+      "text": "Εικόνες",
       "url": "/image#overview"
     },
     {
@@ -2179,15 +2179,15 @@
   ],
   "installation": [
     {
-      "text": "Requirements",
+      "text": "Προϋποθέσεις",
       "url": "/installation#requirements",
       "menu": [
         {
-          "text": "Hardware",
+          "text": "Υλικό",
           "url": "/installation#requirements-hardware"
         },
         {
-          "text": "Software",
+          "text": "Λογισμικό",
           "url": "/installation#requirements-software",
           "menu": [
             {
@@ -2211,19 +2211,19 @@
               "url": "/installation#installation-linux-deb",
               "menu": [
                 {
-                  "text": "Repository installation",
+                  "text": "Αποθετήριο εγκατάστασης",
                   "url": "/installation#installation-linux-deb-repository"
                 },
                 {
-                  "text": "Stable releases",
+                  "text": "Σταθερές εκδόσεις",
                   "url": "/installation#installation-linux-debian-repository-stable"
                 },
                 {
-                  "text": "Nightly releases",
+                  "text": "Νυχτερινές εκδόσεις",
                   "url": "/installation#installation-linux-debian-repository-nightly"
                 },
                 {
-                  "text": "Phalcon installation",
+                  "text": "Εγκατάσταση του Phalcon",
                   "url": "/installation#installation-linux-debian-phalcon",
                   "menu": [
                     {
@@ -2237,13 +2237,13 @@
                   ]
                 },
                 {
-                  "text": "Additional PPAs",
+                  "text": "Πρόσθετα PPA",
                   "url": "/installation#installation-linux-debian-other-ppa"
                 }
               ]
             },
             {
-              "text": "RPM based distributions (CentOS, Fedora, etc.)",
+              "text": "Διανομές βασισμένες σε RPM (CentOS, Fedora, κλπ.)",
               "url": "/installation#installation-linux-rpm",
               "menu": [
                 {
@@ -2275,7 +2275,7 @@
                   ]
                 },
                 {
-                  "text": "Additional RPMs",
+                  "text": "Πρόσθετα PPA",
                   "url": "/installation#installation-linux-rpm-other-rpm"
                 }
               ]
@@ -2325,7 +2325,7 @@
   ],
   "loader": [
     {
-      "text": "Requirements",
+      "text": "Προϋποθέσεις",
       "url": "/loader#overview"
     },
     {
@@ -2365,75 +2365,57 @@
       "url": "/loader#troubleshooting"
     }
   ],
-  "logging": [
+  "logger": [
     {
-      "text": "Logging",
-      "url": "/logging#overview"
+      "text": "Logger",
+      "url": "/logger"
     },
     {
       "text": "Adapters",
-      "url": "/logging#adapters"
+      "url": "/logger-adapters"
     },
     {
-      "text": "Factory",
-      "url": "/logging#adapters-factory"
+      "text": "Creating a Logger component",
+      "url": "/logger-creating"
     },
     {
-      "text": "Creating a Log",
-      "url": "/logging#creating"
-    },
-    {
-      "text": "Transactions",
-      "url": "/logging#transactions"
-    },
-    {
-      "text": "Logging to Multiple Handlers",
-      "url": "/logging#multiple-handlers"
+      "text": "Logging to Multiple adapters",
+      "url": "/logger-multiple"
     },
     {
       "text": "Message Formatting",
-      "url": "/logging#message-formatting",
+      "url": "/logger-message-formatting",
       "menu": [
         {
-          "text": "Line Formatter",
-          "url": "/logging#message-formatting-line"
+          "text": "Line",
+          "url": "/logger-message-formatting-line"
         },
         {
-          "text": "Implementing your own formatters",
-          "url": "/logging#message-formatting-custom"
+          "text": "JSON",
+          "url": "/logger-message-formatting-json"
+        },
+        {
+          "text": "Syslog",
+          "url": "/logger-message-formatting-syslog"
+        },
+        {
+          "text": "Custom",
+          "url": "/logger-message-formatting-custom"
         }
       ]
     },
     {
-      "text": "Adapters",
-      "url": "/logging#usage",
-      "menu": [
-        {
-          "text": "Stream Logger",
-          "url": "/logging#usage-stream"
-        },
-        {
-          "text": "File Logger",
-          "url": "/logging#usage-file"
-        },
-        {
-          "text": "Syslog Logger",
-          "url": "/logging#usage-syslog"
-        },
-        {
-          "text": "FirePHP Logger",
-          "url": "/logging#usage-firephp"
-        },
-        {
-          "text": "Implementing your own adapters",
-          "url": "/logging#usage-custom"
-        }
-      ]
+      "text": "Interpolation",
+      "url": "/logger-interpolation"
+    },
+    {
+      "text": "Examples",
+      "url": "/logger-examples"
     }
   ],
   "mvc": [
     {
-      "text": "The MVC Architecture",
+      "text": "Η αρχιτεκτονική MVC",
       "url": "/mvc#architecture"
     },
     {
@@ -2523,7 +2505,7 @@
   ],
   "queue": [
     {
-      "text": "Queueing",
+      "text": "Χρησημοποίηση Ουρών",
       "url": "/queue#overview"
     },
     {
@@ -2559,7 +2541,7 @@
   ],
   "request": [
     {
-      "text": "Request Environment",
+      "text": "Περιβάλλον Αίτησης",
       "url": "/request#overview"
     },
     {
@@ -2581,7 +2563,7 @@
   ],
   "response": [
     {
-      "text": "Returning Responses",
+      "text": "Επιστρέφοντας απαντήσεις",
       "url": "/response#overview"
     },
     {
@@ -2713,7 +2695,7 @@
   ],
   "security": [
     {
-      "text": "Security",
+      "text": "Ασφάλεια",
       "url": "/security#overview"
     },
     {
@@ -2855,6 +2837,92 @@
       "url": "/tag#custom-helpers"
     }
   ],
+  "testing-environment": [
+    {
+      "text": "Επισκόπηση",
+      "url": "#overview"
+    },
+    {
+      "text": "Επισκόπηση",
+      "url": "#overview"
+    },
+    {
+      "text": "The problem",
+      "url": "#problem"
+    },
+    {
+      "text": "Solution",
+      "url": "#solution"
+    },
+    {
+      "text": "Installation",
+      "url": "#installation"
+    },
+    {
+      "text": "Running the environment",
+      "url": "#running",
+      "menu": [
+        {
+          "text": "Fork the repository",
+          "url": "#running-fork"
+        },
+        {
+          "text": "Clone the fork",
+          "url": "#running-clone"
+        },
+        {
+          "text": "Copy the boxfile",
+          "url": "#running-boxfile"
+        },
+        {
+          "text": "Configure nanobox",
+          "url": "#running-nanobox-configure"
+        },
+        {
+          "text": "Run nanobox",
+          "url": "#running-nanobox-run"
+        },
+        {
+          "text": "Composer",
+          "url": "#running-composer"
+        },
+        {
+          "text": "Check Zephir",
+          "url": "#running-zephir"
+        },
+        {
+          "text": "Compile Phalcon",
+          "url": "#running-compile"
+        },
+        {
+          "text": "Check extensions",
+          "url": "#running-extensions"
+        }
+      ]
+    },
+    {
+      "text": "Running tests",
+      "url": "#tests",
+      "menu": [
+        {
+          "text": "Unit",
+          "url": "#tests-unit"
+        },
+        {
+          "text": "Integration",
+          "url": "#tests-integration"
+        }
+      ]
+    },
+    {
+      "text": "Development",
+      "url": "#development"
+    },
+    {
+      "text": "Services",
+      "url": "#services"
+    }
+  ],
   "translate": [
     {
       "text": "Multi-lingual Support",
@@ -2881,7 +2949,7 @@
   ],
   "tutorial-base": [
     {
-      "text": "View",
+      "text": "Προβολή",
       "url": "/tutorial-base#basic"
     },
     {
@@ -2941,7 +3009,7 @@
   ],
   "tutorial-invo": [
     {
-      "text": "Tutorial: INVO",
+      "text": "Σεμινάριο: INVO",
       "url": "/tutorial-invo#overview"
     },
     {
@@ -3017,7 +3085,7 @@
   ],
   "tutorial-rest": [
     {
-      "text": "Tutorial: Creating a Simple REST API",
+      "text": "Βοήθημα: Δημιουργώντας ένα απλό REST API",
       "url": "/tutorial-rest#overview"
     },
     {
@@ -3059,7 +3127,7 @@
   ],
   "tutorial-vokuro": [
     {
-      "text": "Tutorial: Vökuró",
+      "text": "Σεμινάριο: Vökuró",
       "url": "/tutorial-vokuro#overview"
     },
     {
@@ -3073,6 +3141,24 @@
     {
       "text": "Sign Up",
       "url": "/tutorial-vokuro#sign-up"
+    }
+  ],
+  "use-case": [
+    {
+      "text": "Use Case",
+      "url": "#overview"
+    },
+    {
+      "text": "Προϋποθέσεις",
+      "url": "#requirements"
+    },
+    {
+      "text": "Groups",
+      "url": "#groups"
+    },
+    {
+      "text": "Endpoints",
+      "url": "#endpoints"
     }
   ],
   "unit-testing": [
@@ -3095,6 +3181,44 @@
     {
       "text": "Sample Unit Test",
       "url": "/unit-testing#sample"
+    }
+  ],
+  "upgrade": [
+    {
+      "text": "ALC",
+      "url": "#acl",
+      "menu": [
+        {
+          "text": "Επισκόπηση",
+          "url": "#acl-overview"
+        },
+        {
+          "text": "Changed",
+          "url": "#acl-changed"
+        }
+      ]
+    },
+    {
+      "text": "Filter",
+      "url": "#filter",
+      "menu": [
+        {
+          "text": "Επισκόπηση",
+          "url": "#filter-overview"
+        },
+        {
+          "text": "Using the FactoryDefault",
+          "url": "#filter-di-factorydefault"
+        },
+        {
+          "text": "Using a custom Di",
+          "url": "#filter-di-custom"
+        },
+        {
+          "text": "Constants",
+          "url": "#filter-constants"
+        }
+      ]
     }
   ],
   "url": [
@@ -3171,7 +3295,7 @@
   ],
   "views": [
     {
-      "text": "Using Views",
+      "text": "Χρήση προβολών",
       "url": "/views#overview"
     },
     {
@@ -3263,7 +3387,7 @@
       "url": "/volt#overview"
     },
     {
-      "text": "Introduction",
+      "text": "Εισαγωγή",
       "url": "/volt#introduction"
     },
     {
@@ -3279,7 +3403,7 @@
       "url": "/volt#variables"
     },
     {
-      "text": "Filters",
+      "text": "Φίλτρα",
       "url": "/volt#filters"
     },
     {
@@ -3439,7 +3563,7 @@
   ],
   "webserver-xampp": [
     {
-      "text": "Installation on XAMPP",
+      "text": "Εγκατάσταση στο XAMPP",
       "url": "/webserver-xampp#overview"
     },
     {
