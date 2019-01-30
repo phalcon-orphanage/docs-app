@@ -7,30 +7,31 @@ layout: default
 
 <div class="container-fluid article-page-wrap">
     <div class="row">
-        <div>
-            <div class="col-md-2 sidebar hidden-xs">
-                <div class="sidebar--spacer">&nbsp;</div>
-            </div>
-            <div class="m-t-md m-b-lg" id="articles">
-                <div class="article-content">
-                    <section class="documentation-section">
-                        <div class="container-fluid">
-                            <div class="row">
-                                <div class="col-md-8 col-lg-9 parse-content docSearch-content">
-                                    {{ content }}
-                                    {% include article-footer-navigation.html %}
+        <div class="m-t-md m-b-lg" id="articles">
+            <div class="article-content">
+                <section class="documentation-section">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8 col-lg-9 parse-content">
+                                <div class="row">
+                                    <div class="docSearch-content">
+                                        {{ content }}
+                                        {% include article-footer-navigation.html %}
+                                    </div>
+                                </div>
+                                <div class="row">
                                     <div id="commento"></div>
                                 </div>
-                                <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
-                                    <!--{ include sidebar-search.html }-->
-                                    {% include sidebar-links.html %}
-                                    {% include sidebar-topics.html %}
-                                    {% include sidebar-articles.html %}
-                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-12 support-column-margin">
+                                <!--{ include sidebar-search.html }-->
+                                {% include sidebar-links.html %}
+                                {% include sidebar-topics.html %}
+                                {% include sidebar-articles.html %}
                             </div>
                         </div>
-                    </section>
-                </div>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
