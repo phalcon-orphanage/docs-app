@@ -10,7 +10,7 @@
                 <h2>{{ homeStrings['get_support'] }}</h2>
                 <p>{{ homeStrings['when_you_are_stuck'] }}</p>
                 <div class="people">
-                    {% for social in site.social %}
+                    {% for social in site.data.social %}
                     <div class="people__list">
                         <a href="{{ social.url }}" title="{{ social.name }}" target="_blank">
                             <img src="{{ social.image }}" alt="{{ social.name }}">

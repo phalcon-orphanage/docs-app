@@ -14,20 +14,6 @@ app:
   language: 'en'
   version: '3.4'
 
-social:
-  - name: 'Discord'
-    image: '/assets/images/icons/social/discord-logo.png'
-    url:  'https://phalcon.link/discord'
-  - name: 'Official Forums'
-    image: '/assets/images/icons/favicon-196x196.png'
-    url:  'https://phalcon.link/forum'
-  - name: 'Stack Overflow'
-    image: '/assets/images/icons/social/stack-overflow-logo.png'
-    url:  'https://stackoverflow.com/questions/tagged/phalcon'
-  - name: 'Phalcon on Twitter'
-    image: '/assets/images/icons/social/twitter-logo.png'
-    url:  'https://phalcon.link/t'
-
 url: https://docs.phalconphp.com
 plugins:
   - jekyll-sitemap
