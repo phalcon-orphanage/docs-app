@@ -5,8 +5,10 @@
 
                                 <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
                                     {% for version in site.data.verlang.versions %}
+                                    {% assign current = '/' | append: page.version | append: '/' %}
+                                    {% assign new     = '/' | append: version | append: '/' %}
                                     <li class="nav-item nav-item-li col-xs-12">
-                                        <a href="/{{ version }}/{{ page.language }}/{{ script }}">
+                                        <a href="{{ page.url | replace: current, new }}">
                                             <span>{{ version }}</span>
                                         </a>
                                     </li>

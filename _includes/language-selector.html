@@ -7,7 +7,9 @@
                                         </div>
                                         <div class="nav-item__list" onclick="event.stopPropagation();">
                                             {% for lang in site.data.verlang.languages[page.version] %}
-                                                <a href="/{{ page.version }}/{{ lang }}/{{ script }}" class="custom-select__list-item">
+                                                {% assign current = '/' | append: page.language | append: '/' %}
+                                                {% assign new     = '/' | append: lang | append: '/' %}
+                                                <a href="{{ page.url | replace: current, new }}" class="custom-select__list-item">
                                                     <img class="lang-image"
                                                          src="/assets/images/flags/{{ site.data.supported[lang].crowdin_code }}.png"
                                                          alt="{{ site.data.supported[lang].name | strip }}">
