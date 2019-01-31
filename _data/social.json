@@ -15,9 +15,19 @@
     "url":  "https://stackoverflow.com/questions/tagged/phalcon"
   },
   {
+    "name": "Gab",
+    "image": "/assets/images/icons/social/gab-logo.png",
+    "url":  "https://phalcon.link/gab"
+  },
+  {
     "name": "Twitter",
     "image": "/assets/images/icons/social/twitter-logo.png",
     "url":  "https://phalcon.link/t"
+  },
+  {
+    "name": "MeWe",
+    "image": "/assets/images/icons/social/mewe-logo.jpg",
+    "url":  "https://phalcon.link/mewe"
   },
   {
     "name": "Facebook",
