@@ -6,9 +6,9 @@
                                             <span class="caret"></span>
                                         </div>
                                         <div class="nav-item__list" onclick="event.stopPropagation();">
+                                            {% assign current = '/' | append: page.language | append: '/' %}
                                             {% for lang in site.data.verlang.languages[page.version] %}
-                                                {% assign current = '/' | append: page.language | append: '/' %}
-                                                {% assign new     = '/' | append: lang | append: '/' %}
+                                                {% assign new = '/' | append: lang | append: '/' %}
                                                 <a href="{{ page.url | replace: current, new }}" class="custom-select__list-item">
                                                     <img class="lang-image"
                                                          src="/assets/images/flags/{{ site.data.supported[lang].crowdin_code }}.png"

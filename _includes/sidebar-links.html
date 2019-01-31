@@ -12,7 +12,9 @@
             <strong>{{ homeStrings['edit_on_crowdin'] }}</strong>
         </a>
         {% else %}
-        <a href="https://github.com/phalcon/docs/tree/4.0/en">
+        {% assign current = '/' | append: page.version | append: '/' | append: page.language | append: '/' %}
+        {% assign suffix  = page.url | replace: current, '' | replace: '.html', '.md' %}
+        <a href="https://github.com/phalcon/docs/tree/4.0/en/{{ suffix }}">
             <strong>{{ homeStrings['edit_on_github'] }}</strong>
         </a>
         {% endif %}

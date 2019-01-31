@@ -4,9 +4,9 @@
                                                 <span class="caret"></span>
                                             </div>
                                             <div class="nav-item__list" onclick="event.stopPropagation();">
-                                                {% for version in site.data.verlang.versions %}
                                                 {% assign current = '/' | append: page.version | append: '/' %}
-                                                {% assign new     = '/' | append: version | append: '/' %}
+                                                {% for version in site.data.verlang.versions %}
+                                                {% assign new = '/' | append: version | append: '/' %}
                                                 <a href="{{ page.url | replace: current, new }}" class="custom-select__list-item">
                                                     <span>{{ version }}</span>
                                                 </a>

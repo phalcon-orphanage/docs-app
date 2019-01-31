@@ -6,9 +6,9 @@
                                 </div>
 
                                 <ul style="display:none;" class="clearfix" onclick="event.stopPropagation();">
-                                    {% for lang in site.data.verlang.languages[page.version] %}
                                     {% assign current = '/' | append: page.language | append: '/' %}
-                                    {% assign new     = '/' | append: lang | append: '/' %}
+                                    {% for lang in site.data.verlang.languages[page.version] %}
+                                    {% assign new = '/' | append: lang | append: '/' %}
                                     <li class="nav-item nav-item-li col-sm-3 col-xs-6">
                                         <a href="{{ page.url | replace: current, new }}">
                                             <img class="lang-image"
