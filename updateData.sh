@@ -30,6 +30,9 @@ cp -v ./4.0/it-it/meta-topics.json    ./_data/4-0-it-it-meta-topics.json
 cp -v ./4.0/ja-jp/meta-articles.json  ./_data/4-0-ja-jp-meta-articles.json
 cp -v ./4.0/ja-jp/meta-home.json      ./_data/4-0-ja-jp-meta-home.json
 cp -v ./4.0/ja-jp/meta-topics.json    ./_data/4-0-ja-jp-meta-topics.json
+cp -v ./4.0/nl-nl/meta-articles.json  ./_data/4-0-nl-nl-meta-articles.json
+cp -v ./4.0/nl-nl/meta-home.json      ./_data/4-0-nl-nl-meta-home.json
+cp -v ./4.0/nl-nl/meta-topics.json    ./_data/4-0-nl-nl-meta-topics.json
 cp -v ./4.0/pl-pl/meta-articles.json  ./_data/4-0-pl-pl-meta-articles.json
 cp -v ./4.0/pl-pl/meta-home.json      ./_data/4-0-pl-pl-meta-home.json
 cp -v ./4.0/pl-pl/meta-topics.json    ./_data/4-0-pl-pl-meta-topics.json
