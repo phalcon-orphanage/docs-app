@@ -9,7 +9,7 @@
                                             {% assign current = '/' | append: page.language | append: '/' %}
                                             {% for lang in site.data.verlang.languages[page.version] %}
                                                 {% assign new = '/' | append: lang | append: '/' %}
-                                                <a href="{{ page.url | replace: current, new }}" class="custom-select__list-item">
+                                                <a href="{{ page.url | replace: current, new }}" class="custom-select__list-item" rel="alternate" hreflang="{{ lang }}">
                                                     <img class="lang-image"
                                                          src="/assets/images/flags/{{ site.data.supported[lang].crowdin_code }}.png"
                                                          alt="{{ site.data.supported[lang].name | strip }}">
