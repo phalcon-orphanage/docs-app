@@ -18,7 +18,7 @@ window.addEventListener('load', function() {
 
 	function addButtons(codeBlockSelector, btn) {
 		document.querySelectorAll(codeBlockSelector).forEach(function(code) {
-			code.parentNode.appendChild(btn.cloneNode(true));
+			code.appendChild(btn.cloneNode(true));
 		});
 	}
 
