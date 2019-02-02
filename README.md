@@ -44,39 +44,3 @@ This work licensed under the New BSD License. See the [LICENSE][10] file for mor
 [8]: https://forum.phalconphp.com
 [9]: https://github.com/phalcon/docs-app/blob/master/CONTRIBUTING.md
 [10]: https://github.com/phalcon/docs-app/blob/master/LICENSE.txt
-
-
-Official [Phalcon][0] documentation website.
-
-Documentation
--------------
-* Official documentation is [located here][1]
-* Translations must be sent to [Crowdin project][2]
-
-Community
----------
-* Follow us on [GitHub][3], [Facebook][4], [Twitter][5] or [Gab.ai][6]
-* Get Phalcon support on [Discord][7] and [Official Forums][8]
-
-Contributing
-------------
-
-This work is an open source, community-driven project. See [CONTRIBUTING.md][9]
-for details about contributions to this repository.
-
-License
--------
-
-This work licensed under the New BSD License. See the [LICENSE][10] file for more information.
-
-[0]: https://phalconphp.com
-[1]: https://docs.zephir-lang.com
-[2]: https://crowdin.com/project/phalcon-documentation
-[3]: https://github.com/phalcon/cphalcon
-[4]: https://phalcon.link/fb
-[5]: https://phalcon.link/t
-[6]: https://phalcon.link/gab
-[7]: https://phalcon.link/discord
-[8]: https://forum.phalconphp.com
-[9]: https://github.com/phalcon/docs-app/blob/master/CONTRIBUTING.md
-[10]: https://github.com/phalcon/docs-app/blob/master/LICENSE.txt
