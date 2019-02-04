@@ -2483,7 +2483,9 @@ input.submit-review-button:hover {
 
 /* components */
 .header-image {
-    background: url("../images/header-background.png") no-repeat;
+    background-image: url("../images/header-background.png");
+    background-repeat: no-repeat;
+    background-color: #082c46;
     background-size: cover;
 }
 
