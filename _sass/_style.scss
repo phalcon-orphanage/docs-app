@@ -2483,7 +2483,9 @@ input.submit-review-button:hover {
 
 /* components */
 .header-image {
-    background: url("../images/header-background.png") no-repeat;
+    background-image: url("../images/header-background.png");
+    background-repeat: no-repeat;
+    background-color: #082c46;
     background-size: cover;
 }
 
@@ -7461,4 +7463,11 @@ body {
 
 .docSearch-content {
     width: 100%;
+}
+
+.parse-content {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

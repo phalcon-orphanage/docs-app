@@ -9,8 +9,8 @@ app:
   facebook:
   github: 'phalcon'
   rss: 'phalcon'
-  twitter: 'zephirlang'
-  analytics: 'UA-90300500-6'
+  twitter: 'phalconphp'
+  analytics: 'UA-133802124-5'
   language: 'en'
   version: '3.4'
 
