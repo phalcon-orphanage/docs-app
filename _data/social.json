@@ -2,36 +2,36 @@
   {
     "name": "Discord",
     "image": "/assets/images/icons/social/discord-logo.png",
-    "url":  "https://phalcon.link/discord"
+    "url": "https://phalcon.link/discord"
   },
   {
     "name": "Official Forums",
     "image": "/assets/images/icons/favicon-196x196.png",
-    "url":  "https://phalcon.link/forum"
+    "url": "https://phalcon.link/forum"
   },
   {
     "name": "Stack Overflow",
     "image": "/assets/images/icons/social/stack-overflow-logo.png",
-    "url":  "https://stackoverflow.com/questions/tagged/phalcon"
+    "url": "https://stackoverflow.com/questions/tagged/phalcon"
   },
   {
     "name": "Gab",
     "image": "/assets/images/icons/social/gab-logo.png",
-    "url":  "https://phalcon.link/gab"
+    "url": "https://phalcon.link/gab"
   },
   {
     "name": "Twitter",
     "image": "/assets/images/icons/social/twitter-logo.png",
-    "url":  "https://phalcon.link/t"
+    "url": "https://phalcon.link/t"
   },
   {
     "name": "MeWe",
     "image": "/assets/images/icons/social/mewe-logo.jpg",
-    "url":  "https://phalcon.link/mewe"
+    "url": "https://phalcon.link/mewe"
   },
   {
     "name": "Facebook",
     "image": "/assets/images/icons/social/facebook-logo.png",
-    "url":  "https://phalcon.link/fb"
+    "url": "https://phalcon.link/fb"
   }
 ]
