@@ -11,8 +11,15 @@
                     <p>
                         {{ homeStrings['innovative_architecture'] }}
                     </p>
-                    <div class="header-search test">
-                        {% include cse_inner.html %}
+                    <div class="header-search">
+                        <input type="search"
+                               class="form-control"
+                               id="docs-search"
+                               placeholder="{{ homeStrings['search'] }}"
+                               aria-label="{{ homeStrings['search_for'] }}"
+                               autocomplete="off"
+                               data-siteurl="{{ site.url }}"
+                               data-docs-version="{{ page.version }}">
                     </div>
                     <a href="https://phalcon.link/github" class="link__github" target="_blank">
                         {{ homeStrings['github'] }}
