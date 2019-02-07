@@ -2559,7 +2559,6 @@ input.submit-review-button:hover {
 }
 
 .header-search {
-    background-color: white;
     height: 60px;
     width: 750px;
     font-size: 20px;
@@ -7461,6 +7460,7 @@ body {
   }
 }
 
+.algolia-autocomplete,
 .docSearch-content {
     width: 100%;
 }
