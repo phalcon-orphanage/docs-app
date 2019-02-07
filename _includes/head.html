@@ -102,5 +102,9 @@
         <script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
                 integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
                 crossorigin="anonymous"></script>
+        {% if page.version == '4.0' %}
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+        {% endif %}
+
         {% include analytics.html %}
     </head>
