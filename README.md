@@ -12,6 +12,8 @@
 
 Official [Phalcon][0] documentation website.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/617bacda-775f-4560-afc7-9f6ad6db1ff4/deploy-status)](https://app.netlify.com/sites/phalcon-docs/deploys)
+
 Documentation
 -------------
 * Official documentation is [located here][1]
