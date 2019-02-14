@@ -113,8 +113,41 @@
 /ur/3.4/:slug                                    /3.4/uk-ua/:slug
 /zh/3.4/api/:slug                                /3.4/zh-cn/api/:slug
 /zh/3.4/:slug                                    /3.4/zh-cn/:slug
-/3.4/:lang/:slug                                 /3.4/en/:slug
-/3.4/:lang/api/:slug                             /3.4/en/api/:slug
+
+# /3.4/:lang/:slug                                 /3.4/en/:slug
+# /3.4/:lang/api/:slug                             /3.4/en/api/:slug
+
+/cs/latest/reference/api/:slug                   /3.4/cs-cz/api/:slug
+/cs/latest/reference/:slug                       /3.4/cs-cz/:slug
+/de/latest/reference/api/:slug                   /3.4/de-de/api/:slug
+/de/latest/reference/:slug                       /3.4/de-de/:slug
+/es/latest/reference/api/:slug                   /3.4/es-es/api/:slug
+/es/latest/reference/:slug                       /3.4/es-es/:slug
+/fa/latest/reference/api/:slug                   /3.4/fa-ir/api/:slug
+/fa/latest/reference/:slug                       /3.4/fa-ir/:slug
+/fr/latest/reference/api/:slug                   /3.4/fr-fr/api/:slug
+/fr/latest/reference/:slug                       /3.4/fr-fr/:slug
+/id/latest/reference/api/:slug                   /3.4/id-id/api/:slug
+/id/latest/reference/:slug                       /3.4/id-id/:slug
+/it/latest/reference/api/:slug                   /3.4/it-it/api/:slug
+/it/latest/reference/:slug                       /3.4/it-it/:slug
+/ja/latest/reference/api/:slug                   /3.4/ja-jp/api/:slug
+/ja/latest/reference/:slug                       /3.4/ja-jp/:slug
+/pl/latest/reference/api/:slug                   /3.4/pl-pl/api/:slug
+/pl/latest/reference/:slug                       /3.4/pl-pl/:slug
+/ru/latest/reference/api/:slug                   /3.4/ru-ru/api/:slug
+/ru/latest/reference/:slug                       /3.4/ru-ru/:slug
+/tr/latest/reference/api/:slug                   /3.4/tr-tr/api/:slug
+/tr/latest/reference/:slug                       /3.4/tr-tr/:slug
+/uk/latest/reference/api/:slug                   /3.4/uk-ua/api/:slug
+/uk/latest/reference/:slug                       /3.4/uk-ua/:slug
+/ur/latest/reference/api/:slug                   /3.4/uk-ua/api/:slug
+/ur/latest/reference/:slug                       /3.4/uk-ua/:slug
+/zh/latest/reference/api/:slug                   /3.4/zh-cn/api/:slug
+/zh/latest/reference/:slug                       /3.4/zh-cn/:slug
+
+
+/:lang/3.0.0/reference/:slug                     /3.4/en/:slug
 /:lang/3.4/reference/:slug                       /3.4/en/:slug
 /:lang/3.4/:slug                                 /3.4/en/:slug
 /:lang/3.4/api/:slug                             /3.4/en/api/:slug
