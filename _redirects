@@ -99,11 +99,11 @@
 /3.4/uk-ua/db-models-advanced                                      /3.4/uk-ua/db-models
 /3.4/ur-in/db-models-advanced                                      /3.4/ur-in/db-models
 /3.4/zh-cn/db-models-advanced                                      /3.4/zh-cn/db-models
-/3.4/en/db                                                         /3.4/en/db-layer
+/3.4/en/db.html                                                    /3.4/en/db-layer
 /3.4/en/install.html                                               /3.4/en/installation
 /3.4/en/samples.html                                               /3.4/en/
 /3.4/en/tutorial-invo-2.html                                       /3.4/en/tutorial-invo
-/3.4/en/tutorial.html                                              /3.4/en/tutorial-basic
+/3.4/en/tutorial.html                                              /3.4/en/tutorial-base
 /ar/3.4/api/:slug                                                  /3.4/en/api/:slug
 /ar/3.4/:slug                                                      /3.4/en/:slug
 /az/3.4/api/:slug                                                  /3.4/en/api/:slug
@@ -340,8 +340,8 @@
 /el/3.2/Phalcon_Db                                                 /3.2/en/api/Phalcon_Db
 /el/3.2/Phalcon_Mvc_Model_Criteria                                 /3.2/en/api/Phalcon_Mvc_Model_Criteria
 /el/3.2/Phalcon_Translate_InterpolatorInterface                    /3.2/en/api/Phalcon_Translate_InterpolatorInterface
-/en/3.0.0/reference/volt.html                                      /3.2/en/api/0/reference/volt.html
-/en/3.0.0/reference/volt.html                                      /3.2/en/api/0/reference/volt.html
+/en/3.0.0/reference/volt.html                                      /3.2/en/volt
+/en/3.0.0/reference/volt.html                                      /3.2/en/volt
 /en/3.2/db-models-advanced                                         /3.2/en/db-models-advanced
 /es/3.2/db-models-advanced                                         /3.2/en/db-models-advanced
 /es/3.2/Phalcon_Acl_ResourceAware                                  /3.2/en/api/Phalcon_Acl_ResourceAware
@@ -362,7 +362,7 @@
 /es/3.2/Phalcon_Session_BagInterface                               /3.2/en/api/Phalcon_Session_BagInterface
 /es/3.2/Phalcon_Validation_Validator_CreditCard                    /3.2/en/api/Phalcon_Validation_Validator_CreditCard
 /fa/3.2/db-models-advanced                                         /3.2/en/db-models-advanced
-/fil/3.2/db-models-advanced                                        /3.2/en/api//db-models-advanced
+/fil/3.2/db-models-advanced                                        /3.2/en/db-models-advanced
 /fr/3.2/db-models-advanced                                         /3.2/en/db-models-advanced
 /fr/3.2/Phalcon_Config_Adapter_Ini                                 /3.2/en/api/Phalcon_Config_Adapter_Ini
 /fr/3.2/Phalcon_Config_Exception                                   /3.2/en/api/Phalcon_Config_Exception
@@ -682,8 +682,8 @@
 /pt/3.1/Phalcon_Registry                                           /3.1/en/api/Phalcon_Registry
 /pt/3.1/Phalcon_Validation_Validator_StringLength                  /3.1/en/api/Phalcon_Validation_Validator_StringLength
 /ro/3.1/db-models-advanced                                         /3.1/en/db-models-advanced
-/ru/3.1.0/api/Phalcon_Mvc_Controller_BindModelInterface.html       /3.1/en/api/Phalcon_Mvc_Controller_BindModelInterface.html
-/ru/3.1.0/api/Phalcon_Paginator_Adapter_NativeArray.html           /3.1/en/api/Phalcon_Paginator_Adapter_NativeArray.html
+/ru/3.1.0/api/Phalcon_Mvc_Controller_BindModelInterface.html       /3.1/en/api/Phalcon_Mvc_Controller_BindModelInterface
+/ru/3.1.0/api/Phalcon_Paginator_Adapter_NativeArray.html           /3.1/en/api/Phalcon_Paginator_Adapter_NativeArray
 /ru/3.1/db-models-advanced                                         /3.1/en/db-models-advanced
 /ru/3.1/Phalcon_Acl_ResourceAware                                  /3.1/en/api/Phalcon_Acl_ResourceAware
 /ru/3.1/Phalcon_Annotations_Adapter_Xcache                         /3.1/en/api/Phalcon_Annotations_Adapter_Xcache
