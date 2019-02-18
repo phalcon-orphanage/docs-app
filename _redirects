@@ -8,6 +8,7 @@
 /latest/en/:slug                           /3.4/en/:slug
 /en/latest                                 /3.4/en/
 /en/latest/api/:slug                       /3.4/en/api/:slug
+/en/latest/reference/:slug                 /3.4/en/:slug
 /en/latest/:slug                           /3.4/en/:slug
 
 # For now the default will be 3.4
