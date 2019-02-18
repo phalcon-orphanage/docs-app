@@ -2,6 +2,12 @@
 /                                          /3.4/en/
 /en                                        /3.4/en/
 
+# Dead links
+/en/latest/reference/routing.html          /3.4/en/reference/routing
+/en/latest/reference/dispatching.html      /3.4/en/reference/dispatching
+/en/latest/reference/queue.html            /3.4/en/reference/queue
+/en/latest/reference/micro.html            /3.4/en/reference/application-micro
+
 /latest/en                                 /3.4/en/
 /latest/en/api/:slug                       /3.4/en/api/:slug
 /latest/en/reference/:slug                 /3.4/en/:slug
