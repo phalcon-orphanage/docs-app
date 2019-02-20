@@ -12,6 +12,11 @@
 /latest/en/api/:slug                       /3.4/en/api/:slug
 /latest/en/reference/:slug                 /3.4/en/:slug
 /latest/en/:slug                           /3.4/en/:slug
+
+/latest/es/api/:slug                       /3.4/es-es/api/:slug
+/latest/es/reference/:slug                 /3.4/es-es/:slug
+/latest/es/:slug                           /3.4/es-es/:slug
+
 /en/latest                                 /3.4/en/
 /en/latest/api/:slug                       /3.4/en/api/:slug
 /en/latest/reference/:slug                 /3.4/en/:slug
