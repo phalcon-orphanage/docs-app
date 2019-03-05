@@ -2348,8 +2348,9 @@ Fixing bootstrap columns for safari
 }
 
 .nav-item__divider {
-    border-top: 1px solid #eeeeee;
-    margin: 10px 0;
+    height: 1px;
+    margin: 9px 0;
+    background-color: #e5e5e5;
 }
 
 .nav-item:last-child {
