@@ -336,7 +336,7 @@ To generate the tag we use the class `Phalcon\Tag`. This is a utility class that
 
 A more detailed article regarding HTML generation [can be found here](/3.3/en/tag).
 
-![](/images/content/tutorial-basic-2.png)
+![](/assets/images/content/tutorial-basic-2.png)
 
 Here is the Signup controller (`app/controllers/SignupController.php`):
 
