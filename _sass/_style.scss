@@ -2560,7 +2560,6 @@ input.submit-review-button:hover {
 }
 
 .header-search {
-    height: 60px;
     width: 750px;
     font-size: 20px;
     text-align: left;
@@ -2568,6 +2567,10 @@ input.submit-review-button:hover {
     position: relative;
     -webkit-border-radius: 5px;
     border-radius: 5px;
+    .form-control {
+        height: 60px;
+        box-sizing: border-box;
+    }
 }
 
 .header-search:before {
@@ -2579,7 +2582,7 @@ input.submit-review-button:hover {
     display: inline-block;
     position: absolute;
     right: 28px;
-    top: 14px;
+    top: 11px;
 }
 
 .header-image__logo-wrapper {
@@ -2802,14 +2805,17 @@ input.submit-review-button:hover {
     }
 
     .header-search {
-        height: 38px;
         margin-bottom: 35px;
         width: 100%;
+        .form-control {
+            height: 38px;
+            box-sizing: border-box;
+        }
     }
 
     .header-search:before {
         top: 10px;
-        right: 10px;
+        right: 15px;
         width: 19px;
         height: 19px;
     }
