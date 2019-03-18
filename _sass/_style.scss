@@ -3270,11 +3270,14 @@ footer {
 }
 
 .contact-us-container {
-    padding: 25px 50px;
+    padding: 25px;
     border: 2px solid #f7f7f7;
     margin-left: 16px;
     margin-right: 14px;
     height: 133px;
+    @media (min-width: 1023px) {
+        padding: 25px 50px;
+    }
 }
 
 .contact-us-container .contact-us__image-wrapper {
