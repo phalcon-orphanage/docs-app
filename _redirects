@@ -67,6 +67,35 @@
 ################################################################################
 # 3.4
 ################################################################################
+/ar/3.4/models                                                     /3.4/en/db-models
+/az/3.4/models                                                     /3.4/en/db-models
+/bg/3.4/models                                                     /3.4/en/db-models
+/bs/3.4/models                                                     /3.4/en/db-models
+/cs/3.4/models                                                     /3.4/cs-cz/db-models
+/da/3.4/models                                                     /3.4/en/db-models
+/de/3.4/models                                                     /3.4/de-de/db-models
+/el/3.4/models                                                     /3.4/en/db-models
+/en/3.4/models                                                     /3.4/en/db-models
+/es/3.4/models                                                     /3.4/es-es/db-models
+/fa/3.4/models                                                     /3.4/fa-ir/db-models
+/fil/3.4/models                                                    /3.4/en/db-models
+/fr/3.4/models                                                     /3.4/fr-fr/db-models
+/hr/3.4/models                                                     /3.4/en/db-models
+/hu/3.4/models                                                     /3.4/en/db-models
+/id/3.4/models                                                     /3.4/id-id/db-models
+/it/3.4/models                                                     /3.4/it-it/db-models
+/ja/3.4/models                                                     /3.4/ja-jp/db-models
+/ko/3.4/models                                                     /3.4/en/db-models
+/pl/3.4/models                                                     /3.4/pl-pl/db-models
+/pt/3.4/models                                                     /3.4/en/db-models
+/ro/3.4/models                                                     /3.4/en/db-models
+/ru/3.4/models                                                     /3.4/ru-ru/db-models
+/tl/3.4/models                                                     /3.4/en/db-models
+/tr/3.4/models                                                     /3.4/tr-tr/db-models
+/uk/3.4/models                                                     /3.4/uk-ua/db-models
+/ur/3.4/models                                                     /3.4/uk-ua/db-models
+/vi/3.4/models                                                     /3.4/en/db-models
+/zh/3.4/models                                                     /3.4/zh-cn/db-models
 /ar/3.4/db-models-advanced                                         /3.4/en/db-models
 /az/3.4/db-models-advanced                                         /3.4/en/db-models
 /bg/3.4/db-models-advanced                                         /3.4/en/db-models
