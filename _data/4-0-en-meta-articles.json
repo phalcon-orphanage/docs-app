@@ -695,6 +695,10 @@
     {
       "text": "Requesting Features",
       "url": "/contributions#requesting-features"
+    },
+    {
+      "text": "Coding Standard",
+      "url": "/coding-standard"
     }
   ],
   "controllers": [

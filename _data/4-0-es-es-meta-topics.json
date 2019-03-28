@@ -49,7 +49,11 @@
             {
                 "text": "Guía para Pruebas",
                 "url": "/testing-environment"
-            }
+      },
+      {
+        "text": "Coding Standard",
+        "url": "/coding-standard"
+      }
         ]
     },
     {

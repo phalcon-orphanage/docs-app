@@ -49,7 +49,11 @@
             {
                 "text": "Περιβάλλον tests",
                 "url": "/testing-environment"
-            }
+      },
+      {
+        "text": "Coding Standard",
+        "url": "/coding-standard"
+      }
         ]
     },
     {
