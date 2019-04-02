@@ -88,7 +88,7 @@ server {
 
     # This is the folder that index.php is in
     root /var/www/default/public;
-    index index.php index.html index.htm;
+    index index.php ../../4.0/en/index.html index.htm;
 
     charset utf-8;
     client_max_body_size 100M;
