@@ -138,7 +138,9 @@
             </div>
 
             <div class="header__lang expand">
-                {{- site.data.supported[page.language].name | strip -}}
+                <img class="lang-image"
+                     src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
+                     alt="{{ site.data.supported[langpage.language].name | strip }}">
                 <div class="header-dropdown-wrapper">
                     <ul class="header-dropdown">
                         {%- assign current = '/' | append: page.language | append: '/' -%}
@@ -146,6 +148,9 @@
                         {%- assign new = '/' | append: lang | append: '/' -%}
                         <li>
                             <a href="{{ page.url | replace: current, new | replace: '.html', '' }}">
+                            <img class="lang-image"
+                                 src="/assets/images/flags/{{ site.data.supported[lang].crowdin_code }}.png"
+                                 alt="{{ site.data.supported[lang].name | strip }}">
                                 {{- site.data.supported[lang].name | strip -}}
                             </a>
                         </li>
