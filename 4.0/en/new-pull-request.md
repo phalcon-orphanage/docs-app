@@ -4,6 +4,7 @@ language: 'en'
 version: '4.0'
 ---
 # New Pull Request
+<hr/>
 
 A pull request a collection of changes to the code that:
 - fix a bug (current issue)

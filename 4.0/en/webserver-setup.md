@@ -3,15 +3,14 @@ layout: default
 language: 'en'
 version: '4.0'
 ---
-**This article reflects v3.4 and has not yet been revised**
+# Logger Component
+<hr/>
 
-<a name='setup'></a>
-# Web Server Setup
+## Overview
 In order for the routing of the Phalcon application to work, you will need to set up your web server to process the redirects properly. Setup instructions for popular web servers are:
 
-<a name='php-fpm'></a>
 ## PHP-FPM
-The [PHP-FPM](https://php.net/manual/en/install.fpm.php) (FastCGI Process Manager) is usually used to allow the processing of PHP files. Nowadays, PHP-FPM is bundled with all Linux based PHP distributions.
+The [PHP-FPM][php_fpm] (FastCGI Process Manager) is usually used to allow the processing of PHP files. Nowadays, PHP-FPM is bundled with all Linux based PHP distributions.
 
 On **Windows** PHP-FPM is in the PHP distribution archive through the file `php-cgi.exe` and you can start it with this script to help set options. Windows does not support unix sockets so this script will start fast-cgi in TCP mode on port `9000`.
 
@@ -24,16 +23,14 @@ set PATH=C:\PHP;%PATH%
 c:\bin\RunHiddenConsole.exe C:\PHP\php-cgi.exe -b 127.0.0.1:9000
 ```
 
-<a name='php-built-in'></a>
 ## PHP Built-In Webserver (For Developers)
 To speed up getting your Phalcon application running in development the easiest way is to use this built-in PHP server. Do not use this server in a production environment. The following configurations for [Nginx](#nginx) and [Apache](#apache) are what you need.
 
-<a name='php-built-in-phalcon-configuration'></a>
 ### Phalcon configuration
 To enable dynamic URI rewrites, without Apache or Nginx, that Phalcon needs, you can use the following router file:
-<a href="https://github.com/phalcon/phalcon-devtools/blob/master/templates/.htrouter.php" target="_blank">.htrouter.php</a>
+[.htrouter[[htrouter].
 
-If you created your application with [Phalcon-Devtools](/4.0/en/devtools-installation) this file should already exist in the root directory of your project and you can start the server with the following command:
+If you created your application with [Phalcon-Devtools](/4.0/en/devtools) this file should already exist in the root directory of your project and you can start the server with the following command:
 
 ```bash
 $(which php) -S localhost:8000 -t public .htrouter.php
@@ -47,16 +44,14 @@ The anatomy of the command above:
 
 Then point your browser to https://localhost:8000/ to check if everything is working.
 
-<a name='nginx'></a>
 ## Nginx
-[Nginx](https://wiki.nginx.org/Main) is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Unlike traditional servers, Nginx doesn't rely on threads to handle requests. Instead it uses a much more scalable event-driven (asynchronous) architecture. This architecture uses small, but more importantly, predictable amounts of memory under load.
+[Nginx][nginx] is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Unlike traditional servers, Nginx doesn't rely on threads to handle requests. Instead it uses a much more scalable event-driven (asynchronous) architecture. This architecture uses small, but more importantly, predictable amounts of memory under load.
 
 Phalcon with Nginx and PHP-FPM provide a powerful set of tools that offer maximum performance for your PHP applications.
 
 ### Install Nginx
-<a href="https://www.nginx.com/resources/wiki/start/topics/tutorials/install/" target="_blank">NginX Offical Site</a>
+[NginX Offical Site][nginx_installation]
 
-<a name='nginx-phalcon-configuration'></a>
 ### Phalcon configuration
 You can use following potential configuration to setup Nginx with Phalcon:
 
@@ -88,7 +83,7 @@ server {
 
     # This is the folder that index.php is in
     root /var/www/default/public;
-    index index.php ../../4.0/en/index.html index.htm;
+    index index.php index.html index.htm;
 
     charset utf-8;
     client_max_body_size 100M;
@@ -146,13 +141,11 @@ server {
 ### Start Nginx
 Usually `start nginx` from the command line but this depends on your installation method.
 
-<a name='apache'></a>
 ## Apache
-[Apache](https://httpd.apache.org/) is a popular and well known web server available on many platforms.
+[Apache][apache] is a popular and well known web server available on many platforms.
 
-<a name='apache-phalcon-configuration'></a>
 ### Phalcon configuration
-The following are potential configurations you can use to setup Apache with Phalcon. These notes are primarily focused on the configuration of the `mod_rewrite` module allowing to use friendly URLs and the [router component](/4.0/en/routing). Commonly an application has the following structure:
+The following are potential configurations you can use to setup Apache with Phalcon. These notes are primarily focused on the configuration of the `mod_rewrite` module allowing to use friendly URLs and the [router component](routing). Commonly an application has the following structure:
 
 ```bash
 test/
@@ -167,12 +160,11 @@ test/
     index.php
 ```
 
-<a name='apache-document-root'></a>
 #### Document root
 This being the most common case, the application is installed in any directory under the document root. In this case, we use two `.htaccess` files, the first one to hide the application code forwarding all requests to the application's document root (`public/`). 
 
-##### Note that using <code>.htaccess</code> files requires your apache installation to have the <code>AllowOverride All</code> option set. ##### {.alert .alert-warning}
-
+> Note that using `.htaccess` files requires your apache installation to have the `AllowOverride All` option set.
+ {: .alert .alert-warning}
 
 ```apacheconfig
 # test/.htaccess
@@ -212,7 +204,6 @@ For users that are using the Persian letter 'م' (meem) in uri parameters, there
 
 If your uri contains characters other than English, you might need to resort to the above change to allow `mod_rewrite` to accurately match your route.
 
-<a name='apache-apache-configuration'></a>
 #### Apache configuration
 If you do not want to use `.htaccess` files you can move these configurations to the apache's main configuration file:
 ```apacheconfig
@@ -234,7 +225,6 @@ If you do not want to use `.htaccess` files you can move these configurations to
 </IfModule>
 ```
 
-<a name='apache-virtual-hosts'></a>
 #### Virtual Hosts
 And this second configuration allows you to install a Phalcon application in a virtual host:
 ```apacheconfig
@@ -255,12 +245,10 @@ And this second configuration allows you to install a Phalcon application in a v
 </VirtualHost>
 ```
 
-<a name='cherokee'></a>
 ## Cherokee
 
-[Cherokee](https://www.cherokee-project.com/) is a high-performance web server. It is very fast, flexible and easy to configure.
+[Cherokee][cherokee] is a high-performance web server. It is very fast, flexible and easy to configure.
 
-<a name='cherokee-phalcon-configuration'></a>
 ### Phalcon configuration
 Cherokee provides a friendly graphical interface to configure almost every setting available in the web server.
 
@@ -300,3 +288,10 @@ Execute the application in a browser:
 
 ![](/assets/images/content/webserver-cherokee-9.jpg)
 
+
+[apache]: https://httpd.apache.org/
+[cherokee]: https://www.cherokee-project.com/
+[htrouter]: https://github.com/phalcon/phalcon-devtools/blob/master/templates/.htrouter.php
+[nginx]: https://wiki.nginx.org/Main
+[nginx_installation]: https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
+[php_fpm]: https://php.net/manual/en/install.fpm.php
