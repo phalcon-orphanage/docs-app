@@ -1,17 +1,38 @@
 <!doctype html>
-<!--[if IE 8]>
-<html lang="{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]>
-<html lang="{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" class="no-js">
-<!--<![endif]-->
-{% include env-setup.html %}
+{%- include env-setup.html -%}
+<html lang="{{ site.data.supported[page.language]['iso_639_1'] | default: en }}">
 {% include head.html %}
 
-<body onclick="o2.allNavSlideUp()">
+<body>
+{% include header.html %}
 
-{{ content }}
+<div class="phalcon-blog phalcon-blog_documentation">
+    <div class="doc-article-nav-wr">
+        <div class="doc-article-nav-items">
+            <div class="doc-article-nav-markers"></div>
+            <div class="doc-article-nav-list">
+                <div href="#" class="doc-article-nav-list-label">
+                    RUBRICS
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="phalcon-blog__main">
+            <div class="phalcon-blog-detail phalcon-blog-detail_documetation">
+                <div class="phalcon-blog-detail__info">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+
+        <div class="phalcon-blog__right documentation-nav-wr">
+            <div class="phalcon-blog__right-item documentation-nav">
+                {%- include sidebar-topics.html -%}
+            </div>
+        </div>
+    </div>
+</div>
 
 {% include footer.html %}
 {% include footer-js.html %}
