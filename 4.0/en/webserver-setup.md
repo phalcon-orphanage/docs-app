@@ -3,7 +3,7 @@ layout: default
 language: 'en'
 version: '4.0'
 ---
-# Logger Component
+# Webserver Setup
 <hr/>
 
 ## Overview
@@ -245,6 +245,107 @@ And this second configuration allows you to install a Phalcon application in a v
 </VirtualHost>
 ```
 
+## WAMP
+
+[WampServer][wamp] is a Windows web development environment. It allows you to create web applications with Apache2, PHP and a MySQL database. Below are detailed instructions on how to install Phalcon on WampServer for Windows. Using the latest WampServer version is highly recommended.
+
+### Download Phalcon
+WAMP has both 32 and 64 bit versions. From the download section, you can download the Phalcon DLL that suits your WAMPP installation.
+
+After downloading the Phalcon library you will have a zip file like the one shown below:
+
+![](/assets/images/content/webserver-xampp-1.png)
+
+Extract the library from the archive to get the Phalcon DLL:
+
+![](/assets/images/content/webserver-xampp-2.png)
+
+Copy the file `php_phalcon.dll` to the PHP extensions folder. If WAMP is installed in the `C:\wamp` folder, the extension needs to be in `C:\wamp\bin\php\php5.5.12\ext` (assuming your WAMP installation installed PHP 5.5.12).
+
+![](/assets/images/content/webserver-wamp-1.png)
+
+Edit the `php.ini` file, it is located at `C:\wamp\bin\php\php5.5.12\php.ini`. It can be edited with Notepad or a similar program. We recommend Notepad++ to avoid issues with line endings. Append at the end of the file:
+ 
+ ```ini
+ extension=php_phalcon.dll
+```
+
+and save it.
+
+![](/assets/images/content/webserver-wamp-2.png)
+
+Also edit the `php.ini` file, which is located at `C:\wamp\bin\apache\apache2.4.9\bin\php.ini`. Append at the end of the file: 
+
+```ini
+extension=php_phalcon.dll 
+```
+
+and save it.
+
+Restart the Apache Web Server. Do a single click on the WampServer icon at system tray. Choose `Restart All Services` from the pop-up menu. Check out that tray icon will become green again.
+
+![](/assets/images/content/webserver-wamp-3.png)
+
+Open your browser to navigate to https://localhost. The WAMP welcome page will appear. Check the section `extensions loaded` to ensure that phalcon was loaded.
+
+![](/assets/images/content/webserver-wamp-4.png)
+
+Congratulations! You are now phlying with Phalcon.
+
+## XAMPP
+
+[XAMPP][xampp] is an easy to install Apache distribution containing MySQL, PHP and Perl. Once you download XAMPP, all you have to do is extract it and start using it. Below are detailed instructions on how to install Phalcon on XAMPP for Windows. Using the latest XAMPP version is highly recommended.
+
+### Download Phalcon
+XAMPP is always releasing 32 bit versions of Apache and PHP. You will need to download the x86 version of Phalcon for Windows from the download section.
+
+After downloading the Phalcon library you will have a zip file like the one shown below:
+
+![](/assets/images/content/webserver-xampp-1.png)
+
+Extract the library from the archive to get the Phalcon DLL:
+
+![](/assets/images/content/webserver-xampp-2.png)
+
+Copy the file `php_phalcon.dll` to the PHP extensions directory. If you have installed XAMPP in the `C:\xampp` folder, the extension needs to be in `C:\xampp\php\ext`
+
+![](/assets/images/content/webserver-xampp-3.png)
+
+Edit the `php.ini` file, it is located at `C:\xampp\php\php.ini`. It can be edited with Notepad or a similar program. We recommend [Notepad++][notepad_plus] to avoid issues with line endings. Append at the end of the file:
+
+```ini
+extension=php_phalcon.dll
+```
+
+and save it.
+
+![](/assets/images/content/webserver-xampp-4.png)
+
+Restart the Apache Web Server from the XAMPP Control Center. This will load the new PHP configuration.
+
+![](/assets/images/content/webserver-xampp-5.png)
+
+Open your browser to navigate to `https://localhost`. The XAMPP welcome page will appear. Click on the link `phpinfo()`.
+
+![](/assets/images/content/webserver-xampp-6.png)
+
+[phpinfo](https://php.net/manual/en/function.phpinfo.php) will output a significant amount of information on screen about the current state of PHP. Scroll down to check if the phalcon extension has been loaded correctly.
+
+![](/assets/images/content/webserver-xampp-7.png)
+
+If you can see the phalcon version in the `phpinfo()` output, congratulations!, You are now phlying with Phalcon.
+
+### Screencast
+The following screencast is a step by step guide to install Phalcon on Windows:
+
+<div align="center">
+  <iframe src="https://player.vimeo.com/video/40265988" 
+          width="500" 
+          height="266" 
+          frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen>
+  </iframe>
+</div>
+
 ## Cherokee
 
 [Cherokee][cherokee] is a high-performance web server. It is very fast, flexible and easy to configure.
@@ -294,4 +395,7 @@ Execute the application in a browser:
 [htrouter]: https://github.com/phalcon/phalcon-devtools/blob/master/templates/.htrouter.php
 [nginx]: https://wiki.nginx.org/Main
 [nginx_installation]: https://www.nginx.com/resources/wiki/start/topics/tutorials/install/
+[notepad_plus]: https://notepad-plus-plus.org/
 [php_fpm]: https://php.net/manual/en/install.fpm.php
+[wamp]: https://www.wampserver.com/en/
+[xampp]: https://www.apachefriends.org/download.html

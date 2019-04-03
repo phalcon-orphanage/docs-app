@@ -49,6 +49,10 @@
       {
         "text": "Testing environment",
         "url": "/testing-environment"
+      },
+      {
+        "text": "Coding Standard",
+        "url": "/coding-standard"
       }
     ]
   },
@@ -63,14 +67,6 @@
       {
         "text": "Webserver Setup",
         "url": "/webserver-setup"
-      },
-      {
-        "text": "WAMP",
-        "url": "/webserver-wamp"
-      },
-      {
-        "text": "XAMPP",
-        "url": "/webserver-xampp"
       }
     ]
   },
