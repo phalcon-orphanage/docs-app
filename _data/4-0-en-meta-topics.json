@@ -173,10 +173,6 @@
       {
         "text": "Logging",
         "url": "/logger"
-      },
-      {
-        "text": "Queue",
-        "url": "/queue"
       }
     ]
   },
