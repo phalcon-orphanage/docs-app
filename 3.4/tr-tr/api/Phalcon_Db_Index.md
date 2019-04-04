@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'tr-tr'
 version: '3.4'
 title: 'Phalcon\Db\Index'

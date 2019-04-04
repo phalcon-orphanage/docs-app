@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'en'
 version: '3.2'
 title: 'Phalcon\Mvc\Router\Annotations'

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'fa-ir'
 version: '3.4'
 title: 'Phalcon\Cache\Frontend\Base64'

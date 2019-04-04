@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'es-es'
 version: '3.4'
 title: 'Phalcon\Translate\Interpolator\AssociativeArray'

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'zh-cn'
 version: '3.4'
 title: 'Phalcon\Mvc\Model\Relation'

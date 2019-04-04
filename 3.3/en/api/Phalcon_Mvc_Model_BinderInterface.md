@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'en'
 version: '3.3'
 title: 'Phalcon\Mvc\Model\BinderInterface'

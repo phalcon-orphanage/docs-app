@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'en'
 version: '3.1'
 title: 'Phalcon\Mvc\View\Engine\Php'

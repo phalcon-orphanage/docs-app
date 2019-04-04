@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'fr-fr'
 version: '3.4'
 title: 'Phalcon\Mvc\Router\Group'

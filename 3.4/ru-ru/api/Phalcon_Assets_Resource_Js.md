@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'ru-ru'
 version: '3.4'
 title: 'Phalcon\Assets\Resource\Js'

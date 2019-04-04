@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'uk-ua'
 version: '3.4'
 title: 'Phalcon\Cli\Router'

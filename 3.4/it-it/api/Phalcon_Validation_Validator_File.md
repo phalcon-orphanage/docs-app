@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'it-it'
 version: '3.4'
 title: 'Phalcon\Validation\Validator\File'

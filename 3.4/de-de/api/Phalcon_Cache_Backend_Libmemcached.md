@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'de-de'
 version: '3.4'
 title: 'Phalcon\Cache\Backend\Libmemcached'

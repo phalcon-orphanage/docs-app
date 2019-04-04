@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'ur-in'
 version: '3.4'
 title: 'Phalcon\Forms\Element\Email'

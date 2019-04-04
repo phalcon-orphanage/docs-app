@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: default
 language: 'cs-cz'
 version: '3.4'
 title: 'Phalcon\Mvc\Model\Query\Lang'
