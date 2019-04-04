@@ -1,6 +1,7 @@
 # Defaults
 /                                          /3.4/en/introduction
 /en                                        /3.4/en/introduction
+/3.4                                       /3.4/en/introduction
 
 # Dead links
 /en/latest/reference/routing.html          /3.4/en/reference/routing
@@ -31,6 +32,25 @@
 #
 # /en/latest                  /4.0/en/introduction
 # /en/latest/*                /4.0/en/:splat
+
+/4.0/cs-cz                                                        /4.0/cs-cz/introduction
+/4.0/de-de                                                        /4.0/de-de/introduction
+/4.0/el-gr                                                        /4.0/el-gr/introduction
+/4.0/en                                                           /4.0/en/introduction
+/4.0/es-es                                                        /4.0/es-es/introduction
+/4.0/fa-ir                                                        /4.0/fa-ir/introduction
+/4.0/fr-fr                                                        /4.0/fr-fr/introduction
+/4.0/id-id                                                        /4.0/id-id/introduction
+/4.0/it-it                                                        /4.0/it-it/introduction
+/4.0/ja-jp                                                        /4.0/ja-jp/introduction
+/4.0/nl-nl                                                        /4.0/nl-nl/introduction
+/4.0/pl-pl                                                        /4.0/pl-pl/introduction
+/4.0/pt-BR                                                        /4.0/pt-BR/introduction
+/4.0/ru-ru                                                        /4.0/ru-ru/introduction
+/4.0/tr-tr                                                        /4.0/tr-tr/introduction
+/4.0/uk-ua                                                        /4.0/uk-ua/introduction
+/4.0/zh-cn                                                        /4.0/zh-cn/introduction
+
 
 /en/4.0                                                            /4.0/en/introduction
 /en/4.0/api/:slug                                                  /4.0/en/api/:slug
