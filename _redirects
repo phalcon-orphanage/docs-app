@@ -1,6 +1,6 @@
 # Defaults
-/                                          /3.4/en/
-/en                                        /3.4/en/
+/                                          /3.4/en/introduction
+/en                                        /3.4/en/introduction
 
 # Dead links
 /en/latest/reference/routing.html          /3.4/en/reference/routing
@@ -8,7 +8,7 @@
 /en/latest/reference/queue.html            /3.4/en/reference/queue
 /en/latest/reference/micro.html            /3.4/en/reference/application-micro
 
-/latest/en                                 /3.4/en/
+/latest/en                                 /3.4/en/introduction
 /latest/en/api/:slug                       /3.4/en/api/:slug
 /latest/en/reference/:slug                 /3.4/en/:slug
 /latest/en/:slug                           /3.4/en/:slug
@@ -17,22 +17,22 @@
 /latest/es/reference/:slug                 /3.4/es-es/:slug
 /latest/es/:slug                           /3.4/es-es/:slug
 
-/en/latest                                 /3.4/en/
+/en/latest                                 /3.4/en/introduction
 /en/latest/api/:slug                       /3.4/en/api/:slug
 /en/latest/reference/:slug                 /3.4/en/:slug
 /en/latest/:slug                           /3.4/en/:slug
 
 # For now the default will be 3.4
-# /                           /4.0/en/
-# /en                         /4.0/en/
+# /                           /4.0/en/introduction
+# /en                         /4.0/en/introduction
 #
-# /latest/en                  /4.0/en/
+# /latest/en                  /4.0/en/introduction
 # /latest/en/*                /4.0/en/:splat
 #
-# /en/latest                  /4.0/en/
+# /en/latest                  /4.0/en/introduction
 # /en/latest/*                /4.0/en/:splat
 
-/en/4.0                                                            /4.0/en/
+/en/4.0                                                            /4.0/en/introduction
 /en/4.0/api/:slug                                                  /4.0/en/api/:slug
 /en/4.0/:slug                                                      /4.0/en/:slug
 /4.0/ex-es/api/:slug                                               /4.0/es-es/:slug
