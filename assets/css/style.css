@@ -992,6 +992,9 @@ input:focus {
 .header__search:focus {
   -webkit-box-shadow: none;
   box-shadow: none;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #fff;
   color: rgba(39, 54, 70, 0.7);
   -webkit-transition: .2s;
@@ -1593,7 +1596,7 @@ input:focus {
 
 @media (max-width: 767px) {
   .phalcon-blog__item-article {
-    -webkit-line-clamp: 6; } }
+    -webkit-line-clamp: 7; } }
 
 .phalcon-blog-detail__info {
   display: -webkit-box;

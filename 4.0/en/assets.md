@@ -548,4 +548,4 @@ Every time when the user requests resources using address of type `/assets/js/gl
 
 It isn't the best example. However, it reflects the main idea: the reasonable configuration of a web server with an application can help optimize response time multifold.
 
-Learn more about the Web Server Setup and Routing in their dedicated articles [Web Server Setup](/4.0/en/webserver-setup) and [Routing](/4.0/en/routing).
+Learn more about the Web Server Setup and Routing in their dedicated articles [Web Server Setup](webserver-setup) and [Routing](routing).

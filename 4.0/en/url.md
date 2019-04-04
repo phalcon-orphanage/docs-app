@@ -65,7 +65,7 @@ $di->set(
 
 <a name='generating-uri'></a>
 ## Generating URIs
-If you are using the [Router](/4.0/en/routing) with its default behavior, your application is able to match routes based on the following pattern: 
+If you are using the [Router](routing) with its default behavior, your application is able to match routes based on the following pattern: 
 
 <h5 class='alert alert-info' markdown='1'>/:controller/:action/:params </h5>
 

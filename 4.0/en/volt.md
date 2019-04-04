@@ -1482,7 +1482,7 @@ Any valid expression can be used as cache key:
 {% endraw %}
 ```
 
-The caching is done by the `Phalcon\Cache` component via the view component. Learn more about how this integration works in the section [Caching View Fragments](/4.0/en/views#caching-fragments).
+The caching is done by the `Phalcon\Cache` component via the view component. Learn more about how this integration works in the section [Caching View Fragments](views#caching-fragments).
 
 <a name='services-in-templates'></a>
 ## Inject Services into a Template

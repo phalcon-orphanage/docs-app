@@ -9,7 +9,7 @@ version: '4.0'
 # Database Migrations
 Migrations are a convenient way for you to alter your database in a structured and organized manner.
 
-<h5 class='alert alert-danger' markdown='1'>Migrations are available in [Phalcon Developer Tools](/4.0/en/devtools-usage) You need at least Phalcon Framework version 0.5.0 to use developer tools.</h5>
+<h5 class='alert alert-danger' markdown='1'>Migrations are available in [Phalcon Developer Tools](devtools-usage) You need at least Phalcon Framework version 0.5.0 to use developer tools.</h5>
 
 Often in development we need to update changes in production environments. Some of these changes could be database modifications like new fields, new tables, removing indexes, etc.
 
@@ -19,9 +19,8 @@ When a migration is generated a set of classes are created to describe how your 
     <iframe src='https://player.vimeo.com/video/41381817' width='500' height='281' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
 </div>
 
-<a name='chema-dumping'></a>
 ## Schema Dumping
-The [Phalcon Developer Tools](/4.0/en/devtools-usage) provides scripts to manage migrations (generation, running and rollback).
+The [Phalcon Developer Tools](devtools-usage) provides scripts to manage migrations (generation, running and rollback).
 
 The available options for generating migrations are:
 
@@ -35,7 +34,7 @@ Each migration has a version identifier associated with it. The version number a
 
 When a migration is generated, instructions are displayed on the console to describe the different steps of the migration and the execution time of those statements. At the end, a migration version is generated.
 
-By default [Phalcon Developer Tools](/4.0/en/devtools-usage) uses the `app/migrations` directory to dump the migration files. You can change the location by setting one of the parameters on the generation script. Each table in the database has its respective class generated in a separated file under a directory referring its version:
+By default [Phalcon Developer Tools](devtools-usage) uses the `app/migrations` directory to dump the migration files. You can change the location by setting one of the parameters on the generation script. Each table in the database has its respective class generated in a separated file under a directory referring its version:
 
 ![](/assets/images/content/migrations-2.png)
 

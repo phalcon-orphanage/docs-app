@@ -9,7 +9,7 @@ version: '4.0'
 # View Helpers (Tags)
 Writing and maintaining HTML markup can quickly become a tedious task because of the naming conventions and numerous attributes that have to be taken into consideration. Phalcon deals with this complexity by offering the [Phalcon\Tag](api/Phalcon_Tag) component which in turn offers view helpers to generate HTML markup.
 
-This component can be used in a plain HTML+PHP view or in a [Volt](/4.0/en/volt) template.
+This component can be used in a plain HTML+PHP view or in a [Volt](volt) template.
 
 <h5 class='alert alert-warning' markdown='1'>This guide is not intended to be a complete documentation of available helpers and their arguments. Please visit the [Phalcon\Tag](api/Phalcon_Tag) page in the API for a complete reference. </h5>
 
@@ -154,7 +154,7 @@ Same form generated in Volt:
 {% endraw %}
 ```
 
-Phalcon also provides a [form builder](/4.0/en/forms) to create forms in an object-oriented manner.
+Phalcon also provides a [form builder](forms) to create forms in an object-oriented manner.
 
 <a name='helpers-for-form-elements'></a>
 ## Helpers to Generate Form Elements
@@ -203,7 +203,7 @@ Volt syntax:
 
 <a name='select-boxes'></a>
 ## Making Select Boxes
-Generating select boxes (select box) is easy, especially if the related data is stored in PHP associative arrays. The helpers for select elements are `Phalcon\Tag::select()` and `Phalcon\Tag::selectStatic()`. `Phalcon\Tag::select()` has been was specifically designed to work with the Phalcon [Models](/4.0/en/models) ([Phalcon\Mvc\Model](api/Phalcon_Mvc_Model)), while `Phalcon\Tag::selectStatic()` can with PHP arrays.
+Generating select boxes (select box) is easy, especially if the related data is stored in PHP associative arrays. The helpers for select elements are `Phalcon\Tag::select()` and `Phalcon\Tag::selectStatic()`. `Phalcon\Tag::select()` has been was specifically designed to work with the Phalcon [Models](models) ([Phalcon\Mvc\Model](api/Phalcon_Mvc_Model)), while `Phalcon\Tag::selectStatic()` can with PHP arrays.
 
 ```php
 <?php
@@ -576,7 +576,7 @@ This is my canvas
 
 <a name='tag-helpers'></a>
 ## Tag Service
-[Phalcon\Tag](api/Phalcon_Tag) is available via the [tag](/4.0/en/tag) service, this means you can access it from any part of the application where the services container is located:
+[Phalcon\Tag](api/Phalcon_Tag) is available via the [tag](tag) service, this means you can access it from any part of the application where the services container is located:
 
 ```php
 <?php echo $this->tag->linkTo('pages/about', 'About') ?>
@@ -607,7 +607,7 @@ class MyTags extends Tag
 }
 ```
 
-Then change the definition of the service [tag](/4.0/en/tag):
+Then change the definition of the service [tag](tag):
 
 ```php
 <?php
@@ -745,4 +745,4 @@ Now you are ready to use your new helper within your views:
 </body>
 ```
 
-You can also check out [Volt](/4.0/en/volt) a faster template engine for PHP, where you can use a more developer friendly syntax for helpers provided by [Phalcon\Tag](api/Phalcon_Tag).
+You can also check out [Volt](volt) a faster template engine for PHP, where you can use a more developer friendly syntax for helpers provided by [Phalcon\Tag](api/Phalcon_Tag).

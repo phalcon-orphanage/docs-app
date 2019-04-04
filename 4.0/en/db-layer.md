@@ -698,7 +698,7 @@ try {
 
 <a name='events'></a>
 ## Database Events
-[Phalcon\Db](api/Phalcon_Db) is able to send events to a [EventsManager](/4.0/en/events) if it's present. Some events when returning boolean false could stop the active operation. The following events are supported:
+[Phalcon\Db](api/Phalcon_Db) is able to send events to a [EventsManager](events) if it's present. Some events when returning boolean false could stop the active operation. The following events are supported:
 
 | Event Name            | Triggered                                            | Can stop operation? |
 |-----------------------|------------------------------------------------------|:-------------------:|

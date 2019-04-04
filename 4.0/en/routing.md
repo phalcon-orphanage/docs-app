@@ -1027,7 +1027,7 @@ Like many other components, routers also have events. None of the events can sto
 
 <a name='annotations'></a>
 ## Annotations Router
-This component provides a variant that's integrated with the [annotations](/4.0/en/annotations) service. Using this strategy you can write the routes directly in the controllers instead of adding them in the service registration:
+This component provides a variant that's integrated with the [annotations](annotations) service. Using this strategy you can write the routes directly in the controllers instead of adding them in the service registration:
 
 ```php
 <?php
