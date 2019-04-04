@@ -30,7 +30,7 @@ To speed up getting your Phalcon application running in development the easiest 
 To enable dynamic URI rewrites, without Apache or Nginx, that Phalcon needs, you can use the following router file:
 [.htrouter[[htrouter].
 
-If you created your application with [Phalcon-Devtools](/4.0/en/devtools) this file should already exist in the root directory of your project and you can start the server with the following command:
+If you created your application with [Phalcon-Devtools](devtools) this file should already exist in the root directory of your project and you can start the server with the following command:
 
 ```bash
 $(which php) -S localhost:8000 -t public .htrouter.php

@@ -1073,7 +1073,6 @@ class SomeComponent
 }
 ```
 
-<a name='service-providers'></a>
 ## Service Providers
 Using the `ServiceProviderInterface` you now register services by context. You can move all your `$di->set()` calls to classes like this:
   
@@ -1114,7 +1113,6 @@ use Phalcon\Di\FactoryDefault;
 $di = new FactoryDefault();
 ```
 
-<a name='service-name-conventions'></a>
 ## Service Name Conventions
 Although you can register services with the names you want, Phalcon has a several naming conventions that allow it to get the the correct (built-in) service when you need it.
 

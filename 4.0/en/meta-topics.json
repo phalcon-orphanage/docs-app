@@ -85,12 +85,8 @@
     "url": "",
     "menu": [
       {
-        "text": "Installation",
-        "url": "/devtools-installation"
-      },
-      {
-        "text": "Usage",
-        "url": "/devtools-usage"
+        "text": "DevTools",
+        "url": "/devtools"
       },
       {
         "text": "Debug",
@@ -103,12 +99,8 @@
     "url": "",
     "menu": [
       {
-        "text": "Performance",
-        "url": "/performance"
-      },
-      {
         "text": "Basic",
-        "url": "/tutorial-base"
+        "url": "/tutorial-basic"
       },
       {
         "text": "Invo",
@@ -179,12 +171,8 @@
         "url": "/loader"
       },
       {
-        "text": "Logging",
+        "text": "Logger",
         "url": "/logger"
-      },
-      {
-        "text": "Queue",
-        "url": "/queue"
       }
     ]
   },
@@ -235,10 +223,6 @@
       {
         "text": "Validators",
         "url": "/db-models-validation"
-      },
-      {
-        "text": "Migrations",
-        "url": "/db-migrations"
       },
       {
         "text": "Pagination",
@@ -341,10 +325,6 @@
       {
         "text": "Response",
         "url": "/response"
-      },
-      {
-        "text": "PSR-7 Response",
-        "url": "/http-response"
       }
     ]
   },
@@ -359,6 +339,24 @@
       {
         "text": "Security",
         "url": "/security"
+      }
+    ]
+  },
+  {
+    "text": "PSR",
+    "url": "",
+    "menu": [
+      {
+        "text": "PSR-3 Logger",
+        "url": "/logger"
+      },
+      {
+        "text": "PSR-0, PSR-4 Loader",
+        "url": "/loader"
+      },
+      {
+        "text": "PSR-7 Request",
+        "url": "/http-request"
       }
     ]
   },

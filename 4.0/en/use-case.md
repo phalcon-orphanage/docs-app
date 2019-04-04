@@ -8,7 +8,6 @@ version: '4.0'
 
 Throughout this documentation we are going to assume that we are building an accounting application. 
 
-<a name='requirements'></a>
 ## Requirements
 - MVC application using [Phalcon\Mvc\Application](api/Phalcon_Mvc_Application)
 - Store data in a database (MariaDB/MySQL)

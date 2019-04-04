@@ -18,7 +18,6 @@ Create a project folder and `cd` into it:
 mkdir nanobox-phalcon && cd nanobox-phalcon
 ```
 
-<a name='boxfile-yml'></a>
 ## Add a `boxfile.yml`
 Nanobox uses the [`boxfile.yml`][boxfile] to build and configure your app's runtime and environment. In the root of your project, create a `boxfile.yml` with the following:
 

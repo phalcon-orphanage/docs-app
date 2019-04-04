@@ -416,7 +416,6 @@ You can also handle routes that have not been matched (404) with Middleware disc
 ### Methods - Verbs
 The [Phalcon\Mvc\Micro](api/Phalcon_Mvc_Micro) application provides a set of methods to bind the HTTP method with the route it is intended to.
 
-<a name='routing-verbs-delete'></a>
 #### delete
 Matches if the HTTP method is `DELETE` and the route is `/api/products/delete/{id}`
 

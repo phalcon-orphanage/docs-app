@@ -65,7 +65,7 @@ Please check the following links for instructions on how to generate the backtra
 - Remove any change to `ext/kernel`, `*.zep.c` and `*.zep.h` files before submitting the pull request
 - More information [here](new-pull-request)
 
-Before submitting **new functionality**, please open a [NFR](/4.0/en/new-feature-request) as a new issue on GitHub to discuss the impact of including the functionality or changes in the core extension. Once the functionality is approved, make sure your PR contains the following:
+Before submitting **new functionality**, please open a [NFR](new-feature-request) as a new issue on GitHub to discuss the impact of including the functionality or changes in the core extension. Once the functionality is approved, make sure your PR contains the following:
 
 - An update to the `CHANGELOG.md`
 - Unit Tests

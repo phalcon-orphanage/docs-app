@@ -26,7 +26,6 @@ The API consists of the following methods:
 | `PUT`    | /api/robots/2            | Updates robots based on primary key            |
 | `DELETE` | /api/robots/2            | Deletes robots based on primary key            |
 
-<a name='implementation'></a>
 ## Creating the Application
 As the application is so simple, we will not implement any full MVC environment to develop it. In this case, we will use a [micro application](application-micro) to meet our goal.
 

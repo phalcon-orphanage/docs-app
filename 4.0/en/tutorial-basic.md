@@ -173,7 +173,6 @@ $response = $application->handle();
 $response->send();
 ```
 
-<a name='full-example'></a>
 ### Putting everything together
 The `tutorial/public/index.php` file should look like:
 
