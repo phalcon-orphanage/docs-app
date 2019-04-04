@@ -55,7 +55,7 @@ $router->add(
 );
 ```
 
-If you are only working with the same namespace for every controller in your application, then you can define a default namespace in the [Dispatcher](/4.0/en/dispatcher), by doing this, you don't need to specify a full class name in the router path:
+If you are only working with the same namespace for every controller in your application, then you can define a default namespace in the [Dispatcher](dispatcher), by doing this, you don't need to specify a full class name in the router path:
 
 ```php
 <?php
