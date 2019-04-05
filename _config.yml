@@ -14,6 +14,8 @@ app:
   language: 'en'
   version: '3.4'
 
+gse: '007675014297340381319:q0xztepgoxc'
+
 url: https://docs.phalconphp.com
 plugins:
   - jekyll-sitemap
