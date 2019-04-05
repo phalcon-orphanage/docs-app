@@ -2,3 +2,15 @@
     height: 20px;
     width: 20px;
 }
+.btnClipboard {
+    float: right;
+    position: absolute;
+    background-color: #8FC19A;
+    padding: 4px;
+    right: 2px;
+    margin-top: 2px;
+    border-radius: 4px;
+}
+.phalcon-blog-detail code.hljs {
+    float: left;   
+}
