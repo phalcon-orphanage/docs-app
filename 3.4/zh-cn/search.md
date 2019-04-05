@@ -1,6 +1,7 @@
 ---
 layout: default
-language: 'en'
+language: 'zh-cn'
 version: '3.4'
 ---
+
 {{ include cse_search.html }}

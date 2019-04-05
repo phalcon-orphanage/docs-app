@@ -1,6 +1,6 @@
 ---
 layout: default
-language: 'en'
+language: 'fa-ir'
 version: '3.4'
 ---
 {{ include cse_search.html }}
