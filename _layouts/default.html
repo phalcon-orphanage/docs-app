@@ -23,9 +23,11 @@
                 <div class="docSearch-content">
                     {{- content -}}
                 </div>
+                {% if page.isSearch != true %}
                 <div>
                     <div id="commento" class="col"></div>
                 </div>
+                {% endif %}
             </div>
         </div>
 
