@@ -2,6 +2,36 @@
 /                                          /3.4/en/introduction
 /en                                        /3.4/en/introduction
 /3.4                                       /3.4/en/introduction
+/3.4/cs-cz                                 /3.4/cs-cz/introduction
+/3.4/de-de                                 /3.4/de-de/introduction
+/3.4/en                                    /3.4/en/introduction
+/3.4/es-es                                 /3.4/es-es/introduction
+/3.4/fa-ir                                 /3.4/fa-ir/introduction
+/3.4/fr-fr                                 /3.4/fr-fr/introduction
+/3.4/id-id                                 /3.4/id-id/introduction
+/3.4/it-it                                 /3.4/it-it/introduction
+/3.4/ja-jp                                 /3.4/ja-jp/introduction
+/3.4/pl-pl                                 /3.4/pl-pl/introduction
+/3.4/ru-ru                                 /3.4/ru-ru/introduction
+/3.4/tr-tr                                 /3.4/tr-tr/introduction
+/3.4/uk-ua                                 /3.4/uk-ua/introduction
+/3.4/ur-in                                 /3.4/ur-in/introduction
+/3.4/zh-cn                                 /3.4/zh-cn/introduction
+
+/latest/cs-cz                              /3.4/cs-cz/introduction
+/latest/de-de                              /3.4/de-de/introduction
+/latest/es-es                              /3.4/es-es/introduction
+/latest/fa-ir                              /3.4/fa-ir/introduction
+/latest/fr-fr                              /3.4/fr-fr/introduction
+/latest/id-id                              /3.4/id-id/introduction
+/latest/it-it                              /3.4/it-it/introduction
+/latest/ja-jp                              /3.4/ja-jp/introduction
+/latest/pl-pl                              /3.4/pl-pl/introduction
+/latest/ru-ru                              /3.4/ru-ru/introduction
+/latest/tr-tr                              /3.4/tr-tr/introduction
+/latest/uk-ua                              /3.4/uk-ua/introduction
+/latest/ur-in                              /3.4/ur-in/introduction
+/latest/zh-cn                              /3.4/zh-cn/introduction
 
 # Dead links
 /en/latest/reference/routing.html          /3.4/en/reference/routing
