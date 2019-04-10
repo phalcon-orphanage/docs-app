@@ -36,7 +36,7 @@ License
 This work licensed under the New BSD License. See the [LICENSE][10] file for more information.
 
 [0]: https://phalconphp.com
-[1]: https://docs.zephir-lang.com
+[1]: https://docs.phalconphp.com
 [2]: https://crowdin.com/project/phalcon-documentation
 [3]: https://github.com/phalcon/cphalcon
 [4]: https://phalcon.link/fb
