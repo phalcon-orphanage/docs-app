@@ -39,6 +39,11 @@
 /en/latest/reference/queue.html            /3.4/en/reference/queue
 /en/latest/reference/micro.html            /3.4/en/reference/application-micro
 
+/3.1/en/rewrite-rules                      /3.1/en/application-micro#rewrite-rules
+/3.2/en/rewrite-rules                      /3.2/en/application-micro#rewrite-rules
+/3.3/en/rewrite-rules                      /3.3/en/application-micro#rewrite-rules
+/3.4/en/rewrite-rules                      /3.4/en/application-micro#rewrite-rules
+
 /latest/en                                 /3.4/en/introduction
 /latest/en/api/:slug                       /3.4/en/api/:slug
 /latest/en/reference/:slug                 /3.4/en/:slug

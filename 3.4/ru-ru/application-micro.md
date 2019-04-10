@@ -126,7 +126,14 @@ Each method has its advantages and disadvantages. It all depends on the design a
 
 Для того чтобы маршруты работали необходимо также внести изменения в конфигурацию, вашего, веб-сервера для, вашего, конкретного сайта.
 
-Those changes are outlined in the [rewrite rules](/3.4/en/rewrite-rules).
+```apacheconfig
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond   %{REQUEST_FILENAME} !-f
+    RewriteRule   ^(.*)$ index.php?_url=/$1 [QSA,L]
+</IfModule>
+```
+
 
 <a name='routing-handlers'></a>
 
