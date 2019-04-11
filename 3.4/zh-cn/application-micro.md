@@ -126,7 +126,14 @@ Each method has its advantages and disadvantages. It all depends on the design a
 
 让路由正常工作，需要在您的 web 服务器配置为特定的站点配置特定的选项。
 
-Those changes are outlined in the [rewrite rules](/3.4/en/rewrite-rules).
+```apacheconfig
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond   %{REQUEST_FILENAME} !-f
+    RewriteRule   ^(.*)$ index.php?_url=/$1 [QSA,L]
+</IfModule>
+```
+
 
 <a name='routing-handlers'></a>
 
