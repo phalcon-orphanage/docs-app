@@ -146,11 +146,10 @@
             </div>
 
             <div class="header__lang expand">
-                <img class="lang-image"
-                     src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
+                <img src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
                      alt="{{ site.data.supported[langpage.language].name | strip }}">
                 <div class="header-dropdown-wrapper">
-                    <ul class="header-dropdown">
+                    <ul class="header-dropdown header-dropdown--lang">
                         {%- assign current = '/' | append: page.language | append: '/' -%}
                         {%- for lang in site.data.verlang.languages[page.version] -%}
                         {%- assign new = '/' | append: lang | append: '/' -%}
