@@ -22,8 +22,5 @@ Developers do not need to know the C language to use Phalcon. Its interface is e
 
 Phalconは疎結合であり、開発者はアプリケーションのニーズに基づいて、グルーコンポーネントとして必要なオブジェクトのみを使用できます。
 
-<div class="alert alert-danger">
-    <p>
-        このドキュメントの翻訳は、愛好家や寄稿者によって行われています。 新たな翻訳や修正への参加を私たちは歓迎します。 翻訳は<a href="https://github.com/phalcon/docs">Github</a> で英語を、 <a href="https://crowdin.com/project/phalcon-documentation">Crowdin</a> で他の言語を扱っています。
-    </p>
-</div>
+> このドキュメントの翻訳は、愛好家や寄稿者によって行われています。 新たな翻訳や修正への参加を私たちは歓迎します。 翻訳は<a href="https://github.com/phalcon/docs">Github</a> で英語を、 <a href="https://crowdin.com/project/phalcon-documentation">Crowdin</a> で他の言語を扱っています。
+{: .alert .alert-info }

@@ -22,8 +22,5 @@ Developers do not need to know the C language to use Phalcon. Its interface is e
 
 Части Phalcon слабо связаны между собой, что позволяет использовать их в качестве независимых компонентов для любого вашего приложения.
 
-<div class="alert alert-danger">
-    <p>
-        Перевод документации производится энтузиастами. Мы будем рады всем желающим поучаствовать в переводе и поиске ошибок. Создание и правки документации на английском осуществляются на <a href="https://github.com/phalcon/docs">Github</a>, для всех остальных языков используется <a href="https://crowdin.com/project/phalcon-documentation">Crowdin</a>
-    </p>
-</div>
+> Перевод документации производится энтузиастами. Мы будем рады всем желающим поучаствовать в переводе и поиске ошибок. Создание и правки документации на английском осуществляются на <a href="https://github.com/phalcon/docs">Github</a>, для всех остальных языков используется <a href="https://crowdin.com/project/phalcon-documentation">Crowdin</a>
+{: .alert .alert-info }

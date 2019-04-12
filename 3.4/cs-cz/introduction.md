@@ -22,8 +22,5 @@ Developers do not need to know the C language to use Phalcon. Its interface is e
 
 Komponenty Phalcon frameworku nejsou na sobě pevně závislé a dovoluje použítí pouze objektů, které vývojář potřebuje ve své aplikaci bez nutnosti inicializovat celý framework, či vytvářet komponenty, které nepotřebuje.
 
-<div class="alert alert-danger">
-    <p>
-        The translation of the documentation is driven by enthusiasts and contributors. We welcome your participation in the translation effort with new translations and/or corrections. The translations are handled in <a href="https://github.com/phalcon/docs">Github</a> for English, and <a href="https://crowdin.com/project/phalcon-documentation">Crowdin</a> for other languages
-    </p>
-</div>
+> The translation of the documentation is driven by enthusiasts and contributors. We welcome your participation in the translation effort with new translations and/or corrections. The translations are handled in <a href="https://github.com/phalcon/docs">GitHub</a> for English, and <a href="https://crowdin.com/project/phalcon-documentation">Crowdin</a> for other languages
+{: .alert .alert-info }
