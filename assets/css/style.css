@@ -1793,7 +1793,6 @@ input:focus {
       margin-bottom: 8px;
       line-height: 23px;
       font-size: 16px;
-      display: block;
       max-width: 100%;
       list-style-type: disc;
       word-break: break-all;
