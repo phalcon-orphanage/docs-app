@@ -217,6 +217,9 @@ var o2 =
 				{
 					if(this.inViewport($(this.headers[i].element)) && this.activeElement != this.headers[i].element)
 					{
+						if ((itScrollToTop && this.activeElementIndex + 1 == i) || (!itScrollToTop && this.activeElementIndex - 1 == i))
+							break;
+
 						this.activeElement = this.headers[i].element;
 						this.activeElementIndex = i;
 						break;
@@ -224,17 +227,39 @@ var o2 =
 				}
 
 				// if its scroll to top - set active on top items
-				if (itScrollToTop && (!this.inViewport($(this.activeElement)) && ($(this.activeElement).offset().top > $(document).scrollTop() || $(document).scrollTop() < 300)))
+				if (itScrollToTop && (!this.inViewport($(this.activeElement))
+					&& ($(this.activeElement).offset().top > $(document).scrollTop()
+					|| $(document).scrollTop() < 300)))
 					this.activeElementIndex = (this.activeElementIndex - 1) <= 0 ? 0 : this.activeElementIndex - 1;
 
-				if(!$('[data-id="'+ this.headers[this.activeElementIndex].id + '"]').hasClass('active'))
+				if(!$('.doc-article-nav-list-link[data-id="'+ this.headers[this.activeElementIndex].id + '"]').hasClass('active'))
 				{
 					$('.doc-article-nav-markers__item, .doc-article-nav-list-link').removeClass('active');
 					$('[data-id="'+ this.headers[this.activeElementIndex].id + '"]').addClass('active');
 					this.activeElement = this.headers[this.activeElementIndex].element;
 				}
 
+				this.updateArticleNav();
+
 				this.lastScrollTop = $(document).scrollTop();
+
+			},
+			// update article nav in page top
+			updateArticleNav: function()
+			{
+				var articleNavOffset = $('.doc-article-nav-items')[0].getBoundingClientRect().top
+				if(articleNavOffset > 20)
+				{
+					$('.doc-article-nav-items').addClass('doc-article-nav-items_top');
+					$('.doc-article-nav-items').css({'max-height': 'calc(100vh - ' + (articleNavOffset + 20) + 'px)'});
+					this.changeMarkersMargin();
+				}
+				else if(articleNavOffset <= 20 && $('.doc-article-nav-items').hasClass('doc-article-nav-items_top'))
+				{
+					$('.doc-article-nav-items').css({'max-height': 'calc(100vh - 40px)'});
+					$('.doc-article-nav-items').removeClass('doc-article-nav-items_top');
+					this.changeMarkersMargin();
+				}
 			},
 			// get headers from article
 			parseHeaders: function()
@@ -258,6 +283,13 @@ var o2 =
 					});
 				});
 			},
+			changeMarkersMargin: function()
+			{
+				if($(window).height() < 1200 && this.headers.length > 15)
+				{
+					$('.doc-article-nav-markers__item').css({'margin-bottom': $('.doc-article-nav-items').height() / this.headers.length - 2} )
+				}
+			},
 			// add items to left navigation
 			generateMenu: function()
 			{
@@ -273,6 +305,7 @@ var o2 =
 					$('.doc-article-nav-markers').append(markerTmp);
 					$('.doc-article-nav-list').append(linkTmp);
 				}
+				this.changeMarkersMargin();
 			}
 		}
 	}
