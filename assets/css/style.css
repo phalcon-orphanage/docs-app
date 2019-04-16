@@ -1785,7 +1785,7 @@ input:focus {
     margin-bottom: 25px;
     margin-top: 10px;
     padding-left: 30px;
-    color: #273646;
+    color: rgba(39, 54, 70, 0.7);
     display: block;
     max-width: 100%;
     overflow: hidden; }
