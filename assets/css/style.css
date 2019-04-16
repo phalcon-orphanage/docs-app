@@ -2344,6 +2344,10 @@ input:focus {
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 8px; }
+  .phalcon-blog-detail_documetation h5 {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 6px; }
   .phalcon-blog-detail_documetation div.highlighter-rouge {
     margin-top: 19px;
     margin-bottom: 19px; }
