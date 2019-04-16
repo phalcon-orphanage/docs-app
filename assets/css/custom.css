@@ -22,3 +22,20 @@
 .phalcon-blog-detail code.hljs {
     float: left;
 }
+
+
+/*google search*/
+
+.gsc-search-button {
+  padding: 0;
+  background: none;
+  border: none;
+}
+
+.gsc-search-box-tools .gsc-search-box .gsc-input::placeholder {
+  font-size: 16px;
+}
+
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+  padding: 5px;
+}
