@@ -2375,6 +2375,9 @@ input:focus {
       .phalcon-blog-detail_documetation table td:last-child,
       .phalcon-blog-detail_documetation table th:last-child {
         border-right: none; }
+        .phalcon-blog-detail_documetation table td:last-child a,
+        .phalcon-blog-detail_documetation table th:last-child a {
+          word-break: break-all; }
     .phalcon-blog-detail_documetation table tr:last-child td {
       border-bottom: none; }
     .phalcon-blog-detail_documetation table code {
@@ -2543,11 +2546,12 @@ input:focus {
   background-color: rgba(39, 54, 70, 0.4);
   width: 20px;
   margin-bottom: 25px;
-  -webkit-transition: background-color .135s;
-  -o-transition: background-color .135s;
-  transition: background-color .135s; }
+  -webkit-transition: all .135s;
+  -o-transition: all .135s;
+  transition: all .135s; }
   .doc-article-nav-markers__item.active {
-    background-color: #8FC19A; }
+    background-color: #8FC19A;
+    height: 4px; }
   .doc-article-nav-markers__item:last-child {
     margin-bottom: 0 !important; }
 
