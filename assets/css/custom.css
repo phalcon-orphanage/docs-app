@@ -26,12 +26,6 @@
 
 /*google search*/
 
-.gsc-search-button {
-  padding: 0 !important;
-  background: none !important;
-  border: none !important;
-}
-
 .gsc-search-box-tools .gsc-search-box .gsc-input::placeholder {
   font-size: 16px !important;
 }
@@ -50,9 +44,4 @@ table.gsc-search-box {
   display: block !important;
 }
 
-.gsc-search-button {
-  display: block !important;
-  background: none !important;
-  border: none !important;
-}
 
