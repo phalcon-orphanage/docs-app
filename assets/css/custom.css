@@ -27,15 +27,25 @@
 /*google search*/
 
 .gsc-search-button {
-  padding: 0;
-  background: none;
-  border: none;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
 }
 
 .gsc-search-box-tools .gsc-search-box .gsc-input::placeholder {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .gsc-search-box-tools .gsc-search-box .gsc-input {
-  padding: 5px;
+  padding: 5px !important;
 }
+
+.gsc-control-cse,
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+  padding: 0 !important;
+}
+
+table.gsc-search-box {
+  margin: 0 !important;
+}
+
