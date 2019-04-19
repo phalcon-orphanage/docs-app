@@ -4,9 +4,7 @@ language: 'en'
 version: '3.4'
 ---
 # Micro Applications
-Phalcon offers a very 'thin' application, so that you can create 'Micro' applications with minimal PHP code.
-
-Micro applications are suitable for small applications that will have very low overhead. Such applications are for instance our `[website](https://github.com/phalcon/website), this website ([docs](https://github.com/phalcon/docs)), our [store](https://github.com/phalcon/store),  APIs, prototypes etc.
+Phalcon offers a very 'thin' application, so that you can create `Micro` applications with minimal PHP code and overhead. Micro applications are suitable for small applications that will have very low overhead. Such applications are usually API ones, prototypes etc.
 
 ```php
 <?php

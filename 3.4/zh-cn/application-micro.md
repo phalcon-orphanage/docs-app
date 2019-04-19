@@ -6,9 +6,7 @@ version: '3.4'
 
 # 微型应用
 
-Phalcon 提供一个非常 '轻' 的应用，因此您可以用很少的的 PHP 代码创建 'Micro' 应用。
-
-微应用程序，适合小的应用，这样会有很低的资源开销。 Such applications are for instance our `[website](https://github.com/phalcon/website), this website ([docs](https://github.com/phalcon/docs)), our [store](https://github.com/phalcon/store), APIs, prototypes etc.
+Phalcon 提供一个非常 '轻' 的应用，因此您可以用很少的的 PHP 代码创建 'Micro' 应用。微应用程序，适合小的应用，这样会有很低的资源开销。 
 
 ```php
 <?php
