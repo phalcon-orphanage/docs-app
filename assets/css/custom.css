@@ -46,7 +46,7 @@ table.gsc-search-box {
 
 .gsc-search-button {
   position: absolute;
-  right: 0;
+  right: 14px;
   top: 50%;
   transform: translate(0, -50%);
   margin: 0;
@@ -57,6 +57,10 @@ table.gsc-search-box {
 
 .gsib_a {
   padding-right: 100px !important;
+}
+
+.gsib_b {
+  display: none !important;
 }
 
 
