@@ -44,4 +44,15 @@ table.gsc-search-box {
   display: block !important;
 }
 
+.gsc-search-button {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin: 0;
+  padding: 0;
+  min-width: 88px !important;
+  border: none;
+}
+
 
