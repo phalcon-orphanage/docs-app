@@ -37,6 +37,7 @@
 .gsc-control-cse,
 .gsc-search-box-tools .gsc-search-box .gsc-input {
   padding: 0 !important;
+  border: none !important;
 }
 
 table.gsc-search-box {
@@ -57,6 +58,7 @@ table.gsc-search-box {
 
 .gsib_a {
   padding-right: 100px !important;
+  border: none !important;
 }
 
 .gsib_b {
