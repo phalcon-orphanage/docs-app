@@ -31,7 +31,11 @@
 }
 
 .gsc-search-box-tools .gsc-search-box .gsc-input {
-  padding: 5px !important;
+  width: 100% !important;
+}
+.gsc-search-box-tools .gsc-search-box .gsc-input tr,
+.gsc-search-box-tools .gsc-search-box .gsc-input td {
+  display: block !important;
 }
 
 .gsc-control-cse,
