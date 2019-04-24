@@ -65,4 +65,8 @@ table.gsc-search-box {
   display: none !important;
 }
 
+.gsc-search-box-tools .gsc-search-box .gsc-input {
+  display: table;
+}
+
 
