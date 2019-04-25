@@ -69,4 +69,7 @@ table.gsc-search-box {
   display: table;
 }
 
-
+.gsc-input-box {
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
