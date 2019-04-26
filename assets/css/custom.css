@@ -73,3 +73,7 @@ table.gsc-search-box {
   border-top-left-radius: inherit;
   border-bottom-left-radius: inherit;
 }
+
+.gcsc-branding-img-noclear {
+  vertical-align: top;
+}
