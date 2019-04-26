@@ -77,3 +77,7 @@ table.gsc-search-box {
 .gcsc-branding-img-noclear {
   vertical-align: top !important;
 }
+
+.gcsc-branding-clickable {
+  display: flex !important;
+}
