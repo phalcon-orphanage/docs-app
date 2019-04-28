@@ -81,3 +81,7 @@ table.gsc-search-box {
 .gcsc-branding-clickable {
   display: flex !important;
 }
+
+.gsc-resultsHeader {
+  display: none !important;
+}
