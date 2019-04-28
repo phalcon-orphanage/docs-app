@@ -85,3 +85,7 @@ table.gsc-search-box {
 .gsc-resultsHeader {
   display: none !important;
 }
+
+.gs-title {
+  border: none !important;
+}
