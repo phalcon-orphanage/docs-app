@@ -106,7 +106,7 @@
                         <img class="lang-image"
                              src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
                              alt="{{ site.data.supported[langpage.language].name | strip }}">
-                        <ul class="header-dropdown--mobile">
+                        <ul class="header-dropdown--mobile header-dropdown--mobile-lang">
                             {%- assign current = '/' | append: page.language | append: '/' -%}
                             {%- for lang in site.data.verlang.languages[page.version] -%}
                             {%- assign new = '/' | append: lang | append: '/' -%}
