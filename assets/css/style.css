@@ -982,6 +982,15 @@ input:focus {
     .header-dropdown--mobile li {
       margin-bottom: 13px; }
 
+.header-dropdown--mobile-lang a{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header-dropdown--mobile-lang a img {
+  margin-right: 5px; }
+
 .header__search {
   width: 172px;
   height: 30px;
