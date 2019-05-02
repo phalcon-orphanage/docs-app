@@ -89,14 +89,3 @@ table.gsc-search-box {
 .gs-title {
   border: none !important;
 }
-
-.header-dropdown--mobile-lang a{
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.header-dropdown--mobile-lang a img {
-  margin-right: 5px;
-}
