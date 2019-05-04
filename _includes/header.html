@@ -87,7 +87,7 @@
                         </ul>
                     </li>
 
-                    <li class="extendable expand">
+                    <li class="extendable expand mobile-menu-page-version">
                         {{- page.version -}}
                         <ul class="header-dropdown--mobile">
                             {%- assign current = '/' | append: page.version | append: '/' -%}
@@ -102,7 +102,7 @@
                         </ul>
                     </li>
 
-                    <li class="extendable expand">
+                    <li class="extendable expand mobile-menu-page-lang">
                         <img class="lang-image"
                              src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
                              alt="{{ site.data.supported[langpage.language].name | strip }}">
