@@ -87,8 +87,8 @@
                         </ul>
                     </li>
 
-                    <li class="extendable expand mobile-menu-page-version">
-                        {{- page.version -}}
+                    <li class="extendable expand">
+                        <span class="mobile-menu-page-version">{{- page.version -}}</span>
                         <ul class="header-dropdown--mobile">
                             {%- assign current = '/' | append: page.version | append: '/' -%}
                             {%- for version in site.data.verlang.versions -%}
@@ -102,8 +102,8 @@
                         </ul>
                     </li>
 
-                    <li class="extendable expand mobile-menu-page-lang">
-                        <img class="lang-image"
+                    <li class="extendable expand">
+                        <img class="lang-image mobile-menu-page-lang"
                              src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
                              alt="{{ site.data.supported[langpage.language].name | strip }}">
                         <ul class="header-dropdown--mobile header-dropdown--mobile-lang">
