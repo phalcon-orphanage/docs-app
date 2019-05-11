@@ -92,7 +92,6 @@ table.gsc-search-box {
 
 .header-nav--mobile .extendable a:after{
   content: url(https://assets.phalconphp.com/phalcon/images/svg/arrow.svg);
-  color: #fff;
   margin-left: 5px;
 }
 
@@ -102,9 +101,6 @@ table.gsc-search-box {
 
 .mobile-menu-page-version:after {
   content: url(https://assets.phalconphp.com/phalcon/images/svg/arrow.svg);
-  color: #fff;
-  position: relative;
-  top: -2px;
   margin-left: 5px;
 }
 
@@ -112,4 +108,5 @@ table.gsc-search-box {
   content: url(https://assets.phalconphp.com/phalcon/images/svg/arrow.svg);
   display: inline-block;
   vertical-align: top;
+  margin-left: 5px;
 }
