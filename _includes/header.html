@@ -103,10 +103,11 @@
                     </li>
 
                     <li class="extendable expand">
-                        <img class="lang-image"
-                             src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
-                             alt="{{ site.data.supported[langpage.language].name | strip }}">
-                        <span class="mobile-menu-page-lang"></span>
+                        <span class="mobile-menu-page-lang">
+                            <img class="lang-image"
+                                 src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
+                                 alt="{{ site.data.supported[langpage.language].name | strip }}">
+                        </span>
                         <ul class="header-dropdown--mobile header-dropdown--mobile-lang">
                             {%- assign current = '/' | append: page.language | append: '/' -%}
                             {%- for lang in site.data.verlang.languages[page.version] -%}
