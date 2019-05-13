@@ -1062,7 +1062,6 @@ input:focus {
   .header__lang img {
     width: 20px;
     height: 20px;
-    margin-right: 5px; }
   .header__lang:hover {
     -webkit-transition: .2s;
     -o-transition: .2s;
