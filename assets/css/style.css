@@ -955,6 +955,8 @@ input:focus {
       -webkit-flex-shrink: 0;
           -ms-flex-negative: 0;
               flex-shrink: 0; }
+  .header-dropdown--lang .lang-image {
+    margin-right: 5px; }
   .header-dropdown--cat {
     min-width: 285px; }
   .header-dropdown__count {
