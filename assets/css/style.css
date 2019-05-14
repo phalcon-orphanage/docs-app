@@ -1061,8 +1061,7 @@ input:focus {
           align-items: center; }
   .header__lang img {
     width: 20px;
-    height: 20px;
-    margin-right: 5px; }
+    height: 20px; }
   .header__lang:hover {
     -webkit-transition: .2s;
     -o-transition: .2s;
@@ -1076,10 +1075,9 @@ input:focus {
       display: block; }
     .header__lang.expand:after {
       content: url("https://assets.phalconphp.com/phalcon/images/svg/arrow.svg");
-      color: #fff;
       position: relative;
       top: -2px;
-      margin-left: 3px; }
+      margin-left: 5px; }
 
 .header-nav__burger {
   display: none;
