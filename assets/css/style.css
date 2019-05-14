@@ -1061,7 +1061,7 @@ input:focus {
           align-items: center; }
   .header__lang img {
     width: 20px;
-    height: 20px;
+    height: 20px; }
   .header__lang:hover {
     -webkit-transition: .2s;
     -o-transition: .2s;
