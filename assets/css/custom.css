@@ -110,3 +110,7 @@ table.gsc-search-box {
   vertical-align: top;
   margin-left: 2px;
 }
+
+.gs-image-box.gs-web-image-box.gs-web-image-box-portrait {
+  overflow: inherit !important;
+}
