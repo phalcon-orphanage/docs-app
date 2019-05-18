@@ -67,6 +67,7 @@ table.gsc-search-box {
 
 .gsc-search-box-tools .gsc-search-box .gsc-input {
   display: table;
+  font-size: 14px !important;
 }
 
 .gsc-input-box {
