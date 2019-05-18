@@ -27,15 +27,10 @@
 /*google search*/
 
 .gsc-search-box-tools .gsc-search-box .gsc-input::placeholder {
-  font-size: 16px !important;
+  font-size: 14px !important;
 }
 
-.gsc-search-box-tools .gsc-search-box .gsc-input {
-  width: 100% !important;
-}
-
-.gsc-control-cse,
-.gsc-search-box-tools .gsc-search-box .gsc-input {
+.gsc-control-cse {
   padding: 0 !important;
   border: none !important;
 }
@@ -68,6 +63,9 @@ table.gsc-search-box {
 .gsc-search-box-tools .gsc-search-box .gsc-input {
   display: table;
   font-size: 14px !important;
+  width: 100% !important;
+  padding: 0 !important;
+  border: none !important;
 }
 
 .gsc-input-box {
