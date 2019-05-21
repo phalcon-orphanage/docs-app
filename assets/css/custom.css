@@ -49,6 +49,11 @@ table.gsc-search-box {
   padding: 0;
   min-width: 88px !important;
   border: none !important;
+  background-color: #8FC19A !important;
+}
+
+.gsc-search-button:hover {
+  background-color: #8FC19A !important;
 }
 
 .gsib_a {
