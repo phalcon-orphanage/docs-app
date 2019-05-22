@@ -49,10 +49,13 @@ table.gsc-search-box {
   padding: 0;
   min-width: 88px !important;
   border: none !important;
+}
+
+.gsc-search-button-v2 {
   background-color: #8FC19A !important;
 }
 
-.gsc-search-button:hover {
+.gsc-search-button-v2:hover {
   background-color: #8FC19A !important;
 }
 
