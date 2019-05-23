@@ -128,3 +128,7 @@ table.gsc-search-box {
   -ms-transform: translate(-50%, 0) !important;
   transform: translate(-50%, 0) !important;
 }
+
+.gsc-webResult .gsc-result {
+  border-bottom: 1px solid #E9E9E9 !important;
+}
