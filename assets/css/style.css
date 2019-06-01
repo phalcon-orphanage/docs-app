@@ -2539,7 +2539,8 @@ input:focus {
             transform: translateX(0); }
 
 .doc-article-nav-markers {
-  height: 100%;
+  position: absolute;
+  left: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
