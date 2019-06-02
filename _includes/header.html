@@ -51,9 +51,20 @@
 
             <nav class="header-nav--mobile _navToggle"
                  onclick="event.stopPropagation();">
-                <input class="header__search"
-                       placeholder="Search..."
-                       type="text">
+                {% if page.version == '4.0' %}
+                <form>
+                    <input class="header__search"
+                           type="search"
+                           id="docs-search"
+                           placeholder="{{ homeStrings['search'] }}"
+                           aria-label="{{ homeStrings['search_for'] }}"
+                           autocomplete="off"
+                           data-siteurl="{{ site.url }}"
+                           data-docs-version="{{ page.version }}">
+                </form>
+                {% else %}
+                    <a href="search">{{ homeStrings['search'] }}</a>
+                {% endif %}
                 <ul>
                     <li>
                         <a href="https://phalcon.link/docs">{{ homeStrings['download'] }}</a>
