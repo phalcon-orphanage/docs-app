@@ -877,6 +877,10 @@ input:focus {
     .header-nav--mobile li.extended .header-dropdown--mobile {
       display: block; }
 
+.header-nav--mobile__search {
+  display: inline-block;
+  margin-bottom: 15px; }
+
 .header-dropdown {
   z-index: 10;
   background-color: #fff;
