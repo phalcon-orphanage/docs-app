@@ -1135,6 +1135,12 @@ input:focus {
   height: 22px; }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .header-nav > li.expand > a::after {
+    content: url("https://assets.phalconphp.com/phalcon/images/svg/arrow.svg");
+    color: #fff;
+    position: relative;
+    top: 0;
+    margin-left: 5px; }
   .header {
     height: 66px;
     padding: 13px 0;
