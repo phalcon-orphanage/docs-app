@@ -17,5 +17,18 @@
         debug: false // Set debug to true if you want to inspect the dropdown
     }
 );
+docsearch(
+  {
+    apiKey: '0fde5d68d961a6950ca2b1d4d99c4f07',
+    indexName: 'phalconphp',
+    inputSelector: '#docs-search-mobile',
+    algoliaOptions: {
+      'facetFilters': [
+        "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}"
+      ]
+    },
+    debug: false // Set debug to true if you want to inspect the dropdown
+  }
+);
 </script>
 {% endif %}
