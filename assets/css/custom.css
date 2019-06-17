@@ -132,3 +132,9 @@ table.gsc-search-box {
 .gsc-webResult .gsc-result {
   border-bottom: 1px solid #E9E9E9 !important;
 }
+
+/*algolia mobile search*/
+
+.header-nav--mobile .algolia-autocomplete.algolia-autocomplete-left .ds-dropdown-menu {
+  min-width: 100%;
+}
