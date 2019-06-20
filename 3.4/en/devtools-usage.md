@@ -17,7 +17,7 @@ You can download or clone a cross platform package containing the developer tool
 ## Installation
 These are detailed instructions on how to install the developer tools on different platforms:
 
-[Linux](/[/3.4/en/devtools-installation#installation-linux) : [MacOS](/3.4/en/devtools-installation#installation-macos) : [Windows](/3.4/en/devtools-installation#installation-windows)
+[Linux](/3.4/en/devtools-installation#installation-linux) : [MacOS](/3.4/en/devtools-installation#installation-macos) : [Windows](/3.4/en/devtools-installation#installation-windows)
 
 <a name='available-commands'></a>
 ## Available Commands
