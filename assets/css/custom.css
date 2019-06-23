@@ -172,3 +172,9 @@ table.gsc-search-box {
   background-color: #d9534f;
   border-color: #d43f3a;
 }
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #ac2925;
+}
