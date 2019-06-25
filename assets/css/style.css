@@ -15,8 +15,10 @@
 .hljs-keyword, .hljs-attribute, .hljs-selector-tag, .hljs-meta-keyword, .hljs-doctag, .hljs-name {
   font-weight: bold; }
 
-.hljs-type, .hljs-string, .hljs-number, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
+.hljs-type, .hljs-string, .hljs-selector-id, .hljs-selector-class, .hljs-quote, .hljs-template-tag, .hljs-deletion {
   color: #880000; }
+
+.hljs-number{color:#c0ffa0}
 
 .hljs-title, .hljs-section {
   color: #880000;
