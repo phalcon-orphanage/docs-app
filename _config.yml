@@ -16,6 +16,8 @@ app:
 
 gse: '007675014297340381319:q0xztepgoxc'
 
+permalink: :title
+
 url: https://docs.phalconphp.com
 plugins:
   - jekyll-sitemap
