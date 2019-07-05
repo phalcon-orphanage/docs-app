@@ -791,3 +791,109 @@ echo Phalcon\Tag::tagHtmlClose("script", true);
 
 
 
+
+<hr>
+
+# Class **Phalcon\Tag\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/tag/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Abstract class **Phalcon\Tag\Select**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/tag/select.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+Generates a SELECT html tag using a static array of values or a Phalcon\Mvc\Model resultset
+
+
+## Methods
+public static  **selectField** (*array* $parameters, [*array* $data])
+
+Generates a SELECT tag
+
+
+
+private static  **_optionsFromResultset** ([Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset) $resultset, *array* $using, *mixed* $value, *string* $closeOption)
+
+Generate the OPTION tags based on a resultset
+
+
+
+private static  **_optionsFromArray** (*array* $data, *mixed* $value, *string* $closeOption)
+
+Generate the OPTION tags based on an array
+
+
+

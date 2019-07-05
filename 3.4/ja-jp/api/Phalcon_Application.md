@@ -4,34 +4,39 @@ language: 'ja-jp'
 version: '3.4'
 title: 'Phalcon\Application'
 ---
-
 # Abstract class **Phalcon\Application**
 
 *extends* abstract class [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
 
 *implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
-<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/application.zep" class="btn btn-default btn-sm">GitHub上のソース</a>
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/application.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 Base class for Phalcon\Cli\Console and Phalcon\Mvc\Application.
 
-## メソッド
 
-public **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+## Methods
+public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
 
 Phalcon\Application Constructor
 
-public **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
 
-イベントマネージャーをセットします
 
-public **getEventsManager** ()
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
 
-内部イベントマネージャーを返します
+Sets the events manager
 
-public **registerModules** (*array* $modules, [*mixed* $merge])
 
-アプリケーション内にあるモジュールの配列を登録します。
+
+public  **getEventsManager** ()
+
+Returns the internal event manager
+
+
+
+public  **registerModules** (*array* $modules, [*mixed* $merge])
+
+Register an array of modules present in the application
 
 ```php
 <?php
@@ -51,34 +56,135 @@ $this->registerModules(
 
 ```
 
-public **getModules** ()
 
-アプリケーションに登録されているモジュールを返す
 
-public **getModule** (*mixed* $name)
+public  **getModules** ()
 
-モジュール名でアプリケーションに登録されているモジュール定義を取得します。
+Return the modules registered in the application
 
-public **setDefaultModule** (*mixed* $defaultModule)
 
-ルーターが有効なモジュールを返さない場合、使用するモジュール名を設定します
 
-public **getDefaultModule** ()
+public  **getModule** (*mixed* $name)
 
-デフォルトのモジュール名を返します
+Gets the module definition registered in the application via module name
 
-abstract public **handle** ()
 
-リクエストを処理します。
 
-public **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **setDefaultModule** (*mixed* $defaultModule)
 
-DIをセットします。
+Sets the module name to be used if the router doesn't return a valid module
 
-public **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
 
-内部のDIを返します。
 
-public **__get** (*string* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **getDefaultModule** ()
 
-マジックメソッド __get
+Returns the default module name
+
+
+
+abstract public  **handle** ()
+
+Handles a request
+
+
+
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Sets the dependency injector
+
+
+
+public  **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Returns the internal dependency injector
+
+
+
+public  **__get** (*string* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Magic method __get
+
+
+
+<hr>
+
+---
+layout: default
+language: 'ja-jp'
+version: '3.4'
+title: 'Phalcon\Application\Exception'
+---
+# Class **Phalcon\Application\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/application/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+

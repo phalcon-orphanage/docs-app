@@ -88,3 +88,23 @@ Magic method __get
 
 
 
+
+<hr>
+
+# Interface **Phalcon\Mvc\Controller\BindModelInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/controller/bindmodelinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public static  **getModelName** ()
+
+...
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\ControllerInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/controllerinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+

@@ -292,3 +292,336 @@ Magic method __get
 
 
 
+
+<hr>
+
+# Class **Phalcon\Mvc\Micro\Collection**
+
+*implements* [Phalcon\Mvc\Micro\CollectionInterface](/3.4/en/api/Phalcon_Mvc_Micro_CollectionInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/micro/collection.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+Groups Micro-Mvc handlers as controllers
+
+```php
+<?php
+
+$app = new \Phalcon\Mvc\Micro();
+
+$collection = new Collection();
+
+$collection->setHandler(
+    new PostsController()
+);
+
+$collection->get("/posts/edit/{id}", "edit");
+
+$app->mount($collection);
+
+```
+
+
+## Methods
+protected  **_addMap** (*string* | *array* $method, *string* $routePattern, *mixed* $handler, *string* $name)
+
+Internal function to add a handler to the group
+
+
+
+public  **setPrefix** (*mixed* $prefix)
+
+Sets a prefix for all routes added to the collection
+
+
+
+public  **getPrefix** ()
+
+Returns the collection prefix if any
+
+
+
+public *array* **getHandlers** ()
+
+Returns the registered handlers
+
+
+
+public [Phalcon\Mvc\Micro\Collection](/3.4/en/api/Phalcon_Mvc_Micro_Collection) **setHandler** (*mixed* $handler, [*boolean* $lazy])
+
+Sets the main handler
+
+
+
+public  **setLazy** (*mixed* $lazy)
+
+Sets if the main handler must be lazy loaded
+
+
+
+public  **isLazy** ()
+
+Returns if the main handler must be lazy loaded
+
+
+
+public *mixed* **getHandler** ()
+
+Returns the main handler
+
+
+
+public [Phalcon\Mvc\Micro\Collection](/3.4/en/api/Phalcon_Mvc_Micro_Collection) **map** (*string* $routePattern, *callable* $handler, [*string* $name])
+
+Maps a route to a handler
+
+
+
+public [Phalcon\Mvc\Micro\Collection](/3.4/en/api/Phalcon_Mvc_Micro_Collection) **get** (*string* $routePattern, *callable* $handler, [*string* $name])
+
+Maps a route to a handler that only matches if the HTTP method is GET
+
+
+
+public [Phalcon\Mvc\Micro\Collection](/3.4/en/api/Phalcon_Mvc_Micro_Collection) **post** (*string* $routePattern, *callable* $handler, [*string* $name])
+
+Maps a route to a handler that only matches if the HTTP method is POST
+
+
+
+public [Phalcon\Mvc\Micro\Collection](/3.4/en/api/Phalcon_Mvc_Micro_Collection) **put** (*string* $routePattern, *callable* $handler, [*string* $name])
+
+Maps a route to a handler that only matches if the HTTP method is PUT
+
+
+
+public [Phalcon\Mvc\Micro\Collection](/3.4/en/api/Phalcon_Mvc_Micro_Collection) **patch** (*string* $routePattern, *callable* $handler, [*string* $name])
+
+Maps a route to a handler that only matches if the HTTP method is PATCH
+
+
+
+public [Phalcon\Mvc\Micro\Collection](/3.4/en/api/Phalcon_Mvc_Micro_Collection) **head** (*string* $routePattern, *callable* $handler, [*string* $name])
+
+Maps a route to a handler that only matches if the HTTP method is HEAD
+
+
+
+public [Phalcon\Mvc\Micro\Collection](/3.4/en/api/Phalcon_Mvc_Micro_Collection) **delete** (*string* $routePattern, *callable* $handler, [*string* $name])
+
+Maps a route to a handler that only matches if the HTTP method is DELETE
+
+
+
+public [Phalcon\Mvc\Micro\Collection](/3.4/en/api/Phalcon_Mvc_Micro_Collection) **options** (*string* $routePattern, *callable* $handler, [*mixed* $name])
+
+Maps a route to a handler that only matches if the HTTP method is OPTIONS
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\Micro\CollectionInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/micro/collectioninterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **setPrefix** (*mixed* $prefix)
+
+...
+
+
+abstract public  **getPrefix** ()
+
+...
+
+
+abstract public  **getHandlers** ()
+
+...
+
+
+abstract public  **setHandler** (*mixed* $handler, [*mixed* $lazy])
+
+...
+
+
+abstract public  **setLazy** (*mixed* $lazy)
+
+...
+
+
+abstract public  **isLazy** ()
+
+...
+
+
+abstract public  **getHandler** ()
+
+...
+
+
+abstract public  **map** (*mixed* $routePattern, *mixed* $handler, [*mixed* $name])
+
+...
+
+
+abstract public  **get** (*mixed* $routePattern, *mixed* $handler, [*mixed* $name])
+
+...
+
+
+abstract public  **post** (*mixed* $routePattern, *mixed* $handler, [*mixed* $name])
+
+...
+
+
+abstract public  **put** (*mixed* $routePattern, *mixed* $handler, [*mixed* $name])
+
+...
+
+
+abstract public  **patch** (*mixed* $routePattern, *mixed* $handler, [*mixed* $name])
+
+...
+
+
+abstract public  **head** (*mixed* $routePattern, *mixed* $handler, [*mixed* $name])
+
+...
+
+
+abstract public  **delete** (*mixed* $routePattern, *mixed* $handler, [*mixed* $name])
+
+...
+
+
+abstract public  **options** (*mixed* $routePattern, *mixed* $handler, [*mixed* $name])
+
+...
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\Micro\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/micro/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\Micro\LazyLoader**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/micro/lazyloader.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+Lazy-Load of handlers for Mvc\Micro using auto-loading
+
+
+## Methods
+public  **getDefinition** ()
+
+...
+
+
+public  **__construct** (*mixed* $definition)
+
+Phalcon\Mvc\Micro\LazyLoader constructor
+
+
+
+public *mixed* **__call** (*string* $method, *array* $arguments)
+
+Initializes the internal handler, calling functions on it
+
+
+
+public *mixed* **callMethod** (*string* $method, *array* $arguments, [[Phalcon\Mvc\Model\BinderInterface](/3.4/en/api/Phalcon_Mvc_Model_BinderInterface) $modelBinder])
+
+Calling __call method
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\Micro\MiddlewareInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/micro/middlewareinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **call** ([Phalcon\Mvc\Micro](/3.4/en/api/Phalcon_Mvc_Micro) $application)
+
+...
+
+

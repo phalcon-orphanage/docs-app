@@ -4,17 +4,17 @@ language: 'fa-ir'
 version: '3.4'
 title: 'Phalcon\Mvc\Collection'
 ---
-
 # Abstract class **Phalcon\Mvc\Collection**
 
 *implements* [Phalcon\Mvc\EntityInterface](/3.4/en/api/Phalcon_Mvc_EntityInterface), [Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Serializable](http://php.net/manual/en/class.serializable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
-This component implements a high level abstraction for NoSQL databases which works with documents
+This component implements a high level abstraction for NoSQL databases which
+works with documents
+
 
 ## Constants
-
 *integer* **OP_NONE**
 
 *integer* **OP_CREATE**
@@ -30,66 +30,95 @@ This component implements a high level abstraction for NoSQL databases which wor
 *integer* **DIRTY_STATE_DETACHED**
 
 ## Methods
-
-final public **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector], [[Phalcon\Mvc\Collection\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Collection_ManagerInterface) $modelsManager])
+final public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector], [[Phalcon\Mvc\Collection\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Collection_ManagerInterface) $modelsManager])
 
 Phalcon\Mvc\Collection constructor
 
-public **setId** (*mixed* $id)
+
+
+public  **setId** (*mixed* $id)
 
 Sets a value for the _id property, creates a MongoId object if needed
+
+
 
 public *MongoId* **getId** ()
 
 Returns the value of the _id property
 
-public **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+
+
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injection container
 
-public **getDI** ()
+
+
+public  **getDI** ()
 
 Returns the dependency injection container
 
-protected **setEventsManager** ([Phalcon\Mvc\Collection\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Collection_ManagerInterface) $eventsManager)
+
+
+protected  **setEventsManager** ([Phalcon\Mvc\Collection\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Collection_ManagerInterface) $eventsManager)
 
 Sets a custom events manager
 
-protected **getEventsManager** ()
+
+
+protected  **getEventsManager** ()
 
 Returns the custom events manager
 
-public **getCollectionManager** ()
+
+
+public  **getCollectionManager** ()
 
 Returns the models manager related to the entity instance
 
-public **getReservedAttributes** ()
+
+
+public  **getReservedAttributes** ()
 
 Returns an array with reserved properties that cannot be part of the insert/update
 
-protected **useImplicitObjectIds** (*mixed* $useImplicitObjectIds)
+
+
+protected  **useImplicitObjectIds** (*mixed* $useImplicitObjectIds)
 
 Sets if a model must use implicit objects ids
 
-protected **setSource** (*mixed* $source)
+
+
+protected  **setSource** (*mixed* $source)
 
 Sets collection name which model should be mapped
 
-public **getSource** ()
+
+
+public  **getSource** ()
 
 Returns collection name mapped in the model
 
-public **setConnectionService** (*mixed* $connectionService)
+
+
+public  **setConnectionService** (*mixed* $connectionService)
 
 Sets the DependencyInjection connection service name
 
-public **getConnectionService** ()
+
+
+public  **getConnectionService** ()
 
 Returns DependencyInjection connection service
+
+
 
 public *MongoDb* **getConnection** ()
 
 Retrieves a database connection
+
+
 
 public *mixed* **readAttribute** (*string* $attribute)
 
@@ -102,7 +131,9 @@ echo $robot->readAttribute("name");
 
 ```
 
-public **writeAttribute** (*string* $attribute, *mixed* $value)
+
+
+public  **writeAttribute** (*string* $attribute, *mixed* $value)
 
 Writes an attribute value by its name
 
@@ -113,27 +144,39 @@ $robot->writeAttribute("name", "Rosey");
 
 ```
 
-public static **cloneResult** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $collection, *array* $document)
+
+
+public static  **cloneResult** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $collection, *array* $document)
 
 Returns a cloned collection
+
+
 
 protected static *array* **_getResultset** (*array* $params, [Phalcon\Mvc\Collection](/3.4/en/api/Phalcon_Mvc_Collection) $collection, *MongoDb* $connection, *boolean* $unique)
 
 Returns a collection resultset
 
+
+
 protected static *int* **_getGroupResultset** (*array* $params, [Phalcon\Mvc\Collection](/3.4/en/api/Phalcon_Mvc_Collection) $collection, *MongoDb* $connection)
 
 Perform a count over a resultset
+
+
 
 final protected *boolean* **_preSave** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector, *boolean* $disableEvents, *boolean* $exists)
 
 Executes internal hooks before save a document
 
-final protected **_postSave** (*mixed* $disableEvents, *mixed* $success, *mixed* $exists)
+
+
+final protected  **_postSave** (*mixed* $disableEvents, *mixed* $success, *mixed* $exists)
 
 Executes internal events after save a document
 
-protected **validate** (*mixed* $validator)
+
+
+protected  **validate** (*mixed* $validator)
 
 Executes validators on every validation call
 
@@ -189,7 +232,9 @@ class Subscriptors extends \Phalcon\Mvc\Collection
 
 ```
 
-public **validationHasFailed** ()
+
+
+public  **validationHasFailed** ()
 
 Check whether validation process has generated any messages
 
@@ -219,23 +264,33 @@ class Subscriptors extends \Phalcon\Mvc\Collection
 
 ```
 
-public **fireEvent** (*mixed* $eventName)
+
+
+public  **fireEvent** (*mixed* $eventName)
 
 Fires an internal event
 
-public **fireEventCancel** (*mixed* $eventName)
+
+
+public  **fireEventCancel** (*mixed* $eventName)
 
 Fires an internal event that cancels the operation
 
-protected **_cancelOperation** (*mixed* $disableEvents)
+
+
+protected  **_cancelOperation** (*mixed* $disableEvents)
 
 Cancel the current operation
+
+
 
 protected *boolean* **_exists** (*MongoCollection* $collection)
 
 Checks if the document exists in the collection
 
-public **getMessages** ()
+
+
+public  **getMessages** ()
 
 Returns all the validation messages
 
@@ -262,7 +317,9 @@ if ($robot->save() === false) {
 
 ```
 
-public **appendMessage** ([Phalcon\Mvc\Model\MessageInterface](/3.4/en/api/Phalcon_Mvc_Model_MessageInterface) $message)
+
+
+public  **appendMessage** ([Phalcon\Mvc\Model\MessageInterface](/3.4/en/api/Phalcon_Mvc_Model_MessageInterface) $message)
 
 Appends a customized message on the validation process
 
@@ -287,21 +344,31 @@ class Robots extends \Phalcon\Mvc\Model
 
 ```
 
-protected **prepareCU** ()
 
-Shared Code for CU Operations Prepares Collection
 
-public **save** ()
+protected  **prepareCU** ()
+
+Shared Code for CU Operations
+Prepares Collection
+
+
+
+public  **save** ()
 
 Creates/Updates a collection based on the values in the attributes
 
-public **create** ()
+
+
+public  **create** ()
 
 Creates a collection based on the values in the attributes
 
-public **createIfNotExist** (*array* $criteria)
 
-Creates a document based on the values in the attributes, if not found by criteria Preferred way to avoid duplication is to create index on attribute
+
+public  **createIfNotExist** (*array* $criteria)
+
+Creates a document based on the values in the attributes, if not found by criteria
+Preferred way to avoid duplication is to create index on attribute
 
 ```php
 <?php
@@ -321,11 +388,15 @@ $robot->createIfNotExist(
 
 ```
 
-public **update** ()
+
+
+public  **update** ()
 
 Creates/Updates a collection based on the values in the attributes
 
-public static **findById** (*mixed* $id)
+
+
+public static  **findById** (*mixed* $id)
 
 Find a document by its id (_id)
 
@@ -347,7 +418,9 @@ if ($user = Users::findById($_POST["id"])) {
 
 ```
 
-public static **findFirst** ([*array* $parameters])
+
+
+public static  **findFirst** ([*array* $parameters])
 
 Allows to query the first record that match the specified conditions
 
@@ -397,7 +470,9 @@ echo "The robot id is ", $robot->_id, "\n";
 
 ```
 
-public static **find** ([*array* $parameters])
+
+
+public static  **find** ([*array* $parameters])
 
 Allows to query a set of records that match the specified conditions
 
@@ -455,7 +530,9 @@ foreach ($robots as $robot) {
 
 ```
 
-public static **count** ([*array* $parameters])
+
+
+public static  **count** ([*array* $parameters])
 
 Perform a count over a collection
 
@@ -466,15 +543,21 @@ echo "There are ", Robots::count(), " robots";
 
 ```
 
-public static **aggregate** ([*array* $parameters])
+
+
+public static  **aggregate** ([*array* $parameters])
 
 Perform an aggregation using the Mongo aggregation framework
 
-public static **summatory** (*mixed* $field, [*mixed* $conditions], [*mixed* $finalize])
+
+
+public static  **summatory** (*mixed* $field, [*mixed* $conditions], [*mixed* $finalize])
 
 Allows to perform a summatory group for a column in the collection
 
-public **delete** ()
+
+
+public  **delete** ()
 
 Deletes a model instance. Returning true on success or false otherwise.
 
@@ -493,23 +576,33 @@ foreach ($robots as $robot) {
 
 ```
 
-public **setDirtyState** (*mixed* $dirtyState)
+
+
+public  **setDirtyState** (*mixed* $dirtyState)
 
 Sets the dirty state of the object using one of the DIRTY_STATE_* constants
 
-public **getDirtyState** ()
+
+
+public  **getDirtyState** ()
 
 Returns one of the DIRTY_STATE_* constants telling if the document exists in the collection or not
 
-protected **addBehavior** ([Phalcon\Mvc\Collection\BehaviorInterface](/3.4/en/api/Phalcon_Mvc_Collection_BehaviorInterface) $behavior)
+
+
+protected  **addBehavior** ([Phalcon\Mvc\Collection\BehaviorInterface](/3.4/en/api/Phalcon_Mvc_Collection_BehaviorInterface) $behavior)
 
 Sets up a behavior in a collection
 
-public **skipOperation** (*mixed* $skip)
+
+
+public  **skipOperation** (*mixed* $skip)
 
 Skips the current operation forcing a success state
 
-public **toArray** ()
+
+
+public  **toArray** ()
 
 Returns the instance as an array representation
 
@@ -522,10 +615,635 @@ print_r(
 
 ```
 
-public **serialize** ()
+
+
+public  **serialize** ()
 
 Serializes the object ignoring connections or protected properties
 
-public **unserialize** (*mixed* $data)
+
+
+public  **unserialize** (*mixed* $data)
 
 Unserializes the object from a serialized string
+
+
+
+
+<hr>
+
+# Abstract class **Phalcon\Mvc\Collection\Behavior**
+
+*implements* [Phalcon\Mvc\Collection\BehaviorInterface](/3.4/en/api/Phalcon_Mvc_Collection_BehaviorInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection/behavior.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+This is an optional base class for ORM behaviors
+
+
+## Methods
+public  **__construct** ([*array* $options])
+
+
+
+
+
+protected  **mustTakeAction** (*mixed* $eventName)
+
+Checks whether the behavior must take action on certain event
+
+
+
+protected *array* **getOptions** ([*string* $eventName])
+
+Returns the behavior options related to an event
+
+
+
+public  **notify** (*mixed* $type, [Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+This method receives the notifications from the EventsManager
+
+
+
+public  **missingMethod** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, *mixed* $method, [*mixed* $arguments])
+
+Acts as fallbacks when a missing method is called on the collection
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\Collection\Behavior\SoftDelete**
+
+*extends* abstract class [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+*implements* [Phalcon\Mvc\Collection\BehaviorInterface](/3.4/en/api/Phalcon_Mvc_Collection_BehaviorInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection/behavior/softdelete.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+Instead of permanently delete a record it marks the record as
+deleted changing the value of a flag column
+
+
+## Methods
+public  **notify** (*mixed* $type, [Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+Listens for notifications from the models manager
+
+
+
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+Phalcon\Mvc\Collection\Behavior
+
+
+
+protected  **mustTakeAction** (*mixed* $eventName) inherited from [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+Checks whether the behavior must take action on certain event
+
+
+
+protected *array* **getOptions** ([*string* $eventName]) inherited from [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+Returns the behavior options related to an event
+
+
+
+public  **missingMethod** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, *mixed* $method, [*mixed* $arguments]) inherited from [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+Acts as fallbacks when a missing method is called on the collection
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\Collection\Behavior\Timestampable**
+
+*extends* abstract class [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+*implements* [Phalcon\Mvc\Collection\BehaviorInterface](/3.4/en/api/Phalcon_Mvc_Collection_BehaviorInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection/behavior/timestampable.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+Allows to automatically update a model’s attribute saving the
+datetime when a record is created or updated
+
+
+## Methods
+public  **notify** (*mixed* $type, [Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+Listens for notifications from the models manager
+
+
+
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+Phalcon\Mvc\Collection\Behavior
+
+
+
+protected  **mustTakeAction** (*mixed* $eventName) inherited from [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+Checks whether the behavior must take action on certain event
+
+
+
+protected *array* **getOptions** ([*string* $eventName]) inherited from [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+Returns the behavior options related to an event
+
+
+
+public  **missingMethod** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, *mixed* $method, [*mixed* $arguments]) inherited from [Phalcon\Mvc\Collection\Behavior](/3.4/en/api/Phalcon_Mvc_Collection_Behavior)
+
+Acts as fallbacks when a missing method is called on the collection
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\Collection\BehaviorInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection/behaviorinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **notify** (*mixed* $type, [Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $collection)
+
+...
+
+
+abstract public  **missingMethod** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $collection, *mixed* $method, [*mixed* $arguments])
+
+...
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\Collection\Document**
+
+*implements* [Phalcon\Mvc\EntityInterface](/3.4/en/api/Phalcon_Mvc_EntityInterface), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection/document.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+This component allows Phalcon\Mvc\Collection to return rows without an associated entity.
+This objects implements the ArrayAccess interface to allow access the object as object->x or array[x].
+
+
+## Methods
+public *boolean* **offsetExists** (*int* $index)
+
+Checks whether an offset exists in the document
+
+
+
+public  **offsetGet** (*mixed* $index)
+
+Returns the value of a field using the ArrayAccess interfase
+
+
+
+public  **offsetSet** (*mixed* $index, *mixed* $value)
+
+Change a value using the ArrayAccess interface
+
+
+
+public  **offsetUnset** (*string* $offset)
+
+Rows cannot be changed. It has only been implemented to meet the definition of the ArrayAccess interface
+
+
+
+public *mixed* **readAttribute** (*string* $attribute)
+
+Reads an attribute value by its name
+
+```php
+<?php
+
+ echo $robot->readAttribute("name");
+
+```
+
+
+
+public  **writeAttribute** (*string* $attribute, *mixed* $value)
+
+Writes an attribute value by its name
+
+```php
+<?php
+
+ $robot->writeAttribute("name", "Rosey");
+
+```
+
+
+
+public *array* **toArray** ()
+
+Returns the instance as an array representation
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\Collection\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\Collection\Manager**
+
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection/manager.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+This components controls the initialization of models, keeping record of relations
+between the different models of the application.
+
+A CollectionManager is injected to a model via a Dependency Injector Container such as Phalcon\Di.
+
+```php
+<?php
+
+$di = new \Phalcon\Di();
+
+$di->set(
+    "collectionManager",
+    function () {
+        return new \Phalcon\Mvc\Collection\Manager();
+    }
+);
+
+$robot = new Robots($di);
+
+```
+
+
+## Methods
+public  **getServiceName** ()
+
+...
+
+
+public  **setServiceName** (*mixed* $serviceName)
+
+...
+
+
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+
+Sets the DependencyInjector container
+
+
+
+public  **getDI** ()
+
+Returns the DependencyInjector container
+
+
+
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+
+Sets the event manager
+
+
+
+public  **getEventsManager** ()
+
+Returns the internal event manager
+
+
+
+public  **setCustomEventsManager** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, [Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+
+Sets a custom events manager for a specific model
+
+
+
+public  **getCustomEventsManager** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+Returns a custom events manager related to a model
+
+
+
+public  **initialize** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+Initializes a model in the models manager
+
+
+
+public  **isInitialized** (*mixed* $modelName)
+
+Check whether a model is already initialized
+
+
+
+public  **getLastInitialized** ()
+
+Get the latest initialized model
+
+
+
+public  **setConnectionService** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, *mixed* $connectionService)
+
+Sets a connection service for a specific model
+
+
+
+public  **getConnectionService** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+Gets a connection service for a specific model
+
+
+
+public  **useImplicitObjectIds** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, *mixed* $useImplicitObjectIds)
+
+Sets whether a model must use implicit objects ids
+
+
+
+public  **isUsingImplicitObjectIds** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+Checks if a model is using implicit object ids
+
+
+
+public *Mongo* **getConnection** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+Returns the connection related to a model
+
+
+
+public  **notifyEvent** (*mixed* $eventName, [Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+Receives events generated in the models and dispatches them to an events-manager if available
+Notify the behaviors that are listening in the model
+
+
+
+public  **missingMethod** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, *mixed* $eventName, *mixed* $data)
+
+Dispatch an event to the listeners and behaviors
+This method expects that the endpoint listeners/behaviors returns true
+meaning that at least one was implemented
+
+
+
+public  **addBehavior** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, [Phalcon\Mvc\Collection\BehaviorInterface](/3.4/en/api/Phalcon_Mvc_Collection_BehaviorInterface) $behavior)
+
+Binds a behavior to a model
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\Collection\ManagerInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection/managerinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **setCustomEventsManager** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, [Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+
+...
+
+
+abstract public  **getCustomEventsManager** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+...
+
+
+abstract public  **initialize** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+...
+
+
+abstract public  **isInitialized** (*mixed* $modelName)
+
+...
+
+
+abstract public  **getLastInitialized** ()
+
+...
+
+
+abstract public  **setConnectionService** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, *mixed* $connectionService)
+
+...
+
+
+abstract public  **useImplicitObjectIds** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, *mixed* $useImplicitObjectIds)
+
+...
+
+
+abstract public  **isUsingImplicitObjectIds** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+...
+
+
+abstract public  **getConnection** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+...
+
+
+abstract public  **notifyEvent** (*mixed* $eventName, [Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model)
+
+...
+
+
+abstract public  **addBehavior** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $model, [Phalcon\Mvc\Collection\BehaviorInterface](/3.4/en/api/Phalcon_Mvc_Collection_BehaviorInterface) $behavior)
+
+...
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\CollectionInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collectioninterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **setId** (*mixed* $id)
+
+...
+
+
+abstract public  **getId** ()
+
+...
+
+
+abstract public  **getReservedAttributes** ()
+
+...
+
+
+abstract public  **getSource** ()
+
+...
+
+
+abstract public  **setConnectionService** (*mixed* $connectionService)
+
+...
+
+
+abstract public  **getConnection** ()
+
+...
+
+
+abstract public  **setDirtyState** (*mixed* $dirtyState)
+
+...
+
+
+abstract public  **getDirtyState** ()
+
+...
+
+
+abstract public static  **cloneResult** ([Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface) $collection, *array* $document)
+
+...
+
+
+abstract public  **fireEvent** (*mixed* $eventName)
+
+...
+
+
+abstract public  **fireEventCancel** (*mixed* $eventName)
+
+...
+
+
+abstract public  **validationHasFailed** ()
+
+...
+
+
+abstract public  **getMessages** ()
+
+...
+
+
+abstract public  **appendMessage** ([Phalcon\Mvc\Model\MessageInterface](/3.4/en/api/Phalcon_Mvc_Model_MessageInterface) $message)
+
+...
+
+
+abstract public  **save** ()
+
+...
+
+
+abstract public static  **findById** (*mixed* $id)
+
+...
+
+
+abstract public static  **findFirst** ([*array* $parameters])
+
+...
+
+
+abstract public static  **find** ([*array* $parameters])
+
+...
+
+
+abstract public static  **count** ([*array* $parameters])
+
+...
+
+
+abstract public  **delete** ()
+
+...
+
+

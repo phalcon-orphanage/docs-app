@@ -4,7 +4,6 @@ language: 'cs-cz'
 version: '3.4'
 title: 'Phalcon\Crypt'
 ---
-
 # Class **Phalcon\Crypt**
 
 *implements* [Phalcon\CryptInterface](/3.4/en/api/Phalcon_CryptInterface)
@@ -27,8 +26,8 @@ echo $crypt->decrypt($encrypted, $key);
 
 ```
 
-## Constants
 
+## Constants
 *integer* **PADDING_ANSI_X_923**
 
 *integer* **PADDING_DEFAULT**
@@ -44,9 +43,7 @@ echo $crypt->decrypt($encrypted, $key);
 *integer* **PADDING_ZERO**
 
 ## Properties
-
 ### Protected
-
 *string* **$_key**;
 
 *integer* **$_padding** = 0;
@@ -57,21 +54,25 @@ echo $crypt->decrypt($encrypted, $key);
 
 Available cipher methods.
 
-*integer* **$ivLength** = 16; The cipher iv length.
+*integer* **$ivLength** = 16;
+The cipher iv length.
 
 *string* **$hashAlgo** = "sha256";
 
 The name of hashing algorithm.
 
-*boolean* **$useSigning** = false; Whether calculating message digest enabled or not **NOTE**: This feature will be enabled by default in Phalcon 4.0.0
+*boolean* **$useSigning** = false;
+Whether calculating message digest enabled or not 
+**NOTE**: This feature will be enabled by default in Phalcon 4.0.0
 
 ## Methods
 
 ### Public
-
 public **__construct**(*string* $cipher = "aes-256-cfb", *boolean* $useSigning = false)
 
 Class constructor. Allows the user to set the algorithm used to calculate a digest of the message (signing) and to force signing or not.
+
+
 
 public **decrypt** (*mixed* $text [, *mixed* $key = null]): *string*
 
@@ -89,11 +90,15 @@ $encrypted = $crypt->decrypt(
 
 ```
 
+
+
 public **decryptBase64** (*string* $text [,*mixed* $key = null [,*boolean* $safe = false]]): *string*
 
 Decrypt a text that is coded as a base64 string
 
 Throws [Phalcon\Crypt\Mismatch](/3.4/en/api/Phalcon_Crypt_Mismatch)
+
+
 
 public **encrypt** (*mixed* $text [, *mixed* $key = null]): *string*
 
@@ -108,29 +113,43 @@ $encrypted = $crypt->encrypt(
 );
 ```
 
+
+
 public **encryptBase64** (*string* $text [,*mixed* $key = null [,*boolean* $safe = false]]): *string*
 
 Encrypts a text returning the result as a base64 string
+
+
 
 public **getAvailableCiphers** (): *array*
 
 Returns a list of available ciphers
 
+
+
 public **getAvailableHashAlgos** (): *array*
 
 Return a list of registered hashing algorithms suitable for [hash_hmac](https://secure.php.net/manual/en/function.hash-hmac.php).
+
+
 
 public **getCipher** ()
 
 Returns the current cipher
 
+
+
 public **getHashAlgo** (): *string*
 
 Return the name of hashing algorithm.
 
+
+
 public **getKey** (): *string*
 
 Returns the encryption key
+
+
 
 public **setCipher** (*mixed* $cipher): *[Phalcon\Crypt](/3.4/en/api/Phalcon_Crypt)*
 
@@ -138,9 +157,13 @@ Sets the cipher algorithm for data encryption and decryption. The `aes-256-gcm` 
 
 Throws: [Phalcon\Crypt\Exception](/3.4/en/api/Phalcon_Crypt_Exception)
 
+
+
 public **setHashAlgo** (*string* $hashAlgo): *[Phalcon\Crypt](/3.4/en/api/Phalcon_Crypt)*
 
 Set the name of hashing algorithm to calculate the message digest. Throws [Phalcon\Crypt\Exception](/3.4/en/api/Phalcon_Crypt_Exception) if the algorithm is not supported by the system
+
+
 
 public **setKey** (*mixed* $key): *[Phalcon\Crypt](/3.4/en/api/Phalcon_Crypt)*
 
@@ -154,32 +177,41 @@ Good key: `T4\xb1\x8d\xa9\x98\x05\\x8c\xbe\x1d\x07&[\x99\x18\xa4~Lc1\xbeW\xb3`
 
 See also: : [Phalcon\Security\Random](/3.4/en/api/Phalcon_Security_Random)
 
+
+
 public **setPadding** (*mixed* $scheme): *[Phalcon\Crypt](/3.4/en/api/Phalcon_Crypt)*
 
 Changes the padding scheme used
+
+
 
 public **useSigning** (*boolean* $useSigning): *[Phalcon\Crypt](/3.4/en/api/Phalcon_Crypt)*
 
 Sets if the calculating message digest must used (signing). **NOTE**: This feature will be enabled by default in Phalcon 4.0.0 or greater
 
-### Protected
 
-protected **_cryptPadText** (*mixed* $text, *mixed* $mode, *mixed* $blockSize, *mixed* $paddingType)
+
+### Protected
+protected  **_cryptPadText** (*mixed* $text, *mixed* $mode, *mixed* $blockSize, *mixed* $paddingType)
 
 Pads texts before encryption.
 
-See: <http://www.di-mgt.com.au/cryptopad.html>
+See: [http://www.di-mgt.com.au/cryptopad.html](http://www.di-mgt.com.au/cryptopad.html)
 
-protected **_cryptUnpadText** (*mixed* $text, *mixed* $mode, *mixed* $blockSize, *mixed* $paddingType)
+
+
+protected  **_cryptUnpadText** (*mixed* $text, *mixed* $mode, *mixed* $blockSize, *mixed* $paddingType)
 
 Removes a padding from a text. If the function detects that the text was not padded, it will return it unmodified
 
 | Type   | Name         | Description                                                   |
-| ------ | ------------ | ------------------------------------------------------------- |
+|--------|--------------|---------------------------------------------------------------|
 | string | $text        | Message to be unpadded                                        |
 | string | $mode        | Encryption mode; unpadding is applied only in CBC or ECB mode |
 | int    | $blockSize   | Cipher block size                                             |
 | int    | $paddingType | Padding scheme                                                |
+
+
 
 protected **assertCipherIsAvailable** (*string* $cipher)
 
@@ -187,11 +219,15 @@ Assert the cipher is available.
 
 Throws [Phalcon\Crypt\Exception](/3.4/en/api/Phalcon_Crypt_Exception)
 
+
+
 protected **assertHashAlgorithmAvailable** (*string* $hashAlgo)
 
 Assert the hash algorithm is available.
 
 Throws [Phalcon\Crypt\Exception](/3.4/en/api/Phalcon_Crypt_Exception)
+
+
 
 protected **getIvLength** (*string* $cipher): *int*
 
@@ -199,8 +235,217 @@ Initialize available cipher algorithms.
 
 Throws [Phalcon\Crypt\Exception](/3.4/en/api/Phalcon_Crypt_Exception)
 
+
+
 protected **initializeAvailableCiphers** ()
 
 Initialize available cipher algorithms.
 
 Throws [Phalcon\Crypt\Exception](/3.4/en/api/Phalcon_Crypt_Exception)
+
+<hr>
+
+# Class **Phalcon\Crypt\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/crypt/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Class **Phalcon\Crypt\Mismatch**
+
+*extends* class [Phalcon\Crypt\Exception](/3.4/en/api/Phalcon_Crypt_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/crypt/mismatch.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Interface **Phalcon\CryptInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/cryptinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **setCipher** (*mixed* $cipher)
+
+...
+
+
+abstract public  **getCipher** ()
+
+...
+
+
+abstract public  **setKey** (*mixed* $key)
+
+...
+
+
+abstract public  **getKey** ()
+
+...
+
+
+abstract public  **encrypt** (*mixed* $text, [*mixed* $key])
+
+...
+
+
+abstract public  **decrypt** (*mixed* $text, [*mixed* $key])
+
+...
+
+
+abstract public  **encryptBase64** (*mixed* $text, [*mixed* $key])
+
+...
+
+
+abstract public  **decryptBase64** (*mixed* $text, [*mixed* $key])
+
+...
+
+
+abstract public  **getAvailableCiphers** ()
+
+...
+
+

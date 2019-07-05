@@ -4,15 +4,14 @@ language: 'tr-tr'
 version: '3.4'
 title: 'Phalcon\Text'
 ---
-
 # Abstract class **Phalcon\Text**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/text.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 Provides utilities to work with texts
 
-## Constants
 
+## Constants
 *integer* **RANDOM_ALNUM**
 
 *integer* **RANDOM_ALPHA**
@@ -26,8 +25,7 @@ Provides utilities to work with texts
 *integer* **RANDOM_DISTINCT**
 
 ## Methods
-
-public static **camelize** (*mixed* $str, [*mixed* $delimiter])
+public static  **camelize** (*mixed* $str, [*mixed* $delimiter])
 
 Converts strings to camelize style
 
@@ -40,7 +38,9 @@ echo Phalcon\Text::camelize("co_co-bon_go", "_-"); // CoCoBonGo
 
 ```
 
-public static **uncamelize** (*mixed* $str, [*mixed* $delimiter])
+
+
+public static  **uncamelize** (*mixed* $str, [*mixed* $delimiter])
 
 Uncamelize strings which are camelized
 
@@ -52,7 +52,9 @@ echo Phalcon\Text::uncamelize("CocoBongo", "-"); // coco-bongo
 
 ```
 
-public static **increment** (*mixed* $str, [*mixed* $separator])
+
+
+public static  **increment** (*mixed* $str, [*mixed* $separator])
 
 Adds a number to a string or increment that number if it already is defined
 
@@ -64,7 +66,9 @@ echo Phalcon\Text::increment("a_1"); // "a_2"
 
 ```
 
-public static **random** ([*mixed* $type], [*mixed* $length])
+
+
+public static  **random** ([*mixed* $type], [*mixed* $length])
 
 Generates a random string based on the given type. Type is one of the RANDOM_* constants
 
@@ -78,7 +82,9 @@ echo Text::random(Text::RANDOM_ALNUM);
 
 ```
 
-public static **startsWith** (*mixed* $str, *mixed* $start, [*mixed* $ignoreCase])
+
+
+public static  **startsWith** (*mixed* $str, *mixed* $start, [*mixed* $ignoreCase])
 
 Check if a string starts with a given string
 
@@ -91,7 +97,9 @@ echo Phalcon\Text::startsWith("Hello", "he"); // true
 
 ```
 
-public static **endsWith** (*mixed* $str, *mixed* $end, [*mixed* $ignoreCase])
+
+
+public static  **endsWith** (*mixed* $str, *mixed* $end, [*mixed* $ignoreCase])
 
 Check if a string ends with a given string
 
@@ -104,7 +112,9 @@ echo Phalcon\Text::endsWith("Hello", "LLO"); // true
 
 ```
 
-public static **lower** (*mixed* $str, [*mixed* $encoding])
+
+
+public static  **lower** (*mixed* $str, [*mixed* $encoding])
 
 Lowercases a string, this function makes use of the mbstring extension if available
 
@@ -115,7 +125,9 @@ echo Phalcon\Text::lower("HELLO"); // hello
 
 ```
 
-public static **upper** (*mixed* $str, [*mixed* $encoding])
+
+
+public static  **upper** (*mixed* $str, [*mixed* $encoding])
 
 Uppercases a string, this function makes use of the mbstring extension if available
 
@@ -126,7 +138,9 @@ echo Phalcon\Text::upper("hello"); // HELLO
 
 ```
 
-public static **reduceSlashes** (*mixed* $str)
+
+
+public static  **reduceSlashes** (*mixed* $str)
 
 Reduces multiple slashes in a string to single slashes
 
@@ -138,7 +152,9 @@ echo Phalcon\Text::reduceSlashes("http://foo.bar///baz/buz"); // http://foo.bar/
 
 ```
 
-public static **concat** ()
+
+
+public static  **concat** ()
 
 Concatenates strings using the separator only once without duplication in places concatenation
 
@@ -158,7 +174,9 @@ echo $str;
 
 ```
 
-public static **dynamic** (*mixed* $text, [*mixed* $leftDelimiter], [*mixed* $rightDelimiter], [*mixed* $separator])
+
+
+public static  **dynamic** (*mixed* $text, [*mixed* $leftDelimiter], [*mixed* $rightDelimiter], [*mixed* $separator])
 
 Generates random text in accordance with the template
 
@@ -179,7 +197,9 @@ echo Phalcon\Text::dynamic("[Hi/Hello], my name is a [Zyxep/Mark]!", "[", "]", "
 
 ```
 
-public static **underscore** (*mixed* $text)
+
+
+public static  **underscore** (*mixed* $text)
 
 Makes a phrase underscored instead of spaced
 
@@ -191,7 +211,9 @@ echo Phalcon\Text::underscore("Awesome Phalcon"); // "Awesome_Phalcon"
 
 ```
 
-public static **humanize** (*mixed* $text)
+
+
+public static  **humanize** (*mixed* $text)
 
 Makes an underscored or dashed phrase human-readable
 
@@ -202,3 +224,6 @@ echo Phalcon\Text::humanize("start-a-horse"); // "start a horse"
 echo Phalcon\Text::humanize("five_cats"); // "five cats"
 
 ```
+
+
+

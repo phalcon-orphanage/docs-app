@@ -1,6 +1,6 @@
 ---
 layout: default
-language: 'fa-ir'
+language: 'de-de'
 version: '3.4'
 title: 'Phalcon\Mvc\Model\ResultInterface'
 ---

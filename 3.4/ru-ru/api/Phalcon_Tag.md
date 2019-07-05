@@ -4,15 +4,16 @@ language: 'ru-ru'
 version: '3.4'
 title: 'Phalcon\Tag'
 ---
-
 # Class **Phalcon\Tag**
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/tag.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
-Phalcon\Tag is designed to simplify building of HTML tags. It provides a set of helpers to generate HTML in a dynamic way. This component is an abstract class that you can extend to add more helpers.
+Phalcon\Tag is designed to simplify building of HTML tags.
+It provides a set of helpers to generate HTML in a dynamic way.
+This component is an abstract class that you can extend to add more helpers.
+
 
 ## Constants
-
 *integer* **HTML32**
 
 *integer* **HTML401_STRICT**
@@ -36,36 +37,49 @@ Phalcon\Tag is designed to simplify building of HTML tags. It provides a set of 
 *integer* **XHTML5**
 
 ## Methods
-
 public static *EscaperInterface* **getEscaper** (*array* $params)
 
 Obtains the 'escaper' service if required
 
-public static **renderAttributes** (*mixed* $code, *array* $attributes)
+
+
+public static  **renderAttributes** (*mixed* $code, *array* $attributes)
 
 Renders parameters keeping order in their HTML attributes
 
-public static **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+
+
+public static  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
 
 Sets the dependency injector container.
 
-public static **getDI** ()
+
+
+public static  **getDI** ()
 
 Internally gets the request dispatcher
 
-public static **getUrlService** ()
+
+
+public static  **getUrlService** ()
 
 Returns a URL service from the default DI
 
-public static **getEscaperService** ()
+
+
+public static  **getEscaperService** ()
 
 Returns an Escaper service from the default DI
 
-public static **setAutoescape** (*mixed* $autoescape)
+
+
+public static  **setAutoescape** (*mixed* $autoescape)
 
 Set autoescape mode in generated html
 
-public static **setDefault** (*string* $id, *string* $value)
+
+
+public static  **setDefault** (*string* $id, *string* $value)
 
 Assigns default values to generated tags by helpers
 
@@ -80,7 +94,9 @@ echo Phalcon\Tag::textField("name"); // Will have the value "peter" by default
 
 ```
 
-public static **setDefaults** (*array* $values, [*mixed* $merge])
+
+
+public static  **setDefaults** (*array* $values, [*mixed* $merge])
 
 Assigns default values to generated tags by helpers
 
@@ -99,23 +115,34 @@ echo Phalcon\Tag::textField("name"); // Will have the value "peter" by default
 
 ```
 
-public static **displayTo** (*string* $id, *string* $value)
+
+
+public static  **displayTo** (*string* $id, *string* $value)
 
 Alias of Phalcon\Tag::setDefault
+
+
 
 public static *boolean* **hasValue** (*string* $name)
 
 Check if a helper has a default value set using Phalcon\Tag::setDefault or value from $_POST
 
+
+
 public static *mixed* **getValue** (*string* $name, [*array* $params])
 
-Every helper calls this function to check whether a component has a predefined value using Phalcon\Tag::setDefault or value from $_POST
+Every helper calls this function to check whether a component has a predefined
+value using Phalcon\Tag::setDefault or value from $_POST
 
-public static **resetInput** ()
+
+
+public static  **resetInput** ()
 
 Resets the request and internal values to avoid those fields will have any default value.
 
-public static **linkTo** (*array* | *string* $parameters, [*string* $text], [*boolean* $local])
+
+
+public static  **linkTo** (*array* | *string* $parameters, [*string* $text], [*boolean* $local])
 
 Builds a HTML A tag using framework conventions
 
@@ -168,17 +195,25 @@ echo Phalcon\Tag::linkTo(
 
 ```
 
+
+
 final protected static *string* **_inputField** (*string* $type, *array* $parameters, [*boolean* $asValue])
 
 Builds generic INPUT tags
+
+
 
 final protected static *string* **_inputFieldChecked** (*string* $type, *array* $parameters)
 
 Builds INPUT tags that implements the checked attribute
 
+
+
 public static *string* **colorField** (*array* $parameters)
 
 Builds a HTML input[type="color"] tag
+
+
 
 public static *string* **textField** (*array* $parameters)
 
@@ -195,6 +230,8 @@ echo Phalcon\Tag::textField(
 );
 
 ```
+
+
 
 public static *string* **numericField** (*array* $parameters)
 
@@ -213,9 +250,13 @@ echo Phalcon\Tag::numericField(
 
 ```
 
+
+
 public static *string* **rangeField** (*array* $parameters)
 
 Builds a HTML input[type="range"] tag
+
+
 
 public static *string* **emailField** (*array* $parameters)
 
@@ -227,6 +268,8 @@ Builds a HTML input[type="email"] tag
 echo Phalcon\Tag::emailField("email");
 
 ```
+
+
 
 public static *string* **dateField** (*array* $parameters)
 
@@ -244,25 +287,37 @@ echo Phalcon\Tag::dateField(
 
 ```
 
+
+
 public static *string* **dateTimeField** (*array* $parameters)
 
 Builds a HTML input[type="datetime"] tag
+
+
 
 public static *string* **dateTimeLocalField** (*array* $parameters)
 
 Builds a HTML input[type="datetime-local"] tag
 
+
+
 public static *string* **monthField** (*array* $parameters)
 
 Builds a HTML input[type="month"] tag
+
+
 
 public static *string* **timeField** (*array* $parameters)
 
 Builds a HTML input[type="time"] tag
 
+
+
 public static *string* **weekField** (*array* $parameters)
 
 Builds a HTML input[type="week"] tag
+
+
 
 public static *string* **passwordField** (*array* $parameters)
 
@@ -280,6 +335,8 @@ echo Phalcon\Tag::passwordField(
 
 ```
 
+
+
 public static *string* **hiddenField** (*array* $parameters)
 
 Builds a HTML input[type="hidden"] tag
@@ -296,6 +353,8 @@ echo Phalcon\Tag::hiddenField(
 
 ```
 
+
+
 public static *string* **fileField** (*array* $parameters)
 
 Builds a HTML input[type="file"] tag
@@ -307,17 +366,25 @@ echo Phalcon\Tag::fileField("file");
 
 ```
 
+
+
 public static *string* **searchField** (*array* $parameters)
 
 Builds a HTML input[type="search"] tag
+
+
 
 public static *string* **telField** (*array* $parameters)
 
 Builds a HTML input[type="tel"] tag
 
+
+
 public static *string* **urlField** (*array* $parameters)
 
 Builds a HTML input[type="url"] tag
+
+
 
 public static *string* **checkField** (*array* $parameters)
 
@@ -334,7 +401,6 @@ echo Phalcon\Tag::checkField(
 );
 
 ```
-
 Volt syntax:
 
 ```php
@@ -343,6 +409,8 @@ Volt syntax:
 {% raw %}{{ check_field("terms") }}{% endraw %}
 
 ```
+
+
 
 public static *string* **radioField** (*array* $parameters)
 
@@ -359,7 +427,6 @@ echo Phalcon\Tag::radioField(
 );
 
 ```
-
 Volt syntax:
 
 ```php
@@ -368,6 +435,8 @@ Volt syntax:
 {% raw %}{{ radio_field("Save") }}{% endraw %}
 
 ```
+
+
 
 public static *string* **imageInput** (*array* $parameters)
 
@@ -383,7 +452,6 @@ echo Phalcon\Tag::imageInput(
 );
 
 ```
-
 Volt syntax:
 
 ```php
@@ -392,6 +460,8 @@ Volt syntax:
 {% raw %}{{ image_input("src": "/img/button.png") }}{% endraw %}
 
 ```
+
+
 
 public static *string* **submitButton** (*array* $parameters)
 
@@ -403,7 +473,6 @@ Builds a HTML input[type="submit"] tag
 echo Phalcon\Tag::submitButton("Save")
 
 ```
-
 Volt syntax:
 
 ```php
@@ -412,6 +481,8 @@ Volt syntax:
 {% raw %}{{ submit_button("Save") }}{% endraw %}
 
 ```
+
+
 
 public static *string* **selectStatic** (*array* $parameters, [*array* $data])
 
@@ -430,6 +501,8 @@ echo Phalcon\Tag::selectStatic(
 
 ```
 
+
+
 public static *string* **select** (*array* $parameters, [*array* $data])
 
 Builds a HTML SELECT tag using a Phalcon\Mvc\Model resultset as options
@@ -446,7 +519,6 @@ echo Phalcon\Tag::select(
 );
 
 ```
-
 Volt syntax:
 
 ```php
@@ -455,6 +527,8 @@ Volt syntax:
 {% raw %}{{ select("robotId", robots, "using": ["id", "name"]) }}{% endraw %}
 
 ```
+
+
 
 public static *string* **textArea** (*array* $parameters)
 
@@ -472,7 +546,6 @@ echo Phalcon\Tag::textArea(
 );
 
 ```
-
 Volt syntax:
 
 ```php
@@ -481,6 +554,8 @@ Volt syntax:
 {% raw %}{{ text_area("comments", "cols": 10, "rows": 4) }}{% endraw %}
 
 ```
+
+
 
 public static *string* **form** (*array* $parameters)
 
@@ -499,7 +574,6 @@ echo Phalcon\Tag::form(
 );
 
 ```
-
 Volt syntax:
 
 ```php
@@ -510,11 +584,15 @@ Volt syntax:
 
 ```
 
-public static **endForm** ()
+
+
+public static  **endForm** ()
 
 Builds a HTML close FORM tag
 
-public static **setTitle** (*mixed* $title)
+
+
+public static  **setTitle** (*mixed* $title)
 
 Set the title of view content
 
@@ -525,7 +603,9 @@ Phalcon\Tag::setTitle("Welcome to my Page");
 
 ```
 
-public static **setTitleSeparator** (*mixed* $titleSeparator)
+
+
+public static  **setTitleSeparator** (*mixed* $titleSeparator)
 
 Set the title separator of view content
 
@@ -536,17 +616,24 @@ Phalcon\Tag::setTitleSeparator("-");
 
 ```
 
-public static **appendTitle** (*mixed* $title)
+
+
+public static  **appendTitle** (*mixed* $title)
 
 Appends a text to current document title
 
-public static **prependTitle** (*mixed* $title)
+
+
+public static  **prependTitle** (*mixed* $title)
 
 Prepends a text to current document title
 
-public static **getTitle** ([*mixed* $tags])
 
-Gets the current document title. The title will be automatically escaped.
+
+public static  **getTitle** ([*mixed* $tags])
+
+Gets the current document title.
+The title will be automatically escaped.
 
 ```php
 <?php
@@ -562,7 +649,9 @@ echo Phalcon\Tag::getTitle();
 
 ```
 
-public static **getTitleSeparator** ()
+
+
+public static  **getTitleSeparator** ()
 
 Gets the current document title separator
 
@@ -580,6 +669,8 @@ echo Phalcon\Tag::getTitleSeparator();
 
 ```
 
+
+
 public static *string* **stylesheetLink** ([*array* $parameters], [*boolean* $local])
 
 Builds a LINK[rel="stylesheet"] tag
@@ -591,7 +682,6 @@ echo Phalcon\Tag::stylesheetLink("http://fonts.googleapis.com/css?family=Rosario
 echo Phalcon\Tag::stylesheetLink("css/style.css");
 
 ```
-
 Volt Syntax:
 
 ```php
@@ -601,6 +691,8 @@ Volt Syntax:
 {% raw %}{{ stylesheet_link("css/style.css") }}{% endraw %}
 
 ```
+
+
 
 public static *string* **javascriptInclude** ([*array* $parameters], [*boolean* $local])
 
@@ -613,7 +705,6 @@ echo Phalcon\Tag::javascriptInclude("http://ajax.googleapis.com/ajax/libs/jquery
 echo Phalcon\Tag::javascriptInclude("javascript/jquery.js");
 
 ```
-
 Volt syntax:
 
 ```php
@@ -623,6 +714,8 @@ Volt syntax:
 {% raw %}{{ javascript_include("javascript/jquery.js") }}{% endraw %}
 
 ```
+
+
 
 public static *string* **image** ([*array* $parameters], [*boolean* $local])
 
@@ -641,7 +734,6 @@ echo Phalcon\Tag::image(
 );
 
 ```
-
 Volt Syntax:
 
 ```php
@@ -653,7 +745,9 @@ Volt Syntax:
 
 ```
 
-public static **friendlyTitle** (*mixed* $text, [*mixed* $separator], [*mixed* $lowercase], [*mixed* $replace])
+
+
+public static  **friendlyTitle** (*mixed* $text, [*mixed* $separator], [*mixed* $lowercase], [*mixed* $replace])
 
 Converts texts into URL-friendly titles
 
@@ -664,19 +758,27 @@ echo Phalcon\Tag::friendlyTitle("These are big important news", "-")
 
 ```
 
-public static **setDocType** (*mixed* $doctype)
+
+
+public static  **setDocType** (*mixed* $doctype)
 
 Set the document type of content
 
-public static **getDocType** ()
+
+
+public static  **getDocType** ()
 
 Get the document type declaration of content
 
-public static **tagHtml** (*mixed* $tagName, [*mixed* $parameters], [*mixed* $selfClose], [*mixed* $onlyStart], [*mixed* $useEol])
+
+
+public static  **tagHtml** (*mixed* $tagName, [*mixed* $parameters], [*mixed* $selfClose], [*mixed* $onlyStart], [*mixed* $useEol])
 
 Builds a HTML tag
 
-public static **tagHtmlClose** (*mixed* $tagName, [*mixed* $useEol])
+
+
+public static  **tagHtmlClose** (*mixed* $tagName, [*mixed* $useEol])
 
 Builds a HTML tag closing tag
 
@@ -686,3 +788,112 @@ Builds a HTML tag closing tag
 echo Phalcon\Tag::tagHtmlClose("script", true);
 
 ```
+
+
+
+
+<hr>
+
+# Class **Phalcon\Tag\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/tag/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Abstract class **Phalcon\Tag\Select**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/tag/select.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+Generates a SELECT html tag using a static array of values or a Phalcon\Mvc\Model resultset
+
+
+## Methods
+public static  **selectField** (*array* $parameters, [*array* $data])
+
+Generates a SELECT tag
+
+
+
+private static  **_optionsFromResultset** ([Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset) $resultset, *array* $using, *mixed* $value, *string* $closeOption)
+
+Generate the OPTION tags based on a resultset
+
+
+
+private static  **_optionsFromArray** (*array* $data, *mixed* $value, *string* $closeOption)
+
+Generate the OPTION tags based on an array
+
+
+

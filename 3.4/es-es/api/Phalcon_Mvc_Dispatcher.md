@@ -418,3 +418,205 @@ Set empty properties to their defaults (where defaults are available)
 
 
 
+
+<hr>
+
+# Class **Phalcon\Mvc\Dispatcher\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/dispatcher/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\DispatcherInterface**
+
+*implements* [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/dispatcherinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **setControllerSuffix** (*mixed* $controllerSuffix)
+
+...
+
+
+abstract public  **setDefaultController** (*mixed* $controllerName)
+
+...
+
+
+abstract public  **setControllerName** (*mixed* $controllerName)
+
+...
+
+
+abstract public  **getControllerName** ()
+
+...
+
+
+abstract public  **getLastController** ()
+
+...
+
+
+abstract public  **getActiveController** ()
+
+...
+
+
+abstract public  **setActionSuffix** (*mixed* $actionSuffix) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **getActionSuffix** () inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **setDefaultNamespace** (*mixed* $defaultNamespace) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **setDefaultAction** (*mixed* $actionName) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **setNamespaceName** (*mixed* $namespaceName) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **setModuleName** (*mixed* $moduleName) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **setActionName** (*mixed* $actionName) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **getActionName** () inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **setParams** (*mixed* $params) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **getParams** () inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **setParam** (*mixed* $param, *mixed* $value) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **getParam** (*mixed* $param, [*mixed* $filters]) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **hasParam** (*mixed* $param) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **isFinished** () inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **getReturnedValue** () inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **dispatch** () inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+
+abstract public  **forward** (*mixed* $forward) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface)
+
+...
+
+

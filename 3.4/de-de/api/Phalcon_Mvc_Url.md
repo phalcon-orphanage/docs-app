@@ -4,7 +4,6 @@ language: 'de-de'
 version: '3.4'
 title: 'Phalcon\Mvc\Url'
 ---
-
 # Class **Phalcon\Mvc\Url**
 
 *implements* [Phalcon\Mvc\UrlInterface](/3.4/en/api/Phalcon_Mvc_UrlInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
@@ -30,17 +29,21 @@ echo $url->get(
 
 ```
 
-## Methods
 
-public **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+## Methods
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
 
 Sets the DependencyInjector container
 
-public **getDI** ()
+
+
+public  **getDI** ()
 
 Returns the DependencyInjector container
 
-public **setBaseUri** (*mixed* $baseUri)
+
+
+public  **setBaseUri** (*mixed* $baseUri)
 
 Sets a prefix for all the URIs to be generated
 
@@ -53,7 +56,9 @@ $url->setBaseUri("/invo/index.php/");
 
 ```
 
-public **setStaticBaseUri** (*mixed* $staticBaseUri)
+
+
+public  **setStaticBaseUri** (*mixed* $staticBaseUri)
 
 Sets a prefix for all static URLs generated
 
@@ -64,15 +69,21 @@ $url->setStaticBaseUri("/invo/");
 
 ```
 
-public **getBaseUri** ()
+
+
+public  **getBaseUri** ()
 
 Returns the prefix for all the generated urls. By default /
 
-public **getStaticBaseUri** ()
+
+
+public  **getStaticBaseUri** ()
 
 Returns the prefix for all the generated static urls. By default /
 
-public **setBasePath** (*mixed* $basePath)
+
+
+public  **setBasePath** (*mixed* $basePath)
 
 Sets a base path for all the generated paths
 
@@ -83,11 +94,15 @@ $url->setBasePath("/var/www/htdocs/");
 
 ```
 
-public **getBasePath** ()
+
+
+public  **getBasePath** ()
 
 Returns the base path
 
-public **get** ([*mixed* $uri], [*mixed* $args], [*mixed* $local], [*mixed* $baseUri])
+
+
+public  **get** ([*mixed* $uri], [*mixed* $args], [*mixed* $local], [*mixed* $baseUri])
 
 Generates a URL
 
@@ -124,7 +139,9 @@ echo $url->get(
 
 ```
 
-public **getStatic** ([*mixed* $uri])
+
+
+public  **getStatic** ([*mixed* $uri])
 
 Generates a URL for a static resource
 
@@ -143,6 +160,126 @@ echo $url->getStatic(
 
 ```
 
-public **path** ([*mixed* $path])
+
+
+public  **path** ([*mixed* $path])
 
 Generates a local path
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\Url\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/url/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\UrlInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/urlinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **setBaseUri** (*mixed* $baseUri)
+
+...
+
+
+abstract public  **getBaseUri** ()
+
+...
+
+
+abstract public  **setBasePath** (*mixed* $basePath)
+
+...
+
+
+abstract public  **getBasePath** ()
+
+...
+
+
+abstract public  **get** ([*mixed* $uri], [*mixed* $args], [*mixed* $local])
+
+...
+
+
+abstract public  **path** ([*mixed* $path])
+
+...
+
+

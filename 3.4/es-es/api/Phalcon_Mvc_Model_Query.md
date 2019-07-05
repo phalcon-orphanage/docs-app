@@ -322,3 +322,951 @@ Destroys the internal PHQL cache
 
 
 
+
+<hr>
+
+# Class **Phalcon\Mvc\Model\Query\Builder**
+
+*implements* [Phalcon\Mvc\Model\Query\BuilderInterface](/3.4/en/api/Phalcon_Mvc_Model_Query_BuilderInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/query/builder.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+Helps to create PHQL queries using an OO interface
+
+```php
+<?php
+
+$params = [
+    "models"     => ["Users"],
+    "columns"    => ["id", "name", "status"],
+    "conditions" => [
+        [
+            "created > :min: AND created < :max:",
+            [
+                "min" => "2013-01-01",
+                "max" => "2014-01-01",
+            ],
+            [
+                "min" => PDO::PARAM_STR,
+                "max" => PDO::PARAM_STR,
+            ],
+        ],
+    ],
+    // or "conditions" => "created > '2013-01-01' AND created < '2014-01-01'",
+    "group"      => ["id", "name"],
+    "having"     => "name = 'Kamil'",
+    "order"      => ["name", "id"],
+    "limit"      => 20,
+    "offset"     => 20,
+    // or "limit" => [20, 20],
+];
+
+$queryBuilder = new \Phalcon\Mvc\Model\Query\Builder($params);
+
+```
+
+
+## Constants
+*string* **OPERATOR_OR**
+
+*string* **OPERATOR_AND**
+
+## Methods
+public  **__construct** ([*mixed* $params], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+
+Phalcon\Mvc\Model\Query\Builder constructor
+
+
+
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+
+Sets the DependencyInjector container
+
+
+
+public  **getDI** ()
+
+Returns the DependencyInjector container
+
+
+
+public  **distinct** (*mixed* $distinct)
+
+Sets SELECT DISTINCT / SELECT ALL flag
+
+```php
+<?php
+
+$builder->distinct("status");
+$builder->distinct(null);
+
+```
+
+
+
+public  **getDistinct** ()
+
+Returns SELECT DISTINCT / SELECT ALL flag
+
+
+
+public  **columns** (*mixed* $columns)
+
+Sets the columns to be queried
+
+```php
+<?php
+
+$builder->columns("id, name");
+
+$builder->columns(
+    [
+        "id",
+        "name",
+    ]
+);
+
+$builder->columns(
+    [
+        "name",
+        "number" => "COUNT(*)",
+    ]
+);
+
+```
+
+
+
+public *string* | *array* **getColumns** ()
+
+Return the columns to be queried
+
+
+
+public  **from** (*mixed* $models)
+
+Sets the models who makes part of the query
+
+```php
+<?php
+
+$builder->from("Robots");
+
+$builder->from(
+    [
+        "Robots",
+        "RobotsParts",
+    ]
+);
+
+$builder->from(
+    [
+        "r"  => "Robots",
+        "rp" => "RobotsParts",
+    ]
+);
+
+```
+
+
+
+public  **addFrom** (*mixed* $model, [*mixed* $alias], [*mixed* $with])
+
+Add a model to take part of the query
+
+```php
+<?php
+
+// Load data from models Robots
+$builder->addFrom("Robots");
+
+// Load data from model 'Robots' using 'r' as alias in PHQL
+$builder->addFrom("Robots", "r");
+
+// Load data from model 'Robots' using 'r' as alias in PHQL
+// and eager load model 'RobotsParts'
+$builder->addFrom("Robots", "r", "RobotsParts");
+
+// Load data from model 'Robots' using 'r' as alias in PHQL
+// and eager load models 'RobotsParts' and 'Parts'
+$builder->addFrom(
+    "Robots",
+    "r",
+    [
+        "RobotsParts",
+        "Parts",
+    ]
+);
+
+```
+
+
+
+public *string* | *array* **getFrom** ()
+
+Return the models who makes part of the query
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **join** (*string* $model, [*string* $conditions], [*string* $alias], [*string* $type])
+
+Adds an :type: join (by default type - INNER) to the query
+
+```php
+<?php
+
+// Inner Join model 'Robots' with automatic conditions and alias
+$builder->join("Robots");
+
+// Inner Join model 'Robots' specifying conditions
+$builder->join("Robots", "Robots.id = RobotsParts.robots_id");
+
+// Inner Join model 'Robots' specifying conditions and alias
+$builder->join("Robots", "r.id = RobotsParts.robots_id", "r");
+
+// Left Join model 'Robots' specifying conditions, alias and type of join
+$builder->join("Robots", "r.id = RobotsParts.robots_id", "r", "LEFT");
+
+```
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **innerJoin** (*string* $model, [*string* $conditions], [*string* $alias])
+
+Adds an INNER join to the query
+
+```php
+<?php
+
+// Inner Join model 'Robots' with automatic conditions and alias
+$builder->innerJoin("Robots");
+
+// Inner Join model 'Robots' specifying conditions
+$builder->innerJoin("Robots", "Robots.id = RobotsParts.robots_id");
+
+// Inner Join model 'Robots' specifying conditions and alias
+$builder->innerJoin("Robots", "r.id = RobotsParts.robots_id", "r");
+
+```
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **leftJoin** (*string* $model, [*string* $conditions], [*string* $alias])
+
+Adds a LEFT join to the query
+
+```php
+<?php
+
+$builder->leftJoin("Robots", "r.id = RobotsParts.robots_id", "r");
+
+```
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **rightJoin** (*string* $model, [*string* $conditions], [*string* $alias])
+
+Adds a RIGHT join to the query
+
+```php
+<?php
+
+$builder->rightJoin("Robots", "r.id = RobotsParts.robots_id", "r");
+
+```
+
+
+
+public *array* **getJoins** ()
+
+Return join parts of the query
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **where** (*mixed* $conditions, [*array* $bindParams], [*array* $bindTypes])
+
+Sets the query WHERE conditions
+
+```php
+<?php
+
+$builder->where(100);
+
+$builder->where("name = 'Peter'");
+
+$builder->where(
+    "name = :name: AND id > :id:",
+    [
+        "name" => "Peter",
+        "id"   => 100,
+    ]
+);
+
+```
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **andWhere** (*string* $conditions, [*array* $bindParams], [*array* $bindTypes])
+
+Appends a condition to the current WHERE conditions using a AND operator
+
+```php
+<?php
+
+$builder->andWhere("name = 'Peter'");
+
+$builder->andWhere(
+    "name = :name: AND id > :id:",
+    [
+        "name" => "Peter",
+        "id"   => 100,
+    ]
+);
+
+```
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **orWhere** (*string* $conditions, [*array* $bindParams], [*array* $bindTypes])
+
+Appends a condition to the current conditions using an OR operator
+
+```php
+<?php
+
+$builder->orWhere("name = 'Peter'");
+
+$builder->orWhere(
+    "name = :name: AND id > :id:",
+    [
+        "name" => "Peter",
+        "id"   => 100,
+    ]
+);
+
+```
+
+
+
+public  **betweenWhere** (*mixed* $expr, *mixed* $minimum, *mixed* $maximum, [*mixed* $operator])
+
+Appends a BETWEEN condition to the current WHERE conditions
+
+```php
+<?php
+
+$builder->betweenWhere("price", 100.25, 200.50);
+
+```
+
+
+
+public  **notBetweenWhere** (*mixed* $expr, *mixed* $minimum, *mixed* $maximum, [*mixed* $operator])
+
+Appends a NOT BETWEEN condition to the current WHERE conditions
+
+```php
+<?php
+
+$builder->notBetweenWhere("price", 100.25, 200.50);
+
+```
+
+
+
+public  **inWhere** (*mixed* $expr, *array* $values, [*mixed* $operator])
+
+Appends an IN condition to the current WHERE conditions
+
+```php
+<?php
+
+$builder->inWhere("id", [1, 2, 3]);
+
+```
+
+
+
+public  **notInWhere** (*mixed* $expr, *array* $values, [*mixed* $operator])
+
+Appends a NOT IN condition to the current WHERE conditions
+
+```php
+<?php
+
+$builder->notInWhere("id", [1, 2, 3]);
+
+```
+
+
+
+public *string* | *array* **getWhere** ()
+
+Return the conditions for the query
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **orderBy** (*string* | *array* $orderBy)
+
+Sets an ORDER BY condition clause
+
+```php
+<?php
+
+$builder->orderBy("Robots.name");
+$builder->orderBy(["1", "Robots.name"]);
+
+```
+
+
+
+public *string* | *array* **getOrderBy** ()
+
+Returns the set ORDER BY clause
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **having** (*mixed* $conditions, [*array* $bindParams], [*array* $bindTypes])
+
+Sets the HAVING condition clause
+
+```php
+<?php
+
+$builder->having("SUM(Robots.price) > 0");
+
+$builder->having(
+		"SUM(Robots.price) > :sum:",
+  	[
+   		"sum" => 100,
+     ]
+);
+
+```
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **andHaving** (*string* $conditions, [*array* $bindParams], [*array* $bindTypes])
+
+Appends a condition to the current HAVING conditions clause using a AND operator
+
+```php
+<?php
+
+$builder->andHaving("SUM(Robots.price) > 0");
+
+$builder->andHaving(
+		"SUM(Robots.price) > :sum:",
+  	[
+   		"sum" => 100,
+     ]
+);
+
+```
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **orHaving** (*string* $conditions, [*array* $bindParams], [*array* $bindTypes])
+
+Appends a condition to the current HAVING conditions clause using an OR operator
+
+```php
+<?php
+
+$builder->orHaving("SUM(Robots.price) > 0");
+
+$builder->orHaving(
+		"SUM(Robots.price) > :sum:",
+  	[
+   		"sum" => 100,
+     ]
+);
+
+```
+
+
+
+public  **betweenHaving** (*mixed* $expr, *mixed* $minimum, *mixed* $maximum, [*mixed* $operator])
+
+Appends a BETWEEN condition to the current HAVING conditions clause
+
+```php
+<?php
+
+$builder->betweenHaving("SUM(Robots.price)", 100.25, 200.50);
+
+```
+
+
+
+public  **notBetweenHaving** (*mixed* $expr, *mixed* $minimum, *mixed* $maximum, [*mixed* $operator])
+
+Appends a NOT BETWEEN condition to the current HAVING conditions clause
+
+```php
+<?php
+
+$builder->notBetweenHaving("SUM(Robots.price)", 100.25, 200.50);
+
+```
+
+
+
+public  **inHaving** (*mixed* $expr, *array* $values, [*mixed* $operator])
+
+Appends an IN condition to the current HAVING conditions clause
+
+```php
+<?php
+
+$builder->inHaving("SUM(Robots.price)", [100, 200]);
+
+```
+
+
+
+public  **notInHaving** (*mixed* $expr, *array* $values, [*mixed* $operator])
+
+Appends a NOT IN condition to the current HAVING conditions clause
+
+```php
+<?php
+
+$builder->notInHaving("SUM(Robots.price)", [100, 200]);
+
+```
+
+
+
+public *string* **getHaving** ()
+
+Return the current having clause
+
+
+
+public  **forUpdate** (*mixed* $forUpdate)
+
+Sets a FOR UPDATE clause
+
+```php
+<?php
+
+$builder->forUpdate(true);
+
+```
+
+
+
+public  **limit** (*mixed* $limit, [*mixed* $offset])
+
+Sets a LIMIT clause, optionally an offset clause
+
+```php
+<?php
+
+$builder->limit(100);
+$builder->limit(100, 20);
+$builder->limit("100", "20");
+
+```
+
+
+
+public *string* | *array* **getLimit** ()
+
+Returns the current LIMIT clause
+
+
+
+public  **offset** (*mixed* $offset)
+
+Sets an OFFSET clause
+
+```php
+<?php
+
+$builder->offset(30);
+
+```
+
+
+
+public *string* | *array* **getOffset** ()
+
+Returns the current OFFSET clause
+
+
+
+public [Phalcon\Mvc\Model\Query\Builder](/3.4/en/api/Phalcon_Mvc_Model_Query_Builder) **groupBy** (*string* | *array* $group)
+
+Sets a GROUP BY clause
+
+```php
+<?php
+
+$builder->groupBy(
+    [
+        "Robots.name",
+    ]
+);
+
+```
+
+
+
+public *string* **getGroupBy** ()
+
+Returns the GROUP BY clause
+
+
+
+final public *string* **getPhql** ()
+
+Returns a PHQL statement built based on the builder parameters
+
+
+
+public  **getQuery** ()
+
+Returns the query built
+
+
+
+final public  **autoescape** (*mixed* $identifier)
+
+Automatically escapes identifiers but only if they need to be escaped.
+
+
+
+private  **_conditionBetween** (*mixed* $clause, *mixed* $operator, *mixed* $expr, *mixed* $minimum, *mixed* $maximum)
+
+Appends a BETWEEN condition
+
+
+
+private  **_conditionNotBetween** (*mixed* $clause, *mixed* $operator, *mixed* $expr, *mixed* $minimum, *mixed* $maximum)
+
+Appends a NOT BETWEEN condition
+
+
+
+private  **_conditionIn** (*mixed* $clause, *mixed* $operator, *mixed* $expr, *array* $values)
+
+Appends an IN condition
+
+
+
+private  **_conditionNotIn** (*mixed* $clause, *mixed* $operator, *mixed* $expr, *array* $values)
+
+Appends a NOT IN condition
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\Model\Query\BuilderInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/query/builderinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Constants
+*string* **OPERATOR_OR**
+
+*string* **OPERATOR_AND**
+
+## Methods
+abstract public  **columns** (*mixed* $columns)
+
+...
+
+
+abstract public  **getColumns** ()
+
+...
+
+
+abstract public  **from** (*mixed* $models)
+
+...
+
+
+abstract public  **addFrom** (*mixed* $model, [*mixed* $alias])
+
+...
+
+
+abstract public  **getFrom** ()
+
+...
+
+
+abstract public  **join** (*mixed* $model, [*mixed* $conditions], [*mixed* $alias], [*mixed* $type])
+
+...
+
+
+abstract public  **innerJoin** (*mixed* $model, [*mixed* $conditions], [*mixed* $alias])
+
+...
+
+
+abstract public  **leftJoin** (*mixed* $model, [*mixed* $conditions], [*mixed* $alias])
+
+...
+
+
+abstract public  **rightJoin** (*mixed* $model, [*mixed* $conditions], [*mixed* $alias])
+
+...
+
+
+abstract public  **getJoins** ()
+
+...
+
+
+abstract public  **where** (*mixed* $conditions, [*mixed* $bindParams], [*mixed* $bindTypes])
+
+...
+
+
+abstract public  **andWhere** (*mixed* $conditions, [*mixed* $bindParams], [*mixed* $bindTypes])
+
+...
+
+
+abstract public  **orWhere** (*mixed* $conditions, [*mixed* $bindParams], [*mixed* $bindTypes])
+
+...
+
+
+abstract public  **betweenWhere** (*mixed* $expr, *mixed* $minimum, *mixed* $maximum, [*mixed* $operator])
+
+...
+
+
+abstract public  **notBetweenWhere** (*mixed* $expr, *mixed* $minimum, *mixed* $maximum, [*mixed* $operator])
+
+...
+
+
+abstract public  **inWhere** (*mixed* $expr, *array* $values, [*mixed* $operator])
+
+...
+
+
+abstract public  **notInWhere** (*mixed* $expr, *array* $values, [*mixed* $operator])
+
+...
+
+
+abstract public  **getWhere** ()
+
+...
+
+
+abstract public  **orderBy** (*mixed* $orderBy)
+
+...
+
+
+abstract public  **getOrderBy** ()
+
+...
+
+
+abstract public  **having** (*mixed* $having)
+
+...
+
+
+abstract public  **getHaving** ()
+
+...
+
+
+abstract public  **limit** (*mixed* $limit, [*mixed* $offset])
+
+...
+
+
+abstract public  **getLimit** ()
+
+...
+
+
+abstract public  **groupBy** (*mixed* $group)
+
+...
+
+
+abstract public  **getGroupBy** ()
+
+...
+
+
+abstract public  **getPhql** ()
+
+...
+
+
+abstract public  **getQuery** ()
+
+...
+
+
+
+<hr>
+
+# Abstract class **Phalcon\Mvc\Model\Query\Lang**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/query/lang.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+PHQL is implemented as a parser (written in C) that translates syntax in
+that of the target RDBMS. It allows Phalcon to offer a unified SQL language to
+the developer, while internally doing all the work of translating PHQL
+instructions to the most optimal SQL instructions depending on the
+RDBMS type associated with a model.
+
+To achieve the highest performance possible, we wrote a parser that uses
+the same technology as SQLite. This technology provides a small in-memory
+parser with a very low memory footprint that is also thread-safe.
+
+```php
+<?php
+
+$intermediate = Phalcon\Mvc\Model\Query\Lang::parsePHQL("SELECT r.* FROM Robots r LIMIT 10");
+
+```
+
+
+## Methods
+public static *string* **parsePHQL** (*string* $phql)
+
+Parses a PHQL statement returning an intermediate representation (IR)
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\Model\Query\Status**
+
+*implements* [Phalcon\Mvc\Model\Query\StatusInterface](/3.4/en/api/Phalcon_Mvc_Model_Query_StatusInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/query/status.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+This class represents the status returned by a PHQL
+statement like INSERT, UPDATE or DELETE. It offers context
+information and the related messages produced by the
+model which finally executes the operations when it fails
+
+```php
+<?php
+
+$phql = "UPDATE Robots SET name = :name:, type = :type:, year = :year: WHERE id = :id:";
+
+$status = $app->modelsManager->executeQuery(
+    $phql,
+    [
+        "id"   => 100,
+        "name" => "Astroy Boy",
+        "type" => "mechanical",
+        "year" => 1959,
+    ]
+);
+
+// Check if the update was successful
+if ($status->success() === true) {
+    echo "OK";
+}
+
+```
+
+
+## Methods
+public  **__construct** (*mixed* $success, [[Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model])
+
+
+
+
+
+public  **getModel** ()
+
+Returns the model that executed the action
+
+
+
+public  **getMessages** ()
+
+Returns the messages produced because of a failed operation
+
+
+
+public  **success** ()
+
+Allows to check if the executed operation was successful
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\Model\Query\StatusInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/query/statusinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **getModel** ()
+
+...
+
+
+abstract public  **getMessages** ()
+
+...
+
+
+abstract public  **success** ()
+
+...
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\Model\QueryInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/queryinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **parse** ()
+
+...
+
+
+abstract public  **cache** (*mixed* $cacheOptions)
+
+...
+
+
+abstract public  **getCacheOptions** ()
+
+...
+
+
+abstract public  **setUniqueRow** (*mixed* $uniqueRow)
+
+...
+
+
+abstract public  **getUniqueRow** ()
+
+...
+
+
+abstract public  **execute** ([*mixed* $bindParams], [*mixed* $bindTypes])
+
+...
+
+

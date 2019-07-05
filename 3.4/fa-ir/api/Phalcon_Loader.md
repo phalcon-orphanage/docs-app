@@ -4,7 +4,6 @@ language: 'fa-ir'
 version: '3.4'
 title: 'Phalcon\Loader'
 ---
-
 # Class **Phalcon\Loader**
 
 *implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
@@ -38,27 +37,37 @@ $adapter = new \Example\Adapter\Some();
 
 ```
 
-## Methods
 
-public **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+## Methods
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
 
 Sets the events manager
 
-public **getEventsManager** ()
+
+
+public  **getEventsManager** ()
 
 Returns the internal event manager
 
-public **setExtensions** (*array* $extensions)
+
+
+public  **setExtensions** (*array* $extensions)
 
 Sets an array of file extensions that the loader must try in each attempt to locate the file
 
-public **getExtensions** ()
+
+
+public  **getExtensions** ()
 
 Returns the file extensions registered in the loader
 
-public **registerNamespaces** (*array* $namespaces, [*mixed* $merge])
+
+
+public  **registerNamespaces** (*array* $namespaces, [*mixed* $merge])
 
 Register namespaces and their related directories
+
+
 
 public **setFileCheckingCallback** (*mixed* $callback = null): [Phalcon\Loader](/3.4/en/api/Phalcon_Loader)
 
@@ -80,58 +89,166 @@ $loader->setFileCheckingCallback(null);
 
 A [Phalcon\Loader\Exception](/3.4/en/api/Phalcon_Loader_Exception) is thrown if the $callback parameter is not a `callable` or `null`;
 
-protected **prepareNamespace** (*array* $namespace)
+
+
+protected  **prepareNamespace** (*array* $namespace)
 
 ...
 
-public **getNamespaces** ()
+
+public  **getNamespaces** ()
 
 Returns the namespaces currently registered in the autoloader
 
-public **registerDirs** (*array* $directories, [*mixed* $merge])
+
+
+public  **registerDirs** (*array* $directories, [*mixed* $merge])
 
 Register directories in which "not found" classes could be found
 
-public **getDirs** ()
+
+
+public  **getDirs** ()
 
 Returns the directories currently registered in the autoloader
 
-public **registerFiles** (*array* $files, [*mixed* $merge])
 
-Registers files that are "non-classes" hence need a "require". This is very useful for including files that only have functions
 
-public **getFiles** ()
+public  **registerFiles** (*array* $files, [*mixed* $merge])
+
+Registers files that are "non-classes" hence need a "require". This is very useful for including files that only
+have functions
+
+
+
+public  **getFiles** ()
 
 Returns the files currently registered in the autoloader
 
-public **registerClasses** (*array* $classes, [*mixed* $merge])
+
+
+public  **registerClasses** (*array* $classes, [*mixed* $merge])
 
 Register classes and their locations
 
-public **getClasses** ()
+
+
+public  **getClasses** ()
 
 Returns the class-map currently registered in the autoloader
 
-public **register** ([*mixed* $prepend])
+
+
+public  **register** ([*mixed* $prepend])
 
 Register the autoload method
 
-public **unregister** ()
+
+
+public  **unregister** ()
 
 Unregister the autoload method
 
-public **loadFiles** ()
+
+
+public  **loadFiles** ()
 
 Checks if a file exists and then adds the file by doing virtual require
 
-public **autoLoad** (*mixed* $className)
+
+
+public  **autoLoad** (*mixed* $className)
 
 Autoloads the registered classes
 
-public **getFoundPath** ()
+
+
+public  **getFoundPath** ()
 
 Get the path when a class was found
 
-public **getCheckedPath** ()
+
+
+public  **getCheckedPath** ()
 
 Get the path the loader is checking for a path
+
+
+
+
+<hr>
+
+# Class **Phalcon\Loader\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/loader/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+

@@ -4,7 +4,6 @@ language: 'id-id'
 version: '3.4'
 title: 'Phalcon\Mvc\Model\Message'
 ---
-
 # Class **Phalcon\Mvc\Model\Message**
 
 *implements* [Phalcon\Mvc\Model\MessageInterface](/3.4/en/api/Phalcon_Mvc_Model_MessageInterface)
@@ -36,56 +35,131 @@ class Robots extends \Phalcon\Mvc\Model
 
 ```
 
-## Methods
 
-public **__construct** (*string* $message, [*string* | *array* $field], [*string* $type], [[Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model], [*int* | *null* $code])
+## Methods
+public  **__construct** (*string* $message, [*string* | *array* $field], [*string* $type], [[Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model], [*int* | *null* $code])
 
 Phalcon\Mvc\Model\Message constructor
 
-public **setType** (*mixed* $type)
+
+
+public  **setType** (*mixed* $type)
 
 Sets message type
 
-public **getType** ()
+
+
+public  **getType** ()
 
 Returns message type
 
-public **setMessage** (*mixed* $message)
+
+
+public  **setMessage** (*mixed* $message)
 
 Sets verbose message
 
-public **getMessage** ()
+
+
+public  **getMessage** ()
 
 Returns verbose message
 
-public **setField** (*mixed* $field)
+
+
+public  **setField** (*mixed* $field)
 
 Sets field name related to message
 
-public **getField** ()
+
+
+public  **getField** ()
 
 Returns field name related to message
 
-public **setModel** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model)
+
+
+public  **setModel** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model)
 
 Set the model who generates the message
 
-public **setCode** (*mixed* $code)
+
+
+public  **setCode** (*mixed* $code)
 
 Sets code for the message
 
-public **getModel** ()
+
+
+public  **getModel** ()
 
 Returns the model that produced the message
 
-public **getCode** ()
+
+
+public  **getCode** ()
 
 Returns the message code
 
-public **__toString** ()
+
+
+public  **__toString** ()
 
 Magic __toString method returns verbose message
 
-public static **__set_state** (*array* $message)
+
+
+public static  **__set_state** (*array* $message)
 
 Magic __set_state helps to re-build messages variable exporting
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\Model\MessageInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/messageinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **setType** (*mixed* $type)
+
+...
+
+
+abstract public  **getType** ()
+
+...
+
+
+abstract public  **setMessage** (*mixed* $message)
+
+...
+
+
+abstract public  **getMessage** ()
+
+...
+
+
+abstract public  **setField** (*mixed* $field)
+
+...
+
+
+abstract public  **getField** ()
+
+...
+
+
+abstract public  **__toString** ()
+
+...
+
+
+abstract public static  **__set_state** (*array* $message)
+
+...
+
+

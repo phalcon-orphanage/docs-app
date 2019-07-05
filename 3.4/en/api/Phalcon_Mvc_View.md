@@ -638,3 +638,1338 @@ Returns the internal event manager
 
 
 
+
+<hr>
+
+# Abstract class **Phalcon\Mvc\View\Engine**
+
+*extends* abstract class [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\View\EngineInterface](/3.4/en/api/Phalcon_Mvc_View_EngineInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/view/engine.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+All the template engine adapters must inherit this class. This provides
+basic interfacing between the engine and the Phalcon\Mvc\View component.
+
+
+## Methods
+public  **__construct** ([Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface) $view, [[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+
+Phalcon\Mvc\View\Engine constructor
+
+
+
+public  **getContent** ()
+
+Returns cached output on another view stage
+
+
+
+public *string* **partial** (*string* $partialPath, [*array* $params])
+
+Renders a partial inside another view
+
+
+
+public  **getView** ()
+
+Returns the view component related to the adapter
+
+
+
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Sets the dependency injector
+
+
+
+public  **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Returns the internal dependency injector
+
+
+
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Sets the event manager
+
+
+
+public  **getEventsManager** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Returns the internal event manager
+
+
+
+public  **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Magic method __get
+
+
+
+abstract public  **render** (*mixed* $path, *mixed* $params, [*mixed* $mustClean]) inherited from [Phalcon\Mvc\View\EngineInterface](/3.4/en/api/Phalcon_Mvc_View_EngineInterface)
+
+...
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\View\Engine\Php**
+
+*extends* abstract class [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+*implements* [Phalcon\Mvc\View\EngineInterface](/3.4/en/api/Phalcon_Mvc_View_EngineInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/view/engine/php.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+Adapter to use PHP itself as templating engine
+
+
+## Methods
+public  **render** (*mixed* $path, *mixed* $params, [*mixed* $mustClean])
+
+Renders a view using the template engine
+
+
+
+public  **__construct** ([Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface) $view, [[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector]) inherited from [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+Phalcon\Mvc\View\Engine constructor
+
+
+
+public  **getContent** () inherited from [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+Returns cached output on another view stage
+
+
+
+public *string* **partial** (*string* $partialPath, [*array* $params]) inherited from [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+Renders a partial inside another view
+
+
+
+public  **getView** () inherited from [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+Returns the view component related to the adapter
+
+
+
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Sets the dependency injector
+
+
+
+public  **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Returns the internal dependency injector
+
+
+
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Sets the event manager
+
+
+
+public  **getEventsManager** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Returns the internal event manager
+
+
+
+public  **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Magic method __get
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\View\Engine\Volt**
+
+*extends* abstract class [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+*implements* [Phalcon\Mvc\View\EngineInterface](/3.4/en/api/Phalcon_Mvc_View_EngineInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/view/engine/volt.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+Designer friendly and fast template engine for PHP written in Zephir/C
+
+
+## Methods
+public  **setOptions** (*array* $options)
+
+Set Volt's options
+
+
+
+public  **getOptions** ()
+
+Return Volt's options
+
+
+
+public  **getCompiler** ()
+
+Returns the Volt's compiler
+
+
+
+public  **render** (*mixed* $templatePath, *mixed* $params, [*mixed* $mustClean])
+
+Renders a view using the template engine
+
+
+
+public  **length** (*mixed* $item)
+
+Length filter. If an array/object is passed a count is performed otherwise a strlen/mb_strlen
+
+
+
+public  **isIncluded** (*mixed* $needle, *mixed* $haystack)
+
+Checks if the needle is included in the haystack
+
+
+
+public  **convertEncoding** (*mixed* $text, *mixed* $from, *mixed* $to)
+
+Performs a string conversion
+
+
+
+public  **slice** (*mixed* $value, [*mixed* $start], [*mixed* $end])
+
+Extracts a slice from a string/array/traversable object value
+
+
+
+public  **sort** (*array* $value)
+
+Sorts an array
+
+
+
+public  **callMacro** (*mixed* $name, [*array* $arguments])
+
+Checks if a macro is defined and calls it
+
+
+
+public  **__construct** ([Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface) $view, [[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector]) inherited from [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+Phalcon\Mvc\View\Engine constructor
+
+
+
+public  **getContent** () inherited from [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+Returns cached output on another view stage
+
+
+
+public *string* **partial** (*string* $partialPath, [*array* $params]) inherited from [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+Renders a partial inside another view
+
+
+
+public  **getView** () inherited from [Phalcon\Mvc\View\Engine](/3.4/en/api/Phalcon_Mvc_View_Engine)
+
+Returns the view component related to the adapter
+
+
+
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Sets the dependency injector
+
+
+
+public  **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Returns the internal dependency injector
+
+
+
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Sets the event manager
+
+
+
+public  **getEventsManager** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Returns the internal event manager
+
+
+
+public  **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Magic method __get
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\View\Engine\Volt\Compiler**
+
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/view/engine/volt/compiler.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+This class reads and compiles Volt templates into PHP plain code
+
+```php
+<?php
+
+$compiler = new \Phalcon\Mvc\View\Engine\Volt\Compiler();
+
+$compiler->compile("views/partials/header.volt");
+
+require $compiler->getCompiledTemplatePath();
+
+```
+
+
+## Methods
+public  **__construct** ([[Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface) $view])
+
+
+
+
+
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+
+Sets the dependency injector
+
+
+
+public  **getDI** ()
+
+Returns the internal dependency injector
+
+
+
+public  **setOptions** (*array* $options)
+
+Sets the compiler options
+
+
+
+public  **setOption** (*string* $option, *mixed* $value)
+
+Sets a single compiler option
+
+
+
+public *string* **getOption** (*string* $option)
+
+Returns a compiler's option
+
+
+
+public  **getOptions** ()
+
+Returns the compiler options
+
+
+
+final public *mixed* **fireExtensionEvent** (*string* $name, [*array* $arguments])
+
+Fires an event to registered extensions
+
+
+
+public  **addExtension** (*mixed* $extension)
+
+Registers a Volt's extension
+
+
+
+public  **getExtensions** ()
+
+Returns the list of extensions registered in Volt
+
+
+
+public  **addFunction** (*mixed* $name, *mixed* $definition)
+
+Register a new function in the compiler
+
+
+
+public  **getFunctions** ()
+
+Register the user registered functions
+
+
+
+public  **addFilter** (*mixed* $name, *mixed* $definition)
+
+Register a new filter in the compiler
+
+
+
+public  **getFilters** ()
+
+Register the user registered filters
+
+
+
+public  **setUniquePrefix** (*mixed* $prefix)
+
+Set a unique prefix to be used as prefix for compiled variables
+
+
+
+public  **getUniquePrefix** ()
+
+Return a unique prefix to be used as prefix for compiled variables and contexts
+
+
+
+public  **attributeReader** (*array* $expr)
+
+Resolves attribute reading
+
+
+
+public  **functionCall** (*array* $expr)
+
+Resolves function intermediate code into PHP function calls
+
+
+
+public  **resolveTest** (*array* $test, *mixed* $left)
+
+Resolves filter intermediate code into a valid PHP expression
+
+
+
+final protected  **resolveFilter** (*array* $filter, *mixed* $left)
+
+Resolves filter intermediate code into PHP function calls
+
+
+
+final public  **expression** (*array* $expr)
+
+Resolves an expression node in an AST volt tree
+
+
+
+final protected *string* | *array* **_statementListOrExtends** (*array* $statements)
+
+Compiles a block of statements
+
+
+
+public  **compileForeach** (*array* $statement, [*mixed* $extendsMode])
+
+Compiles a "foreach" intermediate code representation into plain PHP code
+
+
+
+public  **compileForElse** ()
+
+Generates a 'forelse' PHP code
+
+
+
+public  **compileIf** (*array* $statement, [*mixed* $extendsMode])
+
+Compiles a 'if' statement returning PHP code
+
+
+
+public  **compileElseIf** (*array* $statement)
+
+Compiles a "elseif" statement returning PHP code
+
+
+
+public  **compileCache** (*array* $statement, [*mixed* $extendsMode])
+
+Compiles a "cache" statement returning PHP code
+
+
+
+public  **compileSet** (*array* $statement)
+
+Compiles a "set" statement returning PHP code
+
+
+
+public  **compileDo** (*array* $statement)
+
+Compiles a "do" statement returning PHP code
+
+
+
+public  **compileReturn** (*array* $statement)
+
+Compiles a "return" statement returning PHP code
+
+
+
+public  **compileAutoEscape** (*array* $statement, *mixed* $extendsMode)
+
+Compiles a "autoescape" statement returning PHP code
+
+
+
+public *string* **compileEcho** (*array* $statement)
+
+Compiles a '{{' '}}' statement returning PHP code
+
+
+
+public  **compileInclude** (*array* $statement)
+
+Compiles a 'include' statement returning PHP code
+
+
+
+public  **compileMacro** (*array* $statement, *mixed* $extendsMode)
+
+Compiles macros
+
+
+
+public *string* **compileCall** (*array* $statement, *boolean* $extendsMode)
+
+Compiles calls to macros
+
+
+
+final protected  **_statementList** (*array* $statements, [*mixed* $extendsMode])
+
+Traverses a statement list compiling each of its nodes
+
+
+
+protected  **_compileSource** (*mixed* $viewCode, [*mixed* $extendsMode])
+
+Compiles a Volt source code returning a PHP plain version
+
+
+
+public  **compileString** (*mixed* $viewCode, [*mixed* $extendsMode])
+
+Compiles a template into a string
+
+```php
+<?php
+
+echo $compiler->compileString('{{ "hello world" }}');
+
+```
+
+
+
+public *string* | *array* **compileFile** (*string* $path, *string* $compiledPath, [*boolean* $extendsMode])
+
+Compiles a template into a file forcing the destination path
+
+```php
+<?php
+
+$compiler->compile("views/layouts/main.volt", "views/layouts/main.volt.php");
+
+```
+
+
+
+public  **compile** (*mixed* $templatePath, [*mixed* $extendsMode])
+
+Compiles a template into a file applying the compiler options
+This method does not return the compiled path if the template was not compiled
+
+```php
+<?php
+
+$compiler->compile("views/layouts/main.volt");
+
+require $compiler->getCompiledTemplatePath();
+
+```
+
+
+
+public  **getTemplatePath** ()
+
+Returns the path that is currently being compiled
+
+
+
+public  **getCompiledTemplatePath** ()
+
+Returns the path to the last compiled template
+
+
+
+public *array* **parse** (*string* $viewCode)
+
+Parses a Volt template returning its intermediate representation
+
+```php
+<?php
+
+print_r(
+    $compiler->parse("{% raw %}{{ 3 + 2 }}{% endraw %}")
+);
+
+```
+
+
+
+protected  **getFinalPath** (*mixed* $path)
+
+Gets the final path with VIEW
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\View\Engine\Volt\Exception**
+
+*extends* class [Phalcon\Mvc\View\Exception](/3.4/en/api/Phalcon_Mvc_View_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/view/engine/volt/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\View\EngineInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/view/engineinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **getContent** ()
+
+...
+
+
+abstract public  **partial** (*mixed* $partialPath, [*mixed* $params])
+
+...
+
+
+abstract public  **render** (*mixed* $path, *mixed* $params, [*mixed* $mustClean])
+
+...
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\View\Exception**
+
+*extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
+
+*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/view/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Clone the exception
+
+
+
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Exception constructor
+
+
+
+public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+...
+
+
+final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception message
+
+
+
+final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the Exception code
+
+
+
+final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the file in which the exception occurred
+
+
+
+final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the line in which the exception occurred
+
+
+
+final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Returns previous Exception
+
+
+
+final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+Gets the stack trace as a string
+
+
+
+public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+
+String representation of the exception
+
+
+
+
+<hr>
+
+# Class **Phalcon\Mvc\View\Simple**
+
+*extends* abstract class [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/view/simple.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+This component allows to render views without hierarchical levels
+
+```php
+<?php
+
+use Phalcon\Mvc\View\Simple as View;
+
+$view = new View();
+
+// Render a view
+echo $view->render(
+    "templates/my-view",
+    [
+        "some" => $param,
+    ]
+);
+
+// Or with filename with extension
+echo $view->render(
+    "templates/my-view.volt",
+    [
+        "parameter" => $here,
+    ]
+);
+
+```
+
+
+## Methods
+public  **getRegisteredEngines** ()
+
+
+
+
+
+public  **__construct** ([*array* $options])
+
+Phalcon\Mvc\View\Simple constructor
+
+
+
+public  **setViewsDir** (*mixed* $viewsDir)
+
+Sets views directory. Depending of your platform, always add a trailing slash or backslash
+
+
+
+public  **getViewsDir** ()
+
+Gets views directory
+
+
+
+public  **registerEngines** (*array* $engines)
+
+Register templating engines
+
+```php
+<?php
+
+$this->view->registerEngines(
+    [
+        ".phtml" => "Phalcon\Mvc\View\Engine\Php",
+        ".volt"  => "Phalcon\Mvc\View\Engine\Volt",
+        ".mhtml" => "MyCustomEngine",
+    ]
+);
+
+```
+
+
+
+protected *array* **_loadTemplateEngines** ()
+
+Loads registered template engines, if none is registered it will use Phalcon\Mvc\View\Engine\Php
+
+
+
+final protected  **_internalRender** (*string* $path, *array* $params)
+
+Tries to render the view with every engine registered in the component
+
+
+
+public  **render** (*string* $path, [*array* $params])
+
+Renders a view
+
+
+
+public  **partial** (*mixed* $partialPath, [*mixed* $params])
+
+Renders a partial view
+
+```php
+<?php
+
+// Show a partial inside another view
+$this->partial("shared/footer");
+
+```
+
+```php
+<?php
+
+// Show a partial inside another view with parameters
+$this->partial(
+    "shared/footer",
+    [
+        "content" => $html,
+    ]
+);
+
+```
+
+
+
+public  **setCacheOptions** (*array* $options)
+
+Sets the cache options
+
+
+
+public *array* **getCacheOptions** ()
+
+Returns the cache options
+
+
+
+protected  **_createCache** ()
+
+Create a Phalcon\Cache based on the internal cache options
+
+
+
+public  **getCache** ()
+
+Returns the cache instance used to cache
+
+
+
+public  **cache** ([*mixed* $options])
+
+Cache the actual view render to certain level
+
+```php
+<?php
+
+$this->view->cache(
+    [
+        "key"      => "my-key",
+        "lifetime" => 86400,
+    ]
+);
+
+```
+
+
+
+public  **setParamToView** (*mixed* $key, *mixed* $value)
+
+Adds parameters to views (alias of setVar)
+
+```php
+<?php
+
+$this->view->setParamToView("products", $products);
+
+```
+
+
+
+public  **setVars** (*array* $params, [*mixed* $merge])
+
+Set all the render params
+
+```php
+<?php
+
+$this->view->setVars(
+    [
+        "products" => $products,
+    ]
+);
+
+```
+
+
+
+public  **setVar** (*mixed* $key, *mixed* $value)
+
+Set a single view parameter
+
+```php
+<?php
+
+$this->view->setVar("products", $products);
+
+```
+
+
+
+public  **getVar** (*mixed* $key)
+
+Returns a parameter previously set in the view
+
+
+
+public *array* **getParamsToView** ()
+
+Returns parameters to views
+
+
+
+public  **setContent** (*mixed* $content)
+
+Externally sets the view content
+
+```php
+<?php
+
+$this->view->setContent("<h1>hello</h1>");
+
+```
+
+
+
+public  **getContent** ()
+
+Returns cached output from another view stage
+
+
+
+public *string* **getActiveRenderPath** ()
+
+Returns the path of the view that is currently rendered
+
+
+
+public  **__set** (*mixed* $key, *mixed* $value)
+
+Magic method to pass variables to the views
+
+```php
+<?php
+
+$this->view->products = $products;
+
+```
+
+
+
+public  **__get** (*mixed* $key)
+
+Magic method to retrieve a variable passed to the view
+
+```php
+<?php
+
+echo $this->view->products;
+
+```
+
+
+
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Sets the dependency injector
+
+
+
+public  **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Returns the internal dependency injector
+
+
+
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Sets the event manager
+
+
+
+public  **getEventsManager** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+
+Returns the internal event manager
+
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\ViewBaseInterface**
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/viewbaseinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **setViewsDir** (*mixed* $viewsDir)
+
+...
+
+
+abstract public  **getViewsDir** ()
+
+...
+
+
+abstract public  **setParamToView** (*mixed* $key, *mixed* $value)
+
+...
+
+
+abstract public  **setVar** (*mixed* $key, *mixed* $value)
+
+...
+
+
+abstract public  **getParamsToView** ()
+
+...
+
+
+abstract public  **getCache** ()
+
+...
+
+
+abstract public  **cache** ([*mixed* $options])
+
+...
+
+
+abstract public  **setContent** (*mixed* $content)
+
+...
+
+
+abstract public  **getContent** ()
+
+...
+
+
+abstract public  **partial** (*mixed* $partialPath, [*mixed* $params])
+
+...
+
+
+
+<hr>
+
+# Interface **Phalcon\Mvc\ViewInterface**
+
+*implements* [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+<a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/viewinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
+
+## Methods
+abstract public  **setLayoutsDir** (*mixed* $layoutsDir)
+
+...
+
+
+abstract public  **getLayoutsDir** ()
+
+...
+
+
+abstract public  **setPartialsDir** (*mixed* $partialsDir)
+
+...
+
+
+abstract public  **getPartialsDir** ()
+
+...
+
+
+abstract public  **setBasePath** (*mixed* $basePath)
+
+...
+
+
+abstract public  **getBasePath** ()
+
+...
+
+
+abstract public  **setRenderLevel** (*mixed* $level)
+
+...
+
+
+abstract public  **setMainView** (*mixed* $viewPath)
+
+...
+
+
+abstract public  **getMainView** ()
+
+...
+
+
+abstract public  **setLayout** (*mixed* $layout)
+
+...
+
+
+abstract public  **getLayout** ()
+
+...
+
+
+abstract public  **setTemplateBefore** (*mixed* $templateBefore)
+
+...
+
+
+abstract public  **cleanTemplateBefore** ()
+
+...
+
+
+abstract public  **setTemplateAfter** (*mixed* $templateAfter)
+
+...
+
+
+abstract public  **cleanTemplateAfter** ()
+
+...
+
+
+abstract public  **getControllerName** ()
+
+...
+
+
+abstract public  **getActionName** ()
+
+...
+
+
+abstract public  **getParams** ()
+
+...
+
+
+abstract public  **start** ()
+
+...
+
+
+abstract public  **registerEngines** (*array* $engines)
+
+...
+
+
+abstract public  **render** (*mixed* $controllerName, *mixed* $actionName, [*mixed* $params])
+
+...
+
+
+abstract public  **pick** (*mixed* $renderView)
+
+...
+
+
+abstract public  **finish** ()
+
+...
+
+
+abstract public  **getActiveRenderPath** ()
+
+...
+
+
+abstract public  **disable** ()
+
+...
+
+
+abstract public  **enable** ()
+
+...
+
+
+abstract public  **reset** ()
+
+...
+
+
+abstract public  **isDisabled** ()
+
+...
+
+
+abstract public  **setViewsDir** (*mixed* $viewsDir) inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+
+abstract public  **getViewsDir** () inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+
+abstract public  **setParamToView** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+
+abstract public  **setVar** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+
+abstract public  **getParamsToView** () inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+
+abstract public  **getCache** () inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+
+abstract public  **cache** ([*mixed* $options]) inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+
+abstract public  **setContent** (*mixed* $content) inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+
+abstract public  **getContent** () inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+
+abstract public  **partial** (*mixed* $partialPath, [*mixed* $params]) inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
+
+...
+
+

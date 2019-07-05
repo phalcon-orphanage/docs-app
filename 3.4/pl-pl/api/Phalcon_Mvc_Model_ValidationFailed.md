@@ -15,7 +15,7 @@ title: 'Phalcon\Mvc\Model\ValidationFailed'
 
 This exception is generated when a model fails to save a record Phalcon\Mvc\Model must be set up to have this behavior
 
-## Metody
+## Methods
 
 public **__construct** (*Model* $model, *Message*\ [] $validationMessages)
 

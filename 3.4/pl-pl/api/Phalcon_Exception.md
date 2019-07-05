@@ -13,7 +13,7 @@ title: 'Phalcon\Exception'
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
-## Metody
+## Methods
 
 final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
 
