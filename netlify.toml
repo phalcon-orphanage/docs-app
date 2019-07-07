@@ -1,3 +1,16 @@
 [build]
   command = "git submodule update --remote --merge && jekyll build --incremental"
   publish = "_site"
+
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/assets/css/*.css"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/assets/js/*.js"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
