@@ -379,5 +379,27 @@
                 "url": "/translate"
             }
         ]
+    },
+    {
+        "text": "Utility",
+        "url": "",
+        "menu": [
+            {
+                "text": "Collection",
+                "url": "/collection"
+            },
+            {
+                "text": "Domain",
+                "url": "/domain"
+            },
+            {
+                "text": "Helper",
+                "url": "/helper"
+            },
+            {
+                "text": "Registry",
+                "url": "/registry"
+            }
+        ]
     }
 ]

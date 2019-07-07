@@ -391,6 +391,10 @@
         "url": "/collection"
       },
       {
+        "text": "Domain",
+        "url": "/domain"
+      },
+      {
         "text": "Helper",
         "url": "/helper"
       },
