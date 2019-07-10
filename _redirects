@@ -35,6 +35,38 @@
 
 # Dead links
 /3.4/en/odm                                /3.4/en/db-odm
+/en/3.4/webserver-xampp                    /3.4/en//webserver-xampp
+/cs-cz/3.4/webserver-xampp                 /3.4/cs-cz//webserver-xampp
+/de-de/3.4/webserver-xampp                 /3.4/de-de//webserver-xampp
+/es-es/3.4/webserver-xampp                 /3.4/es-es//webserver-xampp
+/fa-ir/3.4/webserver-xampp                 /3.4/fa-ir//webserver-xampp
+/fr-fr/3.4/webserver-xampp                 /3.4/fr-fr//webserver-xampp
+/id-id/3.4/webserver-xampp                 /3.4/id-id//webserver-xampp
+/it-it/3.4/webserver-xampp                 /3.4/it-it//webserver-xampp
+/ja-jp/3.4/webserver-xampp                 /3.4/ja-jp//webserver-xampp
+/pl-pl/3.4/webserver-xampp                 /3.4/pl-pl//webserver-xampp
+/ru-ru/3.4/webserver-xampp                 /3.4/ru-ru//webserver-xampp
+/tr-tr/3.4/webserver-xampp                 /3.4/tr-tr//webserver-xampp
+/uk-ua/3.4/webserver-xampp                 /3.4/uk-ua//webserver-xampp
+/ur-in/3.4/webserver-xampp                 /3.4/ur-in//webserver-xampp
+/zh-cn/3.4/webserver-xampp                 /3.4/zh-cn//webserver-xampp
+/en/3.4/webserver-wamp                     /3.4/en//webserver-wamp
+/cs-cz/3.4/webserver-wamp                  /3.4/cs-cz//webserver-wamp
+/de-de/3.4/webserver-wamp                  /3.4/de-de//webserver-wamp
+/es-es/3.4/webserver-wamp                  /3.4/es-es//webserver-wamp
+/fa-ir/3.4/webserver-wamp                  /3.4/fa-ir//webserver-wamp
+/fr-fr/3.4/webserver-wamp                  /3.4/fr-fr//webserver-wamp
+/id-id/3.4/webserver-wamp                  /3.4/id-id//webserver-wamp
+/it-it/3.4/webserver-wamp                  /3.4/it-it//webserver-wamp
+/ja-jp/3.4/webserver-wamp                  /3.4/ja-jp//webserver-wamp
+/pl-pl/3.4/webserver-wamp                  /3.4/pl-pl//webserver-wamp
+/ru-ru/3.4/webserver-wamp                  /3.4/ru-ru//webserver-wamp
+/tr-tr/3.4/webserver-wamp                  /3.4/tr-tr//webserver-wamp
+/uk-ua/3.4/webserver-wamp                  /3.4/uk-ua//webserver-wamp
+/ur-in/3.4/webserver-wamp                  /3.4/ur-in//webserver-wamp
+/zh-cn/3.4/webserver-wamp                  /3.4/zh-cn//webserver-wamp
+
+
 /4.0/en/odm                                /4.0/en/db-odm
 
 /3.1/en/rewrite-rules                      /3.1/en/application-micro#rewrite-rules
