@@ -2,6 +2,21 @@
 /                                          /3.4/en/introduction
 /en                                        /3.4/en/introduction
 /3.4                                       /3.4/en/introduction
+/3.4/en                                    /3.4/en/introduction
+/3.4/cs-cz                                 /3.4/cs-cz/introduction
+/3.4/de-de                                 /3.4/de-de/introduction
+/3.4/es-es                                 /3.4/es-es/introduction
+/3.4/fa-ir                                 /3.4/fa-ir/introduction
+/3.4/fr-fr                                 /3.4/fr-fr/introduction
+/3.4/id-id                                 /3.4/id-id/introduction
+/3.4/it-it                                 /3.4/it-it/introduction
+/3.4/ja-jp                                 /3.4/ja-jp/introduction
+/3.4/pl-pl                                 /3.4/pl-pl/introduction
+/3.4/ru-ru                                 /3.4/ru-ru/introduction
+/3.4/tr-tr                                 /3.4/tr-tr/introduction
+/3.4/uk-ua                                 /3.4/uk-ua/introduction
+/3.4/ur-in                                 /3.4/ur-in/introduction
+/3.4/zh-cn                                 /3.4/zh-cn/introduction
 /latest/en                                 /3.4/en/introduction
 /latest/cs-cz                              /3.4/cs-cz/introduction
 /latest/de-de                              /3.4/de-de/introduction
@@ -50,7 +65,6 @@
 ################################################################################
 # API 3.4
 ################################################################################
-/3.4/en/api/Phalcon_Acl                                               /3.4/en/api/Phalcon_Acl
 /3.4/en/api/Phalcon_Acl_Adapter                                       /3.4/en/api/Phalcon_Acl
 /3.4/en/api/Phalcon_Acl_AdapterInterface                              /3.4/en/api/Phalcon_Acl
 /3.4/en/api/Phalcon_Acl_Adapter_Memory                                /3.4/en/api/Phalcon_Acl
@@ -442,20 +456,4 @@
 /3.4/en/api/Phalcon_Validation_Validator_Uniqueness                   /3.4/en/api/Phalcon_Validation
 /3.4/en/api/Phalcon_Validation_Validator_Url                          /3.4/en/api/Phalcon_Validation
 /3.4/en/api/Phalcon_Version                                           /3.4/en/api/Phalcon_Version
-
-################################################################################
-# 3.x
-################################################################################
-/3.3/:lang/api/:slug                                               /3.4/en/api/:slug
-/3.3/:lang/:slug                                                   /3.4/en/:slug
-/3.2/:lang/api/:slug                                               /3.4/en/api/:slug
-/3.2/:lang/:slug                                                   /3.4/en/:slug
-/3.1/:lang/api/:slug                                               /3.4/en/api/:slug
-/3.1/:lang/:slug                                                   /3.4/en/:slug
-/:lang/3.3/api/:slug                                               /3.4/en/api/:slug
-/:lang/3.3/:slug                                                   /3.4/en/:slug
-/:lang/3.2/api/:slug                                               /3.4/en/api/:slug
-/:lang/3.2/:slug                                                   /3.4/en/:slug
-/:lang/3.1/api/:slug                                               /3.4/en/api/:slug
-/:lang/3.1/:slug                                                   /3.4/en/:slug
 
