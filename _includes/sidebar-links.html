@@ -9,7 +9,7 @@
                 {% endif %}
                 <div class="documentation-nav-item">
                     {% assign current = '/' | append: page.version | append: '/' | append: page.language | append: '/' %}
-                    {% assign suffix  = page.url | replace: current, '' | replace: '.html', '.md' %}
+                    {% assign suffix  = page.url | replace: current, '' | replace: '.html', '' %}
                     {% if suffix != 'search' %}
                     {% if page.language != 'en' %}
                     <a class="documentation-nav-item__label"
