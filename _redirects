@@ -2,22 +2,7 @@
 /                                          /3.4/en/introduction
 /en                                        /3.4/en/introduction
 /3.4                                       /3.4/en/introduction
-/3.4/cs-cz                                 /3.4/cs-cz/introduction
-/3.4/de-de                                 /3.4/de-de/introduction
-/3.4/en                                    /3.4/en/introduction
-/3.4/es-es                                 /3.4/es-es/introduction
-/3.4/fa-ir                                 /3.4/fa-ir/introduction
-/3.4/fr-fr                                 /3.4/fr-fr/introduction
-/3.4/id-id                                 /3.4/id-id/introduction
-/3.4/it-it                                 /3.4/it-it/introduction
-/3.4/ja-jp                                 /3.4/ja-jp/introduction
-/3.4/pl-pl                                 /3.4/pl-pl/introduction
-/3.4/ru-ru                                 /3.4/ru-ru/introduction
-/3.4/tr-tr                                 /3.4/tr-tr/introduction
-/3.4/uk-ua                                 /3.4/uk-ua/introduction
-/3.4/ur-in                                 /3.4/ur-in/introduction
-/3.4/zh-cn                                 /3.4/zh-cn/introduction
-
+/latest/en                                 /3.4/en/introduction
 /latest/cs-cz                              /3.4/cs-cz/introduction
 /latest/de-de                              /3.4/de-de/introduction
 /latest/es-es                              /3.4/es-es/introduction
@@ -42,83 +27,28 @@
 /3.3/en/rewrite-rules                      /3.3/en/application-micro#rewrite-rules
 /3.4/en/rewrite-rules                      /3.4/en/application-micro#rewrite-rules
 
-/latest/en                                 /3.4/en/introduction
-/latest/en/api/:slug                       /3.4/en/api/:slug
-/latest/en/reference/:slug                 /3.4/en/:slug
-/latest/en/:slug                           /3.4/en/:slug
-
-/latest/es/api/:slug                       /3.4/es-es/api/:slug
-/latest/es/reference/:slug                 /3.4/es-es/:slug
-/latest/es/:slug                           /3.4/es-es/:slug
-
-/en/latest                                 /3.4/en/introduction
-/en/latest/api/:slug                       /3.4/en/api/:slug
-/en/latest/reference/:slug                 /3.4/en/:slug
-/en/latest/:slug                           /3.4/en/:slug
-
-# For now the default will be 3.4
-# /                           /4.0/en/introduction
-# /en                         /4.0/en/introduction
-#
-# /latest/en                  /4.0/en/introduction
-# /latest/en/*                /4.0/en/:splat
-#
-# /en/latest                  /4.0/en/introduction
-# /en/latest/*                /4.0/en/:splat
-
-/4.0/cs-cz                                                        /4.0/cs-cz/introduction
-/4.0/de-de                                                        /4.0/de-de/introduction
-/4.0/el-gr                                                        /4.0/el-gr/introduction
-/4.0/en                                                           /4.0/en/introduction
-/4.0/es-es                                                        /4.0/es-es/introduction
-/4.0/fa-ir                                                        /4.0/fa-ir/introduction
-/4.0/fr-fr                                                        /4.0/fr-fr/introduction
-/4.0/id-id                                                        /4.0/id-id/introduction
-/4.0/it-it                                                        /4.0/it-it/introduction
-/4.0/ja-jp                                                        /4.0/ja-jp/introduction
-/4.0/nl-nl                                                        /4.0/nl-nl/introduction
-/4.0/pl-pl                                                        /4.0/pl-pl/introduction
-/4.0/pt-BR                                                        /4.0/pt-BR/introduction
-/4.0/ru-ru                                                        /4.0/ru-ru/introduction
-/4.0/tr-tr                                                        /4.0/tr-tr/introduction
-/4.0/uk-ua                                                        /4.0/uk-ua/introduction
-/4.0/zh-cn                                                        /4.0/zh-cn/introduction
-
-
-/en/4.0                                                            /4.0/en/introduction
-/en/4.0/api/:slug                                                  /4.0/en/api/:slug
-/en/4.0/:slug                                                      /4.0/en/:slug
-/4.0/ex-es/api/:slug                                               /4.0/es-es/:slug
-/4.0/ex-es/:slug                                                   /4.0/es-es/:slug
-/pl/latest/reference/di.html                                       /4.0/en/di
-/4.0/en/environments-docker                                        /4.0/en/environments
-/4.0/en/environments-vagrant                                       /4.0/en/environments
-/4.0/en/environments-docker                                        /4.0/en/environments
-/4.0/en/environments-vagrant                                       /4.0/en/environments
-/4.0/entesting-environment                                         /4.0/en/testing-environment
-/4.0/cs-cztesting-environment                                      /4.0/cs-cz/testing-environment
-/4.0/es-estesting-environment                                      /4.0/es-es/testing-environment
-/4.0/de-detesting-environment                                      /4.0/de-de/testing-environment
-/4.0/en/logging                                                    /4.0/en/logger
-/4.0/cs-cz/db-models-advanced                                      /4.0/cs-cz/db-models
-/4.0/de-de/db-models-advanced                                      /4.0/de-de/db-models
-/4.0/el-gr/db-models-advanced                                      /4.0/el-gr/db-models
-/4.0/en/db-models-advanced                                         /4.0/en/db-models
-/4.0/es-es/db-models-advanced                                      /4.0/es-es/db-models
-/4.0/fa-ir/db-models-advanced                                      /4.0/fa-ir/db-models
-/4.0/fr-fr/db-models-advanced                                      /4.0/fr-fr/db-models
-/4.0/id-id/db-models-advanced                                      /4.0/id-id/db-models
-/4.0/it-it/db-models-advanced                                      /4.0/it-it/db-models
-/4.0/ja-jp/db-models-advanced                                      /4.0/ja-jp/db-models
-/4.0/nl-nl/db-models-advanced                                      /4.0/nl-nl/db-models
-/4.0/pl-pl/db-models-advanced                                      /4.0/pl-pl/db-models
-/4.0/ru-ru/db-models-advanced                                      /4.0/ru-ru/db-models
-/4.0/tr-tr/db-models-advanced                                      /4.0/tr-tr/db-models
-/4.0/uk-ua/db-models-advanced                                      /4.0/uk-ua/db-models
-/4.0/zh-cn/db-models-advanced                                      /4.0/zh-cn/db-models
+/4.0/en                                    /4.0/en/introduction
+/4.0/cs-cz                                 /4.0/cs-cz/introduction
+/4.0/de-de                                 /4.0/de-de/introduction
+/4.0/el-gr                                 /4.0/el-gr/introduction
+/4.0/es-es                                 /4.0/es-es/introduction
+/4.0/fa-ir                                 /4.0/fa-ir/introduction
+/4.0/fr-fr                                 /4.0/fr-fr/introduction
+/4.0/id-id                                 /4.0/id-id/introduction
+/4.0/it-it                                 /4.0/it-it/introduction
+/4.0/ja-jp                                 /4.0/ja-jp/introduction
+/4.0/nl-nl                                 /4.0/nl-nl/introduction
+/4.0/pl-pl                                 /4.0/pl-pl/introduction
+/4.0/pt-br                                 /4.0/pt-br/introduction
+/4.0/ru-ru                                 /4.0/ru-ru/introduction
+/4.0/sr-sp                                 /4.0/sr-sp/introduction
+/4.0/th-th                                 /4.0/th-th/introduction
+/4.0/tr-tr                                 /4.0/tr-tr/introduction
+/4.0/uk-ua                                 /4.0/uk-ua/introduction
+/4.0/zh-cn                                 /4.0/zh-cn/introduction
 
 ################################################################################
-# 3.4
+# API 3.4
 ################################################################################
 /3.4/en/api/Phalcon_Acl                                               /3.4/en/api/Phalcon_Acl
 /3.4/en/api/Phalcon_Acl_Adapter                                       /3.4/en/api/Phalcon_Acl
