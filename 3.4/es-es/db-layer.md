@@ -15,9 +15,9 @@ This component makes use of adapters to encapsulate specific database system det
 
 | Class                               | Description                                                                                                                                                                                                                          |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Phalcon\Db\Adapter\Pdo\Mysql](api/Phalcon_Db_Adapter_Pdo_Mysql)      | Is the world's most used relational database management system (RDBMS) that runs as a server providing multi-user access to a number of databases                                                                                    |
-| [Phalcon\Db\Adapter\Pdo\Postgresql](api/Phalcon_Db_Adapter_Pdo_Postgresql) | PostgreSQL is a powerful, open source relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness. |
-| [Phalcon\Db\Adapter\Pdo\Sqlite](api/Phalcon_Db_Adapter_Pdo_Sqlite)     | SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine                                                                                                     |
+| [Phalcon\Db\Adapter\Pdo\Mysql](api/Phalcon_Db)      | Is the world's most used relational database management system (RDBMS) that runs as a server providing multi-user access to a number of databases                                                                                    |
+| [Phalcon\Db\Adapter\Pdo\Postgresql](api/Phalcon_Db) | PostgreSQL is a powerful, open source relational database system. It has more than 15 years of active development and a proven architecture that has earned it a strong reputation for reliability, data integrity, and correctness. |
+| [Phalcon\Db\Adapter\Pdo\Sqlite](api/Phalcon_Db)     | SQLite is a software library that implements a self-contained, serverless, zero-configuration, transactional SQL database engine                                                                                                     |
 
 <a name='adapters-factory'></a>
 ### Factory
@@ -44,7 +44,7 @@ $db = Factory::load($options);
 
 <a name='adapters-custom'></a>
 ### Implementing your own adapters
-The [Phalcon\Db\AdapterInterface](api/Phalcon_Db_AdapterInterface) interface must be implemented in order to create your own database adapters or extend the existing ones.
+The [Phalcon\Db\AdapterInterface](api/Phalcon_Db) interface must be implemented in order to create your own database adapters or extend the existing ones.
 
 <a name='dialects'></a>
 ## Database Dialects
@@ -52,13 +52,13 @@ Phalcon encapsulates the specific details of each database engine in dialects. T
 
 | Class                           | Description                                         |
 |---------------------------------|-----------------------------------------------------|
-| [Phalcon\Db\Dialect\Mysql](api/Phalcon_Db_Dialect_Mysql)      | SQL specific dialect for MySQL database system      |
-| [Phalcon\Db\Dialect\Postgresql](api/Phalcon_Db_Dialect_Postgresql) | SQL specific dialect for PostgreSQL database system |
-| [Phalcon\Db\Dialect\Sqlite](api/Phalcon_Db_Dialect_Sqlite)     | SQL specific dialect for SQLite database system     |
+| [Phalcon\Db\Dialect\Mysql](api/Phalcon_Db)      | SQL specific dialect for MySQL database system      |
+| [Phalcon\Db\Dialect\Postgresql](api/Phalcon_Db) | SQL specific dialect for PostgreSQL database system |
+| [Phalcon\Db\Dialect\Sqlite](api/Phalcon_Db)     | SQL specific dialect for SQLite database system     |
 
 <a name='dialects-custom'></a>
 ### Implementing your own dialects
-The [Phalcon\Db\DialectInterface](api/Phalcon_Db_DialectInterface) interface must be implemented in order to create your own database dialects or extend the existing ones. You can also enhance your current dialect by adding more commands/methods that PHQL will understand. 
+The [Phalcon\Db\DialectInterface](api/Phalcon_Db) interface must be implemented in order to create your own database dialects or extend the existing ones. You can also enhance your current dialect by adding more commands/methods that PHQL will understand. 
 
 For instance when using the MySQL adapter, you might want to allow PHQL to recognize the `MATCH ... AGAINST ...` syntax. We associate that syntax with `MATCH_AGAINST` 
 
@@ -282,7 +282,7 @@ while ($robot = $result->fetch()) {
 }
 ```
 
-The `Phalcon\Db::query()` returns an instance of [Phalcon\Db\Result\Pdo](api/Phalcon_Db_Result_Pdo). These objects encapsulate all the functionality related to the returned resultset i.e. traversing, seeking specific records, count etc.
+The `Phalcon\Db::query()` returns an instance of [Phalcon\Db\Result\Pdo](api/Phalcon_Db). These objects encapsulate all the functionality related to the returned resultset i.e. traversing, seeking specific records, count etc.
 
 ```php
 <?php
@@ -761,9 +761,9 @@ $eventsManager->attach(
 
 <a name='profiling'></a>
 ## Profiling SQL Statements
-[Phalcon\Db](api/Phalcon_Db) includes a profiling component called [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler), that is used to analyze the performance of database operations so as to diagnose performance problems and discover bottlenecks.
+[Phalcon\Db](api/Phalcon_Db) includes a profiling component called [Phalcon\Db\Profiler](api/Phalcon_Db), that is used to analyze the performance of database operations so as to diagnose performance problems and discover bottlenecks.
 
-Database profiling is really easy With [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler):
+Database profiling is really easy With [Phalcon\Db\Profiler](api/Phalcon_Db):
 
 ```php
 <?php
@@ -813,7 +813,7 @@ echo 'Final Time: ', $profile->getFinalTime(), "\n";
 echo 'Total Elapsed Time: ', $profile->getTotalElapsedSeconds(), "\n";
 ```
 
-You can also create your own profile class based on [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler) to record real time statistics of the statements sent to the database system:
+You can also create your own profile class based on [Phalcon\Db\Profiler](api/Phalcon_Db) to record real time statistics of the statements sent to the database system:
 
 ```php
 <?php
@@ -1008,11 +1008,11 @@ $connection->createTable(
 );
 ```
 
-`Phalcon\Db::createTable()` accepts an associative array describing the table. Columns are defined with the class [Phalcon\Db\Column](api/Phalcon_Db_Column). The table below shows the options available to define a column:
+`Phalcon\Db::createTable()` accepts an associative array describing the table. Columns are defined with the class [Phalcon\Db\Column](api/Phalcon_Db). The table below shows the options available to define a column:
 
 | Option          | Description                                                                                                                                | Optional |
 |-----------------|--------------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| `type`          | Column type. Must be a [Phalcon\Db\Column](api/Phalcon_Db_Column) constant (see below for a list)                                                                 | No       |
+| `type`          | Column type. Must be a [Phalcon\Db\Column](api/Phalcon_Db) constant (see below for a list)                                                                 | No       |
 | `primary`       | True if the column is part of the table's primary key                                                                                      | Yes      |
 | `size`          | Some type of columns like `VARCHAR` or `INTEGER` may have a specific size                                                                  | Yes      |
 | `scale`         | `DECIMAL` or `NUMBER` columns may be have a scale to specify how many decimals should be stored                                            | Yes      |
@@ -1038,9 +1038,9 @@ The associative array passed in `Phalcon\Db::createTable()` can have the possibl
 
 | Index        | Description                                                                                                                            | Optional |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------|:--------:|
-| `columns`    | An array with a set of table columns defined with [Phalcon\Db\Column](api/Phalcon_Db_Column)                                                                  | No       |
-| `indexes`    | An array with a set of table indexes defined with [Phalcon\Db\Index](api/Phalcon_Db_Index)                                                                   | Yes      |
-| `references` | An array with a set of table references (foreign keys) defined with [Phalcon\Db\Reference](api/Phalcon_Db_Reference)                                             | Yes      |
+| `columns`    | An array with a set of table columns defined with [Phalcon\Db\Column](api/Phalcon_Db)                                                                  | No       |
+| `indexes`    | An array with a set of table indexes defined with [Phalcon\Db\Index](api/Phalcon_Db)                                                                   | Yes      |
+| `references` | An array with a set of table references (foreign keys) defined with [Phalcon\Db\Reference](api/Phalcon_Db)                                             | Yes      |
 | `options`    | An array with a set of table creation options. These options often relate to the database system in which the migration was generated. | Yes      |
 
 <a name='tables-altering'></a>

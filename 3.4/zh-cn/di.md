@@ -1242,7 +1242,7 @@ Although you can register services with the names you want, Phalcon has a severa
 | 服务名称               | 描述               | 默认                                                                                     | 是否共享 |
 | ------------------ | ---------------- | -------------------------------------------------------------------------------------- |:----:|
 | assets             | 资源管理器            | [Phalcon\Assets\Manager](api/Phalcon_Assets_Manager)                                 | Yes  |
-| annotations        | 注释语法分析器          | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations_Adapter_Memory)        | Yes  |
+| annotations        | 注释语法分析器          | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations)        | Yes  |
 | cookies            | HTTP Cookie 管理服务 | [Phalcon\Http\Response\Cookies](api/Phalcon_Http_Response_Cookies)                  | Yes  |
 | crypt              | 加密解密数据           | [Phalcon\Crypt](api/Phalcon_Crypt)                                                    | Yes  |
 | db                 | 低级数据库连接服务        | [Phalcon\Db](api/Phalcon_Db)                                                          | Yes  |

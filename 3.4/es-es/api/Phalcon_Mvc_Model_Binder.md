@@ -28,13 +28,13 @@ Array for original values
 
 
 
-public  **__construct** ([[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache_BackendInterface) $cache])
+public  **__construct** ([[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache) $cache])
 
 Phalcon\Mvc\Model\Binder constructor
 
 
 
-public  **setCache** ([Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache_BackendInterface) $cache)
+public  **setCache** ([Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache) $cache)
 
 Gets cache instance
 
@@ -101,7 +101,7 @@ abstract public  **getCache** ()
 ...
 
 
-abstract public  **setCache** ([Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache_BackendInterface) $cache)
+abstract public  **setCache** ([Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache) $cache)
 
 ...
 

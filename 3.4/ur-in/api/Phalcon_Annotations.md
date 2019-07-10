@@ -6,7 +6,7 @@ title: 'Phalcon\Annotations'
 ---
 # Abstract class **Phalcon\Annotations\Adapter**
 
-*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations_AdapterInterface)
+*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/annotations/adapter.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -14,7 +14,7 @@ This is the base class for Phalcon\Annotations adapters
 
 
 ## Methods
-public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations_ReaderInterface) $reader)
+public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations) $reader)
 
 Sets the annotations parser
 
@@ -59,9 +59,9 @@ Returns the annotations found in a specific property
 
 # Class **Phalcon\Annotations\Adapter\Apc**
 
-*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
-*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations_AdapterInterface)
+*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/annotations/adapter/apc.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -90,49 +90,49 @@ Reads parsed annotations from APC
 
 
 
-public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations_Reflection) $data)
+public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations) $data)
 
 Writes parsed annotations to APC
 
 
 
-public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations_ReaderInterface) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Sets the annotations parser
 
 
 
-public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotation reader
 
 
 
-public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Parses or retrieves all the annotations found in a class
 
 
 
-public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific method
 
 
 
-public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific property
 
@@ -142,9 +142,9 @@ Returns the annotations found in a specific property
 
 # Class **Phalcon\Annotations\Adapter\Apcu**
 
-*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
-*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations_AdapterInterface)
+*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/annotations/adapter/apcu.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -173,49 +173,49 @@ Reads parsed annotations from APCu
 
 
 
-public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations_Reflection) $data)
+public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations) $data)
 
 Writes parsed annotations to APCu
 
 
 
-public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations_ReaderInterface) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Sets the annotations parser
 
 
 
-public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotation reader
 
 
 
-public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Parses or retrieves all the annotations found in a class
 
 
 
-public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific method
 
 
 
-public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific property
 
@@ -225,9 +225,9 @@ Returns the annotations found in a specific property
 
 # Class **Phalcon\Annotations\Adapter\Files**
 
-*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
-*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations_AdapterInterface)
+*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/annotations/adapter/files.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -254,55 +254,55 @@ Phalcon\Annotations\Adapter\Files constructor
 
 
 
-public [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations_Reflection) **read** (*string* $key)
+public [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations) **read** (*string* $key)
 
 Reads parsed annotations from files
 
 
 
-public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations_Reflection) $data)
+public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations) $data)
 
 Writes parsed annotations to files
 
 
 
-public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations_ReaderInterface) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Sets the annotations parser
 
 
 
-public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotation reader
 
 
 
-public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Parses or retrieves all the annotations found in a class
 
 
 
-public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific method
 
 
 
-public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific property
 
@@ -312,9 +312,9 @@ Returns the annotations found in a specific property
 
 # Class **Phalcon\Annotations\Adapter\Memory**
 
-*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
-*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations_AdapterInterface)
+*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/annotations/adapter/memory.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -328,49 +328,49 @@ Reads parsed annotations from memory
 
 
 
-public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations_Reflection) $data)
+public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations) $data)
 
 Writes parsed annotations to memory
 
 
 
-public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations_ReaderInterface) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Sets the annotations parser
 
 
 
-public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotation reader
 
 
 
-public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Parses or retrieves all the annotations found in a class
 
 
 
-public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific method
 
 
 
-public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific property
 
@@ -380,9 +380,9 @@ Returns the annotations found in a specific property
 
 # Class **Phalcon\Annotations\Adapter\Xcache**
 
-*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+*extends* abstract class [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
-*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations_AdapterInterface)
+*implements* [Phalcon\Annotations\AdapterInterface](/3.4/en/api/Phalcon_Annotations)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/annotations/adapter/xcache.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -397,55 +397,55 @@ $annotations = new \Phalcon\Annotations\Adapter\Xcache();
 
 
 ## Methods
-public [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations_Reflection) **read** (*string* $key)
+public [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations) **read** (*string* $key)
 
 Reads parsed annotations from XCache
 
 
 
-public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations_Reflection) $data)
+public  **write** (*mixed* $key, [Phalcon\Annotations\Reflection](/3.4/en/api/Phalcon_Annotations) $data)
 
 Writes parsed annotations to XCache
 
 
 
-public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations_ReaderInterface) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations) $reader) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Sets the annotations parser
 
 
 
-public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getReader** () inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotation reader
 
 
 
-public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **get** (*string* | *object* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Parses or retrieves all the annotations found in a class
 
 
 
-public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethods** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getMethod** (*mixed* $className, *mixed* $methodName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific method
 
 
 
-public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperties** (*mixed* $className) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in all the class' methods
 
 
 
-public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations_Adapter)
+public  **getProperty** (*mixed* $className, *mixed* $propertyName) inherited from [Phalcon\Annotations\Adapter](/3.4/en/api/Phalcon_Annotations)
 
 Returns the annotations found in a specific property
 
@@ -460,7 +460,7 @@ Returns the annotations found in a specific property
 This interface must be implemented by adapters in Phalcon\Annotations
 
 ## Methods
-abstract public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations_ReaderInterface) $reader)
+abstract public  **setReader** ([Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations) $reader)
 
 Sets the annotations parser
 
@@ -611,7 +611,7 @@ Rewinds the internal iterator
 
 
 
-public [Phalcon\Annotations\Annotation](/3.4/en/api/Phalcon_Annotations_Annotation) **current** ()
+public [Phalcon\Annotations\Annotation](/3.4/en/api/Phalcon_Annotations) **current** ()
 
 Returns the current annotation in the iterator
 
@@ -779,7 +779,7 @@ protected static  **loadClass** (*mixed* $namespace, *mixed* $config) inherited 
 
 # Class **Phalcon\Annotations\Reader**
 
-*implements* [Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations_ReaderInterface)
+*implements* [Phalcon\Annotations\ReaderInterface](/3.4/en/api/Phalcon_Annotations)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/annotations/reader.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

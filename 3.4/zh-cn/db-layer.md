@@ -20,9 +20,9 @@ This component makes use of adapters to encapsulate specific database system det
 
 | 类                                                                         | 描述                                                                               |
 | ------------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
-| [Phalcon\Db\Adapter\Pdo\Mysql](api/Phalcon_Db_Adapter_Pdo_Mysql)      | 是世界上使用最多的关系数据库管理系统 (RDBMS)，作为提供多用户访问数量的数据库服务器运行                                  |
-| [Phalcon\Db\Adapter\Pdo\Mysql](api/Phalcon_Db_Adapter_Pdo_Postgresql) | PostgreSQL 是一个功能强大的开源关系型数据库系统。 它有超过 15 年的积极发展和行之有效的体系结构，它赢得了良好声誉的可靠性、 数据完整性和正确性。 |
-| [Phalcon\Db\Adapter\Pdo\Sqlite](api/Phalcon_Db_Adapter_Pdo_Sqlite)    | SQLite 是一个软件库，实现了一个自包含、 无服务器、 零配置、 事务性的 SQL 数据库引擎                                |
+| [Phalcon\Db\Adapter\Pdo\Mysql](api/Phalcon_Db)      | 是世界上使用最多的关系数据库管理系统 (RDBMS)，作为提供多用户访问数量的数据库服务器运行                                  |
+| [Phalcon\Db\Adapter\Pdo\Mysql](api/Phalcon_Db) | PostgreSQL 是一个功能强大的开源关系型数据库系统。 它有超过 15 年的积极发展和行之有效的体系结构，它赢得了良好声誉的可靠性、 数据完整性和正确性。 |
+| [Phalcon\Db\Adapter\Pdo\Sqlite](api/Phalcon_Db)    | SQLite 是一个软件库，实现了一个自包含、 无服务器、 零配置、 事务性的 SQL 数据库引擎                                |
 
 <a name='adapters-factory'></a>
 
@@ -53,7 +53,7 @@ $db = Factory::load($options);
 
 ### 实现自己的适配器
 
-The [Phalcon\Db\AdapterInterface](api/Phalcon_Db_AdapterInterface) interface must be implemented in order to create your own database adapters or extend the existing ones.
+The [Phalcon\Db\AdapterInterface](api/Phalcon_Db) interface must be implemented in order to create your own database adapters or extend the existing ones.
 
 <a name='dialects'></a>
 
@@ -63,15 +63,15 @@ Phalcon encapsulates the specific details of each database engine in dialects. T
 
 | 类                                                                     | 描述                        |
 | --------------------------------------------------------------------- | ------------------------- |
-| [Phalcon\Db\Dialect\Mysql](api/Phalcon_Db_Dialect_Mysql)           | SQL 特定方言为 MySQL 数据库系统的    |
-| [Phalcon\Db\Dialect\Postgresql](api/Phalcon_Db_Dialect_Postgresql) | SQL 特定方言 PostgreSQL 数据库系统 |
-| [Phalcon\Db\Dialect\Sqlite](api/Phalcon_Db_Dialect_Sqlite)         | SQLite 数据库系统的 SQL 特定方言    |
+| [Phalcon\Db\Dialect\Mysql](api/Phalcon_Db)           | SQL 特定方言为 MySQL 数据库系统的    |
+| [Phalcon\Db\Dialect\Postgresql](api/Phalcon_Db) | SQL 特定方言 PostgreSQL 数据库系统 |
+| [Phalcon\Db\Dialect\Sqlite](api/Phalcon_Db)         | SQLite 数据库系统的 SQL 特定方言    |
 
 <a name='dialects-custom'></a>
 
 ### Implementing your own dialects
 
-The [Phalcon\Db\DialectInterface](api/Phalcon_Db_DialectInterface) interface must be implemented in order to create your own database dialects or extend the existing ones. 您还可以通过添加 PHQL 将了解的更多命令/方法来增强当前语言。
+The [Phalcon\Db\DialectInterface](api/Phalcon_Db) interface must be implemented in order to create your own database dialects or extend the existing ones. 您还可以通过添加 PHQL 将了解的更多命令/方法来增强当前语言。
 
 For instance when using the MySQL adapter, you might want to allow PHQL to recognize the `MATCH ... AGAINST ...` syntax. We associate that syntax with `MATCH_AGAINST`
 
@@ -303,7 +303,7 @@ while ($robot = $result->fetch()) {
 }
 ```
 
-The `Phalcon\Db::query()` returns an instance of [Phalcon\Db\Result\Pdo](api/Phalcon_Db_Result_Pdo). 这些对象封装了所有与返回的结果集有关的功能函数，例如遍历、查找特定记录、计数等等。
+The `Phalcon\Db::query()` returns an instance of [Phalcon\Db\Result\Pdo](api/Phalcon_Db). 这些对象封装了所有与返回的结果集有关的功能函数，例如遍历、查找特定记录、计数等等。
 
 ```php
 <?php
@@ -797,9 +797,9 @@ $eventsManager->attach(
 
 ## 分析 SQL 语句
 
-[Phalcon\Db](api/Phalcon_Db) includes a profiling component called [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler), that is used to analyze the performance of database operations so as to diagnose performance problems and discover bottlenecks.
+[Phalcon\Db](api/Phalcon_Db) includes a profiling component called [Phalcon\Db\Profiler](api/Phalcon_Db), that is used to analyze the performance of database operations so as to diagnose performance problems and discover bottlenecks.
 
-Database profiling is really easy With [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler):
+Database profiling is really easy With [Phalcon\Db\Profiler](api/Phalcon_Db):
 
 ```php
 <?php
@@ -849,7 +849,7 @@ echo 'Final Time: ', $profile->getFinalTime(), "\n";
 echo 'Total Elapsed Time: ', $profile->getTotalElapsedSeconds(), "\n";
 ```
 
-You can also create your own profile class based on [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler) to record real time statistics of the statements sent to the database system:
+You can also create your own profile class based on [Phalcon\Db\Profiler](api/Phalcon_Db) to record real time statistics of the statements sent to the database system:
 
 ```php
 <?php
@@ -1054,11 +1054,11 @@ $connection->createTable(
 );
 ```
 
-`Phalcon\Db::createTable()` accepts an associative array describing the table. Columns are defined with the class [Phalcon\Db\Column](api/Phalcon_Db_Column). The table below shows the options available to define a column:
+`Phalcon\Db::createTable()` accepts an associative array describing the table. Columns are defined with the class [Phalcon\Db\Column](api/Phalcon_Db). The table below shows the options available to define a column:
 
 | Option     | Description                                                                                                                        |                                                                     可选                                                                     |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------- |:------------------------------------------------------------------------------------------------------------------------------------------:|
-| `type`     | Column type. Must be a [Phalcon\Db\Column](api/Phalcon_Db_Column) constant (see below for a list)                                |                                                                     No                                                                     |
+| `type`     | Column type. Must be a [Phalcon\Db\Column](api/Phalcon_Db) constant (see below for a list)                                |                                                                     No                                                                     |
 | `primary`  | True if the column is part of the table's primary key                                                                              |                                                                    Yes                                                                     |
 | `size`     | Some type of columns like `VARCHAR` or `INTEGER` may have a specific size                                                          |                                                                    Yes                                                                     |
 | `scale`    | `DECIMAL` 或 `NUMBER` 列可能有位数来指定应存储多少位小数                                                                                             |                                                                    Yes                                                                     |
@@ -1087,9 +1087,9 @@ The associative array passed in `Phalcon\Db::createTable()` can have the possibl
 
 | 索引           | Description                                                                                                                            | 可选  |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |:---:|
-| `columns`    | An array with a set of table columns defined with [Phalcon\Db\Column](api/Phalcon_Db_Column)                                         | No  |
-| `indexes`    | An array with a set of table indexes defined with [Phalcon\Db\Index](api/Phalcon_Db_Index)                                           | Yes |
-| `references` | An array with a set of table references (foreign keys) defined with [Phalcon\Db\Reference](api/Phalcon_Db_Reference)                 | Yes |
+| `columns`    | An array with a set of table columns defined with [Phalcon\Db\Column](api/Phalcon_Db)                                         | No  |
+| `indexes`    | An array with a set of table indexes defined with [Phalcon\Db\Index](api/Phalcon_Db)                                           | Yes |
+| `references` | An array with a set of table references (foreign keys) defined with [Phalcon\Db\Reference](api/Phalcon_Db)                 | Yes |
 | `options`    | An array with a set of table creation options. These options often relate to the database system in which the migration was generated. | Yes |
 
 <a name='tables-altering'></a>

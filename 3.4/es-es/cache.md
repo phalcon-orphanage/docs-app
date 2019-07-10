@@ -431,16 +431,16 @@ The available frontend adapters that are used as interfaces or input sources to 
 
 | Adapter                           | Description                                                                                                                                                    |
 |-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Phalcon\Cache\Frontend\Output](api/Phalcon_Cache_Frontend_Output)   | Read input data from standard PHP output.                                                                                                                      |
-| [Phalcon\Cache\Frontend\Data](api/Phalcon_Cache_Frontend_Data)     | It's used to cache any kind of PHP data (big arrays, objects, text, etc). Data is serialized before stored in the backend.                                     |
-| [Phalcon\Cache\Frontend\Base64](api/Phalcon_Cache_Frontend_Base64)   | It's used to cache binary data. The data is serialized using `base64_encode` before be stored in the backend.                                                  |
-| [Phalcon\Cache\Frontend\Json](api/Phalcon_Cache_Frontend_Json)     | Data is encoded in JSON before be stored in the backend. Decoded after be retrieved. This frontend is useful to share data with other languages or frameworks. |
-| [Phalcon\Cache\Frontend\Igbinary](api/Phalcon_Cache_Frontend_Igbinary) | It's used to cache any kind of PHP data (big arrays, objects, text, etc). Data is serialized using `Igbinary` before be stored in the backend.                 |
-| [Phalcon\Cache\Frontend\None](api/Phalcon_Cache_Frontend_None)     | It's used to cache any kind of PHP data without serializing them.                                                                                              |
+| [Phalcon\Cache\Frontend\Output](api/Phalcon_Cache)   | Read input data from standard PHP output.                                                                                                                      |
+| [Phalcon\Cache\Frontend\Data](api/api/Phalcon_Cache)     | It's used to cache any kind of PHP data (big arrays, objects, text, etc). Data is serialized before stored in the backend.                                     |
+| [Phalcon\Cache\Frontend\Base64](api/api/Phalcon_Cache)   | It's used to cache binary data. The data is serialized using `base64_encode` before be stored in the backend.                                                  |
+| [Phalcon\Cache\Frontend\Json](api/Phalcon_Cache)     | Data is encoded in JSON before be stored in the backend. Decoded after be retrieved. This frontend is useful to share data with other languages or frameworks. |
+| [Phalcon\Cache\Frontend\Igbinary](api/Phalcon_Cache) | It's used to cache any kind of PHP data (big arrays, objects, text, etc). Data is serialized using `Igbinary` before be stored in the backend.                 |
+| [Phalcon\Cache\Frontend\None](api/Phalcon_Cache)     | It's used to cache any kind of PHP data without serializing them.                                                                                              |
 
 <a name='adapters-frontend-custom'></a>
 ### Implementing your own Frontend adapters
-The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface) interface must be implemented in order to create your own frontend adapters or extend the existing ones.
+The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache) interface must be implemented in order to create your own frontend adapters or extend the existing ones.
 
 <a name='adapters-backend'></a>
 ## Backend Adapters
@@ -448,15 +448,15 @@ The backend adapters available to store cache data are:
 
 | Adapter                              | Description                                          | Info                                      | Required Extensions                                |
 |--------------------------------------|------------------------------------------------      |-------------------------------------------|----------------------------------------------------|
-| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache_Backend_Apc)          | Stores data to the Alternative PHP Cache (APC).      | [APC](http://php.net/apc)                 | [APC](http://pecl.php.net/package/APC)             |
+| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache)          | Stores data to the Alternative PHP Cache (APC).      | [APC](http://php.net/apc)                 | [APC](http://pecl.php.net/package/APC)             |
 | `Phalcon\Cache\Backend\Apcu`         | Stores data to the APCu (APC without opcode caching) | [APCu](http://php.net/apcu)               | [APCu](http://pecl.php.net/package/APCu)           |
-| [Phalcon\Cache\Backend\File](api/Phalcon_Cache_Backend_File)         | Stores data to local plain files.                    |                                           |                                                    |
-| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache_Backend_Libmemcached) | Stores data to a memcached server.                   | [Memcached](http://www.php.net/memcached) | [Memcached](http://pecl.php.net/package/memcached) |
-| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache_Backend_Memcache)     | Stores data to a memcached server.                   | [Memcache](http://www.php.net/memcache)   | [Memcache](http://pecl.php.net/package/memcache)   |
-| [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache_Backend_Memory)       | Stores data in memory                                |                                           |                                                    |
-| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache_Backend_Mongo)        | Stores data to Mongo Database.                       | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
-| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache_Backend_Redis)        | Stores data in Redis.                                | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
-| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache_Backend_Xcache)       | Stores data in XCache.                               | [XCache](http://xcache.lighttpd.net/)     | [XCache](http://pecl.php.net/package/xcache)       |
+| [Phalcon\Cache\Backend\File](api/Phalcon_Cache)         | Stores data to local plain files.                    |                                           |                                                    |
+| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache) | Stores data to a memcached server.                   | [Memcached](http://www.php.net/memcached) | [Memcached](http://pecl.php.net/package/memcached) |
+| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache)     | Stores data to a memcached server.                   | [Memcache](http://www.php.net/memcache)   | [Memcache](http://pecl.php.net/package/memcache)   |
+| [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache)       | Stores data in memory                                |                                           |                                                    |
+| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache)        | Stores data to Mongo Database.                       | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
+| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache)        | Stores data in Redis.                                | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
+| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache)       | Stores data in XCache.                               | [XCache](http://xcache.lighttpd.net/)     | [XCache](http://pecl.php.net/package/xcache)       |
 
 ##### <strong>NOTE</strong> In PHP 7 to use phalcon <code>apc</code> based adapter classes you needed to install <code>apcu</code> and <code>apcu_bc</code> package from pecl. Now in Phalcon 3.4.0 you can switch your <code>*\Apc</code> classes to <code>*\Apcu</code> and remove <code>apcu_bc</code>. Keep in mind that in Phalcon 4 we will most likely remove all `*\Apc` classes. ##### {.alert .alert-warning}
 
@@ -480,7 +480,7 @@ $backendCache = Factory::load($options);
 
 <a name='adapters-backend-custom'></a>
 ### Implementing your own Backend adapters
-The [Phalcon\Cache\BackendInterface](api/Phalcon_Cache_BackendInterface) interface must be implemented in order to create your own backend adapters or extend the existing ones.
+The [Phalcon\Cache\BackendInterface](api/Phalcon_Cache) interface must be implemented in order to create your own backend adapters or extend the existing ones.
 
 <a name='adapters-backend-file'></a>
 ### File Backend Options

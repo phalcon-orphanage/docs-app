@@ -1336,7 +1336,7 @@ class Robots extends Model
 }
 ```
 
-<h5 class='alert alert-warning'>Never use a <a href="api/Phalcon_Db_RawValue">Phalcon\Db\RawValue</a> to assign external data (such as user input) or variable data. The value of these fields is ignored when binding parameters to the query. So it could be used to attack the application injecting SQL. </h5>
+<h5 class='alert alert-warning'>Never use a <a href="api/Phalcon_Db">Phalcon\Db\RawValue</a> to assign external data (such as user input) or variable data. The value of these fields is ignored when binding parameters to the query. So it could be used to attack the application injecting SQL. </h5>
 
 <a name='dynamic-updates'></a>
 

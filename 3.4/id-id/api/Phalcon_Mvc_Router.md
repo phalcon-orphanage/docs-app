@@ -402,13 +402,13 @@ Produce the routing parameters from the rewrite information
 
 
 
-public  **processControllerAnnotation** (*mixed* $handler, [Phalcon\Annotations\Annotation](/3.4/en/api/Phalcon_Annotations_Annotation) $annotation)
+public  **processControllerAnnotation** (*mixed* $handler, [Phalcon\Annotations\Annotation](/3.4/en/api/Phalcon_Annotations) $annotation)
 
 Checks for annotations in the controller docblock
 
 
 
-public  **processActionAnnotation** (*mixed* $module, *mixed* $namespaceName, *mixed* $controller, *mixed* $action, [Phalcon\Annotations\Annotation](/3.4/en/api/Phalcon_Annotations_Annotation) $annotation)
+public  **processActionAnnotation** (*mixed* $module, *mixed* $namespaceName, *mixed* $controller, *mixed* $action, [Phalcon\Annotations\Annotation](/3.4/en/api/Phalcon_Annotations) $annotation)
 
 Checks for annotations in the public methods of the controller
 

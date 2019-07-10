@@ -162,7 +162,7 @@ foreach ($annotations as $annotation) {
 
 注释的阅读过程是非常快的，然而，出于性能原因，建议使用适配器，存储已解析的注释。 适配器缓存已经处理的注释，避免再次解析需要的注释。
 
-[Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations_Adapter_Memory) was used in the above example. 此适配器只缓存当请求正在运行时的注释，为此该适配器是更适合开发。 当应用程序在生产阶段时，有其他适配器换出。
+[Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations) was used in the above example. 此适配器只缓存当请求正在运行时的注释，为此该适配器是更适合开发。 当应用程序在生产阶段时，有其他适配器换出。
 
 <a name='types'></a>
 
@@ -416,16 +416,16 @@ class SecurityAnnotationsPlugin extends Plugin
 
 | 类                                                                               | 描述                                                                                                                                                                                |
 | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations_Adapter_Memory) | The annotations are cached only in memory. When the request ends the cache is cleaned reloading the annotations in each request. This adapter is suitable for a development stage |
-| [Phalcon\Annotations\Adapter\Files](api/Phalcon_Annotations_Adapter_Files)   | Parsed and processed annotations are stored permanently in PHP files improving performance. This adapter must be used together with a bytecode cache.                             |
-| [Phalcon\Annotations\Adapter\Apc](api/Phalcon_Annotations_Adapter_Apc)       | Parsed and processed annotations are stored permanently in the APC cache improving performance. This is the faster adapter                                                        |
-| [Phalcon\Annotations\Adapter\Xcache](api/Phalcon_Annotations_Adapter_Xcache) | Parsed and processed annotations are stored permanently in the XCache cache improving performance. This is a fast adapter too                                                     |
+| [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations) | The annotations are cached only in memory. When the request ends the cache is cleaned reloading the annotations in each request. This adapter is suitable for a development stage |
+| [Phalcon\Annotations\Adapter\Files](api/Phalcon_Annotations)   | Parsed and processed annotations are stored permanently in PHP files improving performance. This adapter must be used together with a bytecode cache.                             |
+| [Phalcon\Annotations\Adapter\Apc](api/Phalcon_Annotations)       | Parsed and processed annotations are stored permanently in the APC cache improving performance. This is the faster adapter                                                        |
+| [Phalcon\Annotations\Adapter\Xcache](api/Phalcon_Annotations) | Parsed and processed annotations are stored permanently in the XCache cache improving performance. This is a fast adapter too                                                     |
 
 <a name='adapters-custom'></a>
 
 ### 执行您自己的适配器
 
-The [Phalcon\Annotations\AdapterInterface](api/Phalcon_Annotations_AdapterInterface) interface must be implemented in order to create your own annotations adapters or extend the existing ones.
+The [Phalcon\Annotations\AdapterInterface](api/Phalcon_Annotations) interface must be implemented in order to create your own annotations adapters or extend the existing ones.
 
 <a name='resources'></a>
 

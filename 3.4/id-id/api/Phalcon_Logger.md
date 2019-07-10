@@ -36,7 +36,7 @@ title: 'Phalcon\Logger'
 
 # Abstract class **Phalcon\Logger\Adapter**
 
-*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger_AdapterInterface)
+*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/adapter.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -56,7 +56,7 @@ Returns the current log level
 
 
 
-public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface) $formatter)
+public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger) $formatter)
 
 Sets the message formatter
 
@@ -140,12 +140,12 @@ Logs messages to the internal logger. Appends logs to the logger
 
 
 
-abstract public  **getFormatter** () inherited from [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger_AdapterInterface)
+abstract public  **getFormatter** () inherited from [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger)
 
 ...
 
 
-abstract public  **close** () inherited from [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger_AdapterInterface)
+abstract public  **close** () inherited from [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger)
 
 ...
 
@@ -155,9 +155,9 @@ abstract public  **close** () inherited from [Phalcon\Logger\AdapterInterface](/
 
 # Class **Phalcon\Logger\Adapter\File**
 
-*extends* abstract class [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+*extends* abstract class [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
-*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger_AdapterInterface)
+*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/adapter/file.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -214,97 +214,97 @@ Opens the internal file handler after unserialization
 
 
 
-public  **setLogLevel** (*mixed* $level) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **setLogLevel** (*mixed* $level) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Filters the logs sent to the handlers that are less or equal than a specific level
 
 
 
-public  **getLogLevel** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **getLogLevel** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Returns the current log level
 
 
 
-public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface) $formatter) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger) $formatter) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sets the message formatter
 
 
 
-public  **begin** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **begin** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Starts a transaction
 
 
 
-public  **commit** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **commit** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Commits the internal transaction
 
 
 
-public  **rollback** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **rollback** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Rollbacks the internal transaction
 
 
 
-public  **isTransaction** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **isTransaction** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Returns the whether the logger is currently in an active transaction or not
 
 
 
-public  **critical** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **critical** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a critical message to the log
 
 
 
-public  **emergency** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **emergency** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an emergency message to the log
 
 
 
-public  **debug** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **debug** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a debug message to the log
 
 
 
-public  **error** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **error** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an error message to the log
 
 
 
-public  **info** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **info** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an info message to the log
 
 
 
-public  **notice** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **notice** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a notice message to the log
 
 
 
-public  **warning** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **warning** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a warning message to the log
 
 
 
-public  **alert** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **alert** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an alert message to the log
 
 
 
-public  **log** (*mixed* $type, [*mixed* $message], [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **log** (*mixed* $type, [*mixed* $message], [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Logs messages to the internal logger. Appends logs to the logger
 
@@ -315,9 +315,9 @@ Logs messages to the internal logger. Appends logs to the logger
 
 # Class **Phalcon\Logger\Adapter\Firephp**
 
-*extends* abstract class [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+*extends* abstract class [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
-*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger_AdapterInterface)
+*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/adapter/firephp.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -356,97 +356,97 @@ Closes the logger
 
 
 
-public  **setLogLevel** (*mixed* $level) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **setLogLevel** (*mixed* $level) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Filters the logs sent to the handlers that are less or equal than a specific level
 
 
 
-public  **getLogLevel** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **getLogLevel** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Returns the current log level
 
 
 
-public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface) $formatter) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger) $formatter) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sets the message formatter
 
 
 
-public  **begin** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **begin** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Starts a transaction
 
 
 
-public  **commit** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **commit** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Commits the internal transaction
 
 
 
-public  **rollback** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **rollback** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Rollbacks the internal transaction
 
 
 
-public  **isTransaction** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **isTransaction** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Returns the whether the logger is currently in an active transaction or not
 
 
 
-public  **critical** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **critical** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a critical message to the log
 
 
 
-public  **emergency** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **emergency** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an emergency message to the log
 
 
 
-public  **debug** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **debug** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a debug message to the log
 
 
 
-public  **error** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **error** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an error message to the log
 
 
 
-public  **info** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **info** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an info message to the log
 
 
 
-public  **notice** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **notice** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a notice message to the log
 
 
 
-public  **warning** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **warning** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a warning message to the log
 
 
 
-public  **alert** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **alert** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an alert message to the log
 
 
 
-public  **log** (*mixed* $type, [*mixed* $message], [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **log** (*mixed* $type, [*mixed* $message], [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Logs messages to the internal logger. Appends logs to the logger
 
@@ -457,9 +457,9 @@ Logs messages to the internal logger. Appends logs to the logger
 
 # Class **Phalcon\Logger\Adapter\Stream**
 
-*extends* abstract class [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+*extends* abstract class [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
-*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger_AdapterInterface)
+*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/adapter/stream.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -505,97 +505,97 @@ Closes the logger
 
 
 
-public  **setLogLevel** (*mixed* $level) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **setLogLevel** (*mixed* $level) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Filters the logs sent to the handlers that are less or equal than a specific level
 
 
 
-public  **getLogLevel** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **getLogLevel** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Returns the current log level
 
 
 
-public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface) $formatter) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger) $formatter) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sets the message formatter
 
 
 
-public  **begin** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **begin** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Starts a transaction
 
 
 
-public  **commit** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **commit** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Commits the internal transaction
 
 
 
-public  **rollback** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **rollback** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Rollbacks the internal transaction
 
 
 
-public  **isTransaction** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **isTransaction** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Returns the whether the logger is currently in an active transaction or not
 
 
 
-public  **critical** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **critical** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a critical message to the log
 
 
 
-public  **emergency** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **emergency** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an emergency message to the log
 
 
 
-public  **debug** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **debug** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a debug message to the log
 
 
 
-public  **error** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **error** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an error message to the log
 
 
 
-public  **info** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **info** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an info message to the log
 
 
 
-public  **notice** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **notice** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a notice message to the log
 
 
 
-public  **warning** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **warning** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a warning message to the log
 
 
 
-public  **alert** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **alert** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an alert message to the log
 
 
 
-public  **log** (*mixed* $type, [*mixed* $message], [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **log** (*mixed* $type, [*mixed* $message], [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Logs messages to the internal logger. Appends logs to the logger
 
@@ -606,9 +606,9 @@ Logs messages to the internal logger. Appends logs to the logger
 
 # Class **Phalcon\Logger\Adapter\Syslog**
 
-*extends* abstract class [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+*extends* abstract class [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
-*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger_AdapterInterface)
+*implements* [Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/adapter/syslog.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -661,97 +661,97 @@ Closes the logger
 
 
 
-public  **setLogLevel** (*mixed* $level) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **setLogLevel** (*mixed* $level) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Filters the logs sent to the handlers that are less or equal than a specific level
 
 
 
-public  **getLogLevel** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **getLogLevel** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Returns the current log level
 
 
 
-public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface) $formatter) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger) $formatter) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sets the message formatter
 
 
 
-public  **begin** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **begin** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Starts a transaction
 
 
 
-public  **commit** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **commit** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Commits the internal transaction
 
 
 
-public  **rollback** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **rollback** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Rollbacks the internal transaction
 
 
 
-public  **isTransaction** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **isTransaction** () inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Returns the whether the logger is currently in an active transaction or not
 
 
 
-public  **critical** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **critical** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a critical message to the log
 
 
 
-public  **emergency** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **emergency** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an emergency message to the log
 
 
 
-public  **debug** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **debug** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a debug message to the log
 
 
 
-public  **error** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **error** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an error message to the log
 
 
 
-public  **info** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **info** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an info message to the log
 
 
 
-public  **notice** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **notice** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a notice message to the log
 
 
 
-public  **warning** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **warning** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes a warning message to the log
 
 
 
-public  **alert** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **alert** (*mixed* $message, [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Sends/Writes an alert message to the log
 
 
 
-public  **log** (*mixed* $type, [*mixed* $message], [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger_Adapter)
+public  **log** (*mixed* $type, [*mixed* $message], [*array* $context]) inherited from [Phalcon\Logger\Adapter](/3.4/en/api/Phalcon_Logger)
 
 Logs messages to the internal logger. Appends logs to the logger
 
@@ -765,7 +765,7 @@ Logs messages to the internal logger. Appends logs to the logger
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/adapterinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-abstract public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface) $formatter)
+abstract public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger) $formatter)
 
 ...
 
@@ -966,7 +966,7 @@ protected static  **loadClass** (*mixed* $namespace, *mixed* $config)
 
 # Abstract class **Phalcon\Logger\Formatter**
 
-*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface)
+*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/formatter.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -986,7 +986,7 @@ Interpolates context values into the message placeholders
 
 
 
-abstract public  **format** (*mixed* $message, *mixed* $type, *mixed* $timestamp, [*mixed* $context]) inherited from [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface)
+abstract public  **format** (*mixed* $message, *mixed* $type, *mixed* $timestamp, [*mixed* $context]) inherited from [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger)
 
 ...
 
@@ -996,9 +996,9 @@ abstract public  **format** (*mixed* $message, *mixed* $type, *mixed* $timestamp
 
 # Class **Phalcon\Logger\Formatter\Firephp**
 
-*extends* abstract class [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+*extends* abstract class [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
-*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface)
+*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/formatter/firephp.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1042,7 +1042,7 @@ Applies a format to a message before sending it to the log
 
 
 
-public  **interpolate** (*string* $message, [*array* $context]) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+public  **interpolate** (*string* $message, [*array* $context]) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
 Interpolates context values into the message placeholders
 
@@ -1053,9 +1053,9 @@ Interpolates context values into the message placeholders
 
 # Class **Phalcon\Logger\Formatter\Json**
 
-*extends* abstract class [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+*extends* abstract class [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
-*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface)
+*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/formatter/json.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1069,13 +1069,13 @@ Applies a format to a message before sent it to the internal log
 
 
 
-public  **getTypeString** (*mixed* $type) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+public  **getTypeString** (*mixed* $type) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
 Returns the string meaning of a logger constant
 
 
 
-public  **interpolate** (*string* $message, [*array* $context]) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+public  **interpolate** (*string* $message, [*array* $context]) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
 Interpolates context values into the message placeholders
 
@@ -1086,9 +1086,9 @@ Interpolates context values into the message placeholders
 
 # Class **Phalcon\Logger\Formatter\Line**
 
-*extends* abstract class [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+*extends* abstract class [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
-*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface)
+*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/formatter/line.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1132,13 +1132,13 @@ Applies a format to a message before sent it to the internal log
 
 
 
-public  **getTypeString** (*mixed* $type) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+public  **getTypeString** (*mixed* $type) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
 Returns the string meaning of a logger constant
 
 
 
-public  **interpolate** (*string* $message, [*array* $context]) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+public  **interpolate** (*string* $message, [*array* $context]) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
 Interpolates context values into the message placeholders
 
@@ -1149,9 +1149,9 @@ Interpolates context values into the message placeholders
 
 # Class **Phalcon\Logger\Formatter\Syslog**
 
-*extends* abstract class [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+*extends* abstract class [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
-*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface)
+*implements* [Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/logger/formatter/syslog.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1165,13 +1165,13 @@ Applies a format to a message before sent it to the internal log
 
 
 
-public  **getTypeString** (*mixed* $type) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+public  **getTypeString** (*mixed* $type) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
 Returns the string meaning of a logger constant
 
 
 
-public  **interpolate** (*string* $message, [*array* $context]) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger_Formatter)
+public  **interpolate** (*string* $message, [*array* $context]) inherited from [Phalcon\Logger\Formatter](/3.4/en/api/Phalcon_Logger)
 
 Interpolates context values into the message placeholders
 
@@ -1256,13 +1256,13 @@ public  **getLogLevel** ()
 ...
 
 
-public  **push** ([Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger_AdapterInterface) $logger)
+public  **push** ([Phalcon\Logger\AdapterInterface](/3.4/en/api/Phalcon_Logger) $logger)
 
 Pushes a logger to the logger tail
 
 
 
-public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger_FormatterInterface) $formatter)
+public  **setFormatter** ([Phalcon\Logger\FormatterInterface](/3.4/en/api/Phalcon_Logger) $formatter)
 
 Sets a global formatter
 

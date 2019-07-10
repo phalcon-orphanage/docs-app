@@ -336,7 +336,7 @@ Loads registered template engines, if none is registered it will use Phalcon\Mvc
 
 
 
-protected  **_engineRender** (*array* $engines, *string* $viewPath, *boolean* $silence, *boolean* $mustClean, [[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache_BackendInterface) $cache])
+protected  **_engineRender** (*array* $engines, *string* $viewPath, *boolean* $silence, *boolean* $mustClean, [[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache) $cache])
 
 Checks whether view exists on registered extensions and render it
 

@@ -6,7 +6,7 @@ title: 'Phalcon\Forms\Element'
 ---
 # Abstract class **Phalcon\Forms\Element**
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -20,7 +20,7 @@ Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form)
 
 Sets the parent form to the element
 
@@ -44,7 +44,7 @@ Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters)
 
 Sets the element filters
 
@@ -62,7 +62,7 @@ Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge])
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge])
 
 Adds a group of validators
 
@@ -87,7 +87,7 @@ according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value)
 
 Sets a default attribute for the element
 
@@ -111,7 +111,7 @@ Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value)
 
 Sets an option for the element
 
@@ -153,7 +153,7 @@ Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
@@ -209,7 +209,7 @@ Magic method __toString renders the widget without attributes
 
 
 
-abstract public  **render** ([*mixed* $attributes]) inherited from [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+abstract public  **render** ([*mixed* $attributes]) inherited from [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 ...
 
@@ -219,9 +219,9 @@ abstract public  **render** ([*mixed* $attributes]) inherited from [Phalcon\Form
 
 # Class **Phalcon\Forms\Element\Check**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/check.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -235,196 +235,196 @@ Renders the element widget returning html
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -435,9 +435,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\Date**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/date.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -451,196 +451,196 @@ Renders the element widget returning html
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -651,9 +651,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\Email**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/email.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -667,196 +667,196 @@ Renders the element widget returning html
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -867,9 +867,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\File**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/file.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -883,196 +883,196 @@ Renders the element widget returning html
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -1083,9 +1083,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\Hidden**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/hidden.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1099,196 +1099,196 @@ Renders the element widget returning html
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -1299,9 +1299,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\Numeric**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/numeric.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1315,196 +1315,196 @@ Renders the element widget returning html
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -1515,9 +1515,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\Password**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/password.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1531,196 +1531,196 @@ Renders the element widget returning html
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -1731,9 +1731,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\Radio**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/radio.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1747,196 +1747,196 @@ Renders the element widget returning html
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -1947,9 +1947,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\Select**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/select.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1963,7 +1963,7 @@ Phalcon\Forms\Element constructor
 
 
 
-public [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element) **setOptions** (*array* | *object* $options)
+public [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms) **setOptions** (*array* | *object* $options)
 
 Set the choice's options
 
@@ -1987,190 +1987,190 @@ Renders the element widget returning html
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -2181,9 +2181,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\Submit**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/submit.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2197,196 +2197,196 @@ Renders the element widget
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -2397,9 +2397,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\Text**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/text.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2413,196 +2413,196 @@ Renders the element widget
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -2613,9 +2613,9 @@ Magic method __toString renders the widget without attributes
 
 # Class **Phalcon\Forms\Element\TextArea**
 
-*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+*extends* abstract class [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
-*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface)
+*implements* [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/element/textarea.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2629,196 +2629,196 @@ Renders the element widget
 
 
 
-public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__construct** (*string* $name, [*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Phalcon\Forms\Element constructor
 
 
 
-public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the parent form to the element
 
 
 
-public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getForm** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the parent form to the element
 
 
 
-public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setName** (*mixed* $name) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element name
 
 
 
-public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getName** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element name
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setFilters** (*array* | *string* $filters) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element filters
 
 
 
-public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addFilter** (*mixed* $filter) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a filter to current list of filters
 
 
 
-public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getFilters** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element filters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **addValidators** (*array* $validators, [*mixed* $merge]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
 
 
-public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValidators** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the validators registered for the element
 
 
 
-public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **prepareAttributes** ([*array* $attributes], [*mixed* $useChecked]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns an array of prepared attributes for Phalcon\Tag helpers
 according to the element parameters
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setAttribute** (*string* $attribute, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default attribute for the element
 
 
 
-public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getAttribute** (*string* $attribute, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an attribute if present
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets default attributes for the element
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getAttributes** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default attributes for the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setUserOption** (*string* $option, *mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets an option for the element
 
 
 
-public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public *mixed* **getUserOption** (*string* $option, [*mixed* $defaultValue]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the value of an option if present
 
 
 
-public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setUserOptions** (*array* $options) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets options for the element
 
 
 
-public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getUserOptions** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the options for the element
 
 
 
-public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setLabel** (*mixed* $label) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the element label
 
 
 
-public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getLabel** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element label
 
 
 
-public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **label** ([*array* $attributes]) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Generate the HTML to label the element
 
 
 
-public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public [Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) **setDefault** (*mixed* $value) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets a default value in case the form does not use an entity
 or there is no value available for the element in _POST
 
 
 
-public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getDefault** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the default value assigned to the element
 
 
 
-public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getValue** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the element value
 
 
 
-public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **getMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Returns the messages that belongs to the element
 The element needs to be attached to a form
 
 
 
-public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **hasMessages** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
 
 
-public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **clear** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Clears every element in the form to its default value
 
 
 
-public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms_Element)
+public  **__toString** () inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Magic method __toString renders the widget without attributes
 
@@ -2832,7 +2832,7 @@ Magic method __toString renders the widget without attributes
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/elementinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-abstract public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form)
+abstract public  **setForm** ([Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form)
 
 ...
 
@@ -3179,7 +3179,7 @@ Check if messages were generated for a specific element
 
 
 
-public  **add** ([Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms_ElementInterface) $element, [*mixed* $position], [*mixed* $type])
+public  **add** ([Phalcon\Forms\ElementInterface](/3.4/en/api/Phalcon_Forms) $element, [*mixed* $position], [*mixed* $type])
 
 Adds an element to the form
 
@@ -3328,7 +3328,7 @@ Checks if a form is registered in the forms manager
 
 
 
-public  **set** (*mixed* $name, [Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms_Form) $form)
+public  **set** (*mixed* $name, [Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form)
 
 Registers a form in the Forms Manager
 

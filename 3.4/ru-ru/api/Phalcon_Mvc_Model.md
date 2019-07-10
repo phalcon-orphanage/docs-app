@@ -406,7 +406,7 @@ Create a criteria for a specific model
 
 
 
-protected *boolean* **_exists** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db_AdapterInterface) $connection, [*string* | *array* $table])
+protected *boolean* **_exists** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, [*string* | *array* $table])
 
 Checks whether the current record already exists
 
@@ -740,25 +740,25 @@ Executes internal events after save a record
 
 
 
-protected *boolean* **_doLowInsert** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db_AdapterInterface) $connection, *string* | *array* $table, *boolean* | *string* $identityField)
+protected *boolean* **_doLowInsert** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, *string* | *array* $table, *boolean* | *string* $identityField)
 
 Sends a pre-build INSERT SQL statement to the relational database system
 
 
 
-protected *boolean* **_doLowUpdate** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db_AdapterInterface) $connection, *string* | *array* $table)
+protected *boolean* **_doLowUpdate** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, *string* | *array* $table)
 
 Sends a pre-build UPDATE SQL statement to the relational database system
 
 
 
-protected *boolean* **_preSaveRelatedRecords** ([Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db_AdapterInterface) $connection, [Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $related)
+protected *boolean* **_preSaveRelatedRecords** ([Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, [Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $related)
 
 Saves related records that must be stored prior to save the master record
 
 
 
-protected *boolean* **_postSaveRelatedRecords** ([Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db_AdapterInterface) $connection, [Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $related)
+protected *boolean* **_postSaveRelatedRecords** ([Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, [Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $related)
 
 Save the related records assigned in the has-one/has-many relations
 

@@ -156,11 +156,11 @@ The class is called `ProductsMigration_100`. Suffix 100 refers to the version 1.
 
 ### Определение столбцов
 
-[Phalcon\Db\Column](api/Phalcon_Db_Column) is used to define table columns. It encapsulates a wide variety of column related features. Its constructor receives as first parameter the column name and an array describing the column. The following options are available when describing columns:
+[Phalcon\Db\Column](api/Phalcon_Db) is used to define table columns. It encapsulates a wide variety of column related features. Its constructor receives as first parameter the column name and an array describing the column. The following options are available when describing columns:
 
 | Свойство        | Описание                                                                                                                                   | Опционально |
 | --------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |:-----------:|
-| `type`          | Column type. Must be a [Phalcon\Db\Column](api/Phalcon_Db_Column) constant (see below)                                                   |     Нет     |
+| `type`          | Column type. Must be a [Phalcon\Db\Column](api/Phalcon_Db) constant (see below)                                                   |     Нет     |
 | `size`          | Some type of columns like VARCHAR or INTEGER may have a specific size                                                                      |     Да      |
 | `scale`         | DECIMAL or NUMBER columns may be have a scale to specify how much decimals it must store                                                   |     Да      |
 | `unsigned`      | INTEGER columns may be signed or unsigned. This option does not apply to other types of columns                                            |     Да      |
@@ -195,13 +195,13 @@ The class is called `ProductsMigration_100`. Suffix 100 refers to the version 1.
 
 ### Определение Индексов
 
-[Phalcon\Db\Index](api/Phalcon_Db_Index) defines table indexes. An index only requires that you define a name for it and a list of its columns. Note that if any index has the name PRIMARY, Phalcon will create a primary key index for that table.
+[Phalcon\Db\Index](api/Phalcon_Db) defines table indexes. An index only requires that you define a name for it and a list of its columns. Note that if any index has the name PRIMARY, Phalcon will create a primary key index for that table.
 
 <a name='class-anatomy-references'></a>
 
 ### Определение Связей
 
-[Phalcon\Db\Reference](api/Phalcon_Db_Reference) defines table references (also called foreign keys). The following options can be used to define a reference:
+[Phalcon\Db\Reference](api/Phalcon_Db) defines table references (also called foreign keys). The following options can be used to define a reference:
 
 | Параметр            | Описание                                                                                            | Опционально | Реализовано в    |
 | ------------------- | --------------------------------------------------------------------------------------------------- |:-----------:| ---------------- |

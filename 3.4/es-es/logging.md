@@ -13,9 +13,9 @@ This component makes use of adapters to store the logged messages. The use of ad
 
 | Adapter                          | Description               |
 |----------------------------------|---------------------------|
-| [Phalcon\Logger\Adapter\File](api/Phalcon_Logger_Adapter_File)    | Logs to a plain text file |
-| [Phalcon\Logger\Adapter\Stream](api/Phalcon_Logger_Adapter_Stream)  | Logs to a PHP Streams     |
-| [Phalcon\Logger\Adapter\Syslog](api/Phalcon_Logger_Adapter_Syslog)  | Logs to the system logger |
+| [Phalcon\Logger\Adapter\File](api/Phalcon_Logger)    | Logs to a plain text file |
+| [Phalcon\Logger\Adapter\Stream](api/Phalcon_Logger)  | Logs to a PHP Streams     |
+| [Phalcon\Logger\Adapter\Syslog](api/Phalcon_Logger)  | Logs to the system logger |
 | `Phalcon\Logger\Adapter\FirePHP` | Logs to the FirePHP       |
 
 <a name='adapters-factory'></a>
@@ -209,10 +209,10 @@ This component makes use of `formatters` to format messages before sending them 
 
 | Adapter                            | Description                                              |
 |------------------------------------|----------------------------------------------------------|
-| [Phalcon\Logger\Formatter\Line](api/Phalcon_Logger_Formatter_Line)    | Formats the messages using a one-line string             |
-| [Phalcon\Logger\Formatter\Firephp](api/Phalcon_Logger_Formatter_Firephp) | Formats the messages so that they can be sent to FirePHP |
-| [Phalcon\Logger\Formatter\Json](api/Phalcon_Logger_Formatter_Json)    | Prepares a message to be encoded with JSON               |
-| [Phalcon\Logger\Formatter\Syslog](api/Phalcon_Logger_Formatter_Syslog)  | Prepares a message to be sent to syslog                  |
+| [Phalcon\Logger\Formatter\Line](api/Phalcon_Logger)    | Formats the messages using a one-line string             |
+| [Phalcon\Logger\Formatter\Firephp](api/Phalcon_Logger) | Formats the messages so that they can be sent to FirePHP |
+| [Phalcon\Logger\Formatter\Json](api/Phalcon_Logger)    | Prepares a message to be encoded with JSON               |
+| [Phalcon\Logger\Formatter\Syslog](api/Phalcon_Logger)  | Prepares a message to be sent to syslog                  |
 
 <a name='message-formatting-line'></a>
 ### Line Formatter
@@ -245,7 +245,7 @@ $logger->setFormatter($formatter);
 
 <a name='message-formatting-custom'></a>
 ### Implementing your own formatters
-The [Phalcon\Logger\FormatterInterface](api/Phalcon_Logger_FormatterInterface) interface must be implemented in order to create your own logger formatter or extend the existing ones.
+The [Phalcon\Logger\FormatterInterface](api/Phalcon_Logger) interface must be implemented in order to create your own logger formatter or extend the existing ones.
 
 <a name='usage'></a>
 ## Adapters
@@ -335,4 +335,4 @@ $logger->error(
 
 <a name='usage-custom'></a>
 ### Implementing your own adapters
-The [Phalcon\Logger\AdapterInterface](api/Phalcon_Logger_AdapterInterface) interface must be implemented in order to create your own logger adapters or extend the existing ones.
+The [Phalcon\Logger\AdapterInterface](api/Phalcon_Logger) interface must be implemented in order to create your own logger adapters or extend the existing ones.

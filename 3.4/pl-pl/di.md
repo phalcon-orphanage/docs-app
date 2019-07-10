@@ -1240,7 +1240,7 @@ Although you can register services with the names you want, Phalcon has a severa
 | Service Name       | Description                           | Domyślne                                                                               | Współdzielone |
 | ------------------ | ------------------------------------- | -------------------------------------------------------------------------------------- |:-------------:|
 | assets             | Assets Manager                        | [Phalcon\Assets\Manager](api/Phalcon_Assets_Manager)                                 |      Tak      |
-| annotations        | Annotations Parser                    | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations_Adapter_Memory)        |      Tak      |
+| annotations        | Annotations Parser                    | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations)        |      Tak      |
 | cookies            | HTTP Cookies Management Service       | [Phalcon\Http\Response\Cookies](api/Phalcon_Http_Response_Cookies)                  |      Tak      |
 | crypt              | Encrypt/Decrypt data                  | [Phalcon\Crypt](api/Phalcon_Crypt)                                                    |      Tak      |
 | db                 | Low-Level Database Connection Service | [Phalcon\Db](api/Phalcon_Db)                                                          |      Tak      |

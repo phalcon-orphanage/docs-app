@@ -63,7 +63,7 @@ while ($robots->valid()) {
 *integer* **HYDRATE_ARRAYS**
 
 ## Methods
-public  **__construct** ([Phalcon\Db\ResultInterface](/3.4/en/api/Phalcon_Db_ResultInterface) | *false* $result, [[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache_BackendInterface) $cache])
+public  **__construct** ([Phalcon\Db\ResultInterface](/3.4/en/api/Phalcon_Db) | *false* $result, [[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache) $cache])
 
 Phalcon\Mvc\Model\Resultset constructor
 
@@ -277,7 +277,7 @@ This class builds every complex row as it is required
 *integer* **HYDRATE_ARRAYS**
 
 ## Methods
-public  **__construct** (*array* $columnTypes, [[Phalcon\Db\ResultInterface](/3.4/en/api/Phalcon_Db_ResultInterface) $result], [[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache_BackendInterface) $cache])
+public  **__construct** (*array* $columnTypes, [[Phalcon\Db\ResultInterface](/3.4/en/api/Phalcon_Db) $result], [[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache) $cache])
 
 Phalcon\Mvc\Model\Resultset\Complex constructor
 
@@ -496,7 +496,7 @@ This class builds every complete object as it is required
 *integer* **HYDRATE_ARRAYS**
 
 ## Methods
-public  **__construct** (*array* $columnMap, [Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) | [Phalcon\Mvc\Model\Row](/3.4/en/api/Phalcon_Mvc_Model_Row) $model, [Phalcon\Db\Result\Pdo](/3.4/en/api/Phalcon_Db_Result_Pdo) | *null* $result, [[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache_BackendInterface) $cache], [*boolean* $keepSnapshots])
+public  **__construct** (*array* $columnMap, [Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) | [Phalcon\Mvc\Model\Row](/3.4/en/api/Phalcon_Mvc_Model_Row) $model, [Phalcon\Db\Result\Pdo](/3.4/en/api/Phalcon_Db) | *null* $result, [[Phalcon\Cache\BackendInterface](/3.4/en/api/Phalcon_Cache) $cache], [*boolean* $keepSnapshots])
 
 Phalcon\Mvc\Model\Resultset\Simple constructor
 

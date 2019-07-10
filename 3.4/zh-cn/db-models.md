@@ -1336,7 +1336,7 @@ class Robots extends Model
 }
 ```
 
-<h5 class='alert alert-warning'>Never use a <a href="api/Phalcon_Db_RawValue">Phalcon\Db\RawValue</a> to assign external data (such as user input) or variable data. 将参数绑定到查询时，将忽略这些字段的值。 所以它可以用于攻击注入 SQL 的应用程序。 </h5>
+<h5 class='alert alert-warning'>Never use a <a href="api/Phalcon_Db">Phalcon\Db\RawValue</a> to assign external data (such as user input) or variable data. 将参数绑定到查询时，将忽略这些字段的值。 所以它可以用于攻击注入 SQL 的应用程序。 </h5>
 
 <a name='dynamic-updates'></a>
 

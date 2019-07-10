@@ -455,18 +455,18 @@ $cache->save('my-key', $data);
 
 | アダプター                                                                     | 説明                                                                                                |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [Phalcon\Cache\Frontend\Output](api/Phalcon_Cache_Frontend_Output)     | 標準のPHP出力から入力データを読み込みます。                                                                           |
-| [Phalcon\Cache\Frontend\Data](api/Phalcon_Cache_Frontend_Data)         | あらゆる種類のPHPデータ（大きな配列、オブジェクト、テキストなど）をキャッシュするために使用されます。 データは、バックエンドへ保存する前にシリアライズされます。                |
-| [Phalcon\Cache\Frontend\Base64](api/Phalcon_Cache_Frontend_Base64)     | バイナリ データのキャッシュに使用します。 データは、バックエンドに格納される前に`base64_encode`を使用してシリアル化されます。                           |
-| [Phalcon\Cache\Frontend\Json](api/Phalcon_Cache_Frontend_Json)         | データは、バックエンドへ保存する前にJSON形式にエンコードされます。 取得後にデコードします。 このフロントエンドは、他の言語やフレームワークとのデータ共有に便利です。             |
-| [Phalcon\Cache\Frontend\Igbinary](api/Phalcon_Cache_Frontend_Igbinary) | あらゆる種類のPHPデータ（大きな配列、オブジェクト、テキストなど）をキャッシュするために使用されます。 データは、バックエンドに格納される前に`Igbinary`を使用してシリアル化されます。 |
-| [Phalcon\Cache\Frontend\None](api/Phalcon_Cache_Frontend_None)         | あらゆる種類のPHPデータをシリアル化せずにキャッシュするために使用されます。                                                           |
+| [Phalcon\Cache\Frontend\Output](api/Phalcon_Cache)     | 標準のPHP出力から入力データを読み込みます。                                                                           |
+| [Phalcon\Cache\Frontend\Data](api/api/Phalcon_Cache)         | あらゆる種類のPHPデータ（大きな配列、オブジェクト、テキストなど）をキャッシュするために使用されます。 データは、バックエンドへ保存する前にシリアライズされます。                |
+| [Phalcon\Cache\Frontend\Base64](api/api/Phalcon_Cache)     | バイナリ データのキャッシュに使用します。 データは、バックエンドに格納される前に`base64_encode`を使用してシリアル化されます。                           |
+| [Phalcon\Cache\Frontend\Json](api/Phalcon_Cache)         | データは、バックエンドへ保存する前にJSON形式にエンコードされます。 取得後にデコードします。 このフロントエンドは、他の言語やフレームワークとのデータ共有に便利です。             |
+| [Phalcon\Cache\Frontend\Igbinary](api/Phalcon_Cache) | あらゆる種類のPHPデータ（大きな配列、オブジェクト、テキストなど）をキャッシュするために使用されます。 データは、バックエンドに格納される前に`Igbinary`を使用してシリアル化されます。 |
+| [Phalcon\Cache\Frontend\None](api/Phalcon_Cache)         | あらゆる種類のPHPデータをシリアル化せずにキャッシュするために使用されます。                                                           |
 
 <a name='adapters-frontend-custom'></a>
 
 ### 独自フロントエンドアダプターの実装
 
-The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface) interface must be implemented in order to create your own frontend adapters or extend the existing ones.
+The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache) interface must be implemented in order to create your own frontend adapters or extend the existing ones.
 
 <a name='adapters-backend'></a>
 
@@ -476,15 +476,15 @@ The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface) inter
 
 | アダプター                                                                           | 説明                                      | 情報                                        | 必須エクステンション                                         |
 | ------------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------- | -------------------------------------------------- |
-| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache_Backend_Apc)                   | Alternative PHP Cache (APC) にデータを格納します。 | [APC](http://php.net/apc)                 | [APC](http://pecl.php.net/package/APC)             |
+| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache)                   | Alternative PHP Cache (APC) にデータを格納します。 | [APC](http://php.net/apc)                 | [APC](http://pecl.php.net/package/APC)             |
 | `Phalcon\Cache\Backend\Apcu`                                                 | データをAPCuに格納します（オペコードキャッシングなしのAPC）       | [APCu](http://php.net/apcu)               | [APCu](http://pecl.php.net/package/APCu)           |
-| [Phalcon\Cache\Backend\File](api/Phalcon_Cache_Backend_File)                 | ローカルのプレーンファイルにデータを格納します。                |                                           |                                                    |
-| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache_Backend_Libmemcached) | memcachedサーバーにデータを格納します。                | [Memcached](http://www.php.net/memcached) | [Memcached](http://pecl.php.net/package/memcached) |
-| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache_Backend_Memcache)         | memcachedサーバーにデータを格納します。                | [Memcache](http://www.php.net/memcache)   | [Memcache](http://pecl.php.net/package/memcache)   |
-| [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache_Backend_Memory)             | メモリ中にデータを保存                             |                                           |                                                    |
-| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache_Backend_Mongo)               | データをMongoデータベースに保存します。                  | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
-| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache_Backend_Redis)               | Redisにデータを格納します。                        | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
-| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache_Backend_Xcache)             | XCacheにデータを格納します。                       | [XCache](http://xcache.lighttpd.net/)     | [XCache](http://pecl.php.net/package/xcache)       |
+| [Phalcon\Cache\Backend\File](api/Phalcon_Cache)                 | ローカルのプレーンファイルにデータを格納します。                |                                           |                                                    |
+| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache) | memcachedサーバーにデータを格納します。                | [Memcached](http://www.php.net/memcached) | [Memcached](http://pecl.php.net/package/memcached) |
+| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache)         | memcachedサーバーにデータを格納します。                | [Memcache](http://www.php.net/memcache)   | [Memcache](http://pecl.php.net/package/memcache)   |
+| [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache)             | メモリ中にデータを保存                             |                                           |                                                    |
+| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache)               | データをMongoデータベースに保存します。                  | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
+| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache)               | Redisにデータを格納します。                        | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
+| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache)             | XCacheにデータを格納します。                       | [XCache](http://xcache.lighttpd.net/)     | [XCache](http://pecl.php.net/package/xcache)       |
 
 ##### **注意** PHP7で Phalcon `apc` ベースのアダプター クラスを使用する場合、pecl から `apcu`と`apcu_bc` パッケージをインストールする必要があります。 Now in Phalcon 3.4.0 you can switch your `<em>\Apc` classes to `</em>\Apcu` and remove `apcu_bc`. Phalcon 4 では、ほとんどすべての `*\Apc` クラスを削除したことを覚えていてだください。 {.alert.alert-warning}
 
@@ -512,7 +512,7 @@ $backendCache = Factory::load($options);
 
 ### 独自のバックエンドアダプターを実装
 
-The [Phalcon\Cache\BackendInterface](api/Phalcon_Cache_BackendInterface) interface must be implemented in order to create your own backend adapters or extend the existing ones.
+The [Phalcon\Cache\BackendInterface](api/Phalcon_Cache) interface must be implemented in order to create your own backend adapters or extend the existing ones.
 
 <a name='adapters-backend-file'></a>
 

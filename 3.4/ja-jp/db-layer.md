@@ -20,9 +20,9 @@ This component makes use of adapters to encapsulate specific database system det
 
 | クラス                                                                            | 説明                                                                                                             |
 | ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------- |
-| [Phalcon\Db\Adapter\Pdo\Mysql](api/Phalcon_Db_Adapter_Pdo_Mysql)           | 世界で最も使用されているリレーショナルデータベース管理システム (RDBMS) です。サーバーで動作し、多数のユーザーがいくつかのデータベースにアクセスできます。                              |
-| [Phalcon\Db\Adapter\Pdo\Postgresql](api/Phalcon_Db_Adapter_Pdo_Postgresql) | PostgreSQL は、強力なオープンソースのリレーショナルデータベースシステムです。 これは15年以上の積極的な開発と実績のあるアーキテクチャを備えており、信頼性、データの完全性、正確性について高い評価を得ています。 |
-| [Phalcon\Db\Adapter\Pdo\Sqlite](api/Phalcon_Db_Adapter_Pdo_Sqlite)         | SQLiteは、自己完結型でサーバレスでゼロ設定のトランザクション型SQLデータベースエンジンを実装したソフトウェアライブラリです                                              |
+| [Phalcon\Db\Adapter\Pdo\Mysql](api/Phalcon_Db)           | 世界で最も使用されているリレーショナルデータベース管理システム (RDBMS) です。サーバーで動作し、多数のユーザーがいくつかのデータベースにアクセスできます。                              |
+| [Phalcon\Db\Adapter\Pdo\Postgresql](api/Phalcon_Db) | PostgreSQL は、強力なオープンソースのリレーショナルデータベースシステムです。 これは15年以上の積極的な開発と実績のあるアーキテクチャを備えており、信頼性、データの完全性、正確性について高い評価を得ています。 |
+| [Phalcon\Db\Adapter\Pdo\Sqlite](api/Phalcon_Db)         | SQLiteは、自己完結型でサーバレスでゼロ設定のトランザクション型SQLデータベースエンジンを実装したソフトウェアライブラリです                                              |
 
 <a name='adapters-factory'></a>
 
@@ -53,7 +53,7 @@ $db = Factory::load($options);
 
 ### 独自のアダプターを実装
 
-The [Phalcon\Db\AdapterInterface](api/Phalcon_Db_AdapterInterface) interface must be implemented in order to create your own database adapters or extend the existing ones.
+The [Phalcon\Db\AdapterInterface](api/Phalcon_Db) interface must be implemented in order to create your own database adapters or extend the existing ones.
 
 <a name='dialects'></a>
 
@@ -63,15 +63,15 @@ Phalcon encapsulates the specific details of each database engine in dialects. T
 
 | クラス                                                                   | 説明                           |
 | --------------------------------------------------------------------- | ---------------------------- |
-| [Phalcon\Db\Dialect\Mysql](api/Phalcon_Db_Dialect_Mysql)           | MySQL データベースシステム向けのSQL方言     |
-| [Phalcon\Db\Dialect\Postgresql](api/Phalcon_Db_Dialect_Postgresql) | PostgreSQLデータベースシステム向けのSQL方言 |
-| [Phalcon\Db\Dialect\Sqlite](api/Phalcon_Db_Dialect_Sqlite)         | SQLiteデータベースシステム向けのSQL方言     |
+| [Phalcon\Db\Dialect\Mysql](api/Phalcon_Db)           | MySQL データベースシステム向けのSQL方言     |
+| [Phalcon\Db\Dialect\Postgresql](api/Phalcon_Db) | PostgreSQLデータベースシステム向けのSQL方言 |
+| [Phalcon\Db\Dialect\Sqlite](api/Phalcon_Db)         | SQLiteデータベースシステム向けのSQL方言     |
 
 <a name='dialects-custom'></a>
 
 ### 独自の方言を実装します
 
-The [Phalcon\Db\DialectInterface](api/Phalcon_Db_DialectInterface) interface must be implemented in order to create your own database dialects or extend the existing ones. PHQLが理解するより多くのコマンドやメソッドを追加して、現在の方言を強化できます。
+The [Phalcon\Db\DialectInterface](api/Phalcon_Db) interface must be implemented in order to create your own database dialects or extend the existing ones. PHQLが理解するより多くのコマンドやメソッドを追加して、現在の方言を強化できます。
 
 For instance when using the MySQL adapter, you might want to allow PHQL to recognize the `MATCH ... AGAINST ...` syntax. We associate that syntax with `MATCH_AGAINST`
 
@@ -303,7 +303,7 @@ while ($robot = $result->fetch()) {
 }
 ```
 
-The `Phalcon\Db::query()` returns an instance of [Phalcon\Db\Result\Pdo](api/Phalcon_Db_Result_Pdo). これらのオブジェクトは、返された resultset に関連した機能(トラバース、特定のレコードのシーク、カウント)をカプセル化します。
+The `Phalcon\Db::query()` returns an instance of [Phalcon\Db\Result\Pdo](api/Phalcon_Db). これらのオブジェクトは、返された resultset に関連した機能(トラバース、特定のレコードのシーク、カウント)をカプセル化します。
 
 ```php
 <?php
@@ -797,9 +797,9 @@ $eventsManager->attach(
 
 ## SQL ステートメントのプロファイリング
 
-[Phalcon\Db](api/Phalcon_Db) includes a profiling component called [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler), that is used to analyze the performance of database operations so as to diagnose performance problems and discover bottlenecks.
+[Phalcon\Db](api/Phalcon_Db) includes a profiling component called [Phalcon\Db\Profiler](api/Phalcon_Db), that is used to analyze the performance of database operations so as to diagnose performance problems and discover bottlenecks.
 
-Database profiling is really easy With [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler):
+Database profiling is really easy With [Phalcon\Db\Profiler](api/Phalcon_Db):
 
 ```php
 <?php
@@ -849,7 +849,7 @@ echo 'Final Time: ', $profile->getFinalTime(), "\n";
 echo 'Total Elapsed Time: ', $profile->getTotalElapsedSeconds(), "\n";
 ```
 
-You can also create your own profile class based on [Phalcon\Db\Profiler](api/Phalcon_Db_Profiler) to record real time statistics of the statements sent to the database system:
+You can also create your own profile class based on [Phalcon\Db\Profiler](api/Phalcon_Db) to record real time statistics of the statements sent to the database system:
 
 ```php
 <?php
@@ -1054,11 +1054,11 @@ $connection->createTable(
 );
 ```
 
-`Phalcon\Db::createTable()` は、テーブルを表す連想配列を受けつけます。 Columns are defined with the class [Phalcon\Db\Column](api/Phalcon_Db_Column). カラムの定義に使用できるオプションを次の表で示します。
+`Phalcon\Db::createTable()` は、テーブルを表す連想配列を受けつけます。 Columns are defined with the class [Phalcon\Db\Column](api/Phalcon_Db). カラムの定義に使用できるオプションを次の表で示します。
 
 | オプション           | 説明                                                                                            | オプション |
 | --------------- | --------------------------------------------------------------------------------------------- |:-----:|
-| `type`          | カラムタイプ Must be a [Phalcon\Db\Column](api/Phalcon_Db_Column) constant (see below for a list) |  いいえ  |
+| `type`          | カラムタイプ Must be a [Phalcon\Db\Column](api/Phalcon_Db) constant (see below for a list) |  いいえ  |
 | `primary`       | そのカラムがテーブルのプライマリーキーの部分だった場合は true です。                                                         |  はい   |
 | `size`          | `VARCHAR` や `INTEGER` のような種類のカラムは指定のサイズになります。                                                 |  はい   |
 | `scale`         | `DECIMAL` または `NUMBER` カラムでサイズを指定します。どのくらい多くの桁を保持すべきかを示します。                                   |  はい   |
@@ -1084,9 +1084,9 @@ $connection->createTable(
 
 | インデックス       | 説明                                                                                                                     | オプション |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------- |:-----:|
-| `columns`    | An array with a set of table columns defined with [Phalcon\Db\Column](api/Phalcon_Db_Column)                         |  いいえ  |
-| `indexes`    | An array with a set of table indexes defined with [Phalcon\Db\Index](api/Phalcon_Db_Index)                           |  はい   |
-| `references` | An array with a set of table references (foreign keys) defined with [Phalcon\Db\Reference](api/Phalcon_Db_Reference) |  はい   |
+| `columns`    | An array with a set of table columns defined with [Phalcon\Db\Column](api/Phalcon_Db)                         |  いいえ  |
+| `indexes`    | An array with a set of table indexes defined with [Phalcon\Db\Index](api/Phalcon_Db)                           |  はい   |
+| `references` | An array with a set of table references (foreign keys) defined with [Phalcon\Db\Reference](api/Phalcon_Db) |  はい   |
 | `options`    | テーブルの作成オプションの配列。 これらのオプションは多くの場合、マイグレーションで生成されたデータベースシステムに関係します。                                                       |  はい   |
 
 <a name='tables-altering'></a>

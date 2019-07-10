@@ -458,18 +458,18 @@ $cache->save('my-key', $data);
 
 | 适配器                                                                       | 描述                                                        |
 | ------------------------------------------------------------------------- | --------------------------------------------------------- |
-| [Phalcon\Cache\Frontend\Output](api/Phalcon_Cache_Frontend_Output)     | 从标准的 PHP 输出中读取输入的数据。                                      |
-| [Phalcon\Cache\Frontend\Data](api/Phalcon_Cache_Frontend_Data)         | 它用于缓存任何类型的PHP数据(大数组、对象、文本等)。 数据在存储在后端之前是序列化的。             |
-| [Phalcon\Cache\Frontend\Base64](api/Phalcon_Cache_Frontend_Base64)     | 它用于缓存二进制数据。 使用 `base64_encode` 序列化数据之前将存储在后端。             |
-| [Phalcon\Cache\Frontend\Json](api/Phalcon_Cache_Frontend_Json)         | 数据在存储在后端之前以JSON编码。 检索后解码。 这个前端有助于与其他语言或框架共享数据。            |
-| [Phalcon\Cache\Frontend\Igbinary](api/Phalcon_Cache_Frontend_Igbinary) | 它用于缓存任何类型的PHP数据(大数组、对象、文本等)。 使用 `Igbinary` 序列化数据之前将存储在后端。 |
-| [Phalcon\Cache\Frontend\None](api/Phalcon_Cache_Frontend_None)         | 它用来缓存任何类型的 PHP 数据没有将其序列化。                                 |
+| [Phalcon\Cache\Frontend\Output](api/Phalcon_Cache)     | 从标准的 PHP 输出中读取输入的数据。                                      |
+| [Phalcon\Cache\Frontend\Data](api/api/Phalcon_Cache)         | 它用于缓存任何类型的PHP数据(大数组、对象、文本等)。 数据在存储在后端之前是序列化的。             |
+| [Phalcon\Cache\Frontend\Base64](api/api/Phalcon_Cache)     | 它用于缓存二进制数据。 使用 `base64_encode` 序列化数据之前将存储在后端。             |
+| [Phalcon\Cache\Frontend\Json](api/Phalcon_Cache)         | 数据在存储在后端之前以JSON编码。 检索后解码。 这个前端有助于与其他语言或框架共享数据。            |
+| [Phalcon\Cache\Frontend\Igbinary](api/Phalcon_Cache) | 它用于缓存任何类型的PHP数据(大数组、对象、文本等)。 使用 `Igbinary` 序列化数据之前将存储在后端。 |
+| [Phalcon\Cache\Frontend\None](api/Phalcon_Cache)         | 它用来缓存任何类型的 PHP 数据没有将其序列化。                                 |
 
 <a name='adapters-frontend-custom'></a>
 
 ### 执行您自己的前端适配器
 
-The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface) interface must be implemented in order to create your own frontend adapters or extend the existing ones.
+The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache) interface must be implemented in order to create your own frontend adapters or extend the existing ones.
 
 <a name='adapters-backend'></a>
 
@@ -479,15 +479,15 @@ The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache_FrontendInterface) inter
 
 | 适配器                                                                             | 描述                             | 信息                                        | 所需的扩展                                              |
 | ------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------------- | -------------------------------------------------- |
-| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache_Backend_Apc)                   | 存储数据到替代 PHP 缓存 (APC)。          | [APC](http://php.net/apc)                 | [APC](http://pecl.php.net/package/APC)             |
+| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache)                   | 存储数据到替代 PHP 缓存 (APC)。          | [APC](http://php.net/apc)                 | [APC](http://pecl.php.net/package/APC)             |
 | `Phalcon\Cache\Backend\Apcu`                                                 | 存储数据的处理 (APC 不操作码缓存)           | [APCu](http://php.net/apcu)               | [APCu](http://pecl.php.net/package/APCu)           |
-| [Phalcon\Cache\Backend\File](api/Phalcon_Cache_Backend_File)                 | 存储到本地普通文件的数据。                  |                                           |                                                    |
-| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache_Backend_Libmemcached) | 存储到 memcached 服务器数据。           | [Memcached](http://www.php.net/memcached) | [Memcached](http://pecl.php.net/package/memcached) |
-| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache_Backend_Memcache)         | 存储到 memcached 服务器数据。           | [Memcache](http://www.php.net/memcache)   | [Memcache](http://pecl.php.net/package/memcache)   |
-| [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache_Backend_Memory)             | 将数据存储在内存中                      |                                           |                                                    |
-| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache_Backend_Mongo)               | Stores data to Mongo Database. | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
-| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache_Backend_Redis)               | 储存数据到Redis.                    | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
-| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache_Backend_Xcache)             | 在 XCache 中存储数据。                | [XCache](http://xcache.lighttpd.net/)     | [XCache](http://pecl.php.net/package/xcache)       |
+| [Phalcon\Cache\Backend\File](api/Phalcon_Cache)                 | 存储到本地普通文件的数据。                  |                                           |                                                    |
+| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache) | 存储到 memcached 服务器数据。           | [Memcached](http://www.php.net/memcached) | [Memcached](http://pecl.php.net/package/memcached) |
+| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache)         | 存储到 memcached 服务器数据。           | [Memcache](http://www.php.net/memcache)   | [Memcache](http://pecl.php.net/package/memcache)   |
+| [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache)             | 将数据存储在内存中                      |                                           |                                                    |
+| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache)               | Stores data to Mongo Database. | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
+| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache)               | 储存数据到Redis.                    | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
+| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache)             | 在 XCache 中存储数据。                | [XCache](http://xcache.lighttpd.net/)     | [XCache](http://pecl.php.net/package/xcache)       |
 
 ##### **注意**在 PHP 7 使用Phalcon `apc` 基于适配器类你需要从 pecl 安装 `apcu` 和 `apcu_bc` 的包。 Now in Phalcon 3.4.0 you can switch your `<em>\Apc` classes to `</em>\Apcu` and remove `apcu_bc`. Keep in mind that in Phalcon 4 we will most likely remove all `*\Apc` classes. {.alert.alert-warning}
 
@@ -515,7 +515,7 @@ $backendCache = Factory::load($options);
 
 ### 执行您自己的后端适配器
 
-The [Phalcon\Cache\BackendInterface](api/Phalcon_Cache_BackendInterface) interface must be implemented in order to create your own backend adapters or extend the existing ones.
+The [Phalcon\Cache\BackendInterface](api/Phalcon_Cache) interface must be implemented in order to create your own backend adapters or extend the existing ones.
 
 <a name='adapters-backend-file'></a>
 
