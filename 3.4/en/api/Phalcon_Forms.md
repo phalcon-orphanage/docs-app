@@ -68,7 +68,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator)
 
 Adds a validator to the element
 
@@ -185,13 +185,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message)
 
 Appends a message to the internal message list
 
@@ -289,7 +289,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -406,13 +406,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -505,7 +505,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -622,13 +622,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -721,7 +721,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -838,13 +838,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -937,7 +937,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -1054,13 +1054,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -1153,7 +1153,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -1270,13 +1270,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -1369,7 +1369,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -1486,13 +1486,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -1585,7 +1585,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -1702,13 +1702,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -1801,7 +1801,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -1918,13 +1918,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -2035,7 +2035,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -2152,13 +2152,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -2251,7 +2251,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -2368,13 +2368,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -2467,7 +2467,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -2584,13 +2584,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -2683,7 +2683,7 @@ Adds a group of validators
 
 
 
-public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Adds a validator to the element
 
@@ -2800,13 +2800,13 @@ Checks whether there are messages attached to the element
 
 
 
-public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Sets the validation messages related to the element
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message) inherited from [Phalcon\Forms\Element](/3.4/en/api/Phalcon_Forms)
 
 Appends a message to the internal message list
 
@@ -2872,7 +2872,7 @@ abstract public  **addValidators** (*array* $validators, [*mixed* $merge])
 ...
 
 
-abstract public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator)
+abstract public  **addValidator** ([Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator)
 
 ...
 
@@ -2967,12 +2967,12 @@ abstract public  **hasMessages** ()
 ...
 
 
-abstract public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) $group)
+abstract public  **setMessages** ([Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) $group)
 
 ...
 
 
-abstract public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message)
+abstract public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message)
 
 ...
 
@@ -3071,7 +3071,7 @@ String representation of the exception
 
 *extends* abstract class [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Countable](http://php.net/manual/en/class.countable.php), [Iterator](http://php.net/manual/en/class.iterator.php), [Traversable](http://php.net/manual/en/class.traversable.php)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Countable](http://php.net/manual/en/class.countable.php), [Iterator](http://php.net/manual/en/class.iterator.php), [Traversable](http://php.net/manual/en/class.traversable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/forms/form.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -3281,7 +3281,7 @@ Returns the internal dependency injector
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
 
 Sets the event manager
 

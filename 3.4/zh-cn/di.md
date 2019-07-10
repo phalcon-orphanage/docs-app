@@ -656,7 +656,7 @@ $di->set(
 );
 ```
 
-The service 'response' ([Phalcon\Http\Response](api/Phalcon_Http_Response)) is resolved to be passed as the first argument of the constructor, while the second is a boolean value (true) that is passed as it is.
+The service 'response' ([Phalcon\Http\Response](api/Phalcon_Http)) is resolved to be passed as the first argument of the constructor, while the second is a boolean value (true) that is passed as it is.
 
 <a name='setter-injection'></a>
 
@@ -1243,11 +1243,11 @@ Although you can register services with the names you want, Phalcon has a severa
 | ------------------ | ---------------- | -------------------------------------------------------------------------------------- |:----:|
 | assets             | 资源管理器            | [Phalcon\Assets\Manager](api/Phalcon_Assets_Manager)                                 | Yes  |
 | annotations        | 注释语法分析器          | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations)        | Yes  |
-| cookies            | HTTP Cookie 管理服务 | [Phalcon\Http\Response\Cookies](api/Phalcon_Http_Response_Cookies)                  | Yes  |
+| cookies            | HTTP Cookie 管理服务 | [Phalcon\Http\Response\Cookies](api/Phalcon_Http)                  | Yes  |
 | crypt              | 加密解密数据           | [Phalcon\Crypt](api/Phalcon_Crypt)                                                    | Yes  |
 | db                 | 低级数据库连接服务        | [Phalcon\Db](api/Phalcon_Db)                                                          | Yes  |
 | dispatcher         | 调度服务控制器          | [Phalcon\Mvc\Dispatcher](api/Phalcon_Mvc_Dispatcher)                                 | Yes  |
-| eventsManager      | 事件管理服务           | [Phalcon\Events\Manager](api/Phalcon_Events_Manager)                                 | Yes  |
+| eventsManager      | 事件管理服务           | [Phalcon\Events\Manager](api/Phalcon_Events)                                 | Yes  |
 | escaper            | 内容的过滤筛选          | [Phalcon\Escaper](api/Phalcon_Escaper)                                                | Yes  |
 | flash              | 闪存的消息传递服务        | [Phalcon\Flash\Direct](api/Phalcon_Flash_Direct)                                     | Yes  |
 | flashSession       | Flash 会话消息服务     | [Phalcon\Flash\Session](api/Phalcon_Flash_Session)                                   | Yes  |
@@ -1255,8 +1255,8 @@ Although you can register services with the names you want, Phalcon has a severa
 | modelsCache        | 模型缓存的缓存后端        | 无                                                                                      |  No  |
 | modelsManager      | 模型管理服务           | [Phalcon\Mvc\Model\Manager](api/Phalcon_Mvc_Model_Manager)                          | Yes  |
 | modelsMetadata     | 模型元数据服务          | [Phalcon\Mvc\Model\MetaData\Memory](api/Phalcon_Mvc_Model_MetaData_Memory)         | Yes  |
-| request            | HTTP 请求环境服务      | [Phalcon\Http\Request](api/Phalcon_Http_Request)                                     | Yes  |
-| response           | HTTP 响应环境服务      | [Phalcon\Http\Response](api/Phalcon_Http_Response)                                   | Yes  |
+| request            | HTTP 请求环境服务      | [Phalcon\Http\Request](api/Phalcon_Http)                                     | Yes  |
+| response           | HTTP 响应环境服务      | [Phalcon\Http\Response](api/Phalcon_Http)                                   | Yes  |
 | router             | 路由服务             | [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router)                                         | Yes  |
 | security           | 安全助手             | [Phalcon\Security](api/Phalcon_Security)                                              | Yes  |
 | session            | 会话服务             | [Phalcon\Session\Adapter\Files](api/Phalcon_Session_Adapter_Files)                  | Yes  |

@@ -8,7 +8,7 @@ version: '3.4'
 
 # Returning Responses
 
-Part of the HTTP cycle is returning responses to clients. [Phalcon\Http\Response](api/Phalcon_Http_Response) is the Phalcon component designed to achieve this task. HTTP responses are usually composed by headers and body. The following is an example of basic usage:
+Part of the HTTP cycle is returning responses to clients. [Phalcon\Http\Response](api/Phalcon_Http) is the Phalcon component designed to achieve this task. HTTP responses are usually composed by headers and body. The following is an example of basic usage:
 
 ```php
 <?php
@@ -75,7 +75,7 @@ $response->setHeader('Content-Disposition', "attachment; filename='downloaded.pd
 $response->setRawHeader('HTTP/1.1 200 OK');
 ```
 
-A [Phalcon\Http\Response\Headers](api/Phalcon_Http_Response_Headers) bag internally manages headers. This class retrieves the headers before sending it to client:
+A [Phalcon\Http\Response\Headers](api/Phalcon_Http) bag internally manages headers. This class retrieves the headers before sending it to client:
 
 ```php
 <?php
@@ -91,7 +91,7 @@ $contentType = $headers->get('Content-Type');
 
 ## Making Redirections
 
-With [Phalcon\Http\Response](api/Phalcon_Http_Response) you can also execute HTTP redirections:
+With [Phalcon\Http\Response](api/Phalcon_Http) you can also execute HTTP redirections:
 
 ```php
 <?php

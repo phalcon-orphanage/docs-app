@@ -8,7 +8,7 @@ title: 'Phalcon\Mvc\Dispatcher'
 
 *extends* abstract class [Phalcon\Dispatcher](/3.4/en/api/Phalcon_Dispatcher)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface), [Phalcon\Mvc\DispatcherInterface](/3.4/en/api/Phalcon_Mvc_DispatcherInterface)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface), [Phalcon\Mvc\DispatcherInterface](/3.4/en/api/Phalcon_Mvc_DispatcherInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/dispatcher.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -190,7 +190,7 @@ Returns the internal dependency injector
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Dispatcher](/3.4/en/api/Phalcon_Dispatcher)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Dispatcher](/3.4/en/api/Phalcon_Dispatcher)
 
 Sets the events manager
 

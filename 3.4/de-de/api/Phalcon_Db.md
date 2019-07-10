@@ -98,7 +98,7 @@ Enables/disables options in the Database component
 
 # Abstract class **Phalcon\Db\Adapter**
 
-*implements* [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/db/adapter.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -130,7 +130,7 @@ Phalcon\Db\Adapter constructor
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 Sets the event manager
 
@@ -796,7 +796,7 @@ abstract public  **describeColumns** (*mixed* $table, [*mixed* $schema]) inherit
 
 *extends* abstract class [Phalcon\Db\Adapter](/3.4/en/api/Phalcon_Db)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/db/adapter/pdo.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1114,7 +1114,7 @@ Active SQL bound parameter variables
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Db\Adapter](/3.4/en/api/Phalcon_Db)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Db\Adapter](/3.4/en/api/Phalcon_Db)
 
 Sets the event manager
 
@@ -1763,7 +1763,7 @@ protected static  **loadClass** (*mixed* $namespace, *mixed* $config) inherited 
 
 *extends* abstract class [Phalcon\Db\Adapter\Pdo](/3.4/en/api/Phalcon_Db)
 
-*implements* [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/db/adapter/pdo/mysql.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2126,7 +2126,7 @@ Active SQL bound parameter variables
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Db\Adapter](/3.4/en/api/Phalcon_Db)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Db\Adapter](/3.4/en/api/Phalcon_Db)
 
 Sets the event manager
 
@@ -2697,7 +2697,7 @@ Active SQL statement in the object
 
 *extends* abstract class [Phalcon\Db\Adapter\Pdo](/3.4/en/api/Phalcon_Db)
 
-*implements* [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/db/adapter/pdo/postgresql.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -3059,7 +3059,7 @@ Active SQL bound parameter variables
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Db\Adapter](/3.4/en/api/Phalcon_Db)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Db\Adapter](/3.4/en/api/Phalcon_Db)
 
 Sets the event manager
 
@@ -3610,7 +3610,7 @@ Active SQL statement in the object
 
 *extends* abstract class [Phalcon\Db\Adapter\Pdo](/3.4/en/api/Phalcon_Db)
 
-*implements* [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/db/adapter/pdo/sqlite.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -3969,7 +3969,7 @@ Active SQL bound parameter variables
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Db\Adapter](/3.4/en/api/Phalcon_Db)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Db\Adapter](/3.4/en/api/Phalcon_Db)
 
 Sets the event manager
 

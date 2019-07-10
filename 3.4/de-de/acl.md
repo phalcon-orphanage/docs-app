@@ -43,7 +43,7 @@ $acl->setDefaultAction(
 
 ## Adding Roles to the ACL
 
-A role is an object that can or cannot access certain resources in the access list. As an example, we will define roles as groups of people in an organization. The [Phalcon\Acl\Role](api/Phalcon_Acl_Role) class is available to create roles in a more structured way. Let's add some roles to our recently created list:
+A role is an object that can or cannot access certain resources in the access list. As an example, we will define roles as groups of people in an organization. The [Phalcon\Acl\Role](api/Phalcon_Acl) class is available to create roles in a more structured way. Let's add some roles to our recently created list:
 
 ```php
 <?php
@@ -68,7 +68,7 @@ As you can see, roles are defined directly without using an instance.
 
 ## Adding Resources
 
-Resources are objects where access is controlled. Normally in MVC applications resources refer to controllers. Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl_Resource) class can be used in defining resources. It's important to add related actions or operations to a resource so that the ACL can understand what it should to control.
+Resources are objects where access is controlled. Normally in MVC applications resources refer to controllers. Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl) class can be used in defining resources. It's important to add related actions or operations to a resource so that the ACL can understand what it should to control.
 
 ```php
 <?php
@@ -219,7 +219,7 @@ $acl->isAllowed(
 
 ## Objects as role name and resource name
 
-You can pass objects as `roleName` and `resourceName`. Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl_RoleAware) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl_ResourceAware) for `resourceName`.
+You can pass objects as `roleName` and `resourceName`. Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl) for `resourceName`.
 
 Our `UserRole` class
 
@@ -438,7 +438,7 @@ You can still add any custom parameters to function and pass associative array i
 
 ## Roles Inheritance
 
-You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl_Role) provides. Roles can inherit from other roles, thus allowing access to supersets or subsets of resources. To use role inheritance, you need to pass the inherited role as the second parameter of the method call, when adding that role in the list.
+You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl) provides. Roles can inherit from other roles, thus allowing access to supersets or subsets of resources. To use role inheritance, you need to pass the inherited role as the second parameter of the method call, when adding that role in the list.
 
 ```php
 <?php
@@ -572,4 +572,4 @@ $acl->setEventsManager($eventsManager);
 
 ## Implementing your own adapters
 
-The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl_AdapterInterface) interface must be implemented in order to create your own ACL adapters or extend the existing ones.
+The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl) interface must be implemented in order to create your own ACL adapters or extend the existing ones.

@@ -18,9 +18,9 @@ This component makes use of adapters to encapsulate different sources of data:
 
 | Adapter                                                                                 | Description                                                                                                                                                                                                      |
 | --------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Phalcon\Paginator\Adapter\NativeArray](api/Phalcon_Paginator_Adapter_NativeArray)   | Use a PHP array as source data                                                                                                                                                                                   |
-| [Phalcon\Paginator\Adapter\Model](api/Phalcon_Paginator_Adapter_Model)               | Use a [Phalcon\Mvc\Model\Resultset](api/Phalcon_Mvc_Model_Resultset) object as source data. Since PDO doesn't support scrollable cursors this adapter shouldn't be used to paginate a large number of records |
-| [Phalcon\Paginator\Adapter\QueryBuilder](api/Phalcon_Paginator_Adapter_QueryBuilder) | Use a [Phalcon\Mvc\Model\Query\Builder](api/Phalcon_Mvc_Model_Query_Builder) object as source data                                                                                                           |
+| [Phalcon\Paginator\Adapter\NativeArray](api/Phalcon_Paginator)   | Use a PHP array as source data                                                                                                                                                                                   |
+| [Phalcon\Paginator\Adapter\Model](api/Phalcon_Paginator)               | Use a [Phalcon\Mvc\Model\Resultset](api/Phalcon_Mvc_Model_Resultset) object as source data. Since PDO doesn't support scrollable cursors this adapter shouldn't be used to paginate a large number of records |
+| [Phalcon\Paginator\Adapter\QueryBuilder](api/Phalcon_Paginator) | Use a [Phalcon\Mvc\Model\Query\Builder](api/Phalcon_Mvc_Model_Query_Builder) object as source data                                                                                                           |
 
 <a name='factory'></a>
 
@@ -185,7 +185,7 @@ The `$page` object has the following attributes:
 
 ## Implementing your own adapters
 
-The [Phalcon\Paginator\AdapterInterface](api/Phalcon_Paginator_AdapterInterface) interface must be implemented in order to create your own paginator adapters or extend the existing ones:
+The [Phalcon\Paginator\AdapterInterface](api/Phalcon_Paginator) interface must be implemented in order to create your own paginator adapters or extend the existing ones:
 
 ```php
 <?php

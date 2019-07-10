@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Model\Manager'
 ---
 # Class **Phalcon\Mvc\Model\Manager**
 
-*implements* [Phalcon\Mvc\Model\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Model_ManagerInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Mvc\Model\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Model_ManagerInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/manager.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -48,7 +48,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 Sets a global events manager
 
@@ -60,7 +60,7 @@ Returns the internal event manager
 
 
 
-public  **setCustomEventsManager** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+public  **setCustomEventsManager** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 Sets a custom events manager for a specific model
 

@@ -130,25 +130,25 @@ Phalconは下記のような組み込みバリデーター一式をコンポー�
 
 | クラス                                                                                           | 説明                                  |
 | --------------------------------------------------------------------------------------------- | ----------------------------------- |
-| [Phalcon\Validation\Validator\Alnum](api/Phalcon_Validation_Validator_Alnum)               | フィールドの値が英数字のみであることを検証します。           |
-| [Phalcon\Validation\Validator\Alpha](api/Phalcon_Validation_Validator_Alpha)               | フィールドの値がアルファベットのみであることを検証します。       |
-| [Phalcon\Validation\Validator\Date](api/Phalcon_Validation_Validator_Date)                 | フィールドの値が有効な日付であることを検証します。           |
-| [Phalcon\Validation\Validator\Digit](api/Phalcon_Validation_Validator_Digit)               | フィールドの値が数値のみであることを検証します。            |
-| [Phalcon\Validation\Validator\File](api/Phalcon_Validation_Validator_File)                 | フィールドの値が正しいファイルであることを検証します。         |
-| [Phalcon\Validation\Validator\Uniqueness](api/Phalcon_Validation_Validator_Uniqueness)     | フィールドの値が関連するモデルでユニークであることを検証します。    |
-| [Phalcon\Validation\Validator\Numericality](api/Phalcon_Validation_Validator_Numericality) | フィールドの値が有効な数値であることを検証します。           |
-| [Phalcon\Validation\Validator\PresenceOf](api/Phalcon_Validation_Validator_PresenceOf)     | フィールドの値が null または空の文字列ではないことを検証します。 |
-| [Phalcon\Validation\Validator\Identical](api/Phalcon_Validation_Validator_Identical)       | フィールドの値が指定された値と同じであることを検証します。       |
-| [Phalcon\Validation\Validator\Email](api/Phalcon_Validation_Validator_Email)               | そのフィールドに有効な電子メール形式が含まれていることを検証します。  |
-| [Phalcon\Validation\Validator\ExclusionIn](api/Phalcon_Validation_Validator_ExclusionIn)   | 値が可能な値のリスト内にないことを検証します。             |
-| [Phalcon\Validation\Validator\InclusionIn](api/Phalcon_Validation_Validator_InclusionIn)   | 値が可能な値のリスト内にあることを検証します。             |
-| [Phalcon\Validation\Validator\Regex](api/Phalcon_Validation_Validator_Regex)               | フィールドの値が正規表現に一致することを検証します。          |
-| [Phalcon\Validation\Validator\StringLength](api/Phalcon_Validation_Validator_StringLength) | 文字列の長さを検証します。                       |
-| [Phalcon\Validation\Validator\Between](api/Phalcon_Validation_Validator_Between)           | 値が2つの値の間にあることを検証します。                |
-| [Phalcon\Validation\Validator\Confirmation](api/Phalcon_Validation_Validator_Confirmation) | 値がもう片方のデータと同じであることを検証します。           |
-| [Phalcon\Validation\Validator\Url](api/Phalcon_Validation_Validator_Url)                   | そのフィールドに有効なURLが含まれていることを検証します。      |
-| [Phalcon\Validation\Validator\CreditCard](api/Phalcon_Validation_Validator_CreditCard)     | クレジットカード番号を検証します。                   |
-| [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation_Validator_Callback)         | コールバック関数を使用して検証します。                 |
+| [Phalcon\Validation\Validator\Alnum](api/Phalcon_Validation)               | フィールドの値が英数字のみであることを検証します。           |
+| [Phalcon\Validation\Validator\Alpha](api/Phalcon_Validation)               | フィールドの値がアルファベットのみであることを検証します。       |
+| [Phalcon\Validation\Validator\Date](api/Phalcon_Validation)                 | フィールドの値が有効な日付であることを検証します。           |
+| [Phalcon\Validation\Validator\Digit](api/Phalcon_Validation)               | フィールドの値が数値のみであることを検証します。            |
+| [Phalcon\Validation\Validator\File](api/Phalcon_Validation)                 | フィールドの値が正しいファイルであることを検証します。         |
+| [Phalcon\Validation\Validator\Uniqueness](api/Phalcon_Validation)     | フィールドの値が関連するモデルでユニークであることを検証します。    |
+| [Phalcon\Validation\Validator\Numericality](api/Phalcon_Validation) | フィールドの値が有効な数値であることを検証します。           |
+| [Phalcon\Validation\Validator\PresenceOf](api/Phalcon_Validation)     | フィールドの値が null または空の文字列ではないことを検証します。 |
+| [Phalcon\Validation\Validator\Identical](api/Phalcon_Validation)       | フィールドの値が指定された値と同じであることを検証します。       |
+| [Phalcon\Validation\Validator\Email](api/Phalcon_Validation)               | そのフィールドに有効な電子メール形式が含まれていることを検証します。  |
+| [Phalcon\Validation\Validator\ExclusionIn](api/Phalcon_Validation)   | 値が可能な値のリスト内にないことを検証します。             |
+| [Phalcon\Validation\Validator\InclusionIn](api/Phalcon_Validation)   | 値が可能な値のリスト内にあることを検証します。             |
+| [Phalcon\Validation\Validator\Regex](api/Phalcon_Validation)               | フィールドの値が正規表現に一致することを検証します。          |
+| [Phalcon\Validation\Validator\StringLength](api/Phalcon_Validation) | 文字列の長さを検証します。                       |
+| [Phalcon\Validation\Validator\Between](api/Phalcon_Validation)           | 値が2つの値の間にあることを検証します。                |
+| [Phalcon\Validation\Validator\Confirmation](api/Phalcon_Validation) | 値がもう片方のデータと同じであることを検証します。           |
+| [Phalcon\Validation\Validator\Url](api/Phalcon_Validation)                   | そのフィールドに有効なURLが含まれていることを検証します。      |
+| [Phalcon\Validation\Validator\CreditCard](api/Phalcon_Validation)     | クレジットカード番号を検証します。                   |
+| [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation)         | コールバック関数を使用して検証します。                 |
 
 次の例では、コンポーネントにどうやってバリデーターを作成するかを説明します。
 
@@ -197,7 +197,7 @@ class IpValidator extends Validator
 
 ## Callbackバリデーター
 
-By using [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation_Validator_Callback) you can execute custom function which must return boolean or new validator class which will be used to validate the same field. `true`を返すことでバリデーションが成功し、`false`を返すとバリデーションが失敗したことを意味します。 このバリデータを実行するときにPhalconはそれが何であるかに応じてデータを渡します。エンティティ（例えば、モデル、`stdClass`など）であればエンティティが渡され、そうでなければデータ（例えば`$_POST`のようなArray）が渡されます。 例を示します:
+By using [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation) you can execute custom function which must return boolean or new validator class which will be used to validate the same field. `true`を返すことでバリデーションが成功し、`false`を返すとバリデーションが失敗したことを意味します。 このバリデータを実行するときにPhalconはそれが何であるかに応じてデータを渡します。エンティティ（例えば、モデル、`stdClass`など）であればエンティティが渡され、そうでなければデータ（例えば`$_POST`のようなArray）が渡されます。 例を示します:
 
 ```php
 <?php
@@ -263,7 +263,7 @@ $messages = $validation->validate(['amount' => 10]); // will return message from
 
 [Phalcon\Validation](api/Phalcon_Validation) has a messaging subsystem that provides a flexible way to output or store the validation messages generated during the validation processes.
 
-Each message consists of an instance of the class [Phalcon\Validation\Message](api/Phalcon_Validation_Message). `getMessages()`メソッドで、生成されたメッセージのセットが取得できます。 各メッセージは、メッセージを生成した属性やメッセージの種類のような拡張情報を提供します。
+Each message consists of an instance of the class [Phalcon\Validation\Message](api/Phalcon_Validation). `getMessages()`メソッドで、生成されたメッセージのセットが取得できます。 各メッセージは、メッセージを生成した属性やメッセージの種類のような拡張情報を提供します。
 
 ```php
 <?php

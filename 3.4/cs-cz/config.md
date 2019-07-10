@@ -104,10 +104,10 @@ The adapters available are:
 
 | Class                                                             | Description                                                                                      |
 | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| [Phalcon\Config\Adapter\Ini](api/Phalcon_Config_Adapter_Ini)   | Uses INI files to store settings. Internally the adapter uses the PHP function `parse_ini_file`. |
-| [Phalcon\Config\Adapter\Json](api/Phalcon_Config_Adapter_Json) | Používá JSON soubory jako úložiště nastavení.                                                    |
-| [Phalcon\Config\Adapter\Php](api/Phalcon_Config_Adapter_Php)   | Uses PHP multidimensional arrays to store settings. This adapter offers the best performance.    |
-| [Phalcon\Config\Adapter\Yaml](api/Phalcon_Config_Adapter_Yaml) | Používá YAML soubory jako úložiště nastavení.                                                    |
+| [Phalcon\Config\Adapter\Ini](api/Phalcon_Config)   | Uses INI files to store settings. Internally the adapter uses the PHP function `parse_ini_file`. |
+| [Phalcon\Config\Adapter\Json](api/Phalcon_Config) | Používá JSON soubory jako úložiště nastavení.                                                    |
+| [Phalcon\Config\Adapter\Php](api/Phalcon_Config)   | Uses PHP multidimensional arrays to store settings. This adapter offers the best performance.    |
+| [Phalcon\Config\Adapter\Yaml](api/Phalcon_Config) | Používá YAML soubory jako úložiště nastavení.                                                    |
 
 <a name='ini-files'></a>
 

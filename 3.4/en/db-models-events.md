@@ -72,7 +72,7 @@ class Products extends Model
 
 <a name='custom-events-manager'></a>
 ### Using a custom Events Manager
-Additionally, this component is integrated with [Phalcon\Events\Manager](api/Phalcon_Events_Manager), this means we can create listeners that run when an event is triggered.
+Additionally, this component is integrated with [Phalcon\Events\Manager](api/Phalcon_Events), this means we can create listeners that run when an event is triggered.
 
 ```php
 <?php

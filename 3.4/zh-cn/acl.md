@@ -43,7 +43,7 @@ $acl->setDefaultAction(
 
 ## 将角色添加到 ACL
 
-角色是能或不能访问控制列表里面的某些资源的对象。 举例说明，我们将定义一个公司一组人员的的角色。 The [Phalcon\Acl\Role](api/Phalcon_Acl_Role) class is available to create roles in a more structured way. 让我们添加一些角色到我们最近创建的列表︰
+角色是能或不能访问控制列表里面的某些资源的对象。 举例说明，我们将定义一个公司一组人员的的角色。 The [Phalcon\Acl\Role](api/Phalcon_Acl) class is available to create roles in a more structured way. 让我们添加一些角色到我们最近创建的列表︰
 
 ```php
 <?php
@@ -68,7 +68,7 @@ $acl->addRole('Designers');
 
 ## 添加资源
 
-资源是的对象的访问控制。 通常在 MVC 应用程序中的资源引用到控制器。 Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl_Resource) class can be used in defining resources. 它是重要的是将相关的操作添加到资源以便 ACL 可以理解它应控制。
+资源是的对象的访问控制。 通常在 MVC 应用程序中的资源引用到控制器。 Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl) class can be used in defining resources. 它是重要的是将相关的操作添加到资源以便 ACL 可以理解它应控制。
 
 ```php
 <?php
@@ -218,7 +218,7 @@ $acl->isAllowed(
 
 ## 对象作为角色名称和资源名称
 
-您可以将对象作为 `角色名` 和 `资源名称` 传递。 Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl_RoleAware) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl_ResourceAware) for `resourceName`.
+您可以将对象作为 `角色名` 和 `资源名称` 传递。 Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl) for `resourceName`.
 
 我们的 `UserRole` 类
 
@@ -437,7 +437,7 @@ You can still add any custom parameters to function and pass associative array i
 
 ## 角色继承
 
-You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl_Role) provides. 角色可以继承其他角色，从而允许用户访问超集或资源的子集。 To use role inheritance, you need to pass the inherited role as the second parameter of the method call, when adding that role in the list.
+You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl) provides. 角色可以继承其他角色，从而允许用户访问超集或资源的子集。 To use role inheritance, you need to pass the inherited role as the second parameter of the method call, when adding that role in the list.
 
 ```php
 <?php
@@ -571,4 +571,4 @@ $acl->setEventsManager($eventsManager);
 
 ## 实现自己的适配器
 
-The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl_AdapterInterface) interface must be implemented in order to create your own ACL adapters or extend the existing ones.
+The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl) interface must be implemented in order to create your own ACL adapters or extend the existing ones.

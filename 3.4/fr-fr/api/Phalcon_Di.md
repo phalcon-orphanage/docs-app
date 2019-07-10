@@ -55,7 +55,7 @@ Phalcon\Di constructor
 
 
 
-public  **setInternalEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+public  **setInternalEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 Sets the internal event manager
 
@@ -412,7 +412,7 @@ Phalcon\Di\FactoryDefault constructor
 
 
 
-public  **setInternalEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
+public  **setInternalEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
 Sets the internal event manager
 
@@ -693,7 +693,7 @@ Phalcon\Di\FactoryDefault\Cli constructor
 
 
 
-public  **setInternalEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
+public  **setInternalEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
 Sets the internal event manager
 
@@ -955,7 +955,7 @@ Loads services from a Config object.
 
 # Abstract class **Phalcon\Di\Injectable**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/injectable.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -976,7 +976,7 @@ Returns the internal dependency injector
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 Sets the event manager
 

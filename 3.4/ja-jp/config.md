@@ -104,10 +104,10 @@ $config = new Config($settings);
 
 | クラス                                                               | 説明                                                          |
 | ----------------------------------------------------------------- | ----------------------------------------------------------- |
-| [Phalcon\Config\Adapter\Ini](api/Phalcon_Config_Adapter_Ini)   | INIファイルを使用して設定を保存します。 アダプタは内部的にPHP関数`parse_ini_file`を使用します。 |
-| [Phalcon\Config\Adapter\Json](api/Phalcon_Config_Adapter_Json) | JSONファイルを使用して設定を保存します。                                      |
-| [Phalcon\Config\Adapter\Php](api/Phalcon_Config_Adapter_Php)   | PHP多次元配列を使用して設定を保存します。 このアダプターは最高のパフォーマンスを提供します。            |
-| [Phalcon\Config\Adapter\Yaml](api/Phalcon_Config_Adapter_Yaml) | YAMLファイルを使用して設定を保存します。                                      |
+| [Phalcon\Config\Adapter\Ini](api/Phalcon_Config)   | INIファイルを使用して設定を保存します。 アダプタは内部的にPHP関数`parse_ini_file`を使用します。 |
+| [Phalcon\Config\Adapter\Json](api/Phalcon_Config) | JSONファイルを使用して設定を保存します。                                      |
+| [Phalcon\Config\Adapter\Php](api/Phalcon_Config)   | PHP多次元配列を使用して設定を保存します。 このアダプターは最高のパフォーマンスを提供します。            |
+| [Phalcon\Config\Adapter\Yaml](api/Phalcon_Config) | YAMLファイルを使用して設定を保存します。                                      |
 
 <a name='ini-files'></a>
 

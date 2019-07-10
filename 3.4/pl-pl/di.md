@@ -654,7 +654,7 @@ $di->set(
 );
 ```
 
-The service 'response' ([Phalcon\Http\Response](api/Phalcon_Http_Response)) is resolved to be passed as the first argument of the constructor, while the second is a boolean value (true) that is passed as it is.
+The service 'response' ([Phalcon\Http\Response](api/Phalcon_Http)) is resolved to be passed as the first argument of the constructor, while the second is a boolean value (true) that is passed as it is.
 
 <a name='setter-injection'></a>
 
@@ -1241,11 +1241,11 @@ Although you can register services with the names you want, Phalcon has a severa
 | ------------------ | ------------------------------------- | -------------------------------------------------------------------------------------- |:-------------:|
 | assets             | Assets Manager                        | [Phalcon\Assets\Manager](api/Phalcon_Assets_Manager)                                 |      Tak      |
 | annotations        | Annotations Parser                    | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations)        |      Tak      |
-| cookies            | HTTP Cookies Management Service       | [Phalcon\Http\Response\Cookies](api/Phalcon_Http_Response_Cookies)                  |      Tak      |
+| cookies            | HTTP Cookies Management Service       | [Phalcon\Http\Response\Cookies](api/Phalcon_Http)                  |      Tak      |
 | crypt              | Encrypt/Decrypt data                  | [Phalcon\Crypt](api/Phalcon_Crypt)                                                    |      Tak      |
 | db                 | Low-Level Database Connection Service | [Phalcon\Db](api/Phalcon_Db)                                                          |      Tak      |
 | dispatcher         | Controllers Dispatching Service       | [Phalcon\Mvc\Dispatcher](api/Phalcon_Mvc_Dispatcher)                                 |      Tak      |
-| eventsManager      | Events Management Service             | [Phalcon\Events\Manager](api/Phalcon_Events_Manager)                                 |      Tak      |
+| eventsManager      | Events Management Service             | [Phalcon\Events\Manager](api/Phalcon_Events)                                 |      Tak      |
 | escaper            | Contextual Escaping                   | [Phalcon\Escaper](api/Phalcon_Escaper)                                                |      Tak      |
 | flash              | Flash Messaging Service               | [Phalcon\Flash\Direct](api/Phalcon_Flash_Direct)                                     |      Tak      |
 | flashSession       | Flash Session Messaging Service       | [Phalcon\Flash\Session](api/Phalcon_Flash_Session)                                   |      Tak      |
@@ -1253,8 +1253,8 @@ Although you can register services with the names you want, Phalcon has a severa
 | modelsCache        | Cache backend for models cache        | Brak                                                                                   |      Nie      |
 | modelsManager      | Models Management Service             | [Phalcon\Mvc\Model\Manager](api/Phalcon_Mvc_Model_Manager)                          |      Tak      |
 | modelsMetadata     | Models Meta-Data Service              | [Phalcon\Mvc\Model\MetaData\Memory](api/Phalcon_Mvc_Model_MetaData_Memory)         |      Tak      |
-| request            | HTTP Request Environment Service      | [Phalcon\Http\Request](api/Phalcon_Http_Request)                                     |      Tak      |
-| response           | HTTP Response Environment Service     | [Phalcon\Http\Response](api/Phalcon_Http_Response)                                   |      Tak      |
+| request            | HTTP Request Environment Service      | [Phalcon\Http\Request](api/Phalcon_Http)                                     |      Tak      |
+| response           | HTTP Response Environment Service     | [Phalcon\Http\Response](api/Phalcon_Http)                                   |      Tak      |
 | router             | Routing Service                       | [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router)                                         |      Tak      |
 | security           | Security helpers                      | [Phalcon\Security](api/Phalcon_Security)                                              |      Tak      |
 | session            | Session Service                       | [Phalcon\Session\Adapter\Files](api/Phalcon_Session_Adapter_Files)                  |      Tak      |

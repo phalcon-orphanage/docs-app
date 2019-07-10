@@ -8,7 +8,7 @@ title: 'Phalcon\Validation'
 
 *extends* abstract class [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\ValidationInterface](/3.4/en/api/Phalcon_ValidationInterface)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\ValidationInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -32,19 +32,19 @@ Phalcon\Validation constructor
 
 
 
-public [Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) **validate** ([*array* | *object* $data], [*object* $entity])
+public [Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) **validate** ([*array* | *object* $data], [*object* $entity])
 
 Validate a set of data according to a set of rules
 
 
 
-public  **add** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator)
+public  **add** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator)
 
 Adds a validator to a field
 
 
 
-public  **rule** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator)
+public  **rule** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator)
 
 Alias of `add` method
 
@@ -116,7 +116,7 @@ Get label for field
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message)
 
 Appends a message to the messages list
 
@@ -135,7 +135,7 @@ Gets the a value to validate in the array/object data source
 
 
 
-protected  **preChecking** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator)
+protected  **preChecking** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator)
 
 Internal validations, if it returns true, then skip the current validator
 
@@ -153,7 +153,7 @@ Returns the internal dependency injector
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
 
 Sets the event manager
 
@@ -176,63 +176,63 @@ Magic method __get
 
 # Abstract class **Phalcon\Validation\CombinedFieldsValidator**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/combinedfieldsvalidator.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-abstract public  **validate** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $attribute) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+abstract public  **validate** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $attribute) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Executes the validation
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -320,7 +320,7 @@ String representation of the exception
 
 # Class **Phalcon\Validation\Message**
 
-*implements* [Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface)
+*implements* [Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/message.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -413,7 +413,7 @@ Phalcon\Validation\Message\Group constructor
 
 
 
-public [Phalcon\Validation\Message](/3.4/en/api/Phalcon_Validation_Message) **offsetGet** (*int* $index)
+public [Phalcon\Validation\Message](/3.4/en/api/Phalcon_Validation) **offsetGet** (*int* $index)
 
 Gets an attribute a message using the array syntax
 
@@ -428,7 +428,7 @@ print_r(
 
 
 
-public  **offsetSet** (*int* $index, [Phalcon\Validation\Message](/3.4/en/api/Phalcon_Validation_Message) $message)
+public  **offsetSet** (*int* $index, [Phalcon\Validation\Message](/3.4/en/api/Phalcon_Validation) $message)
 
 Sets an attribute using the array-syntax
 
@@ -469,7 +469,7 @@ unset($message["database"]);
 
 
 
-public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message)
+public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message)
 
 Appends a message to the group
 
@@ -484,7 +484,7 @@ $messages->appendMessage(
 
 
 
-public  **appendMessages** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $messages)
+public  **appendMessages** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $messages)
 
 Appends an array of messages to the group
 
@@ -539,7 +539,7 @@ Check if the current message in the iterator is valid
 
 
 
-public static [Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation_Message_Group) **__set_state** (*array* $group)
+public static [Phalcon\Validation\Message\Group](/3.4/en/api/Phalcon_Validation) **__set_state** (*array* $group)
 
 Magic __set_state helps to re-build messages variable when exporting
 
@@ -598,7 +598,7 @@ abstract public static  **__set_state** (*array* $message)
 
 # Abstract class **Phalcon\Validation\Validator**
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -666,9 +666,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Alnum**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/alnum.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -716,50 +716,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -770,9 +770,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Alpha**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/alpha.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -820,50 +820,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -874,9 +874,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Between**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/between.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -935,50 +935,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -989,9 +989,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Callback**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/callback.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1049,50 +1049,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -1103,9 +1103,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Confirmation**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/confirmation.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1164,50 +1164,50 @@ Compare strings
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -1218,9 +1218,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\CreditCard**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/creditcard.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1274,50 +1274,50 @@ is a simple checksum formula used to validate a variety of identification number
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -1328,9 +1328,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Date**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/date.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1388,50 +1388,50 @@ private  **checkDate** (*mixed* $value, *mixed* $format)
 ...
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -1442,9 +1442,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Digit**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/digit.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1492,50 +1492,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -1546,9 +1546,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Email**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/email.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1596,50 +1596,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -1727,9 +1727,9 @@ String representation of the exception
 
 # Class **Phalcon\Validation\Validator\ExclusionIn**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/exclusionin.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1788,50 +1788,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -1842,9 +1842,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\File**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/file.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1931,50 +1931,50 @@ Check on empty
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -1985,9 +1985,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Identical**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/identical.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2040,50 +2040,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -2094,9 +2094,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\InclusionIn**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/inclusionin.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2149,50 +2149,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -2203,9 +2203,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Numericality**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/numericality.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2253,50 +2253,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -2307,9 +2307,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\PresenceOf**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/presenceof.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2357,50 +2357,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -2411,9 +2411,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Regex**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/regex.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2466,50 +2466,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -2520,9 +2520,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\StringLength**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/stringlength.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2587,50 +2587,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -2641,9 +2641,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Uniqueness**
 
-*extends* abstract class [Phalcon\Validation\CombinedFieldsValidator](/3.4/en/api/Phalcon_Validation_CombinedFieldsValidator)
+*extends* abstract class [Phalcon\Validation\CombinedFieldsValidator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/uniqueness.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2765,50 +2765,50 @@ Uniqueness method used for collection
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -2819,9 +2819,9 @@ Prepares a validation code.
 
 # Class **Phalcon\Validation\Validator\Url**
 
-*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+*extends* abstract class [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
-*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface)
+*implements* [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/validation/validator/url.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2869,50 +2869,50 @@ Executes the validation
 
 
 
-public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **__construct** ([*array* $options]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Phalcon\Validation\Validator constructor
 
 
 
-public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **isSetOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option has been defined
 
 
 
-public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **hasOption** (*mixed* $key) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Checks if an option is defined
 
 
 
-public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **getOption** (*mixed* $key, [*mixed* $defaultValue]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Returns an option in the validator's options
 Returns null if the option hasn't set
 
 
 
-public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+public  **setOption** (*mixed* $key, *mixed* $value) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Sets an option in the validator
 
 
 
-protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareLabel** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a label for the field.
 
 
 
-protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareMessage** ([Phalcon\Validation](/3.4/en/api/Phalcon_Validation) $validation, *mixed* $field, *mixed* $type, [*mixed* $option]) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation message.
 
 
 
-protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation_Validator)
+protected  **prepareCode** (*mixed* $field) inherited from [Phalcon\Validation\Validator](/3.4/en/api/Phalcon_Validation)
 
 Prepares a validation code.
 
@@ -2954,12 +2954,12 @@ abstract public  **validate** ([*mixed* $data], [*mixed* $entity])
 ...
 
 
-abstract public  **add** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator)
+abstract public  **add** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator)
 
 ...
 
 
-abstract public  **rule** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation_ValidatorInterface) $validator)
+abstract public  **rule** (*mixed* $field, [Phalcon\Validation\ValidatorInterface](/3.4/en/api/Phalcon_Validation) $validator)
 
 ...
 
@@ -3014,7 +3014,7 @@ abstract public  **getLabel** (*mixed* $field)
 ...
 
 
-abstract public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation_MessageInterface) $message)
+abstract public  **appendMessage** ([Phalcon\Validation\MessageInterface](/3.4/en/api/Phalcon_Validation) $message)
 
 ...
 

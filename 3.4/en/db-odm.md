@@ -441,7 +441,7 @@ class Products extends Collection
 }
 ```
 
-Additionally, this component is integrated with the [Phalcon Events Manager](/3.4/en/events) ([Phalcon\Events\Manager](api/Phalcon_Events_Manager)), this means we can create listeners that run when an event is triggered.
+Additionally, this component is integrated with the [Phalcon Events Manager](/3.4/en/events) ([Phalcon\Events\Manager](api/Phalcon_Events)), this means we can create listeners that run when an event is triggered.
 
 ```php
 <?php

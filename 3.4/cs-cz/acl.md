@@ -43,7 +43,7 @@ $acl->setDefaultAction(
 
 ## Adding Roles to the ACL
 
-Role je objekt, který může nebo nemůže získat přístup k určitým prostředkům v seznamu. Jako příklad definujeme role jako skupiny lidí v rámci organizace. The [Phalcon\Acl\Role](api/Phalcon_Acl_Role) class is available to create roles in a more structured way. Přidejme k našemu nedávno vytvořenému seznamu nějaké role:
+Role je objekt, který může nebo nemůže získat přístup k určitým prostředkům v seznamu. Jako příklad definujeme role jako skupiny lidí v rámci organizace. The [Phalcon\Acl\Role](api/Phalcon_Acl) class is available to create roles in a more structured way. Přidejme k našemu nedávno vytvořenému seznamu nějaké role:
 
 ```php
 <?php
@@ -68,7 +68,7 @@ Jak vidíte, role jsou definovány přímo bez použití instance.
 
 ## Adding Resources
 
-Zdroje jsou objekty, kde se kontroluje přístup. Obvykle v MVC aplikacích zdroje odkazují na controllery. Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl_Resource) class can be used in defining resources. Důležité je přidat související akce nebo operace k prostředkům, aby seznam ACL pochopil, co by měl kontrolovat.
+Zdroje jsou objekty, kde se kontroluje přístup. Obvykle v MVC aplikacích zdroje odkazují na controllery. Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl) class can be used in defining resources. Důležité je přidat související akce nebo operace k prostředkům, aby seznam ACL pochopil, co by měl kontrolovat.
 
 ```php
 <?php
@@ -219,7 +219,7 @@ $acl->isAllowed(
 
 ## Objects as role name and resource name
 
-Můžete předávat objekty jako `roleName` a `resourceName`. Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl_RoleAware) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl_ResourceAware) for `resourceName`.
+Můžete předávat objekty jako `roleName` a `resourceName`. Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl) for `resourceName`.
 
 Naše třída `UserRole`
 
@@ -438,7 +438,7 @@ You can still add any custom parameters to function and pass associative array i
 
 ## Roles Inheritance
 
-You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl_Role) provides. Role můžou dědit z jiných rolí, což umožňuje přístup ke zdrojům rodiče. Chcete-li použít dědičnost rolí, je třeba předat zděděnou roli jako druhý parametr volání metody, při přidání této role v seznamu.
+You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl) provides. Role můžou dědit z jiných rolí, což umožňuje přístup ke zdrojům rodiče. Chcete-li použít dědičnost rolí, je třeba předat zděděnou roli jako druhý parametr volání metody, při přidání této role v seznamu.
 
 ```php
 <?php
@@ -572,4 +572,4 @@ $acl->setEventsManager($eventsManager);
 
 ## Implementing your own adapters
 
-The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl_AdapterInterface) interface must be implemented in order to create your own ACL adapters or extend the existing ones.
+The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl) interface must be implemented in order to create your own ACL adapters or extend the existing ones.

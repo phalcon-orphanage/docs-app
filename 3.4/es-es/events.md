@@ -145,7 +145,7 @@ foreach ($dbListener->getProfiler()->getProfiles() as $profile) {
 
 <a name='components-that-trigger-events'></a>
 ## Creating components that trigger Events
-You can create components in your application that trigger events to an EventsManager. As a consequence, there may exist listeners that react to these events when generated. In the following example we're creating a component called `MyComponent`. This component is EventsManager aware (it implements [Phalcon\Events\EventsAwareInterface](api/Phalcon_Events_EventsAwareInterface)); when its `someTask()` method is executed it triggers two events to any listener in the EventsManager:
+You can create components in your application that trigger events to an EventsManager. As a consequence, there may exist listeners that react to these events when generated. In the following example we're creating a component called `MyComponent`. This component is EventsManager aware (it implements [Phalcon\Events\EventsAwareInterface](api/Phalcon_Events)); when its `someTask()` method is executed it triggers two events to any listener in the EventsManager:
 
 ```php
 <?php
@@ -388,7 +388,7 @@ The above example produces:
 
 <a name='custom'></a>
 ## Implementing your own EventsManager
-The [Phalcon\Events\ManagerInterface](api/Phalcon_Events_ManagerInterface) interface must be implemented to create your own EventsManager replacing the one provided by Phalcon.
+The [Phalcon\Events\ManagerInterface](api/Phalcon_Events) interface must be implemented to create your own EventsManager replacing the one provided by Phalcon.
 
 <a name='list'></a>
 ## List of Events

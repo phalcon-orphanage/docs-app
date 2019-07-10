@@ -654,7 +654,7 @@ $di->set(
 );
 ```
 
-The service 'response' ([Phalcon\Http\Response](api/Phalcon_Http_Response)) is resolved to be passed as the first argument of the constructor, while the second is a boolean value (true) that is passed as it is.
+The service 'response' ([Phalcon\Http\Response](api/Phalcon_Http)) is resolved to be passed as the first argument of the constructor, while the second is a boolean value (true) that is passed as it is.
 
 <a name='setter-injection'></a>
 
@@ -1241,11 +1241,11 @@ Although you can register services with the names you want, Phalcon has a severa
 | ------------------ | ------------------------------------- | -------------------------------------------------------------------------------------- |:------:|
 | assets             | Assets Manager                        | [Phalcon\Assets\Manager](api/Phalcon_Assets_Manager)                                 |  Yes   |
 | annotations        | Annotations Parser                    | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations)        |  Yes   |
-| cookies            | HTTP Cookies Management Service       | [Phalcon\Http\Response\Cookies](api/Phalcon_Http_Response_Cookies)                  |  Yes   |
+| cookies            | HTTP Cookies Management Service       | [Phalcon\Http\Response\Cookies](api/Phalcon_Http)                  |  Yes   |
 | crypt              | Encrypt/Decrypt data                  | [Phalcon\Crypt](api/Phalcon_Crypt)                                                    |  Yes   |
 | db                 | Low-Level Database Connection Service | [Phalcon\Db](api/Phalcon_Db)                                                          |  Yes   |
 | dispatcher         | Controllers Dispatching Service       | [Phalcon\Mvc\Dispatcher](api/Phalcon_Mvc_Dispatcher)                                 |  Yes   |
-| eventsManager      | Events Management Service             | [Phalcon\Events\Manager](api/Phalcon_Events_Manager)                                 |  Yes   |
+| eventsManager      | Events Management Service             | [Phalcon\Events\Manager](api/Phalcon_Events)                                 |  Yes   |
 | escaper            | Contextual Escaping                   | [Phalcon\Escaper](api/Phalcon_Escaper)                                                |  Yes   |
 | flash              | Flash Messaging Service               | [Phalcon\Flash\Direct](api/Phalcon_Flash_Direct)                                     |  Yes   |
 | flashSession       | Flash Session Messaging Service       | [Phalcon\Flash\Session](api/Phalcon_Flash_Session)                                   |  Yes   |
@@ -1253,8 +1253,8 @@ Although you can register services with the names you want, Phalcon has a severa
 | modelsCache        | Cache backend for models cache        | None                                                                                   |   No   |
 | modelsManager      | Models Management Service             | [Phalcon\Mvc\Model\Manager](api/Phalcon_Mvc_Model_Manager)                          |  Yes   |
 | modelsMetadata     | Models Meta-Data Service              | [Phalcon\Mvc\Model\MetaData\Memory](api/Phalcon_Mvc_Model_MetaData_Memory)         |  Yes   |
-| request            | HTTP Request Environment Service      | [Phalcon\Http\Request](api/Phalcon_Http_Request)                                     |  Yes   |
-| response           | HTTP Response Environment Service     | [Phalcon\Http\Response](api/Phalcon_Http_Response)                                   |  Yes   |
+| request            | HTTP Request Environment Service      | [Phalcon\Http\Request](api/Phalcon_Http)                                     |  Yes   |
+| response           | HTTP Response Environment Service     | [Phalcon\Http\Response](api/Phalcon_Http)                                   |  Yes   |
 | router             | Routing Service                       | [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router)                                         |  Yes   |
 | security           | Security helpers                      | [Phalcon\Security](api/Phalcon_Security)                                              |  Yes   |
 | session            | Session Service                       | [Phalcon\Session\Adapter\Files](api/Phalcon_Session_Adapter_Files)                  |  Yes   |

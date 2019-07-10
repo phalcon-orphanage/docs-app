@@ -242,4 +242,4 @@ PHP itself provides an excellent filter extension you can use. Check out its doc
 
 ## Implementing your own Filter
 
-The [Phalcon\FilterInterface](api/Phalcon_FilterInterface) interface must be implemented to create your own filtering service replacing the one provided by Phalcon.
+The [Phalcon\FilterInterface](api/Phalcon_Filter) interface must be implemented to create your own filtering service replacing the one provided by Phalcon.

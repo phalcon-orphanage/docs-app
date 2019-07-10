@@ -8,7 +8,7 @@ version: '3.4'
 
 # レスポンスを返す
 
-HTTP サイクルの一部は、クライアントへレスポンスを返すことです。 [Phalcon\Http\Response](api/Phalcon_Http_Response) is the Phalcon component designed to achieve this task. HTTP 応答は通常、ヘッダーとボディで構成されます。 以下に、基本的な使い方の例を示します。
+HTTP サイクルの一部は、クライアントへレスポンスを返すことです。 [Phalcon\Http\Response](api/Phalcon_Http) is the Phalcon component designed to achieve this task. HTTP 応答は通常、ヘッダーとボディで構成されます。 以下に、基本的な使い方の例を示します。
 
 ```php
 <?php
@@ -75,7 +75,7 @@ $response->setHeader('Content-Disposition', "attachment; filename='downloaded.pd
 $response->setRawHeader('HTTP/1.1 200 OK');
 ```
 
-A [Phalcon\Http\Response\Headers](api/Phalcon_Http_Response_Headers) bag internally manages headers. This class retrieves the headers before sending it to client:
+A [Phalcon\Http\Response\Headers](api/Phalcon_Http) bag internally manages headers. This class retrieves the headers before sending it to client:
 
 ```php
 <?php
@@ -91,7 +91,7 @@ $contentType = $headers->get('Content-Type');
 
 ## リダイレクト
 
-With [Phalcon\Http\Response](api/Phalcon_Http_Response) you can also execute HTTP redirections:
+With [Phalcon\Http\Response](api/Phalcon_Http) you can also execute HTTP redirections:
 
 ```php
 <?php

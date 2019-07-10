@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Router'
 ---
 # Class **Phalcon\Mvc\Router**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\RouterInterface](/3.4/en/api/Phalcon_Mvc_RouterInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\RouterInterface](/3.4/en/api/Phalcon_Mvc_RouterInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/router.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -65,7 +65,7 @@ Returns the internal dependency injector
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 Sets the events manager
 
@@ -344,7 +344,7 @@ Returns whether controller name should not be mangled
 
 *extends* class [Phalcon\Mvc\Router](/3.4/en/api/Phalcon_Mvc_Router)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Mvc\RouterInterface](/3.4/en/api/Phalcon_Mvc_RouterInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Mvc\RouterInterface](/3.4/en/api/Phalcon_Mvc_RouterInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/router/annotations.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -450,7 +450,7 @@ Returns the internal dependency injector
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Mvc\Router](/3.4/en/api/Phalcon_Mvc_Router)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Mvc\Router](/3.4/en/api/Phalcon_Mvc_Router)
 
 Sets the events manager
 

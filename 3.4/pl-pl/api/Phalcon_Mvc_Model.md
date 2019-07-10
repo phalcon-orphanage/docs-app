@@ -74,7 +74,7 @@ Returns the dependency injection container
 
 
 
-protected  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+protected  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 Sets a custom events manager
 
@@ -606,7 +606,7 @@ class Robots extends Model
 
 
 
-protected  **validate** ([Phalcon\ValidationInterface](/3.4/en/api/Phalcon_ValidationInterface) $validator)
+protected  **validate** ([Phalcon\ValidationInterface](/3.4/en/api/Phalcon_Validation) $validator)
 
 Executes validators on every validation call
 

@@ -104,10 +104,10 @@ $config = new Config($settings);
 
 | 类                                                                 | 描述                                              |
 | ----------------------------------------------------------------- | ----------------------------------------------- |
-| [Phalcon\Config\Adapter\Ini](api/Phalcon_Config_Adapter_Ini)   | 使用 INI 文件来存储设置。 在内部，适配器使用PHP函数`parse_ini_file`。 |
-| [Phalcon\Config\Adapter\Json](api/Phalcon_Config_Adapter_Json) | 使用 JSON 文件来存储设置。                                |
-| [Phalcon\Config\Adapter\Php](api/Phalcon_Config_Adapter_Php)   | 使用PHP多维数组存储设置。 这个适配器提供了最好的性能。                   |
-| [Phalcon\Config\Adapter\Yaml](api/Phalcon_Config_Adapter_Yaml) | 使用 YAML 文件来存储设置。                                |
+| [Phalcon\Config\Adapter\Ini](api/Phalcon_Config)   | 使用 INI 文件来存储设置。 在内部，适配器使用PHP函数`parse_ini_file`。 |
+| [Phalcon\Config\Adapter\Json](api/Phalcon_Config) | 使用 JSON 文件来存储设置。                                |
+| [Phalcon\Config\Adapter\Php](api/Phalcon_Config)   | 使用PHP多维数组存储设置。 这个适配器提供了最好的性能。                   |
+| [Phalcon\Config\Adapter\Yaml](api/Phalcon_Config) | 使用 YAML 文件来存储设置。                                |
 
 <a name='ini-files'></a>
 

@@ -106,10 +106,13 @@
                             {%- assign current = '/' | append: page.version | append: '/' -%}
                             {%- for version in site.data.verlang.versions -%}
                             {%- assign new = '/' | append: version | append: '/' -%}
+                            {% set link = page.url | replace: current, new | replace: '.html', '' %}
                             <li>
-                                <a href="{{ page.url | replace: current, new | replace: '.html', '' }}">
+                                {% if '4.0' == version and 'search' != link %}
+                                <a href="{{ link }}">
                                     {{- version -}}
                                 </a>
+                                {% endif %}
                             </li>
                             {%- endfor -%}
                         </ul>

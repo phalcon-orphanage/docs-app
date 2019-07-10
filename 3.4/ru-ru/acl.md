@@ -43,7 +43,7 @@ $acl->setDefaultAction(
 
 ## Добавление ролей к ACL
 
-Ролью является объект, который имеет или не имеет доступа к определенному ресурсу в списке доступа. Для примера, мы определим роли людей в организации. The [Phalcon\Acl\Role](api/Phalcon_Acl_Role) class is available to create roles in a more structured way. Давайте добавим несколько ролей в наш недавно созданный список:
+Ролью является объект, который имеет или не имеет доступа к определенному ресурсу в списке доступа. Для примера, мы определим роли людей в организации. The [Phalcon\Acl\Role](api/Phalcon_Acl) class is available to create roles in a more structured way. Давайте добавим несколько ролей в наш недавно созданный список:
 
 ```php
 <?php
@@ -68,7 +68,7 @@ $acl->addRole('Designers');
 
 ## Добавление ресурсов
 
-Ресурсами являются объекты, доступ к которым контролируется. Обычно в MVC приложениях ресурсы относятся к контроллерам. Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl_Resource) class can be used in defining resources. Важно добавить связующие действия или операции над ресурсами, чтобы ACL мог понимать, что ему нужно контролировать.
+Ресурсами являются объекты, доступ к которым контролируется. Обычно в MVC приложениях ресурсы относятся к контроллерам. Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl) class can be used in defining resources. Важно добавить связующие действия или операции над ресурсами, чтобы ACL мог понимать, что ему нужно контролировать.
 
 ```php
 <?php
@@ -220,7 +220,7 @@ $acl->isAllowed(
 
 ## Объекты в качестве названия роли и ресурса
 
-Вы можете использовать свои классы в качестве объектов роли или ресурса и передавать экземпляры объектов в аргументах `roleName` и `resourceName`. Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl_RoleAware) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl_ResourceAware) for `resourceName`.
+Вы можете использовать свои классы в качестве объектов роли или ресурса и передавать экземпляры объектов в аргументах `roleName` и `resourceName`. Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl) for `resourceName`.
 
 Пример пользовательского класса `UserRole`:
 
@@ -442,7 +442,7 @@ You can still add any custom parameters to function and pass associative array i
 
 ## Наследование ролей
 
-You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl_Role) provides. Роли могут наследовать доступ других ролей, таким образом предоставляя доступ к надмножествам или подмножествам ресурсов. Чтобы использовать наследование ролей вам необходимо передать в качестве второго параметра другую роль при определении роли.
+You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl) provides. Роли могут наследовать доступ других ролей, таким образом предоставляя доступ к надмножествам или подмножествам ресурсов. Чтобы использовать наследование ролей вам необходимо передать в качестве второго параметра другую роль при определении роли.
 
 ```php
 <?php
@@ -576,4 +576,4 @@ $acl->setEventsManager($eventsManager);
 
 ## Реализация собственных адаптеров
 
-The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl_AdapterInterface) interface must be implemented in order to create your own ACL adapters or extend the existing ones.
+The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl) interface must be implemented in order to create your own ACL adapters or extend the existing ones.

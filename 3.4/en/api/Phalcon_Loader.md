@@ -6,7 +6,7 @@ title: 'Phalcon\Loader'
 ---
 # Class **Phalcon\Loader**
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/loader.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -39,7 +39,7 @@ $adapter = new \Example\Adapter\Some();
 
 
 ## Methods
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 Sets the events manager
 

@@ -8,7 +8,7 @@ version: '3.4'
 
 # Request Environment
 
-Every HTTP request (usually originated by a browser) contains additional information regarding the request such as header data, files, variables, etc. A web based application needs to parse that information so as to provide the correct response back to the requester. [Phalcon\Http\Request](api/Phalcon_Http_Request) encapsulates the information of the request, allowing you to access it in an object-oriented way.
+Every HTTP request (usually originated by a browser) contains additional information regarding the request such as header data, files, variables, etc. A web based application needs to parse that information so as to provide the correct response back to the requester. [Phalcon\Http\Request](api/Phalcon_Http) encapsulates the information of the request, allowing you to access it in an object-oriented way.
 
 ```php
 <?php
@@ -33,7 +33,7 @@ if ($request->isPost()) {
 
 PHP automatically fills the superglobal arrays `$_GET` and `$_POST` depending on the type of the request. These arrays contain the values present in forms submitted or the parameters sent via the URL. The variables in the arrays are never sanitized and can contain illegal characters or even malicious code, which can lead to [SQL injection](http://en.wikipedia.org/wiki/SQL_injection) or [Cross Site Scripting (XSS)](http://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
 
-[Phalcon\Http\Request](api/Phalcon_Http_Request) allows you to access the values stored in the `$_REQUEST`, `$_GET` and `$_POST` arrays and sanitize or filter them with the [filter](/3.4/en/filter) service, (by default [Phalcon\Filter](api/Phalcon_Filter)). The following examples offer the same behavior:
+[Phalcon\Http\Request](api/Phalcon_Http) allows you to access the values stored in the `$_REQUEST`, `$_GET` and `$_POST` arrays and sanitize or filter them with the [filter](/3.4/en/filter) service, (by default [Phalcon\Filter](api/Phalcon_Filter)). The following examples offer the same behavior:
 
 ```php
 <?php
@@ -62,7 +62,7 @@ $email = $request->getPost('user_email', null, 'some@example.com');
 
 ## コントローラからリクエストへのアクセス
 
-The most common place to access the request environment is in an action of a controller. To access the [Phalcon\Http\Request](api/Phalcon_Http_Request) object from a controller you will need to use the `$this->request` public property of the controller:
+The most common place to access the request environment is in an action of a controller. To access the [Phalcon\Http\Request](api/Phalcon_Http) object from a controller you will need to use the `$this->request` public property of the controller:
 
 ```php
 <?php
@@ -92,7 +92,7 @@ class PostsController extends Controller
 
 ## ファイルのアップロード
 
-Another common task is file uploading. [Phalcon\Http\Request](api/Phalcon_Http_Request) offers an object-oriented way to achieve this task:
+Another common task is file uploading. [Phalcon\Http\Request](api/Phalcon_Http) offers an object-oriented way to achieve this task:
 
 ```php
 <?php
@@ -122,7 +122,7 @@ class PostsController extends Controller
 }
 ```
 
-Each object returned by `Phalcon\Http\Request::getUploadedFiles()` is an instance of the [Phalcon\Http\Request\File](api/Phalcon_Http_Request_File) class. Using the `$_FILES` superglobal array offers the same behavior. `Phalcon\Http\Request\File>` encapsulates only the information related to each file uploaded with the request.
+Each object returned by `Phalcon\Http\Request::getUploadedFiles()` is an instance of the [Phalcon\Http\Request\File](api/Phalcon_Http) class. Using the `$_FILES` superglobal array offers the same behavior. `Phalcon\Http\Request\File>` encapsulates only the information related to each file uploaded with the request.
 
 <a name='working-with-headers'></a>
 

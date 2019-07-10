@@ -114,7 +114,7 @@ class PostsController extends Controller
 }
 ```
 
-<h5 class='alert alert-warning' markdown='1'>Methods on event listeners accept an [Phalcon\Events\Event](api/Phalcon_Events_Event) object as their first parameter - methods in controllers do not. </h5>
+<h5 class='alert alert-warning' markdown='1'>Methods on event listeners accept an [Phalcon\Events\Event](api/Phalcon_Events) object as their first parameter - methods in controllers do not. </h5>
 
 <a name='forwarding'></a>
 ## Forwarding to other actions

@@ -6,7 +6,7 @@ title: 'Phalcon\Paginator\Adapter'
 ---
 # Abstract class **Phalcon\Paginator\Adapter**
 
-*implements* [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator_AdapterInterface)
+*implements* [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/paginator/adapter.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -32,7 +32,7 @@ Get current rows limit
 
 
 
-abstract public  **getPaginate** () inherited from [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator_AdapterInterface)
+abstract public  **getPaginate** () inherited from [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator)
 
 ...
 
@@ -42,9 +42,9 @@ abstract public  **getPaginate** () inherited from [Phalcon\Paginator\AdapterInt
 
 # Class **Phalcon\Paginator\Adapter\Model**
 
-*extends* abstract class [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+*extends* abstract class [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
-*implements* [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator_AdapterInterface)
+*implements* [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/paginator/adapter/model.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -81,19 +81,19 @@ Returns a slice of the resultset to show in the pagination
 
 
 
-public  **setCurrentPage** (*mixed* $page) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+public  **setCurrentPage** (*mixed* $page) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
 Set the current page number
 
 
 
-public  **setLimit** (*mixed* $limitRows) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+public  **setLimit** (*mixed* $limitRows) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
 Set current rows limit
 
 
 
-public  **getLimit** () inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+public  **getLimit** () inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
 Get current rows limit
 
@@ -104,9 +104,9 @@ Get current rows limit
 
 # Class **Phalcon\Paginator\Adapter\NativeArray**
 
-*extends* abstract class [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+*extends* abstract class [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
-*implements* [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator_AdapterInterface)
+*implements* [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/paginator/adapter/nativearray.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -147,19 +147,19 @@ Returns a slice of the resultset to show in the pagination
 
 
 
-public  **setCurrentPage** (*mixed* $page) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+public  **setCurrentPage** (*mixed* $page) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
 Set the current page number
 
 
 
-public  **setLimit** (*mixed* $limitRows) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+public  **setLimit** (*mixed* $limitRows) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
 Set current rows limit
 
 
 
-public  **getLimit** () inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+public  **getLimit** () inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
 Get current rows limit
 
@@ -170,9 +170,9 @@ Get current rows limit
 
 # Class **Phalcon\Paginator\Adapter\QueryBuilder**
 
-*extends* abstract class [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+*extends* abstract class [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
-*implements* [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator_AdapterInterface)
+*implements* [Phalcon\Paginator\AdapterInterface](/3.4/en/api/Phalcon_Paginator)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/paginator/adapter/querybuilder.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -230,19 +230,19 @@ Returns a slice of the resultset to show in the pagination
 
 
 
-public  **setCurrentPage** (*mixed* $page) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+public  **setCurrentPage** (*mixed* $page) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
 Set the current page number
 
 
 
-public  **setLimit** (*mixed* $limitRows) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+public  **setLimit** (*mixed* $limitRows) inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
 Set current rows limit
 
 
 
-public  **getLimit** () inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator_Adapter)
+public  **getLimit** () inherited from [Phalcon\Paginator\Adapter](/3.4/en/api/Phalcon_Paginator)
 
 Get current rows limit
 

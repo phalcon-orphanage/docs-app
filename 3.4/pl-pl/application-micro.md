@@ -661,7 +661,7 @@ Additional information: [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) [Info](/3.4
 
 ## Redirections
 
-You can redirect one matched route to another using the [Phalcon\Http\Response](api/Phalcon_Http_Response) object, just like in a full application.
+You can redirect one matched route to another using the [Phalcon\Http\Response](api/Phalcon_Http) object, just like in a full application.
 
 ```php
 $app->post('/old/url',
@@ -844,7 +844,7 @@ $app-&gt;get(
 
 A micro application can return many different types of responses. Direct output, use a template engine, calculated data, view based data, JSON etc.
 
-Handlers may return raw responses using plain text, [Phalcon\Http\Response](api/Phalcon_Http_Response) object or a custom built component that implements the [Phalcon\Http\ResponseInterface](api/Phalcon_Http_ResponseInterface).
+Handlers may return raw responses using plain text, [Phalcon\Http\Response](api/Phalcon_Http) object or a custom built component that implements the [Phalcon\Http\ResponseInterface](api/Phalcon_Http).
 
 <a name='responses-direct-output'></a>
 
@@ -919,7 +919,7 @@ $app->get(
 
 ## Application Response
 
-You can also use the [Phalcon\Http\Response](api/Phalcon_Http_Response) object to return responses to the caller. The response object has a lot of useful methods that make returning respones much easier.
+You can also use the [Phalcon\Http\Response](api/Phalcon_Http) object to return responses to the caller. The response object has a lot of useful methods that make returning respones much easier.
 
 ```php
 $app->get(
@@ -967,7 +967,7 @@ $app->get(
 
 ## JSON
 
-JSON can be sent back just as easy using the [Phalcon\Http\Response](api/Phalcon_Http_Response) object:
+JSON can be sent back just as easy using the [Phalcon\Http\Response](api/Phalcon_Http) object:
 
 ```php
 $app->get(
@@ -992,7 +992,7 @@ $app->get(
 
 # Zdarzenia
 
-A [Phalcon\Mvc\Micro](api/Phalcon_Mvc_Micro) application works closely with a [Phalcon\Events\Manager](api/Phalcon_Events_Manager) if it is present, to trigger events that can be used throughout our application. The type of those events is `micro`. These events trigger in our application and can be attached to relevant handlers that will perform actions needed by our application.
+A [Phalcon\Mvc\Micro](api/Phalcon_Mvc_Micro) application works closely with a [Phalcon\Events\Manager](api/Phalcon_Events) if it is present, to trigger events that can be used throughout our application. The type of those events is `micro`. These events trigger in our application and can be attached to relevant handlers that will perform actions needed by our application.
 
 <a name='events-available-events'></a>
 
@@ -1084,7 +1084,7 @@ $app->setEventsManager($eventsManager);
 
 Middleware are classes that can be attached to your application and introduce another layer where business logic can exist. They run sequentially, according to the order they are registered and not only improve mainainability, by encapsulating specific functionality, but also performance. A middleware class can stop execution when a particular business rule has not been satisfied, thus allowing the application to exit early without executing the full cycle of a request.
 
-The presence of a [Phalcon\Events\Manager](api/Phalcon_Events_Manager) is essential for middleware to operate, so it has to be registered in our Di container.
+The presence of a [Phalcon\Events\Manager](api/Phalcon_Events) is essential for middleware to operate, so it has to be registered in our Di container.
 
 <a name='middleware-attached-events'></a>
 
@@ -1239,7 +1239,7 @@ $application->setEventsManager($eventsManager);
 
 ```
 
-We need a [Phalcon\Events\Manager](api/Phalcon_Events_Manager) object. This can be a newly instantiated object or we can get the one that exists in our DI container (if you have used the `FactoryDefault` one).
+We need a [Phalcon\Events\Manager](api/Phalcon_Events) object. This can be a newly instantiated object or we can get the one that exists in our DI container (if you have used the `FactoryDefault` one).
 
 We attach every middleware class in the `micro` hook in the Events Manager. We could also be a bit more specific and attach it to say the `micro:beforeExecuteRoute` event.
 

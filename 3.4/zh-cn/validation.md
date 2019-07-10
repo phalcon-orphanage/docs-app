@@ -130,25 +130,25 @@ Phalcon公开一组内置的验证此组件：
 
 | 类                                                                                             | 注解                                                             |
 | --------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| [Phalcon\Validation\Validator\Alnum](api/Phalcon_Validation_Validator_Alnum)               | 验证字段值只能是字母和数字字符                                                |
-| [Phalcon\Validation\Validator\Alpha](api/Phalcon_Validation_Validator_Alpha)               | 验证字段值只能是字母字符                                                   |
-| [Phalcon\Validation\Validator\Date](api/Phalcon_Validation_Validator_Date)                 | 验证字段值是一个有效的日期。                                                 |
-| [Phalcon\Validation\Validator\Digit](api/Phalcon_Validation_Validator_Digit)               | 验证字段值只能是数字字符。                                                  |
-| [Phalcon\Validation\Validator\File](api/Phalcon_Validation_Validator_File)                 | 验证字段的值是正确的文件。                                                  |
-| [Phalcon\Validation\Validator\Uniqueness](api/Phalcon_Validation_Validator_Uniqueness)     | Validates that a field's value is unique in the related model. |
-| [Phalcon\Validation\Validator\Numericality](api/Phalcon_Validation_Validator_Numericality) | 验证字段值是一个有效的数值                                                  |
-| [Phalcon\Validation\Validator\PresenceOf](api/Phalcon_Validation_Validator_PresenceOf)     | 验证字段的值不是 null 或空字符串                                            |
-| [Phalcon\Validation\Validator\Identical](api/Phalcon_Validation_Validator_Identical)       | 验证字段值是否于指定的值相同                                                 |
-| [Phalcon\Validation\Validator\Email](api/Phalcon_Validation_Validator_Email)               | 验证字段包含一个有效的电子邮件格式                                              |
-| [Phalcon\Validation\Validator\ExclusionIn](api/Phalcon_Validation_Validator_ExclusionIn)   | 验证的值不在列表中                                                      |
-| [Phalcon\Validation\Validator\InclusionIn](api/Phalcon_Validation_Validator_InclusionIn)   | 验证值存在列表中                                                       |
-| [Phalcon\Validation\Validator\Regex](api/Phalcon_Validation_Validator_Regex)               | 验证字段的值匹配的正则表达式                                                 |
-| [Phalcon\Validation\Validator\StringLength](api/Phalcon_Validation_Validator_StringLength) | 验证一个字符串的长度                                                     |
-| [Phalcon\Validation\Validator\Between](api/Phalcon_Validation_Validator_Between)           | 验证值是两个值之间                                                      |
-| [Phalcon\Validation\Validator\Confirmation](api/Phalcon_Validation_Validator_Confirmation) | 验证值是相同的数据中的字段                                                  |
-| [Phalcon\Validation\Validator\Url](api/Phalcon_Validation_Validator_Url)                   | 验证字段包含一个有效的 URL                                                |
-| [Phalcon\Validation\Validator\CreditCard](api/Phalcon_Validation_Validator_CreditCard)     | 验证的信用卡卡号                                                       |
-| [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation_Validator_Callback)         | 验证时使用回调函数                                                      |
+| [Phalcon\Validation\Validator\Alnum](api/Phalcon_Validation)               | 验证字段值只能是字母和数字字符                                                |
+| [Phalcon\Validation\Validator\Alpha](api/Phalcon_Validation)               | 验证字段值只能是字母字符                                                   |
+| [Phalcon\Validation\Validator\Date](api/Phalcon_Validation)                 | 验证字段值是一个有效的日期。                                                 |
+| [Phalcon\Validation\Validator\Digit](api/Phalcon_Validation)               | 验证字段值只能是数字字符。                                                  |
+| [Phalcon\Validation\Validator\File](api/Phalcon_Validation)                 | 验证字段的值是正确的文件。                                                  |
+| [Phalcon\Validation\Validator\Uniqueness](api/Phalcon_Validation)     | Validates that a field's value is unique in the related model. |
+| [Phalcon\Validation\Validator\Numericality](api/Phalcon_Validation) | 验证字段值是一个有效的数值                                                  |
+| [Phalcon\Validation\Validator\PresenceOf](api/Phalcon_Validation)     | 验证字段的值不是 null 或空字符串                                            |
+| [Phalcon\Validation\Validator\Identical](api/Phalcon_Validation)       | 验证字段值是否于指定的值相同                                                 |
+| [Phalcon\Validation\Validator\Email](api/Phalcon_Validation)               | 验证字段包含一个有效的电子邮件格式                                              |
+| [Phalcon\Validation\Validator\ExclusionIn](api/Phalcon_Validation)   | 验证的值不在列表中                                                      |
+| [Phalcon\Validation\Validator\InclusionIn](api/Phalcon_Validation)   | 验证值存在列表中                                                       |
+| [Phalcon\Validation\Validator\Regex](api/Phalcon_Validation)               | 验证字段的值匹配的正则表达式                                                 |
+| [Phalcon\Validation\Validator\StringLength](api/Phalcon_Validation) | 验证一个字符串的长度                                                     |
+| [Phalcon\Validation\Validator\Between](api/Phalcon_Validation)           | 验证值是两个值之间                                                      |
+| [Phalcon\Validation\Validator\Confirmation](api/Phalcon_Validation) | 验证值是相同的数据中的字段                                                  |
+| [Phalcon\Validation\Validator\Url](api/Phalcon_Validation)                   | 验证字段包含一个有效的 URL                                                |
+| [Phalcon\Validation\Validator\CreditCard](api/Phalcon_Validation)     | 验证的信用卡卡号                                                       |
+| [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation)         | 验证时使用回调函数                                                      |
 
 下面的示例说明如何创建此组件附加验证程序：
 
@@ -197,7 +197,7 @@ class IpValidator extends Validator
 
 ## 回调验证程序
 
-By using [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation_Validator_Callback) you can execute custom function which must return boolean or new validator class which will be used to validate the same field. 通过返回 `true` 验证将成功，返回 `false` 将意味着验证失败。 当执行这个验证器时，Phalcon将根据它是什么传递数据——如果它是一个实体(例如，一个模型，一个`stdClass`等)，那么将传递实体，否则数据(i)。一个数组，比如`$_POST`)。 这是示例：
+By using [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation) you can execute custom function which must return boolean or new validator class which will be used to validate the same field. 通过返回 `true` 验证将成功，返回 `false` 将意味着验证失败。 当执行这个验证器时，Phalcon将根据它是什么传递数据——如果它是一个实体(例如，一个模型，一个`stdClass`等)，那么将传递实体，否则数据(i)。一个数组，比如`$_POST`)。 这是示例：
 
 ```php
 <?php
@@ -263,7 +263,7 @@ $messages = $validation->validate(['amount' => 10]); // 会从第三个验证器
 
 [Phalcon\Validation](api/Phalcon_Validation) has a messaging subsystem that provides a flexible way to output or store the validation messages generated during the validation processes.
 
-Each message consists of an instance of the class [Phalcon\Validation\Message](api/Phalcon_Validation_Message). `getMessages()` 方法，即可检索到消息生成的集。 每个消息会提供扩展信息像消息和消息类型等属性：
+Each message consists of an instance of the class [Phalcon\Validation\Message](api/Phalcon_Validation). `getMessages()` 方法，即可检索到消息生成的集。 每个消息会提供扩展信息像消息和消息类型等属性：
 
 ```php
 <?php

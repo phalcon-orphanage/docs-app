@@ -17,7 +17,7 @@ title: 'Phalcon\Acl'
 
 # Abstract class **Phalcon\Acl\Adapter**
 
-*implements* [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/acl/adapter.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -43,7 +43,7 @@ Active access which the list is checking if some role can access it
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 Sets the events manager
 
@@ -67,72 +67,72 @@ Returns the default ACL access level
 
 
 
-abstract public  **setNoArgumentsDefaultAction** (*mixed* $defaultAccess) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **setNoArgumentsDefaultAction** (*mixed* $defaultAccess) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **getNoArgumentsDefaultAction** () inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **getNoArgumentsDefaultAction** () inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **addRole** (*mixed* $role, [*mixed* $accessInherits]) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **addRole** (*mixed* $role, [*mixed* $accessInherits]) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **addInherit** (*mixed* $roleName, *mixed* $roleToInherit) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **addInherit** (*mixed* $roleName, *mixed* $roleToInherit) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **isRole** (*mixed* $roleName) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **isRole** (*mixed* $roleName) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **isResource** (*mixed* $resourceName) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **isResource** (*mixed* $resourceName) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **addResource** (*mixed* $resourceObject, *mixed* $accessList) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **addResource** (*mixed* $resourceObject, *mixed* $accessList) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **addResourceAccess** (*mixed* $resourceName, *mixed* $accessList) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **addResourceAccess** (*mixed* $resourceName, *mixed* $accessList) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **dropResourceAccess** (*mixed* $resourceName, *mixed* $accessList) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **dropResourceAccess** (*mixed* $resourceName, *mixed* $accessList) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **allow** (*mixed* $roleName, *mixed* $resourceName, *mixed* $access, [*mixed* $func]) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **allow** (*mixed* $roleName, *mixed* $resourceName, *mixed* $access, [*mixed* $func]) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **deny** (*mixed* $roleName, *mixed* $resourceName, *mixed* $access, [*mixed* $func]) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **deny** (*mixed* $roleName, *mixed* $resourceName, *mixed* $access, [*mixed* $func]) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **isAllowed** (*mixed* $roleName, *mixed* $resourceName, *mixed* $access, [*array* $parameters]) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **isAllowed** (*mixed* $roleName, *mixed* $resourceName, *mixed* $access, [*array* $parameters]) inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **getRoles** () inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **getRoles** () inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
 
-abstract public  **getResources** () inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+abstract public  **getResources** () inherited from [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 ...
 
@@ -142,9 +142,9 @@ abstract public  **getResources** () inherited from [Phalcon\Acl\AdapterInterfac
 
 # Class **Phalcon\Acl\Adapter\Memory**
 
-*extends* abstract class [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl_Adapter)
+*extends* abstract class [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl_AdapterInterface)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Acl\AdapterInterface](/3.4/en/api/Phalcon_Acl)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/acl/adapter/memory.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -258,7 +258,7 @@ Check whether resource exist in the resources list
 
 
 
-public  **addResource** ([Phalcon\Acl\Resource](/3.4/en/api/Phalcon_Acl_Resource) | *string* $resourceValue, *array* | *string* $accessList)
+public  **addResource** ([Phalcon\Acl\Resource](/3.4/en/api/Phalcon_Acl) | *string* $resourceValue, *array* | *string* $accessList)
 
 Adds a resource to the ACL list
 Access names can be a particular action, by example
@@ -409,43 +409,43 @@ Return an array with every resource registered in the list
 
 
 
-public  **getActiveRole** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl_Adapter)
+public  **getActiveRole** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl)
 
 Role which the list is checking if it's allowed to certain resource/access
 
 
 
-public  **getActiveResource** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl_Adapter)
+public  **getActiveResource** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl)
 
 Resource which the list is checking if some role can access it
 
 
 
-public  **getActiveAccess** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl_Adapter)
+public  **getActiveAccess** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl)
 
 Active access which the list is checking if some role can access it
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl_Adapter)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl)
 
 Sets the events manager
 
 
 
-public  **getEventsManager** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl_Adapter)
+public  **getEventsManager** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl)
 
 Returns the internal event manager
 
 
 
-public  **setDefaultAction** (*mixed* $defaultAccess) inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl_Adapter)
+public  **setDefaultAction** (*mixed* $defaultAccess) inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl)
 
 Sets the default access level (Phalcon\Acl::ALLOW or Phalcon\Acl::DENY)
 
 
 
-public  **getDefaultAction** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl_Adapter)
+public  **getDefaultAction** () inherited from [Phalcon\Acl\Adapter](/3.4/en/api/Phalcon_Acl)
 
 Returns the default ACL access level
 
@@ -636,7 +636,7 @@ String representation of the exception
 
 # Class **Phalcon\Acl\Resource**
 
-*implements* [Phalcon\Acl\ResourceInterface](/3.4/en/api/Phalcon_Acl_ResourceInterface)
+*implements* [Phalcon\Acl\ResourceInterface](/3.4/en/api/Phalcon_Acl)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/acl/resource.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -706,7 +706,7 @@ Magic method __toString
 
 # Class **Phalcon\Acl\Role**
 
-*implements* [Phalcon\Acl\RoleInterface](/3.4/en/api/Phalcon_Acl_RoleInterface)
+*implements* [Phalcon\Acl\RoleInterface](/3.4/en/api/Phalcon_Acl)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/acl/role.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

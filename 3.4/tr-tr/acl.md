@@ -43,7 +43,7 @@ $acl->setDefaultAction(
 
 ## Adding Roles to the ACL
 
-Bir rol, erişim listesindeki belirli kaynaklara erişebilen veya erişemeyen bir nesnedir. Örnek olarak, rolleri bir organizasyon içerisindeki gruplar olarak tanımlayacağız. The [Phalcon\Acl\Role](api/Phalcon_Acl_Role) class is available to create roles in a more structured way. Yakın zamanda oluşturulmuş listemize bazı roller ekleyelim:
+Bir rol, erişim listesindeki belirli kaynaklara erişebilen veya erişemeyen bir nesnedir. Örnek olarak, rolleri bir organizasyon içerisindeki gruplar olarak tanımlayacağız. The [Phalcon\Acl\Role](api/Phalcon_Acl) class is available to create roles in a more structured way. Yakın zamanda oluşturulmuş listemize bazı roller ekleyelim:
 
 ```php
 <?php
@@ -68,7 +68,7 @@ Görebildiğiniz gibi, roller bir örnek kullanmadan doğrudan tanımlanır.
 
 ## Adding Resources
 
-Kaynaklar, erişimin kontrol edildiği nesnelerdir. Normalde MVC uygulamalarında kaynaklar denetleyicileri gösterir. Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl_Resource) class can be used in defining resources. ACL'nin kontrol etmesi gereken şeyi anlaması için bir kaynağa ilgili işlemler veya işlemler eklemek önemlidir.
+Kaynaklar, erişimin kontrol edildiği nesnelerdir. Normalde MVC uygulamalarında kaynaklar denetleyicileri gösterir. Although this is not mandatory, the [Phalcon\Acl\Resource](api/Phalcon_Acl) class can be used in defining resources. ACL'nin kontrol etmesi gereken şeyi anlaması için bir kaynağa ilgili işlemler veya işlemler eklemek önemlidir.
 
 ```php
 <?php
@@ -219,7 +219,7 @@ $acl->isAllowed(
 
 ## Objects as role name and resource name
 
-Nesneleri `roleName` ve `resourceName` olarak geçirebilirsiniz. Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl_RoleAware) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl_ResourceAware) for `resourceName`.
+Nesneleri `roleName` ve `resourceName` olarak geçirebilirsiniz. Your classes must implement [Phalcon\Acl\RoleAware](api/Phalcon_Acl) for `roleName` and [Phalcon\Acl\ResourceAware](api/Phalcon_Acl) for `resourceName`.
 
 `UserRole` sınıfımız
 
@@ -438,7 +438,7 @@ You can still add any custom parameters to function and pass associative array i
 
 ## Roles Inheritance
 
-You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl_Role) provides. Roller diğer rollerden miras kalabilir, böylece üst sınıflara veya kaynak alt kümelerine erişime izin verebilir. Rol kalıtımını kullanmak için, devredilen rolü, listede bu rolü eklerken yöntem çağrısının ikinci parametresi olarak iletmeniz gerekir.
+You can build complex role structures using the inheritance that [Phalcon\Acl\Role](api/Phalcon_Acl) provides. Roller diğer rollerden miras kalabilir, böylece üst sınıflara veya kaynak alt kümelerine erişime izin verebilir. Rol kalıtımını kullanmak için, devredilen rolü, listede bu rolü eklerken yöntem çağrısının ikinci parametresi olarak iletmeniz gerekir.
 
 ```php
 <?php
@@ -572,4 +572,4 @@ $acl->setEventsManager($eventsManager);
 
 ## Implementing your own adapters
 
-The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl_AdapterInterface) interface must be implemented in order to create your own ACL adapters or extend the existing ones.
+The [Phalcon\Acl\AdapterInterface](api/Phalcon_Acl) interface must be implemented in order to create your own ACL adapters or extend the existing ones.

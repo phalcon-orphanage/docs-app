@@ -130,25 +130,25 @@ Phalcon exposes a set of built-in validators for this component:
 
 | Class                                                                                         | Explanation                                                       |
 | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [Phalcon\Validation\Validator\Alnum](api/Phalcon_Validation_Validator_Alnum)               | Validates that a field's value is only alphanumeric character(s). |
-| [Phalcon\Validation\Validator\Alpha](api/Phalcon_Validation_Validator_Alpha)               | Validates that a field's value is only alphabetic character(s).   |
-| [Phalcon\Validation\Validator\Date](api/Phalcon_Validation_Validator_Date)                 | Validates that a field's value is a valid date.                   |
-| [Phalcon\Validation\Validator\Digit](api/Phalcon_Validation_Validator_Digit)               | Validates that a field's value is only numeric character(s).      |
-| [Phalcon\Validation\Validator\File](api/Phalcon_Validation_Validator_File)                 | Validates that a field's value is a correct file.                 |
-| [Phalcon\Validation\Validator\Uniqueness](api/Phalcon_Validation_Validator_Uniqueness)     | Validates that a field's value is unique in the related model.    |
-| [Phalcon\Validation\Validator\Numericality](api/Phalcon_Validation_Validator_Numericality) | Validates that a field's value is a valid numeric value.          |
-| [Phalcon\Validation\Validator\PresenceOf](api/Phalcon_Validation_Validator_PresenceOf)     | Validates that a field's value is not null or empty string.       |
-| [Phalcon\Validation\Validator\Identical](api/Phalcon_Validation_Validator_Identical)       | Validates that a field's value is the same as a specified value   |
-| [Phalcon\Validation\Validator\Email](api/Phalcon_Validation_Validator_Email)               | Validates that field contains a valid email format                |
-| [Phalcon\Validation\Validator\ExclusionIn](api/Phalcon_Validation_Validator_ExclusionIn)   | Validates that a value is not within a list of possible values    |
-| [Phalcon\Validation\Validator\InclusionIn](api/Phalcon_Validation_Validator_InclusionIn)   | Validates that a value is within a list of possible values        |
-| [Phalcon\Validation\Validator\Regex](api/Phalcon_Validation_Validator_Regex)               | Validates that the value of a field matches a regular expression  |
-| [Phalcon\Validation\Validator\StringLength](api/Phalcon_Validation_Validator_StringLength) | Validates the length of a string                                  |
-| [Phalcon\Validation\Validator\Between](api/Phalcon_Validation_Validator_Between)           | Validates that a value is between two values                      |
-| [Phalcon\Validation\Validator\Confirmation](api/Phalcon_Validation_Validator_Confirmation) | Validates that a value is the same as another present in the data |
-| [Phalcon\Validation\Validator\Url](api/Phalcon_Validation_Validator_Url)                   | Validates that field contains a valid URL                         |
-| [Phalcon\Validation\Validator\CreditCard](api/Phalcon_Validation_Validator_CreditCard)     | Validates a credit card number                                    |
-| [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation_Validator_Callback)         | Validates using callback function                                 |
+| [Phalcon\Validation\Validator\Alnum](api/Phalcon_Validation)               | Validates that a field's value is only alphanumeric character(s). |
+| [Phalcon\Validation\Validator\Alpha](api/Phalcon_Validation)               | Validates that a field's value is only alphabetic character(s).   |
+| [Phalcon\Validation\Validator\Date](api/Phalcon_Validation)                 | Validates that a field's value is a valid date.                   |
+| [Phalcon\Validation\Validator\Digit](api/Phalcon_Validation)               | Validates that a field's value is only numeric character(s).      |
+| [Phalcon\Validation\Validator\File](api/Phalcon_Validation)                 | Validates that a field's value is a correct file.                 |
+| [Phalcon\Validation\Validator\Uniqueness](api/Phalcon_Validation)     | Validates that a field's value is unique in the related model.    |
+| [Phalcon\Validation\Validator\Numericality](api/Phalcon_Validation) | Validates that a field's value is a valid numeric value.          |
+| [Phalcon\Validation\Validator\PresenceOf](api/Phalcon_Validation)     | Validates that a field's value is not null or empty string.       |
+| [Phalcon\Validation\Validator\Identical](api/Phalcon_Validation)       | Validates that a field's value is the same as a specified value   |
+| [Phalcon\Validation\Validator\Email](api/Phalcon_Validation)               | Validates that field contains a valid email format                |
+| [Phalcon\Validation\Validator\ExclusionIn](api/Phalcon_Validation)   | Validates that a value is not within a list of possible values    |
+| [Phalcon\Validation\Validator\InclusionIn](api/Phalcon_Validation)   | Validates that a value is within a list of possible values        |
+| [Phalcon\Validation\Validator\Regex](api/Phalcon_Validation)               | Validates that the value of a field matches a regular expression  |
+| [Phalcon\Validation\Validator\StringLength](api/Phalcon_Validation) | Validates the length of a string                                  |
+| [Phalcon\Validation\Validator\Between](api/Phalcon_Validation)           | Validates that a value is between two values                      |
+| [Phalcon\Validation\Validator\Confirmation](api/Phalcon_Validation) | Validates that a value is the same as another present in the data |
+| [Phalcon\Validation\Validator\Url](api/Phalcon_Validation)                   | Validates that field contains a valid URL                         |
+| [Phalcon\Validation\Validator\CreditCard](api/Phalcon_Validation)     | Validates a credit card number                                    |
+| [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation)         | Validates using callback function                                 |
 
 The following example explains how to create additional validators for this component:
 
@@ -197,7 +197,7 @@ It is important that validators return a valid boolean value indicating if the v
 
 ## Callback Validator
 
-By using [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation_Validator_Callback) you can execute custom function which must return boolean or new validator class which will be used to validate the same field. By returning `true` validation will be successful, returning `false` will mean validation failed. When executing this validator Phalcon will pass data depending what it is - if it's an entity (i.e. a model, a `stdClass` etc.) then entity will be passed, otherwise data (i.e an array like `$_POST`). There is example:
+By using [Phalcon\Validation\Validator\Callback](api/Phalcon_Validation) you can execute custom function which must return boolean or new validator class which will be used to validate the same field. By returning `true` validation will be successful, returning `false` will mean validation failed. When executing this validator Phalcon will pass data depending what it is - if it's an entity (i.e. a model, a `stdClass` etc.) then entity will be passed, otherwise data (i.e an array like `$_POST`). There is example:
 
 ```php
 <?php
@@ -263,7 +263,7 @@ $messages = $validation->validate(['amount' => 10]); // will return message from
 
 [Phalcon\Validation](api/Phalcon_Validation) has a messaging subsystem that provides a flexible way to output or store the validation messages generated during the validation processes.
 
-Each message consists of an instance of the class [Phalcon\Validation\Message](api/Phalcon_Validation_Message). The set of messages generated can be retrieved with the `getMessages()` method. Each message provides extended information like the attribute that generated the message or the message type:
+Each message consists of an instance of the class [Phalcon\Validation\Message](api/Phalcon_Validation). The set of messages generated can be retrieved with the `getMessages()` method. Each message provides extended information like the attribute that generated the message or the message type:
 
 ```php
 <?php

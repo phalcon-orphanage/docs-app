@@ -260,7 +260,7 @@ If you're using Phalcon as a full-stack framework, you can read the services pro
 
 ## Request and Response
 
-Za předpokladu, že framework poskytuje sadu předem registrovaných služeb. Vysvětlíme si, jak pracovat s prostředím HTTP. The `request` service contains an instance of [Phalcon\Http\Request](api/Phalcon_Http_Request) and the `response` contains a [Phalcon\Http\Response](api/Phalcon_Http_Response) representing what is going to be sent back to the client.
+Za předpokladu, že framework poskytuje sadu předem registrovaných služeb. Vysvětlíme si, jak pracovat s prostředím HTTP. The `request` service contains an instance of [Phalcon\Http\Request](api/Phalcon_Http) and the `response` contains a [Phalcon\Http\Response](api/Phalcon_Http) representing what is going to be sent back to the client.
 
 ```php
 <?php

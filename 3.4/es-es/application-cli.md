@@ -218,4 +218,4 @@ class MainTask extends Task
 }
 ```
 
-However, it's a better idea to extend [Phalcon\Cli\Task](api/Phalcon_Cli_Task) and implement this kind of logic there.
+However, it's a better idea to extend [Phalcon\Cli\Task](api/Phalcon_Cli) and implement this kind of logic there.

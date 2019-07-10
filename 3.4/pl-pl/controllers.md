@@ -260,7 +260,7 @@ If you're using Phalcon as a full-stack framework, you can read the services pro
 
 ## Żądanie i Odpowiedź
 
-Przy założeniu, że framework dostarcza zestaw wstępnie zarejestrowanych serwisów, wyjaśnimy jak przeprowadzać interakcję ze środowiskiem HTTP. The `request` service contains an instance of [Phalcon\Http\Request](api/Phalcon_Http_Request) and the `response` contains a [Phalcon\Http\Response](api/Phalcon_Http_Response) representing what is going to be sent back to the client.
+Przy założeniu, że framework dostarcza zestaw wstępnie zarejestrowanych serwisów, wyjaśnimy jak przeprowadzać interakcję ze środowiskiem HTTP. The `request` service contains an instance of [Phalcon\Http\Request](api/Phalcon_Http) and the `response` contains a [Phalcon\Http\Response](api/Phalcon_Http) representing what is going to be sent back to the client.
 
 ```php
 <?php

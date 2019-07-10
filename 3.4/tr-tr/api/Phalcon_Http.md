@@ -6,7 +6,7 @@ title: 'Phalcon\Http\Cookie'
 ---
 # Class **Phalcon\Http\Cookie**
 
-*implements* [Phalcon\Http\CookieInterface](/3.4/en/api/Phalcon_Http_CookieInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\CookieInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/cookie.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -32,7 +32,7 @@ Returns the internal dependency injector
 
 
 
-public [Phalcon\Http\Cookie](/3.4/en/api/Phalcon_Http_Cookie) **setValue** (*string* $value)
+public [Phalcon\Http\Cookie](/3.4/en/api/Phalcon_Http) **setValue** (*string* $value)
 
 Sets the cookie's value
 
@@ -64,14 +64,14 @@ Deletes the cookie by setting an expire time in the past
 
 
 
-public **setSignKey** (*string* $signKey = null): [Phalcon\Http\CookieInterface](/3.4/en/api/Phalcon_Http_CookieInterface)
+public **setSignKey** (*string* $signKey = null): [Phalcon\Http\CookieInterface](/3.4/en/api/Phalcon_Http)
 
 Sets the cookie's sign key. The `$signKey` MUST be at least 32 characters long and generated using a cryptographically secure pseudo random generator.
 
 You can use `null` to disable cookie signing.
 
 See: [Phalcon\Security\Random](/3.4/en/api/Phalcon_Security_Random)
-Throws: [Phalcon\Http\Cookie\Exception](/3.4/en/api/Phalcon_Http_Cookie_Exception)
+Throws: [Phalcon\Http\Cookie\Exception](/3.4/en/api/Phalcon_Http)
 
 
 
@@ -334,7 +334,7 @@ abstract public  **getHttpOnly** ()
 
 # Class **Phalcon\Http\Request**
 
-*implements* [Phalcon\Http\RequestInterface](/3.4/en/api/Phalcon_Http_RequestInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\RequestInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/request.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -922,7 +922,7 @@ String representation of the exception
 
 # Class **Phalcon\Http\Request\File**
 
-*implements* [Phalcon\Http\Request\FileInterface](/3.4/en/api/Phalcon_Http_Request_FileInterface)
+*implements* [Phalcon\Http\Request\FileInterface](/3.4/en/api/Phalcon_Http)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/request/file.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1284,7 +1284,7 @@ abstract public  **getDigestAuth** ()
 
 # Class **Phalcon\Http\Response**
 
-*implements* [Phalcon\Http\ResponseInterface](/3.4/en/api/Phalcon_Http_ResponseInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\ResponseInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/response.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1352,7 +1352,7 @@ print_r(
 
 
 
-public  **setHeaders** ([Phalcon\Http\Response\HeadersInterface](/3.4/en/api/Phalcon_Http_Response_HeadersInterface) $headers)
+public  **setHeaders** ([Phalcon\Http\Response\HeadersInterface](/3.4/en/api/Phalcon_Http) $headers)
 
 Sets a headers bag for the response externally
 
@@ -1375,13 +1375,13 @@ echo $response->getReasonPhrase();
 
 
 
-public  **setCookies** ([Phalcon\Http\Response\CookiesInterface](/3.4/en/api/Phalcon_Http_Response_CookiesInterface) $cookies)
+public  **setCookies** ([Phalcon\Http\Response\CookiesInterface](/3.4/en/api/Phalcon_Http) $cookies)
 
 Sets a cookies bag for the response externally
 
 
 
-public [Phalcon\Http\Response\CookiesInterface](/3.4/en/api/Phalcon_Http_Response_CookiesInterface) **getCookies** ()
+public [Phalcon\Http\Response\CookiesInterface](/3.4/en/api/Phalcon_Http) **getCookies** ()
 
 Returns cookies set by the user
 
@@ -1611,7 +1611,7 @@ Sets an attached file to be sent at the end of the request
 
 # Class **Phalcon\Http\Response\Cookies**
 
-*implements* [Phalcon\Http\Response\CookiesInterface](/3.4/en/api/Phalcon_Http_Response_CookiesInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\Response\CookiesInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/response/cookies.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1632,14 +1632,14 @@ Returns the internal dependency injector
 
 
 
-public **setSignKey** (*string* $signKey = null): [Phalcon\Http\CookieInterface](/3.4/en/api/Phalcon_Http_CookieInterface)
+public **setSignKey** (*string* $signKey = null): [Phalcon\Http\CookieInterface](/3.4/en/api/Phalcon_Http)
 
 Sets the cookie's sign key. The `$signKey` MUST be at least 32 characters long and generated using a cryptographically secure pseudo random generator.
 
 You can use `null` to disable cookie signing.
 
 See: [Phalcon\Security\Random](/3.4/en/api/Phalcon_Security_Random)
-Throws: [Phalcon\Http\Cookie\Exception](/3.4/en/api/Phalcon_Http_Cookie_Exception)
+Throws: [Phalcon\Http\Cookie\Exception](/3.4/en/api/Phalcon_Http)
 
 
 	
@@ -1824,7 +1824,7 @@ String representation of the exception
 
 # Class **Phalcon\Http\Response\Headers**
 
-*implements* [Phalcon\Http\Response\HeadersInterface](/3.4/en/api/Phalcon_Http_Response_HeadersInterface)
+*implements* [Phalcon\Http\Response\HeadersInterface](/3.4/en/api/Phalcon_Http)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/response/headers.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

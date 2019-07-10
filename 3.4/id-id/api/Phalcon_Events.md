@@ -6,7 +6,7 @@ title: 'Phalcon\Events\Event'
 ---
 # Class **Phalcon\Events\Event**
 
-*implements* [Phalcon\Events\EventInterface](/3.4/en/api/Phalcon_Events_EventInterface)
+*implements* [Phalcon\Events\EventInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/events/event.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -137,7 +137,7 @@ abstract public  **isCancelable** ()
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/events/eventsawareinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-abstract public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager)
+abstract public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager)
 
 ...
 
@@ -229,7 +229,7 @@ String representation of the exception
 
 # Class **Phalcon\Events\Manager**
 
-*implements* [Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface)
+*implements* [Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/events/manager.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -289,7 +289,7 @@ Removes all events from the EventsManager
 
 
 
-final public *mixed* **fireQueue** ([SplPriorityQueue](http://php.net/manual/en/class.splpriorityqueue.php) | *array* $queue, [Phalcon\Events\Event](/3.4/en/api/Phalcon_Events_Event) $event)
+final public *mixed* **fireQueue** ([SplPriorityQueue](http://php.net/manual/en/class.splpriorityqueue.php) | *array* $queue, [Phalcon\Events\Event](/3.4/en/api/Phalcon_Events) $event)
 
 Internal handler to call a queue of events
 

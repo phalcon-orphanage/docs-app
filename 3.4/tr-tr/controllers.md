@@ -260,7 +260,7 @@ If you're using Phalcon as a full-stack framework, you can read the services pro
 
 ## Request and Response
 
-İskeletin önceden kayıtlı bir dizi hizmet sunduğunu varsayarsak. HTTP ortamıyla nasıl etkileşim kuracağımızı açıklıyoruz. The `request` service contains an instance of [Phalcon\Http\Request](api/Phalcon_Http_Request) and the `response` contains a [Phalcon\Http\Response](api/Phalcon_Http_Response) representing what is going to be sent back to the client.
+İskeletin önceden kayıtlı bir dizi hizmet sunduğunu varsayarsak. HTTP ortamıyla nasıl etkileşim kuracağımızı açıklıyoruz. The `request` service contains an instance of [Phalcon\Http\Request](api/Phalcon_Http) and the `response` contains a [Phalcon\Http\Response](api/Phalcon_Http) representing what is going to be sent back to the client.
 
 ```php
 <?php

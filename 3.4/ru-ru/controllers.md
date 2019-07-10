@@ -260,7 +260,7 @@ If you're using Phalcon as a full-stack framework, you can read the services pro
 
 ## Запрос и ответ
 
-Давайте предположим, что фреймворк предоставляет набор предварительно зарегистрированных сервисов. В этом примере будет показано как работать с HTTP окружением. The `request` service contains an instance of [Phalcon\Http\Request](api/Phalcon_Http_Request) and the `response` contains a [Phalcon\Http\Response](api/Phalcon_Http_Response) representing what is going to be sent back to the client.
+Давайте предположим, что фреймворк предоставляет набор предварительно зарегистрированных сервисов. В этом примере будет показано как работать с HTTP окружением. The `request` service contains an instance of [Phalcon\Http\Request](api/Phalcon_Http) and the `response` contains a [Phalcon\Http\Response](api/Phalcon_Http) representing what is going to be sent back to the client.
 
 ```php
 <?php

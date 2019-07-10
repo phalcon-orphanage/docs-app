@@ -8,7 +8,7 @@ title: 'Phalcon\Cli\Console'
 
 *extends* abstract class [Phalcon\Application](/3.4/en/api/Phalcon_Application)
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/cli/console.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -54,7 +54,7 @@ Phalcon\Application
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Application](/3.4/en/api/Phalcon_Application)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Application](/3.4/en/api/Phalcon_Application)
 
 Sets the events manager
 
@@ -216,7 +216,7 @@ String representation of the exception
 
 *extends* abstract class [Phalcon\Dispatcher](/3.4/en/api/Phalcon_Dispatcher)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface), [Phalcon\Cli\DispatcherInterface](/3.4/en/api/Phalcon_Cli_DispatcherInterface)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface), [Phalcon\Cli\DispatcherInterface](/3.4/en/api/Phalcon_Cli)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/cli/dispatcher.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -347,7 +347,7 @@ Returns the internal dependency injector
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Dispatcher](/3.4/en/api/Phalcon_Dispatcher)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Dispatcher](/3.4/en/api/Phalcon_Dispatcher)
 
 Sets the events manager
 
@@ -884,7 +884,7 @@ Handles routing information received from command-line arguments
 
 
 
-public [Phalcon\Cli\Router\Route](/3.4/en/api/Phalcon_Cli_Router_Route) **add** (*string* $pattern, [*string/array* $paths])
+public [Phalcon\Cli\Router\Route](/3.4/en/api/Phalcon_Cli) **add** (*string* $pattern, [*string/array* $paths])
 
 Adds a route to the router
 
@@ -945,7 +945,7 @@ Returns all the routes defined in the router
 
 
 
-public [Phalcon\Cli\Router\Route](/3.4/en/api/Phalcon_Cli_Router_Route) **getRouteById** (*int* $id)
+public [Phalcon\Cli\Router\Route](/3.4/en/api/Phalcon_Cli) **getRouteById** (*int* $id)
 
 Returns a route object by its id
 
@@ -1096,7 +1096,7 @@ $router->add(
 
 
 
-public [Phalcon\Cli\Router\Route](/3.4/en/api/Phalcon_Cli_Router_Route) **beforeMatch** (*callback* $callback)
+public [Phalcon\Cli\Router\Route](/3.4/en/api/Phalcon_Cli) **beforeMatch** (*callback* $callback)
 
 Sets a callback that is called if the route is matched.
 The developer can implement any arbitrary conditions here
@@ -1140,7 +1140,7 @@ Returns the paths using positions as keys and names as values
 
 
 
-public [Phalcon\Cli\Router\Route](/3.4/en/api/Phalcon_Cli_Router_Route) **convert** (*string* $name, *callable* $converter)
+public [Phalcon\Cli\Router\Route](/3.4/en/api/Phalcon_Cli) **convert** (*string* $name, *callable* $converter)
 
 Adds a converter to perform an additional transformation for certain parameter
 
@@ -1323,7 +1323,7 @@ abstract public  **getRouteByName** (*mixed* $name)
 
 *extends* abstract class [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events_EventsAwareInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Cli\TaskInterface](/3.4/en/api/Phalcon_Cli_TaskInterface)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Cli\TaskInterface](/3.4/en/api/Phalcon_Cli)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/cli/task.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1371,7 +1371,7 @@ Returns the internal dependency injector
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events_ManagerInterface) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
 
 Sets the event manager
 
