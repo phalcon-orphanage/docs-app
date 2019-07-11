@@ -80,19 +80,19 @@ Phalcon\Assets\Collection constructor
 
 
 
-public  **add** ([Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource) $resource)
+public  **add** ([Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets) $resource)
 
 Adds a resource to the collection
 
 
 
-public  **addInline** ([Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline) $code)
+public  **addInline** ([Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets) $code)
 
 Adds an inline code to the collection
 
 
 
-public  **has** ([Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets_ResourceInterface) $resource)
+public  **has** ([Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets) $resource)
 
 Checks this the resource is added to the collection.
 
@@ -123,7 +123,7 @@ Adds an inline CSS to the collection
 
 
 
-public [Phalcon\Assets\Collection](/3.4/en/api/Phalcon_Assets_Collection) **addJs** (*string* $path, [*boolean* $local], [*boolean* $filter], [*array* $attributes])
+public [Phalcon\Assets\Collection](/3.4/en/api/Phalcon_Assets) **addJs** (*string* $path, [*boolean* $local], [*boolean* $filter], [*array* $attributes])
 
 Adds a javascript resource to the collection
 
@@ -231,13 +231,13 @@ Returns the complete location where the joined/filtered collection must be writt
 
 
 
-public  **addFilter** ([Phalcon\Assets\FilterInterface](/3.4/en/api/Phalcon_Assets_FilterInterface) $filter)
+public  **addFilter** ([Phalcon\Assets\FilterInterface](/3.4/en/api/Phalcon_Assets) $filter)
 
 Adds a filter to the collection
 
 
 
-final protected  **addResource** ([Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets_ResourceInterface) $resource)
+final protected  **addResource** ([Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets) $resource)
 
 Adds a resource or inline-code to the collection
 
@@ -338,7 +338,7 @@ abstract public  **filter** (*mixed* $content)
 
 # Class **Phalcon\Assets\Filters\Cssmin**
 
-*implements* [Phalcon\Assets\FilterInterface](/3.4/en/api/Phalcon_Assets_FilterInterface)
+*implements* [Phalcon\Assets\FilterInterface](/3.4/en/api/Phalcon_Assets)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/assets/filters/cssmin.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -359,7 +359,7 @@ Filters the content using CSSMIN
 
 # Class **Phalcon\Assets\Filters\Jsmin**
 
-*implements* [Phalcon\Assets\FilterInterface](/3.4/en/api/Phalcon_Assets_FilterInterface)
+*implements* [Phalcon\Assets\FilterInterface](/3.4/en/api/Phalcon_Assets)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/assets/filters/jsmin.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -380,7 +380,7 @@ Filters the content using JSMIN
 
 # Class **Phalcon\Assets\Filters\None**
 
-*implements* [Phalcon\Assets\FilterInterface](/3.4/en/api/Phalcon_Assets_FilterInterface)
+*implements* [Phalcon\Assets\FilterInterface](/3.4/en/api/Phalcon_Assets)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/assets/filters/none.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -399,7 +399,7 @@ Returns the content without be touched
 
 # Class **Phalcon\Assets\Inline**
 
-*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets_ResourceInterface)
+*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/assets/inline.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -469,9 +469,9 @@ Gets the resource's key.
 
 # Class **Phalcon\Assets\Inline\Css**
 
-*extends* class [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+*extends* class [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
-*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets_ResourceInterface)
+*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/assets/inline/css.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -485,48 +485,48 @@ Phalcon\Assets\Inline\Css Constructor
 
 
 
-public *string* **getType** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public *string* **getType** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Gets the resource's type.
 
 
 
-public *string* **getContent** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public *string* **getContent** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Gets the content.
 
 
 
-public *boolean* **getFilter** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public *boolean* **getFilter** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Gets if the resource must be filtered or not.
 
 
 
-public *array* **getAttributes** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public *array* **getAttributes** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Gets extra HTML attributes.
 
 
-public [*self*](/3.4/en/api/Phalcon_Assets_Inline_Css) **setType** (*string* $type) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public [*self*](/3.4/en/api/Phalcon_Assets) **setType** (*string* $type) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Sets the inline's type
 
 
 
-public [*self*](/3.4/en/api/Phalcon_Assets_Inline_Css) **setFilter** (*boolean* $filter) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public [*self*](/3.4/en/api/Phalcon_Assets) **setFilter** (*boolean* $filter) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Sets if the resource must be filtered or not
 
 
 
-public [*self*](/3.4/en/api/Phalcon_Assets_Inline_Css) **setAttributes** (*array* $attributes) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public [*self*](/3.4/en/api/Phalcon_Assets) **setAttributes** (*array* $attributes) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Sets extra HTML attributes
 
 
 
-public *string* **getResourceKey** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public *string* **getResourceKey** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Gets the resource's key.
 
@@ -537,9 +537,9 @@ Gets the resource's key.
 
 # Class **Phalcon\Assets\Inline\Js**
 
-*extends* class [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+*extends* class [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
-*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets_ResourceInterface)
+*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/assets/inline/js.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -553,45 +553,45 @@ public  **__construct** (*string* $content, [*boolean* $filter], [*array* $attri
 
 
 
-public  **getType** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public  **getType** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 ...
 
 
-public  **getContent** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public  **getContent** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 ...
 
 
-public  **getFilter** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public  **getFilter** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 ...
 
 
-public  **getAttributes** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public  **getAttributes** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 ...
 
 
-public  **setType** (*mixed* $type) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public  **setType** (*mixed* $type) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Sets the inline's type
 
 
 
-public  **setFilter** (*mixed* $filter) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public  **setFilter** (*mixed* $filter) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Sets if the resource must be filtered or not
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Sets extra HTML attributes
 
 
 
-public  **getResourceKey** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline)
+public  **getResourceKey** () inherited from [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets)
 
 Gets the resource's key.
 
@@ -672,7 +672,7 @@ Adds an inline javascript to the 'js' collection
 
 
 
-public  **addResourceByType** (*mixed* $type, [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource) $resource)
+public  **addResourceByType** (*mixed* $type, [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets) $resource)
 
 Adds a resource by its type
 
@@ -687,13 +687,13 @@ $assets->addResourceByType("css",
 
 
 
-public  **addInlineCodeByType** (*mixed* $type, [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline) $code)
+public  **addInlineCodeByType** (*mixed* $type, [Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets) $code)
 
 Adds an inline code by its type
 
 
 
-public  **addResource** ([Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource) $resource)
+public  **addResource** ([Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets) $resource)
 
 Adds a raw resource to the manager
 
@@ -708,13 +708,13 @@ $assets->addResource(
 
 
 
-public  **addInlineCode** ([Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets_Inline) $code)
+public  **addInlineCode** ([Phalcon\Assets\Inline](/3.4/en/api/Phalcon_Assets) $code)
 
 Adds a raw inline code to the manager
 
 
 
-public  **set** (*mixed* $id, [Phalcon\Assets\Collection](/3.4/en/api/Phalcon_Assets_Collection) $collection)
+public  **set** (*mixed* $id, [Phalcon\Assets\Collection](/3.4/en/api/Phalcon_Assets) $collection)
 
 Sets a collection in the Assets Manager
 
@@ -758,13 +758,13 @@ Creates/Returns a collection of resources
 
 
 
-public  **output** ([Phalcon\Assets\Collection](/3.4/en/api/Phalcon_Assets_Collection) $collection, *callback* $callback, *string* $type)
+public  **output** ([Phalcon\Assets\Collection](/3.4/en/api/Phalcon_Assets) $collection, *callback* $callback, *string* $type)
 
 Traverses a collection calling the callback to generate its HTML
 
 
 
-public  **outputInline** ([Phalcon\Assets\Collection](/3.4/en/api/Phalcon_Assets_Collection) $collection, *string* $type)
+public  **outputInline** ([Phalcon\Assets\Collection](/3.4/en/api/Phalcon_Assets) $collection, *string* $type)
 
 Traverses a collection and generate its HTML
 
@@ -821,7 +821,7 @@ if ($assets->exists("jsHeader")) {
 
 # Class **Phalcon\Assets\Resource**
 
-*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets_ResourceInterface)
+*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/assets/resource.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -971,9 +971,9 @@ Gets the resource's key.
 
 # Class **Phalcon\Assets\Resource\Css**
 
-*extends* class [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+*extends* class [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
-*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets_ResourceInterface)
+*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/assets/resource/css.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -987,125 +987,125 @@ public  **__construct** (*string* $path, [*boolean* $local], [*boolean* $filter]
 
 
 
-public  **getType** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getType** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getPath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getPath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getLocal** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getLocal** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getFilter** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getFilter** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getAttributes** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getSourcePath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
-
-...
-
-
-public  **getTargetPath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getSourcePath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 ...
 
 
-public  **getTargetUri** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getTargetPath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 ...
 
 
-public  **setType** (*mixed* $type) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getTargetUri** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
+
+...
+
+
+public  **setType** (*mixed* $type) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets the resource's type
 
 
 
-public  **setPath** (*mixed* $path) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setPath** (*mixed* $path) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets the resource's path
 
 
 
-public  **setLocal** (*mixed* $local) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setLocal** (*mixed* $local) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets if the resource is local or external
 
 
 
-public  **setFilter** (*mixed* $filter) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setFilter** (*mixed* $filter) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets if the resource must be filtered or not
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets extra HTML attributes
 
 
 
-public  **setTargetUri** (*mixed* $targetUri) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setTargetUri** (*mixed* $targetUri) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets a target uri for the generated HTML
 
 
 
-public  **setSourcePath** (*mixed* $sourcePath) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setSourcePath** (*mixed* $sourcePath) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets the resource's source path
 
 
 
-public  **setTargetPath** (*mixed* $targetPath) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setTargetPath** (*mixed* $targetPath) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets the resource's target path
 
 
 
-public  **getContent** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getContent** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Returns the content of the resource as an string
 Optionally a base path where the resource is located can be set
 
 
 
-public  **getRealTargetUri** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getRealTargetUri** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Returns the real target uri for the generated HTML
 
 
 
-public  **getRealSourcePath** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getRealSourcePath** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Returns the complete location where the resource is located
 
 
 
-public  **getRealTargetPath** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getRealTargetPath** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Returns the complete location where the resource must be written
 
 
 
-public  **getResourceKey** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getResourceKey** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Gets the resource's key.
 
@@ -1116,9 +1116,9 @@ Gets the resource's key.
 
 # Class **Phalcon\Assets\Resource\Js**
 
-*extends* class [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+*extends* class [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
-*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets_ResourceInterface)
+*implements* [Phalcon\Assets\ResourceInterface](/3.4/en/api/Phalcon_Assets)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/assets/resource/js.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1132,125 +1132,125 @@ public  **__construct** (*string* $path, [*boolean* $local], [*boolean* $filter]
 
 
 
-public  **getType** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getType** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getPath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getPath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getLocal** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getLocal** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getFilter** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getFilter** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getAttributes** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getAttributes** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 
 
 
 
-public  **getSourcePath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
-
-...
-
-
-public  **getTargetPath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getSourcePath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 ...
 
 
-public  **getTargetUri** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getTargetPath** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 ...
 
 
-public  **setType** (*mixed* $type) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getTargetUri** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
+
+...
+
+
+public  **setType** (*mixed* $type) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets the resource's type
 
 
 
-public  **setPath** (*mixed* $path) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setPath** (*mixed* $path) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets the resource's path
 
 
 
-public  **setLocal** (*mixed* $local) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setLocal** (*mixed* $local) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets if the resource is local or external
 
 
 
-public  **setFilter** (*mixed* $filter) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setFilter** (*mixed* $filter) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets if the resource must be filtered or not
 
 
 
-public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setAttributes** (*array* $attributes) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets extra HTML attributes
 
 
 
-public  **setTargetUri** (*mixed* $targetUri) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setTargetUri** (*mixed* $targetUri) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets a target uri for the generated HTML
 
 
 
-public  **setSourcePath** (*mixed* $sourcePath) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setSourcePath** (*mixed* $sourcePath) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets the resource's source path
 
 
 
-public  **setTargetPath** (*mixed* $targetPath) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **setTargetPath** (*mixed* $targetPath) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Sets the resource's target path
 
 
 
-public  **getContent** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getContent** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Returns the content of the resource as an string
 Optionally a base path where the resource is located can be set
 
 
 
-public  **getRealTargetUri** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getRealTargetUri** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Returns the real target uri for the generated HTML
 
 
 
-public  **getRealSourcePath** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getRealSourcePath** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Returns the complete location where the resource is located
 
 
 
-public  **getRealTargetPath** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getRealTargetPath** ([*mixed* $basePath]) inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Returns the complete location where the resource must be written
 
 
 
-public  **getResourceKey** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets_Resource)
+public  **getResourceKey** () inherited from [Phalcon\Assets\Resource](/3.4/en/api/Phalcon_Assets)
 
 Gets the resource's key.
 

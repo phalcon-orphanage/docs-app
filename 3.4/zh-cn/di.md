@@ -1241,7 +1241,7 @@ Although you can register services with the names you want, Phalcon has a severa
 
 | 服务名称               | 描述               | 默认                                                                                     | 是否共享 |
 | ------------------ | ---------------- | -------------------------------------------------------------------------------------- |:----:|
-| assets             | 资源管理器            | [Phalcon\Assets\Manager](api/Phalcon_Assets_Manager)                                 | Yes  |
+| assets             | 资源管理器            | [Phalcon\Assets\Manager](api/Phalcon_Assets)                                 | Yes  |
 | annotations        | 注释语法分析器          | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations)        | Yes  |
 | cookies            | HTTP Cookie 管理服务 | [Phalcon\Http\Response\Cookies](api/Phalcon_Http)                  | Yes  |
 | crypt              | 加密解密数据           | [Phalcon\Crypt](api/Phalcon_Crypt)                                                    | Yes  |
@@ -1249,18 +1249,18 @@ Although you can register services with the names you want, Phalcon has a severa
 | dispatcher         | 调度服务控制器          | [Phalcon\Mvc\Dispatcher](api/Phalcon_Mvc_Dispatcher)                                 | Yes  |
 | eventsManager      | 事件管理服务           | [Phalcon\Events\Manager](api/Phalcon_Events)                                 | Yes  |
 | escaper            | 内容的过滤筛选          | [Phalcon\Escaper](api/Phalcon_Escaper)                                                | Yes  |
-| flash              | 闪存的消息传递服务        | [Phalcon\Flash\Direct](api/Phalcon_Flash_Direct)                                     | Yes  |
-| flashSession       | Flash 会话消息服务     | [Phalcon\Flash\Session](api/Phalcon_Flash_Session)                                   | Yes  |
+| flash              | 闪存的消息传递服务        | [Phalcon\Flash\Direct](api/Phalcon_Flash)                                     | Yes  |
+| flashSession       | Flash 会话消息服务     | [Phalcon\Flash\Session](api/Phalcon_Flash)                                   | Yes  |
 | filter             | 输入过滤服务           | [Phalcon\Filter](api/Phalcon_Filter)                                                  | Yes  |
 | modelsCache        | 模型缓存的缓存后端        | 无                                                                                      |  No  |
 | modelsManager      | 模型管理服务           | [Phalcon\Mvc\Model\Manager](api/Phalcon_Mvc_Model_Manager)                          | Yes  |
-| modelsMetadata     | 模型元数据服务          | [Phalcon\Mvc\Model\MetaData\Memory](api/Phalcon_Mvc_Model_MetaData_Memory)         | Yes  |
+| modelsMetadata     | 模型元数据服务          | [Phalcon\Mvc\Model\MetaData\Memory](api/Phalcon_Mvc_Model_MetaData)         | Yes  |
 | request            | HTTP 请求环境服务      | [Phalcon\Http\Request](api/Phalcon_Http)                                     | Yes  |
 | response           | HTTP 响应环境服务      | [Phalcon\Http\Response](api/Phalcon_Http)                                   | Yes  |
 | router             | 路由服务             | [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router)                                         | Yes  |
 | security           | 安全助手             | [Phalcon\Security](api/Phalcon_Security)                                              | Yes  |
-| session            | 会话服务             | [Phalcon\Session\Adapter\Files](api/Phalcon_Session_Adapter_Files)                  | Yes  |
-| sessionBag         | 会话包服务            | [Phalcon\Session\Bag](api/Phalcon_Session_Bag)                                       | Yes  |
+| session            | 会话服务             | [Phalcon\Session\Adapter\Files](api/Phalcon_Session)                  | Yes  |
+| sessionBag         | 会话包服务            | [Phalcon\Session\Bag](api/Phalcon_Session)                                       | Yes  |
 | tag                | 生成的 HTML 助手      | [Phalcon\Tag](api/Phalcon_Tag)                                                        | Yes  |
 | transactionManager | 模型事务管理器服务        | [Phalcon\Mvc\Model\Transaction\Manager](api/Phalcon_Mvc_Model_Transaction_Manager) | Yes  |
 | url                | URL 生成器服务        | [Phalcon\Mvc\Url](api/Phalcon_Mvc_Url)                                               | Yes  |

@@ -1239,7 +1239,7 @@ Although you can register services with the names you want, Phalcon has a severa
 
 | Название сервиса   | Description                           | Default                                                                                | Shared |
 | ------------------ | ------------------------------------- | -------------------------------------------------------------------------------------- |:------:|
-| assets             | Assets Manager                        | [Phalcon\Assets\Manager](api/Phalcon_Assets_Manager)                                 |  Yes   |
+| assets             | Assets Manager                        | [Phalcon\Assets\Manager](api/Phalcon_Assets)                                 |  Yes   |
 | annotations        | Annotations Parser                    | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations)        |  Yes   |
 | cookies            | HTTP Cookies Management Service       | [Phalcon\Http\Response\Cookies](api/Phalcon_Http)                  |  Yes   |
 | crypt              | Encrypt/Decrypt data                  | [Phalcon\Crypt](api/Phalcon_Crypt)                                                    |  Yes   |
@@ -1247,18 +1247,18 @@ Although you can register services with the names you want, Phalcon has a severa
 | dispatcher         | Controllers Dispatching Service       | [Phalcon\Mvc\Dispatcher](api/Phalcon_Mvc_Dispatcher)                                 |  Yes   |
 | eventsManager      | Events Management Service             | [Phalcon\Events\Manager](api/Phalcon_Events)                                 |  Yes   |
 | escaper            | Contextual Escaping                   | [Phalcon\Escaper](api/Phalcon_Escaper)                                                |  Yes   |
-| flash              | Flash Messaging Service               | [Phalcon\Flash\Direct](api/Phalcon_Flash_Direct)                                     |  Yes   |
-| flashSession       | Flash Session Messaging Service       | [Phalcon\Flash\Session](api/Phalcon_Flash_Session)                                   |  Yes   |
+| flash              | Flash Messaging Service               | [Phalcon\Flash\Direct](api/Phalcon_Flash)                                     |  Yes   |
+| flashSession       | Flash Session Messaging Service       | [Phalcon\Flash\Session](api/Phalcon_Flash)                                   |  Yes   |
 | filter             | Input Filtering Service               | [Phalcon\Filter](api/Phalcon_Filter)                                                  |  Yes   |
 | modelsCache        | Cache backend for models cache        | None                                                                                   |   No   |
 | modelsManager      | Models Management Service             | [Phalcon\Mvc\Model\Manager](api/Phalcon_Mvc_Model_Manager)                          |  Yes   |
-| modelsMetadata     | Models Meta-Data Service              | [Phalcon\Mvc\Model\MetaData\Memory](api/Phalcon_Mvc_Model_MetaData_Memory)         |  Yes   |
+| modelsMetadata     | Models Meta-Data Service              | [Phalcon\Mvc\Model\MetaData\Memory](api/Phalcon_Mvc_Model_MetaData)         |  Yes   |
 | request            | HTTP Request Environment Service      | [Phalcon\Http\Request](api/Phalcon_Http)                                     |  Yes   |
 | response           | HTTP Response Environment Service     | [Phalcon\Http\Response](api/Phalcon_Http)                                   |  Yes   |
 | router             | Routing Service                       | [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router)                                         |  Yes   |
 | security           | Security helpers                      | [Phalcon\Security](api/Phalcon_Security)                                              |  Yes   |
-| session            | Session Service                       | [Phalcon\Session\Adapter\Files](api/Phalcon_Session_Adapter_Files)                  |  Yes   |
-| sessionBag         | Session Bag service                   | [Phalcon\Session\Bag](api/Phalcon_Session_Bag)                                       |  Yes   |
+| session            | Session Service                       | [Phalcon\Session\Adapter\Files](api/Phalcon_Session)                  |  Yes   |
+| sessionBag         | Session Bag service                   | [Phalcon\Session\Bag](api/Phalcon_Session)                                       |  Yes   |
 | tag                | HTML generation helpers               | [Phalcon\Tag](api/Phalcon_Tag)                                                        |  Yes   |
 | transactionManager | Models Transaction Manager Service    | [Phalcon\Mvc\Model\Transaction\Manager](api/Phalcon_Mvc_Model_Transaction_Manager) |  Yes   |
 | url                | URL Generator Service                 | [Phalcon\Mvc\Url](api/Phalcon_Mvc_Url)                                               |  Yes   |

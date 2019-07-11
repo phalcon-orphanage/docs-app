@@ -1184,7 +1184,7 @@ Additionally, `Criteria` ignores all the `$_POST` variables that do not match an
 $this->persistent->searchParams = $query->getParams();
 ```
 
-セッションバッグはリクエスト間で値を維持する、セッションサービスを利用したコントローラの特殊な変数です。 When accessed, this attribute injects a [Phalcon\Session\Bag](api/Phalcon_Session_Bag) instance that is independent in each controller.
+セッションバッグはリクエスト間で値を維持する、セッションサービスを利用したコントローラの特殊な変数です。 When accessed, this attribute injects a [Phalcon\Session\Bag](api/Phalcon_Session) instance that is independent in each controller.
 
 次に、生成されたパラメータに基づいてクエリを実行します:
 

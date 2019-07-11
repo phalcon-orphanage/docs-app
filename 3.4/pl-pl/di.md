@@ -1239,7 +1239,7 @@ Although you can register services with the names you want, Phalcon has a severa
 
 | Service Name       | Description                           | Domyślne                                                                               | Współdzielone |
 | ------------------ | ------------------------------------- | -------------------------------------------------------------------------------------- |:-------------:|
-| assets             | Assets Manager                        | [Phalcon\Assets\Manager](api/Phalcon_Assets_Manager)                                 |      Tak      |
+| assets             | Assets Manager                        | [Phalcon\Assets\Manager](api/Phalcon_Assets)                                 |      Tak      |
 | annotations        | Annotations Parser                    | [Phalcon\Annotations\Adapter\Memory](api/Phalcon_Annotations)        |      Tak      |
 | cookies            | HTTP Cookies Management Service       | [Phalcon\Http\Response\Cookies](api/Phalcon_Http)                  |      Tak      |
 | crypt              | Encrypt/Decrypt data                  | [Phalcon\Crypt](api/Phalcon_Crypt)                                                    |      Tak      |
@@ -1247,18 +1247,18 @@ Although you can register services with the names you want, Phalcon has a severa
 | dispatcher         | Controllers Dispatching Service       | [Phalcon\Mvc\Dispatcher](api/Phalcon_Mvc_Dispatcher)                                 |      Tak      |
 | eventsManager      | Events Management Service             | [Phalcon\Events\Manager](api/Phalcon_Events)                                 |      Tak      |
 | escaper            | Contextual Escaping                   | [Phalcon\Escaper](api/Phalcon_Escaper)                                                |      Tak      |
-| flash              | Flash Messaging Service               | [Phalcon\Flash\Direct](api/Phalcon_Flash_Direct)                                     |      Tak      |
-| flashSession       | Flash Session Messaging Service       | [Phalcon\Flash\Session](api/Phalcon_Flash_Session)                                   |      Tak      |
+| flash              | Flash Messaging Service               | [Phalcon\Flash\Direct](api/Phalcon_Flash)                                     |      Tak      |
+| flashSession       | Flash Session Messaging Service       | [Phalcon\Flash\Session](api/Phalcon_Flash)                                   |      Tak      |
 | filter             | Input Filtering Service               | [Phalcon\Filter](api/Phalcon_Filter)                                                  |      Tak      |
 | modelsCache        | Cache backend for models cache        | Brak                                                                                   |      Nie      |
 | modelsManager      | Models Management Service             | [Phalcon\Mvc\Model\Manager](api/Phalcon_Mvc_Model_Manager)                          |      Tak      |
-| modelsMetadata     | Models Meta-Data Service              | [Phalcon\Mvc\Model\MetaData\Memory](api/Phalcon_Mvc_Model_MetaData_Memory)         |      Tak      |
+| modelsMetadata     | Models Meta-Data Service              | [Phalcon\Mvc\Model\MetaData\Memory](api/Phalcon_Mvc_Model_MetaData)         |      Tak      |
 | request            | HTTP Request Environment Service      | [Phalcon\Http\Request](api/Phalcon_Http)                                     |      Tak      |
 | response           | HTTP Response Environment Service     | [Phalcon\Http\Response](api/Phalcon_Http)                                   |      Tak      |
 | router             | Routing Service                       | [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router)                                         |      Tak      |
 | security           | Security helpers                      | [Phalcon\Security](api/Phalcon_Security)                                              |      Tak      |
-| session            | Session Service                       | [Phalcon\Session\Adapter\Files](api/Phalcon_Session_Adapter_Files)                  |      Tak      |
-| sessionBag         | Session Bag service                   | [Phalcon\Session\Bag](api/Phalcon_Session_Bag)                                       |      Tak      |
+| session            | Session Service                       | [Phalcon\Session\Adapter\Files](api/Phalcon_Session)                  |      Tak      |
+| sessionBag         | Session Bag service                   | [Phalcon\Session\Bag](api/Phalcon_Session)                                       |      Tak      |
 | tag                | HTML generation helpers               | [Phalcon\Tag](api/Phalcon_Tag)                                                        |      Tak      |
 | transactionManager | Models Transaction Manager Service    | [Phalcon\Mvc\Model\Transaction\Manager](api/Phalcon_Mvc_Model_Transaction_Manager) |      Tak      |
 | url                | URL Generator Service                 | [Phalcon\Mvc\Url](api/Phalcon_Mvc_Url)                                               |      Tak      |

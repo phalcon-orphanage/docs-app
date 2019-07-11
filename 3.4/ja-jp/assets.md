@@ -10,7 +10,7 @@ version: '3.4'
 
 `Phalcon\Assets` is a component that allows you to manage static resources such as CSS stylesheets or JavaScript libraries in a web application.
 
-[Phalcon\Assets\Manager](api/Phalcon_Assets_Manager) is available in the services container, so you can add resources from any part of the application where the container is available.
+[Phalcon\Assets\Manager](api/Phalcon_Assets) is available in the services container, so you can add resources from any part of the application where the container is available.
 
 <a name='add'></a>
 
@@ -295,8 +295,8 @@ Phalcon provides 2 built-in filters to minify both JavaScript and CSS, their C-b
 
 | Filter                                                                | Description                                                                                                  |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| [Phalcon\Assets\Filters\Jsmin](api/Phalcon_Assets_Filters_Jsmin)   | Minifies JavaScript by removing unnecessary characters that are ignored by Javascript interpreters/compilers |
-| [Phalcon\Assets\Filters\Cssmin](api/Phalcon_Assets_Filters_Cssmin) | Minifies CSS by removing unnecessary characters that are already ignored by browsers                         |
+| [Phalcon\Assets\Filters\Jsmin](api/Phalcon_Assets)   | Minifies JavaScript by removing unnecessary characters that are ignored by Javascript interpreters/compilers |
+| [Phalcon\Assets\Filters\Cssmin](api/Phalcon_Assets) | Minifies CSS by removing unnecessary characters that are already ignored by browsers                         |
 
 <a name='custom-filters'></a>
 

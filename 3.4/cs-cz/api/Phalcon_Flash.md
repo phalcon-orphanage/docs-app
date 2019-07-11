@@ -6,7 +6,7 @@ title: 'Phalcon\Flash'
 ---
 # Abstract class **Phalcon\Flash**
 
-*implements* [Phalcon\FlashInterface](/3.4/en/api/Phalcon_FlashInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\FlashInterface](/3.4/en/api/Phalcon_Flash), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/flash.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -153,7 +153,7 @@ Clears accumulated messages when implicit flush is disabled
 
 
 
-abstract public  **message** (*mixed* $type, *mixed* $message) inherited from [Phalcon\FlashInterface](/3.4/en/api/Phalcon_FlashInterface)
+abstract public  **message** (*mixed* $type, *mixed* $message) inherited from [Phalcon\FlashInterface](/3.4/en/api/Phalcon_Flash)
 
 ...
 
@@ -165,7 +165,7 @@ abstract public  **message** (*mixed* $type, *mixed* $message) inherited from [P
 
 *extends* abstract class [Phalcon\Flash](/3.4/en/api/Phalcon_Flash)
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\FlashInterface](/3.4/en/api/Phalcon_FlashInterface)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\FlashInterface](/3.4/en/api/Phalcon_Flash)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/flash/direct.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -400,7 +400,7 @@ String representation of the exception
 
 *extends* abstract class [Phalcon\Flash](/3.4/en/api/Phalcon_Flash)
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\FlashInterface](/3.4/en/api/Phalcon_FlashInterface)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\FlashInterface](/3.4/en/api/Phalcon_Flash)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/flash/session.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 

@@ -18,14 +18,14 @@ This component makes use of adapters to define the behavior of the messages afte
 
 | Adapter | Description                                                                                  | API                                                  |
 | ------- | -------------------------------------------------------------------------------------------- | ---------------------------------------------------- |
-| Direct  | Directly outputs the messages passed to the flasher                                          | [Phalcon\Flash\Direct](api/Phalcon_Flash_Direct)   |
-| Session | Temporarily stores the messages in session, then messages can be printed in the next request | [Phalcon\Flash\Session](api/Phalcon_Flash_Session) |
+| Direct  | Directly outputs the messages passed to the flasher                                          | [Phalcon\Flash\Direct](api/Phalcon_Flash)   |
+| Session | Temporarily stores the messages in session, then messages can be printed in the next request | [Phalcon\Flash\Session](api/Phalcon_Flash) |
 
 <a name='usage'></a>
 
 ## Sposób użycia
 
-Usually the Flash Messaging service is requested from the services container. If you're using [Phalcon\Di\FactoryDefault](api/Phalcon_Di_FactoryDefault) then [Phalcon\Flash\Direct](api/Phalcon_Flash_Direct) is automatically registered as `flash` service and [Phalcon\Flash\Session](api/Phalcon_Flash_Session) is automatically registered as `flashSession` service. You can also manually register it:
+Usually the Flash Messaging service is requested from the services container. If you're using [Phalcon\Di\FactoryDefault](api/Phalcon_Di_FactoryDefault) then [Phalcon\Flash\Direct](api/Phalcon_Flash) is automatically registered as `flash` service and [Phalcon\Flash\Session](api/Phalcon_Flash) is automatically registered as `flashSession` service. You can also manually register it:
 
 ```php
 <?php

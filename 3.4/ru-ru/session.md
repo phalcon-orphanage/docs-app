@@ -158,7 +158,7 @@ $di->set(
 
 ## Наборы сессий
 
-[Phalcon\Session\Bag](api/Phalcon_Session_Bag) is a component that helps separating session data into `namespaces`. Работая таким образом, вы можете легко создавать группы переменных сессии в приложении. Установив значение переменной в сессионном объекте, это значение автоматически сохранится в сессии:
+[Phalcon\Session\Bag](api/Phalcon_Session) is a component that helps separating session data into `namespaces`. Работая таким образом, вы можете легко создавать группы переменных сессии в приложении. Установив значение переменной в сессионном объекте, это значение автоматически сохранится в сессии:
 
 ```php
 <?php
@@ -177,7 +177,7 @@ $user->age  = 22;
 
 ## Сохранение данных в компонентах
 
-Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) may inject a [Phalcon\Session\Bag](api/Phalcon_Session_Bag). Компонент в таком случае изолирует данные для каждого класса. Благодаря этому вы можете сохранять данные между запросами, используя их как обычные переменные.
+Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) may inject a [Phalcon\Session\Bag](api/Phalcon_Session). Компонент в таком случае изолирует данные для каждого класса. Благодаря этому вы можете сохранять данные между запросами, используя их как обычные переменные.
 
 ```php
 <?php
@@ -229,6 +229,6 @@ class Security extends Component
 
 ## Реализация собственных адаптеров
 
-The [Phalcon\Session\AdapterInterface](api/Phalcon_Session_AdapterInterface) interface must be implemented in order to create your own session adapters or extend the existing ones.
+The [Phalcon\Session\AdapterInterface](api/Phalcon_Session) interface must be implemented in order to create your own session adapters or extend the existing ones.
 
 Существует еще несколько типов адаптеров для работы с сессиями. Их можно получить в "Инкубаторе" — [Phalcon Incubator](https://github.com/phalcon/incubator/tree/master/Library/Phalcon/Session/Adapter).

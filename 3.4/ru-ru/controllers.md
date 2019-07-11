@@ -314,7 +314,7 @@ Learn more about the HTTP environment in their dedicated articles [request](/3.4
 
 ## Данные сессий
 
-Sessions help us maintain persistent data between requests. You can access a [Phalcon\Session\Bag](api/Phalcon_Session_Bag) from any controller to encapsulate data that needs to be persistent:
+Sessions help us maintain persistent data between requests. You can access a [Phalcon\Session\Bag](api/Phalcon_Session) from any controller to encapsulate data that needs to be persistent:
 
 ```php
 <?php

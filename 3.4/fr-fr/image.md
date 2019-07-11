@@ -18,8 +18,8 @@ This component makes use of adapters to encapsulate specific image manipulator p
 
 | Class                                                                 | Description                                                                         |
 | --------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [Phalcon\Image\Adapter\Gd](api/Phalcon_Image_Adapter_Gd)           | Requires the [GD PHP extension](http://php.net/manual/en/book.image.php)            |
-| [Phalcon\Image\Adapter\Imagick](api/Phalcon_Image_Adapter_Imagick) | Requires the [ImageMagick PHP extension](http://php.net/manual/en/book.imagick.php) |
+| [Phalcon\Image\Adapter\Gd](api/Phalcon_Image)           | Requires the [GD PHP extension](http://php.net/manual/en/book.image.php)            |
+| [Phalcon\Image\Adapter\Imagick](api/Phalcon_Image) | Requires the [ImageMagick PHP extension](http://php.net/manual/en/book.imagick.php) |
 
 <a name='adapters-factory'></a>
 
@@ -46,7 +46,7 @@ $image = Factory::load($options);
 
 ### Implementing your own adapters
 
-The [Phalcon\Image\AdapterInterface](api/Phalcon_Image_AdapterInterface) interface must be implemented in order to create your own image adapters or extend the existing ones.
+The [Phalcon\Image\AdapterInterface](api/Phalcon_Image) interface must be implemented in order to create your own image adapters or extend the existing ones.
 
 <a name='saving-rendering'></a>
 

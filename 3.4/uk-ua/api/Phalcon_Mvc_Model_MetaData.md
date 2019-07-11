@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Model\MetaData'
 ---
 # Abstract class **Phalcon\Mvc\Model\MetaData**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -82,7 +82,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy)
+public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy)
 
 Set the meta-data extraction strategy
 
@@ -523,12 +523,12 @@ $metaData->reset();
 
 
 
-abstract public  **read** (*mixed* $key) inherited from [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface)
+abstract public  **read** (*mixed* $key) inherited from [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 ...
 
 
-abstract public  **write** (*mixed* $key, *mixed* $data) inherited from [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface)
+abstract public  **write** (*mixed* $key, *mixed* $data) inherited from [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 ...
 
@@ -540,7 +540,7 @@ abstract public  **write** (*mixed* $key, *mixed* $data) inherited from [Phalcon
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/apc.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -633,7 +633,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Set the meta-data extraction strategy
 
@@ -1081,7 +1081,7 @@ $metaData->reset();
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/files.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1169,7 +1169,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Set the meta-data extraction strategy
 
@@ -1617,7 +1617,7 @@ $metaData->reset();
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/libmemcached.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1725,7 +1725,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Set the meta-data extraction strategy
 
@@ -2160,7 +2160,7 @@ var_dump(
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/memcache.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2260,7 +2260,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Set the meta-data extraction strategy
 
@@ -2695,7 +2695,7 @@ var_dump(
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/memory.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2772,7 +2772,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Set the meta-data extraction strategy
 
@@ -3220,7 +3220,7 @@ $metaData->reset();
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/redis.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -3323,7 +3323,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Set the meta-data extraction strategy
 
@@ -3758,7 +3758,7 @@ var_dump(
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/session.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -3849,7 +3849,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Set the meta-data extraction strategy
 
@@ -4295,7 +4295,7 @@ $metaData->reset();
 
 # Class **Phalcon\Mvc\Model\MetaData\Strategy\Annotations**
 
-*implements* [Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface)
+*implements* [Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/strategy/annotations.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -4317,7 +4317,7 @@ Read the model's column map, this can't be inferred
 
 # Class **Phalcon\Mvc\Model\MetaData\Strategy\Introspection**
 
-*implements* [Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface)
+*implements* [Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/strategy/introspection.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -4362,7 +4362,7 @@ abstract public  **getColumnMaps** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Pha
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/xcache.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -4455,7 +4455,7 @@ Returns the DependencyInjector container
 
 
 
-public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Set the meta-data extraction strategy
 
@@ -4904,7 +4904,7 @@ $metaData->reset();
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadatainterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-abstract public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData_StrategyInterface) $strategy)
+abstract public  **setStrategy** ([Phalcon\Mvc\Model\MetaData\StrategyInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $strategy)
 
 ...
 

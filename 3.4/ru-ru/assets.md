@@ -10,7 +10,7 @@ version: '3.4'
 
 `Phalcon\Assets` — это компонент позволяющий разработчику управлять статичными ресурсами в веб-приложении, такими как каскадные таблицы стилей или скрипты.
 
-[Phalcon\Assets\Manager](api/Phalcon_Assets_Manager) is available in the services container, so you can add resources from any part of the application where the container is available.
+[Phalcon\Assets\Manager](api/Phalcon_Assets) is available in the services container, so you can add resources from any part of the application where the container is available.
 
 <a name='add'></a>
 
@@ -295,8 +295,8 @@ Phalcon предоставляет два встроенных фильтра м
 
 | Фильтр                                                                | Описание                                                                                                      |
 | --------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| [Phalcon\Assets\Filters\Jsmin](api/Phalcon_Assets_Filters_Jsmin)   | Минимизирует JavaScript удаляя не нужны символы, которые игнорируются интерпретатором/компилятором JavaScript |
-| [Phalcon\Assets\Filters\Cssmin](api/Phalcon_Assets_Filters_Cssmin) | Минимизирует CSS удаляя ненужные символы, которые игнорируются браузерами                                     |
+| [Phalcon\Assets\Filters\Jsmin](api/Phalcon_Assets)   | Минимизирует JavaScript удаляя не нужны символы, которые игнорируются интерпретатором/компилятором JavaScript |
+| [Phalcon\Assets\Filters\Cssmin](api/Phalcon_Assets) | Минимизирует CSS удаляя ненужные символы, которые игнорируются браузерами                                     |
 
 <a name='custom-filters'></a>
 

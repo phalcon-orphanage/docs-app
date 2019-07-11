@@ -18,7 +18,7 @@ version: '3.4'
 
 | アダプター                                                                                 | 説明                                                 |
 | ------------------------------------------------------------------------------------- | -------------------------------------------------- |
-| [Phalcon\Translate\Adapter\NativeArray](api/Phalcon_Translate_Adapter_NativeArray) | このメッセージを保存するために PHPの配列を使います。 性能の点で、これがベストのオプションです。 |
+| [Phalcon\Translate\Adapter\NativeArray](api/Phalcon_Translate) | このメッセージを保存するために PHPの配列を使います。 性能の点で、これがベストのオプションです。 |
 
 <a name='adapters-factory'></a>
 
@@ -209,7 +209,7 @@ class MyController extends Controller
 
 ## 独自のアダプターを実装
 
-The [Phalcon\Translate\AdapterInterface](api/Phalcon_Translate_AdapterInterface) interface must be implemented in order to create your own translate adapters or extend the existing ones:
+The [Phalcon\Translate\AdapterInterface](api/Phalcon_Translate) interface must be implemented in order to create your own translate adapters or extend the existing ones:
 
 ```php
 <?php

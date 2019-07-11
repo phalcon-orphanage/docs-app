@@ -70,7 +70,7 @@ Sets the cookie's sign key. The `$signKey` MUST be at least 32 characters long a
 
 You can use `null` to disable cookie signing.
 
-See: [Phalcon\Security\Random](/3.4/en/api/Phalcon_Security_Random)
+See: [Phalcon\Security\Random](/3.4/en/api/Phalcon_Security)
 Throws: [Phalcon\Http\Cookie\Exception](/3.4/en/api/Phalcon_Http)
 
 
@@ -1638,7 +1638,7 @@ Sets the cookie's sign key. The `$signKey` MUST be at least 32 characters long a
 
 You can use `null` to disable cookie signing.
 
-See: [Phalcon\Security\Random](/3.4/en/api/Phalcon_Security_Random)
+See: [Phalcon\Security\Random](/3.4/en/api/Phalcon_Security)
 Throws: [Phalcon\Http\Cookie\Exception](/3.4/en/api/Phalcon_Http)
 
 

@@ -406,7 +406,7 @@ Create a criteria for a specific model
 
 
 
-protected *boolean* **_exists** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, [*string* | *array* $table])
+protected *boolean* **_exists** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, [*string* | *array* $table])
 
 Checks whether the current record already exists
 
@@ -728,7 +728,7 @@ Reads both "hasMany" and "hasOne" relations and checks the virtual foreign keys 
 
 
 
-protected  **_preSave** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, *mixed* $exists, *mixed* $identityField)
+protected  **_preSave** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $metaData, *mixed* $exists, *mixed* $identityField)
 
 Executes internal hooks before save a record
 
@@ -740,13 +740,13 @@ Executes internal events after save a record
 
 
 
-protected *boolean* **_doLowInsert** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, *string* | *array* $table, *boolean* | *string* $identityField)
+protected *boolean* **_doLowInsert** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, *string* | *array* $table, *boolean* | *string* $identityField)
 
 Sends a pre-build INSERT SQL statement to the relational database system
 
 
 
-protected *boolean* **_doLowUpdate** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaDataInterface) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, *string* | *array* $table)
+protected *boolean* **_doLowUpdate** ([Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData) $metaData, [Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, *string* | *array* $table)
 
 Sends a pre-build UPDATE SQL statement to the relational database system
 

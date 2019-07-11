@@ -175,7 +175,7 @@ Better (but still unsafe): `#1dj8$=dp?.ak//j1V$~%*0X`
 
 Good key: `T4\xb1\x8d\xa9\x98\x05\\x8c\xbe\x1d\x07&[\x99\x18\xa4~Lc1\xbeW\xb3`
 
-See also: : [Phalcon\Security\Random](/3.4/en/api/Phalcon_Security_Random)
+See also: : [Phalcon\Security\Random](/3.4/en/api/Phalcon_Security)
 
 
 

@@ -1153,7 +1153,7 @@ Now, we store the produced parameters in the controller's session bag:
 $this->persistent->searchParams = $query->getParams();
 ```
 
-A session bag, is a special attribute in a controller that persists between requests using the session service. When accessed, this attribute injects a [Phalcon\Session\Bag](api/Phalcon_Session_Bag) instance that is independent in each controller.
+A session bag, is a special attribute in a controller that persists between requests using the session service. When accessed, this attribute injects a [Phalcon\Session\Bag](api/Phalcon_Session) instance that is independent in each controller.
 
 Then, based on the built params we perform the query:
 

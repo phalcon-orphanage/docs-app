@@ -18,7 +18,7 @@ This component makes use of adapters to read translation messages from different
 
 | Adapter                                                                               | Description                                                                             |
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| [Phalcon\Translate\Adapter\NativeArray](api/Phalcon_Translate_Adapter_NativeArray) | Uses PHP arrays to store the messages. This is the best option in terms of performance. |
+| [Phalcon\Translate\Adapter\NativeArray](api/Phalcon_Translate) | Uses PHP arrays to store the messages. This is the best option in terms of performance. |
 
 <a name='adapters-factory'></a>
 
@@ -210,7 +210,7 @@ or in a view directly
 
 ## Implementing your own adapters
 
-The [Phalcon\Translate\AdapterInterface](api/Phalcon_Translate_AdapterInterface) interface must be implemented in order to create your own translate adapters or extend the existing ones:
+The [Phalcon\Translate\AdapterInterface](api/Phalcon_Translate) interface must be implemented in order to create your own translate adapters or extend the existing ones:
 
 ```php
 <?php

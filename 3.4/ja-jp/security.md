@@ -168,7 +168,7 @@ $di->set(
 
 ## 乱数
 
-The [Phalcon\Security\Random](api/Phalcon_Security_Random) class makes it really easy to generate lots of types of random data.
+The [Phalcon\Security\Random](api/Phalcon_Security) class makes it really easy to generate lots of types of random data.
 
 ```php
 <?php

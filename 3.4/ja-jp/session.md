@@ -158,7 +158,7 @@ $di->set(
 
 ## セッションバッグ
 
-[Phalcon\Session\Bag](api/Phalcon_Session_Bag) is a component that helps separating session data into `namespaces`. この方法で、セッシュン変数のグループをアプリケーションに簡単に作成できます。 `bag</ 0>の変数を設定するだけで、自動的にセッションに格納されます:</p>
+[Phalcon\Session\Bag](api/Phalcon_Session) is a component that helps separating session data into `namespaces`. この方法で、セッシュン変数のグループをアプリケーションに簡単に作成できます。 `bag</ 0>の変数を設定するだけで、自動的にセッションに格納されます:</p>
 
 <pre><code class="php"><?php
 
@@ -176,7 +176,7 @@ $user->age  = 22;
 
 ## コンポーネントの不揮発性データ
 
-Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) may inject a [Phalcon\Session\Bag](api/Phalcon_Session_Bag). このクラスはそれぞれのクラスで変数を隔離します。 これのおかげで、それぞれの方法のすべてのクラスでリクエスト間でデータを保持できます。
+Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) may inject a [Phalcon\Session\Bag](api/Phalcon_Session). このクラスはそれぞれのクラスで変数を隔離します。 これのおかげで、それぞれの方法のすべてのクラスでリクエスト間でデータを保持できます。
 
 ```php
 <?php
@@ -228,6 +228,6 @@ class Security extends Component
 
 ## 独自のアダプターを実装
 
-The [Phalcon\Session\AdapterInterface](api/Phalcon_Session_AdapterInterface) interface must be implemented in order to create your own session adapters or extend the existing ones.
+The [Phalcon\Session\AdapterInterface](api/Phalcon_Session) interface must be implemented in order to create your own session adapters or extend the existing ones.
 
 [Phalcon Incubator](https://github.com/phalcon/incubator/tree/master/Library/Phalcon/Session/Adapter) には、このコンポーネントを利用するための複数のアダプターが用意されています。

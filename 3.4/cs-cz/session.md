@@ -158,7 +158,7 @@ Adding a unique ID is not necessary.
 
 ## Session Bags
 
-[Phalcon\Session\Bag](api/Phalcon_Session_Bag) is a component that helps separating session data into `namespaces`. Working by this way you can easily create groups of session variables into the application. By only setting the variables in the `bag`, it's automatically stored in session:
+[Phalcon\Session\Bag](api/Phalcon_Session) is a component that helps separating session data into `namespaces`. Working by this way you can easily create groups of session variables into the application. By only setting the variables in the `bag`, it's automatically stored in session:
 
 ```php
 <?php
@@ -177,7 +177,7 @@ $user->age  = 22;
 
 ## Persistent Data in Components
 
-Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) may inject a [Phalcon\Session\Bag](api/Phalcon_Session_Bag). This class isolates variables for every class. Thanks to this you can persist data between requests in every class in an independent way.
+Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) may inject a [Phalcon\Session\Bag](api/Phalcon_Session). This class isolates variables for every class. Thanks to this you can persist data between requests in every class in an independent way.
 
 ```php
 <?php
@@ -229,6 +229,6 @@ The data added to the session (`$this->session`) are available throughout the ap
 
 ## Implementing your own adapters
 
-The [Phalcon\Session\AdapterInterface](api/Phalcon_Session_AdapterInterface) interface must be implemented in order to create your own session adapters or extend the existing ones.
+The [Phalcon\Session\AdapterInterface](api/Phalcon_Session) interface must be implemented in order to create your own session adapters or extend the existing ones.
 
 There are more adapters available for this components in the [Phalcon Incubator](https://github.com/phalcon/incubator/tree/master/Library/Phalcon/Session/Adapter)
