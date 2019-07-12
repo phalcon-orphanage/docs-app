@@ -8,9 +8,14 @@
 
 
 # Defaults
+/latest                                          /3.4/en/introduction
 /latest/:lang                                    /3.4/:lang/introduction
+
+/3.4/                                            /3.4/en/introduction
 /3.4/:lang                                       /3.4/:lang/introduction
+
 /en                                              /3.4/en/introduction
+
 /                                                /3.4/en/introduction
 
 /4.0/:lang                                       /4.0/:lang/introduction
