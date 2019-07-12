@@ -156,8 +156,8 @@ title: 'API Index'
 * [Phalcon\Di\Service\Builder](Phalcon_Di#interface-phalcondiinterface)
 
 ### Dispatcher
-* [Phalcon\Dispatcher](Phalcon_Dispatcher#abstract-class-phalcondispatcher)
-* [Phalcon\DispatcherInterface](Phalcon_Dispatcher#interface-phalcondispatcherinterface)
+* [Phalcon\Dispatcher](Phalcon_Di#abstract-class-phalcondispatcher)
+* [Phalcon\DispatcherInterface](Phalcon_Di#interface-phalcondispatcherinterface)
 
 ### Escaper
 * [Phalcon\Escaper](Phalcon_Escaper#class-phalconescaper)

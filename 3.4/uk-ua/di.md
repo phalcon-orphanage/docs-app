@@ -1095,7 +1095,7 @@ You can take advantage of this, always instantiating your classes via the servic
 
 ## Automatic Injecting of the DI itself
 
-If a class or component requires the DI itself to locate services, the DI can automatically inject itself to the instances it creates, to do this, you need to implement the [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di_InjectionAwareInterface) in your classes:
+If a class or component requires the DI itself to locate services, the DI can automatically inject itself to the instances it creates, to do this, you need to implement the [Phalcon\Di\InjectionAwareInterface](api/Phalcon_Di) in your classes:
 
 ```php
 <?php
@@ -1221,7 +1221,7 @@ var_dump($di->get('config')); // will return properly our config
 
 ## Factory Default DI
 
-Although the decoupled character of Phalcon offers us great freedom and flexibility, maybe we just simply want to use it as a full-stack framework. To achieve this, the framework provides a variant of [Phalcon\Di](api/Phalcon_Di) called [Phalcon\Di\FactoryDefault](api/Phalcon_Di_FactoryDefault). This class automatically registers the appropriate services bundled with the framework to act as full-stack.
+Although the decoupled character of Phalcon offers us great freedom and flexibility, maybe we just simply want to use it as a full-stack framework. To achieve this, the framework provides a variant of [Phalcon\Di](api/Phalcon_Di) called [Phalcon\Di\FactoryDefault](api/Phalcon_Di). This class automatically registers the appropriate services bundled with the framework to act as full-stack.
 
 ```php
 <?php
@@ -1268,4 +1268,4 @@ Although you can register services with the names you want, Phalcon has a severa
 
 ## Implementing your own DI
 
-The [Phalcon\DiInterface](api/Phalcon_DiInterface) interface must be implemented to create your own DI replacing the one provided by Phalcon or extend the current one.
+The [Phalcon\DiInterface](api/Phalcon_Di) interface must be implemented to create your own DI replacing the one provided by Phalcon or extend the current one.

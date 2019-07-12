@@ -69,7 +69,7 @@ $session->start();
 
 ## Получение и хранение данных в сессии
 
-From a controller, a view or any other component that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) you can access the session service and store items and retrieve them in the following way:
+From a controller, a view or any other component that extends [Phalcon\Di\Injectable](api/Phalcon_Di) you can access the session service and store items and retrieve them in the following way:
 
 ```php
 <?php
@@ -177,7 +177,7 @@ $user->age  = 22;
 
 ## Сохранение данных в компонентах
 
-Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) may inject a [Phalcon\Session\Bag](api/Phalcon_Session). Компонент в таком случае изолирует данные для каждого класса. Благодаря этому вы можете сохранять данные между запросами, используя их как обычные переменные.
+Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di) may inject a [Phalcon\Session\Bag](api/Phalcon_Session). Компонент в таком случае изолирует данные для каждого класса. Благодаря этому вы можете сохранять данные между запросами, используя их как обычные переменные.
 
 ```php
 <?php

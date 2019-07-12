@@ -327,7 +327,7 @@ $di->set(
 
 <a name='getting-parameters'></a>
 ## Getting Parameters
-When a route provides named parameters you can receive them in a controller, a view or any other component that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable).
+When a route provides named parameters you can receive them in a controller, a view or any other component that extends [Phalcon\Di\Injectable](api/Phalcon_Di).
 
 ```php
 <?php

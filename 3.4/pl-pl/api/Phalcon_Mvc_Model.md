@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Model'
 ---
 # Abstract class **Phalcon\Mvc\Model**
 
-*implements* [Phalcon\Mvc\EntityInterface](/3.4/en/api/Phalcon_Mvc_EntityInterface), [Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface), [Phalcon\Mvc\Model\ResultInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Serializable](http://php.net/manual/en/class.serializable.php), [JsonSerializable](http://php.net/manual/en/class.jsonserializable.php)
+*implements* [Phalcon\Mvc\EntityInterface](/3.4/en/api/Phalcon_Mvc_EntityInterface), [Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface), [Phalcon\Mvc\Model\ResultInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di), [Serializable](http://php.net/manual/en/class.serializable.php), [JsonSerializable](http://php.net/manual/en/class.jsonserializable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -56,13 +56,13 @@ if ($robot->save() === false) {
 *integer* **DIRTY_STATE_DETACHED**
 
 ## Methods
-final public  **__construct** ([*mixed* $data], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector], [[Phalcon\Mvc\Model\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Model_ManagerInterface) $modelsManager])
+final public  **__construct** ([*mixed* $data], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector], [[Phalcon\Mvc\Model\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Model_ManagerInterface) $modelsManager])
 
 Phalcon\Mvc\Model constructor
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injection container
 
@@ -400,7 +400,7 @@ echo "The first virtual robot name is ", $robot->name;
 
 
 
-public static  **query** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+public static  **query** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector])
 
 Create a criteria for a specific model
 
@@ -1565,7 +1565,7 @@ abstract public static  **findFirst** ([*mixed* $parameters])
 ...
 
 
-abstract public static  **query** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+abstract public static  **query** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector])
 
 ...
 

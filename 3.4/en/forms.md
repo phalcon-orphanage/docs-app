@@ -156,7 +156,7 @@ class ContactForm extends Form
 ```
 Additionally, the Select elements support the `useEmpty` option to enable the use of a blank element within the list of available options. The options `emptyText` and` emptyValue` are optional, which allow you to customize, respectively, the text and the value of the empty element
 
-[Phalcon\Forms\Form](api/Phalcon_Forms) extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) so you have access to the application services if needed:
+[Phalcon\Forms\Form](api/Phalcon_Forms) extends [Phalcon\Di\Injectable](api/Phalcon_Di) so you have access to the application services if needed:
 
 ```php
 <?php

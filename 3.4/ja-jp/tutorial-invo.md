@@ -240,7 +240,7 @@ $di->set(
 
 これでアダプタを変更して、初期化処理を追加する等が自由に行えるようになりました。 サービスは “session” という名前で登録されていることに注意してください。 これは、フレームワークがサービスコンテナ内のアクティブなサービスを識別できるようにする規約です。
 
-リクエストは多数のサービスを利用する可能性があり、それらを1つずつ登録するのは面倒な作業です。 For that reason, the framework provides a variant of [Phalcon\Di](api/Phalcon_Di) called [Phalcon\Di\FactoryDefault](api/Phalcon_Di_FactoryDefault) whose task is to register all services providing a full-stack framework.
+リクエストは多数のサービスを利用する可能性があり、それらを1つずつ登録するのは面倒な作業です。 For that reason, the framework provides a variant of [Phalcon\Di](api/Phalcon_Di) called [Phalcon\Di\FactoryDefault](api/Phalcon_Di) whose task is to register all services providing a full-stack framework.
 
 ```php
 <?php

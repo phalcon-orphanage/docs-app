@@ -683,7 +683,7 @@ $app->get(
 
 <a name='dependency-injector'></a>
 # Dependency Injector
-When a micro application is created, a [Phalcon\Di\FactoryDefault](api/Phalcon_Di_FactoryDefault) services container is create implicitly. 
+When a micro application is created, a [Phalcon\Di\FactoryDefault](api/Phalcon_Di) services container is create implicitly. 
 
 ```php
 <?php

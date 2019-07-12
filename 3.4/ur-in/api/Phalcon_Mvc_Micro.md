@@ -6,9 +6,9 @@ title: 'Phalcon\Mvc\Micro'
 ---
 # Class **Phalcon\Mvc\Micro**
 
-*extends* abstract class [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+*extends* abstract class [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/micro.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -34,13 +34,13 @@ $app->handle();
 
 
 ## Methods
-public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector])
 
 Phalcon\Mvc\Micro constructor
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the DependencyInjector container
 
@@ -118,7 +118,7 @@ Returns the internal router used by the application
 
 
 
-public [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di_ServiceInterface) **setService** (*string* $serviceName, *mixed* $definition, [*boolean* $shared])
+public [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di) **setService** (*string* $serviceName, *mixed* $definition, [*boolean* $shared])
 
 Sets a service from the DI
 
@@ -268,25 +268,25 @@ Returns bound models from binder instance
 
 
 
-public  **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di)
 
 Returns the internal dependency injector
 
 
 
-public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **setEventsManager** ([Phalcon\Events\ManagerInterface](/3.4/en/api/Phalcon_Events) $eventsManager) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di)
 
 Sets the event manager
 
 
 
-public  **getEventsManager** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **getEventsManager** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di)
 
 Returns the internal event manager
 
 
 
-public  **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di)
 
 Magic method __get
 

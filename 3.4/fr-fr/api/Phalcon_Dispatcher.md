@@ -7,7 +7,7 @@ title: 'Phalcon\Dispatcher'
 
 # Abstract class **Phalcon\Dispatcher**
 
-*implements* [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_DispatcherInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
+*implements* [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_Di), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/dispatcher.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -29,7 +29,7 @@ This is the base class for Phalcon\Mvc\Dispatcher and Phalcon\Cli\Dispatcher. Th
 
 ## Methods
 
-public **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injector
 

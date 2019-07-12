@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Model\Query'
 ---
 # Class **Phalcon\Mvc\Model\Query**
 
-*implements* [Phalcon\Mvc\Model\QueryInterface](/3.4/en/api/Phalcon_Mvc_Model_QueryInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\QueryInterface](/3.4/en/api/Phalcon_Mvc_Model_QueryInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/query.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -44,13 +44,13 @@ foreach ($result as $row) {
 *integer* **TYPE_DELETE**
 
 ## Methods
-public  **__construct** ([*string* $phql], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector], [*mixed* $options])
+public  **__construct** ([*string* $phql], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector], [*mixed* $options])
 
 Phalcon\Mvc\Model\Query constructor
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injection container
 
@@ -327,7 +327,7 @@ Destroys the internal PHQL cache
 
 # Class **Phalcon\Mvc\Model\Query\Builder**
 
-*implements* [Phalcon\Mvc\Model\Query\BuilderInterface](/3.4/en/api/Phalcon_Mvc_Model_Query_BuilderInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\Query\BuilderInterface](/3.4/en/api/Phalcon_Mvc_Model_Query_BuilderInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/query/builder.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -372,13 +372,13 @@ $queryBuilder = new \Phalcon\Mvc\Model\Query\Builder($params);
 *string* **OPERATOR_AND**
 
 ## Methods
-public  **__construct** ([*mixed* $params], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+public  **__construct** ([*mixed* $params], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector])
 
 Phalcon\Mvc\Model\Query\Builder constructor
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the DependencyInjector container
 

@@ -6,7 +6,7 @@ title: 'Phalcon\Http\Cookie'
 ---
 # Class **Phalcon\Http\Cookie**
 
-*implements* [Phalcon\Http\CookieInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\CookieInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/cookie.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -20,7 +20,7 @@ Phalcon\Http\Cookie constructor
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injector
 
@@ -334,7 +334,7 @@ abstract public  **getHttpOnly** ()
 
 # Class **Phalcon\Http\Request**
 
-*implements* [Phalcon\Http\RequestInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\RequestInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/request.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -372,7 +372,7 @@ public  **setHttpMethodParameterOverride** (*mixed* $httpMethodParameterOverride
 ...
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injector
 
@@ -1284,7 +1284,7 @@ abstract public  **getDigestAuth** ()
 
 # Class **Phalcon\Http\Response**
 
-*implements* [Phalcon\Http\ResponseInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\ResponseInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/response.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1312,7 +1312,7 @@ Phalcon\Http\Response constructor
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injector
 
@@ -1611,7 +1611,7 @@ Sets an attached file to be sent at the end of the request
 
 # Class **Phalcon\Http\Response\Cookies**
 
-*implements* [Phalcon\Http\Response\CookiesInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Http\Response\CookiesInterface](/3.4/en/api/Phalcon_Http), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/response/cookies.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1620,7 +1620,7 @@ A cookies bag is automatically registered as part of the 'response' service in t
 
 
 ## Methods
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injector
 

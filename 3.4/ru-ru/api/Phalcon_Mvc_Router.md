@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Router'
 ---
 # Class **Phalcon\Mvc\Router**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\RouterInterface](/3.4/en/api/Phalcon_Mvc_RouterInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di), [Phalcon\Mvc\RouterInterface](/3.4/en/api/Phalcon_Mvc_RouterInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/router.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -53,7 +53,7 @@ Phalcon\Mvc\Router constructor
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injector
 
@@ -344,7 +344,7 @@ Returns whether controller name should not be mangled
 
 *extends* class [Phalcon\Mvc\Router](/3.4/en/api/Phalcon_Mvc_Router)
 
-*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Mvc\RouterInterface](/3.4/en/api/Phalcon_Mvc_RouterInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events), [Phalcon\Mvc\RouterInterface](/3.4/en/api/Phalcon_Mvc_RouterInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/router/annotations.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -438,7 +438,7 @@ Phalcon\Mvc\Router constructor
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Mvc\Router](/3.4/en/api/Phalcon_Mvc_Router)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Mvc\Router](/3.4/en/api/Phalcon_Mvc_Router)
 
 Sets the dependency injector
 

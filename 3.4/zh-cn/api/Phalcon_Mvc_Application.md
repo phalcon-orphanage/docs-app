@@ -8,7 +8,7 @@ title: 'Phalcon\Mvc\Application'
 
 *extends* abstract class [Phalcon\Application](/3.4/en/api/Phalcon_Application)
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/application.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -72,7 +72,7 @@ Handles a MVC request
 
 
 
-public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector]) inherited from [Phalcon\Application](/3.4/en/api/Phalcon_Application)
+public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector]) inherited from [Phalcon\Application](/3.4/en/api/Phalcon_Application)
 
 Phalcon\Application
 
@@ -138,19 +138,19 @@ Returns the default module name
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di)
 
 Sets the dependency injector
 
 
 
-public  **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **getDI** () inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di)
 
 Returns the internal dependency injector
 
 
 
-public  **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di_Injectable)
+public  **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di)
 
 Magic method __get
 

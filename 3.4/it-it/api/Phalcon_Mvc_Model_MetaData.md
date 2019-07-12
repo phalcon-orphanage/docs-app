@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Model\MetaData'
 ---
 # Abstract class **Phalcon\Mvc\Model\MetaData**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di), [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -70,7 +70,7 @@ Initialize the metadata for certain table
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the DependencyInjector container
 
@@ -540,7 +540,7 @@ abstract public  **write** (*mixed* $key, *mixed* $data) inherited from [Phalcon
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/apc.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -621,7 +621,7 @@ Initialize the metadata for certain table
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Sets the DependencyInjector container
 
@@ -1081,7 +1081,7 @@ $metaData->reset();
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/files.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1157,7 +1157,7 @@ Initialize the metadata for certain table
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Sets the DependencyInjector container
 
@@ -1617,7 +1617,7 @@ $metaData->reset();
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/libmemcached.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1713,7 +1713,7 @@ Initialize the metadata for certain table
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Sets the DependencyInjector container
 
@@ -2160,7 +2160,7 @@ var_dump(
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/memcache.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2248,7 +2248,7 @@ Initialize the metadata for certain table
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Sets the DependencyInjector container
 
@@ -2695,7 +2695,7 @@ var_dump(
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/memory.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -2760,7 +2760,7 @@ Initialize the metadata for certain table
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Sets the DependencyInjector container
 
@@ -3220,7 +3220,7 @@ $metaData->reset();
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/redis.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -3311,7 +3311,7 @@ Initialize the metadata for certain table
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Sets the DependencyInjector container
 
@@ -3758,7 +3758,7 @@ var_dump(
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/session.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -3837,7 +3837,7 @@ Initialize the metadata for certain table
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Sets the DependencyInjector container
 
@@ -4300,13 +4300,13 @@ $metaData->reset();
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/strategy/annotations.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-final public  **getMetaData** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+final public  **getMetaData** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 The meta-data is obtained by reading the column descriptions from the database information schema
 
 
 
-final public  **getColumnMaps** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+final public  **getColumnMaps** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Read the model's column map, this can't be inferred
 
@@ -4325,13 +4325,13 @@ Queries the table meta-data in order to introspect the model's metadata
 
 
 ## Methods
-final public  **getMetaData** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+final public  **getMetaData** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 The meta-data is obtained by reading the column descriptions from the database information schema
 
 
 
-final public  **getColumnMaps** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+final public  **getColumnMaps** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Read the model's column map, this can't be inferred
 
@@ -4345,12 +4345,12 @@ Read the model's column map, this can't be inferred
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/strategyinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-abstract public  **getMetaData** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+abstract public  **getMetaData** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 ...
 
 
-abstract public  **getColumnMaps** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+abstract public  **getColumnMaps** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 ...
 
@@ -4362,7 +4362,7 @@ abstract public  **getColumnMaps** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Pha
 
 *extends* abstract class [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
-*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\MetaDataInterface](/3.4/en/api/Phalcon_Mvc_Model_MetaData), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/metadata/xcache.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -4443,7 +4443,7 @@ Initialize the metadata for certain table
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Mvc\Model\MetaData](/3.4/en/api/Phalcon_Mvc_Model_MetaData)
 
 Sets the DependencyInjector container
 

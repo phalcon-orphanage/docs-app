@@ -6,7 +6,7 @@ title: 'Phalcon\Di'
 ---
 # Class **Phalcon\Di**
 
-*implements* [Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+*implements* [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -94,7 +94,7 @@ with the same name
 
 
 
-public  **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di_ServiceInterface) $rawDefinition)
+public  **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di) $rawDefinition)
 
 Sets a service using a raw Phalcon\Di\Service definition
 
@@ -187,7 +187,7 @@ Magic method to get or set services using setters/getters
 
 
 
-public  **register** ([Phalcon\Di\ServiceProviderInterface](/3.4/en/api/Phalcon_Di_ServiceProviderInterface) $provider)
+public  **register** ([Phalcon\Di\ServiceProviderInterface](/3.4/en/api/Phalcon_Di) $provider)
 
 Registers a service provider.
 
@@ -211,7 +211,7 @@ class SomeServiceProvider implements ServiceProviderInterface
 
 
 
-public static  **setDefault** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public static  **setDefault** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Set a default dependency injection container to be obtained into static methods
 
@@ -396,7 +396,7 @@ String representation of the exception
 
 *extends* class [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
-*implements* [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php), [Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface)
+*implements* [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php), [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/factorydefault.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -451,7 +451,7 @@ with the same name
 
 
 
-public  **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di_ServiceInterface) $rawDefinition) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
+public  **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di) $rawDefinition) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
 Sets a service using a raw Phalcon\Di\Service definition
 
@@ -544,7 +544,7 @@ Magic method to get or set services using setters/getters
 
 
 
-public  **register** ([Phalcon\Di\ServiceProviderInterface](/3.4/en/api/Phalcon_Di_ServiceProviderInterface) $provider) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
+public  **register** ([Phalcon\Di\ServiceProviderInterface](/3.4/en/api/Phalcon_Di) $provider) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
 Registers a service provider.
 
@@ -568,7 +568,7 @@ class SomeServiceProvider implements ServiceProviderInterface
 
 
 
-public static  **setDefault** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
+public static  **setDefault** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
 Set a default dependency injection container to be obtained into static methods
 
@@ -674,9 +674,9 @@ Loads services from a Config object.
 
 # Class **Phalcon\Di\FactoryDefault\Cli**
 
-*extends* class [Phalcon\Di\FactoryDefault](/3.4/en/api/Phalcon_Di_FactoryDefault)
+*extends* class [Phalcon\Di\FactoryDefault](/3.4/en/api/Phalcon_Di)
 
-*implements* [Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+*implements* [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/factorydefault/cli.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -732,7 +732,7 @@ with the same name
 
 
 
-public  **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di_ServiceInterface) $rawDefinition) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
+public  **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di) $rawDefinition) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
 Sets a service using a raw Phalcon\Di\Service definition
 
@@ -825,7 +825,7 @@ Magic method to get or set services using setters/getters
 
 
 
-public  **register** ([Phalcon\Di\ServiceProviderInterface](/3.4/en/api/Phalcon_Di_ServiceProviderInterface) $provider) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
+public  **register** ([Phalcon\Di\ServiceProviderInterface](/3.4/en/api/Phalcon_Di) $provider) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
 Registers a service provider.
 
@@ -849,7 +849,7 @@ class SomeServiceProvider implements ServiceProviderInterface
 
 
 
-public static  **setDefault** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
+public static  **setDefault** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector) inherited from [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
 Set a default dependency injection container to be obtained into static methods
 
@@ -955,7 +955,7 @@ Loads services from a Config object.
 
 # Abstract class **Phalcon\Di\Injectable**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/injectable.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -964,7 +964,7 @@ with the same name of a registered service
 
 
 ## Methods
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injector
 
@@ -1001,7 +1001,7 @@ Magic method __get to easily get access to services through the name of them
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/injectionawareinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-abstract public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+abstract public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 ...
 
@@ -1016,7 +1016,7 @@ abstract public  **getDI** ()
 
 # Class **Phalcon\Di\Service**
 
-*implements* [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di_ServiceInterface)
+*implements* [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/service.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1076,7 +1076,7 @@ Returns the service definition
 
 
 
-public *mixed* **resolve** ([*array* $parameters], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+public *mixed* **resolve** ([*array* $parameters], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector])
 
 Resolves the service
 
@@ -1117,19 +1117,19 @@ This class builds instances based on complex definitions
 
 
 ## Methods
-private *mixed* **_buildParameter** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector, *int* $position, *array* $argument)
+private *mixed* **_buildParameter** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector, *int* $position, *array* $argument)
 
 Resolves a constructor/call parameter
 
 
 
-private  **_buildParameters** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector, *array* $arguments)
+private  **_buildParameters** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector, *array* $arguments)
 
 Resolves an array of parameters
 
 
 
-public *mixed* **build** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector, *array* $definition, [*array* $parameters])
+public *mixed* **build** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector, *array* $definition, [*array* $parameters])
 
 Builds a service using a complex service definition
 
@@ -1168,7 +1168,7 @@ abstract public  **getDefinition** ()
 ...
 
 
-abstract public  **resolve** ([*mixed* $parameters], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+abstract public  **resolve** ([*mixed* $parameters], [[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector])
 
 ...
 
@@ -1191,7 +1191,7 @@ abstract public static  **__set_state** (*array* $attributes)
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/serviceproviderinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-abstract public  **register** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $di)
+abstract public  **register** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $di)
 
 ...
 
@@ -1236,7 +1236,7 @@ abstract public  **getShared** (*mixed* $name, [*mixed* $parameters])
 ...
 
 
-abstract public  **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di_ServiceInterface) $rawDefinition)
+abstract public  **setRaw** (*mixed* $name, [Phalcon\Di\ServiceInterface](/3.4/en/api/Phalcon_Di) $rawDefinition)
 
 ...
 
@@ -1266,7 +1266,7 @@ abstract public  **getServices** ()
 ...
 
 
-abstract public static  **setDefault** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+abstract public static  **setDefault** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 ...
 

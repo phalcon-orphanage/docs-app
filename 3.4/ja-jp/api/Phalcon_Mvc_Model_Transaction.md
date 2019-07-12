@@ -52,7 +52,7 @@ try {
 
 
 ## Methods
-public  **__construct** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector, [*boolean* $autoBegin], [*string* $service])
+public  **__construct** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector, [*boolean* $autoBegin], [*string* $service])
 
 Phalcon\Mvc\Model\Transaction constructor
 
@@ -298,7 +298,7 @@ String representation of the exception
 
 # Class **Phalcon\Mvc\Model\Transaction\Manager**
 
-*implements* [Phalcon\Mvc\Model\Transaction\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Model_Transaction_ManagerInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\Transaction\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Model_Transaction_ManagerInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/transaction/manager.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -349,13 +349,13 @@ try {
 
 
 ## Methods
-public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector])
+public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector])
 
 Phalcon\Mvc\Model\Transaction\Manager constructor
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injection container
 

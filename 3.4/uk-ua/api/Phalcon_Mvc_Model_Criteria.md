@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Model\Criteria'
 ---
 # Class **Phalcon\Mvc\Model\Criteria**
 
-*implements* [Phalcon\Mvc\Model\CriteriaInterface](/3.4/en/api/Phalcon_Mvc_Model_CriteriaInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface)
+*implements* [Phalcon\Mvc\Model\CriteriaInterface](/3.4/en/api/Phalcon_Mvc_Model_CriteriaInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/criteria.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -29,7 +29,7 @@ $robots = Robots::query()
 
 
 ## Methods
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the DependencyInjector container
 
@@ -339,7 +339,7 @@ Returns all the parameters defined in the criteria
 
 
 
-public static  **fromInput** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector, *mixed* $modelName, *array* $data, [*mixed* $operator])
+public static  **fromInput** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector, *mixed* $modelName, *array* $data, [*mixed* $operator])
 
 Builds a Phalcon\Mvc\Model\Criteria based on an input array like $_POST
 

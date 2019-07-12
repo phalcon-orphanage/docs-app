@@ -49,7 +49,7 @@ Renders parameters keeping order in their HTML attributes
 
 
 
-public static  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public static  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injector container.
 

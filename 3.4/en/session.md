@@ -60,7 +60,7 @@ $session->start();
 
 <a name='store'></a>
 ## Storing/Retrieving data in Session
-From a controller, a view or any other component that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) you can access the session service and store items and retrieve them in the following way:
+From a controller, a view or any other component that extends [Phalcon\Di\Injectable](api/Phalcon_Di) you can access the session service and store items and retrieve them in the following way:
 
 ```php
 <?php
@@ -160,7 +160,7 @@ $user->age  = 22;
 
 <a name='data-persistence'></a>
 ## Persistent Data in Components
-Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di_Injectable) may inject a [Phalcon\Session\Bag](api/Phalcon_Session). This class isolates variables for every class. Thanks to this you can persist data between requests in every class in an independent way.
+Controller, components and classes that extends [Phalcon\Di\Injectable](api/Phalcon_Di) may inject a [Phalcon\Session\Bag](api/Phalcon_Session). This class isolates variables for every class. Thanks to this you can persist data between requests in every class in an independent way.
 
 ```php
 <?php

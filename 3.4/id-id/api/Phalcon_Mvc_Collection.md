@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Collection'
 ---
 # Abstract class **Phalcon\Mvc\Collection**
 
-*implements* [Phalcon\Mvc\EntityInterface](/3.4/en/api/Phalcon_Mvc_EntityInterface), [Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Serializable](http://php.net/manual/en/class.serializable.php)
+*implements* [Phalcon\Mvc\EntityInterface](/3.4/en/api/Phalcon_Mvc_EntityInterface), [Phalcon\Mvc\CollectionInterface](/3.4/en/api/Phalcon_Mvc_CollectionInterface), [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di), [Serializable](http://php.net/manual/en/class.serializable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -30,7 +30,7 @@ works with documents
 *integer* **DIRTY_STATE_DETACHED**
 
 ## Methods
-final public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector], [[Phalcon\Mvc\Collection\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Collection_ManagerInterface) $modelsManager])
+final public  **__construct** ([[Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector], [[Phalcon\Mvc\Collection\ManagerInterface](/3.4/en/api/Phalcon_Mvc_Collection_ManagerInterface) $modelsManager])
 
 Phalcon\Mvc\Collection constructor
 
@@ -48,7 +48,7 @@ Returns the value of the _id property
 
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the dependency injection container
 
@@ -164,7 +164,7 @@ Perform a count over a resultset
 
 
 
-final protected *boolean* **_preSave** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector, *boolean* $disableEvents, *boolean* $exists)
+final protected *boolean* **_preSave** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector, *boolean* $disableEvents, *boolean* $exists)
 
 Executes internal hooks before save a document
 
@@ -934,7 +934,7 @@ String representation of the exception
 
 # Class **Phalcon\Mvc\Collection\Manager**
 
-*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di_InjectionAwareInterface), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
+*implements* [Phalcon\Di\InjectionAwareInterface](/3.4/en/api/Phalcon_Di), [Phalcon\Events\EventsAwareInterface](/3.4/en/api/Phalcon_Events)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/collection/manager.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -971,7 +971,7 @@ public  **setServiceName** (*mixed* $serviceName)
 ...
 
 
-public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_DiInterface) $dependencyInjector)
+public  **setDI** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 Sets the DependencyInjector container
 
