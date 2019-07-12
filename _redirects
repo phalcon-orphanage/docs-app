@@ -1,3 +1,20 @@
+# Dead links
+/3.4/:lang/odm                                   /3.4/:lang/db-odm
+/4.0/:lang/odm                                   /4.0/:lang/db-odm
+
+/3.4/:lang/webserver-xampp                       /3.4/:lang/webserver-xampp
+/:lang/3.4/webserver-xampp                       /3.4/:lang/webserver-xampp
+/:ver/:lang/rewrite-rules                        /3.4/en/application-micro#rewrite-rules
+
+
+# Defaults
+/latest/:lang                                    /3.4/:lang/introduction
+/3.4/:lang                                       /3.4/:lang/introduction
+/en                                              /3.4/en/introduction
+/                                                /3.4/en/introduction
+
+/4.0/:lang                                       /4.0/:lang/introduction
+
 ################################################################################
 # API 3.4
 ################################################################################
@@ -50,21 +67,5 @@
 /3.4/:lang/api/Phalcon_Validation_*              /3.4/:lang/api/Phalcon_Validation
 
 
-# Dead links
-/3.4/:lang/odm                                   /3.4/:lang/db-odm
-/4.0/:lang/odm                                   /4.0/:lang/db-odm
-
-/3.4/:lang/webserver-xampp                       /3.4/:lang/webserver-xampp
-/:lang/3.4/webserver-xampp                       /3.4/:lang/webserver-xampp
-/:ver/:lang/rewrite-rules                        /3.4/en/application-micro#rewrite-rules
-
-
-# Defaults
-/latest/:lang                                    /3.4/:lang/introduction
-/3.4/:lang                                       /3.4/lang/introduction
-/en                                              /3.4/en/introduction
-/                                                /3.4/en/introduction
-
-/4.0/:lang                                       /4.0/:lang/introduction
 
 
