@@ -178,3 +178,11 @@ table.gsc-search-box {
   background-color: #c9302c;
   border-color: #ac2925;
 }
+
+.phalcon-blog__sponsors-items img {
+  margin-bottom: 0;
+}
+
+.phalcon-blog__sponsors-items a:hover {
+  border-bottom-color: #273646;
+}
