@@ -186,3 +186,7 @@ table.gsc-search-box {
 .phalcon-blog__sponsors-items a:hover {
   border-bottom-color: #273646;
 }
+
+.phalcon-blog-detail a {
+  border-bottom: 1px solid rgba(39, 54, 70, 0.4);
+}
