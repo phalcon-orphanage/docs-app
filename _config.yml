@@ -48,7 +48,7 @@ sass:
   sass_dir: _sass
   style: compressed
 
-
+# Exclude these files from our production _site
 exclude:
   - vendor
   - Gemfile
@@ -56,6 +56,10 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+  - updateData.sh
+  - serve
+  - netlify.toml
+  - boxfile.yml
 
 
 
