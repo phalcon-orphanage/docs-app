@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5a7b7dfe-a5e2-4c36-8b24-52629f507419" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/4.0" />
+  </component>
+  <component name="ProjectId" id="1MjtpcfaZbXZhYynK9Wj4tarPT0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="TEXT&#10;Markdown&#10;PHP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/4.0/en/api" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/images" />
+      <recent name="$PROJECT_DIR$/ide/4.0.0-beta.1/Phalcon/annotations" />
+      <recent name="$PROJECT_DIR$/4.0/en/api/_aa" />
+      <recent name="$PROJECT_DIR$/ide/4.0.0-beta.1/Phalcon/acl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/4.0/en/api" />
+      <recent name="$PROJECT_DIR$/_includes" />
+      <recent name="$PROJECT_DIR$/3.4/zh-cn" />
+      <recent name="$PROJECT_DIR$/3.4/ur-in" />
+      <recent name="$PROJECT_DIR$/3.4/uk-ua" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5a7b7dfe-a5e2-4c36-8b24-52629f507419" name="Default Changelist" comment="" />
+      <created>1554406550359</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554406550359</updated>
+      <workItem from="1554406552915" duration="11457000" />
+      <workItem from="1554427356984" duration="4273000" />
+      <workItem from="1554481651303" duration="24000" />
+      <workItem from="1554565318273" duration="765000" />
+      <workItem from="1554669476208" duration="11496000" />
+      <workItem from="1554730474124" duration="36000" />
+      <workItem from="1554730554302" duration="1650000" />
+      <workItem from="1554816523792" duration="1314000" />
+      <workItem from="1554917000944" duration="1070000" />
+      <workItem from="1554985694143" duration="890000" />
+      <workItem from="1555072965887" duration="1790000" />
+      <workItem from="1555716282548" duration="1259000" />
+      <workItem from="1556044641741" duration="354000" />
+      <workItem from="1560264869203" duration="1687000" />
+      <workItem from="1560710019007" duration="6371000" />
+      <workItem from="1560804261046" duration="6505000" />
+      <workItem from="1560817730339" duration="3682000" />
+      <workItem from="1561568340189" duration="712000" />
+      <workItem from="1562766818460" duration="10540000" />
+      <workItem from="1562798147083" duration="2900000" />
+      <workItem from="1562801149868" duration="2658000" />
+      <workItem from="1562820367618" duration="805000" />
+      <workItem from="1562859900209" duration="351000" />
+      <workItem from="1562873326930" duration="354000" />
+      <workItem from="1562874463727" duration="1242000" />
+      <workItem from="1562950289469" duration="2085000" />
+      <workItem from="1562957229620" duration="406000" />
+      <workItem from="1563058750141" duration="86000" />
+      <workItem from="1563059874488" duration="699000" />
+      <workItem from="1563123726445" duration="954000" />
+      <workItem from="1563204414503" duration="3072000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
