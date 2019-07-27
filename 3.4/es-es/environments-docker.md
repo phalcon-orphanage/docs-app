@@ -118,6 +118,7 @@ You can pass multiple environment variables from an external file to a service's
 
 <a name='environment-variables-web'></a>
 ### Web environment
+
 | Environment variable   | Description                                        | Default         |
 |------------------------|----------------------------------------------------|-----------------|
 | `WEB_DOCUMENT_ROOT`    | Document root for webserver (inside the container).| /project/public |
@@ -130,6 +131,7 @@ You can pass multiple environment variables from an external file to a service's
 
 <a name='environment-variables-phpmyadmin'></a>
 ### phpMyAdmin variables
+
 | Environment variable   | Description                                                                                                  | Default |
 |------------------------|--------------------------------------------------------------------------------------------------------------|---------|
 | `PMA_ARBITRARY`        | When set to 1 connection to the server will be allowed.                                                      | 1       |
