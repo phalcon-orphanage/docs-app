@@ -52,7 +52,6 @@
 
             <nav class="header-nav--mobile _navToggle"
                  onclick="event.stopPropagation();">
-                {% if page.version == '4.0' %}
                 <form>
                     <input class="header__search"
                            type="search"
@@ -63,9 +62,6 @@
                            data-siteurl="{{ site.url }}"
                            data-docs-version="{{ page.version }}">
                 </form>
-                {% else %}
-                    <a href="search" class="header-nav--mobile__search">{{ homeStrings['search'] }}</a>
-                {% endif %}
                 <ul>
                     <li>
                         <a href="https://phalcon.link/docs">{{ homeStrings['download'] }}</a>
@@ -108,11 +104,9 @@
                             {%- assign new = '/' | append: version | append: '/' -%}
                             {%- assign link = page.url | replace: current, new | replace: '.html', '' -%}
                             <li>
-                                {% if '4.0' == version and 'search' != link %}
                                 <a href="{{ link }}">
                                     {{- version -}}
                                 </a>
-                                {% endif %}
                             </li>
                             {%- endfor -%}
                         </ul>
@@ -141,8 +135,6 @@
                     </li>
                 </ul>
             </nav>
-
-            <!-- <input type="text" class="header__search" placeholder="Search..."> -->
         </div>
 
         <div class="header__right">
@@ -184,7 +176,6 @@
                 </div>
             </div>
 
-            {% if page.version == '4.0' %}
             <form>
                 <input class="header__search"
                        type="search"
@@ -195,11 +186,6 @@
                        data-siteurl="{{ site.url }}"
                        data-docs-version="{{ page.version }}">
             </form>
-            {% else %}
-            <div class="header__lang">
-                <a href="search">{{ homeStrings['search'] }}</a>
-            </div>
-            {% endif %}
 
             <div class="header__github">
                 <a href="https://phalcon.link/github">

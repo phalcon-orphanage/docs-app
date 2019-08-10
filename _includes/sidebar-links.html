@@ -10,7 +10,6 @@
                 <div class="documentation-nav-item">
                     {% assign current = '/' | append: page.version | append: '/' | append: page.language | append: '/' %}
                     {% assign suffix  = page.url | replace: current, '' | replace: '.html', '' %}
-                    {% if suffix != 'search' %}
                     {% if page.language != 'en' %}
                     <a class="documentation-nav-item__label"
                        href="https://crowdin.com/project/phalcon-documentation/{{ site.data.supported[page.language]['crowdin_code'] }}">
@@ -21,7 +20,6 @@
                        href="https://github.com/phalcon/docs/tree/4.0/en/{{ suffix }}.md">
                         <strong>{{ homeStrings['edit_on_github'] }}</strong>
                     </a>
-                    {% endif %}
                     {% endif %}
                 </div>
                 {% endif %}
