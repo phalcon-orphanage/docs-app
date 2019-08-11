@@ -8,12 +8,6 @@ version: '3.4'
 
 Pro všechny, kteří chtějí podpořit naši práci a další vývoj Phalcon frameworku, nabízíme možnosti které vyhoví každému rozpočtu. Sponzorování naší práce dovolí vývojářům vyhradit si více času na projekt a tím nabídnout rychlejší reakce v opravě bugů, přidávání nových funkcí a tím zajistit větší stabilitu frameworku.
 
-<a href="https://phalcon.link/fund">
-<button class="btn button-small btn-danger">
-    Staňte se patronem!
-</button>
-</a>
-
 # Sponzoři a podporovatelé
 
 <div class="phalcon-blog__sponsors-items">
