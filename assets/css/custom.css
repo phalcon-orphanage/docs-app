@@ -23,80 +23,6 @@
     float: left;
 }
 
-
-/*google search*/
-
-.gsc-search-box-tools .gsc-search-box .gsc-input::placeholder {
-  font-size: 14px !important;
-}
-
-.gsc-control-cse {
-  padding: 0 !important;
-  border: none !important;
-}
-
-table.gsc-search-box {
-  margin: 0 !important;
-  display: block !important;
-}
-
-.gsc-search-button {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translate(0, -50%);
-  margin: 0;
-  padding: 0;
-  min-width: 88px !important;
-  border: none !important;
-}
-
-.gsc-search-button-v2 {
-  background-color: #8FC19A !important;
-}
-
-.gsc-search-button-v2:hover {
-  background-color: #8FC19A !important;
-}
-
-.gsib_a {
-  padding-right: 100px !important;
-  border: none !important;
-}
-
-.gsib_b {
-  display: none !important;
-}
-
-.gsc-search-box-tools .gsc-search-box .gsc-input {
-  display: table;
-  font-size: 16px !important;
-  width: 100% !important;
-  padding: 0 !important;
-  border: none !important;
-}
-
-.gsc-input-box {
-  border-top-left-radius: inherit;
-  border-bottom-left-radius: inherit;
-}
-
-.gcsc-branding-img-noclear {
-  vertical-align: top !important;
-}
-
-.gcsc-branding-clickable {
-  display: flex !important;
-}
-
-.gsc-resultsHeader {
-  display: none !important;
-}
-
-.gs-title {
-  border: none !important;
-}
-
 .header-nav--mobile .extendable a:after{
   content: url(https://assets.phalconphp.com/phalcon/images/svg/arrow.svg);
   margin-left: 5px;
@@ -116,21 +42,6 @@ table.gsc-search-box {
   display: inline-block;
   vertical-align: top;
   margin-left: 2px;
-}
-
-.gs-image-box.gs-web-image-box.gs-web-image-box-portrait {
-  overflow: inherit !important;
-}
-
-.gsc-results-wrapper-overlay {
-  left: 50% !important;
-  -webkit-transform: translate(-50%, 0) !important;
-  -ms-transform: translate(-50%, 0) !important;
-  transform: translate(-50%, 0) !important;
-}
-
-.gsc-webResult .gsc-result {
-  border-bottom: 1px solid #E9E9E9 !important;
 }
 
 /*algolia mobile search*/
