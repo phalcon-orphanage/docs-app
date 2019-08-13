@@ -100,4 +100,6 @@
 
 .phalcon-blog-detail a {
   border-bottom: 1px solid rgba(39, 54, 70, 0.4);
+  word-break: break-all;
+  word-break: break-word;
 }
