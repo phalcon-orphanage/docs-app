@@ -47,3 +47,10 @@
   word-break: break-all;
   word-break: break-word;
 }
+/** show pointer for clickable headers **/
+.phalcon-blog_documentation h1,
+.phalcon-blog_documentation h2,
+.phalcon-blog_documentation h3,
+.phalcon-blog_documentation h4 {
+  cursor: pointer;
+}
