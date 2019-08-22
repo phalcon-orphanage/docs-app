@@ -2,3 +2,11 @@
     height: 20px;
     width: 20px;
 }
+
+/** show pointer for clickable headers **/
+.phalcon-blog_documentation h1,
+.phalcon-blog_documentation h2,
+.phalcon-blog_documentation h3,
+.phalcon-blog_documentation h4 {
+    cursor: pointer;
+}

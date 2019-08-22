@@ -137,6 +137,7 @@ var o2 =
 				return false;
 
 			this.articleNav.init();
+			this.makeHeadersClickable();
 		},
 		// show/close sublist on right navigation
 		toggleSublist: function(instance)
@@ -274,6 +275,11 @@ var o2 =
 					$('.doc-article-nav-list').append(linkTmp);
 				}
 			}
+		},
+		makeHeadersClickable: function () {
+			$('h1, h2, h3, h4').click(function() {
+				window.location.replace('#' + $(this).attr('id'));
+			});
 		}
 	}
 }
