@@ -7398,7 +7398,7 @@ The next example shows how to use the MySQL now() function as a field value.
 
 $subscriber = new Subscribers();
 
-$subscriber->email     = "andres@phalconphp.com";
+$subscriber->email     = "andres@phalcon.io";
 $subscriber->createdAt = new \Phalcon\Db\RawValue("now()");
 
 $subscriber->save();

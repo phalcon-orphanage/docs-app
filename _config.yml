@@ -5,7 +5,7 @@ app:
   description: 'Official Phalcon Documentation'
   keywords: 'php, phalcon, phalcon php, php framework, faster php framework, php extension, next generation framework, docs, documentation'
   avatar: 'https://avatars3.githubusercontent.com/u/1221505?v=4'
-  email: 'team@phalconphp.com'
+  email: 'team@phalcon.io'
   facebook:
   github: 'phalcon'
   rss: 'phalcon'
@@ -18,7 +18,7 @@ gse: '007675014297340381319:q0xztepgoxc'
 
 permalink: :title
 
-url: https://docs.phalconphp.com
+url: https://docs.phalcon.io
 plugins:
   - jekyll-sitemap
 

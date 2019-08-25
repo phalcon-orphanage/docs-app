@@ -681,7 +681,7 @@ $router->add(
 
 [Phalcon\Mvc\Router](api/Phalcon_Mvc_Router) has a default behavior that provides a very simple routing that always expects a URI that matches the following pattern: `/:controller/:action/:params`
 
-For example, for a URL like this `http://phalconphp.com/documentation/show/about.html`, this router will translate it as follows:
+For example, for a URL like this `http://phalcon.io/documentation/show/about.html`, this router will translate it as follows:
 
 |  Controller   | Akcja | Parameter  |
 |:-------------:|:-----:|:----------:|
@@ -1199,7 +1199,7 @@ $di['router'] = function () {
 
 You can register router during service registration with Phalcon dependency injector to make it available inside the controllers.
 
-You need to add code below in your bootstrap file (for example `index.php` or `app/config/services.php` if you use [Phalcon Developer Tools](http://phalconphp.com/en/download/tools).
+You need to add code below in your bootstrap file (for example `index.php` or `app/config/services.php` if you use [Phalcon Developer Tools](http://phalcon.io/en/download/tools).
 
 ```php
 <?php

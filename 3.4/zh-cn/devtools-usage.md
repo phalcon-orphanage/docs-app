@@ -10,7 +10,7 @@ version: '3.4'
 
 这些工具是生成骨架代码的有用脚本的集合。 应用程序的核心组件可以通过简单的命令生成, 使您可以轻松地使用 Phalcon开发应用程序。
 
-<h5 class='alert alert-danger'>If you prefer to use the web version instead of the console, this <a href="https://blog.phalconphp.com/post/dont-like-command-line-and-consoles-no-problem">blog post</a> offers more information. </h5>
+<h5 class='alert alert-danger'>If you prefer to use the web version instead of the console, this <a href="https://blog.phalcon.io/post/dont-like-command-line-and-consoles-no-problem">blog post</a> offers more information. </h5>
 
 <a name='download'></a>
 

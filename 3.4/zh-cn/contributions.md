@@ -71,7 +71,7 @@ Before submit **new functionality**, please open a [NFR](/3.4/en/new-feature-req
 
 ## 获得支持
 
-If you have any questions about how to use Phalcon, please see the [support page](https://phalconphp.com/support).
+If you have any questions about how to use Phalcon, please see the [support page](https://phalcon.io/support).
 
 <a name='requesting-features'></a>
 

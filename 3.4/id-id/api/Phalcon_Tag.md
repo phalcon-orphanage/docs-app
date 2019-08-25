@@ -166,11 +166,11 @@ echo Phalcon\Tag::linkTo(
     ]
 );
 
-echo Phalcon\Tag::linkTo("http://phalconphp.com/", "Phalcon", false);
+echo Phalcon\Tag::linkTo("http://phalcon.io/", "Phalcon", false);
 
 echo Phalcon\Tag::linkTo(
     [
-        "http://phalconphp.com/",
+        "http://phalcon.io/",
         "Phalcon Home",
         false,
     ]
@@ -178,7 +178,7 @@ echo Phalcon\Tag::linkTo(
 
 echo Phalcon\Tag::linkTo(
     [
-        "http://phalconphp.com/",
+        "http://phalcon.io/",
         "Phalcon Home",
         "local" => false,
     ]
@@ -186,7 +186,7 @@ echo Phalcon\Tag::linkTo(
 
 echo Phalcon\Tag::linkTo(
     [
-        "action" => "http://phalconphp.com/",
+        "action" => "http://phalcon.io/",
         "text"   => "Phalcon Home",
         "local"  => false,
         "target" => "_new"

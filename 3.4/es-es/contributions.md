@@ -79,6 +79,6 @@ Thanks!
 [testing]: https://github.com/phalcon/cphalcon/blob/master/tests/README.md
 [zephir]: https://zephir-lang.com/
 [psr]: http://www.php-fig.org/psr/
-[support]: https://phalconphp.com/support
+[support]: https://phalcon.io/support
 [nfr]: /3.4/en/new-feature-request
 

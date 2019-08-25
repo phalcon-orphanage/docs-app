@@ -1,5 +1,5 @@
-<p align="center"><a href="https://docs.phalconphp.com" target="_blank">
-    <img src="https://assets.phalconphp.com/phalcon/images/svg/phalcon-logo-transparent-black.svg" height="100" alt="Phalcon"/>
+<p align="center"><a href="https://docs.phalcon.io" target="_blank">
+    <img src="https://assets.phalcon.io/phalcon/images/svg/phalcon-logo-transparent-black.svg" height="100" alt="Phalcon"/>
 </a></p>
 
 <p align="center">
@@ -35,14 +35,14 @@ License
 
 This work licensed under the New BSD License. See the [LICENSE][10] file for more information.
 
-[0]: https://phalconphp.com
-[1]: https://docs.phalconphp.com
+[0]: https://phalcon.io
+[1]: https://docs.phalcon.io
 [2]: https://crowdin.com/project/phalcon-documentation
 [3]: https://github.com/phalcon/cphalcon
 [4]: https://phalcon.link/fb
 [5]: https://phalcon.link/t
 [6]: https://phalcon.link/gab
 [7]: https://phalcon.link/discord
-[8]: https://forum.phalconphp.com
+[8]: https://forum.phalcon.io
 [9]: https://github.com/phalcon/docs-app/blob/master/CONTRIBUTING.md
 [10]: https://github.com/phalcon/docs-app/blob/master/LICENSE.txt

@@ -430,4 +430,4 @@ The [Phalcon\Annotations\AdapterInterface](api/Phalcon_Annotations) interface mu
 
 ## External Resources
 
-* [Tutorial: Creating a custom model's initializer with Annotations](https://blog.phalconphp.com/post/tutorial-creating-a-custom-models-initializer)
+* [Tutorial: Creating a custom model's initializer with Annotations](https://blog.phalcon.io/post/tutorial-creating-a-custom-models-initializer)

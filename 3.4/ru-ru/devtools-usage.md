@@ -10,7 +10,7 @@ version: '3.4'
 
 Эти инструменты представляют собой набор полезных скриптов для генерации основы приложения. Основные компоненты приложения могут быть созданы простыми командами, позволяющими легко разрабатывать приложения с использованием Phalcon.
 
-<h5 class='alert alert-danger'>If you prefer to use the web version instead of the console, this <a href="https://blog.phalconphp.com/post/dont-like-command-line-and-consoles-no-problem">blog post</a> offers more information. </h5>
+<h5 class='alert alert-danger'>If you prefer to use the web version instead of the console, this <a href="https://blog.phalcon.io/post/dont-like-command-line-and-consoles-no-problem">blog post</a> offers more information. </h5>
 
 <a name='download'></a>
 
