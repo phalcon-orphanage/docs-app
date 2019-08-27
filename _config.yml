@@ -13,6 +13,7 @@ app:
   analytics: 'UA-133802124-5'
   language: 'en'
   version: '3.4'
+  comments: false
 
 gse: '007675014297340381319:q0xztepgoxc'
 
