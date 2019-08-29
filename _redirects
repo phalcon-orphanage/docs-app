@@ -156,6 +156,9 @@
 /:lang/3.4/db                                                      /3.4/en/db-layer
 /3.4/:lang/install                                                 /3.4/en/install
 
+/3.4/:lang/environments-docker                                     /3.4/:lang/environments-nanobox
+/3.4/:lang/environments-vagrant                                    /3.4/:lang/environments-nanobox
+
 /:lang/3.4/api/Phalcon_Acl                                         /3.4/en/api/Phalcon_Acl
 /:lang/3.4/api/Phalcon_Acl_Adapter                                 /3.4/en/api/Phalcon_Acl
 /:lang/3.4/api/Phalcon_Acl_AdapterInterface                        /3.4/en/api/Phalcon_Acl
