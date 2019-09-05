@@ -14,24 +14,38 @@ Official [Phalcon][0] documentation website.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/96373ff5-88bd-4788-9d2d-1d40f4759803/deploy-status)](https://app.netlify.com/sites/phalcon-docs/deploys)
 
-Documentation
--------------
+## Documentation
 * Official documentation is [located here][1]
 * Translations must be sent to [Crowdin project][2]
 
-Community
----------
+## Community
 * Follow us on [GitHub][3], [Facebook][4], [Twitter][5] or [Gab.ai][6]
 * Get Phalcon support on [Discord][7] and [Official Forums][8]
 
-Contributing
-------------
+## Contributing
 
 This work is an open source, community-driven project. See [CONTRIBUTING.md][9]
 for details about contributions to this repository.
 
-License
--------
+
+## Sponsors
+
+Become a sponsor and get your logo on our README on Github with a link to your site. [[Become a sponsor](https://opencollective.com/phalcon#sponsor)]
+
+<a href="https://opencollective.com/phalcon/#contributors">
+<img src="https://opencollective.com/phalcon/tiers/sponsors.svg?avatarHeight=48&width=800">
+</a>
+
+## Backers
+
+Support us with a monthly donation and help us continue our activities. [[Become a backer](https://opencollective.com/phalcon#backer)]
+
+<a href="https://opencollective.com/phalcon/#contributors">
+<img src="https://opencollective.com/phalcon/tiers/backers.svg?avatarHeight=48&width=800&height=200">
+</a>
+
+
+## License
 
 This work licensed under the New BSD License. See the [LICENSE][10] file for more information.
 
