@@ -28,8 +28,6 @@
   margin-left: 2px;
 }
 
-/*algolia mobile search*/
-
 .header-nav--mobile .algolia-autocomplete.algolia-autocomplete-left .ds-dropdown-menu {
   min-width: 100%;
 }
