@@ -1,7 +1,11 @@
 <head>
-
+    {%- assign current = '/' | append: page.language | append: '/' -%}
     {% for lang in site.data.verlang.languages[page.version] %}
-    <link rel="alternate" href="https://docs.phalcon.io/{{ page.version }}/{{ lang }}" hreflang="{{ lang }}" />{% endfor %}
+    {% if lang != page.language %}
+    {%- assign new = '/' | append: lang | append: '/' -%}
+    <link rel="alternate" href="{{ site.url }}{{ page.url | replace: current, new | replace: '.html', '' }}" hreflang="{{ lang }}" />
+    {% endif %}
+    {% endfor %}
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
