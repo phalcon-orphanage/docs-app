@@ -2,8 +2,9 @@
     {%- assign current = '/' | append: page.language | append: '/' -%}
     {% for lang in site.data.verlang.languages[page.version] %}
     {% if lang != page.language %}
+    {%- assign hreflang = site.data.supported[lang]['iso_639_1'] -%}
     {%- assign new = '/' | append: lang | append: '/' -%}
-    <link rel="alternate" href="{{ site.url }}{{ page.url | replace: current, new | replace: '.html', '' | downcase }}" hreflang="{{ lang }}" />
+    <link rel="alternate" href="{{ site.url }}{{ page.url | replace: current, new | replace: '.html', '' | downcase }}" hreflang="{{ hreflang }}" />
     {% endif %}
     {% endfor %}
 
