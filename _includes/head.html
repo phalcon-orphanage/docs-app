@@ -3,7 +3,7 @@
     {% for lang in site.data.verlang.languages[page.version] %}
     {% if lang != page.language %}
     {%- assign new = '/' | append: lang | append: '/' -%}
-    <link rel="alternate" href="{{ site.url }}{{ page.url | replace: current, new | replace: '.html', '' }}" hreflang="{{ lang }}" />
+    <link rel="alternate" href="{{ site.url }}{{ page.url | replace: current, new | replace: '.html', '' | downcase }}" hreflang="{{ lang }}" />
     {% endif %}
     {% endfor %}
 
@@ -20,7 +20,7 @@
     <meta name="docsearch:language" content="{{ page.language | default: site.app.language }}">
     <meta name="docsearch:version" content="{{ page.version | default: site.app.version }}">
 
-    <link href="{{ page.url | replace:'index.html','' | prepend: site.url }}" rel="canonical">
+    <link href="{{ page.url | replace:'index.html','' | prepend: site.url | downcase }}" rel="canonical">
 
     <title>{{ site.app.title }}{% if page.title != "" %} - {{ page.title }}{% endif %}</title>
 
