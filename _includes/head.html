@@ -1,4 +1,6 @@
 <head>
+    <meta charset="utf-8">
+    
     {%- assign current = '/' | append: page.language | append: '/' -%}
     {%- for lang in site.data.verlang.languages[page.version] -%}
     {%- if lang != page.language -%}
@@ -7,7 +9,6 @@
     <link rel="alternate" href="{{ site.url }}{{ page.url | replace: current, new | replace: '.html', '' | downcase }}" hreflang="{{ hreflang }}" />
     {% endif %}{% endfor %}
 
-    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="MobileOptimized" content="320"/>
     <meta name="HandheldFriendly" content="true"/>
