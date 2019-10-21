@@ -16,7 +16,7 @@ Writing proper tests can assist in writing better software. If you set up proper
 If you don't already have phpunit installed, you can do it by using the following composer command:
 
 ```bash
-composer require phpunit/phpunit:^5.0
+composer require --dev phpunit/phpunit:^5.0
 ```
 
 or by manually adding it to `composer.json`:
