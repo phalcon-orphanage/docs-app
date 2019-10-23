@@ -2200,7 +2200,7 @@ protected static  **loadClass** (*mixed* $namespace, *mixed* $config)
 
 # Class **Phalcon\Cache\Frontend\Igbinary**
 
-*extends* class [Phalcon\Cache\Frontend\Data](/3.4/en/api/api/Phalcon_Cache)
+*extends* class [Phalcon\Cache\Frontend\Data](/3.4/en/api/Phalcon_Cache)
 
 *implements* [Phalcon\Cache\FrontendInterface](/3.4/en/api/Phalcon_Cache)
 
@@ -2404,7 +2404,7 @@ Unserializes data after retrieval
 
 # Class **Phalcon\Cache\Frontend\Msgpack**
 
-*extends* class [Phalcon\Cache\Frontend\Data](/3.4/en/api/api/Phalcon_Cache)
+*extends* class [Phalcon\Cache\Frontend\Data](/3.4/en/api/Phalcon_Cache)
 
 *implements* [Phalcon\Cache\FrontendInterface](/3.4/en/api/Phalcon_Cache)
 

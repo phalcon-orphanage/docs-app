@@ -456,8 +456,8 @@ $cache->save('my-key', $data);
 | アダプター                                                                     | 説明                                                                                                |
 | ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | [Phalcon\Cache\Frontend\Output](api/Phalcon_Cache)     | 標準のPHP出力から入力データを読み込みます。                                                                           |
-| [Phalcon\Cache\Frontend\Data](api/api/Phalcon_Cache)         | あらゆる種類のPHPデータ（大きな配列、オブジェクト、テキストなど）をキャッシュするために使用されます。 データは、バックエンドへ保存する前にシリアライズされます。                |
-| [Phalcon\Cache\Frontend\Base64](api/api/Phalcon_Cache)     | バイナリ データのキャッシュに使用します。 データは、バックエンドに格納される前に`base64_encode`を使用してシリアル化されます。                           |
+| [Phalcon\Cache\Frontend\Data](api/Phalcon_Cache)         | あらゆる種類のPHPデータ（大きな配列、オブジェクト、テキストなど）をキャッシュするために使用されます。 データは、バックエンドへ保存する前にシリアライズされます。                |
+| [Phalcon\Cache\Frontend\Base64](api/Phalcon_Cache)     | バイナリ データのキャッシュに使用します。 データは、バックエンドに格納される前に`base64_encode`を使用してシリアル化されます。                           |
 | [Phalcon\Cache\Frontend\Json](api/Phalcon_Cache)         | データは、バックエンドへ保存する前にJSON形式にエンコードされます。 取得後にデコードします。 このフロントエンドは、他の言語やフレームワークとのデータ共有に便利です。             |
 | [Phalcon\Cache\Frontend\Igbinary](api/Phalcon_Cache) | あらゆる種類のPHPデータ（大きな配列、オブジェクト、テキストなど）をキャッシュするために使用されます。 データは、バックエンドに格納される前に`Igbinary`を使用してシリアル化されます。 |
 | [Phalcon\Cache\Frontend\None](api/Phalcon_Cache)         | あらゆる種類のPHPデータをシリアル化せずにキャッシュするために使用されます。                                                           |

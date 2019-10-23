@@ -308,7 +308,7 @@ Variables can be formatted or modified using filters. The pipe operator `|` is u
 | `right_trim`       | PHPの [rtrim](http://php.net/manual/en/function.rtrim.php) 関数を値に適用します。 余分なスペースを削除します                   |
 | `sort`             | PHP 関数 [asort](http://php.net/manual/en/function.asort.php) を使用して配列をソートします。                           |
 | `stripslashes`     | PHPの [stripslashes](http://php.net/manual/en/function.stripslashes.php) 関数を値に適用します。 エスケープされた引用符を削除します |
-| `striptags`        | PHPの [striptags](http://php.net/manual/en/function.striptags.php) 関数を値に適用します。 HTMLタグを削除します            |
+| `striptags`        | PHPの [striptags](http://php.net/manual/en/function.strip-tags.php) 関数を値に適用します。 HTMLタグを削除します            |
 | `trim`             | PHPの [trim](http://php.net/manual/en/function.trim.php) 関数を値に適用します。 余分なスペースを削除します                     |
 | `upper`            | 文字列を大文字に変更します。                                                                                        |
 | `url_encode`       | [urlencode](http://php.net/manual/en/function.urlencode.php) PHP 関数を値に適用します。                          |

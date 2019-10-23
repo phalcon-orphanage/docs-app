@@ -459,8 +459,8 @@ $cache->save('my-key', $data);
 | 适配器                                                                       | 描述                                                        |
 | ------------------------------------------------------------------------- | --------------------------------------------------------- |
 | [Phalcon\Cache\Frontend\Output](api/Phalcon_Cache)     | 从标准的 PHP 输出中读取输入的数据。                                      |
-| [Phalcon\Cache\Frontend\Data](api/api/Phalcon_Cache)         | 它用于缓存任何类型的PHP数据(大数组、对象、文本等)。 数据在存储在后端之前是序列化的。             |
-| [Phalcon\Cache\Frontend\Base64](api/api/Phalcon_Cache)     | 它用于缓存二进制数据。 使用 `base64_encode` 序列化数据之前将存储在后端。             |
+| [Phalcon\Cache\Frontend\Data](api/Phalcon_Cache)         | 它用于缓存任何类型的PHP数据(大数组、对象、文本等)。 数据在存储在后端之前是序列化的。             |
+| [Phalcon\Cache\Frontend\Base64](api/Phalcon_Cache)     | 它用于缓存二进制数据。 使用 `base64_encode` 序列化数据之前将存储在后端。             |
 | [Phalcon\Cache\Frontend\Json](api/Phalcon_Cache)         | 数据在存储在后端之前以JSON编码。 检索后解码。 这个前端有助于与其他语言或框架共享数据。            |
 | [Phalcon\Cache\Frontend\Igbinary](api/Phalcon_Cache) | 它用于缓存任何类型的PHP数据(大数组、对象、文本等)。 使用 `Igbinary` 序列化数据之前将存储在后端。 |
 | [Phalcon\Cache\Frontend\None](api/Phalcon_Cache)         | 它用来缓存任何类型的 PHP 数据没有将其序列化。                                 |
