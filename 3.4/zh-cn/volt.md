@@ -1622,7 +1622,5 @@ require $compiler->getCompiledTemplatePath();
 ## External Resources
 
 * A bundle for Sublime/Textmate is available [here](https://github.com/phalcon/volt-sublime-textmate)
-* [Album-O-Rama](https://album-o-rama.phalcon.io) is a sample application using Volt as template engine, [Github](https://github.com/phalcon/album-o-rama)
-* [Our website](https://phalcon.io) is running using Volt as template engine, [Github](https://github.com/phalcon/website)
 * [Phosphorum](https://forum.phalcon.io), the Phalcon's forum, also uses Volt, [Github](https://github.com/phalcon/forum)
 * [Vökuró](https://vokuro.phalcon.io), is another sample application that use Volt, [Github](https://github.com/phalcon/vokuro)

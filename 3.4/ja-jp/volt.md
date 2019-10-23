@@ -1622,7 +1622,5 @@ require $compiler->getCompiledTemplatePath();
 ## 外部リソース
 
 * Sublime/Textmate用のバンドルは [こちら](https://github.com/phalcon/volt-sublime-textmate)
-* [Album-O-Rama](https://album-o-rama.phalcon.io) は、テンプレートエンジンとしてVoltを使用するサンプルアプリケーションです [Github](https://github.com/phalcon/album-o-rama)
-* [私たちのウェブサイト](https://phalcon.io) は、Voltをテンプレートエンジンとして使用しています。 [Github](https://github.com/phalcon/website)
 * [Phosphorum](https://forum.phalcon.io) PhalconのフォーラムではもちろんVoltを使っています。 [Github](https://github.com/phalcon/forum)
 * [Vökuró](https://vokuro.phalcon.io) その他のサンプルアプリケーションはVoltを利用しています [Github](https://github.com/phalcon/vokuro)
