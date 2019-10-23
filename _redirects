@@ -41,7 +41,6 @@
 /en/latest/odm                              /3.4/en/db-odm
 
 /3.4/en/odm                                 /3.4/en/db-odm
-/4.0/en/odm                                 /4.0/en/db-odm
 
 /3.1/en/rewrite-rules                       /3.1/en/application-micro#rewrite-rules
 /3.2/en/rewrite-rules                       /3.2/en/application-micro#rewrite-rules
@@ -96,31 +95,25 @@
 /4.0/ex-es/api/*                                               /4.0/es-es/:splat
 /4.0/ex-es/*                                                   /4.0/es-es/:splat
 /pl/latest/reference/di.html                                   /4.0/en/di
-/4.0/en/environments-docker                                    /4.0/en/environments
-/4.0/en/environments-vagrant                                   /4.0/en/environments
-/4.0/en/environments-docker                                    /4.0/en/environments
-/4.0/en/environments-vagrant                                   /4.0/en/environments
 /4.0/entesting-environment                                     /4.0/en/testing-environment
 /4.0/cs-cztesting-environment                                  /4.0/cs-cz/testing-environment
 /4.0/es-estesting-environment                                  /4.0/es-es/testing-environment
 /4.0/de-detesting-environment                                  /4.0/de-de/testing-environment
-/4.0/en/logging                                                /4.0/en/logger
-/4.0/cs-cz/db-models-advanced                                  /4.0/cs-cz/db-models
-/4.0/de-de/db-models-advanced                                  /4.0/de-de/db-models
-/4.0/el-gr/db-models-advanced                                  /4.0/el-gr/db-models
-/4.0/en/db-models-advanced                                     /4.0/en/db-models
-/4.0/es-es/db-models-advanced                                  /4.0/es-es/db-models
-/4.0/fa-ir/db-models-advanced                                  /4.0/fa-ir/db-models
-/4.0/fr-fr/db-models-advanced                                  /4.0/fr-fr/db-models
-/4.0/id-id/db-models-advanced                                  /4.0/id-id/db-models
-/4.0/it-it/db-models-advanced                                  /4.0/it-it/db-models
-/4.0/ja-jp/db-models-advanced                                  /4.0/ja-jp/db-models
-/4.0/nl-nl/db-models-advanced                                  /4.0/nl-nl/db-models
-/4.0/pl-pl/db-models-advanced                                  /4.0/pl-pl/db-models
-/4.0/ru-ru/db-models-advanced                                  /4.0/ru-ru/db-models
-/4.0/tr-tr/db-models-advanced                                  /4.0/tr-tr/db-models
-/4.0/uk-ua/db-models-advanced                                  /4.0/uk-ua/db-models
-/4.0/zh-cn/db-models-advanced                                  /4.0/zh-cn/db-models
+
+/4.0/:lang/cookies                                             /4.0/:lang/response#cookies
+/4.0/:lang/devtools-installation                               /4.0/:lang/devtools
+/4.0/:lang/environments-docker                                 /4.0/:lang/environments
+/4.0/:lang/environments-vagrant                                /4.0/:lang/environments
+/4.0/:lang/environments-docker                                 /4.0/:lang/environments
+/4.0/:lang/environments-vagrant                                /4.0/:lang/environments
+/4.0/:lang/odm                                                 /4.0/:lang/db-odm
+/4.0/:lang/logging                                             /4.0/:lang/logger
+/4.0/:lang/db                                                  /4.0/:lang/db
+/4.0/:lang/db-models-advanced                                  /4.0/:lang/db-models
+/4.0/:lang/db-pagination                                       /4.0/:lang/pagination
+/4.0/:lang/webserver-wamp                                      /4.0/:lang/webserver-setup
+/4.0/:lang/webserver-xampp                                     /4.0/:lang/webserver-setup
+
 
 ################################################################################
 # 3.4

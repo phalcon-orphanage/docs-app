@@ -487,7 +487,7 @@ The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache) interface must be imple
 | [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache)             | 将数据存储在内存中                      |                                           |                                                    |
 | [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache)               | Stores data to Mongo Database. | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
 | [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache)               | 储存数据到Redis.                    | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
-| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache)             | 在 XCache 中存储数据。                | [XCache](http://xcache.lighttpd.net/)     | [XCache](http://pecl.php.net/package/xcache)       |
+| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache)             | 在 XCache 中存储数据。                | XCache                                   |  XCache                                            |
 
 ##### **注意**在 PHP 7 使用Phalcon `apc` 基于适配器类你需要从 pecl 安装 `apcu` 和 `apcu_bc` 的包。 Now in Phalcon 3.4.0 you can switch your `<em>\Apc` classes to `</em>\Apcu` and remove `apcu_bc`. Keep in mind that in Phalcon 4 we will most likely remove all `*\Apc` classes. {.alert.alert-warning}
 
@@ -638,7 +638,7 @@ This backend will store cached content on a MongoDB server ([MongoDB](http://mon
 
 ### XCache 后端选项
 
-This backend will store cached content on XCache ([XCache](http://xcache.lighttpd.net/)). The available options for this backend are:
+This backend will store cached content on XCache (XCache                    ). The available options for this backend are:
 
 | 选项       | 描述           |
 | -------- | ------------ |

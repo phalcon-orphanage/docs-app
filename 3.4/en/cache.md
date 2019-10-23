@@ -456,7 +456,7 @@ The backend adapters available to store cache data are:
 | [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache)       | Stores data in memory                                |                                           |                                                    |
 | [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache)        | Stores data to Mongo Database.                       | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
 | [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache)        | Stores data in Redis.                                | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
-| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache)       | Stores data in XCache.                               | [XCache](http://xcache.lighttpd.net/)     | [XCache](http://pecl.php.net/package/xcache)       |
+| [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache)       | Stores data in XCache.                               | XCache                         | XCache                           |
 
 ##### <strong>NOTE</strong> In PHP 7 to use phalcon <code>apc</code> based adapter classes you needed to install <code>apcu</code> and <code>apcu_bc</code> package from pecl. Now in Phalcon 3.4.0 you can switch your <code>*\Apc</code> classes to <code>*\Apcu</code> and remove <code>apcu_bc</code>. Keep in mind that in Phalcon 4 we will most likely remove all `*\Apc` classes. ##### {.alert .alert-warning}
 
@@ -589,7 +589,7 @@ This backend will store cached content on a MongoDB server ([MongoDB](http://mon
 
 <a name='adapters-backend-xcache'></a>
 ### XCache Backend Options
-This backend will store cached content on XCache ([XCache](http://xcache.lighttpd.net/)). The available options for this backend are:
+This backend will store cached content on XCache (XCache                    ). The available options for this backend are:
 
 | Option   | Description                                                 |
 |----------|-------------------------------------------------------------|
