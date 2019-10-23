@@ -201,4 +201,4 @@ $number     = $random->number($n);
 
 ## 外部リソース
 
-* [Vökuró](https://vokuro.phalcon.io) はCSRFとパスワードハッシュ攻撃を避けるためのセキュリティコンポーネントを使うサンプルアプリケーションです。[Github](https://github.com/phalcon/vokuro)
+* [Vökuró](https://github.com/phalcon/vokuro) はCSRFとパスワードハッシュ攻撃を避けるためのセキュリティコンポーネントを使うサンプルアプリケーションです。[Github](https://github.com/phalcon/vokuro)

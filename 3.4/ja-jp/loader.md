@@ -12,7 +12,7 @@ version: '3.4'
 
 このコンポーネントの動作は、[クラスのオートローディング](http://www.php.net/manual/en/language.oop5.autoload.php) に関する PHP の機能に基づいています。 まだ存在しないクラスがコードの任意の部分で利用される場合、特別なハンドラーがそれをロードしようとします。 [Phalcon\Loader](api/Phalcon_Loader) serves as the special handler for this operation. By loading classes on a need-to-load basis, the overall performance is increased since the only file reads that occur are for the files needed. この手法は、[lazy initialization](http://en.wikipedia.org/wiki/Lazy_initialization) と呼ばれます。
 
-このコンポーネントによって他のプロジェクトやベンダーからファイルをロードする事ができます。このオートローダーは [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) と [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4.md) 準拠です。
+このコンポーネントによって他のプロジェクトやベンダーからファイルをロードする事ができます。このオートローダーは [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) と [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) 準拠です。
 
 [Phalcon\Loader](api/Phalcon_Loader) offers four options to autoload classes. You can use them one at a time or combine them.
 

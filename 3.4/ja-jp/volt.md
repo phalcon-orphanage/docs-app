@@ -1623,4 +1623,4 @@ require $compiler->getCompiledTemplatePath();
 
 * Sublime/Textmate用のバンドルは [こちら](https://github.com/phalcon/volt-sublime-textmate)
 * [Phosphorum](https://forum.phalcon.io) PhalconのフォーラムではもちろんVoltを使っています。 [Github](https://github.com/phalcon/forum)
-* [Vökuró](https://vokuro.phalcon.io) その他のサンプルアプリケーションはVoltを利用しています [Github](https://github.com/phalcon/vokuro)
+* [Vökuró](https://github.com/phalcon/vokuro) その他のサンプルアプリケーションはVoltを利用しています [Github](https://github.com/phalcon/vokuro)

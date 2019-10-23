@@ -201,4 +201,4 @@ $number     = $random->number($n);
 
 ## External Resources
 
-* [Vökuró](https://vokuro.phalcon.io), is a sample application that uses the Security component for avoid CSRF and password hashing, [Github](https://github.com/phalcon/vokuro)
+* [Vökuró](https://github.com/phalcon/vokuro), is a sample application that uses the Security component for avoid CSRF and password hashing, [Github](https://github.com/phalcon/vokuro)
