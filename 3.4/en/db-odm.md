@@ -7,7 +7,7 @@ version: '3.4'
 
 <a name='overview'></a>
 # ODM (Object-Document Mapper)
-In addition to its ability to [map tables](/3.4/en/models) in relational databases, Phalcon can map documents from NoSQL databases. The ODM offers a CRUD functionality, events, validations among other services.
+In addition to its ability to [map tables](/3.4/en/db-models) in relational databases, Phalcon can map documents from NoSQL databases. The ODM offers a CRUD functionality, events, validations among other services.
 
 Due to the absence of SQL queries and planners, NoSQL databases can see real improvements in performance using the Phalcon approach. Additionally, there are no SQL building reducing the possibility of SQL injections.
 
