@@ -59,4 +59,4 @@ This work licensed under the New BSD License. See the [LICENSE][10] file for mor
 [7]: https://phalcon.link/discord
 [8]: https://forum.phalcon.io
 [9]: https://github.com/phalcon/docs-app/blob/master/CONTRIBUTING.md
-[10]: https://github.com/phalcon/docs-app/blob/master/LICENSE.txt
+[10]: https://github.com/phalcon/cphalcon/blob/master/LICENSE.txt
