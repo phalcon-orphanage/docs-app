@@ -20,7 +20,7 @@ version: '3.4'
 
 If you just want to get started you can skip this and create a Phalcon project automatically with our [developer tools](/3.4/en/devtools-usage). (あなたが立ち往生した場合、ここに戻って来ると良いでしょう)
 
-このガイドを使用する最善の方法は、一緒に楽しく進めることです。 完全なコードは[ここ](https://github.com/phalcon/tutorial)で取得できます。 どうすることもできない場合は、[Discord](https://phalcon.link/discord)または[Forum](https://phalcon.link/forum)にアクセスしてください。
+このガイドを使用する最善の方法は、一緒に楽しく進めることです。 完全なコードは[ここ](https://github.com/phalcon/tutorial)で取得できます。 どうすることもできない場合は、[Discord](https://phalcon.io/funddiscord)または[Forum](https://phalcon.io/fundforum)にアクセスしてください。
 
 <a name='file-structure'></a>
 

@@ -17,7 +17,7 @@ This tutorial covers the implementation of a simple MVC application, showing how
 
 If you just want to get started you can skip this and create a Phalcon project automatically with our [developer tools](/3.4/en/devtools-usage). (It is recommended that if you have not had experience with to come back here if you get stuck)
 
-The best way to use this guide is to follow along and try to have fun. You can get the complete code [here](https://github.com/phalcon/tutorial). If you get hung-up on something please visit us on [Discord](https://phalcon.link/discord) or in our [Forum](https://phalcon.link/forum).
+The best way to use this guide is to follow along and try to have fun. You can get the complete code [here](https://github.com/phalcon/tutorial). If you get hung-up on something please visit us on [Discord](https://phalcon.io/funddiscord) or in our [Forum](https://phalcon.io/fundforum).
 
 <a name='file-structure'></a>
 ## File structure
