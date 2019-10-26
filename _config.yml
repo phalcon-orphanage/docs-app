@@ -14,16 +14,13 @@ app:
   version: '3.4'
   comments: false
 
-gse: '007675014297340381319:q0xztepgoxc'
-
 permalink: :title
 
 url: https://docs.phalcon.io
-plugins:
-  - jekyll-sitemap
 
 include:
   - _redirects
+  - sitemap.xml
 
 # Conversion
 markdown: kramdown
