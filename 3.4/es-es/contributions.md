@@ -20,7 +20,7 @@ Please ensure that you are sending your pull request to the correct branch and t
 <a name='questions-and-support'></a>
 ## Questions and Support
 
-<h5 class='alert alert-warning'>We only accept bug reports, new feature requests and pull requests in GitHub. For questions regarding the usage of the framework or support requests please visit the <a href='https://phalcon.io/fundforum'>official forum</a>.</h5>
+<h5 class='alert alert-warning'>We only accept bug reports, new feature requests and pull requests in GitHub. For questions regarding the usage of the framework or support requests please visit the <a href='https://phalcon.io/forum'>official forum</a>.</h5>
 
 <a name='bug-report-checklist'></a>
 ## Bug Report Checklist
@@ -69,7 +69,7 @@ Thanks!
 &lt;3 Phalcon Team
 
 [ghpr]: https://help.github.com/articles/using-pull-requests/
-[forum]: https://phalcon.io/fundforum
+[forum]: https://phalcon.io/forum
 [srt]: https://github.com/phalcon/cphalcon/wiki/Submit-Reproducible-Test
 [segfault]: https://en.wikipedia.org/wiki/Segmentation_fault
 [gdb-howto]: https://bugs.php.net/bugs-generating-backtrace.php
