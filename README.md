@@ -58,5 +58,5 @@ This work licensed under the New BSD License. See the [LICENSE][10] file for mor
 [6]: https://phalcon.io/gab
 [7]: https://phalcon.io/discord
 [8]: https://forum.phalcon.io
-[9]: https://github.com/phalcon/docs-app/blob/master/CONTRIBUTING.md
+[9]: https://github.com/phalcon/cphalcon/blob/master/CONTRIBUTING.md
 [10]: https://github.com/phalcon/cphalcon/blob/master/LICENSE.txt
