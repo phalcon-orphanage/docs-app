@@ -11,10 +11,6 @@ For those that wish to sponsor our work and further the development of Phalcon, 
 # Sponsors and Supporters
 
 <div class="phalcon-blog__sponsors-items">
-    <a href="https://pdffiller.com" class="phalcon-blog__sponsors-item">
-        <img src="https://assets.phalcon.io/phalcon/images/backers/pdffiller-164x34.svg"
-             alt="PDFfiller">
-    </a>
     <a href="https://mctekk.com" class="phalcon-blog__sponsors-item">
         <img src="https://assets.phalcon.io/phalcon/images/backers/mctekk-149x34.svg"
              alt="{mctekk}">
