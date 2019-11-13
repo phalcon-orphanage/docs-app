@@ -18,6 +18,8 @@ cp -v ./4.0/id-id/meta-home.json      ./_data/4-0-id-id-meta-home.json
 cp -v ./4.0/id-id/meta-topics.json    ./_data/4-0-id-id-meta-topics.json
 cp -v ./4.0/it-it/meta-home.json      ./_data/4-0-it-it-meta-home.json
 cp -v ./4.0/it-it/meta-topics.json    ./_data/4-0-it-it-meta-topics.json
+cp -v ./4.0/ko-kr/meta-home.json      ./_data/4-0-ko-kr-meta-home.json
+cp -v ./4.0/ko-kr/meta-topics.json    ./_data/4-0-ko-kr-meta-topics.json
 cp -v ./4.0/ja-jp/meta-home.json      ./_data/4-0-ja-jp-meta-home.json
 cp -v ./4.0/ja-jp/meta-topics.json    ./_data/4-0-ja-jp-meta-topics.json
 cp -v ./4.0/nl-nl/meta-home.json      ./_data/4-0-nl-nl-meta-home.json
