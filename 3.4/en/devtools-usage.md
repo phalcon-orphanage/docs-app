@@ -3,6 +3,7 @@ layout: default
 language: 'en'
 version: '3.4'
 ---
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='overview'></a>
 # Phalcon Developer Tools
 These tools are a collection of useful scripts to generate skeleton code. Core components of your application can be generated with a simple command, allowing you to easily develop applications using Phalcon.

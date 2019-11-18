@@ -3,6 +3,7 @@ layout: default
 language: 'en'
 version: '3.4'
 ---
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='working-with'></a>
 # Working with Models
 A model represents the information (data) of the application and the rules to manipulate that data. Models are primarily used for managing the rules of interaction with a corresponding database table. In most cases, each table in your database will correspond to one model in your application. The bulk of your application's business logic will be concentrated in the models.

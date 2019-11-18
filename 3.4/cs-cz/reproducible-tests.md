@@ -3,7 +3,7 @@ layout: default
 language: 'cs-cz'
 version: '3.4'
 ---
-
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 Pokud jste našli chybu, je důležité přidat relevantní informace pro reprodukování problému a rychlejší opravě. If you have the application publicly on Github please submit the repository address along with the issue description. Také můžete použít [Gist](https://gist.github.com/) pro jakýkoliv kód který s námi chcete sdílet.
 
 <a name="overview"></a>

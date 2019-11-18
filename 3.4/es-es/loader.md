@@ -3,6 +3,7 @@ layout: default
 language: 'es-es'
 version: '3.4'
 ---
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='overview'></a>
 # Class Autoloader
 [Phalcon\Loader](api/Phalcon_Loader) allows you to load project classes automatically, based on some predefined rules. Since this component is written in C, it provides the lowest overhead in reading and interpreting external PHP files.

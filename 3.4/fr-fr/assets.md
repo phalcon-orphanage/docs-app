@@ -3,7 +3,7 @@ layout: default
 language: 'fr-fr'
 version: '3.4'
 ---
-
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='overview'></a>
 
 # Assets Management

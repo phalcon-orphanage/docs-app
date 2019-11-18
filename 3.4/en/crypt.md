@@ -3,6 +3,7 @@ layout: default
 language: 'en'
 version: '3.4'
 ---
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='overview'></a>
 # Encryption/Decryption
 Phalcon provides encryption facilities via the [Phalcon\Crypt](api/Phalcon_Crypt) component. This class offers simple object-oriented wrappers to the [openssl](http://www.php.net/manual/en/book.openssl.php) PHP's encryption library.

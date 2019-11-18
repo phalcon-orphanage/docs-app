@@ -3,7 +3,7 @@ layout: default
 language: 'zh-cn'
 version: '3.4'
 ---
-
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 # 微型应用
 
 Phalcon 提供一个非常 '轻' 的应用，因此您可以用很少的的 PHP 代码创建 'Micro' 应用。微应用程序，适合小的应用，这样会有很低的资源开销。 

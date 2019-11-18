@@ -3,7 +3,7 @@ layout: default
 language: 'zh-cn'
 version: '3.4'
 ---
-
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='creating-cli-application'></a>
 
 # 创建命令行 (CLI) 应用程序

@@ -3,7 +3,7 @@ layout: default
 language: 'ru-ru'
 version: '3.4'
 ---
-
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='architecture'></a>
 
 # Архитектура MVC

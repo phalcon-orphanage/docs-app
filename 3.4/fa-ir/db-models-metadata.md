@@ -3,7 +3,7 @@ layout: default
 language: 'fa-ir'
 version: '3.4'
 ---
-
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='models-metadata'></a>
 
 # Models Metadata

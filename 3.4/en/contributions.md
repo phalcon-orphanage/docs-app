@@ -3,6 +3,7 @@ layout: default
 language: 'en'
 version: '3.4'
 ---
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='contributing'></a>
 # Contributing to Phalcon
 Phalcon is an open source project and heavily relies on volunteer efforts. We welcome contributions from everyone!

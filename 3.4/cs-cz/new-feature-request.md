@@ -3,7 +3,7 @@ layout: default
 language: 'cs-cz'
 version: '3.4'
 ---
-
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 # Požadavek na funkcionalitu
 
 NFR je krátký dokument, který vysvětluje, jak posílat požadavky na novou funkcionalitu, jak může být implementována a jak může pomoci vývojářům frameworku a ostatním porozumnět implementaci.

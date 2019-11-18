@@ -3,6 +3,7 @@ layout: default
 language: 'es-es'
 version: '3.4'
 ---
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
 <a name='overview'></a>
 # Logging
 [Phalcon\Logger](api/Phalcon_Logger) is a component whose purpose is to provide logging services for applications. It offers logging to different backends using different adapters. It also offers transaction logging, configuration options, different formats and filters. You can use the [Phalcon\Logger](api/Phalcon_Logger) for every logging need your application has, from debugging processes to tracing application flow.
