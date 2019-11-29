@@ -10,7 +10,7 @@ For those that wish to sponsor our work and further the development of Phalcon, 
 # Sponsors and Supporters
 
 <div class="phalcon-blog__sponsors-items">
-    {{ include sponsors.html }}
+    {% include sponsors.html %}
     <a href="https://phalcon.io/fund" class="phalcon-blog__sponsors-item">
         <span>Support Us</span>
     </a>
