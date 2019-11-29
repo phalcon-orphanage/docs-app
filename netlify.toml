@@ -1,5 +1,5 @@
 [build]
-  command = "git submodule update --remote --merge && jekyll build --incremental"
+  command = "php updateSponsors.php && git submodule update --remote --merge && jekyll build --incremental"
   publish = "_site"
 
 [[headers]]
