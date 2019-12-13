@@ -16,9 +16,9 @@ Our website and blog (as well as other sites) are hosted on an Amazon VM with 51
 
 <a name='requirements-software'></a>
 ## Software
-* PHP >= 5.5
+* PHP >= 5.5 <=7.3
 
-<h5 class='alert alert-danger' markdown='1'>You should always try and use the latest version of Phalcon and PHP as both address bugs, security enhancements as well as performance. PHP 5.5 will be deprecated in the near future, and Phalcon 4 will only support PHP 7 </h5>
+<h5 class='alert alert-danger' markdown='1'>You should always try and use the latest version of Phalcon and PHP as both address bugs, security enhancements as well as performance. PHP 5.5 will be deprecated in the near future, and Phalcon 4 will only support PHP >= 7.2 </h5>
 
 Phalcon need the following extensions to run (minimal):
 
