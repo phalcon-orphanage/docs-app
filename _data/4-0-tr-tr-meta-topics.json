@@ -9,7 +9,7 @@
             },
             {
                 "text": "Sürüm Notları",
-                "url": "https://github.com/phalcon/cphalcon/blob/master/CHANGELOG-4.0.md",
+                "url": "https://github.com/phalcon/cphalcon/blob/4.0.x/CHANGELOG.md",
                 "external": true
             },
             {
@@ -113,11 +113,11 @@
             {
                 "text": "REST",
                 "url": "/tutorial-rest"
-      },
-      {
-        "text": "REST - Advanced",
-        "url": "/tutorial-rest-advanced"
-      },
+            },
+            {
+                "text": "REST - Advanced",
+                "url": "/tutorial-rest-advanced"
+            },
             {
                 "text": "Vokuro",
                 "url": "/tutorial-vokuro"

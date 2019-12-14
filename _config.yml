@@ -47,16 +47,14 @@ sass:
 
 # Exclude these files from our production _site
 exclude:
-  - vendor
   - Gemfile
   - Gemfile.lock
   - LICENSE
   - README.md
-  - CNAME
-  - updateData.sh
+  - vendor
   - serve
   - netlify.toml
   - boxfile.yml
-
+  - updateData.php
 
 
