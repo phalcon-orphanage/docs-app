@@ -1,75 +1,28 @@
 # Defaults
-/                                          /3.4/en/introduction
-/en                                        /3.4/en/introduction
-/3.4                                       /3.4/en/introduction
-/3.4/cs-cz                                 /3.4/cs-cz/introduction
-/3.4/de-de                                 /3.4/de-de/introduction
-/3.4/en                                    /3.4/en/introduction
-/3.4/es-es                                 /3.4/es-es/introduction
-/3.4/fa-ir                                 /3.4/fa-ir/introduction
-/3.4/fr-fr                                 /3.4/fr-fr/introduction
-/3.4/id-id                                 /3.4/id-id/introduction
-/3.4/it-it                                 /3.4/it-it/introduction
-/3.4/ja-jp                                 /3.4/ja-jp/introduction
-/3.4/pl-pl                                 /3.4/pl-pl/introduction
-/3.4/ru-ru                                 /3.4/ru-ru/introduction
-/3.4/tr-tr                                 /3.4/tr-tr/introduction
-/3.4/uk-ua                                 /3.4/uk-ua/introduction
-/3.4/ur-in                                 /3.4/ur-in/introduction
-/3.4/zh-cn                                 /3.4/zh-cn/introduction
+/                           /4.0/en/introduction
+/en                         /4.0/en/introduction
 
-/latest/cs-cz                              /3.4/cs-cz/introduction
-/latest/de-de                              /3.4/de-de/introduction
-/latest/es-es                              /3.4/es-es/introduction
-/latest/fa-ir                              /3.4/fa-ir/introduction
-/latest/fr-fr                              /3.4/fr-fr/introduction
-/latest/id-id                              /3.4/id-id/introduction
-/latest/it-it                              /3.4/it-it/introduction
-/latest/ja-jp                              /3.4/ja-jp/introduction
-/latest/pl-pl                              /3.4/pl-pl/introduction
-/latest/ru-ru                              /3.4/ru-ru/introduction
-/latest/tr-tr                              /3.4/tr-tr/introduction
-/latest/uk-ua                              /3.4/uk-ua/introduction
-/latest/ur-in                              /3.4/ur-in/introduction
-/latest/zh-cn                              /3.4/zh-cn/introduction
+/latest/en                  /4.0/en/introduction
+/latest/en/*                /4.0/en/:splat
 
-# Dead links
-/en/latest/reference/routing.html           /3.4/en/reference/routing
-/en/latest/reference/dispatching.html       /3.4/en/reference/dispatching
-/en/latest/reference/queue.html             /3.4/en/reference/queue
-/en/latest/reference/micro.html             /3.4/en/reference/application-micro
-/en/latest/odm                              /3.4/en/db-odm
+/en/latest                  /4.0/en/introduction
+/en/latest/*                /4.0/en/:splat
 
-/3.4/en/odm                                 /3.4/en/db-odm
 
-/3.1/en/rewrite-rules                       /3.1/en/application-micro#rewrite-rules
-/3.2/en/rewrite-rules                       /3.2/en/application-micro#rewrite-rules
-/3.3/en/rewrite-rules                       /3.3/en/application-micro#rewrite-rules
-/3.4/en/rewrite-rules                       /3.4/en/application-micro#rewrite-rules
-
-/latest/en                                  /3.4/en/introduction
-/latest/en/api/*                            /3.4/en/api/:splat
-/latest/en/reference/*                      /3.4/en/:splat
-/latest/en/*                                /3.4/en/:splat
-
-/latest/es/api/*                            /3.4/es-es/api/:splat
-/latest/es/reference/*                      /3.4/es-es/:splat
-/latest/es/*                                /3.4/es-es/:splat
-
-/en/latest                                  /3.4/en/introduction
-/en/latest/api/*                            /3.4/en/api/:splat
-/en/latest/reference/*                      /3.4/en/:splat
-/en/latest/*                                /3.4/en/:splat
-
-# For now the default will be 3.4
-# /                           /4.0/en/introduction
-# /en                         /4.0/en/introduction
-#
-# /latest/en                  /4.0/en/introduction
-# /latest/en/*                /4.0/en/:splat
-#
-# /en/latest                  /4.0/en/introduction
-# /en/latest/*                /4.0/en/:splat
+/latest/cs-cz                              /4.0/cs-cz/introduction
+/latest/de-de                              /4.0/de-de/introduction
+/latest/es-es                              /4.0/es-es/introduction
+/latest/fa-ir                              /4.0/fa-ir/introduction
+/latest/fr-fr                              /4.0/fr-fr/introduction
+/latest/id-id                              /4.0/id-id/introduction
+/latest/it-it                              /4.0/it-it/introduction
+/latest/ja-jp                              /4.0/ja-jp/introduction
+/latest/pl-pl                              /4.0/pl-pl/introduction
+/latest/ru-ru                              /4.0/ru-ru/introduction
+/latest/tr-tr                              /4.0/tr-tr/introduction
+/latest/uk-ua                              /4.0/uk-ua/introduction
+/latest/ur-in                              /4.0/ur-in/introduction
+/latest/zh-cn                              /4.0/zh-cn/introduction
 
 /4.0/cs-cz                                                     /4.0/cs-cz/introduction
 /4.0/de-de                                                     /4.0/de-de/introduction
@@ -114,6 +67,39 @@
 /4.0/:lang/db-pagination                                       /4.0/:lang/pagination
 /4.0/:lang/webserver-wamp                                      /4.0/:lang/webserver-setup
 /4.0/:lang/webserver-xampp                                     /4.0/:lang/webserver-setup
+
+# Dead links
+/en/latest/reference/routing.html           /4.0/en/reference/routing
+/en/latest/reference/dispatching.html       /4.0/en/reference/dispatching
+/en/latest/reference/queue.html             /4.0/en/reference/queue
+/en/latest/reference/micro.html             /4.0/en/reference/application-micro
+/en/latest/odm                              /4.0/en/db-odm
+
+
+/3.4                                       /3.4/en/introduction
+/3.4/cs-cz                                 /3.4/cs-cz/introduction
+/3.4/de-de                                 /3.4/de-de/introduction
+/3.4/en                                    /3.4/en/introduction
+/3.4/es-es                                 /3.4/es-es/introduction
+/3.4/fa-ir                                 /3.4/fa-ir/introduction
+/3.4/fr-fr                                 /3.4/fr-fr/introduction
+/3.4/id-id                                 /3.4/id-id/introduction
+/3.4/it-it                                 /3.4/it-it/introduction
+/3.4/ja-jp                                 /3.4/ja-jp/introduction
+/3.4/pl-pl                                 /3.4/pl-pl/introduction
+/3.4/ru-ru                                 /3.4/ru-ru/introduction
+/3.4/tr-tr                                 /3.4/tr-tr/introduction
+/3.4/uk-ua                                 /3.4/uk-ua/introduction
+/3.4/ur-in                                 /3.4/ur-in/introduction
+/3.4/zh-cn                                 /3.4/zh-cn/introduction
+
+
+/3.4/en/odm                                 /3.4/en/db-odm
+
+/3.1/en/rewrite-rules                       /3.1/en/application-micro#rewrite-rules
+/3.2/en/rewrite-rules                       /3.2/en/application-micro#rewrite-rules
+/3.3/en/rewrite-rules                       /3.3/en/application-micro#rewrite-rules
+/3.4/en/rewrite-rules                       /3.4/en/application-micro#rewrite-rules
 
 
 ################################################################################
