@@ -1,13 +1,6 @@
 # Defaults
-/                           /4.0/en/introduction
-/en                         /4.0/en/introduction
-
-/latest/en                  /4.0/en/introduction
-/latest/en/*                /4.0/en/:splat
-
-/en/latest                  /4.0/en/introduction
-/en/latest/*                /4.0/en/:splat
-
+/                                          /4.0/en/introduction
+/en                                        /4.0/en/introduction
 
 /latest/cs-cz                              /4.0/cs-cz/introduction
 /latest/de-de                              /4.0/de-de/introduction
@@ -23,6 +16,45 @@
 /latest/uk-ua                              /4.0/uk-ua/introduction
 /latest/ur-in                              /4.0/ur-in/introduction
 /latest/zh-cn                              /4.0/zh-cn/introduction
+
+# Dead links
+/en/latest/reference/routing.html           /4.0/en/reference/routing
+/en/latest/reference/dispatching.html       /4.0/en/reference/dispatching
+/en/latest/reference/queue.html             /4.0/en/reference/queue
+/en/latest/reference/micro.html             /4.0/en/reference/application-micro
+/en/latest/odm                              /4.0/en/db-odm
+
+/3.4/en/odm                                 /3.4/en/db-odm
+
+/3.1/en/rewrite-rules                       /3.1/en/application-micro#rewrite-rules
+/3.2/en/rewrite-rules                       /3.2/en/application-micro#rewrite-rules
+/3.3/en/rewrite-rules                       /3.3/en/application-micro#rewrite-rules
+/3.4/en/rewrite-rules                       /3.4/en/application-micro#rewrite-rules
+
+/latest/en                                  /4.0/en/introduction
+/latest/en/api/*                            /4.0/en/api/:splat
+/latest/en/reference/*                      /4.0/en/:splat
+/latest/en/*                                /4.0/en/:splat
+/latest/en-us/*                             /4.0/en/:splat
+
+/latest/es/api/*                            /4.0/es-es/api/:splat
+/latest/es/reference/*                      /4.0/es-es/:splat
+/latest/es/*                                /4.0/es-es/:splat
+
+/en/latest                                  /4.0/en/introduction
+/en/latest/api/*                            /4.0/en/api/:splat
+/en/latest/reference/*                      /4.0/en/:splat
+/en/latest/*                                /4.0/en/:splat
+
+# For now the default will be 3.4
+# /                           /4.0/en/introduction
+# /en                         /4.0/en/introduction
+#
+# /latest/en                  /4.0/en/introduction
+# /latest/en/*                /4.0/en/:splat
+#
+# /en/latest                  /4.0/en/introduction
+# /en/latest/*                /4.0/en/:splat
 
 /4.0/cs-cz                                                     /4.0/cs-cz/introduction
 /4.0/de-de                                                     /4.0/de-de/introduction
@@ -68,14 +100,6 @@
 /4.0/:lang/webserver-wamp                                      /4.0/:lang/webserver-setup
 /4.0/:lang/webserver-xampp                                     /4.0/:lang/webserver-setup
 
-# Dead links
-/en/latest/reference/routing.html           /4.0/en/reference/routing
-/en/latest/reference/dispatching.html       /4.0/en/reference/dispatching
-/en/latest/reference/queue.html             /4.0/en/reference/queue
-/en/latest/reference/micro.html             /4.0/en/reference/application-micro
-/en/latest/odm                              /4.0/en/db-odm
-
-
 /3.4                                       /3.4/en/introduction
 /3.4/cs-cz                                 /3.4/cs-cz/introduction
 /3.4/de-de                                 /3.4/de-de/introduction
@@ -92,15 +116,6 @@
 /3.4/uk-ua                                 /3.4/uk-ua/introduction
 /3.4/ur-in                                 /3.4/ur-in/introduction
 /3.4/zh-cn                                 /3.4/zh-cn/introduction
-
-
-/3.4/en/odm                                 /3.4/en/db-odm
-
-/3.1/en/rewrite-rules                       /3.1/en/application-micro#rewrite-rules
-/3.2/en/rewrite-rules                       /3.2/en/application-micro#rewrite-rules
-/3.3/en/rewrite-rules                       /3.3/en/application-micro#rewrite-rules
-/3.4/en/rewrite-rules                       /3.4/en/application-micro#rewrite-rules
-
 
 ################################################################################
 # 3.4
