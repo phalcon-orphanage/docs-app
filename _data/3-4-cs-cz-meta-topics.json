@@ -5,7 +5,7 @@
     "menu": [
       {
         "text": "Release Notes",
-        "url": "https://github.com/phalcon/cphalcon/blob/4.0.x/CHANGELOG.md",
+        "url": "https://github.com/phalcon/cphalcon/blob/master/CHANGELOG.md",
         "external": true
       },
       {
