@@ -79,11 +79,31 @@ for ($i = 1; $i < 6; $i++) {
     $data = json_decode($content, true);
 
     foreach ($data as $comment) {
-        $id        = $comment['id'] ?? '';
-        $url       = $comment['html_url'] ?? '';
-        $body      = $comment['body'] ?? '';
-        $reactions = $comment['reactions'] ?? [];
-        $plusone   = $reactions['+1'] ?? 0;
+        if (isset($comment['id'])) {
+            $id = $comment['id'];
+        } else {
+            $id = '';
+        }
+        if (isset($comment['html_url'])) {
+            $url = $comment['html_url'];
+        } else {
+            $url = '';
+        }
+        if (isset($comment['body'])) {
+            $body = $comment['body'];
+        } else {
+            $body = '';
+        }
+        if (isset($comment['reactions'])) {
+            $reactions = $comment['reactions'];
+        } else {
+            $reactions = [];
+        }
+        if (isset($reactions['+1'])) {
+            $plusone = $reactions['+1'];
+        } else {
+            $plusone = 0;
+        }
         $body = explode(PHP_EOL, $body);
         $body = str_replace(["\r", "\r\n"], "", $body[0]);
 
