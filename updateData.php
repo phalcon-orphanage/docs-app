@@ -70,7 +70,13 @@ for ($i = 1; $i < 6; $i++) {
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
     curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
     curl_setopt($ch, CURLOPT_USERAGENT, 'Phalcon Agent');
-    curl_setopt($ch, CURLOPT_HTTPHEADER, ['Accept: application/vnd.github.squirrel-girl-preview+json']);
+    curl_setopt(
+        $ch,
+        CURLOPT_HTTPHEADER,
+        [
+            'Accept: application/vnd.github.squirrel-girl-preview+json'
+        ]
+    );
 
     $content = curl_exec($ch);
     curl_close($ch);
