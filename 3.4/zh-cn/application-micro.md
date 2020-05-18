@@ -105,8 +105,7 @@ $router = new Router();
 
 $router->addGet(
     '/orders/display/{name}',
-    'OrdersClass::display';
-    }
+    'OrdersClass::display'
 );
 
 
