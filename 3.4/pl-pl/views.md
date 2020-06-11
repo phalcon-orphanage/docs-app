@@ -739,7 +739,7 @@ class PostsController extends Controller
 }
 ```
 
-When we do not define a key to the cache, the component automatically creates one using an [MD5](http://php.net/manual/en/function.md5.php) hash of the name of the controller and view currently being rendered in the format of `controller/view`. It is a good practice to define a key for each action so you can easily identify the cache associated with each view.
+When we do not define a key to the cache, the component automatically creates one using an [MD5](https://php.net/manual/en/function.md5.php) hash of the name of the controller and view currently being rendered in the format of `controller/view`. It is a good practice to define a key for each action so you can easily identify the cache associated with each view.
 
 When the View component needs to cache something it will request a cache service from the services container. The service name convention for this service is `viewCache`:
 

@@ -8,7 +8,7 @@ version: '3.4'
 
 # cookieの管理
 
-[cookie](http://en.wikipedia.org/wiki/HTTP_cookie) は、たとえユーザーがブラウザーを閉じた場合でも、取得することができる、クライアントのコンピュータ上にごく少量のデータを格納する非常に便利な方法です。 `Phalcon\Http\Response\Cookies` はcookieのグローバルなバッグのように振舞います。 cookieは、リクエストの処理中にこのバッグに格納されて、リクエストのの最後に自動的に送信されます。
+[cookie](https://en.wikipedia.org/wiki/HTTP_cookie) は、たとえユーザーがブラウザーを閉じた場合でも、取得することができる、クライアントのコンピュータ上にごく少量のデータを格納する非常に便利な方法です。 `Phalcon\Http\Response\Cookies` はcookieのグローバルなバッグのように振舞います。 cookieは、リクエストの処理中にこのバッグに格納されて、リクエストのの最後に自動的に送信されます。
 
 <a name='usage'></a>
 

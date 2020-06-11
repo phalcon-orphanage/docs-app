@@ -59,7 +59,7 @@ The anatomy of the command above:
 
 ## Nginx
 
-[Nginx](http://wiki.nginx.org/Main) — это свободный, с открытым исходным кодом, высокопроизводительный HTTP-сервер и прокси-сервер, а также IMAP/POP3 прокси-сервер. В отличие от традиционных серверов Nginx не использует потоки для обработки запросов. Вместо этого он использует гораздо более масштабируемую, управляемую событиями (асинхронную) архитектуру. Эта архитектура под высокой нагрузкой использует небольшой, и главное, предсказуемый объем памяти.
+[Nginx](https://wiki.nginx.org/Main) — это свободный, с открытым исходным кодом, высокопроизводительный HTTP-сервер и прокси-сервер, а также IMAP/POP3 прокси-сервер. В отличие от традиционных серверов Nginx не использует потоки для обработки запросов. Вместо этого он использует гораздо более масштабируемую, управляемую событиями (асинхронную) архитектуру. Эта архитектура под высокой нагрузкой использует небольшой, и главное, предсказуемый объем памяти.
 
 Связка Phalcon + Nginx + PHP-FPM предоставляет мощный набор инструментов, который позволяет добиться максимальной производительности ваших PHP приложений.
 
@@ -164,7 +164,7 @@ server {
 
 ## Apache
 
-[Apache](http://httpd.apache.org/) — это популярный веб-сервер, доступный на большинстве современных платформ.
+[Apache](https://httpd.apache.org/) — это популярный веб-сервер, доступный на большинстве современных платформ.
 
 <a name='apache-phalcon-configuration'></a>
 
@@ -284,7 +284,7 @@ If your uri contains characters other than English, you might need to resort to 
 
 ## Cherokee
 
-[Cherokee](http://www.cherokee-project.com/) is a high-performance web server. It is very fast, flexible and easy to configure.
+[Cherokee](https://www.cherokee-project.com/) is a high-performance web server. It is very fast, flexible and easy to configure.
 
 <a name='cherokee-phalcon-configuration'></a>
 
