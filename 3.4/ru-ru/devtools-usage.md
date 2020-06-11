@@ -369,7 +369,7 @@ Also, if you prefer, it's possible to use Phalcon Developer Tools from a web int
 
 ## Интеграция в PhpStorm IDE
 
-Скринкаст показывает, как интегрировать инструменты для разработчиков с [PhpStorm IDE](http://www.jetbrains.com/phpstorm/). Аналогично можно интегрировать дополнения в любой другой PHP редактор или IDE.
+Скринкаст показывает, как интегрировать инструменты для разработчиков с [PhpStorm IDE](https://www.jetbrains.com/phpstorm/). Аналогично можно интегрировать дополнения в любой другой PHP редактор или IDE.
 
 <div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UbUx_6Cs6r4" frameborder="0" allowfullscreen mark="crwd-mark"></iframe>

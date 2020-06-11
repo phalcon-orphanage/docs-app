@@ -97,7 +97,7 @@ $response->redirect();
 $response->redirect('posts/index');
 
 // Redirect to an external URL
-$response->redirect('http://en.wikipedia.org', true);
+$response->redirect('https://en.wikipedia.org', true);
 
 // Redirect specifying the HTTP status code
 $response->redirect('http://www.example.com/new-location', true, 301);

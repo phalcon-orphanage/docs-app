@@ -14,7 +14,7 @@ In order for the routing of the Phalcon application to work, you will need to se
 
 ## PHP-FPM
 
-The [PHP-FPM](http://php.net/manual/en/install.fpm.php) (FastCGI Process Manager) is usually used to allow the processing of PHP files. 現在では、PHP-FPMは全てのLinuxベースのPHPディストリビューションに含まれています。
+The [PHP-FPM](https://php.net/manual/en/install.fpm.php) (FastCGI Process Manager) is usually used to allow the processing of PHP files. 現在では、PHP-FPMは全てのLinuxベースのPHPディストリビューションに含まれています。
 
 On **Windows** PHP-FPM is in the PHP distribution archive through the file `php-cgi.exe` and you can start it with this script to help set options. Windows does not support unix sockets so this script will start fast-cgi in TCP mode on port `9000`.
 
@@ -59,7 +59,7 @@ $(which php) -S localhost:8000 -t public .htrouter.php
 
 ## Nginx
 
-[Nginx](http://wiki.nginx.org/Main) is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Unlike traditional servers, Nginx doesn't rely on threads to handle requests. Instead it uses a much more scalable event-driven (asynchronous) architecture. このアーキテクチャは、ロードするメモリ量を抑えます。しかしより重要なことは、メモリ量を予測できることです。
+[Nginx](https://wiki.nginx.org/Main) is a free, open-source, high-performance HTTP server and reverse proxy, as well as an IMAP/POP3 proxy server. Unlike traditional servers, Nginx doesn't rely on threads to handle requests. Instead it uses a much more scalable event-driven (asynchronous) architecture. このアーキテクチャは、ロードするメモリ量を抑えます。しかしより重要なことは、メモリ量を予測できることです。
 
 Nginx と PHP-FPM と Phalcon のパワフルなセットは、PHP アプリケーションの最高のパフォーマンスを提供します。
 
@@ -164,7 +164,7 @@ Usually `start nginx` from the command line but this depends on your installatio
 
 ## Apache
 
-[Apache](http://httpd.apache.org/) は有名でよく知られたWEBサーバーで、多くのプラットフォームで利用可能です。
+[Apache](https://httpd.apache.org/) は有名でよく知られたWEBサーバーで、多くのプラットフォームで利用可能です。
 
 <a name='apache-phalcon-configuration'></a>
 
@@ -284,7 +284,7 @@ If your uri contains characters other than English, you might need to resort to 
 
 ## Cherokee
 
-[Cherokee](http://www.cherokee-project.com/) is a high-performance web server. It is very fast, flexible and easy to configure.
+[Cherokee](https://www.cherokee-project.com/) is a high-performance web server. It is very fast, flexible and easy to configure.
 
 <a name='cherokee-phalcon-configuration'></a>
 
