@@ -546,12 +546,6 @@
     ]
   },
   {
-    "title": "Phalcon\\Plugin",
-    "docs": [
-      "Plugin"
-    ]
-  },
-  {
     "title": "Phalcon\\Registry",
     "docs": [
       "Registry"
