@@ -83,3 +83,9 @@
 .header-dropdown--mobile-lang img {
   margin-right: 5px;
 }
+
+.phalcon-blog-detail p .green-button {
+  line-height: 48px;
+  color: #ffffff;
+  border-bottom: none;
+}
