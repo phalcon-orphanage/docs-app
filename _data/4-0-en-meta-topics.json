@@ -103,10 +103,6 @@
       {
         "text": "Unit Testing",
         "url": "/unit-testing"
-      },
-      {
-        "text": "Unit Testing",
-        "url": "/unit-testing"
       }
     ]
   },
@@ -367,6 +363,10 @@
       {
         "text": "Security",
         "url": "/security"
+      },
+      {
+        "text": "JWT",
+        "url": "/security-jwt"
       }
     ]
   },
