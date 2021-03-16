@@ -1657,7 +1657,7 @@ echo $user->count();
 
 final public  **getIterator** ()
 
- Returns the bag iterator
+ Returns the bag iterator
 
 
 

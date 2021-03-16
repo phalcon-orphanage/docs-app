@@ -33,12 +33,12 @@ Phalcon の主な特徴である 疎結合 により、開発したいアプリ�
 .
 └── tutorial
     ├── app
-    │   ├── controllers
-    │   │   ├── IndexController.php
-    │   │   └── SignupController.php
-    │   ├── models
-    │   │   └── Users.php
-    │   └── views
+    │   ├── controllers
+    │   │   ├── IndexController.php
+    │   │   └── SignupController.php
+    │   ├── models
+    │   │   └── Users.php
+    │   └── views
     └── public
         ├── css
         ├── img
