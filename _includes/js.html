@@ -10,8 +10,8 @@ docsearch(
         inputSelector: '#docs-search',
         algoliaOptions: {
             'facetFilters': [
-                "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" //,
-  //              "version:{{ page.version }}"
+                "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
+                "version:{{ page.version }}"
             ]
         },
         debug: false // Set debug to true if you want to inspect the dropdown
@@ -24,8 +24,8 @@ docsearch(
     inputSelector: '#docs-search-mobile',
     algoliaOptions: {
       'facetFilters': [
-        "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" //,
-//        "version:{{ page.version }}"
+        "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
+        "version:{{ page.version }}"
       ]
     },
     debug: false // Set debug to true if you want to inspect the dropdown
