@@ -8,7 +8,8 @@
     "locale": "ach-UG",
     "android_code": "ach-rUG",
     "osx_code": "ach.lproj",
-    "osx_locale": "ach"
+    "osx_locale": "ach",
+    "canonical": "en"
   },
   "aa-er": {
     "name": "Afar",
@@ -19,7 +20,8 @@
     "locale": "aa-ER",
     "android_code": "aa-rER",
     "osx_code": "aa.lproj",
-    "osx_locale": "aa"
+    "osx_locale": "aa",
+    "canonical": "en"
   },
   "af-za": {
     "name": "Afrikaans",
@@ -30,7 +32,8 @@
     "locale": "af-ZA",
     "android_code": "af-rZA",
     "osx_code": "af.lproj",
-    "osx_locale": "af"
+    "osx_locale": "af",
+    "canonical": "en"
   },
   "ak-gh": {
     "name": "Akan",
@@ -41,7 +44,8 @@
     "locale": "ak-GH",
     "android_code": "ak-rGH",
     "osx_code": "ak.lproj",
-    "osx_locale": "ak"
+    "osx_locale": "ak",
+    "canonical": "en"
   },
   "tw-tw": {
     "name": "Akan, Twi",
@@ -52,7 +56,8 @@
     "locale": "tw-TW",
     "android_code": "tw-rTW",
     "osx_code": "tw.lproj",
-    "osx_locale": "tw"
+    "osx_locale": "tw",
+    "canonical": "en"
   },
   "sq-al": {
     "name": "Albanian",
@@ -63,7 +68,8 @@
     "locale": "sq-AL",
     "android_code": "sq-rAL",
     "osx_code": "sq.lproj",
-    "osx_locale": "sq"
+    "osx_locale": "sq",
+    "canonical": "en"
   },
   "am-et": {
     "name": "Amharic",
@@ -74,7 +80,8 @@
     "locale": "am-ET",
     "android_code": "am-rET",
     "osx_code": "am.lproj",
-    "osx_locale": "am"
+    "osx_locale": "am",
+    "canonical": "en"
   },
   "ar-sa": {
     "name": "Arabic, Saudi Arabia",
@@ -85,7 +92,8 @@
     "locale": "ar-SA",
     "android_code": "ar-rSA",
     "osx_code": "ar-SA.lproj",
-    "osx_locale": "ar_SA"
+    "osx_locale": "ar_SA",
+    "canonical": "en"
   },
   "ar-bh": {
     "name": "Arabic, Bahrain",
@@ -96,7 +104,8 @@
     "locale": "ar-BH",
     "android_code": "ar-rBH",
     "osx_code": "ar-BH.lproj",
-    "osx_locale": "ar_BH"
+    "osx_locale": "ar_BH",
+    "canonical": "en"
   },
   "ar-eg": {
     "name": "Arabic, Egypt",
@@ -107,7 +116,8 @@
     "locale": "ar-EG",
     "android_code": "ar-rEG",
     "osx_code": "ar-EG.lproj",
-    "osx_locale": "ar_EG"
+    "osx_locale": "ar_EG",
+    "canonical": "en"
   },
   "ar-ye": {
     "name": "Arabic, Yemen",
@@ -118,7 +128,8 @@
     "locale": "ar-YE",
     "android_code": "ar-rYE",
     "osx_code": "ar-YE.lproj",
-    "osx_locale": "ar_YE"
+    "osx_locale": "ar_YE",
+    "canonical": "en"
   },
   "an-es": {
     "name": "Aragonese",
@@ -129,7 +140,8 @@
     "locale": "an-ES",
     "android_code": "an-rES",
     "osx_code": "an.lproj",
-    "osx_locale": "an"
+    "osx_locale": "an",
+    "canonical": "en"
   },
   "hy-am": {
     "name": "Armenian",
@@ -140,7 +152,8 @@
     "locale": "hy-AM",
     "android_code": "hy-rAM",
     "osx_code": "hy.lproj",
-    "osx_locale": "hy"
+    "osx_locale": "hy",
+    "canonical": "en"
   },
   "frp-it": {
     "name": "Arpitan",
@@ -151,7 +164,8 @@
     "locale": "frp-IT",
     "android_code": "frp-rIT",
     "osx_code": "frp.lproj",
-    "osx_locale": "frp"
+    "osx_locale": "frp",
+    "canonical": "en"
   },
   "as-in": {
     "name": "Assamese",
@@ -162,7 +176,8 @@
     "locale": "as-IN",
     "android_code": "as-rIN",
     "osx_code": "as.lproj",
-    "osx_locale": "as"
+    "osx_locale": "as",
+    "canonical": "en"
   },
   "ast-es": {
     "name": "Asturian",
@@ -173,7 +188,8 @@
     "locale": "ast-ES",
     "android_code": "ast-rES",
     "osx_code": "ast.lproj",
-    "osx_locale": "ast"
+    "osx_locale": "ast",
+    "canonical": "en"
   },
   "tay-tw": {
     "name": "Atayal",
@@ -184,7 +200,8 @@
     "locale": "tay-TW",
     "android_code": "tay-rTW",
     "osx_code": "tay.lproj",
-    "osx_locale": "tay"
+    "osx_locale": "tay",
+    "canonical": "en"
   },
   "av-da": {
     "name": "Avaric",
@@ -195,7 +212,8 @@
     "locale": "av-DA",
     "android_code": "av-rDA",
     "osx_code": "av.lproj",
-    "osx_locale": "av"
+    "osx_locale": "av",
+    "canonical": "en"
   },
   "ae-ir": {
     "name": "Avestan",
@@ -206,7 +224,8 @@
     "locale": "ae-IR",
     "android_code": "ae-rIR",
     "osx_code": "ae.lproj",
-    "osx_locale": "ae"
+    "osx_locale": "ae",
+    "canonical": "en"
   },
   "ay-bo": {
     "name": "Aymara",
@@ -217,7 +236,8 @@
     "locale": "ay-BO",
     "android_code": "ay-rBO",
     "osx_code": "ay.lproj",
-    "osx_locale": "ay"
+    "osx_locale": "ay",
+    "canonical": "en"
   },
   "az-az": {
     "name": "Azerbaijani",
@@ -228,7 +248,8 @@
     "locale": "az-AZ",
     "android_code": "az-rAZ",
     "osx_code": "az.lproj",
-    "osx_locale": "az"
+    "osx_locale": "az",
+    "canonical": "en"
   },
   "ban-id": {
     "name": "Balinese",
@@ -239,7 +260,8 @@
     "locale": "ban-ID",
     "android_code": "ban-rID",
     "osx_code": "ban.lproj",
-    "osx_locale": "ban"
+    "osx_locale": "ban",
+    "canonical": "en"
   },
   "bal-ba": {
     "name": "Balochi",
@@ -250,7 +272,8 @@
     "locale": "bal-BA",
     "android_code": "bal-rBA",
     "osx_code": "bal.lproj",
-    "osx_locale": "bal"
+    "osx_locale": "bal",
+    "canonical": "en"
   },
   "bm-ml": {
     "name": "Bambara",
@@ -261,7 +284,8 @@
     "locale": "bm-ML",
     "android_code": "bm-rML",
     "osx_code": "bm.lproj",
-    "osx_locale": "bm"
+    "osx_locale": "bm",
+    "canonical": "en"
   },
   "ba-ru": {
     "name": "Bashkir",
@@ -272,7 +296,8 @@
     "locale": "ba-RU",
     "android_code": "ba-rRU",
     "osx_code": "ba.lproj",
-    "osx_locale": "ba"
+    "osx_locale": "ba",
+    "canonical": "en"
   },
   "eu-es": {
     "name": "Basque",
@@ -283,7 +308,8 @@
     "locale": "eu-ES",
     "android_code": "eu-rES",
     "osx_code": "eu.lproj",
-    "osx_locale": "eu"
+    "osx_locale": "eu",
+    "canonical": "en"
   },
   "be-by": {
     "name": "Belarusian",
@@ -294,7 +320,8 @@
     "locale": "be-BY",
     "android_code": "be-rBY",
     "osx_code": "be.lproj",
-    "osx_locale": "be"
+    "osx_locale": "be",
+    "canonical": "en"
   },
   "bn-bd": {
     "name": "Bengali",
@@ -305,7 +332,8 @@
     "locale": "bn-BD",
     "android_code": "bn-rBD",
     "osx_code": "bn.lproj",
-    "osx_locale": "bn"
+    "osx_locale": "bn",
+    "canonical": "en"
   },
   "bn-in": {
     "name": "Bengali, India",
@@ -316,7 +344,8 @@
     "locale": "bn-IN",
     "android_code": "bn-rIN",
     "osx_code": "bn-IN.lproj",
-    "osx_locale": "bn_IN"
+    "osx_locale": "bn_IN",
+    "canonical": "en"
   },
   "ber-dz": {
     "name": "Berber",
@@ -327,7 +356,8 @@
     "locale": "ber-DZ",
     "android_code": "ber-rDZ",
     "osx_code": "ber.lproj",
-    "osx_locale": "ber"
+    "osx_locale": "ber",
+    "canonical": "en"
   },
   "bh-in": {
     "name": "Bihari",
@@ -338,7 +368,8 @@
     "locale": "bh-IN",
     "android_code": "bh-rIN",
     "osx_code": "bh.lproj",
-    "osx_locale": "bh"
+    "osx_locale": "bh",
+    "canonical": "en"
   },
   "bfo-bf": {
     "name": "Birifor",
@@ -349,7 +380,8 @@
     "locale": "bfo-BF",
     "android_code": "bfo-rBF",
     "osx_code": "bfo.lproj",
-    "osx_locale": "bfo"
+    "osx_locale": "bfo",
+    "canonical": "en"
   },
   "bi-vu": {
     "name": "Bislama",
@@ -360,7 +392,8 @@
     "locale": "bi-VU",
     "android_code": "bi-rVU",
     "osx_code": "bi.lproj",
-    "osx_locale": "bi"
+    "osx_locale": "bi",
+    "canonical": "en"
   },
   "bs-ba": {
     "name": "Bosnian",
@@ -371,7 +404,8 @@
     "locale": "bs-BA",
     "android_code": "bs-rBA",
     "osx_code": "bs.lproj",
-    "osx_locale": "bs"
+    "osx_locale": "bs",
+    "canonical": "en"
   },
   "br-fr": {
     "name": "Breton",
@@ -382,7 +416,8 @@
     "locale": "br-FR",
     "android_code": "br-rFR",
     "osx_code": "br.lproj",
-    "osx_locale": "br"
+    "osx_locale": "br",
+    "canonical": "en"
   },
   "bg-bg": {
     "name": "Bulgarian",
@@ -393,7 +428,8 @@
     "locale": "bg-BG",
     "android_code": "bg-rBG",
     "osx_code": "bg.lproj",
-    "osx_locale": "bg"
+    "osx_locale": "bg",
+    "canonical": "en"
   },
   "my-mm": {
     "name": "Burmese",
@@ -404,7 +440,8 @@
     "locale": "my-MM",
     "android_code": "my-rMM",
     "osx_code": "my.lproj",
-    "osx_locale": "my"
+    "osx_locale": "my",
+    "canonical": "en"
   },
   "ca-es": {
     "name": "Catalan",
@@ -415,7 +452,8 @@
     "locale": "ca-ES",
     "android_code": "ca-rES",
     "osx_code": "ca.lproj",
-    "osx_locale": "ca"
+    "osx_locale": "ca",
+    "canonical": "en"
   },
   "ceb-ph": {
     "name": "Cebuano",
@@ -426,7 +464,8 @@
     "locale": "ceb-PH",
     "android_code": "ceb-rPH",
     "osx_code": "ceb.lproj",
-    "osx_locale": "ceb"
+    "osx_locale": "ceb",
+    "canonical": "en"
   },
   "ch-gu": {
     "name": "Chamorro",
@@ -437,7 +476,8 @@
     "locale": "ch-GU",
     "android_code": "ch-rGU",
     "osx_code": "ch.lproj",
-    "osx_locale": "ch"
+    "osx_locale": "ch",
+    "canonical": "en"
   },
   "ce-ce": {
     "name": "Chechen",
@@ -448,7 +488,8 @@
     "locale": "ce-CE",
     "android_code": "ce-rCE",
     "osx_code": "ce.lproj",
-    "osx_locale": "ce"
+    "osx_locale": "ce",
+    "canonical": "en"
   },
   "chr-us": {
     "name": "Cherokee",
@@ -459,7 +500,8 @@
     "locale": "chr-US",
     "android_code": "chr-rUS",
     "osx_code": "chr.lproj",
-    "osx_locale": "chr"
+    "osx_locale": "chr",
+    "canonical": "en"
   },
   "ny-mw": {
     "name": "Chewa",
@@ -470,7 +512,8 @@
     "locale": "ny-MW",
     "android_code": "ny-rMW",
     "osx_code": "ny.lproj",
-    "osx_locale": "ny"
+    "osx_locale": "ny",
+    "canonical": "en"
   },
   "zh-cn": {
     "name": "Chinese Simplified",
@@ -481,7 +524,8 @@
     "locale": "zh-CN",
     "android_code": "zh-rCN",
     "osx_code": "zh-Hans.lproj",
-    "osx_locale": "zh-Hans"
+    "osx_locale": "zh-Hans",
+    "canonical": "en"
   },
   "zh-tw": {
     "name": "Chinese Traditional",
@@ -492,7 +536,8 @@
     "locale": "zh-TW",
     "android_code": "zh-rTW",
     "osx_code": "zh-Hant.lproj",
-    "osx_locale": "zh-Hant"
+    "osx_locale": "zh-Hant",
+    "canonical": "en"
   },
   "zh-hk": {
     "name": "Chinese Traditional, Hong Kong",
@@ -503,7 +548,8 @@
     "locale": "zh-HK",
     "android_code": "zh-rHK",
     "osx_code": "zh-HK.lproj",
-    "osx_locale": "zh_HK"
+    "osx_locale": "zh_HK",
+    "canonical": "en"
   },
   "zh-mo": {
     "name": "Chinese Traditional, Macau",
@@ -514,7 +560,8 @@
     "locale": "zh-MO",
     "android_code": "zh-rMO",
     "osx_code": "zh-MO.lproj",
-    "osx_locale": "zh_MO"
+    "osx_locale": "zh_MO",
+    "canonical": "en"
   },
   "zh-sg": {
     "name": "Chinese Traditional, Singapore",
@@ -525,7 +572,8 @@
     "locale": "zh-SG",
     "android_code": "zh-rSG",
     "osx_code": "zh-SG.lproj",
-    "osx_locale": "zh_SG"
+    "osx_locale": "zh_SG",
+    "canonical": "en"
   },
   "cv-cu": {
     "name": "Chuvash",
@@ -536,7 +584,8 @@
     "locale": "cv-CU",
     "android_code": "cv-rCU",
     "osx_code": "cv.lproj",
-    "osx_locale": "cv"
+    "osx_locale": "cv",
+    "canonical": "en"
   },
   "kw-gb": {
     "name": "Cornish",
@@ -547,7 +596,8 @@
     "locale": "kw-GB",
     "android_code": "kw-rGB",
     "osx_code": "kw.lproj",
-    "osx_locale": "kw"
+    "osx_locale": "kw",
+    "canonical": "en"
   },
   "co-fr": {
     "name": "Corsican",
@@ -558,7 +608,8 @@
     "locale": "co-FR",
     "android_code": "co-rFR",
     "osx_code": "co.lproj",
-    "osx_locale": "co"
+    "osx_locale": "co",
+    "canonical": "en"
   },
   "cr-nt": {
     "name": "Cree",
@@ -569,7 +620,8 @@
     "locale": "cr-NT",
     "android_code": "cr-rNT",
     "osx_code": "cr.lproj",
-    "osx_locale": "cr"
+    "osx_locale": "cr",
+    "canonical": "en"
   },
   "hr-hr": {
     "name": "Croatian",
@@ -580,7 +632,8 @@
     "locale": "hr-HR",
     "android_code": "hr-rHR",
     "osx_code": "hr.lproj",
-    "osx_locale": "hr"
+    "osx_locale": "hr",
+    "canonical": "en"
   },
   "cs-cz": {
     "name": "Czech",
@@ -591,7 +644,8 @@
     "locale": "cs-CZ",
     "android_code": "cs-rCZ",
     "osx_code": "cs.lproj",
-    "osx_locale": "cs"
+    "osx_locale": "cs",
+    "canonical": "en"
   },
   "da-dk": {
     "name": "Danish",
@@ -602,7 +656,8 @@
     "locale": "da-DK",
     "android_code": "da-rDK",
     "osx_code": "da.lproj",
-    "osx_locale": "da"
+    "osx_locale": "da",
+    "canonical": "en"
   },
   "fa-af": {
     "name": "Dari",
@@ -613,7 +668,8 @@
     "locale": "fa-AF",
     "android_code": "fa-rAF",
     "osx_code": "fa-AF.lproj",
-    "osx_locale": "fa_AF"
+    "osx_locale": "fa_AF",
+    "canonical": "en"
   },
   "dv-mv": {
     "name": "Dhivehi",
@@ -624,7 +680,8 @@
     "locale": "dv-MV",
     "android_code": "dv-rMV",
     "osx_code": "dv.lproj",
-    "osx_locale": "dv"
+    "osx_locale": "dv",
+    "canonical": "en"
   },
   "nl-nl": {
     "name": "Dutch",
@@ -635,7 +692,8 @@
     "locale": "nl-NL",
     "android_code": "nl-rNL",
     "osx_code": "nl.lproj",
-    "osx_locale": "nl"
+    "osx_locale": "nl",
+    "canonical": "en"
   },
   "nl-be": {
     "name": "Dutch, Belgium",
@@ -646,7 +704,8 @@
     "locale": "nl-BE",
     "android_code": "nl-rBE",
     "osx_code": "nl-BE.lproj",
-    "osx_locale": "nl_BE"
+    "osx_locale": "nl_BE",
+    "canonical": "en"
   },
   "nl-sr": {
     "name": "Dutch, Suriname",
@@ -657,7 +716,8 @@
     "locale": "nl-SR",
     "android_code": "nl-rSR",
     "osx_code": "nl-SR.lproj",
-    "osx_locale": "nl_SR"
+    "osx_locale": "nl_SR",
+    "canonical": "en"
   },
   "dz-bt": {
     "name": "Dzongkha",
@@ -668,7 +728,8 @@
     "locale": "dz-BT",
     "android_code": "dz-rBT",
     "osx_code": "dz.lproj",
-    "osx_locale": "dz"
+    "osx_locale": "dz",
+    "canonical": "en"
   },
   "en-us": {
     "name": "English, United States",
@@ -679,7 +740,8 @@
     "locale": "en-US",
     "android_code": "en-rUS",
     "osx_code": "en-US.lproj",
-    "osx_locale": "en_US"
+    "osx_locale": "en_US",
+    "canonical": "en"
   },
   "en": {
     "name": "English (US)",
@@ -690,7 +752,8 @@
     "locale": "en-US",
     "android_code": "en-rUS",
     "osx_code": "en-US.lproj",
-    "osx_locale": "en_US"
+    "osx_locale": "en_US",
+    "canonical": "en"
   },
   "en-ud": {
     "name": "English (upside down)",
@@ -701,7 +764,8 @@
     "locale": "en-UD",
     "android_code": "en-rUD",
     "osx_code": "en-UD.lproj",
-    "osx_locale": "en_UD"
+    "osx_locale": "en_UD",
+    "canonical": "en"
   },
   "en-ar": {
     "name": "English, Arabia",
@@ -712,7 +776,8 @@
     "locale": "en-AR",
     "android_code": "en-rAR",
     "osx_code": "en-AR.lproj",
-    "osx_locale": "en_AR"
+    "osx_locale": "en_AR",
+    "canonical": "en"
   },
   "en-au": {
     "name": "English, Australia",
@@ -723,7 +788,8 @@
     "locale": "en-AU",
     "android_code": "en-rAU",
     "osx_code": "en-AU.lproj",
-    "osx_locale": "en_AU"
+    "osx_locale": "en_AU",
+    "canonical": "en"
   },
   "en-bz": {
     "name": "English, Belize",
@@ -734,7 +800,8 @@
     "locale": "en-BZ",
     "android_code": "en-rBZ",
     "osx_code": "en-BZ.lproj",
-    "osx_locale": "en_BZ"
+    "osx_locale": "en_BZ",
+    "canonical": "en"
   },
   "en-ca": {
     "name": "English, Canada",
@@ -745,7 +812,8 @@
     "locale": "en-CA",
     "android_code": "en-rCA",
     "osx_code": "en-CA.lproj",
-    "osx_locale": "en_CA"
+    "osx_locale": "en_CA",
+    "canonical": "en"
   },
   "en-cb": {
     "name": "English, Caribbean",
@@ -756,7 +824,8 @@
     "locale": "en-CB",
     "android_code": "en-rCB",
     "osx_code": "en-CB.lproj",
-    "osx_locale": "en_CB"
+    "osx_locale": "en_CB",
+    "canonical": "en"
   },
   "en-cn": {
     "name": "English, China",
@@ -767,7 +836,8 @@
     "locale": "en-CN",
     "android_code": "en-rCN",
     "osx_code": "en-CN.lproj",
-    "osx_locale": "en_CN"
+    "osx_locale": "en_CN",
+    "canonical": "en"
   },
   "en-dk": {
     "name": "English, Denmark",
@@ -778,7 +848,8 @@
     "locale": "en-DK",
     "android_code": "en-rDK",
     "osx_code": "en-DK.lproj",
-    "osx_locale": "en_DK"
+    "osx_locale": "en_DK",
+    "canonical": "en"
   },
   "en-hk": {
     "name": "English, Hong Kong",
@@ -789,7 +860,8 @@
     "locale": "en-HK",
     "android_code": "en-rHK",
     "osx_code": "en-HK.lproj",
-    "osx_locale": "en_HK"
+    "osx_locale": "en_HK",
+    "canonical": "en"
   },
   "en-in": {
     "name": "English, India",
@@ -800,7 +872,8 @@
     "locale": "en-IN",
     "android_code": "en-rIN",
     "osx_code": "en-IN.lproj",
-    "osx_locale": "en_IN"
+    "osx_locale": "en_IN",
+    "canonical": "en"
   },
   "en-id": {
     "name": "English, Indonesia",
@@ -811,7 +884,8 @@
     "locale": "en-ID",
     "android_code": "en-rID",
     "osx_code": "en-ID.lproj",
-    "osx_locale": "en_ID"
+    "osx_locale": "en_ID",
+    "canonical": "en"
   },
   "en-ie": {
     "name": "English, Ireland",
@@ -822,7 +896,8 @@
     "locale": "en-IE",
     "android_code": "en-rIE",
     "osx_code": "en-IE.lproj",
-    "osx_locale": "en_IE"
+    "osx_locale": "en_IE",
+    "canonical": "en"
   },
   "en-jm": {
     "name": "English, Jamaica",
@@ -833,7 +908,8 @@
     "locale": "en-JM",
     "android_code": "en-rJM",
     "osx_code": "en-JM.lproj",
-    "osx_locale": "en_JM"
+    "osx_locale": "en_JM",
+    "canonical": "en"
   },
   "en-ja": {
     "name": "English, Japan",
@@ -844,7 +920,8 @@
     "locale": "en-JA",
     "android_code": "en-rJA",
     "osx_code": "en-JA.lproj",
-    "osx_locale": "en_JA"
+    "osx_locale": "en_JA",
+    "canonical": "en"
   },
   "en-my": {
     "name": "English, Malaysia",
@@ -855,7 +932,8 @@
     "locale": "en-MY",
     "android_code": "en-rMY",
     "osx_code": "en-MY.lproj",
-    "osx_locale": "en_MY"
+    "osx_locale": "en_MY",
+    "canonical": "en"
   },
   "en-nz": {
     "name": "English, New Zealand",
@@ -866,7 +944,8 @@
     "locale": "en-NZ",
     "android_code": "en-rNZ",
     "osx_code": "en-NZ.lproj",
-    "osx_locale": "en_NZ"
+    "osx_locale": "en_NZ",
+    "canonical": "en"
   },
   "en-no": {
     "name": "English, Norway",
@@ -877,7 +956,8 @@
     "locale": "en-NO",
     "android_code": "en-rNO",
     "osx_code": "en-NO.lproj",
-    "osx_locale": "en_NO"
+    "osx_locale": "en_NO",
+    "canonical": "en"
   },
   "en-ph": {
     "name": "English, Philippines",
@@ -888,7 +968,8 @@
     "locale": "en-PH",
     "android_code": "en-rPH",
     "osx_code": "en-PH.lproj",
-    "osx_locale": "en_PH"
+    "osx_locale": "en_PH",
+    "canonical": "en"
   },
   "en-pr": {
     "name": "English, Puerto Rico",
@@ -899,7 +980,8 @@
     "locale": "en-PR",
     "android_code": "en-rPR",
     "osx_code": "en-PR.lproj",
-    "osx_locale": "en_PR"
+    "osx_locale": "en_PR",
+    "canonical": "en"
   },
   "en-sg": {
     "name": "English, Singapore",
@@ -910,7 +992,8 @@
     "locale": "en-SG",
     "android_code": "en-rSG",
     "osx_code": "en-SG.lproj",
-    "osx_locale": "en_SG"
+    "osx_locale": "en_SG",
+    "canonical": "en"
   },
   "en-za": {
     "name": "English, South Africa",
@@ -921,7 +1004,8 @@
     "locale": "en-ZA",
     "android_code": "en-rZA",
     "osx_code": "en-ZA.lproj",
-    "osx_locale": "en_ZA"
+    "osx_locale": "en_ZA",
+    "canonical": "en"
   },
   "en-se": {
     "name": "English, Sweden",
@@ -932,7 +1016,8 @@
     "locale": "en-SE",
     "android_code": "en-rSE",
     "osx_code": "en-SE.lproj",
-    "osx_locale": "en_SE"
+    "osx_locale": "en_SE",
+    "canonical": "en"
   },
   "en-gb": {
     "name": "English, United Kingdom",
@@ -943,7 +1028,8 @@
     "locale": "en-GB",
     "android_code": "en-rGB",
     "osx_code": "en-GB.lproj",
-    "osx_locale": "en_GB"
+    "osx_locale": "en_GB",
+    "canonical": "en"
   },
   "en-zw": {
     "name": "English, Zimbabwe",
@@ -954,7 +1040,8 @@
     "locale": "en-ZW",
     "android_code": "en-rZW",
     "osx_code": "en-ZW.lproj",
-    "osx_locale": "en_ZW"
+    "osx_locale": "en_ZW",
+    "canonical": "en"
   },
   "eo-uy": {
     "name": "Esperanto",
@@ -965,7 +1052,8 @@
     "locale": "eo-UY",
     "android_code": "eo-rUY",
     "osx_code": "eo.lproj",
-    "osx_locale": "eo"
+    "osx_locale": "eo",
+    "canonical": "en"
   },
   "et-ee": {
     "name": "Estonian",
@@ -976,7 +1064,8 @@
     "locale": "et-EE",
     "android_code": "et-rEE",
     "osx_code": "et.lproj",
-    "osx_locale": "et"
+    "osx_locale": "et",
+    "canonical": "en"
   },
   "ee-gh": {
     "name": "Ewe",
@@ -987,7 +1076,8 @@
     "locale": "ee-GH",
     "android_code": "ee-rGH",
     "osx_code": "ee.lproj",
-    "osx_locale": "ee"
+    "osx_locale": "ee",
+    "canonical": "en"
   },
   "fo-fo": {
     "name": "Faroese",
@@ -998,7 +1088,8 @@
     "locale": "fo-FO",
     "android_code": "fo-rFO",
     "osx_code": "fo.lproj",
-    "osx_locale": "fo"
+    "osx_locale": "fo",
+    "canonical": "en"
   },
   "fj-fj": {
     "name": "Fijian",
@@ -1009,7 +1100,8 @@
     "locale": "fj-FJ",
     "android_code": "fj-rFJ",
     "osx_code": "fj.lproj",
-    "osx_locale": "fj"
+    "osx_locale": "fj",
+    "canonical": "en"
   },
   "fil-ph": {
     "name": "Filipino",
@@ -1020,7 +1112,8 @@
     "locale": "fil-PH",
     "android_code": "fil-rPH",
     "osx_code": "fil.lproj",
-    "osx_locale": "fil"
+    "osx_locale": "fil",
+    "canonical": "en"
   },
   "fi-fi": {
     "name": "Finnish",
@@ -1031,7 +1124,8 @@
     "locale": "fi-FI",
     "android_code": "fi-rFI",
     "osx_code": "fi.lproj",
-    "osx_locale": "fi"
+    "osx_locale": "fi",
+    "canonical": "en"
   },
   "vls-be": {
     "name": "Flemish",
@@ -1042,7 +1136,8 @@
     "locale": "vls-BE",
     "android_code": "vls-rBE",
     "osx_code": "vls.lproj",
-    "osx_locale": "vls"
+    "osx_locale": "vls",
+    "canonical": "en"
   },
   "fra-de": {
     "name": "Franconian",
@@ -1053,7 +1148,8 @@
     "locale": "fra-DE",
     "android_code": "fra-rDE",
     "osx_code": "fra.lproj",
-    "osx_locale": "fra"
+    "osx_locale": "fra",
+    "canonical": "en"
   },
   "fr-fr": {
     "name": "French",
@@ -1064,7 +1160,8 @@
     "locale": "fr-FR",
     "android_code": "fr-rFR",
     "osx_code": "fr.lproj",
-    "osx_locale": "fr"
+    "osx_locale": "fr",
+    "canonical": "en"
   },
   "fr-be": {
     "name": "French, Belgium",
@@ -1075,7 +1172,8 @@
     "locale": "fr-BE",
     "android_code": "fr-rBE",
     "osx_code": "fr-BE.lproj",
-    "osx_locale": "fr_BE"
+    "osx_locale": "fr_BE",
+    "canonical": "en"
   },
   "fr-ca": {
     "name": "French, Canada",
@@ -1086,7 +1184,8 @@
     "locale": "fr-CA",
     "android_code": "fr-rCA",
     "osx_code": "fr-CA.lproj",
-    "osx_locale": "fr_CA"
+    "osx_locale": "fr_CA",
+    "canonical": "en"
   },
   "fr-lu": {
     "name": "French, Luxembourg",
@@ -1097,7 +1196,8 @@
     "locale": "fr-LU",
     "android_code": "fr-rLU",
     "osx_code": "fr-LU.lproj",
-    "osx_locale": "fr_LU"
+    "osx_locale": "fr_LU",
+    "canonical": "en"
   },
   "fr-qc": {
     "name": "French, Quebec",
@@ -1108,7 +1208,8 @@
     "locale": "fr-QC",
     "android_code": "fr-rQC",
     "osx_code": "fr-QC.lproj",
-    "osx_locale": "fr_QC"
+    "osx_locale": "fr_QC",
+    "canonical": "en"
   },
   "fr-ch": {
     "name": "French, Switzerland",
@@ -1119,7 +1220,8 @@
     "locale": "fr-CH",
     "android_code": "fr-rCH",
     "osx_code": "fr-CH.lproj",
-    "osx_locale": "fr_CH"
+    "osx_locale": "fr_CH",
+    "canonical": "en"
   },
   "fy-nl": {
     "name": "Frisian",
@@ -1130,7 +1232,8 @@
     "locale": "fy-NL",
     "android_code": "fy-rNL",
     "osx_code": "fy.lproj",
-    "osx_locale": "fy"
+    "osx_locale": "fy",
+    "canonical": "en"
   },
   "fur-it": {
     "name": "Friulian",
@@ -1141,7 +1244,8 @@
     "locale": "fur-IT",
     "android_code": "fur-rIT",
     "osx_code": "fur.lproj",
-    "osx_locale": "fur"
+    "osx_locale": "fur",
+    "canonical": "en"
   },
   "ff-za": {
     "name": "Fula",
@@ -1152,7 +1256,8 @@
     "locale": "ff-ZA",
     "android_code": "ff-rZA",
     "osx_code": "ff.lproj",
-    "osx_locale": "ff"
+    "osx_locale": "ff",
+    "canonical": "en"
   },
   "gaa-gh": {
     "name": "Ga",
@@ -1163,7 +1268,8 @@
     "locale": "gaa-GH",
     "android_code": "gaa-rGH",
     "osx_code": "gaa.lproj",
-    "osx_locale": "gaa"
+    "osx_locale": "gaa",
+    "canonical": "en"
   },
   "gl-es": {
     "name": "Galician",
@@ -1174,7 +1280,8 @@
     "locale": "gl-ES",
     "android_code": "gl-rES",
     "osx_code": "gl.lproj",
-    "osx_locale": "gl"
+    "osx_locale": "gl",
+    "canonical": "en"
   },
   "ka-ge": {
     "name": "Georgian",
@@ -1185,7 +1292,8 @@
     "locale": "ka-GE",
     "android_code": "ka-rGE",
     "osx_code": "ka.lproj",
-    "osx_locale": "ka"
+    "osx_locale": "ka",
+    "canonical": "en"
   },
   "de-de": {
     "name": "German",
@@ -1196,7 +1304,8 @@
     "locale": "de-DE",
     "android_code": "de-rDE",
     "osx_code": "de.lproj",
-    "osx_locale": "de"
+    "osx_locale": "de",
+    "canonical": "en"
   },
   "de-at": {
     "name": "German, Austria",
@@ -1207,7 +1316,8 @@
     "locale": "de-AT",
     "android_code": "de-rAT",
     "osx_code": "de-AT.lproj",
-    "osx_locale": "de_AT"
+    "osx_locale": "de_AT",
+    "canonical": "en"
   },
   "de-be": {
     "name": "German, Belgium",
@@ -1218,7 +1328,8 @@
     "locale": "de-BE",
     "android_code": "de-rBE",
     "osx_code": "de-BE.lproj",
-    "osx_locale": "de_BE"
+    "osx_locale": "de_BE",
+    "canonical": "en"
   },
   "de-li": {
     "name": "German, Liechtenstein",
@@ -1229,7 +1340,8 @@
     "locale": "de-LI",
     "android_code": "de-rLI",
     "osx_code": "de-LI.lproj",
-    "osx_locale": "de_LI"
+    "osx_locale": "de_LI",
+    "canonical": "en"
   },
   "de-lu": {
     "name": "German, Luxembourg",
@@ -1240,7 +1352,8 @@
     "locale": "de-LU",
     "android_code": "de-rLU",
     "osx_code": "de-LU.lproj",
-    "osx_locale": "de_LU"
+    "osx_locale": "de_LU",
+    "canonical": "en"
   },
   "de-ch": {
     "name": "German, Switzerland",
@@ -1251,7 +1364,8 @@
     "locale": "de-CH",
     "android_code": "de-rCH",
     "osx_code": "de-CH.lproj",
-    "osx_locale": "de_CH"
+    "osx_locale": "de_CH",
+    "canonical": "en"
   },
   "got-de": {
     "name": "Gothic",
@@ -1262,7 +1376,8 @@
     "locale": "got-DE",
     "android_code": "got-rDE",
     "osx_code": "got.lproj",
-    "osx_locale": "got"
+    "osx_locale": "got",
+    "canonical": "en"
   },
   "el-gr": {
     "name": "Greek",
@@ -1273,7 +1388,8 @@
     "locale": "el-GR",
     "android_code": "el-rGR",
     "osx_code": "el.lproj",
-    "osx_locale": "el"
+    "osx_locale": "el",
+    "canonical": "en"
   },
   "el-cy": {
     "name": "Greek, Cyprus",
@@ -1284,7 +1400,8 @@
     "locale": "el-CY",
     "android_code": "el-rCY",
     "osx_code": "el-CY.lproj",
-    "osx_locale": "el_CY"
+    "osx_locale": "el_CY",
+    "canonical": "en"
   },
   "kl-gl": {
     "name": "Greenlandic",
@@ -1295,7 +1412,8 @@
     "locale": "kl-GL",
     "android_code": "kl-rGL",
     "osx_code": "kl.lproj",
-    "osx_locale": "kl"
+    "osx_locale": "kl",
+    "canonical": "en"
   },
   "gn-py": {
     "name": "Guarani",
@@ -1306,7 +1424,8 @@
     "locale": "gn-PY",
     "android_code": "gn-rPY",
     "osx_code": "gn.lproj",
-    "osx_locale": "gn"
+    "osx_locale": "gn",
+    "canonical": "en"
   },
   "gu-in": {
     "name": "Gujarati",
@@ -1317,7 +1436,8 @@
     "locale": "gu-IN",
     "android_code": "gu-rIN",
     "osx_code": "gu.lproj",
-    "osx_locale": "gu"
+    "osx_locale": "gu",
+    "canonical": "en"
   },
   "ht-ht": {
     "name": "Haitian Creole",
@@ -1328,7 +1448,8 @@
     "locale": "ht-HT",
     "android_code": "ht-rHT",
     "osx_code": "ht.lproj",
-    "osx_locale": "ht"
+    "osx_locale": "ht",
+    "canonical": "en"
   },
   "ha-hg": {
     "name": "Hausa",
@@ -1339,7 +1460,8 @@
     "locale": "ha-HG",
     "android_code": "ha-rHG",
     "osx_code": "ha.lproj",
-    "osx_locale": "ha"
+    "osx_locale": "ha",
+    "canonical": "en"
   },
   "haw-us": {
     "name": "Hawaiian",
@@ -1350,7 +1472,8 @@
     "locale": "haw-US",
     "android_code": "haw-rUS",
     "osx_code": "haw.lproj",
-    "osx_locale": "haw"
+    "osx_locale": "haw",
+    "canonical": "en"
   },
   "he-il": {
     "name": "Hebrew",
@@ -1361,7 +1484,8 @@
     "locale": "he-IL",
     "android_code": "iw-rIL",
     "osx_code": "he.lproj",
-    "osx_locale": "he"
+    "osx_locale": "he",
+    "canonical": "en"
   },
   "hz-na": {
     "name": "Herero",
@@ -1372,7 +1496,8 @@
     "locale": "hz-NA",
     "android_code": "hz-rNA",
     "osx_code": "hz.lproj",
-    "osx_locale": "hz"
+    "osx_locale": "hz",
+    "canonical": "en"
   },
   "hil-ph": {
     "name": "Hiligaynon",
@@ -1383,7 +1508,8 @@
     "locale": "hil-PH",
     "android_code": "hil-rPH",
     "osx_code": "hil.lproj",
-    "osx_locale": "hil"
+    "osx_locale": "hil",
+    "canonical": "en"
   },
   "hi-in": {
     "name": "Hindi",
@@ -1394,7 +1520,8 @@
     "locale": "hi-IN",
     "android_code": "hi-rIN",
     "osx_code": "hi.lproj",
-    "osx_locale": "hi"
+    "osx_locale": "hi",
+    "canonical": "en"
   },
   "ho-pg": {
     "name": "Hiri Motu",
@@ -1405,7 +1532,8 @@
     "locale": "ho-PG",
     "android_code": "ho-rPG",
     "osx_code": "ho.lproj",
-    "osx_locale": "ho"
+    "osx_locale": "ho",
+    "canonical": "en"
   },
   "hmn-cn": {
     "name": "Hmong",
@@ -1416,7 +1544,8 @@
     "locale": "hmn-CN",
     "android_code": "hmn-rCN",
     "osx_code": "hmn.lproj",
-    "osx_locale": "hmn"
+    "osx_locale": "hmn",
+    "canonical": "en"
   },
   "hu-hu": {
     "name": "Hungarian",
@@ -1427,7 +1556,8 @@
     "locale": "hu-HU",
     "android_code": "hu-rHU",
     "osx_code": "hu.lproj",
-    "osx_locale": "hu"
+    "osx_locale": "hu",
+    "canonical": "en"
   },
   "is-is": {
     "name": "Icelandic",
@@ -1438,7 +1568,8 @@
     "locale": "is-IS",
     "android_code": "is-rIS",
     "osx_code": "is.lproj",
-    "osx_locale": "is"
+    "osx_locale": "is",
+    "canonical": "en"
   },
   "io-en": {
     "name": "Ido",
@@ -1449,7 +1580,8 @@
     "locale": "io-EN",
     "android_code": "io-rEN",
     "osx_code": "ido.lproj",
-    "osx_locale": "ido"
+    "osx_locale": "ido",
+    "canonical": "en"
   },
   "ig-ng": {
     "name": "Igbo",
@@ -1460,7 +1592,8 @@
     "locale": "ig-NG",
     "android_code": "ig-rNG",
     "osx_code": "ig.lproj",
-    "osx_locale": "ig"
+    "osx_locale": "ig",
+    "canonical": "en"
   },
   "ilo-ph": {
     "name": "Ilokano",
@@ -1471,7 +1604,8 @@
     "locale": "ilo-PH",
     "android_code": "ilo-rPH",
     "osx_code": "ilo.lproj",
-    "osx_locale": "ilo"
+    "osx_locale": "ilo",
+    "canonical": "en"
   },
   "id-id": {
     "name": "Indonesian",
@@ -1482,7 +1616,8 @@
     "locale": "id-ID",
     "android_code": "in-rID",
     "osx_code": "id.lproj",
-    "osx_locale": "id"
+    "osx_locale": "id",
+    "canonical": "en"
   },
   "iu-nu": {
     "name": "Inuktitut",
@@ -1493,7 +1628,8 @@
     "locale": "iu-NU",
     "android_code": "iu-rNU",
     "osx_code": "iu.lproj",
-    "osx_locale": "iu"
+    "osx_locale": "iu",
+    "canonical": "en"
   },
   "ga-ie": {
     "name": "Irish",
@@ -1504,7 +1640,8 @@
     "locale": "ga-IE",
     "android_code": "ga-rIE",
     "osx_code": "ga.lproj",
-    "osx_locale": "ga"
+    "osx_locale": "ga",
+    "canonical": "en"
   },
   "it-it": {
     "name": "Italian",
@@ -1515,7 +1652,8 @@
     "locale": "it-IT",
     "android_code": "it-rIT",
     "osx_code": "it.lproj",
-    "osx_locale": "it"
+    "osx_locale": "it",
+    "canonical": "en"
   },
   "it-ch": {
     "name": "Italian, Switzerland",
@@ -1526,7 +1664,8 @@
     "locale": "it-CH",
     "android_code": "it-rCH",
     "osx_code": "it-CH.lproj",
-    "osx_locale": "it_CH"
+    "osx_locale": "it_CH",
+    "canonical": "en"
   },
   "ja-jp": {
     "name": "Japanese",
@@ -1537,7 +1676,8 @@
     "locale": "ja-JP",
     "android_code": "ja-rJP",
     "osx_code": "ja.lproj",
-    "osx_locale": "ja"
+    "osx_locale": "ja",
+    "canonical": "en"
   },
   "jv-id": {
     "name": "Javanese",
@@ -1548,7 +1688,8 @@
     "locale": "jv-ID",
     "android_code": "jv-rID",
     "osx_code": "jv.lproj",
-    "osx_locale": "jv"
+    "osx_locale": "jv",
+    "canonical": "en"
   },
   "quc-gt": {
     "name": "K'iche'",
@@ -1559,7 +1700,8 @@
     "locale": "quc-GT",
     "android_code": "quc-rGT",
     "osx_code": "quc.lproj",
-    "osx_locale": "quc"
+    "osx_locale": "quc",
+    "canonical": "en"
   },
   "kab-kab": {
     "name": "Kabyle",
@@ -1570,7 +1712,8 @@
     "locale": "kab-KAB",
     "android_code": "kab-rKAB",
     "osx_code": "kab.lproj",
-    "osx_locale": "kab"
+    "osx_locale": "kab",
+    "canonical": "en"
   },
   "kn-in": {
     "name": "Kannada",
@@ -1581,7 +1724,8 @@
     "locale": "kn-IN",
     "android_code": "kn-rIN",
     "osx_code": "kn.lproj",
-    "osx_locale": "kn"
+    "osx_locale": "kn",
+    "canonical": "en"
   },
   "pam-ph": {
     "name": "Kapampangan",
@@ -1592,7 +1736,8 @@
     "locale": "pam-PH",
     "android_code": "pam-rPH",
     "osx_code": "pam.lproj",
-    "osx_locale": "pam"
+    "osx_locale": "pam",
+    "canonical": "en"
   },
   "ks-in": {
     "name": "Kashmiri",
@@ -1603,7 +1748,8 @@
     "locale": "ks-IN",
     "android_code": "ks-rIN",
     "osx_code": "ks.lproj",
-    "osx_locale": "ks"
+    "osx_locale": "ks",
+    "canonical": "en"
   },
   "ks-pk": {
     "name": "Kashmiri, Pakistan",
@@ -1614,7 +1760,8 @@
     "locale": "ks-PK",
     "android_code": "ks-rPK",
     "osx_code": "ks-PK.lproj",
-    "osx_locale": "ks_PK"
+    "osx_locale": "ks_PK",
+    "canonical": "en"
   },
   "csb-pl": {
     "name": "Kashubian",
@@ -1625,7 +1772,8 @@
     "locale": "csb-PL",
     "android_code": "csb-rPL",
     "osx_code": "csb.lproj",
-    "osx_locale": "csb"
+    "osx_locale": "csb",
+    "canonical": "en"
   },
   "kk-kz": {
     "name": "Kazakh",
@@ -1636,7 +1784,8 @@
     "locale": "kk-KZ",
     "android_code": "kk-rKZ",
     "osx_code": "kk.lproj",
-    "osx_locale": "kk"
+    "osx_locale": "kk",
+    "canonical": "en"
   },
   "km-kh": {
     "name": "Khmer",
@@ -1647,7 +1796,8 @@
     "locale": "km-KH",
     "android_code": "km-rKH",
     "osx_code": "km.lproj",
-    "osx_locale": "km"
+    "osx_locale": "km",
+    "canonical": "en"
   },
   "rw-rw": {
     "name": "Kinyarwanda",
@@ -1658,7 +1808,8 @@
     "locale": "rw-RW",
     "android_code": "rw-rRW",
     "osx_code": "rw.lproj",
-    "osx_locale": "rw"
+    "osx_locale": "rw",
+    "canonical": "en"
   },
   "tlh-aa": {
     "name": "Klingon",
@@ -1669,7 +1820,8 @@
     "locale": "tlh-AA",
     "android_code": "tlh-rAA",
     "osx_code": "tlh.lproj",
-    "osx_locale": "tlh"
+    "osx_locale": "tlh",
+    "canonical": "en"
   },
   "kv-ko": {
     "name": "Komi",
@@ -1680,7 +1832,8 @@
     "locale": "kv-KO",
     "android_code": "kv-rKO",
     "osx_code": "kv.lproj",
-    "osx_locale": "kv"
+    "osx_locale": "kv",
+    "canonical": "en"
   },
   "kg-cg": {
     "name": "Kongo",
@@ -1691,7 +1844,8 @@
     "locale": "kg-CG",
     "android_code": "kg-rCG",
     "osx_code": "kg.lproj",
-    "osx_locale": "kg"
+    "osx_locale": "kg",
+    "canonical": "en"
   },
   "kok-in": {
     "name": "Konkani",
@@ -1702,7 +1856,8 @@
     "locale": "kok-IN",
     "android_code": "kok-rIN",
     "osx_code": "kok.lproj",
-    "osx_locale": "kok"
+    "osx_locale": "kok",
+    "canonical": "en"
   },
   "ko-kr": {
     "name": "Korean",
@@ -1713,7 +1868,8 @@
     "locale": "ko-KR",
     "android_code": "ko-rKR",
     "osx_code": "ko.lproj",
-    "osx_locale": "ko"
+    "osx_locale": "ko",
+    "canonical": "en"
   },
   "ku-tr": {
     "name": "Kurdish",
@@ -1724,7 +1880,8 @@
     "locale": "ku-TR",
     "android_code": "ku-rTR",
     "osx_code": "ku.lproj",
-    "osx_locale": "ku"
+    "osx_locale": "ku",
+    "canonical": "en"
   },
   "kmr-tr": {
     "name": "Kurmanji (Kurdish)",
@@ -1735,7 +1892,8 @@
     "locale": "kmr-TR",
     "android_code": "kmr-rTR",
     "osx_code": "kmr.lproj",
-    "osx_locale": "kmr"
+    "osx_locale": "kmr",
+    "canonical": "en"
   },
   "kj-ao": {
     "name": "Kwanyama",
@@ -1746,7 +1904,8 @@
     "locale": "kj-AO",
     "android_code": "kj-rAO",
     "osx_code": "kj.lproj",
-    "osx_locale": "kj"
+    "osx_locale": "kj",
+    "canonical": "en"
   },
   "ky-kg": {
     "name": "Kyrgyz",
@@ -1757,7 +1916,8 @@
     "locale": "ky-KG",
     "android_code": "ky-rKG",
     "osx_code": "ky.lproj",
-    "osx_locale": "ky"
+    "osx_locale": "ky",
+    "canonical": "en"
   },
   "lo-la": {
     "name": "Lao",
@@ -1768,7 +1928,8 @@
     "locale": "lo-LA",
     "android_code": "lo-rLA",
     "osx_code": "lo.lproj",
-    "osx_locale": "lo"
+    "osx_locale": "lo",
+    "canonical": "en"
   },
   "la-la": {
     "name": "Latin",
@@ -1779,7 +1940,8 @@
     "locale": "la-LA",
     "android_code": "la-rLA",
     "osx_code": "la.lproj",
-    "osx_locale": "la"
+    "osx_locale": "la",
+    "canonical": "en"
   },
   "lv-lv": {
     "name": "Latvian",
@@ -1790,7 +1952,8 @@
     "locale": "lv-LV",
     "android_code": "lv-rLV",
     "osx_code": "lv.lproj",
-    "osx_locale": "lv"
+    "osx_locale": "lv",
+    "canonical": "en"
   },
   "lij-it": {
     "name": "Ligurian",
@@ -1801,7 +1964,8 @@
     "locale": "lij-IT",
     "android_code": "lij-rIT",
     "osx_code": "lij.lproj",
-    "osx_locale": "lij"
+    "osx_locale": "lij",
+    "canonical": "en"
   },
   "li-li": {
     "name": "Limburgish",
@@ -1812,7 +1976,8 @@
     "locale": "li-LI",
     "android_code": "li-rLI",
     "osx_code": "li.lproj",
-    "osx_locale": "li"
+    "osx_locale": "li",
+    "canonical": "en"
   },
   "ln-cd": {
     "name": "Lingala",
@@ -1823,7 +1988,8 @@
     "locale": "ln-CD",
     "android_code": "ln-rCD",
     "osx_code": "ln.lproj",
-    "osx_locale": "ln"
+    "osx_locale": "ln",
+    "canonical": "en"
   },
   "lt-lt": {
     "name": "Lithuanian",
@@ -1834,7 +2000,8 @@
     "locale": "lt-LT",
     "android_code": "lt-rLT",
     "osx_code": "lt.lproj",
-    "osx_locale": "lt"
+    "osx_locale": "lt",
+    "canonical": "en"
   },
   "jbo-en": {
     "name": "Lojban",
@@ -1845,7 +2012,8 @@
     "locale": "jbo-EN",
     "android_code": "jbo-rEN",
     "osx_code": "jbo.lproj",
-    "osx_locale": "jbo"
+    "osx_locale": "jbo",
+    "canonical": "en"
   },
   "lol-us": {
     "name": "LOLCAT",
@@ -1856,7 +2024,8 @@
     "locale": "lol-US",
     "android_code": "lol-rUS",
     "osx_code": "lol.lproj",
-    "osx_locale": "lol"
+    "osx_locale": "lol",
+    "canonical": "en"
   },
   "nds-de": {
     "name": "Low German",
@@ -1867,7 +2036,8 @@
     "locale": "nds-DE",
     "android_code": "nds-rDE",
     "osx_code": "nds.lproj",
-    "osx_locale": "nds"
+    "osx_locale": "nds",
+    "canonical": "en"
   },
   "dsb-de": {
     "name": "Lower Sorbian",
@@ -1878,7 +2048,8 @@
     "locale": "dsb-DE",
     "android_code": "dsb-rDE",
     "osx_code": "dsb.lproj",
-    "osx_locale": "dsb"
+    "osx_locale": "dsb",
+    "canonical": "en"
   },
   "lg-ug": {
     "name": "Luganda",
@@ -1889,7 +2060,8 @@
     "locale": "lg-UG",
     "android_code": "lg-rUG",
     "osx_code": "lg.lproj",
-    "osx_locale": "lg"
+    "osx_locale": "lg",
+    "canonical": "en"
   },
   "luy-ke": {
     "name": "Luhya",
@@ -1900,7 +2072,8 @@
     "locale": "luy-KE",
     "android_code": "luy-rKE",
     "osx_code": "luy.lproj",
-    "osx_locale": "luy"
+    "osx_locale": "luy",
+    "canonical": "en"
   },
   "lb-lu": {
     "name": "Luxembourgish",
@@ -1911,7 +2084,8 @@
     "locale": "lb-LU",
     "android_code": "lb-rLU",
     "osx_code": "lb.lproj",
-    "osx_locale": "lb"
+    "osx_locale": "lb",
+    "canonical": "en"
   },
   "mk-mk": {
     "name": "Macedonian",
@@ -1922,7 +2096,8 @@
     "locale": "mk-MK",
     "android_code": "mk-rMK",
     "osx_code": "mk.lproj",
-    "osx_locale": "mk"
+    "osx_locale": "mk",
+    "canonical": "en"
   },
   "mai-in": {
     "name": "Maithili",
@@ -1933,7 +2108,8 @@
     "locale": "mai-IN",
     "android_code": "mai-rIN",
     "osx_code": "mai.lproj",
-    "osx_locale": "mai"
+    "osx_locale": "mai",
+    "canonical": "en"
   },
   "mg-mg": {
     "name": "Malagasy",
@@ -1944,7 +2120,8 @@
     "locale": "mg-MG",
     "android_code": "mg-rMG",
     "osx_code": "mg.lproj",
-    "osx_locale": "mg"
+    "osx_locale": "mg",
+    "canonical": "en"
   },
   "ms-my": {
     "name": "Malay",
@@ -1955,7 +2132,8 @@
     "locale": "ms-MY",
     "android_code": "ms-rMY",
     "osx_code": "ms.lproj",
-    "osx_locale": "ms"
+    "osx_locale": "ms",
+    "canonical": "en"
   },
   "ms-bn": {
     "name": "Malay, Brunei",
@@ -1966,7 +2144,8 @@
     "locale": "ms-BN",
     "android_code": "ms-rBN",
     "osx_code": "ms-BN.lproj",
-    "osx_locale": "ms_BN"
+    "osx_locale": "ms_BN",
+    "canonical": "en"
   },
   "ml-in": {
     "name": "Malayalam",
@@ -1977,7 +2156,8 @@
     "locale": "ml-IN",
     "android_code": "ml-rIN",
     "osx_code": "ml.lproj",
-    "osx_locale": "ml"
+    "osx_locale": "ml",
+    "canonical": "en"
   },
   "mt-mt": {
     "name": "Maltese",
@@ -1988,7 +2168,8 @@
     "locale": "mt-MT",
     "android_code": "mt-rMT",
     "osx_code": "mt.lproj",
-    "osx_locale": "mt"
+    "osx_locale": "mt",
+    "canonical": "en"
   },
   "gv-im": {
     "name": "Manx",
@@ -1999,7 +2180,8 @@
     "locale": "gv-IM",
     "android_code": "gv-rIM",
     "osx_code": "gv.lproj",
-    "osx_locale": "gv"
+    "osx_locale": "gv",
+    "canonical": "en"
   },
   "mi-nz": {
     "name": "Maori",
@@ -2010,7 +2192,8 @@
     "locale": "mi-NZ",
     "android_code": "mi-rNZ",
     "osx_code": "mi.lproj",
-    "osx_locale": "mi"
+    "osx_locale": "mi",
+    "canonical": "en"
   },
   "arn-cl": {
     "name": "Mapudungun",
@@ -2021,7 +2204,8 @@
     "locale": "arn-CL",
     "android_code": "arn-rCL",
     "osx_code": "arn.lproj",
-    "osx_locale": "arn"
+    "osx_locale": "arn",
+    "canonical": "en"
   },
   "mr-in": {
     "name": "Marathi",
@@ -2032,7 +2216,8 @@
     "locale": "mr-IN",
     "android_code": "mr-rIN",
     "osx_code": "mr.lproj",
-    "osx_locale": "mr"
+    "osx_locale": "mr",
+    "canonical": "en"
   },
   "mh-mh": {
     "name": "Marshallese",
@@ -2043,7 +2228,8 @@
     "locale": "mh-MH",
     "android_code": "mh-rMH",
     "osx_code": "mh.lproj",
-    "osx_locale": "mh"
+    "osx_locale": "mh",
+    "canonical": "en"
   },
   "moh-ca": {
     "name": "Mohawk",
@@ -2054,7 +2240,8 @@
     "locale": "moh-CA",
     "android_code": "moh-rCA",
     "osx_code": "moh.lproj",
-    "osx_locale": "moh"
+    "osx_locale": "moh",
+    "canonical": "en"
   },
   "mn-mn": {
     "name": "Mongolian",
@@ -2065,7 +2252,8 @@
     "locale": "mn-MN",
     "android_code": "mn-rMN",
     "osx_code": "mn.lproj",
-    "osx_locale": "mn"
+    "osx_locale": "mn",
+    "canonical": "en"
   },
   "sr-cyrl-me": {
     "name": "Montenegrin (Cyrillic)",
@@ -2076,7 +2264,8 @@
     "locale": "sr-Cyrl-ME",
     "android_code": "sr-rCyrl-rME",
     "osx_code": "sr-Cyrl-ME.lproj",
-    "osx_locale": "sr_Cyrl_ME"
+    "osx_locale": "sr_Cyrl_ME",
+    "canonical": "en"
   },
   "me-me": {
     "name": "Montenegrin (Latin)",
@@ -2087,7 +2276,8 @@
     "locale": "me-ME",
     "android_code": "me-rME",
     "osx_code": "me.lproj",
-    "osx_locale": "me"
+    "osx_locale": "me",
+    "canonical": "en"
   },
   "mos-mos": {
     "name": "Mossi",
@@ -2098,7 +2288,8 @@
     "locale": "mos-MOS",
     "android_code": "mos-rMOS",
     "osx_code": "mos.lproj",
-    "osx_locale": "mos"
+    "osx_locale": "mos",
+    "canonical": "en"
   },
   "na-nr": {
     "name": "Nauru",
@@ -2109,7 +2300,8 @@
     "locale": "na-NR",
     "android_code": "na-rNR",
     "osx_code": "na.lproj",
-    "osx_locale": "na"
+    "osx_locale": "na",
+    "canonical": "en"
   },
   "ng-na": {
     "name": "Ndonga",
@@ -2120,7 +2312,8 @@
     "locale": "ng-NA",
     "android_code": "ng-rNA",
     "osx_code": "ng.lproj",
-    "osx_locale": "ng"
+    "osx_locale": "ng",
+    "canonical": "en"
   },
   "ne-np": {
     "name": "Nepali",
@@ -2131,7 +2324,8 @@
     "locale": "ne-NP",
     "android_code": "ne-rNP",
     "osx_code": "ne.lproj",
-    "osx_locale": "ne"
+    "osx_locale": "ne",
+    "canonical": "en"
   },
   "ne-in": {
     "name": "Nepali, India",
@@ -2142,7 +2336,8 @@
     "locale": "ne-IN",
     "android_code": "ne-rIN",
     "osx_code": "ne-IN.lproj",
-    "osx_locale": "ne_IN"
+    "osx_locale": "ne_IN",
+    "canonical": "en"
   },
   "pcm-ng": {
     "name": "Nigerian Pidgin",
@@ -2153,7 +2348,8 @@
     "locale": "pcm-NG",
     "android_code": "pcm-rNG",
     "osx_code": "pcm.lproj",
-    "osx_locale": "pcm"
+    "osx_locale": "pcm",
+    "canonical": "en"
   },
   "se-no": {
     "name": "Northern Sami",
@@ -2164,7 +2360,8 @@
     "locale": "se-NO",
     "android_code": "se-rNO",
     "osx_code": "se.lproj",
-    "osx_locale": "se"
+    "osx_locale": "se",
+    "canonical": "en"
   },
   "ns-za": {
     "name": "Northern Sotho",
@@ -2175,7 +2372,8 @@
     "locale": "ns-ZA",
     "android_code": "ns-rZA",
     "osx_code": "nso.lproj",
-    "osx_locale": "nso"
+    "osx_locale": "nso",
+    "canonical": "en"
   },
   "no-no": {
     "name": "Norwegian",
@@ -2186,7 +2384,8 @@
     "locale": "no-NO",
     "android_code": "no-rNO",
     "osx_code": "no.lproj",
-    "osx_locale": "no"
+    "osx_locale": "no",
+    "canonical": "en"
   },
   "nb-no": {
     "name": "Norwegian Bokmal",
@@ -2197,7 +2396,8 @@
     "locale": "nb-NO",
     "android_code": "nb-rNO",
     "osx_code": "nb.lproj",
-    "osx_locale": "nb"
+    "osx_locale": "nb",
+    "canonical": "en"
   },
   "nn-no": {
     "name": "Norwegian Nynorsk",
@@ -2208,7 +2408,8 @@
     "locale": "nn-NO",
     "android_code": "nn-rNO",
     "osx_code": "nn-NO.lproj",
-    "osx_locale": "nn_NO"
+    "osx_locale": "nn_NO",
+    "canonical": "en"
   },
   "oc-fr": {
     "name": "Occitan",
@@ -2219,7 +2420,8 @@
     "locale": "oc-FR",
     "android_code": "oc-rFR",
     "osx_code": "oc.lproj",
-    "osx_locale": "oc"
+    "osx_locale": "oc",
+    "canonical": "en"
   },
   "oj-ca": {
     "name": "Ojibwe",
@@ -2230,7 +2432,8 @@
     "locale": "oj-CA",
     "android_code": "oj-rCA",
     "osx_code": "oj.lproj",
-    "osx_locale": "oj"
+    "osx_locale": "oj",
+    "canonical": "en"
   },
   "or-in": {
     "name": "Oriya",
@@ -2241,7 +2444,8 @@
     "locale": "or-IN",
     "android_code": "or-rIN",
     "osx_code": "or.lproj",
-    "osx_locale": "or"
+    "osx_locale": "or",
+    "canonical": "en"
   },
   "om-et": {
     "name": "Oromo",
@@ -2252,7 +2456,8 @@
     "locale": "om-ET",
     "android_code": "om-rET",
     "osx_code": "om.lproj",
-    "osx_locale": "om"
+    "osx_locale": "om",
+    "canonical": "en"
   },
   "os-se": {
     "name": "Ossetian",
@@ -2263,7 +2468,8 @@
     "locale": "os-SE",
     "android_code": "os-rSE",
     "osx_code": "os.lproj",
-    "osx_locale": "os"
+    "osx_locale": "os",
+    "canonical": "en"
   },
   "pi-in": {
     "name": "Pali",
@@ -2274,7 +2480,8 @@
     "locale": "pi-IN",
     "android_code": "pi-rIN",
     "osx_code": "pi.lproj",
-    "osx_locale": "pi"
+    "osx_locale": "pi",
+    "canonical": "en"
   },
   "pap-pap": {
     "name": "Papiamento",
@@ -2285,7 +2492,8 @@
     "locale": "pap-PAP",
     "android_code": "pap-rPAP",
     "osx_code": "pap.lproj",
-    "osx_locale": "pap"
+    "osx_locale": "pap",
+    "canonical": "en"
   },
   "ps-af": {
     "name": "Pashto",
@@ -2296,7 +2504,8 @@
     "locale": "ps-AF",
     "android_code": "ps-rAF",
     "osx_code": "ps.lproj",
-    "osx_locale": "ps"
+    "osx_locale": "ps",
+    "canonical": "en"
   },
   "fa-ir": {
     "name": "Persian",
@@ -2307,7 +2516,8 @@
     "locale": "fa-IR",
     "android_code": "fa-rIR",
     "osx_code": "fa.lproj",
-    "osx_locale": "fa"
+    "osx_locale": "fa",
+    "canonical": "en"
   },
   "en-pt": {
     "name": "Pirate English",
@@ -2318,7 +2528,8 @@
     "locale": "en-PT",
     "android_code": "en-rPT",
     "osx_code": "en-PT.lproj",
-    "osx_locale": "en_PT"
+    "osx_locale": "en_PT",
+    "canonical": "en"
   },
   "pl-pl": {
     "name": "Polish",
@@ -2329,7 +2540,8 @@
     "locale": "pl-PL",
     "android_code": "pl-rPL",
     "osx_code": "pl.lproj",
-    "osx_locale": "pl"
+    "osx_locale": "pl",
+    "canonical": "en"
   },
   "pt-pt": {
     "name": "Portuguese",
@@ -2340,7 +2552,8 @@
     "locale": "pt-PT",
     "android_code": "pt-rPT",
     "osx_code": "pt.lproj",
-    "osx_locale": "pt"
+    "osx_locale": "pt",
+    "canonical": "en"
   },
   "pt-br": {
     "name": "Portuguese, Brazilian",
@@ -2351,7 +2564,8 @@
     "locale": "pt-BR",
     "android_code": "pt-rBR",
     "osx_code": "pt-BR.lproj",
-    "osx_locale": "pt_BR"
+    "osx_locale": "pt_BR",
+    "canonical": "en"
   },
   "pa-in": {
     "name": "Punjabi",
@@ -2362,7 +2576,8 @@
     "locale": "pa-IN",
     "android_code": "pa-rIN",
     "osx_code": "pa.lproj",
-    "osx_locale": "pa"
+    "osx_locale": "pa",
+    "canonical": "en"
   },
   "pa-pk": {
     "name": "Punjabi, Pakistan",
@@ -2373,7 +2588,8 @@
     "locale": "pa-PK",
     "android_code": "pa-rPK",
     "osx_code": "pa-PK.lproj",
-    "osx_locale": "pa_PK"
+    "osx_locale": "pa_PK",
+    "canonical": "en"
   },
   "qu-pe": {
     "name": "Quechua",
@@ -2384,7 +2600,8 @@
     "locale": "qu-PE",
     "android_code": "qu-rPE",
     "osx_code": "qu.lproj",
-    "osx_locale": "qu"
+    "osx_locale": "qu",
+    "canonical": "en"
   },
   "qya-aa": {
     "name": "Quenya",
@@ -2395,7 +2612,8 @@
     "locale": "qya-AA",
     "android_code": "qya-rAA",
     "osx_code": "qya.lproj",
-    "osx_locale": "qya"
+    "osx_locale": "qya",
+    "canonical": "en"
   },
   "ro-ro": {
     "name": "Romanian",
@@ -2406,7 +2624,8 @@
     "locale": "ro-RO",
     "android_code": "ro-rRO",
     "osx_code": "ro.lproj",
-    "osx_locale": "ro"
+    "osx_locale": "ro",
+    "canonical": "en"
   },
   "rm-ch": {
     "name": "Romansh",
@@ -2417,7 +2636,8 @@
     "locale": "rm-CH",
     "android_code": "rm-rCH",
     "osx_code": "rm.lproj",
-    "osx_locale": "rm"
+    "osx_locale": "rm",
+    "canonical": "en"
   },
   "rn-bi": {
     "name": "Rundi",
@@ -2428,7 +2648,8 @@
     "locale": "rn-BI",
     "android_code": "rn-rBI",
     "osx_code": "rn.lproj",
-    "osx_locale": "rn"
+    "osx_locale": "rn",
+    "canonical": "en"
   },
   "ru-ru": {
     "name": "Russian",
@@ -2439,7 +2660,8 @@
     "locale": "ru-RU",
     "android_code": "ru-rRU",
     "osx_code": "ru.lproj",
-    "osx_locale": "ru"
+    "osx_locale": "ru",
+    "canonical": "en"
   },
   "ru-by": {
     "name": "Russian, Belarus",
@@ -2450,7 +2672,8 @@
     "locale": "ru-BY",
     "android_code": "ru-rBY",
     "osx_code": "ru-BY.lproj",
-    "osx_locale": "ru_BY"
+    "osx_locale": "ru_BY",
+    "canonical": "en"
   },
   "ru-md": {
     "name": "Russian, Moldova",
@@ -2461,7 +2684,8 @@
     "locale": "ru-MD",
     "android_code": "ru-rMD",
     "osx_code": "ru-MD.lproj",
-    "osx_locale": "ru_MD"
+    "osx_locale": "ru_MD",
+    "canonical": "en"
   },
   "ru-ua": {
     "name": "Russian, Ukraine",
@@ -2472,7 +2696,8 @@
     "locale": "ru-UA",
     "android_code": "ru-rUA",
     "osx_code": "ru-UA.lproj",
-    "osx_locale": "ru_UA"
+    "osx_locale": "ru_UA",
+    "canonical": "en"
   },
   "ry-ua": {
     "name": "Rusyn",
@@ -2483,7 +2708,8 @@
     "locale": "ry-UA",
     "android_code": "ry-rUA",
     "osx_code": "ry.lproj",
-    "osx_locale": "ry"
+    "osx_locale": "ry",
+    "canonical": "en"
   },
   "sah-sah": {
     "name": "Sakha",
@@ -2494,7 +2720,8 @@
     "locale": "sah-SAH",
     "android_code": "sah-rSAH",
     "osx_code": "sah.lproj",
-    "osx_locale": "sah"
+    "osx_locale": "sah",
+    "canonical": "en"
   },
   "sg-cf": {
     "name": "Sango",
@@ -2505,7 +2732,8 @@
     "locale": "sg-CF",
     "android_code": "sg-rCF",
     "osx_code": "sg.lproj",
-    "osx_locale": "sg"
+    "osx_locale": "sg",
+    "canonical": "en"
   },
   "sa-in": {
     "name": "Sanskrit",
@@ -2516,7 +2744,8 @@
     "locale": "sa-IN",
     "android_code": "sa-rIN",
     "osx_code": "sa.lproj",
-    "osx_locale": "sa"
+    "osx_locale": "sa",
+    "canonical": "en"
   },
   "sat-in": {
     "name": "Santali",
@@ -2527,7 +2756,8 @@
     "locale": "sat-IN",
     "android_code": "sat-rIN",
     "osx_code": "sat.lproj",
-    "osx_locale": "sat"
+    "osx_locale": "sat",
+    "canonical": "en"
   },
   "sc-it": {
     "name": "Sardinian",
@@ -2538,7 +2768,8 @@
     "locale": "sc-IT",
     "android_code": "sc-rIT",
     "osx_code": "sc.lproj",
-    "osx_locale": "sc"
+    "osx_locale": "sc",
+    "canonical": "en"
   },
   "sco-gb": {
     "name": "Scots",
@@ -2549,7 +2780,8 @@
     "locale": "sco-GB",
     "android_code": "sco-rGB",
     "osx_code": "sco.lproj",
-    "osx_locale": "sco"
+    "osx_locale": "sco",
+    "canonical": "en"
   },
   "gd-gb": {
     "name": "Scottish Gaelic",
@@ -2560,7 +2792,8 @@
     "locale": "gd-GB",
     "android_code": "gd-rGB",
     "osx_code": "gd.lproj",
-    "osx_locale": "gd"
+    "osx_locale": "gd",
+    "canonical": "en"
   },
   "sr-sp": {
     "name": "Serbian (Cyrillic)",
@@ -2571,7 +2804,8 @@
     "locale": "sr-SP",
     "android_code": "sr-rSP",
     "osx_code": "sr.lproj",
-    "osx_locale": "sr"
+    "osx_locale": "sr",
+    "canonical": "en"
   },
   "sr-cs": {
     "name": "Serbian (Latin)",
@@ -2582,7 +2816,8 @@
     "locale": "sr-CS",
     "android_code": "sr-rCS",
     "osx_code": "sr-CS.lproj",
-    "osx_locale": "sr_CS"
+    "osx_locale": "sr_CS",
+    "canonical": "en"
   },
   "sh-hr": {
     "name": "Serbo-Croatian",
@@ -2593,7 +2828,8 @@
     "locale": "sh-HR",
     "android_code": "sh-rHR",
     "osx_code": "sh.lproj",
-    "osx_locale": "sh"
+    "osx_locale": "sh",
+    "canonical": "en"
   },
   "crs-sc": {
     "name": "Seychellois Creole",
@@ -2604,7 +2840,8 @@
     "locale": "crs-SC",
     "android_code": "crs-rSC",
     "osx_code": "crs.lproj",
-    "osx_locale": "crs"
+    "osx_locale": "crs",
+    "canonical": "en"
   },
   "sn-zw": {
     "name": "Shona",
@@ -2615,7 +2852,8 @@
     "locale": "sn-ZW",
     "android_code": "sn-rZW",
     "osx_code": "sn.lproj",
-    "osx_locale": "sn"
+    "osx_locale": "sn",
+    "canonical": "en"
   },
   "ii-cn": {
     "name": "Sichuan Yi",
@@ -2626,7 +2864,8 @@
     "locale": "ii-CN",
     "android_code": "ii-rCN",
     "osx_code": "ii.lproj",
-    "osx_locale": "ii"
+    "osx_locale": "ii",
+    "canonical": "en"
   },
   "sd-pk": {
     "name": "Sindhi",
@@ -2637,7 +2876,8 @@
     "locale": "sd-PK",
     "android_code": "sd-rPK",
     "osx_code": "sd.lproj",
-    "osx_locale": "sd"
+    "osx_locale": "sd",
+    "canonical": "en"
   },
   "si-lk": {
     "name": "Sinhala",
@@ -2648,7 +2888,8 @@
     "locale": "si-LK",
     "android_code": "si-rLK",
     "osx_code": "si.lproj",
-    "osx_locale": "si"
+    "osx_locale": "si",
+    "canonical": "en"
   },
   "sk-sk": {
     "name": "Slovak",
@@ -2659,7 +2900,8 @@
     "locale": "sk-SK",
     "android_code": "sk-rSK",
     "osx_code": "sk.lproj",
-    "osx_locale": "sk"
+    "osx_locale": "sk",
+    "canonical": "en"
   },
   "sl-si": {
     "name": "Slovenian",
@@ -2670,7 +2912,8 @@
     "locale": "sl-SI",
     "android_code": "sl-rSI",
     "osx_code": "sl.lproj",
-    "osx_locale": "sl"
+    "osx_locale": "sl",
+    "canonical": "en"
   },
   "so-so": {
     "name": "Somali",
@@ -2681,7 +2924,8 @@
     "locale": "so-SO",
     "android_code": "so-rSO",
     "osx_code": "so.lproj",
-    "osx_locale": "so"
+    "osx_locale": "so",
+    "canonical": "en"
   },
   "son-za": {
     "name": "Songhay",
@@ -2692,7 +2936,8 @@
     "locale": "son-ZA",
     "android_code": "son-rZA",
     "osx_code": "son.lproj",
-    "osx_locale": "son"
+    "osx_locale": "son",
+    "canonical": "en"
   },
   "ckb-ir": {
     "name": "Sorani (Kurdish)",
@@ -2703,7 +2948,8 @@
     "locale": "ckb-IR",
     "android_code": "ckb-rIR",
     "osx_code": "ckb.lproj",
-    "osx_locale": "ckb"
+    "osx_locale": "ckb",
+    "canonical": "en"
   },
   "nr-za": {
     "name": "Southern Ndebele",
@@ -2714,7 +2960,8 @@
     "locale": "nr-ZA",
     "android_code": "nr-rZA",
     "osx_code": "nr.lproj",
-    "osx_locale": "nr"
+    "osx_locale": "nr",
+    "canonical": "en"
   },
   "sma-no": {
     "name": "Southern Sami",
@@ -2725,7 +2972,8 @@
     "locale": "sma-NO",
     "android_code": "sma-rNO",
     "osx_code": "sma.lproj",
-    "osx_locale": "sma"
+    "osx_locale": "sma",
+    "canonical": "en"
   },
   "st-za": {
     "name": "Southern Sotho",
@@ -2736,7 +2984,8 @@
     "locale": "st-ZA",
     "android_code": "st-rZA",
     "osx_code": "st.lproj",
-    "osx_locale": "st"
+    "osx_locale": "st",
+    "canonical": "en"
   },
   "es-es": {
     "name": "Spanish",
@@ -2747,7 +2996,8 @@
     "locale": "es-ES",
     "android_code": "es-rES",
     "osx_code": "es.lproj",
-    "osx_locale": "es"
+    "osx_locale": "es",
+    "canonical": "en"
   },
   "es-em": {
     "name": "Spanish (Modern)",
@@ -2758,7 +3008,8 @@
     "locale": "es-EM",
     "android_code": "es-rEM",
     "osx_code": "es-EM.lproj",
-    "osx_locale": "es_EM"
+    "osx_locale": "es_EM",
+    "canonical": "en"
   },
   "es-ar": {
     "name": "Spanish, Argentina",
@@ -2769,7 +3020,8 @@
     "locale": "es-AR",
     "android_code": "es-rAR",
     "osx_code": "es-AR.lproj",
-    "osx_locale": "es_AR"
+    "osx_locale": "es_AR",
+    "canonical": "en"
   },
   "es-bo": {
     "name": "Spanish, Bolivia",
@@ -2780,7 +3032,8 @@
     "locale": "es-BO",
     "android_code": "es-rBO",
     "osx_code": "es-BO.lproj",
-    "osx_locale": "es_BO"
+    "osx_locale": "es_BO",
+    "canonical": "en"
   },
   "es-cl": {
     "name": "Spanish, Chile",
@@ -2791,7 +3044,8 @@
     "locale": "es-CL",
     "android_code": "es-rCL",
     "osx_code": "es-CL.lproj",
-    "osx_locale": "es_CL"
+    "osx_locale": "es_CL",
+    "canonical": "en"
   },
   "es-co": {
     "name": "Spanish, Colombia",
@@ -2802,7 +3056,8 @@
     "locale": "es-CO",
     "android_code": "es-rCO",
     "osx_code": "es-CO.lproj",
-    "osx_locale": "es_CO"
+    "osx_locale": "es_CO",
+    "canonical": "en"
   },
   "es-cr": {
     "name": "Spanish, Costa Rica",
@@ -2813,7 +3068,8 @@
     "locale": "es-CR",
     "android_code": "es-rCR",
     "osx_code": "es-CR.lproj",
-    "osx_locale": "es_CR"
+    "osx_locale": "es_CR",
+    "canonical": "en"
   },
   "es-do": {
     "name": "Spanish, Dominican Republic",
@@ -2824,7 +3080,8 @@
     "locale": "es-DO",
     "android_code": "es-rDO",
     "osx_code": "es-DO.lproj",
-    "osx_locale": "es_DO"
+    "osx_locale": "es_DO",
+    "canonical": "en"
   },
   "es-ec": {
     "name": "Spanish, Ecuador",
@@ -2835,7 +3092,8 @@
     "locale": "es-EC",
     "android_code": "es-rEC",
     "osx_code": "es-EC.lproj",
-    "osx_locale": "es_EC"
+    "osx_locale": "es_EC",
+    "canonical": "en"
   },
   "es-sv": {
     "name": "Spanish, El Salvador",
@@ -2846,7 +3104,8 @@
     "locale": "es-SV",
     "android_code": "es-rSV",
     "osx_code": "es-SV.lproj",
-    "osx_locale": "es_SV"
+    "osx_locale": "es_SV",
+    "canonical": "en"
   },
   "es-gt": {
     "name": "Spanish, Guatemala",
@@ -2857,7 +3116,8 @@
     "locale": "es-GT",
     "android_code": "es-rGT",
     "osx_code": "es-GT.lproj",
-    "osx_locale": "es_GT"
+    "osx_locale": "es_GT",
+    "canonical": "en"
   },
   "es-hn": {
     "name": "Spanish, Honduras",
@@ -2868,7 +3128,8 @@
     "locale": "es-HN",
     "android_code": "es-rHN",
     "osx_code": "es-HN.lproj",
-    "osx_locale": "es_HN"
+    "osx_locale": "es_HN",
+    "canonical": "en"
   },
   "es-mx": {
     "name": "Spanish, Mexico",
@@ -2879,7 +3140,8 @@
     "locale": "es-MX",
     "android_code": "es-rMX",
     "osx_code": "es-MX.lproj",
-    "osx_locale": "es_MX"
+    "osx_locale": "es_MX",
+    "canonical": "en"
   },
   "es-ni": {
     "name": "Spanish, Nicaragua",
@@ -2890,7 +3152,8 @@
     "locale": "es-NI",
     "android_code": "es-rNI",
     "osx_code": "es-NI.lproj",
-    "osx_locale": "es_NI"
+    "osx_locale": "es_NI",
+    "canonical": "en"
   },
   "es-pa": {
     "name": "Spanish, Panama",
@@ -2901,7 +3164,8 @@
     "locale": "es-PA",
     "android_code": "es-rPA",
     "osx_code": "es-PA.lproj",
-    "osx_locale": "es_PA"
+    "osx_locale": "es_PA",
+    "canonical": "en"
   },
   "es-py": {
     "name": "Spanish, Paraguay",
@@ -2912,7 +3176,8 @@
     "locale": "es-PY",
     "android_code": "es-rPY",
     "osx_code": "es-PY.lproj",
-    "osx_locale": "es_PY"
+    "osx_locale": "es_PY",
+    "canonical": "en"
   },
   "es-pe": {
     "name": "Spanish, Peru",
@@ -2923,7 +3188,8 @@
     "locale": "es-PE",
     "android_code": "es-rPE",
     "osx_code": "es-PE.lproj",
-    "osx_locale": "es_PE"
+    "osx_locale": "es_PE",
+    "canonical": "en"
   },
   "es-pr": {
     "name": "Spanish, Puerto Rico",
@@ -2934,7 +3200,8 @@
     "locale": "es-PR",
     "android_code": "es-rPR",
     "osx_code": "es-PR.lproj",
-    "osx_locale": "es_PR"
+    "osx_locale": "es_PR",
+    "canonical": "en"
   },
   "es-us": {
     "name": "Spanish, United States",
@@ -2945,7 +3212,8 @@
     "locale": "es-US",
     "android_code": "es-rUS",
     "osx_code": "es-US.lproj",
-    "osx_locale": "es_US"
+    "osx_locale": "es_US",
+    "canonical": "en"
   },
   "es-uy": {
     "name": "Spanish, Uruguay",
@@ -2956,7 +3224,8 @@
     "locale": "es-UY",
     "android_code": "es-rUY",
     "osx_code": "es-UY.lproj",
-    "osx_locale": "es_UY"
+    "osx_locale": "es_UY",
+    "canonical": "en"
   },
   "es-ve": {
     "name": "Spanish, Venezuela",
@@ -2967,7 +3236,8 @@
     "locale": "es-VE",
     "android_code": "es-rVE",
     "osx_code": "es-VE.lproj",
-    "osx_locale": "es_VE"
+    "osx_locale": "es_VE",
+    "canonical": "en"
   },
   "su-id": {
     "name": "Sundanese",
@@ -2978,7 +3248,8 @@
     "locale": "su-ID",
     "android_code": "su-rID",
     "osx_code": "su.lproj",
-    "osx_locale": "su"
+    "osx_locale": "su",
+    "canonical": "en"
   },
   "sw-ke": {
     "name": "Swahili, Kenya",
@@ -2989,7 +3260,8 @@
     "locale": "sw-KE",
     "android_code": "sw-rKE",
     "osx_code": "sw-KE.lproj",
-    "osx_locale": "sw_KE"
+    "osx_locale": "sw_KE",
+    "canonical": "en"
   },
   "sw-tz": {
     "name": "Swahili, Tanzania",
@@ -3000,7 +3272,8 @@
     "locale": "sw-TZ",
     "android_code": "sw-rTZ",
     "osx_code": "sw-TZ.lproj",
-    "osx_locale": "sw_TZ"
+    "osx_locale": "sw_TZ",
+    "canonical": "en"
   },
   "ss-za": {
     "name": "Swati",
@@ -3011,7 +3284,8 @@
     "locale": "ss-ZA",
     "android_code": "ss-rZA",
     "osx_code": "ss.lproj",
-    "osx_locale": "ss"
+    "osx_locale": "ss",
+    "canonical": "en"
   },
   "sv-se": {
     "name": "Swedish",
@@ -3022,7 +3296,8 @@
     "locale": "sv-SE",
     "android_code": "sv-rSE",
     "osx_code": "sv.lproj",
-    "osx_locale": "sv"
+    "osx_locale": "sv",
+    "canonical": "en"
   },
   "sv-fi": {
     "name": "Swedish, Finland",
@@ -3033,7 +3308,8 @@
     "locale": "sv-FI",
     "android_code": "sv-rFI",
     "osx_code": "sv-FI.lproj",
-    "osx_locale": "sv_FI"
+    "osx_locale": "sv_FI",
+    "canonical": "en"
   },
   "syc-sy": {
     "name": "Syriac",
@@ -3044,7 +3320,8 @@
     "locale": "syc-SY",
     "android_code": "syc-rSY",
     "osx_code": "syc.lproj",
-    "osx_locale": "syc"
+    "osx_locale": "syc",
+    "canonical": "en"
   },
   "tl-ph": {
     "name": "Tagalog",
@@ -3055,7 +3332,8 @@
     "locale": "tl-PH",
     "android_code": "tl-rPH",
     "osx_code": "tl.lproj",
-    "osx_locale": "tl"
+    "osx_locale": "tl",
+    "canonical": "en"
   },
   "ty-pf": {
     "name": "Tahitian",
@@ -3066,7 +3344,8 @@
     "locale": "ty-PF",
     "android_code": "ty-rPF",
     "osx_code": "ty.lproj",
-    "osx_locale": "ty"
+    "osx_locale": "ty",
+    "canonical": "en"
   },
   "tg-tj": {
     "name": "Tajik",
@@ -3077,7 +3356,8 @@
     "locale": "tg-TJ",
     "android_code": "tg-rTJ",
     "osx_code": "tg.lproj",
-    "osx_locale": "tg"
+    "osx_locale": "tg",
+    "canonical": "en"
   },
   "tzl-tzl": {
     "name": "Talossan",
@@ -3088,7 +3368,8 @@
     "locale": "tzl-TZL",
     "android_code": "tzl-rTZL",
     "osx_code": "tzl.lproj",
-    "osx_locale": "tzl"
+    "osx_locale": "tzl",
+    "canonical": "en"
   },
   "ta-in": {
     "name": "Tamil",
@@ -3099,7 +3380,8 @@
     "locale": "ta-IN",
     "android_code": "ta-rIN",
     "osx_code": "ta.lproj",
-    "osx_locale": "ta"
+    "osx_locale": "ta",
+    "canonical": "en"
   },
   "tt-ru": {
     "name": "Tatar",
@@ -3110,7 +3392,8 @@
     "locale": "tt-RU",
     "android_code": "tt-rRU",
     "osx_code": "tt.lproj",
-    "osx_locale": "tt"
+    "osx_locale": "tt",
+    "canonical": "en"
   },
   "te-in": {
     "name": "Telugu",
@@ -3121,7 +3404,8 @@
     "locale": "te-IN",
     "android_code": "te-rIN",
     "osx_code": "te.lproj",
-    "osx_locale": "te"
+    "osx_locale": "te",
+    "canonical": "en"
   },
   "kdh-kdh": {
     "name": "Tem (Kotokoli)",
@@ -3132,7 +3416,8 @@
     "locale": "kdh-KDH",
     "android_code": "kdh-rKDH",
     "osx_code": "kdh.lproj",
-    "osx_locale": "kdh"
+    "osx_locale": "kdh",
+    "canonical": "en"
   },
   "th-th": {
     "name": "Thai",
@@ -3143,7 +3428,8 @@
     "locale": "th-TH",
     "android_code": "th-rTH",
     "osx_code": "th.lproj",
-    "osx_locale": "th"
+    "osx_locale": "th",
+    "canonical": "en"
   },
   "bo-bt": {
     "name": "Tibetan",
@@ -3154,7 +3440,8 @@
     "locale": "bo-BT",
     "android_code": "bo-rBT",
     "osx_code": "bo.lproj",
-    "osx_locale": "bo"
+    "osx_locale": "bo",
+    "canonical": "en"
   },
   "ti-er": {
     "name": "Tigrinya",
@@ -3165,7 +3452,8 @@
     "locale": "ti-ER",
     "android_code": "ti-rER",
     "osx_code": "ti.lproj",
-    "osx_locale": "ti"
+    "osx_locale": "ti",
+    "canonical": "en"
   },
   "ts-za": {
     "name": "Tsonga",
@@ -3176,7 +3464,8 @@
     "locale": "ts-ZA",
     "android_code": "ts-rZA",
     "osx_code": "ts.lproj",
-    "osx_locale": "ts"
+    "osx_locale": "ts",
+    "canonical": "en"
   },
   "tn-za": {
     "name": "Tswana",
@@ -3187,7 +3476,8 @@
     "locale": "tn-ZA",
     "android_code": "tn-rZA",
     "osx_code": "tn.lproj",
-    "osx_locale": "tn"
+    "osx_locale": "tn",
+    "canonical": "en"
   },
   "tr-tr": {
     "name": "Turkish",
@@ -3198,7 +3488,8 @@
     "locale": "tr-TR",
     "android_code": "tr-rTR",
     "osx_code": "tr.lproj",
-    "osx_locale": "tr"
+    "osx_locale": "tr",
+    "canonical": "en"
   },
   "tr-cy": {
     "name": "Turkish, Cyprus",
@@ -3209,7 +3500,8 @@
     "locale": "tr-CY",
     "android_code": "tr-rCY",
     "osx_code": "tr-CY.lproj",
-    "osx_locale": "tr_CY"
+    "osx_locale": "tr_CY",
+    "canonical": "en"
   },
   "tk-tm": {
     "name": "Turkmen",
@@ -3220,7 +3512,8 @@
     "locale": "tk-TM",
     "android_code": "tk-rTM",
     "osx_code": "tk.lproj",
-    "osx_locale": "tk"
+    "osx_locale": "tk",
+    "canonical": "en"
   },
   "uk-ua": {
     "name": "Ukrainian",
@@ -3231,7 +3524,8 @@
     "locale": "uk-UA",
     "android_code": "uk-rUA",
     "osx_code": "uk.lproj",
-    "osx_locale": "uk"
+    "osx_locale": "uk",
+    "canonical": "en"
   },
   "hsb-de": {
     "name": "Upper Sorbian",
@@ -3242,7 +3536,8 @@
     "locale": "hsb-DE",
     "android_code": "hsb-rDE",
     "osx_code": "hsb.lproj",
-    "osx_locale": "hsb"
+    "osx_locale": "hsb",
+    "canonical": "en"
   },
   "ur-in": {
     "name": "Urdu (India)",
@@ -3253,7 +3548,8 @@
     "locale": "ur-IN",
     "android_code": "ur-rIN",
     "osx_code": "ur-IN.lproj",
-    "osx_locale": "ur_IN"
+    "osx_locale": "ur_IN",
+    "canonical": "en"
   },
   "ur-pk": {
     "name": "Urdu (Pakistan)",
@@ -3264,7 +3560,8 @@
     "locale": "ur-PK",
     "android_code": "ur-rPK",
     "osx_code": "ur.lproj",
-    "osx_locale": "ur"
+    "osx_locale": "ur",
+    "canonical": "en"
   },
   "ug-cn": {
     "name": "Uyghur",
@@ -3275,7 +3572,8 @@
     "locale": "ug-CN",
     "android_code": "ug-rCN",
     "osx_code": "ug.lproj",
-    "osx_locale": "ug"
+    "osx_locale": "ug",
+    "canonical": "en"
   },
   "uz-uz": {
     "name": "Uzbek",
@@ -3286,7 +3584,8 @@
     "locale": "uz-UZ",
     "android_code": "uz-rUZ",
     "osx_code": "uz.lproj",
-    "osx_locale": "uz"
+    "osx_locale": "uz",
+    "canonical": "en"
   },
   "val-es": {
     "name": "Valencian",
@@ -3297,7 +3596,8 @@
     "locale": "val-ES",
     "android_code": "val-rES",
     "osx_code": "val.lproj",
-    "osx_locale": "val"
+    "osx_locale": "val",
+    "canonical": "en"
   },
   "ve-za": {
     "name": "Venda",
@@ -3308,7 +3608,8 @@
     "locale": "ve-ZA",
     "android_code": "ve-rZA",
     "osx_code": "ve.lproj",
-    "osx_locale": "ve"
+    "osx_locale": "ve",
+    "canonical": "en"
   },
   "vec-it": {
     "name": "Venetian",
@@ -3319,7 +3620,8 @@
     "locale": "vec-IT",
     "android_code": "vec-rIT",
     "osx_code": "vec.lproj",
-    "osx_locale": "vec"
+    "osx_locale": "vec",
+    "canonical": "en"
   },
   "vi-vn": {
     "name": "Vietnamese",
@@ -3330,7 +3632,8 @@
     "locale": "vi-VN",
     "android_code": "vi-rVN",
     "osx_code": "vi.lproj",
-    "osx_locale": "vi"
+    "osx_locale": "vi",
+    "canonical": "en"
   },
   "wa-be": {
     "name": "Walloon",
@@ -3341,7 +3644,8 @@
     "locale": "wa-BE",
     "android_code": "wa-rBE",
     "osx_code": "wa.lproj",
-    "osx_locale": "wa"
+    "osx_locale": "wa",
+    "canonical": "en"
   },
   "cy-gb": {
     "name": "Welsh",
@@ -3352,7 +3656,8 @@
     "locale": "cy-GB",
     "android_code": "cy-rGB",
     "osx_code": "cy.lproj",
-    "osx_locale": "cy"
+    "osx_locale": "cy",
+    "canonical": "en"
   },
   "wo-sn": {
     "name": "Wolof",
@@ -3363,7 +3668,8 @@
     "locale": "wo-SN",
     "android_code": "wo-rSN",
     "osx_code": "wo.lproj",
-    "osx_locale": "wo"
+    "osx_locale": "wo",
+    "canonical": "en"
   },
   "xh-za": {
     "name": "Xhosa",
@@ -3374,7 +3680,8 @@
     "locale": "xh-ZA",
     "android_code": "xh-rZA",
     "osx_code": "xh.lproj",
-    "osx_locale": "xh"
+    "osx_locale": "xh",
+    "canonical": "en"
   },
   "yi-de": {
     "name": "Yiddish",
@@ -3385,7 +3692,8 @@
     "locale": "yi-DE",
     "android_code": "ji-rDE",
     "osx_code": "yi.lproj",
-    "osx_locale": "yi"
+    "osx_locale": "yi",
+    "canonical": "en"
   },
   "yo-ng": {
     "name": "Yoruba",
@@ -3396,7 +3704,8 @@
     "locale": "yo-NG",
     "android_code": "yo-rNG",
     "osx_code": "yo.lproj",
-    "osx_locale": "yo"
+    "osx_locale": "yo",
+    "canonical": "en"
   },
   "zea-zea": {
     "name": "Zeelandic",
@@ -3407,7 +3716,8 @@
     "locale": "zea-ZEA",
     "android_code": "zea-rZEA",
     "osx_code": "zea.lproj",
-    "osx_locale": "zea"
+    "osx_locale": "zea",
+    "canonical": "en"
   },
   "zu-za": {
     "name": "Zulu",
@@ -3418,6 +3728,7 @@
     "locale": "zu-ZA",
     "android_code": "zu-rZA",
     "osx_code": "zu.lproj",
-    "osx_locale": "zu"
+    "osx_locale": "zu",
+    "canonical": "en"
   }
 }

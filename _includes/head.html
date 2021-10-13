@@ -1,6 +1,6 @@
 <head>
     <meta charset="utf-8">
-    
+
     {%- assign current = '/' | append: page.language | append: '/' -%}
     {%- for lang in site.data.verlang.languages[page.version] -%}
     {%- if lang != page.language -%}
@@ -21,7 +21,13 @@
     <meta name="docsearch:language" content="{{ page.language | default: site.app.language }}">
     <meta name="docsearch:version" content="{{ page.version | default: site.app.version }}">
 
+    {% if page.language != site.data.supported[page.language]['canonical'] %}
+    {%- assign current = '/' | append: page.language | append: '/' -%}
+    {%- assign new = '/' | append: site.data.supported[page.language]['canonical'] | append: '/' -%}
+    <link href="{{ site.url }}{{ page.url | replace: current, new | replace: '.html', '' | downcase }}" rel="canonical">
+    {% else %}
     <link href="{{ page.url | replace:'index.html','' | prepend: site.url | downcase }}" rel="canonical">
+    {% endif %}
 
     <title>{{ site.app.title }}{% if page.title %} - {{ page.title }}{% endif %}</title>
 
