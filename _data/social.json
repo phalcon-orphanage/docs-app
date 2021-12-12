@@ -5,14 +5,19 @@
     "url": "https://phalcon.io/discord"
   },
   {
-    "name": "Official Forums",
+    "name": "Discussions",
     "image": "https://assets.phalcon.io/phalcon/favicons/favicon-196x196.png",
-    "url": "https://phalcon.io/forum"
+    "url": "https://phalcon.io/discussions"
   },
   {
     "name": "Stack Overflow",
     "image": "/assets/images/icons/social/stack-overflow-logo.png",
     "url": "https://stackoverflow.com/questions/tagged/phalcon"
+  },
+  {
+    "name": "Telegram",
+    "image": "/assets/images/icons/social/telegram-logo.png",
+    "url": "https://phalcon.io/telegram"
   },
   {
     "name": "Gab",
