@@ -1,3 +1,9 @@
 #!/bin/bash
 
-docker run --rm --volume="$PWD:/srv/jekyll" -p 4015:4000 -it jekyll/jekyll:latest jekyll serve --verbose --incremental
+docker run --rm \
+  --volume="$PWD:/srv/jekyll" \
+  --name cphalcon-docs-app \
+  -p 4015:4000 \
+  -it \
+  jekyll/jekyll:latest \
+  jekyll serve --verbose --incremental
