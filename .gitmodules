@@ -2,3 +2,7 @@
 	path = 4.0
 	url = https://github.com/phalcon/docs
 	branch = 4.0
+[submodule "5.0"]
+	path = 5.0
+	url = git@github.com:phalcon/docs
+	branch = 5.0
