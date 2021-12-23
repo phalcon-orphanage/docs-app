@@ -5,9 +5,10 @@
 <script>
 docsearch(
     {
-        apiKey: '0fde5d68d961a6950ca2b1d4d99c4f07',
-        indexName: 'phalconphp',
         inputSelector: '#docs-search',
+        appId: '{{ site.app.algolia.appId }}',
+        indexName: '{{ site.app.algolia.index }}',
+        apiKey: '{{ site.app.algolia.apiKey }}',
         algoliaOptions: {
             'facetFilters': [
                 "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
@@ -19,9 +20,10 @@ docsearch(
 );
 docsearch(
   {
-    apiKey: '0fde5d68d961a6950ca2b1d4d99c4f07',
-    indexName: 'phalconphp',
     inputSelector: '#docs-search-mobile',
+    appId: '{{ site.app.algolia.appId }}',
+    indexName: '{{ site.app.algolia.index }}',
+    apiKey: '{{ site.app.algolia.apiKey }}',
     algoliaOptions: {
       'facetFilters': [
         "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
