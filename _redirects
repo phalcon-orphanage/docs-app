@@ -1,9 +1,14 @@
 # Defaults
-/                                                              /5.0/en/introduction                                     301!
-/latest                                                        /5.0/en/introduction                                     301!
+/                                                              /4.0/en/introduction                                     301!
+/latest                                                        /4.0/en/introduction                                     301!
 
-/en                                                            /5.0/en/introduction                                     301!
-/latest/:lang                                                  /5.0/:lang/introduction                                  301!
+/en                                                            /4.0/en/introduction                                     301!
+/latest/:lang                                                  /4.0/:lang/introduction                                  301!
+#/                                                              /5.0/en/introduction                                     301!
+#/latest                                                        /5.0/en/introduction                                     301!
+#
+#/en                                                            /5.0/en/introduction                                     301!
+#/latest/:lang                                                  /5.0/:lang/introduction                                  301!
 
 # Dead links
 /en/latest/reference/routing.html                              /4.0/en/reference/routing                                301!

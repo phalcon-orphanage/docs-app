@@ -11,7 +11,8 @@ app:
   twitter: 'phalconphp'
   analytics: 'UA-133802124-5'
   language: 'en'
-  version: '5.0'
+  version: '4.0'
+#  version: '5.0'
   comments: false
   algolia:
     appId: 'QSKF5YFGG5'
