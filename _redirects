@@ -1,27 +1,9 @@
 # Defaults
-/                                                              /4.0/en/introduction                                     301!
-/en                                                            /4.0/en/introduction                                     301!
+/                                                              /5.0/en/introduction                                     301!
+/latest                                                        /5.0/en/introduction                                     301!
 
-/latest/cs-cz                                                  /4.0/cs-cz/introduction                                  301!
-/latest/de-de                                                  /4.0/de-de/introduction                                  301!
-/latest/el-gr                                                  /4.0/el-gr/introduction                                  301!
-/latest/es-es                                                  /4.0/es-es/introduction                                  301!
-/latest/fa-ir                                                  /4.0/fa-ir/introduction                                  301!
-/latest/fr-fr                                                  /4.0/fr-fr/introduction                                  301!
-/latest/id-id                                                  /4.0/id-id/introduction                                  301!
-/latest/it-it                                                  /4.0/it-it/introduction                                  301!
-/latest/ja-jp                                                  /4.0/ja-jp/introduction                                  301!
-/latest/ko-kr                                                  /4.0/ko-kr/introduction                                  301!
-/latest/mn-mn                                                  /4.0/mn-mn/introduction                                  301!
-/latest/nl-nl                                                  /4.0/nl-nl/introduction                                  301!
-/latest/pl-pl                                                  /4.0/pl-pl/introduction                                  301!
-/latest/pt-br                                                  /4.0/pt-br/introduction                                  301!
-/latest/ru-ru                                                  /4.0/ru-ru/introduction                                  301!
-/latest/sr-sp                                                  /4.0/sr-sp/introduction                                  301!
-/latest/th-th                                                  /4.0/th-th/introduction                                  301!
-/latest/tr-tr                                                  /4.0/tr-tr/introduction                                  301!
-/latest/uk-ua                                                  /4.0/uk-ua/introduction                                  301!
-/latest/zh-cn                                                  /4.0/zh-cn/introduction                                  301!
+/en                                                            /5.0/en/introduction                                     301!
+/latest/:lang                                                  /5.0/:lang/introduction                                  301!
 
 # Dead links
 /en/latest/reference/routing.html                              /4.0/en/reference/routing                                301!
@@ -30,6 +12,21 @@
 /en/latest/reference/micro.html                                /4.0/en/reference/application-micro                      301!
 /en/latest/odm                                                 /4.0/en/db-odm                                           301!
 
+/latest/en                                                     /5.0/en/introduction                                     301!
+/latest/en/api/*                                               /5.0/en/api/:splat                                       301!
+/latest/en/reference/*                                         /5.0/en/:splat                                           301!
+/latest/en/*                                                   /5.0/en/:splat                                           301!
+/latest/en-us/*                                                /5.0/en/:splat                                           301!
+
+/latest/es/api/*                                               /5.0/es-es/api/:splat                                    301!
+/latest/es/reference/*                                         /5.0/es-es/:splat                                        301!
+/latest/es/*                                                   /5.0/es-es/:splat                                        301!
+
+/en/latest                                                     /5.0/en/introduction                                     301!
+/en/latest/api/*                                               /5.0/en/api/:splat                                       301!
+/en/latest/reference/*                                         /5.0/en/:splat                                           301!
+/en/latest/*                                                   /5.0/en/:splat                                           301!
+
 /3.4/en/odm                                                    /3.4/en/db-odm                                           301!
 
 /3.1/en/rewrite-rules                                          /3.1/en/application-micro#rewrite-rules                  301!
@@ -37,38 +34,7 @@
 /3.3/en/rewrite-rules                                          /3.3/en/application-micro#rewrite-rules                  301!
 /3.4/en/rewrite-rules                                          /3.4/en/application-micro#rewrite-rules                  301!
 
-/latest/en                                                     /4.0/en/introduction                                     301!
-/latest/en/api/*                                               /4.0/en/api/:splat                                       301!
-/latest/en/reference/*                                         /4.0/en/:splat                                           301!
-/latest/en/*                                                   /4.0/en/:splat                                           301!
-/latest/en-us/*                                                /4.0/en/:splat                                           301!
-
-/latest/es/api/*                                               /4.0/es-es/api/:splat                                    301!
-/latest/es/reference/*                                         /4.0/es-es/:splat                                        301!
-/latest/es/*                                                   /4.0/es-es/:splat                                        301!
-
-/en/latest                                                     /4.0/en/introduction                                     301!
-/en/latest/api/*                                               /4.0/en/api/:splat                                       301!
-/en/latest/reference/*                                         /4.0/en/:splat                                           301!
-/en/latest/*                                                   /4.0/en/:splat                                           301!
-
-/4.0/cs-cz                                                     /4.0/cs-cz/introduction                                  301!
-/4.0/de-de                                                     /4.0/de-de/introduction                                  301!
-/4.0/el-gr                                                     /4.0/el-gr/introduction                                  301!
-/4.0/en                                                        /4.0/en/introduction                                     301!
-/4.0/es-es                                                     /4.0/es-es/introduction                                  301!
-/4.0/fa-ir                                                     /4.0/fa-ir/introduction                                  301!
-/4.0/fr-fr                                                     /4.0/fr-fr/introduction                                  301!
-/4.0/id-id                                                     /4.0/id-id/introduction                                  301!
-/4.0/it-it                                                     /4.0/it-it/introduction                                  301!
-/4.0/ja-jp                                                     /4.0/ja-jp/introduction                                  301!
-/4.0/nl-nl                                                     /4.0/nl-nl/introduction                                  301!
-/4.0/pl-pl                                                     /4.0/pl-pl/introduction                                  301!
-/4.0/pt-BR                                                     /4.0/pt-br/introduction                                  301!
-/4.0/ru-ru                                                     /4.0/ru-ru/introduction                                  301!
-/4.0/tr-tr                                                     /4.0/tr-tr/introduction                                  301!
-/4.0/uk-ua                                                     /4.0/uk-ua/introduction                                  301!
-/4.0/zh-cn                                                     /4.0/zh-cn/introduction                                  301!
+/4.0/:lang                                                     /4.0/:lang/introduction                                  301!
 
 /en/4.0                                                        /4.0/en/introduction                                     301!
 /en/4.0/api/*                                                  /4.0/en/api/:splat                                       301!
@@ -97,21 +63,7 @@
 /4.0/:lang/webserver-xampp                                     /4.0/:lang/webserver-setup                               301!
 
 /3.4                                                           /3.4/en/introduction                                     301!
-/3.4/cs-cz                                                     /3.4/cs-cz/introduction                                  301!
-/3.4/de-de                                                     /3.4/de-de/introduction                                  301!
-/3.4/en                                                        /3.4/en/introduction                                     301!
-/3.4/es-es                                                     /3.4/es-es/introduction                                  301!
-/3.4/fa-ir                                                     /3.4/fa-ir/introduction                                  301!
-/3.4/fr-fr                                                     /3.4/fr-fr/introduction                                  301!
-/3.4/id-id                                                     /3.4/id-id/introduction                                  301!
-/3.4/it-it                                                     /3.4/it-it/introduction                                  301!
-/3.4/ja-jp                                                     /3.4/ja-jp/introduction                                  301!
-/3.4/pl-pl                                                     /3.4/pl-pl/introduction                                  301!
-/3.4/ru-ru                                                     /3.4/ru-ru/introduction                                  301!
-/3.4/tr-tr                                                     /3.4/tr-tr/introduction                                  301!
-/3.4/uk-ua                                                     /3.4/uk-ua/introduction                                  301!
-/3.4/ur-in                                                     /3.4/ur-in/introduction                                  301!
-/3.4/zh-cn                                                     /3.4/zh-cn/introduction                                  301!
+/3.4/:lang                                                     /3.4/:lang/introduction                                  301!
 
 ################################################################################
 # 3.4
