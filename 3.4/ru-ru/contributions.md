@@ -26,7 +26,7 @@ Please take a moment to review this document in order to make the contribution p
 
 ## Вопросы и поддержка
 
-<h5 class='alert alert-warning'>We only accept bug reports, new feature requests and pull requests in GitHub. For questions regarding the usage of the framework or support requests please visit the <a href='https://phalcon.io/forum'>official forum</a>.</h5>
+<h5 class='alert alert-warning'>We only accept bug reports, new feature requests and pull requests in GitHub. For questions regarding the usage of the framework or support requests please visit the <a href='https://github.com/phalcon/cphalcon/discussions'>github discussions</a>.</h5>
 
 <a name='bug-report-checklist'></a>
 
