@@ -166,11 +166,11 @@ echo Phalcon\Tag::linkTo(
     ]
 );
 
-echo Phalcon\Tag::linkTo("http://phalcon.io/", "Phalcon", false);
+echo Phalcon\Tag::linkTo("https://phalcon.io/", "Phalcon", false);
 
 echo Phalcon\Tag::linkTo(
     [
-        "http://phalcon.io/",
+        "https://phalcon.io/",
         "Phalcon Home",
         false,
     ]
@@ -178,7 +178,7 @@ echo Phalcon\Tag::linkTo(
 
 echo Phalcon\Tag::linkTo(
     [
-        "http://phalcon.io/",
+        "https://phalcon.io/",
         "Phalcon Home",
         "local" => false,
     ]
@@ -186,7 +186,7 @@ echo Phalcon\Tag::linkTo(
 
 echo Phalcon\Tag::linkTo(
     [
-        "action" => "http://phalcon.io/",
+        "action" => "https://phalcon.io/",
         "text"   => "Phalcon Home",
         "local"  => false,
         "target" => "_new"
@@ -678,7 +678,7 @@ Builds a LINK[rel="stylesheet"] tag
 ```php
 <?php
 
-echo Phalcon\Tag::stylesheetLink("http://fonts.googleapis.com/css?family=Rosario", false);
+echo Phalcon\Tag::stylesheetLink("https://fonts.googleapis.com/css?family=Rosario", false);
 echo Phalcon\Tag::stylesheetLink("css/style.css");
 
 ```
@@ -687,7 +687,7 @@ Volt Syntax:
 ```php
 <?php
 
-{% raw %}{{ stylesheet_link("http://fonts.googleapis.com/css?family=Rosario", false) }}{% endraw %}
+{% raw %}{{ stylesheet_link("https://fonts.googleapis.com/css?family=Rosario", false) }}{% endraw %}
 {% raw %}{{ stylesheet_link("css/style.css") }}{% endraw %}
 
 ```
@@ -701,7 +701,7 @@ Builds a SCRIPT[type="javascript"] tag
 ```php
 <?php
 
-echo Phalcon\Tag::javascriptInclude("http://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js", false);
+echo Phalcon\Tag::javascriptInclude("https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js", false);
 echo Phalcon\Tag::javascriptInclude("javascript/jquery.js");
 
 ```
@@ -710,7 +710,7 @@ Volt syntax:
 ```php
 <?php
 
-{% raw %}{{ javascript_include("http://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js", false) }}{% endraw %}
+{% raw %}{{ javascript_include("https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js", false) }}{% endraw %}
 {% raw %}{{ javascript_include("javascript/jquery.js") }}{% endraw %}
 
 ```
@@ -741,7 +741,7 @@ Volt Syntax:
 
 {% raw %}{{ image("img/bg.png") }}{% endraw %}
 {% raw %}{{ image("img/photo.jpg", "alt": "Some Photo") }}{% endraw %}
-{% raw %}{{ image("http://static.mywebsite.com/img/bg.png", false) }}{% endraw %}
+{% raw %}{{ image("https://static.mywebsite.com/img/bg.png", false) }}{% endraw %}
 
 ```
 
@@ -798,71 +798,71 @@ echo Phalcon\Tag::tagHtmlClose("script", true);
 
 *extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
 
-*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+*implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/tag/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final private [Exception](https://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Clone the exception
 
 
 
-public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Exception constructor
 
 
 
-public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__wakeup** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 ...
 
 
-final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getMessage** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception message
 
 
 
-final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getCode** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception code
 
 
 
-final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getFile** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the file in which the exception occurred
 
 
 
-final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getLine** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the line in which the exception occurred
 
 
 
-final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *array* **getTrace** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Returns previous Exception
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace as a string
 
 
 
-public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public *string* **__toString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 String representation of the exception
 

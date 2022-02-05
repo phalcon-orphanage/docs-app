@@ -21,7 +21,7 @@ Please ensure that you are sending your pull request to the correct branch and t
 <a name='questions-and-support'></a>
 ## Questions and Support
 
-<h5 class='alert alert-warning'>We only accept bug reports, new feature requests and pull requests in GitHub. For questions regarding the usage of the framework or support requests please visit the <a href='https://phalcon.io/forum'>official forum</a>.</h5>
+<h5 class='alert alert-warning'>We only accept bug reports, new feature requests and pull requests in GitHub. For questions regarding the usage of the framework or support requests please visit the <a href='https://github.com/phalcon/cphalcon/discussions'>github discussions</a>.</h5>
 
 <a name='bug-report-checklist'></a>
 ## Bug Report Checklist
