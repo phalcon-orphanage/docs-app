@@ -8,7 +8,7 @@ version: '3.4'
 
 # Listes de contrôle d'accès (Access Control Lists)
 
-[Phalcon\Acl](api/Phalcon_Acl) provides an easy and lightweight management of ACLs as well as the permissions attached to them. Les listes de contrôle d'accès [Access Control Lists](http://en.wikipedia.org/wiki/Access_control_list) (ACL) permettent à une application de contrôler l'accès à ses zones et aux objets sous-jacents à partir des requêtes. Nous vous encourageons à lire davantage sur la méthodologie ACL afin de connaître ses concepts.
+[Phalcon\Acl](api/Phalcon_Acl) provides an easy and lightweight management of ACLs as well as the permissions attached to them. Les listes de contrôle d'accès [Access Control Lists](https://en.wikipedia.org/wiki/Access_control_list) (ACL) permettent à une application de contrôler l'accès à ses zones et aux objets sous-jacents à partir des requêtes. Nous vous encourageons à lire davantage sur la méthodologie ACL afin de connaître ses concepts.
 
 In summary, ACLs have roles and resources. Resources are objects which abide by the permissions defined to them by the ACLs. Roles are objects that request access to resources and can be allowed or denied access by the ACL mechanism.
 
