@@ -8,7 +8,7 @@ version: '3.4'
 
 # Access Control Lists (ACL)
 
-[Phalcon\Acl](api/Phalcon_Acl) provides an easy and lightweight management of ACLs as well as the permissions attached to them. [Access Control Lists](http://en.wikipedia.org/wiki/Access_control_list) (ACL) umožňují řídit přístup k různým částem aplikace a základním objektům z požadavku. Doporučujeme přečíst více informací o metodologii ACL, abyste se seznámili s jeho konceptem.
+[Phalcon\Acl](api/Phalcon_Acl) provides an easy and lightweight management of ACLs as well as the permissions attached to them. [Access Control Lists](https://en.wikipedia.org/wiki/Access_control_list) (ACL) umožňují řídit přístup k různým částem aplikace a základním objektům z požadavku. Doporučujeme přečíst více informací o metodologii ACL, abyste se seznámili s jeho konceptem.
 
 Ve výsledku ACL obsahují role a zdroje. Zdroje jsou objekty, které řídí oprávnění jim definované v seznamech ACL. Role jsou objekty, které požadují přístup k prostředkům a může jim být povolen nebo odepřen přístup.
 

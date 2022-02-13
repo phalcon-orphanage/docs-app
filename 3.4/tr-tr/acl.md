@@ -8,7 +8,7 @@ version: '3.4'
 
 # Erişim Kontrol Listeleri (ACL)
 
-[Phalcon\Acl](api/Phalcon_Acl) provides an easy and lightweight management of ACLs as well as the permissions attached to them. [Erişim Kontrol Listeleri](http://en.wikipedia.org/wiki/Access_control_list) (ACL) bir uygulamanın kendi alanlarına ve temel alınan nesneleri isteklerden denetlemesine izin verir. ACL metodolojisi hakkında daha fazla bilgi edinmeniz ve böylece kavramlarıyla aşina olmanız önerilir.
+[Phalcon\Acl](api/Phalcon_Acl) provides an easy and lightweight management of ACLs as well as the permissions attached to them. [Erişim Kontrol Listeleri](https://en.wikipedia.org/wiki/Access_control_list) (ACL) bir uygulamanın kendi alanlarına ve temel alınan nesneleri isteklerden denetlemesine izin verir. ACL metodolojisi hakkında daha fazla bilgi edinmeniz ve böylece kavramlarıyla aşina olmanız önerilir.
 
 Özetlemek gerekirse, ACL'lerin rolleri ve kaynakları vardır. Kaynaklar, ACL'ler tarafından tanımlanan izinlere uyan nesnelerdir. Roller, kaynaklara erişim isteyen nesnelerdir ve ACL mekanizması tarafından erişime izin verilebilir veya erişim engellenebilir.
 
