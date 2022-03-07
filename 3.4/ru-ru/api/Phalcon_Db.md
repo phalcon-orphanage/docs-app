@@ -882,7 +882,7 @@ $result = $connection->executePrepared(
 
 
 
-public [PDOStatement](http://php.net/manual/en/class.pdostatement.php) **executePrepared** ([PDOStatement](http://php.net/manual/en/class.pdostatement.php) $statement, *array* $placeholders, *array* $dataTypes)
+public [PDOStatement](https://php.net/manual/en/class.pdostatement.php) **executePrepared** ([PDOStatement](https://php.net/manual/en/class.pdostatement.php) $statement, *array* $placeholders, *array* $dataTypes)
 
 Executes a prepared statement binding. This function uses integer indexes starting from zero
 
@@ -1894,7 +1894,7 @@ $result = $connection->executePrepared(
 
 
 
-public [PDOStatement](http://php.net/manual/en/class.pdostatement.php) **executePrepared** ([PDOStatement](http://php.net/manual/en/class.pdostatement.php) $statement, *array* $placeholders, *array* $dataTypes) inherited from [Phalcon\Db\Adapter\Pdo](/3.4/en/api/Phalcon_Db)
+public [PDOStatement](https://php.net/manual/en/class.pdostatement.php) **executePrepared** ([PDOStatement](https://php.net/manual/en/class.pdostatement.php) $statement, *array* $placeholders, *array* $dataTypes) inherited from [Phalcon\Db\Adapter\Pdo](/3.4/en/api/Phalcon_Db)
 
 Executes a prepared statement binding. This function uses integer indexes starting from zero
 
@@ -2827,7 +2827,7 @@ $result = $connection->executePrepared(
 
 
 
-public [PDOStatement](http://php.net/manual/en/class.pdostatement.php) **executePrepared** ([PDOStatement](http://php.net/manual/en/class.pdostatement.php) $statement, *array* $placeholders, *array* $dataTypes) inherited from [Phalcon\Db\Adapter\Pdo](/3.4/en/api/Phalcon_Db)
+public [PDOStatement](https://php.net/manual/en/class.pdostatement.php) **executePrepared** ([PDOStatement](https://php.net/manual/en/class.pdostatement.php) $statement, *array* $placeholders, *array* $dataTypes) inherited from [Phalcon\Db\Adapter\Pdo](/3.4/en/api/Phalcon_Db)
 
 Executes a prepared statement binding. This function uses integer indexes starting from zero
 
@@ -3737,7 +3737,7 @@ $result = $connection->executePrepared(
 
 
 
-public [PDOStatement](http://php.net/manual/en/class.pdostatement.php) **executePrepared** ([PDOStatement](http://php.net/manual/en/class.pdostatement.php) $statement, *array* $placeholders, *array* $dataTypes) inherited from [Phalcon\Db\Adapter\Pdo](/3.4/en/api/Phalcon_Db)
+public [PDOStatement](https://php.net/manual/en/class.pdostatement.php) **executePrepared** ([PDOStatement](https://php.net/manual/en/class.pdostatement.php) $statement, *array* $placeholders, *array* $dataTypes) inherited from [Phalcon\Db\Adapter\Pdo](/3.4/en/api/Phalcon_Db)
 
 Executes a prepared statement binding. This function uses integer indexes starting from zero
 
@@ -7054,71 +7054,71 @@ abstract public  **rollbackSavepoint** (*mixed* $name)
 
 *extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
 
-*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+*implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/db/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final private [Exception](https://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Clone the exception
 
 
 
-public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Exception constructor
 
 
 
-public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__wakeup** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 ...
 
 
-final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getMessage** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception message
 
 
 
-final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getCode** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception code
 
 
 
-final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getFile** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the file in which the exception occurred
 
 
 
-final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getLine** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the line in which the exception occurred
 
 
 
-final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *array* **getTrace** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Returns previous Exception
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace as a string
 
 
 
-public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public *string* **__toString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 String representation of the exception
 
@@ -7598,7 +7598,7 @@ while ($robot = $result->fetchArray()) {
 
 
 ## Methods
-public  **__construct** ([Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, [PDOStatement](http://php.net/manual/en/class.pdostatement.php) $result, [*string* $sqlStatement], [*array* $bindParams], [*array* $bindTypes])
+public  **__construct** ([Phalcon\Db\AdapterInterface](/3.4/en/api/Phalcon_Db) $connection, [PDOStatement](https://php.net/manual/en/class.pdostatement.php) $result, [*string* $sqlStatement], [*array* $bindParams], [*array* $bindTypes])
 
 Phalcon\Db\Result\Pdo constructor
 
