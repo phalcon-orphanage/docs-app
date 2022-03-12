@@ -6,7 +6,7 @@ title: 'Phalcon\Di'
 ---
 # Class **Phalcon\Di**
 
-*implements* [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+*implements* [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di), [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -319,71 +319,71 @@ Loads services from a Config object.
 
 *extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
 
-*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+*implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final private [Exception](https://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Clone the exception
 
 
 
-public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Exception constructor
 
 
 
-public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__wakeup** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 ...
 
 
-final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getMessage** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception message
 
 
 
-final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getCode** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception code
 
 
 
-final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getFile** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the file in which the exception occurred
 
 
 
-final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getLine** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the line in which the exception occurred
 
 
 
-final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *array* **getTrace** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Returns previous Exception
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace as a string
 
 
 
-public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public *string* **__toString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 String representation of the exception
 
@@ -396,7 +396,7 @@ String representation of the exception
 
 *extends* class [Phalcon\Di](/3.4/en/api/Phalcon_Di)
 
-*implements* [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php), [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di)
+*implements* [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php), [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/factorydefault.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -676,7 +676,7 @@ Loads services from a Config object.
 
 *extends* class [Phalcon\Di\FactoryDefault](/3.4/en/api/Phalcon_Di)
 
-*implements* [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+*implements* [Phalcon\DiInterface](/3.4/en/api/Phalcon_Di), [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/di/factorydefault/cli.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1201,7 +1201,7 @@ abstract public  **register** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $di
 
 # Interface **Phalcon\DiInterface**
 
-*implements* [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+*implements* [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/diinterface.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -1281,22 +1281,22 @@ abstract public static  **reset** ()
 ...
 
 
-abstract public  **offsetExists** (*mixed* $offset) inherited from [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+abstract public  **offsetExists** (*mixed* $offset) inherited from [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
 
 ...
 
 
-abstract public  **offsetGet** (*mixed* $offset) inherited from [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+abstract public  **offsetGet** (*mixed* $offset) inherited from [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
 
 ...
 
 
-abstract public  **offsetSet** (*mixed* $offset, *mixed* $value) inherited from [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+abstract public  **offsetSet** (*mixed* $offset, *mixed* $value) inherited from [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
 
 ...
 
 
-abstract public  **offsetUnset** (*mixed* $offset) inherited from [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php)
+abstract public  **offsetUnset** (*mixed* $offset) inherited from [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
 
 ...
 
