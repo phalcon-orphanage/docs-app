@@ -328,7 +328,7 @@ Clears accumulated messages when implicit flush is disabled
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/flash/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-final private [Exception](https://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final private [Exception](https://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Clone the exception
 
@@ -375,13 +375,13 @@ Gets the stack trace
 
 
 
-final public [Exception](https://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Returns previous Exception
 
 
 
-final public [Exception](https://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace as a string
 
