@@ -166,71 +166,71 @@ Magic __toString method converts the cookie's value to string
 
 *extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
 
-*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+*implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/cookie/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final private [Exception](https://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Clone the exception
 
 
 
-public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Exception constructor
 
 
 
-public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__wakeup** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 ...
 
 
-final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getMessage** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception message
 
 
 
-final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getCode** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception code
 
 
 
-final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getFile** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the file in which the exception occurred
 
 
 
-final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getLine** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the line in which the exception occurred
 
 
 
-final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *array* **getTrace** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Returns previous Exception
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace as a string
 
 
 
-public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public *string* **__toString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 String representation of the exception
 
@@ -770,7 +770,7 @@ echo $headers["Authorization"]; // Basic cGhhbGNvbjpzZWNyZXQ=
 
 public  **getHTTPReferer** ()
 
-Gets web page that refers active request. ie: http://www.google.com
+Gets web page that refers active request. ie: https://www.google.com
 
 
 
@@ -847,71 +847,71 @@ Process a request header and return an array of values with their qualities
 
 *extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
 
-*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+*implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/request/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final private [Exception](https://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Clone the exception
 
 
 
-public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Exception constructor
 
 
 
-public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__wakeup** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 ...
 
 
-final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getMessage** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception message
 
 
 
-final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getCode** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception code
 
 
 
-final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getFile** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the file in which the exception occurred
 
 
 
-final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getLine** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the line in which the exception occurred
 
 
 
-final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *array* **getTrace** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Returns previous Exception
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace as a string
 
 
 
-public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public *string* **__toString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 String representation of the exception
 
@@ -1419,7 +1419,7 @@ Resets all the established headers
 
 
 
-public  **setExpires** ([DateTime](http://php.net/manual/en/class.datetime.php) $datetime)
+public  **setExpires** ([DateTime](https://php.net/manual/en/class.datetime.php) $datetime)
 
 Sets an Expires header in the response that allows to use the HTTP cache
 
@@ -1434,7 +1434,7 @@ $this->response->setExpires(
 
 
 
-public  **setLastModified** ([DateTime](http://php.net/manual/en/class.datetime.php) $datetime)
+public  **setLastModified** ([DateTime](https://php.net/manual/en/class.datetime.php) $datetime)
 
 Sets Last-Modified header
 
@@ -1517,8 +1517,8 @@ Redirect by HTTP to another action or URL
 
 // Using a string redirect (internal/external)
 $response->redirect("posts/index");
-$response->redirect("http://en.wikipedia.org", true);
-$response->redirect("http://www.example.com/new-location", true, 301);
+$response->redirect("https://en.wikipedia.org", true);
+$response->redirect("https://www.example.com/new-location", true, 301);
 
 // Making a redirection based on a named route
 $response->redirect(
@@ -1749,71 +1749,71 @@ abstract public  **reset** ()
 
 *extends* class [Phalcon\Exception](/3.4/en/api/Phalcon_Exception)
 
-*implements* [Throwable](http://php.net/manual/en/class.throwable.php)
+*implements* [Throwable](https://php.net/manual/en/class.throwable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/http/response/exception.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
 ## Methods
-final private [Exception](http://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final private [Exception](https://php.net/manual/en/class.exception.php) **__clone** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Clone the exception
 
 
 
-public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__construct** ([*mixed* $message], [*mixed* $code], [*mixed* $previous]) inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Exception constructor
 
 
 
-public  **__wakeup** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public  **__wakeup** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 ...
 
 
-final public *string* **getMessage** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getMessage** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception message
 
 
 
-final public *int* **getCode** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getCode** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the Exception code
 
 
 
-final public *string* **getFile** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *string* **getFile** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the file in which the exception occurred
 
 
 
-final public *int* **getLine** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *int* **getLine** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the line in which the exception occurred
 
 
 
-final public *array* **getTrace** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public *array* **getTrace** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getPrevious** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Returns previous Exception
 
 
 
-final public [Exception](http://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+final public [Exception](https://php.net/manual/en/class.exception.php) **getTraceAsString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 Gets the stack trace as a string
 
 
 
-public *string* **__toString** () inherited from [Exception](http://php.net/manual/en/class.exception.php)
+public *string* **__toString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 String representation of the exception
 
@@ -1951,7 +1951,7 @@ abstract public  **resetHeaders** ()
 ...
 
 
-abstract public  **setExpires** ([DateTime](http://php.net/manual/en/class.datetime.php) $datetime)
+abstract public  **setExpires** ([DateTime](https://php.net/manual/en/class.datetime.php) $datetime)
 
 ...
 
