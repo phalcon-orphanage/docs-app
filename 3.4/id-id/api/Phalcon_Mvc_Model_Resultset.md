@@ -6,7 +6,7 @@ title: 'Phalcon\Mvc\Model\Resultset'
 ---
 # Abstract class **Phalcon\Mvc\Model\Resultset**
 
-*implements* [Phalcon\Mvc\Model\ResultsetInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultsetInterface), [Iterator](http://php.net/manual/en/class.iterator.php), [Traversable](http://php.net/manual/en/class.traversable.php), [SeekableIterator](http://php.net/manual/en/class.seekableiterator.php), [Countable](http://php.net/manual/en/class.countable.php), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php), [Serializable](http://php.net/manual/en/class.serializable.php), [JsonSerializable](http://php.net/manual/en/class.jsonserializable.php)
+*implements* [Phalcon\Mvc\Model\ResultsetInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultsetInterface), [Iterator](https://php.net/manual/en/class.iterator.php), [Traversable](https://php.net/manual/en/class.traversable.php), [SeekableIterator](https://php.net/manual/en/class.seekableiterator.php), [Countable](https://php.net/manual/en/class.countable.php), [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php), [Serializable](https://php.net/manual/en/class.serializable.php), [JsonSerializable](https://php.net/manual/en/class.jsonserializable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/resultset.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -184,13 +184,13 @@ Returns the error messages produced by a batch operation
 
 
 
-public *boolean* **update** (*array* $data, [[Closure](http://php.net/manual/en/class.closure.php) $conditionCallback])
+public *boolean* **update** (*array* $data, [[Closure](https://php.net/manual/en/class.closure.php) $conditionCallback])
 
 Updates every record in the resultset
 
 
 
-public  **delete** ([[Closure](http://php.net/manual/en/class.closure.php) $conditionCallback])
+public  **delete** ([[Closure](https://php.net/manual/en/class.closure.php) $conditionCallback])
 
 Deletes every record in the resultset
 
@@ -235,17 +235,17 @@ abstract public  **toArray** () inherited from [Phalcon\Mvc\Model\ResultsetInter
 ...
 
 
-abstract public  **current** () inherited from [Iterator](http://php.net/manual/en/class.iterator.php)
+abstract public  **current** () inherited from [Iterator](https://php.net/manual/en/class.iterator.php)
 
 ...
 
 
-abstract public  **serialize** () inherited from [Serializable](http://php.net/manual/en/class.serializable.php)
+abstract public  **serialize** () inherited from [Serializable](https://php.net/manual/en/class.serializable.php)
 
 ...
 
 
-abstract public  **unserialize** (*mixed* $serialized) inherited from [Serializable](http://php.net/manual/en/class.serializable.php)
+abstract public  **unserialize** (*mixed* $serialized) inherited from [Serializable](https://php.net/manual/en/class.serializable.php)
 
 ...
 
@@ -257,7 +257,7 @@ abstract public  **unserialize** (*mixed* $serialized) inherited from [Serializa
 
 *extends* abstract class [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
 
-*implements* [JsonSerializable](http://php.net/manual/en/class.jsonserializable.php), [Serializable](http://php.net/manual/en/class.serializable.php), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php), [Countable](http://php.net/manual/en/class.countable.php), [SeekableIterator](http://php.net/manual/en/class.seekableiterator.php), [Traversable](http://php.net/manual/en/class.traversable.php), [Iterator](http://php.net/manual/en/class.iterator.php), [Phalcon\Mvc\Model\ResultsetInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultsetInterface)
+*implements* [JsonSerializable](https://php.net/manual/en/class.jsonserializable.php), [Serializable](https://php.net/manual/en/class.serializable.php), [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php), [Countable](https://php.net/manual/en/class.countable.php), [SeekableIterator](https://php.net/manual/en/class.seekableiterator.php), [Traversable](https://php.net/manual/en/class.traversable.php), [Iterator](https://php.net/manual/en/class.iterator.php), [Phalcon\Mvc\Model\ResultsetInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultsetInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/resultset/complex.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -423,13 +423,13 @@ Returns the error messages produced by a batch operation
 
 
 
-public *boolean* **update** (*array* $data, [[Closure](http://php.net/manual/en/class.closure.php) $conditionCallback]) inherited from [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
+public *boolean* **update** (*array* $data, [[Closure](https://php.net/manual/en/class.closure.php) $conditionCallback]) inherited from [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
 
 Updates every record in the resultset
 
 
 
-public  **delete** ([[Closure](http://php.net/manual/en/class.closure.php) $conditionCallback]) inherited from [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
+public  **delete** ([[Closure](https://php.net/manual/en/class.closure.php) $conditionCallback]) inherited from [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
 
 Deletes every record in the resultset
 
@@ -476,7 +476,7 @@ echo json_encode($robots);
 
 *extends* abstract class [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
 
-*implements* [JsonSerializable](http://php.net/manual/en/class.jsonserializable.php), [Serializable](http://php.net/manual/en/class.serializable.php), [ArrayAccess](http://php.net/manual/en/class.arrayaccess.php), [Countable](http://php.net/manual/en/class.countable.php), [SeekableIterator](http://php.net/manual/en/class.seekableiterator.php), [Traversable](http://php.net/manual/en/class.traversable.php), [Iterator](http://php.net/manual/en/class.iterator.php), [Phalcon\Mvc\Model\ResultsetInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultsetInterface)
+*implements* [JsonSerializable](https://php.net/manual/en/class.jsonserializable.php), [Serializable](https://php.net/manual/en/class.serializable.php), [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php), [Countable](https://php.net/manual/en/class.countable.php), [SeekableIterator](https://php.net/manual/en/class.seekableiterator.php), [Traversable](https://php.net/manual/en/class.traversable.php), [Iterator](https://php.net/manual/en/class.iterator.php), [Phalcon\Mvc\Model\ResultsetInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultsetInterface)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/resultset/simple.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
@@ -643,13 +643,13 @@ Returns the error messages produced by a batch operation
 
 
 
-public *boolean* **update** (*array* $data, [[Closure](http://php.net/manual/en/class.closure.php) $conditionCallback]) inherited from [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
+public *boolean* **update** (*array* $data, [[Closure](https://php.net/manual/en/class.closure.php) $conditionCallback]) inherited from [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
 
 Updates every record in the resultset
 
 
 
-public  **delete** ([[Closure](http://php.net/manual/en/class.closure.php) $conditionCallback]) inherited from [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
+public  **delete** ([[Closure](https://php.net/manual/en/class.closure.php) $conditionCallback]) inherited from [Phalcon\Mvc\Model\Resultset](/3.4/en/api/Phalcon_Mvc_Model_Resultset)
 
 Deletes every record in the resultset
 
