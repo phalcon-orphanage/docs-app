@@ -7,7 +7,7 @@ title: 'Phalcon\Mvc\Model\Row'
 
 # Class **Phalcon\Mvc\Model\Row**
 
-*implements* [Phalcon\Mvc\EntityInterface](/3.4/en/api/Phalcon_Mvc_EntityInterface), [Phalcon\Mvc\Model\ResultInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultInterface), [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php), [JsonSerializable](http://php.net/manual/en/class.jsonserializable.php)
+*implements* [Phalcon\Mvc\EntityInterface](/3.4/en/api/Phalcon_Mvc_EntityInterface), [Phalcon\Mvc\Model\ResultInterface](/3.4/en/api/Phalcon_Mvc_Model_ResultInterface), [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php), [JsonSerializable](https://php.net/manual/en/class.jsonserializable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/mvc/model/row.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
