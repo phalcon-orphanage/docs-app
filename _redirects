@@ -10,6 +10,21 @@
 #/en                                                            /5.0/en/introduction                                     301!
 #/latest/:lang                                                  /5.0/:lang/introduction                                  301!
 
+/5.0/en/collection                                             /5.0/en/support-collection                               301!
+/5.0/en/debug                                                  /5.0/en/support-debug                                    301!
+/5.0/en/crypt                                                  /5.0/en/encryption-crypt                                 301!
+/5.0/en/container                                              /5.0/en/di                                               301!
+/5.0/en/escaper                                                /5.0/en/html-escaper                                     301!
+/5.0/en/filter                                                 /5.0/en/filter-filter                                    301!
+/5.0/en/helper                                                 /5.0/en/support-helper                                   301!
+/5.0/en/loader                                                 /5.0/en/autoload-loader                                  301!
+/5.0/en/registry                                               /5.0/en/support-registry                                 301!
+/5.0/en/security                                               /5.0/en/encryption-security                              301!
+/5.0/en/url                                                    /5.0/en/mvc-url                                          301!
+/5.0/en/validation                                             /5.0/en/filter-validation                                301!
+/5.0/en/version                                                /5.0/en/support-version                                  301!
+/5.0/en/volt                                                   /5.0/en/mvc-volt                                         301!
+
 # Dead links
 /en/latest/reference/routing.html                              /4.0/en/reference/routing                                301!
 /en/latest/reference/dispatching.html                          /4.0/en/reference/dispatching                            301!
