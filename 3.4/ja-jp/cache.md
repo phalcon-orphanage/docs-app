@@ -476,14 +476,14 @@ The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache) interface must be imple
 
 | アダプター                                                                           | 説明                                      | 情報                                        | 必須エクステンション                                         |
 | ------------------------------------------------------------------------------- | --------------------------------------- | ----------------------------------------- | -------------------------------------------------- |
-| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache)                   | Alternative PHP Cache (APC) にデータを格納します。 | [APC](http://php.net/apc)                 | [APC](http://pecl.php.net/package/APC)             |
-| `Phalcon\Cache\Backend\Apcu`                                                 | データをAPCuに格納します（オペコードキャッシングなしのAPC）       | [APCu](http://php.net/apcu)               | [APCu](http://pecl.php.net/package/APCu)           |
+| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache)                   | Alternative PHP Cache (APC) にデータを格納します。 | [APC](https://php.net/apc)                 | [APC](https://pecl.php.net/package/APC)             |
+| `Phalcon\Cache\Backend\Apcu`                                                 | データをAPCuに格納します（オペコードキャッシングなしのAPC）       | [APCu](https://php.net/apcu)               | [APCu](https://pecl.php.net/package/APCu)           |
 | [Phalcon\Cache\Backend\File](api/Phalcon_Cache)                 | ローカルのプレーンファイルにデータを格納します。                |                                           |                                                    |
-| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache) | memcachedサーバーにデータを格納します。                | [Memcached](http://www.php.net/memcached) | [Memcached](http://pecl.php.net/package/memcached) |
-| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache)         | memcachedサーバーにデータを格納します。                | [Memcache](http://www.php.net/memcache)   | [Memcache](http://pecl.php.net/package/memcache)   |
+| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache) | memcachedサーバーにデータを格納します。                | [Memcached](https://www.php.net/memcached) | [Memcached](https://pecl.php.net/package/memcached) |
+| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache)         | memcachedサーバーにデータを格納します。                | [Memcache](https://www.php.net/memcache)   | [Memcache](https://pecl.php.net/package/memcache)   |
 | [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache)             | メモリ中にデータを保存                             |                                           |                                                    |
-| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache)               | データをMongoデータベースに保存します。                  | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
-| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache)               | Redisにデータを格納します。                        | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
+| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache)               | データをMongoデータベースに保存します。                  | [MongoDB](https://mongodb.org/)            | [Mongo](https://mongodb.org/)                       |
+| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache)               | Redisにデータを格納します。                        | [Redis](https://redis.io/)                 | [Redis](https://pecl.php.net/package/redis)         |
 | [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache)             | XCacheにデータを格納します。                       | XCache                         | XCache                           |
 
 ##### **注意** PHP7で Phalcon `apc` ベースのアダプター クラスを使用する場合、pecl から `apcu`と`apcu_bc` パッケージをインストールする必要があります。 Now in Phalcon 3.4.0 you can switch your `<em>\Apc` classes to `</em>\Apcu` and remove `apcu_bc`. Phalcon 4 では、ほとんどすべての `*\Apc` クラスを削除したことを覚えていてだください。 {.alert.alert-warning}
@@ -549,7 +549,7 @@ This backend will store cached content on a memcached server. Per default persis
 
 **クライアント設定**
 
-Used for setting Memcached options. See [Memcached::setOptions](http://php.net/manual/en/memcached.setoptions.php) for more.
+Used for setting Memcached options. See [Memcached::setOptions](https://php.net/manual/en/memcached.setoptions.php) for more.
 
 **例**
 
@@ -602,7 +602,7 @@ This backend will store cached content on a memcached server. The available opti
 
 ### APCバックエンドのオプション
 
-This backend will store cached content on Alternative PHP Cache ([APC](http://php.net/apc)). The available options for this backend are:
+This backend will store cached content on Alternative PHP Cache ([APC](https://php.net/apc)). The available options for this backend are:
 
 | オプション    | 説明                      |
 | -------- | ----------------------- |
@@ -612,7 +612,7 @@ This backend will store cached content on Alternative PHP Cache ([APC](http://ph
 
 ### APCUバックエンドのオプション
 
-This backend will store cached content on Alternative PHP Cache ([APCU](http://php.net/apcu)). The available options for this backend are:
+This backend will store cached content on Alternative PHP Cache ([APCU](https://php.net/apcu)). The available options for this backend are:
 
 | オプション    | 説明                      |
 | -------- | ----------------------- |
@@ -622,7 +622,7 @@ This backend will store cached content on Alternative PHP Cache ([APCU](http://p
 
 ### Mongoバックエンドのオプション
 
-This backend will store cached content on a MongoDB server ([MongoDB](http://mongodb.org/)). The available options for this backend are:
+This backend will store cached content on a MongoDB server ([MongoDB](https://mongodb.org/)). The available options for this backend are:
 
 | オプション        | 説明                      |
 | ------------ | ----------------------- |
@@ -645,7 +645,7 @@ This backend will store cached content on XCache (XCache                    ). T
 
 ### Redisバックエンドのオプション
 
-This backend will store cached content on a Redis server ([Redis](http://redis.io/)). The available options for this backend are:
+This backend will store cached content on a Redis server ([Redis](https://redis.io/)). The available options for this backend are:
 
 | オプション        | 説明                                 |
 | ------------ | ---------------------------------- |

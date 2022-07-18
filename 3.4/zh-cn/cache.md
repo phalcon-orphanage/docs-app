@@ -479,14 +479,14 @@ The [Phalcon\Cache\FrontendInterface](api/Phalcon_Cache) interface must be imple
 
 | 适配器                                                                             | 描述                             | 信息                                        | 所需的扩展                                              |
 | ------------------------------------------------------------------------------- | ------------------------------ | ----------------------------------------- | -------------------------------------------------- |
-| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache)                   | 存储数据到替代 PHP 缓存 (APC)。          | [APC](http://php.net/apc)                 | [APC](http://pecl.php.net/package/APC)             |
-| `Phalcon\Cache\Backend\Apcu`                                                 | 存储数据的处理 (APC 不操作码缓存)           | [APCu](http://php.net/apcu)               | [APCu](http://pecl.php.net/package/APCu)           |
+| [Phalcon\Cache\Backend\Apc](api/Phalcon_Cache)                   | 存储数据到替代 PHP 缓存 (APC)。          | [APC](https://php.net/apc)                 | [APC](https://pecl.php.net/package/APC)             |
+| `Phalcon\Cache\Backend\Apcu`                                                 | 存储数据的处理 (APC 不操作码缓存)           | [APCu](https://php.net/apcu)               | [APCu](https://pecl.php.net/package/APCu)           |
 | [Phalcon\Cache\Backend\File](api/Phalcon_Cache)                 | 存储到本地普通文件的数据。                  |                                           |                                                    |
-| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache) | 存储到 memcached 服务器数据。           | [Memcached](http://www.php.net/memcached) | [Memcached](http://pecl.php.net/package/memcached) |
-| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache)         | 存储到 memcached 服务器数据。           | [Memcache](http://www.php.net/memcache)   | [Memcache](http://pecl.php.net/package/memcache)   |
+| [Phalcon\Cache\Backend\Libmemcached](api/Phalcon_Cache) | 存储到 memcached 服务器数据。           | [Memcached](https://www.php.net/memcached) | [Memcached](https://pecl.php.net/package/memcached) |
+| [Phalcon\Cache\Backend\Memcache](api/Phalcon_Cache)         | 存储到 memcached 服务器数据。           | [Memcache](https://www.php.net/memcache)   | [Memcache](https://pecl.php.net/package/memcache)   |
 | [Phalcon\Cache\Backend\Memory](api/Phalcon_Cache)             | 将数据存储在内存中                      |                                           |                                                    |
-| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache)               | Stores data to Mongo Database. | [MongoDB](http://mongodb.org/)            | [Mongo](http://mongodb.org/)                       |
-| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache)               | 储存数据到Redis.                    | [Redis](http://redis.io/)                 | [Redis](http://pecl.php.net/package/redis)         |
+| [Phalcon\Cache\Backend\Mongo](api/Phalcon_Cache)               | Stores data to Mongo Database. | [MongoDB](https://mongodb.org/)            | [Mongo](https://mongodb.org/)                       |
+| [Phalcon\Cache\Backend\Redis](api/Phalcon_Cache)               | 储存数据到Redis.                    | [Redis](https://redis.io/)                 | [Redis](https://pecl.php.net/package/redis)         |
 | [Phalcon\Cache\Backend\Xcache](api/Phalcon_Cache)             | 在 XCache 中存储数据。                | XCache                                   |  XCache                                            |
 
 ##### **注意**在 PHP 7 使用Phalcon `apc` 基于适配器类你需要从 pecl 安装 `apcu` 和 `apcu_bc` 的包。 Now in Phalcon 3.4.0 you can switch your `<em>\Apc` classes to `</em>\Apcu` and remove `apcu_bc`. Keep in mind that in Phalcon 4 we will most likely remove all `*\Apc` classes. {.alert.alert-warning}
@@ -552,7 +552,7 @@ This backend will store cached content on a memcached server. Per default persis
 
 **客户端选项**
 
-Used for setting Memcached options. See [Memcached::setOptions](http://php.net/manual/en/memcached.setoptions.php) for more.
+Used for setting Memcached options. See [Memcached::setOptions](https://php.net/manual/en/memcached.setoptions.php) for more.
 
 **示例**
 
@@ -605,7 +605,7 @@ This backend will store cached content on a memcached server. The available opti
 
 ### APC 后端选项
 
-This backend will store cached content on Alternative PHP Cache ([APC](http://php.net/apc)). The available options for this backend are:
+This backend will store cached content on Alternative PHP Cache ([APC](https://php.net/apc)). The available options for this backend are:
 
 | 选项       | 描述           |
 | -------- | ------------ |
@@ -615,7 +615,7 @@ This backend will store cached content on Alternative PHP Cache ([APC](http://ph
 
 ### APCU 后端选项
 
-This backend will store cached content on Alternative PHP Cache ([APCU](http://php.net/apcu)). The available options for this backend are:
+This backend will store cached content on Alternative PHP Cache ([APCU](https://php.net/apcu)). The available options for this backend are:
 
 | 选项       | 描述           |
 | -------- | ------------ |
@@ -625,7 +625,7 @@ This backend will store cached content on Alternative PHP Cache ([APCU](http://p
 
 ### Mongo后端选项
 
-This backend will store cached content on a MongoDB server ([MongoDB](http://mongodb.org/)). The available options for this backend are:
+This backend will store cached content on a MongoDB server ([MongoDB](https://mongodb.org/)). The available options for this backend are:
 
 | 选项           | 描述              |
 | ------------ | --------------- |
@@ -648,7 +648,7 @@ This backend will store cached content on XCache (XCache                    ). T
 
 ### Redis后端选项
 
-This backend will store cached content on a Redis server ([Redis](http://redis.io/)). The available options for this backend are:
+This backend will store cached content on a Redis server ([Redis](https://redis.io/)). The available options for this backend are:
 
 | 选项           | 描述                     |
 | ------------ | ---------------------- |
