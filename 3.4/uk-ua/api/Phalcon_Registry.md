@@ -6,7 +6,7 @@ title: 'Phalcon\Registry'
 ---
 # Final class **Phalcon\Registry**
 
-*implements* [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php), [Countable](https://php.net/manual/en/class.countable.php), [Iterator](http://php.net/manual/en/class.iterator.php), [Traversable](http://php.net/manual/en/class.traversable.php)
+*implements* [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php), [Countable](https://php.net/manual/en/class.countable.php), [Iterator](https://php.net/manual/en/class.iterator.php), [Traversable](https://php.net/manual/en/class.traversable.php)
 
 <a href="https://github.com/phalcon/cphalcon/tree/v3.4.0/phalcon/registry.zep" class="btn btn-default btn-sm">Source on GitHub</a>
 
