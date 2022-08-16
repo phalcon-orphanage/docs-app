@@ -40,6 +40,8 @@
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://assets.phalcon.io/phalcon/images/phalcon-logo.png">
 
+    <link rel="preconnect" href="https://{{ site.app.algolia.appId }}-dsn.algolia.net" crossorigin />
+
     <link rel="apple-touch-icon" sizes="180x180" href="https://assets.phalcon.io/phalcon/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="https://assets.phalcon.io/phalcon/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="https://assets.phalcon.io/phalcon/favicons/favicon-16x16.png">
@@ -55,7 +57,6 @@
           href="https://assets.phalcon.io/phalcon/css/main.min.css">
     <link rel="stylesheet" href="/assets/css/custom.css">
     <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/@docsearch/css@alpha" />
-
+          href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
     {% include analytics.html %}
 </head>

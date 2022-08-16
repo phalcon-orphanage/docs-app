@@ -1,36 +1,33 @@
 <script src="/assets/js/main.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 <script src="/assets/js/codeblock.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@alpha"></script>
+<script src="https://cdn.jsdelivr.net/npm/@docsearch/js@3"></script>
 <script>
-docsearch(
-    {
-        inputSelector: '#docs-search',
-        appId: '{{ site.app.algolia.appId }}',
-        indexName: '{{ site.app.algolia.indexName }}',
-        apiKey: '{{ site.app.algolia.apiKey }}',
-        algoliaOptions: {
-            'facetFilters': [
-                "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
-                "version:{{ page.version }}"
-            ]
-        },
-        debug: false // Set debug to true if you want to inspect the dropdown
-    }
-);
-docsearch(
-  {
-    inputSelector: '#docs-search-mobile',
+
+docsearch({
+    container: '#docs-search',
     appId: '{{ site.app.algolia.appId }}',
     indexName: '{{ site.app.algolia.indexName }}',
     apiKey: '{{ site.app.algolia.apiKey }}',
     algoliaOptions: {
-      'facetFilters': [
-        "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
-        "version:{{ page.version }}"
-      ]
+        'facetFilters': [
+            "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
+            "version:{{ page.version }}"
+        ]
     },
     debug: false // Set debug to true if you want to inspect the dropdown
-  }
-);
+});
+docsearch({
+    container: '#docs-search-mobile',
+    appId: '{{ site.app.algolia.appId }}',
+    indexName: '{{ site.app.algolia.indexName }}',
+    apiKey: '{{ site.app.algolia.apiKey }}',
+    algoliaOptions: {
+        'facetFilters': [
+            "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
+            "version:{{ page.version }}"
+        ]
+    },
+    debug: false // Set debug to true if you want to inspect the dropdown
+});
 </script>

@@ -53,16 +53,18 @@
 
             <nav class="header-nav--mobile _navToggle"
                  onclick="event.stopPropagation();">
-                <form>
-                    <input class="header__search"
-                           type="search"
-                           id="docs-search-mobile"
-                           placeholder="{{ homeStrings['search'] }}"
-                           aria-label="{{ homeStrings['search_for'] }}"
-                           autocomplete="off"
-                           data-siteurl="{{ site.url }}"
-                           data-docs-version="{{ page.version }}">
-                </form>
+                <div class="header__search"
+                     id="docs-search-mobile"></div>
+<!--                <form>-->
+<!--                    <input class="header__search"-->
+<!--                           type="search"-->
+<!--                           id="docs-search-mobile"-->
+<!--                           placeholder="{{ homeStrings['search'] }}"-->
+<!--                           aria-label="{{ homeStrings['search_for'] }}"-->
+<!--                           autocomplete="off"-->
+<!--                           data-siteurl="{{ site.url }}"-->
+<!--                           data-docs-version="{{ page.version }}">-->
+<!--                </form>-->
                 <ul>
                     <li>
                         <a href="https://phalcon.io/docs">{{ homeStrings['download'] }}</a>
@@ -80,7 +82,6 @@
                                     <li><a href="https://phalcon.io/telegram">Telegram</a></li>
                                     <li><a href="https://phalcon.io/gab">Gab</a></li>
                                     <li><a href="https://phalcon.io/mewe">MeWe</a></li>
-                                    <li><a href="https://phalcon.io/parler">Parler</a></li>
                                     <li><a href="https://phalcon.io/fb">Facebook</a></li>
                                     <li><a href="https://phalcon.io/t">Twitter</a></li>
                                     <li><a href="https://phalcon.io/bitchute">Bitchute</a></li>
@@ -182,16 +183,18 @@
                 </div>
             </div>
 
-            <form>
-                <input class="header__search"
-                       type="search"
-                       id="docs-search"
-                       placeholder="{{ homeStrings['search'] }}"
-                       aria-label="{{ homeStrings['search_for'] }}"
-                       autocomplete="off"
-                       data-siteurl="{{ site.url }}"
-                       data-docs-version="{{ page.version }}">
-            </form>
+            <div class="header__search"
+                 id="docs-search"></div>
+<!--            <form>-->
+<!--                <input class="header__search"-->
+<!--                       type="search"-->
+<!--                       id="docs-search"-->
+<!--                       placeholder="{{ homeStrings['search'] }}"-->
+<!--                       aria-label="{{ homeStrings['search_for'] }}"-->
+<!--                       autocomplete="off"-->
+<!--                       data-siteurl="{{ site.url }}"-->
+<!--                       data-docs-version="{{ page.version }}">-->
+<!--            </form>-->
 
             <div class="header__github">
                 <a href="https://phalcon.io/github" aria-label="github">
