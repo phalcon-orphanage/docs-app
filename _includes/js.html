@@ -9,11 +9,11 @@ docsearch({
     appId: '{{ site.app.algolia.appId }}',
     indexName: '{{ site.app.algolia.indexName }}',
     apiKey: '{{ site.app.algolia.apiKey }}',
-    algoliaOptions: {
-        'facetFilters': [
-            "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
-            "version:{{ page.version }}"
-        ]
+    searchParameters: {
+        facetFilters: [
+            'language:{{ site.data.supported[page.language][\'iso_639_1\'] | default: en }}',
+            'version:{{ page.version }}'
+        ],
     },
     debug: false // Set debug to true if you want to inspect the dropdown
 });
@@ -22,11 +22,11 @@ docsearch({
     appId: '{{ site.app.algolia.appId }}',
     indexName: '{{ site.app.algolia.indexName }}',
     apiKey: '{{ site.app.algolia.apiKey }}',
-    algoliaOptions: {
-        'facetFilters': [
-            "lang:{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" ,
-            "version:{{ page.version }}"
-        ]
+    searchParameters: {
+        facetFilters: [
+            'language:{{ site.data.supported[page.language][\'iso_639_1\'] | default: en }}',
+            'version:{{ page.version }}'
+        ],
     },
     debug: false // Set debug to true if you want to inspect the dropdown
 });

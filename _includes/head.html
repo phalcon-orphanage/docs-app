@@ -58,5 +58,8 @@
     <link rel="stylesheet" href="/assets/css/custom.css">
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+
+    <meta name="docsearch:language" content="{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" />
+    <meta name="docsearch:version" content="{{ page.version }}" />
     {% include analytics.html %}
 </head>
