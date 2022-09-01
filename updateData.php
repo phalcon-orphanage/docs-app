@@ -26,13 +26,7 @@ foreach ($versions as $version) {
         copy($source, $target);
         echo '.';
 
-        if ('4.0' === $version) {
-            $source = $base . '4-0/' . $language . '/meta-topics.json';
-        } else {
-            $source = $base . $version . '/' . $language . '/meta-topics.json'
-            ;
-        }
-
+        $source = $base . $version . '/' . $language . '/meta-topics.json';
         $target = $base . '_data/' . $pathVersion . '-' . $language . '-meta-topics.json';
         copy($source, $target);
         echo '.';
