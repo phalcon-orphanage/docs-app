@@ -45,7 +45,23 @@
       "zh-cn"
     ],
     "5.0": [
-      "en"
+      "cs-cz",
+      "de-de",
+      "el-gr",
+      "en",
+      "es-es",
+      "fa-ir",
+      "fr-fr",
+      "id-id",
+      "it-it",
+      "ja-jp",
+      "ko-kr",
+      "pl-pl",
+      "pt-br",
+      "ru-ru",
+      "tr-tr",
+      "uk-ua",
+      "zh-cn"
     ]
   }
 }
