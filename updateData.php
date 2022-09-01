@@ -21,7 +21,7 @@ foreach ($versions as $version) {
 
     foreach ($languages as $language) {
         $source = $base . $version . '/' . $language . '/meta-home.json';
-        $target = $base . $version . '_data/' . $version . '-' . $language . '-meta-home.json';
+        $target = $base . $version . '/_data/' . $version . '-' . $language . '-meta-home.json';
         copy($source, $target);
         echo '.';
 
