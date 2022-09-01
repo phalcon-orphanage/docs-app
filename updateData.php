@@ -20,21 +20,20 @@ foreach ($versions as $version) {
     );
 
     foreach ($languages as $language) {
-        $source = $base . $version . '/' . $language . '/meta-home.json';
-        $target = $base . $version . '/_data/' . $version . '-' . $language . '-meta-home.json';
+        $pathVersion = str_replace('.', '-', $version);
+        $source      = $base . $version . '/' . $language . '/meta-home.json';
+        $target      = $base . $version . '/_data/' . $pathVersion . '-' . $language . '-meta-home.json';
         copy($source, $target);
         echo '.';
 
         if ('4.0' === $version) {
             $source = $base . '4-0/' . $language . '/meta-topics.json';
         } else {
-            $source = $base
-                . str_replace('.', '-', $version) . '/'
-                . $language . '/meta-topics-5.json'
+            $source = $base . $pathVersion . '/' . $language . '/meta-topics.json'
             ;
         }
 
-        $target = $base . '_data/' . $version . '-' . $language . '-meta-topics.json';
+        $target = $base . '_data/' . $pathVersion . '-' . $language . '-meta-topics.json';
         copy($source, $target);
         echo '.';
     }
