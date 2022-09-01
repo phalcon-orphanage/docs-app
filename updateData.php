@@ -22,14 +22,14 @@ foreach ($versions as $version) {
     foreach ($languages as $language) {
         $pathVersion = str_replace('.', '-', $version);
         $source      = $base . $version . '/' . $language . '/meta-home.json';
-        $target      = $base . $version . '/_data/' . $pathVersion . '-' . $language . '-meta-home.json';
+        $target      = $base . '_data/' . $pathVersion . '-' . $language . '-meta-home.json';
         copy($source, $target);
         echo '.';
 
         if ('4.0' === $version) {
             $source = $base . '4-0/' . $language . '/meta-topics.json';
         } else {
-            $source = $base . $pathVersion . '/' . $language . '/meta-topics.json'
+            $source = $base . $version . '/' . $language . '/meta-topics.json'
             ;
         }
 
