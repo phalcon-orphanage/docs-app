@@ -1,9 +1,15 @@
 # Defaults
-/                                                              /5.0/en/introduction                                     301!
-/latest                                                        /5.0/en/introduction                                     301!
+/                                                              /4.0/en/introduction                                     301!
+/latest                                                        /4.0/en/introduction                                     301!
 
-/en                                                            /5.0/en/introduction                                     301!
-/latest/:lang                                                  /5.0/:lang/introduction                                  301!
+/en                                                            /4.0/en/introduction                                     301!
+/latest/:lang                                                  /4.0/:lang/introduction                                  301!
+
+#/                                                              /5.0/en/introduction                                     301!
+#/latest                                                        /5.0/en/introduction                                     301!
+
+#/en                                                            /5.0/en/introduction                                     301!
+#/latest/:lang                                                  /5.0/:lang/introduction                                  301!
 
 # Redirects for refactored classes
 /5.0/:lang/collection                                          /5.0/:lang/support-collection                            301!
@@ -16,6 +22,7 @@
 /5.0/:lang/loader                                              /5.0/:lang/autoload-loader                               301!
 /5.0/:lang/registry                                            /5.0/:lang/support-registry                              301!
 /5.0/:lang/security                                            /5.0/:lang/encryption-security                           301!
+/5.0/:lang/security-jwt                                        /5.0/:lang/encryption-security-jwt                       301!
 /5.0/:lang/url                                                 /5.0/:lang/mvc-url                                       301!
 /5.0/:lang/validation                                          /5.0/:lang/filter-validation                             301!
 /5.0/:lang/version                                             /5.0/:lang/support-version                               301!

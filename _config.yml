@@ -55,5 +55,3 @@ exclude:
   - serve
   - netlify.toml
   - updateData.php
-
-

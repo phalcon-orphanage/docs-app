@@ -6,24 +6,38 @@ $comments = 'https://api.github.com/repos/phalcon/cphalcon/issues/14608/comments
 
 
 echo "Updating JSON" . PHP_EOL;
-$languages = array_filter(glob($base . '4.0/*'), 'is_dir');
+$versions = ['4.0', '5.0'];
 
-$languages = array_map(
-    function ($element) use ($base) {
-        return str_replace($base . "4.0/", "", $element);
-    },
-    $languages
-);
+foreach ($versions as $version) {
+    echo "Version " . $version . PHP_EOL;
+    $languages = array_filter(glob($base . $version . '/*'), 'is_dir');
 
-foreach ($languages as $language) {
-    $source = $base . '4.0/' . $language . '/meta-home.json';
-    $target = $base . '_data/4-0-' . $language . '-meta-home.json';
-    copy($source, $target);
-    echo '.';
-    $source = $base . '4.0/' . $language . '/meta-topics.json';
-    $target = $base . '_data/4-0-' . $language . '-meta-topics.json';
-    copy($source, $target);
-    echo '.';
+    $languages = array_map(
+        function ($element) use ($base, $version) {
+            return str_replace($base . $version . '/', '', $element);
+        },
+        $languages
+    );
+
+    foreach ($languages as $language) {
+        $source = $base . $version . '/' . $language . '/meta-home.json';
+        $target = $base . $version . '_data/' . $version . '-' . $language . '-meta-home.json';
+        copy($source, $target);
+        echo '.';
+
+        if ('4.0' === $version) {
+            $source = $base . '4-0/' . $language . '/meta-topics.json';
+        } else {
+            $source = $base
+                . str_replace('.', '-', $version) . '/'
+                . $language . '/meta-topics-5.json'
+            ;
+        }
+
+        $target = $base . '_data/' . $version . '-' . $language . '-meta-topics.json';
+        copy($source, $target);
+        echo '.';
+    }
 }
 
 echo PHP_EOL;
@@ -123,10 +137,12 @@ foreach ($result as $item) {
 
 $output .= PHP_EOL;
 
-foreach (glob($base . '4.0/*', GLOB_ONLYDIR) as $language) {
-    echo "Processing language " . $language . PHP_EOL;
-    $fileName = $language . '/new-feature-request-list.md';
-    $existing = file_get_contents($fileName);
-    $existing .= PHP_EOL . PHP_EOL . $output;
-    file_put_contents($fileName, $existing);
+foreach ($versions as $version) {
+    foreach (glob($base . $version . '/*', GLOB_ONLYDIR) as $language) {
+        echo "Processing language " . $language . ' ' . $version . PHP_EOL;
+        $fileName = $language . '/new-feature-request-list.md';
+        $existing = file_get_contents($fileName);
+        $existing .= PHP_EOL . PHP_EOL . $output;
+        file_put_contents($fileName, $existing);
+    }
 }
