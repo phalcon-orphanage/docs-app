@@ -1,0 +1,463 @@
+[
+    {
+        "text": "Загальне",
+        "url": "/знайомство",
+        "menu": [
+            {
+                "text": "Знайомство",
+                "url": "/знайомство"
+            },
+            {
+                "text": "Примітки до збірок",
+                "url": "https://github.com/phalcon/cphalcon/blob/4.0.x/CHANGELOG.md",
+                "external": true
+            },
+            {
+                "text": "Оновлення",
+                "url": "/upgrade"
+            },
+            {
+                "text": "Спонсори",
+                "url": "/sponsors"
+            }
+        ]
+    },
+    {
+        "text": "Участь у розвитку фреймворка",
+        "url": "",
+        "menu": [
+            {
+                "text": "Огляд",
+                "url": "/contributions"
+            },
+            {
+                "text": "Ваш вклад (GitHub Pull Requests)",
+                "url": "/new-pull-request"
+            },
+            {
+                "text": "ЗНФ",
+                "url": "/new-feature-request"
+            },
+            {
+                "text": "Зворотнє трасування помилок",
+                "url": "/generating-backtrace"
+            },
+            {
+                "text": "Відтворювані тести",
+                "url": "/reproducible-tests"
+            },
+            {
+                "text": "Тестування середовища",
+                "url": "/testing-environment"
+            },
+            {
+                "text": "Стандарти кодування",
+                "url": "/coding-standard"
+            }
+        ]
+    },
+    {
+        "text": "Початок роботи",
+        "url": "",
+        "menu": [
+            {
+                "text": "Встановлення",
+                "url": "/installation"
+            },
+            {
+                "text": "Налаштування веб-сервера",
+                "url": "/webserver-setup"
+            }
+        ]
+    },
+    {
+        "text": "Середовища розробки",
+        "url": "",
+        "menu": [
+            {
+                "text": "Devilbox",
+                "url": "/environments-devilbox"
+            },
+            {
+                "text": "Nanobox",
+                "url": "/environments-nanobox"
+            }
+        ]
+    },
+    {
+        "text": "Інструменти розробки",
+        "url": "",
+        "menu": [
+            {
+                "text": "Інструменти розробки Phalcon",
+                "url": "/devtools"
+            },
+            {
+                "text": "Відлагодження",
+                "url": "/debug"
+            },
+            {
+                "text": "Міграції",
+                "url": "/db-migrations"
+            },
+            {
+                "text": "Юніт-тестування",
+                "url": "/unit-testing"
+            }
+        ]
+    },
+    {
+        "text": "Посібники",
+        "url": "",
+        "menu": [
+            {
+                "text": "Основи",
+                "url": "/tutorial-basic"
+            },
+            {
+                "text": "Invo",
+                "url": "/tutorial-invo"
+            },
+            {
+                "text": "REST",
+                "url": "/tutorial-rest"
+            },
+            {
+                "text": "Vokuro",
+                "url": "/tutorial-vokuro"
+            },
+            {
+                "text": "Use case",
+                "url": "/use-case"
+            },
+            {
+                "text": "Продуктивність",
+                "url": "/performance"
+            }
+        ]
+    },
+    {
+        "text": "Ядро",
+        "url": "",
+        "menu": [
+            {
+                "text": "Індекс API",
+                "url": "/api/"
+            },
+            {
+                "text": "Application",
+                "url": "/application"
+            },
+            {
+                "text": "Micro",
+                "url": "/application-micro"
+            },
+            {
+                "text": "Cli",
+                "url": "/application-cli"
+            },
+            {
+                "text": "DI контейнер",
+                "url": "/di"
+            },
+            {
+                "text": "MVC",
+                "url": "/mvc"
+            },
+            {
+                "text": "Namespaces",
+                "url": "/namespaces"
+            }
+        ]
+    },
+    {
+        "text": "Служби",
+        "url": "",
+        "menu": [
+            {
+                "text": "Cache",
+                "url": "/cache"
+            },
+            {
+                "text": "Config",
+                "url": "/config"
+            },
+            {
+                "text": "Escaper",
+                "url": "/escaper"
+            },
+            {
+                "text": "Loader",
+                "url": "/loader"
+            },
+            {
+                "text": "Журнал",
+                "url": "/logger"
+            }
+        ]
+    },
+    {
+        "text": "База данних",
+        "url": "",
+        "menu": [
+            {
+                "text": "Рівень абстрагування",
+                "url": "/db-layer"
+            },
+            {
+                "text": "Мова запитів Phalcon",
+                "url": "/db-phql"
+            },
+            {
+                "text": "ODM",
+                "url": "/db-odm"
+            },
+            {
+                "text": "Моделі",
+                "url": "/db-models"
+            },
+            {
+                "text": "Поведінки",
+                "url": "/db-models-behaviors"
+            },
+            {
+                "text": "Cache",
+                "url": "/db-models-cache"
+            },
+            {
+                "text": "Events",
+                "url": "/db-models-events"
+            },
+            {
+                "text": "Metadata",
+                "url": "/db-models-metadata"
+            },
+            {
+                "text": "Зв&#039;язки",
+                "url": "/db-models-relationships"
+            },
+            {
+                "text": "Transactions",
+                "url": "/db-models-transactions"
+            },
+            {
+                "text": "Валідатори",
+                "url": "/db-models-validation"
+            },
+            {
+                "text": "Pagination",
+                "url": "/db-pagination"
+            },
+            {
+                "text": "Міграції",
+                "url": "/db-migrations"
+            }
+        ]
+    },
+    {
+        "text": "Фронтенд",
+        "url": "",
+        "menu": [
+            {
+                "text": "Assets",
+                "url": "/assets"
+            },
+            {
+                "text": "Flash-месенджер",
+                "url": "/flash"
+            },
+            {
+                "text": "Форми",
+                "url": "/forms"
+            },
+            {
+                "text": "Зображення",
+                "url": "/image"
+            },
+            {
+                "text": "Тег",
+                "url": "/tag"
+            },
+            {
+                "text": "Вигляд",
+                "url": "/views"
+            },
+            {
+                "text": "Volt",
+                "url": "/volt"
+            }
+        ]
+    },
+    {
+        "text": "Бізнес логіка",
+        "url": "",
+        "menu": [
+            {
+                "text": "Списки управління доступом (ACL)",
+                "url": "/acl"
+            },
+            {
+                "text": "Примітки",
+                "url": "/annotations"
+            },
+            {
+                "text": "Контролери",
+                "url": "/controllers"
+            },
+            {
+                "text": "Диспетчер",
+                "url": "/dispatcher"
+            },
+            {
+                "text": "Менеджер подій",
+                "url": "/events"
+            },
+            {
+                "text": "Фільтри",
+                "url": "/filter"
+            },
+            {
+                "text": "Маршрутизація",
+                "url": "/routing"
+            },
+            {
+                "text": "Сесії",
+                "url": "/session"
+            },
+            {
+                "text": "Гіперпосилання",
+                "url": "/url"
+            },
+            {
+                "text": "Валідація",
+                "url": "/validation"
+            }
+        ]
+    },
+    {
+        "text": "HTTP",
+        "url": "",
+        "menu": [
+            {
+                "text": "Куки",
+                "url": "/cookies"
+            },
+            {
+                "text": "Запит",
+                "url": "/request"
+            },
+            {
+                "text": "Відповідь",
+                "url": "/response"
+            }
+        ]
+    },
+    {
+        "text": "Безпека",
+        "url": "",
+        "menu": [
+            {
+                "text": "Crypto",
+                "url": "/crypt"
+            },
+            {
+                "text": "Безпека",
+                "url": "/security"
+            },
+            {
+                "text": "JWT",
+                "url": "/security-jwt"
+            }
+        ]
+    },
+    {
+        "text": "PSR",
+        "url": "",
+        "menu": [
+            {
+                "text": "PSR-3 Logger",
+                "url": "/logger"
+            },
+            {
+                "text": "PSR-0, PSR-4 навантажувач",
+                "url": "/loader"
+            },
+            {
+                "text": "HTTP запит PSR-7",
+                "url": "/http-request"
+            },
+            {
+                "text": "PSR-7 HTTP Response",
+                "url": "/http-response"
+            },
+            {
+                "text": "PSR-7 HTTP Server Request",
+                "url": "/http-server-request"
+            },
+            {
+                "text": "PSR-7 HTTP Stream",
+                "url": "/http-stream"
+            },
+            {
+                "text": "PSR-7 HTTP UploadedFile",
+                "url": "/http-uploaded-file"
+            },
+            {
+                "text": "PSR-7 HTTP Uri",
+                "url": "/http-uri"
+            },
+            {
+                "text": "PSR-11 Container",
+                "url": "/container"
+            },
+            {
+                "text": "PSR-13 HTML Links",
+                "url": "/html-link"
+            },
+            {
+                "text": "PSR-17 HTTP Factories",
+                "url": "/http-factories"
+            }
+        ]
+    },
+    {
+        "text": "i18n (локалізації)",
+        "url": "",
+        "menu": [
+            {
+                "text": "Internationalization",
+                "url": "/i18n"
+            },
+            {
+                "text": "Переклад",
+                "url": "/translate"
+            }
+        ]
+    },
+    {
+        "text": "Службові програми",
+        "url": "",
+        "menu": [
+            {
+                "text": "Колекція",
+                "url": "/collection"
+            },
+            {
+                "text": "Domain",
+                "url": "/domain"
+            },
+            {
+                "text": "HTML",
+                "url": "/html"
+            },
+            {
+                "text": "Helper",
+                "url": "/helper"
+            },
+            {
+                "text": "Registry",
+                "url": "/registry"
+            }
+        ]
+    }
+]
