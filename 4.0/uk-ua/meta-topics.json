@@ -340,7 +340,7 @@
         "menu": [
             {
                 "text": "Куки",
-                "url": "/cookies"
+                "url": "/response#cookies "
             },
             {
                 "text": "Запит",
