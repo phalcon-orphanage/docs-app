@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Mvc\Url'
 ---
 # Class **Phalcon\Mvc\Url**
@@ -281,5 +279,3 @@ abstract public  **get** ([*mixed* $uri], [*mixed* $args], [*mixed* $local])
 abstract public  **path** ([*mixed* $path])
 
 ...
-
-

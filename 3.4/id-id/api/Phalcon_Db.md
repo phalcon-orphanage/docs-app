@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'id-id'
-version: '3.4'
 title: 'Phalcon\Db'
 ---
 # Abstract class **Phalcon\Db**
@@ -7794,5 +7793,3 @@ abstract public  **setFetchMode** (*mixed* $fetchMode)
 abstract public  **getInternalResult** ()
 
 ...
-
-

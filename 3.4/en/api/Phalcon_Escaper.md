@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Escaper'
 ---
 # Class **Phalcon\Escaper**
@@ -239,5 +237,3 @@ abstract public  **escapeJs** (*mixed* $js)
 abstract public  **escapeUrl** (*mixed* $url)
 
 ...
-
-

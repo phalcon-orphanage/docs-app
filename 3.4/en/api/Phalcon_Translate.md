@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Translate'
 ---
 # Abstract class **Phalcon\Translate**
@@ -638,5 +636,3 @@ Replaces placeholders by the values passed
 abstract public  **replacePlaceholders** (*mixed* $translation, [*mixed* $placeholders])
 
 ...
-
-

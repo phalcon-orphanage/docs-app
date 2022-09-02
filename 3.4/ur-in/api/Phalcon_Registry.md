@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'ur-in'
-version: '3.4'
 title: 'Phalcon\Registry'
 ---
 # Final class **Phalcon\Registry**
@@ -148,5 +147,3 @@ final public  **__isset** (*mixed* $key)
 final public  **__unset** (*mixed* $key)
 
 ...
-
-

@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'id-id'
-version: '3.4'
 title: 'Phalcon\Mvc\Router'
 ---
 # Class **Phalcon\Mvc\Router**
@@ -1550,5 +1549,3 @@ abstract public  **getRouteById** (*mixed* $id)
 abstract public  **getRouteByName** (*mixed* $name)
 
 ...
-
-

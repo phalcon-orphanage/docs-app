@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Mvc\Model'
 ---
 # Abstract class **Phalcon\Mvc\Model**
@@ -1743,4 +1741,3 @@ Gets the stack trace as a string
 public *string* **__toString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 String representation of the exception
-

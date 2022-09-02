@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Criteria'
 ---
 # Class **Phalcon\Mvc\Model\Criteria**
@@ -483,5 +481,3 @@ abstract public  **getParams** ()
 abstract public  **execute** ()
 
 ...
-
-

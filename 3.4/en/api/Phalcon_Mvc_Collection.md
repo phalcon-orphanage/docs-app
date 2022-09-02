@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Mvc\Collection'
 ---
 # Abstract class **Phalcon\Mvc\Collection**
@@ -1245,5 +1243,3 @@ abstract public static  **count** ([*array* $parameters])
 abstract public  **delete** ()
 
 ...
-
-

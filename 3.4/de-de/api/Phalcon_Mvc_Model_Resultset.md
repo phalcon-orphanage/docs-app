@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'de-de'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Resultset'
 ---
 # Abstract class **Phalcon\Mvc\Model\Resultset**
@@ -730,5 +729,3 @@ abstract public  **getCache** ()
 abstract public  **toArray** ()
 
 ...
-
-

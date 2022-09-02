@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'es-es'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Relation'
 ---
 # Class **Phalcon\Mvc\Model\Relation**
@@ -204,5 +203,3 @@ abstract public  **getIntermediateModel** ()
 abstract public  **getIntermediateReferencedFields** ()
 
 ...
-
-

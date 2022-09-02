@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'tr-tr'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Validator'
 ---
 # Abstract class **Phalcon\Mvc\Model\Validator**
@@ -974,5 +973,3 @@ abstract public  **getMessages** ()
 abstract public  **validate** ([Phalcon\Mvc\EntityInterface](/3.4/en/api/Phalcon_Mvc_EntityInterface) $record)
 
 ...
-
-

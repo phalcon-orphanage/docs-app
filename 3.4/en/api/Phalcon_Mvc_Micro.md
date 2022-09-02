@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Mvc\Micro'
 ---
 # Class **Phalcon\Mvc\Micro**
@@ -623,5 +621,3 @@ Calling __call method
 abstract public  **call** ([Phalcon\Mvc\Micro](/3.4/en/api/Phalcon_Mvc_Micro) $application)
 
 ...
-
-

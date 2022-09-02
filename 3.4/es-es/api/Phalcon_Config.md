@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'es-es'
-version: '3.4'
 title: 'Phalcon\Config'
 ---
 # Class **Phalcon\Config**
@@ -1500,5 +1499,3 @@ public static  **load** ([Phalcon\Config](/3.4/en/api/Phalcon_Config) | *array* 
 protected static  **loadClass** (*mixed* $namespace, *mixed* $config)
 
 ...
-
-

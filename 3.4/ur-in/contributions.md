@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'ur-in'
-version: '3.4'
 ---
 ![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='contributing'></a>

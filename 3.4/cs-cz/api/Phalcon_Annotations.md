@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'cs-cz'
-version: '3.4'
 title: 'Phalcon\Annotations'
 ---
 # Abstract class **Phalcon\Annotations\Adapter**
@@ -877,6 +876,3 @@ Returns the raw parsing intermediate definitions used to construct the reflectio
 public static *array data* **__set_state** (*mixed* $data)
 
 Restores the state of a Phalcon\Annotations\Reflection variable export
-
-
-

@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'fa-ir'
-version: '3.4'
 title: 'Phalcon\Di'
 ---
 # Class **Phalcon\Di**
@@ -1299,4 +1298,3 @@ abstract public  **offsetSet** (*mixed* $offset, *mixed* $value) inherited from 
 abstract public  **offsetUnset** (*mixed* $offset) inherited from [ArrayAccess](https://php.net/manual/en/class.arrayaccess.php)
 
 ...
-

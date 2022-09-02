@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Forms\Element'
 ---
 # Abstract class **Phalcon\Forms\Element**
@@ -3331,6 +3329,3 @@ Checks if a form is registered in the forms manager
 public  **set** (*mixed* $name, [Phalcon\Forms\Form](/3.4/en/api/Phalcon_Forms) $form)
 
 Registers a form in the Forms Manager
-
-
-

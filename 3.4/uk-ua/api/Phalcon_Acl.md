@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'uk-ua'
-version: '3.4'
 title: 'Phalcon\Acl'
 ---
 # Abstract class **Phalcon\Acl**
@@ -770,5 +769,3 @@ Returns role description
 abstract public  **__toString** ()
 
 Magic method __toString
-
-

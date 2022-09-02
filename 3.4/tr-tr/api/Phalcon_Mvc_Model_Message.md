@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'tr-tr'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Message'
 ---
 # Class **Phalcon\Mvc\Model\Message**
@@ -161,5 +160,3 @@ abstract public  **__toString** ()
 abstract public static  **__set_state** (*array* $message)
 
 ...
-
-

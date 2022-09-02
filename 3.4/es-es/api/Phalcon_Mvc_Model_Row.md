@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'es-es'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Row'
 ---
 

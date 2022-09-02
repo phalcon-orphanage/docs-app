@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'pl-pl'
-version: '3.4'
 title: 'Phalcon\Loader'
 ---
 # Class **Phalcon\Loader**
@@ -249,6 +248,3 @@ Gets the stack trace as a string
 public *string* **__toString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 String representation of the exception
-
-
-

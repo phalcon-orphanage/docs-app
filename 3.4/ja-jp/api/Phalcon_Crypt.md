@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'ja-jp'
-version: '3.4'
 title: 'Phalcon\Crypt'
 ---
 # Class **Phalcon\Crypt**
@@ -447,5 +446,3 @@ abstract public  **decryptBase64** (*mixed* $text, [*mixed* $key])
 abstract public  **getAvailableCiphers** ()
 
 ...
-
-

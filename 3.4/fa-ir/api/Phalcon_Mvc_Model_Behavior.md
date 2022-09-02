@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'fa-ir'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Behavior'
 ---
 # Abstract class **Phalcon\Mvc\Model\Behavior**
@@ -152,5 +151,3 @@ abstract public  **notify** (*mixed* $type, [Phalcon\Mvc\ModelInterface](/3.4/en
 abstract public  **missingMethod** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $model, *mixed* $method, [*mixed* $arguments])
 
 ...
-
-

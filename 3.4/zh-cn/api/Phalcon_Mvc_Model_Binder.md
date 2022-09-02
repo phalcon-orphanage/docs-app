@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'zh-cn'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Binder'
 ---
 # Class **Phalcon\Mvc\Model\Binder**
@@ -109,5 +108,3 @@ abstract public  **setCache** ([Phalcon\Cache\BackendInterface](/3.4/en/api/Phal
 abstract public  **bindToHandler** (*mixed* $handler, *array* $params, *mixed* $cacheKey, [*mixed* $methodName])
 
 ...
-
-

@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'tr-tr'
-version: '3.4'
 title: 'Phalcon\Assets\Collection'
 ---
 # Class **Phalcon\Assets\Collection**
@@ -1297,5 +1296,3 @@ abstract public  **getAttributes** ()
 abstract public  **getResourceKey** ()
 
 ...
-
-

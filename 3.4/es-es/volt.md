@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'es-es'
-version: '3.4'
 ---
 ![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='overview'></a>

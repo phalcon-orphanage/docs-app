@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Events\Event'
 ---
 # Class **Phalcon\Events\Event**
@@ -351,5 +349,3 @@ abstract public  **fire** (*mixed* $eventType, *mixed* $source, [*mixed* $data])
 abstract public  **getListeners** (*mixed* $type)
 
 ...
-
-

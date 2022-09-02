@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'uk-ua'
-version: '3.4'
 title: 'Phalcon\Logger'
 ---
 # Abstract class **Phalcon\Logger**
@@ -1325,6 +1324,3 @@ Sends/Writes a warning message to the log
 public  **alert** (*mixed* $message, [*array* $context])
 
 Sends/Writes an alert message to the log
-
-
-

@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'ja-jp'
-version: '3.4'
 title: 'Phalcon\Version'
 ---
 # Class **Phalcon\Version**
@@ -81,6 +80,3 @@ echo Phalcon\Version::getPart(
 );
 
 ```
-
-
-

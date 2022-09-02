@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'tr-tr'
-version: '3.4'
 title: 'Phalcon\Http\Cookie'
 ---
 # Class **Phalcon\Http\Cookie**
@@ -2014,5 +2013,3 @@ abstract public  **send** ()
 abstract public  **setFileToSend** (*mixed* $filePath, [*mixed* $attachmentName])
 
 ...
-
-

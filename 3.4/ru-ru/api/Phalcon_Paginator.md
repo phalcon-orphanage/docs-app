@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'ru-ru'
-version: '3.4'
 title: 'Phalcon\Paginator\Adapter'
 ---
 # Abstract class **Phalcon\Paginator\Adapter**
@@ -403,5 +402,3 @@ public static  **load** ([Phalcon\Config](/3.4/en/api/Phalcon_Config) | *array* 
 protected static  **loadClass** (*mixed* $namespace, *mixed* $config) inherited from [Phalcon\Factory](/3.4/en/api/Phalcon_Factory)
 
 ...
-
-

@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'id-id'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Manager'
 ---
 # Class **Phalcon\Mvc\Model\Manager**
@@ -679,5 +678,3 @@ abstract public  **getLastQuery** ()
 abstract public  **getRelationByAlias** (*mixed* $modelName, *mixed* $alias)
 
 ...
-
-

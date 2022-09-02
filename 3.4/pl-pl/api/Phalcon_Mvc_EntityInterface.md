@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'pl-pl'
-version: '3.4'
 title: 'Phalcon\Mvc\EntityInterface'
 ---
 # Interface **Phalcon\Mvc\EntityInterface**
@@ -17,5 +16,3 @@ abstract public  **readAttribute** (*mixed* $attribute)
 abstract public  **writeAttribute** (*mixed* $attribute, *mixed* $value)
 
 ...
-
-

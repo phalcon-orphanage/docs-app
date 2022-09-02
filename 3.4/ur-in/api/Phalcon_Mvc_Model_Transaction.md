@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'ur-in'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Transaction'
 ---
 # Class **Phalcon\Mvc\Model\Transaction**
@@ -562,5 +561,3 @@ abstract public  **isValid** ()
 abstract public  **setRollbackedRecord** ([Phalcon\Mvc\ModelInterface](/3.4/en/api/Phalcon_Mvc_ModelInterface) $record)
 
 ...
-
-

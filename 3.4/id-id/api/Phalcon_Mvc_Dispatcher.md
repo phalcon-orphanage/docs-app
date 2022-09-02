@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'id-id'
-version: '3.4'
 title: 'Phalcon\Mvc\Dispatcher'
 ---
 # Class **Phalcon\Mvc\Dispatcher**
@@ -618,5 +617,3 @@ abstract public  **dispatch** () inherited from [Phalcon\DispatcherInterface](/3
 abstract public  **forward** (*mixed* $forward) inherited from [Phalcon\DispatcherInterface](/3.4/en/api/Phalcon_Di)
 
 ...
-
-

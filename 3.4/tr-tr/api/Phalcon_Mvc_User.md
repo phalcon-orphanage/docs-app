@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'tr-tr'
-version: '3.4'
 title: 'Phalcon\Mvc\User\Component'
 ---
 # Class **Phalcon\Mvc\User\Component**
@@ -124,6 +123,3 @@ Returns the internal event manager
 public  **__get** (*mixed* $propertyName) inherited from [Phalcon\Di\Injectable](/3.4/en/api/Phalcon_Di)
 
 Magic method __get
-
-
-

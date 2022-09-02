@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\MetaData'
 ---
 # Abstract class **Phalcon\Mvc\Model\MetaData**
@@ -5047,5 +5045,3 @@ abstract public  **read** (*mixed* $key)
 abstract public  **write** (*mixed* $key, *mixed* $data)
 
 ...
-
-

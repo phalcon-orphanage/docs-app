@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'fr-fr'
-version: '3.4'
 title: 'Phalcon\Mvc\View'
 ---
 # Class **Phalcon\Mvc\View**
@@ -1971,5 +1970,3 @@ abstract public  **getContent** () inherited from [Phalcon\Mvc\ViewBaseInterface
 abstract public  **partial** (*mixed* $partialPath, [*mixed* $params]) inherited from [Phalcon\Mvc\ViewBaseInterface](/3.4/en/api/Phalcon_Mvc_ViewBaseInterface)
 
 ...
-
-

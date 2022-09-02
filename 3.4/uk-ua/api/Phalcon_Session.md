@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'uk-ua'
-version: '3.4'
 title: 'Phalcon\Session\Adapter'
 ---
 # Abstract class **Phalcon\Session\Adapter**
@@ -1848,5 +1847,3 @@ public static  **load** ([Phalcon\Config](/3.4/en/api/Phalcon_Config) | *array* 
 protected static  **loadClass** (*mixed* $namespace, *mixed* $config) inherited from [Phalcon\Factory](/3.4/en/api/Phalcon_Factory)
 
 ...
-
-

@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Cache\Backend'
 ---
 # Abstract class **Phalcon\Cache\Backend**
@@ -2878,6 +2876,3 @@ Checks if cache exists in at least one backend
 public  **flush** ()
 
 Flush all backend(s)
-
-
-

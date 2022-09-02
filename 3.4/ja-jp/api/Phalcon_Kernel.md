@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'ja-jp'
-version: '3.4'
 title: 'Phalcon\Kernel'
 ---
 

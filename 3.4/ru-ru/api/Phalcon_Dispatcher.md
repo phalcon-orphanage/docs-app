@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'ru-ru'
-version: '3.4'
 title: 'Phalcon\Dispatcher'
 ---
 

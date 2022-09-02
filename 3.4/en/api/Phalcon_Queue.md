@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Queue\Beanstalk'
 ---
 # Class **Phalcon\Queue\Beanstalk**
@@ -340,6 +338,3 @@ Gives statistical information about the specified job if it exists.
 public  **__wakeup** ()
 
 Checks if the job has been modified after unserializing the object
-
-
-

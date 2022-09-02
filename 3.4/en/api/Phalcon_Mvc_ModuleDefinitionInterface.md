@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Mvc\ModuleDefinitionInterface'
 ---
 # Interface **Phalcon\Mvc\ModuleDefinitionInterface**
@@ -17,5 +15,3 @@ abstract public  **registerAutoloaders** ([[Phalcon\DiInterface](/3.4/en/api/Pha
 abstract public  **registerServices** ([Phalcon\DiInterface](/3.4/en/api/Phalcon_Di) $dependencyInjector)
 
 ...
-
-

@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\Query'
 ---
 # Class **Phalcon\Mvc\Model\Query**
@@ -1268,5 +1266,3 @@ abstract public  **getUniqueRow** ()
 abstract public  **execute** ([*mixed* $bindParams], [*mixed* $bindTypes])
 
 ...
-
-

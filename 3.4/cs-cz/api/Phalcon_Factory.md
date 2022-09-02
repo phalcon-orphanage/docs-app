@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'cs-cz'
-version: '3.4'
 title: 'Phalcon\Factory'
 ---
 # Abstract class **Phalcon\Factory**
@@ -109,5 +108,3 @@ String representation of the exception
 abstract public static  **load** (*mixed* $config)
 
 ...
-
-

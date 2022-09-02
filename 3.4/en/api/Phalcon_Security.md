@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Security'
 ---
 # Class **Phalcon\Security**
@@ -501,6 +499,3 @@ protected  **base** (*mixed* $alphabet, *mixed* $base, [*mixed* $n])
 
 Generates a random string based on the number ($base) of characters ($alphabet).
 If $n is not specified, 16 is assumed. It may be larger in future.
-
-
-

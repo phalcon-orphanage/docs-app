@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Tag'
 ---
 # Class **Phalcon\Tag**
@@ -894,6 +892,3 @@ Generate the OPTION tags based on a resultset
 private static  **_optionsFromArray** (*array* $data, *mixed* $value, *string* $closeOption)
 
 Generate the OPTION tags based on an array
-
-
-

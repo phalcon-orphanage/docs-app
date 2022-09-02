@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'de-de'
-version: '3.4'
 title: 'Phalcon\Mvc\Model\ValidationFailed'
 ---
 

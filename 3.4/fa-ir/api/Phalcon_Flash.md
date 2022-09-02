@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'fa-ir'
-version: '3.4'
 title: 'Phalcon\Flash'
 ---
 # Abstract class **Phalcon\Flash**
@@ -606,5 +605,3 @@ abstract public  **warning** (*mixed* $message)
 abstract public  **message** (*mixed* $type, *mixed* $message)
 
 ...
-
-

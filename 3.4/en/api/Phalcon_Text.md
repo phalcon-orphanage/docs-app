@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Text'
 ---
 # Abstract class **Phalcon\Text**
@@ -224,6 +222,3 @@ echo Phalcon\Text::humanize("start-a-horse"); // "start a horse"
 echo Phalcon\Text::humanize("five_cats"); // "five cats"
 
 ```
-
-
-

@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Application'
 ---
 # Abstract class **Phalcon\Application**
@@ -110,8 +108,6 @@ Magic method __get
 
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Application\Exception'
 ---
 # Class **Phalcon\Application\Exception**
@@ -185,6 +181,3 @@ Gets the stack trace as a string
 public *string* **__toString** () inherited from [Exception](https://php.net/manual/en/class.exception.php)
 
 String representation of the exception
-
-
-

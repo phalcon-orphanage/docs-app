@@ -1,7 +1,5 @@
 ---
 layout: default
-language: 'en'
-version: '3.4'
 title: 'Phalcon\Validation'
 ---
 # Class **Phalcon\Validation**
@@ -3027,5 +3025,3 @@ abstract public  **bind** (*mixed* $entity, *mixed* $data)
 abstract public  **getValue** (*mixed* $field)
 
 ...
-
-

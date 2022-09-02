@@ -1,7 +1,6 @@
 ---
 layout: default
 language: 'tr-tr'
-version: '3.4'
 title: 'Phalcon\Filter'
 ---
 # Class **Phalcon\Filter**
@@ -192,5 +191,3 @@ abstract public  **sanitize** (*mixed* $value, *mixed* $filters)
 abstract public  **getFilters** ()
 
 ...
-
-
