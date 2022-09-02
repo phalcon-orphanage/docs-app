@@ -11,7 +11,7 @@ docsearch({
     apiKey: '{{ site.app.algolia.apiKey }}',
     searchParameters: {
         facetFilters: [
-            'language:{{ site.data.supported[pageLanguage]["iso_639_1"] | default: en }}',
+            'language:{{ pageLanguage }}',
             'version:{{ pageVersion }}'
         ],
     },
@@ -24,10 +24,15 @@ docsearch({
     apiKey: '{{ site.app.algolia.apiKey }}',
     searchParameters: {
         facetFilters: [
-            'language:{{ site.data.supported[pageLanguage]["iso_639_1"] | default: en }}',
+            'language:{{ pageLanguage }}',
             'version:{{ pageVersion }}'
         ],
     },
     debug: false // Set debug to true if you want to inspect the dropdown
 });
 </script>
+
+<!--'language:{{ site.data.supported[pageLanguage]["iso_639_1"] | default: en }}',-->
+<!-- {{ pageLanguage }} -->
+<!-- {{ site.data.supported[pageLanguage]["iso_639_1"] }} -->
+<!-- {{ pageVersion }} -->

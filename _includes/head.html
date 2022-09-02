@@ -4,9 +4,8 @@
     {%- assign current = '/' | append: pageLanguage | append: '/' -%}
     {%- for lang in site.data.verlang.languages[pageVersion] -%}
     {%- if lang != pageLanguage -%}
-    {%- assign hreflang = site.data.supported[lang]['iso_639_1'] -%}
     {%- assign new = '/' | append: lang | append: '/' -%}
-    <link rel="alternate" href="{{ site.url }}{{ pageUrl | replace: current, new | downcase }}" hreflang="{{ hreflang }}" />
+    <link rel="alternate" href="{{ site.url }}{{ pageUrl | replace: current, new | downcase }}" hreflang="{{ lang }}" />
     {% endif %}{% endfor %}
 
     <meta name="viewport" content="width=device-width">

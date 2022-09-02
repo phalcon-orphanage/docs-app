@@ -1,8 +1,8 @@
 {% assign script       = page.name | replace: '.md', '' %}
 {% assign pageUrl      = page.url | replace: '.html', '' %}
 {% assign splitUrl     = pageUrl | split: '/' %}
-{% assign pageVersion  = splitUrl[1] %}
-{% assign pageLanguage = splitUrl[2] %}
+{% assign pageVersion  = splitUrl[1] | default: site.app.version %}
+{% assign pageLanguage = splitUrl[2] | default: site.app.language %}
 {% assign keyPrefix    = pageVersion | replace: '.', '-' | append: '-' | append: pageLanguage %}
 {% assign homeKey      = keyPrefix | append: '-meta-home' %}
 {% assign topicsKey    = keyPrefix | append: '-meta-topics' %}
