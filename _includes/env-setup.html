@@ -1,7 +1,9 @@
-{% assign script      = page.name | replace: '.md', '' %}
-{% assign url         = page.url | replace: '.html', '' %}
-{% assign keyPrefix   = page.version | replace: '.', '-' | append: '-' | append: page.language %}
-{% assign homeKey     = keyPrefix | append: '-meta-home' %}
-{% assign topicsKey   = keyPrefix | append: '-meta-topics' %}
-{% assign articlesKey = keyPrefix | append: '-meta-articles' %}
-{% assign homeStrings = site.data[homeKey] %}
+{% assign script       = page.name | replace: '.md', '' %}
+{% assign pageUrl      = page.url | replace: '.html', '' %}
+{% assign splitUrl     = pageUrl | split: '/' %}
+{% assign pageVersion  = splitUrl[1] %}
+{% assign pageLanguage = splitUrl[2] %}
+{% assign keyPrefix    = pageVersion | replace: '.', '-' | append: '-' | append: pageLanguage %}
+{% assign homeKey      = keyPrefix | append: '-meta-home' %}
+{% assign topicsKey    = keyPrefix | append: '-meta-topics' %}
+{% assign homeStrings  = site.data[homeKey] %}

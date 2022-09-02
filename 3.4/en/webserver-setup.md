@@ -3,7 +3,7 @@ layout: default
 language: 'en'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='setup'></a>
 # Web Server Setup
 In order for the routing of the Phalcon application to work, you will need to set up your web server to process the redirects properly. Setup instructions for popular web servers are:
@@ -298,4 +298,3 @@ Finally, make sure the behaviors have the following order:
 Execute the application in a browser:
 
 ![](/assets/images/content/webserver-cherokee-9.jpg)
-

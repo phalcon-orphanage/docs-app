@@ -3,7 +3,7 @@ layout: default
 language: 'es-es'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='overview'></a>
 # Volt: Template Engine
 Volt is an ultra-fast and designer friendly templating language written in C for PHP. It provides you a set of helpers to write views in an easy way. Volt is highly integrated with other components of Phalcon, just as you can use it as a stand-alone component in your applications.
@@ -1540,4 +1540,3 @@ require $compiler->getCompiledTemplatePath();
 * A bundle for Sublime/Textmate is available [here](https://github.com/phalcon/volt-sublime-textmate)
 * [Phosphorum](https://forum.phalcon.io), the Phalcon's forum, also uses Volt, [Github](https://github.com/phalcon/forum)
 * [Vökuró](https://github.com/phalcon/vokuro), is another sample application that use Volt, [Github](https://github.com/phalcon/vokuro)
-

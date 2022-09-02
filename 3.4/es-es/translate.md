@@ -3,7 +3,7 @@ layout: default
 language: 'es-es'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='overview'></a>
 # Multi-lingual Support
 The component `Phalcon\Translate` aids in creating multilingual applications. Applications using this component, display content in different languages, based on the user's chosen language supported by the application.

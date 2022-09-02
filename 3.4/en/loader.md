@@ -3,7 +3,7 @@ layout: default
 language: 'en'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='overview'></a>
 # Class Autoloader
 [Phalcon\Loader](api/Phalcon_Loader) allows you to load project classes automatically, based on some predefined rules. Since this component is written in C, it provides the lowest overhead in reading and interpreting external PHP files.
@@ -277,4 +277,3 @@ Some things to keep in mind when using the universal autoloader:
 * Auto-loading process is case-sensitive, the class will be loaded as it is written in the code
 * Strategies based on namespaces/prefixes are faster than the directories strategy
 * If a cache bytecode like [APC](http://php.net/manual/en/book.apc.php) is installed this will used to retrieve the requested file (an implicit caching of the file is performed)
-

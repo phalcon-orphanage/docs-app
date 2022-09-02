@@ -3,7 +3,7 @@ layout: default
 language: 'it-it'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 If you have found a bug it is important to add relevant reproducibility information to your issue to allow us to reproduce the bug and fix it quicker. If you have the application publicly on Github please submit the repository address along with the issue description. You can also use [Gist](https://gist.github.com/) to post any code you want to share with us.
 
 <a name="overview"></a>

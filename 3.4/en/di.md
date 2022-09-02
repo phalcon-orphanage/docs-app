@@ -3,7 +3,7 @@ layout: default
 language: 'en'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='di-service-location'></a>
 # Dependency Injection / Service Location
 
@@ -1171,4 +1171,3 @@ Although you can register services with the names you want, Phalcon has a severa
 <a name='implementing-your-own-di'></a>
 ## Implementing your own DI
 The [Phalcon\DiInterface](api/Phalcon_Di) interface must be implemented to create your own DI replacing the one provided by Phalcon or extend the current one.
-

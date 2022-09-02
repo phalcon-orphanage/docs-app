@@ -1,12 +1,12 @@
 <head>
     <meta charset="utf-8">
     
-    {%- assign current = '/' | append: page.language | append: '/' -%}
-    {%- for lang in site.data.verlang.languages[page.version] -%}
-    {%- if lang != page.language -%}
+    {%- assign current = '/' | append: pageLanguage | append: '/' -%}
+    {%- for lang in site.data.verlang.languages[pageVersion] -%}
+    {%- if lang != pageLanguage -%}
     {%- assign hreflang = site.data.supported[lang]['iso_639_1'] -%}
     {%- assign new = '/' | append: lang | append: '/' -%}
-    <link rel="alternate" href="{{ site.url }}{{ page.url | replace: current, new | replace: '.html', '' | downcase }}" hreflang="{{ hreflang }}" />
+    <link rel="alternate" href="{{ site.url }}{{ pageUrl | replace: current, new | downcase }}" hreflang="{{ hreflang }}" />
     {% endif %}{% endfor %}
 
     <meta name="viewport" content="width=device-width">
@@ -18,8 +18,8 @@
     <meta name="keywords" content="{{ site.app.keywords }}{% if page.keywords %},{{ page.keywords }}{% endif %}">
     <meta name="author" href="/humans.txt">
     <meta name="generator" content="{{ site.app.author }} - Jekyll - Netlify">
-    <meta name="docsearch:language" content="{{ page.language | default: site.app.language }}">
-    <meta name="docsearch:version" content="{{ page.version | default: site.app.version }}">
+    <meta name="docsearch:language" content="{{ pageLanguage | default: site.app.language }}">
+    <meta name="docsearch:version" content="{{ pageVersion | default: site.app.version }}">
 
     <link href="{{ page.url | replace:'index.html','' | prepend: site.url | downcase }}" rel="canonical">
 
@@ -61,7 +61,7 @@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
 
-    <meta name="docsearch:language" content="{{ site.data.supported[page.language]['iso_639_1'] | default: en }}" />
-    <meta name="docsearch:version" content="{{ page.version }}" />
+    <meta name="docsearch:language" content="{{ site.data.supported[pageLanguage]['iso_639_1'] | default: en }}" />
+    <meta name="docsearch:version" content="{{ pageVersion }}" />
     {% include analytics.html %}
 </head>

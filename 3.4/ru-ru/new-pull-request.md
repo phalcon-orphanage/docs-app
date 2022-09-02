@@ -3,7 +3,7 @@ layout: default
 language: 'ru-ru'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 # Создание пулл реквеста
 
 Пулл реквест (Pull Request) — это изменения в коде, которые или исправляют определенную проблему или добавляют функциональность.

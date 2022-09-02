@@ -3,7 +3,7 @@ layout: default
 language: 'en'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='overview'></a>
 # Phalcon Developer Tools on Linux
 These steps will guide you through the process of installing Phalcon Developer Tools for Linux.
@@ -120,4 +120,3 @@ Type the commands `php -v` and `phalcon` and you will see something like this:
 ![](/assets/images/content/devtools-windows-9.png)
 
 Congratulations you now have Phalcon tools installed!
-

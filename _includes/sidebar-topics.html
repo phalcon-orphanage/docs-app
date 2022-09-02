@@ -1,8 +1,8 @@
                 {%- for topic in site.data[topicsKey] -%}
                 {% assign topicIsActive = false %}
                 {%- for item in topic.menu -%}
-                        {% assign current = '/' | append: page.version | append: '/' | append: page.language | append: '/' %}
-                        {% assign suffix  = '/' | append: page.url | replace: current, '' | replace: '.html', '' %}
+                        {% assign current = '/' | append: pageVersion | append: '/' | append: pageLanguage | append: '/' %}
+                        {% assign suffix  = '/' | append: pageUrl | replace: current, '' %}
                         {% if item.url == suffix %}{% assign topicIsActive = true %}{% endif %}
                 {%- endfor -%}
                 <div class="documentation-nav-item">
@@ -17,9 +17,9 @@
                     <div class="documentation-nav-item__sublist" {% if topicIsActive %}style="display:block;"{% endif %}>
                         {%- for item in topic.menu -%}
                         <div class="documentation-nav-item__sublist-item">
-                            {% assign current = '/' | append: page.version | append: '/' | append: page.language | append: '/' %}
-                            {% assign suffix  = '/' | append: page.url | replace: current, '' | replace: '.html', '' %}
-                            <a href="{%- if item.external -%}{{ item.url }}{%- else -%}/{{ page.version }}/{{ page.language }}{{ item.url }}{%- endif -%}"
+                            {% assign current = '/' | append: pageVersion | append: '/' | append: pageLanguage | append: '/' %}
+                            {% assign suffix  = '/' | append: pageUrl | replace: current, '' %}
+                            <a href="{%- if item.external -%}{{ item.url }}{%- else -%}/{{ pageVersion }}/{{ pageLanguage }}{{ item.url }}{%- endif -%}"
                                class="documentation-nav-item__sublist-link {% if item.url == suffix %}documentation-nav-item__sublist-link_active{% endif %}">
                                 {{- item.text -}}
                             </a>

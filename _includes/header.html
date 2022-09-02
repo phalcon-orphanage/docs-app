@@ -63,7 +63,7 @@
 <!--                           aria-label="{{ homeStrings['search_for'] }}"-->
 <!--                           autocomplete="off"-->
 <!--                           data-siteurl="{{ site.url }}"-->
-<!--                           data-docs-version="{{ page.version }}">-->
+<!--                           data-docs-version="{{ pageVersion }}">-->
 <!--                </form>-->
                 <ul>
                     <li>
@@ -104,12 +104,12 @@
                     </li>
 
                     <li class="extendable expand">
-                        <span class="mobile-menu-page-version">{{- page.version -}}</span>
+                        <span class="mobile-menu-page-version">{{- pageVersion -}}</span>
                         <ul class="header-dropdown--mobile">
-                            {%- assign current = '/' | append: page.version | append: '/' -%}
+                            {%- assign current = '/' | append: pageVersion | append: '/' -%}
                             {%- for version in site.data.verlang.versions -%}
                             {%- assign new = '/' | append: version | append: '/' -%}
-                            {%- assign link = page.url | replace: current, new | replace: '.html', '' -%}
+                            {%- assign link = pageUrl | replace: current, new -%}
                             <li>
                                 <a href="{{ link }}">
                                     {{- version -}}
@@ -122,15 +122,15 @@
                     <li class="extendable expand">
                         <span class="mobile-menu-page-lang">
                             <img class="lang-image"
-                                 src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
-                                 alt="{{ site.data.supported[langpage.language].name | strip }}">
+                                 src="/assets/images/flags/{{ site.data.supported[pageLanguage].crowdin_code }}.png"
+                                 alt="{{ site.data.supported[langpageLanguage].name | strip }}">
                         </span>
                         <ul class="header-dropdown--mobile header-dropdown--mobile-lang">
-                            {%- assign current = '/' | append: page.language | append: '/' -%}
-                            {%- for lang in site.data.verlang.languages[page.version] -%}
+                            {%- assign current = '/' | append: pageLanguage | append: '/' -%}
+                            {%- for lang in site.data.verlang.languages[pageVersion] -%}
                             {%- assign new = '/' | append: lang | append: '/' -%}
                             <li>
-                                <a href="{{ page.url | replace: current, new | replace: '.html', '' }}">
+                                <a href="{{ pageUrl | replace: current, new }}">
                                     <img class="lang-image"
                                          src="/assets/images/flags/{{ site.data.supported[lang].crowdin_code }}.png"
                                          alt="{{ site.data.supported[lang].name | strip }}">
@@ -146,14 +146,14 @@
 
         <div class="header__right">
             <div class="header__lang expand">
-                {{- page.version -}}
+                {{- pageVersion -}}
                 <div class="header-dropdown-wrapper">
                     <ul class="header-dropdown">
-                        {%- assign current = '/' | append: page.version | append: '/' -%}
+                        {%- assign current = '/' | append: pageVersion | append: '/' -%}
                         {%- for version in site.data.verlang.versions -%}
                         {%- assign new = '/' | append: version | append: '/' -%}
                         <li>
-                            <a href="{{ page.url | replace: current, new | replace: '.html', '' }}">
+                            <a href="{{ pageUrl | replace: current, new }}">
                                 {{- version -}}
                             </a>
                         </li>
@@ -163,15 +163,15 @@
             </div>
 
             <div class="header__lang expand">
-                <img src="/assets/images/flags/{{ site.data.supported[page.language].crowdin_code }}.png"
-                     alt="{{ site.data.supported[langpage.language].name | strip }}">
+                <img src="/assets/images/flags/{{ site.data.supported[pageLanguage].crowdin_code }}.png"
+                     alt="{{ site.data.supported[langpageLanguage].name | strip }}">
                 <div class="header-dropdown-wrapper">
                     <ul class="header-dropdown header-dropdown--lang">
-                        {%- assign current = '/' | append: page.language | append: '/' -%}
-                        {%- for lang in site.data.verlang.languages[page.version] -%}
+                        {%- assign current = '/' | append: pageLanguage | append: '/' -%}
+                        {%- for lang in site.data.verlang.languages[pageVersion] -%}
                         {%- assign new = '/' | append: lang | append: '/' -%}
                         <li>
-                            <a href="{{ page.url | replace: current, new | replace: '.html', '' }}">
+                            <a href="{{ pageUrl | replace: current, new }}">
                             <img class="lang-image"
                                  src="/assets/images/flags/{{ site.data.supported[lang].crowdin_code }}.png"
                                  alt="{{ site.data.supported[lang].name | strip }}">
@@ -193,7 +193,7 @@
 <!--                       aria-label="{{ homeStrings['search_for'] }}"-->
 <!--                       autocomplete="off"-->
 <!--                       data-siteurl="{{ site.url }}"-->
-<!--                       data-docs-version="{{ page.version }}">-->
+<!--                       data-docs-version="{{ pageVersion }}">-->
 <!--            </form>-->
 
             <div class="header__github">

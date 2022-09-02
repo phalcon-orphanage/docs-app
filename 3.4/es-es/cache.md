@@ -3,7 +3,7 @@ layout: default
 language: 'es-es'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='overview'></a>
 # Improving Performance with Cache
 
@@ -610,4 +610,3 @@ This backend will store cached content on a Redis server ([Redis](https://redis.
 | `index`      | The index of the Redis database to use.                        |
 
 There are more adapters available for this components in the [Phalcon Incubator](https://github.com/phalcon/incubator)
-

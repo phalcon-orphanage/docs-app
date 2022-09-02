@@ -1,20 +1,20 @@
-                {%- if page.version == '4.0' or page.version == '5.0' -%}
+                {%- if pageVersion == '4.0' or pageVersion == '5.0' -%}
                 {%- if page.upgrade -%}
                 <div class="documentation-nav-item">
                     <a class="documentation-nav-item__label"
-                       href="/{{ page.version }}/{{ page.language }}/upgrade{{ page.upgrade }}">
+                       href="/{{ pageVersion }}/{{ pageLanguage }}/upgrade{{ page.upgrade }}">
                         <strong>Upgrade Instructions</strong>
                     </a>
                 </div>
                 {% endif %}
                 <div class="documentation-nav-item">
-                    {% assign current = '/' | append: page.version | append: '/' | append: page.language | append: '/' %}
-                    {% assign suffix  = page.url | replace: current, '' | replace: '.html', '' %}
+                    {% assign current = '/' | append: pageVersion | append: '/' | append: pageLanguage | append: '/' %}
+                    {% assign suffix  = pageUrl | replace: current, '' %}
                     {% assign api = suffix | slice: 0, 3 %}
                     {% if 'api' != api %}
-                    {% if page.language != 'en' %}
+                    {% if pageLanguage != 'en' %}
                     <a class="documentation-nav-item__label"
-                       href="https://crowdin.com/project/phalcon-documentation/{{ site.data.supported[page.language]['crowdin_code'] }}">
+                       href="https://crowdin.com/project/phalcon-documentation/{{ site.data.supported[pageLanguage]['crowdin_code'] }}">
                         <strong>{{ homeStrings['edit_on_crowdin'] }}</strong>
                     </a>
                     {% else %}

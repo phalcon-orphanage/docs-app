@@ -3,7 +3,7 @@ layout: default
 language: 'fa-ir'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 # New Pull Request
 
 A pull request is alterations to the code that either fixes a current issue or introduces new functionality.

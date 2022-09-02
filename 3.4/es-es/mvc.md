@@ -3,7 +3,7 @@ layout: default
 language: 'es-es'
 version: '3.4'
 ---
-![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ page.version }}.svg)
+![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 <a name='architecture'></a>
 # The MVC Architecture
 Phalcon offers the object-oriented classes, necessary to implement the Model, View, Controller architecture (often referred to as [MVC][wiki-mvc]) in your application. This design pattern is widely used by other web frameworks and desktop applications.
