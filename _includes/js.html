@@ -11,7 +11,7 @@ docsearch({
     apiKey: '{{ site.app.algolia.apiKey }}',
     searchParameters: {
         facetFilters: [
-            'language:{{ pageLanguage }}',
+            'language:{{ site.data.supported[pageLanguage]["iso_639_1"] | default: en }}',
             'version:{{ pageVersion }}'
         ],
     },
@@ -24,7 +24,7 @@ docsearch({
     apiKey: '{{ site.app.algolia.apiKey }}',
     searchParameters: {
         facetFilters: [
-            'language:{{ pageLanguage }}',
+            'language:{{ site.data.supported[pageLanguage]["iso_639_1"] | default: en }}',
             'version:{{ pageVersion }}'
         ],
     },
@@ -32,7 +32,6 @@ docsearch({
 });
 </script>
 
-<!--'language:{{ site.data.supported[pageLanguage]["iso_639_1"] | default: en }}',-->
 <!-- {{ pageLanguage }} -->
 <!-- {{ site.data.supported[pageLanguage]["iso_639_1"] }} -->
 <!-- {{ pageVersion }} -->
