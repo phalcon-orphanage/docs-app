@@ -26,7 +26,6 @@
 /5.0/:lang/url                                                 /5.0/:lang/mvc-url                                       301!
 /5.0/:lang/validation                                          /5.0/:lang/filter-validation                             301!
 /5.0/:lang/version                                             /5.0/:lang/support-version                               301!
-/5.0/:lang/volt                                                /5.0/:lang/mvc-volt                                      301!
 /5.0/:lang/api/phalcon_text                                    /5.0/:lang/api/phalcon_support#support-helperfactory     301!
 
 /latest/:lang/*                                                /5.0/:lang/:splat                                        301!
