@@ -72,11 +72,11 @@ Thanks!
 [srt]: https://github.com/phalcon/cphalcon/wiki/Submit-Reproducible-Test
 [segfault]: https://en.wikipedia.org/wiki/Segmentation_fault
 [gdb-howto]: https://bugs.php.net/bugs-generating-backtrace.php
-[gdb-howto-w32]: http://bugs.php.net/bugs-generating-backtrace-win32.php
+[gdb-howto-w32]: https://bugs.php.net/bugs-generating-backtrace-win32.php
 [gdb-dbgsym]: https://github.com/oerdnj/deb.sury.org/wiki/Debugging-symbols
-[internals-build-php]: http://www.phpinternalsbook.com/build_system/building_php.html
+[internals-build-php]: https://www.phpinternalsbook.com/build_system/building_php.html
 [testing]: https://github.com/phalcon/cphalcon/blob/master/tests/README.md
 [zephir]: https://zephir-lang.com/
-[psr]: http://www.php-fig.org/psr/
+[psr]: https://www.php-fig.org/psr/
 [support]: https://phalcon.io/support
 [nfr]: /3.4/en/new-feature-request
