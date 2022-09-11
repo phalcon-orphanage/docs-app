@@ -45,9 +45,9 @@ Please take a moment to review this document in order to make the contribution p
 Пожалуйста, ознакомьтесь со следующим руководствами, в случае любых вопросов связанных с созданием трассировки:
 
 - [Генерация gdb трассировки](https://bugs.php.net/bugs-generating-backtrace.php)
-- [Генерация трассировки с использованием компилятора в Win32](http://bugs.php.net/bugs-generating-backtrace-win32.php)
+- [Генерация трассировки с использованием компилятора в Win32](https://bugs.php.net/bugs-generating-backtrace-win32.php)
 - [Отладочные символы](https://github.com/oerdnj/deb.sury.org/wiki/Debugging-symbols)
-- [Сборка PHP](http://www.phpinternalsbook.com/build_system/building_php.html)
+- [Сборка PHP](https://www.phpinternalsbook.com/build_system/building_php.html)
 
 <a name='pull-request-checklist'></a>
 
@@ -57,7 +57,7 @@ Please take a moment to review this document in order to make the contribution p
 - Не отправляйте обновления подмодулей, файла `composer.lock` и т.д.
 - Add tests relevant to the fixed bug or new feature. See our [testing guide](https://github.com/phalcon/cphalcon/blob/master/tests/README.md) for more information
 - Phalcon написан на языке [Zephir](https://zephir-lang.com/). Пожалуйста, не отправляйте коммиты с изменениями C-файлов.
-- Убедитесь, что PHP-код, который вы написали, соответствует общему стилю и стандартам кодирования [PSR](http://www.php-fig.org/psr/).
+- Убедитесь, что PHP-код, который вы написали, соответствует общему стилю и стандартам кодирования [PSR](https://www.php-fig.org/psr/).
 - Удалите любые изменения `ext/kernel`, `*.zep.c` и `*.zep.h` файлов перед отправкой запроса на изменение.
 
 Before submit **new functionality**, please open a [NFR](/3.4/en/new-feature-request) as a new issue on GitHub to discuss the impact of including the functionality or changes in the core extension. После утверждения, убедитесь, что ваш запрос на принятие изменений содержит следующее:
