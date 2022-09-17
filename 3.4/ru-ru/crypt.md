@@ -7,7 +7,7 @@ language: 'ru-ru'
 
 # Шифрование/дешифрование
 
-Phalcon provides encryption facilities via the [Phalcon\Crypt](api/Phalcon_Crypt) component. Этот класс предоставляет простые объектно-ориентированные обертки к PHP библиотеке [openssl](http://www.php.net/manual/en/book.openssl.php).
+Phalcon provides encryption facilities via the [Phalcon\Crypt](api/Phalcon_Crypt) component. Этот класс предоставляет простые объектно-ориентированные обертки к PHP библиотеке [openssl](https://www.php.net/manual/en/book.openssl.php).
 
 По умолчанию данный компонент использует надежный алгоритм шифрования AES-256-CFB.
 
@@ -147,7 +147,7 @@ echo $crypt->decrypt($encrypted, $key);
 
 | Название | Описание                                                                                                                                                             |
 | -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Шифр     | The cipher is one of the encryption algorithms supported by openssl. You can see a list [here](http://www.php.net/manual/en/function.openssl-get-cipher-methods.php) |
+| Шифр     | The cipher is one of the encryption algorithms supported by openssl. You can see a list [here](https://www.php.net/manual/en/function.openssl-get-cipher-methods.php) |
 
 Пример:
 
@@ -189,7 +189,7 @@ var_dump($algorithms);
 
 ## Поддержка base64
 
-Для того, чтобы зашифрованный текст должным образом передать (по электронной почте) или отобразить (в браузере) очень часто применяется кодирование [base64](http://www.php.net/manual/en/function.base64-encode.php):
+Для того, чтобы зашифрованный текст должным образом передать (по электронной почте) или отобразить (в браузере) очень часто применяется кодирование [base64](https://www.php.net/manual/en/function.base64-encode.php):
 
 ```php
 <?php
@@ -267,7 +267,7 @@ class SecretsController extends Controller
 
 * [Advanced Encryption Standard (AES)](https://en.wikipedia.org/wiki/Advanced_Encryption_Standard)
 * [Что такое блочный шифр](https://en.wikipedia.org/wiki/Block_cipher)
-* [Введение в Blowfish](http://www.splashdata.com/splashid/blowfish.htm)
-* [CTR-Mode Encryption](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.1353&rep=rep1&type=pdf)
+* [Введение в Blowfish](https://www.splashdata.com/splashid/blowfish.htm)
+* [CTR-Mode Encryption](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.79.1353&rep=rep1&type=pdf)
 * [Recommendation for Block Cipher Modes of Operation: Methods and Techniques](https://csrc.nist.gov/publications/detail/sp/800-38a/final)
 * [Counter (CTR) mode](https://en.wikipedia.org/wiki/Block_cipher_mode_of_operation#Counter_.28CTR.29)
