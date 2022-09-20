@@ -352,7 +352,7 @@ $success = $connection->query(
 );
 ```
 
-数値プレースホルダを使用する場合は、整数を1または2として定義する必要があります。 この場合、 '1'または '2'は文字列であり数字ではないため、プレースホルダを正常に置き換えることができません。 アダプターのデータはすべて[PDO Quote](http://www.php.net/manual/en/pdo.quote.php)を使って自動的にエスケープ処理されます。
+数値プレースホルダを使用する場合は、整数を1または2として定義する必要があります。 この場合、 '1'または '2'は文字列であり数字ではないため、プレースホルダを正常に置き換えることができません。 アダプターのデータはすべて[PDO Quote](https://www.php.net/manual/en/pdo.quote.php)を使って自動的にエスケープ処理されます。
 
 この関数は接続文字セットを考慮しているため、接続パラメータまたはデータベースサーバー設定で正しい文字セットを定義することをお勧めします。データセットを格納または取得するときに間違った文字セットが望ましくない影響を及ぼすためです。
 
@@ -687,7 +687,7 @@ try {
 }
 ```
 
-In addition to standard transactions, [Phalcon\Db](api/Phalcon_Db) provides built-in support for [nested transactions](http://en.wikipedia.org/wiki/Nested_transaction) (if the database system used supports them). 二回begin()を呼び出すとき、 入れ子になったトランザクションが作成されます:
+In addition to standard transactions, [Phalcon\Db](api/Phalcon_Db) provides built-in support for [nested transactions](https://en.wikipedia.org/wiki/Nested_transaction) (if the database system used supports them). 二回begin()を呼び出すとき、 入れ子になったトランザクションが作成されます:
 
 ```php
 <?php
