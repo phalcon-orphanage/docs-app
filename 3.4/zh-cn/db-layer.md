@@ -352,7 +352,7 @@ $success = $connection->query(
 );
 ```
 
-当使用数字占位符，您将需要将它们定义为即 1 或 2 的整数。 在这种情况下 '1' 或 '2' 是字符串而不是数字，所以该占位符不能被成功替换。 与任何适配器数据自动转义使用 [PDO Quota](http://www.php.net/manual/en/pdo.quote.php)。
+当使用数字占位符，您将需要将它们定义为即 1 或 2 的整数。 在这种情况下 '1' 或 '2' 是字符串而不是数字，所以该占位符不能被成功替换。 与任何适配器数据自动转义使用 [PDO Quota](https://www.php.net/manual/en/pdo.quote.php)。
 
 此函数还考虑连接字符集，它建议要在连接参数中或在您的数据库服务器配置，作为错误的字符集中定义正确的字符集将产生意外的影响，在存储或检索数据时。
 
@@ -687,7 +687,7 @@ try {
 }
 ```
 
-In addition to standard transactions, [Phalcon\Db](api/Phalcon_Db) provides built-in support for [nested transactions](http://en.wikipedia.org/wiki/Nested_transaction) (if the database system used supports them). 当第二次调用链表你嵌套的事务创建：
+In addition to standard transactions, [Phalcon\Db](api/Phalcon_Db) provides built-in support for [nested transactions](https://en.wikipedia.org/wiki/Nested_transaction) (if the database system used supports them). 当第二次调用链表你嵌套的事务创建：
 
 ```php
 <?php
