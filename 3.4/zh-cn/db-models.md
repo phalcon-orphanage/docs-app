@@ -606,7 +606,7 @@ $robots = Robots::find(
 
 当使用数字占位符，您将需要将它们定义为即 `1` 或 `2` 的整数。 在这种情况下 `'1'` 或 `'2'` 是考虑的字符串而不是数字，所以该占位符不能被成功替换。
 
-字符串是使用 [PDO](http://php.net/manual/en/pdo.prepared-statements.php) 自动转义的。 此函数还考虑连接字符集，其建议以定义正确的字符集中的数据库配置，作为错误的字符集或在连接参数中会产生意外的影响，在存储或检索数据时。
+字符串是使用 [PDO](https://php.net/manual/en/pdo.prepared-statements.php) 自动转义的。 此函数还考虑连接字符集，其建议以定义正确的字符集中的数据库配置，作为错误的字符集或在连接参数中会产生意外的影响，在存储或检索数据时。
 
 Additionally you can set the parameter `bindTypes`, this allows defining how the parameters should be bound according to its data type:
 
