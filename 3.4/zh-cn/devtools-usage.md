@@ -368,7 +368,7 @@ Also, if you prefer, it's possible to use Phalcon Developer Tools from a web int
 
 ## 将工具与 phpstorm ide 集成
 
-The screencast below shows how to integrate developer tools with the [PhpStorm IDE](http://www.jetbrains.com/phpstorm/). 配置步骤可以很容易地适应 php 的其他 ide。
+The screencast below shows how to integrate developer tools with the [PhpStorm IDE](https://www.jetbrains.com/phpstorm/). 配置步骤可以很容易地适应 php 的其他 ide。
 
 <div align="center">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UbUx_6Cs6r4" frameborder="0" allowfullscreen mark="crwd-mark"></iframe>
