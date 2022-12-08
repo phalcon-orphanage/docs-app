@@ -14,6 +14,7 @@
 /5.0/:lang/filter                                              /5.0/:lang/filter-filter                                 301!
 /5.0/:lang/helper                                              /5.0/:lang/support-helper                                301!
 /5.0/:lang/loader                                              /5.0/:lang/autoload-loader                               301!
+/5.0/:lang/pagination                                          /5.0/:lang/db-pagination                                 301!
 /5.0/:lang/registry                                            /5.0/:lang/support-registry                              301!
 /5.0/:lang/security                                            /5.0/:lang/encryption-security                           301!
 /5.0/:lang/security-jwt                                        /5.0/:lang/encryption-security-jwt                       301!
