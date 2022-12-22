@@ -12,8 +12,8 @@ This component makes use of adapters to encapsulate specific image manipulator p
 
 | Class                           | Description                                                                         |
 |---------------------------------|-------------------------------------------------------------------------------------|
-| [Phalcon\Image\Adapter\Gd](api/Phalcon_Image)      | Requires the [GD PHP extension](http://php.net/manual/en/book.image.php)            |
-| [Phalcon\Image\Adapter\Imagick](api/Phalcon_Image) | Requires the [ImageMagick PHP extension](http://php.net/manual/en/book.imagick.php) |
+| [Phalcon\Image\Adapter\Gd](api/Phalcon_Image)      | Requires the [GD PHP extension](https://php.net/manual/en/book.image.php)            |
+| [Phalcon\Image\Adapter\Imagick](api/Phalcon_Image) | Requires the [ImageMagick PHP extension](https://php.net/manual/en/book.imagick.php) |
 
 <a name='adapters-factory'></a>
 ### Factory
