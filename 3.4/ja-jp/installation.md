@@ -41,10 +41,10 @@ Phalcon を実行するためには、最低限以下の拡張機能が必要で
 
 ### アプリケーションのニーズに応じた追加の依存
 
-* [PDO](http://php.net/manual/en/book.pdo.php) 拡張や、関連するRDBMSの拡張 ([MySQL](http://php.net/manual/en/ref.pdo-mysql.php)や[PostgreSql](http://php.net/manual/en/ref.pdo-pgsql.php)など)
-* [OpenSSL](http://php.net/manual/en/book.openssl.php) 拡張
-* [Mbstring](http://php.net/manual/en/book.mbstring.php) 拡張
-* [Memcache](http://php.net/manual/en/book.memcache.php), [Memcached](http://php.net/manual/en/book.memcached.php) または使用するキャッシュに応じたキャッシュアダプタ
+* [PDO](https://php.net/manual/en/book.pdo.php) 拡張や、関連するRDBMSの拡張 ([MySQL](https://php.net/manual/en/ref.pdo-mysql.php)や[PostgreSql](https://php.net/manual/en/ref.pdo-pgsql.php)など)
+* [OpenSSL](https://php.net/manual/en/book.openssl.php) 拡張
+* [Mbstring](https://php.net/manual/en/book.mbstring.php) 拡張
+* [Memcache](https://php.net/manual/en/book.memcache.php), [Memcached](https://php.net/manual/en/book.memcached.php) または使用するキャッシュに応じたキャッシュアダプタ
 
 <a name='installation'></a>
 
