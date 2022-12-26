@@ -41,10 +41,10 @@ Phalcon нуждается в следующем минимальном набо
 
 ### Дополнительно, в зависимости от потребностей вашего приложения
 
-* Расширение [PDO](http://php.net/manual/en/book.pdo.php), а также расширение для работы с соответствующей СУБД ([MySQL](http://php.net/manual/en/ref.pdo-mysql.php), [PostgreSql](http://php.net/manual/en/ref.pdo-pgsql.php) и т.д.)
-* Расширение [OpenSSL](http://php.net/manual/en/book.openssl.php)
-* Расширение [Mbstring](http://php.net/manual/en/book.mbstring.php)
-* Расширение [Memcache](http://php.net/manual/en/book.memcache.php), [Memcached](http://php.net/manual/en/book.memcached.php) или любое другое, в зависимости от планируемого драйвера кеша
+* Расширение [PDO](https://php.net/manual/en/book.pdo.php), а также расширение для работы с соответствующей СУБД ([MySQL](https://php.net/manual/en/ref.pdo-mysql.php), [PostgreSql](https://php.net/manual/en/ref.pdo-pgsql.php) и т.д.)
+* Расширение [OpenSSL](https://php.net/manual/en/book.openssl.php)
+* Расширение [Mbstring](https://php.net/manual/en/book.mbstring.php)
+* Расширение [Memcache](https://php.net/manual/en/book.memcache.php), [Memcached](https://php.net/manual/en/book.memcached.php) или любое другое, в зависимости от планируемого драйвера кеша
 
 <a name='installation'></a>
 
