@@ -9,7 +9,7 @@ language: 'ja-jp'
 
 [Phalcon\Loader](api/Phalcon_Loader) allows you to load project classes automatically, based on some predefined rules. Since this component is written in C, it provides the lowest overhead in reading and interpreting external PHP files.
 
-このコンポーネントの動作は、[クラスのオートローディング](http://www.php.net/manual/en/language.oop5.autoload.php) に関する PHP の機能に基づいています。 まだ存在しないクラスがコードの任意の部分で利用される場合、特別なハンドラーがそれをロードしようとします。 [Phalcon\Loader](api/Phalcon_Loader) serves as the special handler for this operation. By loading classes on a need-to-load basis, the overall performance is increased since the only file reads that occur are for the files needed. この手法は、[lazy initialization](http://en.wikipedia.org/wiki/Lazy_initialization) と呼ばれます。
+このコンポーネントの動作は、[クラスのオートローディング](https://www.php.net/manual/en/language.oop5.autoload.php) に関する PHP の機能に基づいています。 まだ存在しないクラスがコードの任意の部分で利用される場合、特別なハンドラーがそれをロードしようとします。 [Phalcon\Loader](api/Phalcon_Loader) serves as the special handler for this operation. By loading classes on a need-to-load basis, the overall performance is increased since the only file reads that occur are for the files needed. この手法は、[lazy initialization](https://en.wikipedia.org/wiki/Lazy_initialization) と呼ばれます。
 
 このコンポーネントによって他のプロジェクトやベンダーからファイルをロードする事ができます。このオートローダーは [PSR-0](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-0.md) と [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) 準拠です。
 
@@ -296,4 +296,4 @@ Some things to keep in mind when using the universal autoloader:
 
 * Auto-loading process is case-sensitive, the class will be loaded as it is written in the code
 * Strategies based on namespaces/prefixes are faster than the directories strategy
-* If a cache bytecode like [APC](http://php.net/manual/en/book.apc.php) is installed this will used to retrieve the requested file (an implicit caching of the file is performed)
+* If a cache bytecode like [APC](https://php.net/manual/en/book.apc.php) is installed this will used to retrieve the requested file (an implicit caching of the file is performed)
