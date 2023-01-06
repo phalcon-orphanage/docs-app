@@ -28,5 +28,5 @@ To send a NFR you don't need to provide Zephir or C code or develop the feature.
 
 All NFRs should be posted as a new issue on [Github][github-issues].
 
-[SRP]: http://en.wikipedia.org/wiki/Single_responsibility_principle
+[SRP]: https://en.wikipedia.org/wiki/Single_responsibility_principle
 [github-issues]: https://github.com/phalcon/cphalcon/issues

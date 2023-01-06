@@ -24,7 +24,7 @@ In the following cases a new feature request will be rejected:
 * The original poster doesn't provide feedback/input when requested
 * It's technically impossible to implement
 * It can only be used in the development/testing stages
-* Submitted/proposed classes/components don't follow the [Single Responsibility Principle](http://en.wikipedia.org/wiki/Single_responsibility_principle)
+* Submitted/proposed classes/components don't follow the [Single Responsibility Principle](https://en.wikipedia.org/wiki/Single_responsibility_principle)
 * Static methods aren't allowed
 
 To send a NFR you don't need to provide Zephir or C code or develop the feature. New Feture requests explain the goal of the intended implementation and open discussion on how best to implement it.
