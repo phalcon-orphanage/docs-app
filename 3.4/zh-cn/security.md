@@ -13,9 +13,9 @@ This component aids the developer in common security tasks such as password hash
 
 ## Password Hashing
 
-Storing passwords in plain text is a bad security practice. Anyone with access to the database will immediately have access to all user accounts thus being able to engage in unauthorized activities. To combat that, many applications use the familiar one way hashing methods '[md5](http://php.net/manual/en/function.md5.php)' and '[sha1](http://php.net/manual/en/function.sha1.php)'. However, hardware evolves each day, and becomes faster, these algorithms are becoming vulnerable to brute force attacks. These attacks are also known as [rainbow tables](http://en.wikipedia.org/wiki/Rainbow_table).
+Storing passwords in plain text is a bad security practice. Anyone with access to the database will immediately have access to all user accounts thus being able to engage in unauthorized activities. To combat that, many applications use the familiar one way hashing methods '[md5](https://php.net/manual/en/function.md5.php)' and '[sha1](https://php.net/manual/en/function.sha1.php)'. However, hardware evolves each day, and becomes faster, these algorithms are becoming vulnerable to brute force attacks. These attacks are also known as [rainbow tables](https://en.wikipedia.org/wiki/Rainbow_table).
 
-安全组件使用[bcrypt](http://en.wikipedia.org/wiki/Bcrypt)作为散列算法。 通过“[Eksblowfish](http://en.wikipedia.org/wiki/Bcrypt#Algorithm)”密钥设置算法，我们可以将密码加密为`slow`”。 慢算法最小化了布鲁斯力攻击的影响。
+安全组件使用[bcrypt](https://en.wikipedia.org/wiki/Bcrypt)作为散列算法。 通过“[Eksblowfish](https://en.wikipedia.org/wiki/Bcrypt#Algorithm)”密钥设置算法，我们可以将密码加密为`slow`”。 慢算法最小化了布鲁斯力攻击的影响。
 
 Bcrypt是一种基于Blowfish对称分组密码算法的自适应哈希函数。 它还引入了一个安全性或工作因素，它决定了哈希函数生成哈希的速度。 这有效地否定了FPGA或GPU哈希技术的使用。
 
@@ -78,7 +78,7 @@ class SessionController extends Controller
 }
 ```
 
-使用带有 PHP 函数 [ openssl_random_pseudo_bytes ](http://php.net/manual/en/function.openssl-random-pseudo-bytes.php) 的伪随机字节生成 salt, 因此需要加载 [ openssl ](http://php.net/manual/en/book.openssl.php) 扩展。
+使用带有 PHP 函数 [ openssl_random_pseudo_bytes ](https://php.net/manual/en/function.openssl-random-pseudo-bytes.php) 的伪随机字节生成 salt, 因此需要加载 [ openssl ](https://php.net/manual/en/book.openssl.php) 扩展。
 
 <a name='csrf'></a>
 
@@ -86,7 +86,7 @@ class SessionController extends Controller
 
 This is another common attack against web sites and applications. Forms designed to perform tasks such as user registration or adding comments are vulnerable to this attack.
 
-其思想是防止表单值被发送到应用程序之外。 为了解决这个问题，我们在每个表单中生成一个[random nonce](http://en.wikipedia.org/wiki/Cryptographic_nonce) (token)，在会话中添加令牌，然后在表单将数据发送回应用程序时验证令牌，将会话中的存储令牌与表单提交的令牌进行比较:
+其思想是防止表单值被发送到应用程序之外。 为了解决这个问题，我们在每个表单中生成一个[random nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) (token)，在会话中添加令牌，然后在表单将数据发送回应用程序时验证令牌，将会话中的存储令牌与表单提交的令牌进行比较:
 
 ```php
 <?php echo Tag::form('session/login') ?>
@@ -136,7 +136,7 @@ $di->setShared(
 );
 ```
 
-还建议在表单中添加[captcha](http://www.google.com/recaptcha)，以完全避免这种攻击的风险。
+还建议在表单中添加[captcha](https://www.google.com/recaptcha)，以完全避免这种攻击的风险。
 
 <a name='setup'></a>
 
