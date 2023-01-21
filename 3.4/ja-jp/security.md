@@ -13,9 +13,9 @@ language: 'ja-jp'
 
 ## パスワードのハッシュ
 
-プレーンテキストでパスワードを保存することは、セキュリティ上の習慣としては不適切です。 データベースへのアクセス権を持つ人は、すぐにすべてのユーザーアカウントにアクセスし、権限がなくても行動することができてしまいます。 この問題に対処するために、多くのアプリケーションは、有名な一方向ハッシュ メソッド'[md5](http://php.net/manual/en/function.md5.php)' や '[sha1](http://php.net/manual/en/function.sha1.php) 'を使用します。 しかし、ハードウェアは毎日進化し、より高速になり、これらのアルゴリズムは総当たり攻撃に対して脆弱になっています。 これらの攻撃は、[レインボー テーブル](http://en.wikipedia.org/wiki/Rainbow_table) とも呼ばれます。
+プレーンテキストでパスワードを保存することは、セキュリティ上の習慣としては不適切です。 データベースへのアクセス権を持つ人は、すぐにすべてのユーザーアカウントにアクセスし、権限がなくても行動することができてしまいます。 この問題に対処するために、多くのアプリケーションは、有名な一方向ハッシュ メソッド'[md5](https://php.net/manual/en/function.md5.php)' や '[sha1](https://php.net/manual/en/function.sha1.php) 'を使用します。 しかし、ハードウェアは毎日進化し、より高速になり、これらのアルゴリズムは総当たり攻撃に対して脆弱になっています。 これらの攻撃は、[レインボー テーブル](https://en.wikipedia.org/wiki/Rainbow_table) とも呼ばれます。
 
-セキュリティコンポーネントは、ハッシュアルゴリズムに[bcrypt](http://en.wikipedia.org/wiki/Bcrypt) を採用しています。 その ' [Eksblowfish'](http://en.wikipedia.org/wiki/Bcrypt#Algorithm) キー設定アルゴリズムのおかげで パスワードの暗号化を望むだけ`遅く` できます。 遅いアルゴリズムは、総当たり攻撃の影響を最小限に抑えます。
+セキュリティコンポーネントは、ハッシュアルゴリズムに[bcrypt](https://en.wikipedia.org/wiki/Bcrypt) を採用しています。 その ' [Eksblowfish'](https://en.wikipedia.org/wiki/Bcrypt#Algorithm) キー設定アルゴリズムのおかげで パスワードの暗号化を望むだけ`遅く` できます。 遅いアルゴリズムは、総当たり攻撃の影響を最小限に抑えます。
 
 Bcrypt はBlowfish 対称ブロック暗号アルゴリズムに基づく、アダプティブハッシュ関数です。 また、ハッシュ関数がハッシュを生成する速度を決定する、セキュリティまたは作業係数も導入されています。 これは、FPGAまたはGPUのハッシュ技術の使用を効果的に無効にします。
 
@@ -78,7 +78,7 @@ class SessionController extends Controller
 }
 ```
 
-[openssl_random_pseudo_bytes](http://php.net/manual/en/function.openssl-random-pseudo-bytes.php)という PHPの関数により疑似乱数で saltを生成します。このためには [openssl](http://php.net/manual/en/book.openssl.php) 拡張モジュールのロードが必要です。
+[openssl_random_pseudo_bytes](https://php.net/manual/en/function.openssl-random-pseudo-bytes.php)という PHPの関数により疑似乱数で saltを生成します。このためには [openssl](https://php.net/manual/en/book.openssl.php) 拡張モジュールのロードが必要です。
 
 <a name='csrf'></a>
 
@@ -86,7 +86,7 @@ class SessionController extends Controller
 
 This is another common attack against web sites and applications. Forms designed to perform tasks such as user registration or adding comments are vulnerable to this attack.
 
-そのアイデアは、フォームの値がアプリケーションの外部に送信されないようにすることです。 この問題への対処として、各フォームで[random nonce](http://en.wikipedia.org/wiki/Cryptographic_nonce) （トークン）を生成し、トークンをセッションに保存します。それから、フォームから送信されたトークンと、セッションに保存していたトークンを比較して検証します: 
+そのアイデアは、フォームの値がアプリケーションの外部に送信されないようにすることです。 この問題への対処として、各フォームで[random nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce) （トークン）を生成し、トークンをセッションに保存します。それから、フォームから送信されたトークンと、セッションに保存していたトークンを比較して検証します: 
 
 ```php
 <?php echo Tag::form('session/login') ?>
@@ -136,7 +136,7 @@ $di->setShared(
 );
 ```
 
-[captcha](http://www.google.com/recaptcha)をフォームに追加することも、この攻撃のリスクを完全に回避できるのでお勧めです。
+[captcha](https://www.google.com/recaptcha)をフォームに追加することも、この攻撃のリスクを完全に回避できるのでお勧めです。
 
 <a name='setup'></a>
 
