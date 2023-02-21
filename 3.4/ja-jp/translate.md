@@ -141,7 +141,7 @@ class UserController extends Controller
 <p><?php echo $t->_('hi-name', ['name' => $name]); ?></p>
 ```
 
-いくつかのアプリケーションは、`http://www.mozilla.org/**es-ES**/firefox/`のように、URLの多言語化を実装します。 Phalcon can implement this by using a [Router](/3.4/en/routing).
+いくつかのアプリケーションは、`https://www.mozilla.org/**es-ES**/firefox/`のように、URLの多言語化を実装します。 Phalcon can implement this by using a [Router](/3.4/en/routing).
 
 上記の実装は役に立ちますが、`_getTranslation()`を実装し、`Phalcon\Translate\Adapter\NativeArray`コンポーネントを返すためにはベースコントローラが必要です。 さらに、上記のように、`$t`変数でコンポーネントをビューに設定する必要があります。
 
