@@ -5,6 +5,10 @@
 /en                                                            /5.0/en/introduction                                     301!
 /latest/:lang                                                  /5.0/:lang/introduction                                  301!
 
+# From main site
+/5.0/en-us/:splat                                              /5.0/en/:splat                                           301!
+
+
 # Redirects for refactored classes
 /5.0/:lang/collection                                          /5.0/:lang/support-collection                            301!
 /5.0/:lang/debug                                               /5.0/:lang/support-debug                                 301!
