@@ -64,7 +64,7 @@ This file handles 3 things:
 
 <a name='autoloaders'></a>
 ### Autoloaders
-Autoloaders leverage a [PSR-4](http://www.php-fig.org/psr/psr-4/) compliant file loader running through the Phalcon. Common things that should be added to the autoloader are your controllers and models. You can register directories which will search for files within the application's namespace. If you want to read about other ways that you can use autoloaders head [here](/3.4/en/loader#overview).
+Autoloaders leverage a [PSR-4](https://www.php-fig.org/psr/psr-4/) compliant file loader running through the Phalcon. Common things that should be added to the autoloader are your controllers and models. You can register directories which will search for files within the application's namespace. If you want to read about other ways that you can use autoloaders head [here](/3.4/en/loader#overview).
 
 To start, lets register our app's `controllers` and `models` directories.
 Don't forget to include the loader from `Phalcon\Loader`.
@@ -109,7 +109,7 @@ Each time the framework requires a component or service, it will ask the contain
 ### Factory Default
 The [Phalcon\Di\FactoryDefault](api/Phalcon_Di) is a variant of [Phalcon\Di](api/Phalcon_Di). To make things easier, it will automatically register most of the components that come with Phalcon. We recommend that you register your services manually but this has been included to help lower the barrier of entry when getting used to Dependency Management. Later, you can always specify once you become more comfortable with the concept.
 
-Services can be registered in several ways, but for our tutorial, we'll use an [anonymous function](http://php.net/manual/en/functions.anonymous.php):
+Services can be registered in several ways, but for our tutorial, we'll use an [anonymous function](https://php.net/manual/en/functions.anonymous.php):
 
 `public/index.php`
 ```php

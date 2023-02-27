@@ -75,7 +75,7 @@ This file handles 3 things:
 
 ### Автозагрузка
 
-Phalcon предоставляет [PSR-4](http://www.php-fig.org/psr/psr-4/)-совместимый автозагрузчик. Основными вещами, которые должны быть добавлены в автозагрузчик являются ваши контроллеры и модели. Вы можете зарегистрировать директории, которые будут использоваться для поиска классов использующих пространство имён приложения. If you want to read about other ways that you can use autoloaders head [here](/3.4/en/loader#overview).
+Phalcon предоставляет [PSR-4](https://www.php-fig.org/psr/psr-4/)-совместимый автозагрузчик. Основными вещами, которые должны быть добавлены в автозагрузчик являются ваши контроллеры и модели. Вы можете зарегистрировать директории, которые будут использоваться для поиска классов использующих пространство имён приложения. If you want to read about other ways that you can use autoloaders head [here](/3.4/en/loader#overview).
 
 To start, lets register our app's `controllers` and `models` directories. Don't forget to include the loader from `Phalcon\Loader`.
 
@@ -125,7 +125,7 @@ $loader->register();
 
 The [Phalcon\Di\FactoryDefault](api/Phalcon_Di) is a variant of [Phalcon\Di](api/Phalcon_Di). Он берет на себя функции регистрации большинства компонентов из состава Phalcon, поэтому нам не придется регистрировать их вручную один за другим. Обычно, мы рекомендуем регистрировать сервисы вручную, однако в целях данного рукводства мы будем использовать FactoryDefault в целях обеспечения более низкого порога вхождения. Позже вы всегда сможете указать конкретные сервисы вручную, самостоятельно, после того как вы будете себя чувствовать более комфортно с этой концепцией.
 
-Services can be registered in several ways, but for our tutorial, we'll use an [anonymous function](http://php.net/manual/en/functions.anonymous.php):
+Services can be registered in several ways, but for our tutorial, we'll use an [anonymous function](https://php.net/manual/en/functions.anonymous.php):
 
 `public/index.php`
 
