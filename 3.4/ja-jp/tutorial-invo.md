@@ -9,7 +9,7 @@ language: 'ja-jp'
 
 この第2のチュートリアルでは、より完全なアプリケーションを例にして説明し、Phalconを使用した開発について理解を深めます。 INVOは、私達が制作したサンプルアプリケーションの1つです。 INVOは小さなWebサイトで、ユーザーは請求書を作成したり、顧客や製品を管理したりといったタスクを行うことができます。 コードは [Github](https://github.com/phalcon/invo) からcloneすることができます。
 
-INVOはクライアントサイドフレームワークである [Bootstrap](http://getbootstrap.com/) を使用して作られています。 アプリケーションは実際の請求書を生成しませんが、フレームワークの働きを理解するサンプルにはなります。
+INVOはクライアントサイドフレームワークである [Bootstrap](https://getbootstrap.com/) を使用して作られています。 アプリケーションは実際の請求書を生成しませんが、フレームワークの働きを理解するサンプルにはなります。
 
 <a name='structure'></a>
 
@@ -399,7 +399,7 @@ class SessionController extends ControllerBase
 }
 ```
 
-For the sake of simplicity, we have used [sha1](http://php.net/manual/en/function.sha1.php) to store the password hashes in the database, however, this algorithm is not recommended in real applications, use [bcrypt](/3.4/en/security) instead.
+For the sake of simplicity, we have used [sha1](https://php.net/manual/en/function.sha1.php) to store the password hashes in the database, however, this algorithm is not recommended in real applications, use [bcrypt](/3.4/en/security) instead.
 
 コントローラー内で `$this->flash`、`$this->request`、`$this->session` のようなpublic属性へのアクセスに注目してください。 これらは、サービスコンテナであらかじめ定義したサービスです (`app/config/services.php`)。 初めてアクセスされると、コントローラの一部として注入されます。 これらのサービスは`共有`されているため、これらのオブジェクトをどこから呼び出しても、常に同じインスタンスにアクセスすることになります。 例えば、ここで`session`サービスを呼び出して、ユーザーを識別する情報を`auth`という変数に保存しています:
 
@@ -780,7 +780,7 @@ foreach ($privateResources as $resource => $actions) {
 
 バックエンドは一般的に、ユーザーがデータを操作できるようなフォームを提供します。 INVOの説明を続けると、今はCRUDの作成に取り組んでいます。Phalconにとっては、フォーム、バリデーション、ページネーターなどを利用する事で簡単に実装できる一般的な事例です。
 
-INVO (企業、製品、製品の種類) のデータを操作するほとんどのオプションは、基本的で一般的な[CRUD](http://en.wikipedia.org/wiki/Create,_read,_update_and_delete) (Create, Read, Update, Delete) を使用して構築されます。 各CRUDには、次のファイルが含まれています:
+INVO (企業、製品、製品の種類) のデータを操作するほとんどのオプションは、基本的で一般的な[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) (Create, Read, Update, Delete) を使用して構築されます。 各CRUDには、次のファイルが含まれています:
 
 ```bash
 invo/
@@ -1720,7 +1720,7 @@ public function saveAction()
 
 ## ユーザーコンポーネント
 
-アプリケーションのすべてのUI要素とビジュアルスタイルは、主に[Bootstrap](http://getbootstrap.com/)を使って実装されています。 アプリケーションの状態に応じてナビゲーションバーなどの一部の要素が変更されます。 たとえば、ユーザーがアプリケーションにログインしている場合、右上隅にある`Log in / Sign Up`リンクは`Log out`に変わります。
+アプリケーションのすべてのUI要素とビジュアルスタイルは、主に[Bootstrap](https://getbootstrap.com/)を使って実装されています。 アプリケーションの状態に応じてナビゲーションバーなどの一部の要素が変更されます。 たとえば、ユーザーがアプリケーションにログインしている場合、右上隅にある`Log in / Sign Up`リンクは`Log out`に変わります。
 
 アプリケーションのこの部分は、コンポーネント`Elements` (`app/library/Elements.php`) で実装されています。
 
