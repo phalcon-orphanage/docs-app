@@ -7,7 +7,7 @@ language: 'it-it'
 
 # Tutorial: Creating a Simple REST API
 
-In this tutorial, we will explain how to create a simple application that provides a [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) API using the different HTTP methods:
+In this tutorial, we will explain how to create a simple application that provides a [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) API using the different HTTP methods:
 
 * `GET` to retrieve and search data
 * `POST` to add data
@@ -557,7 +557,7 @@ Now we will create database for our application. Run SQL queries as follows:
 
 ## Testing our Application
 
-Using [curl](http://en.wikipedia.org/wiki/CURL) we'll test every route in our application verifying its proper operation.
+Using [curl](https://en.wikipedia.org/wiki/CURL) we'll test every route in our application verifying its proper operation.
 
 Obtain all the robots:
 
@@ -665,4 +665,4 @@ Content-Type: text/html; charset=UTF-8
 
 ## Conclusion
 
-As we saw, developing a [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) API with Phalcon is easy using [micro applications](/3.4/en/application-micro) and [PHQL](/3.4/en/db-phql).
+As we saw, developing a [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) API with Phalcon is easy using [micro applications](/3.4/en/application-micro) and [PHQL](/3.4/en/db-phql).

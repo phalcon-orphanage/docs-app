@@ -7,7 +7,7 @@ language: 'zh-cn'
 
 # 教程： 创建一个简单的 REST API
 
-在本教程中，我们会解释如何通过不同的HTTP访问方法来创建一个简单的[RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer)风格的接口类型的应用程序：
+在本教程中，我们会解释如何通过不同的HTTP访问方法来创建一个简单的[RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer)风格的接口类型的应用程序：
 
 * `GET` 要检索和搜索数据
 * `POST`，以添加数据
@@ -557,7 +557,7 @@ Now we will create database for our application. Run SQL queries as follows:
 
 ## 测试我们的应用程序
 
-使用 [curl](http://en.wikipedia.org/wiki/CURL) 我们会在我们的应用程序验证其正确运行中测试每条路线。
+使用 [curl](https://en.wikipedia.org/wiki/CURL) 我们会在我们的应用程序验证其正确运行中测试每条路线。
 
 获取所有机器人：
 
@@ -665,4 +665,4 @@ Content-Type: text/html; charset=UTF-8
 
 ## 结论
 
-As we saw, developing a [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) API with Phalcon is easy using [micro applications](/3.4/en/application-micro) and [PHQL](/3.4/en/db-phql).
+As we saw, developing a [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) API with Phalcon is easy using [micro applications](/3.4/en/application-micro) and [PHQL](/3.4/en/db-phql).

@@ -7,7 +7,7 @@ language: 'ja-jp'
 
 # チュートリアル: 単純な REST API の作成
 
-このチュートリアルでは、異なる HTTP メソッドを使用して[RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) API を提供する、単純なアプリケーションを作成する方法について説明します。
+このチュートリアルでは、異なる HTTP メソッドを使用して[RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) API を提供する、単純なアプリケーションを作成する方法について説明します。
 
 * `GET` データの取得と検索
 * `POST` データの追加
@@ -557,7 +557,7 @@ Now we will create database for our application. Run SQL queries as follows:
 
 ## アプリケーションのテスト
 
-[curl](http://en.wikipedia.org/wiki/CURL)を使って、アプリケーションの適切な操作を確認するために、すべてのルートを確認します。
+[curl](https://en.wikipedia.org/wiki/CURL)を使って、アプリケーションの適切な操作を確認するために、すべてのルートを確認します。
 
 全てのロボットの取得:
 
@@ -665,4 +665,4 @@ Content-Type: text/html; charset=UTF-8
 
 ## まとめ
 
-As we saw, developing a [RESTful](http://en.wikipedia.org/wiki/Representational_state_transfer) API with Phalcon is easy using [micro applications](/3.4/en/application-micro) and [PHQL](/3.4/en/db-phql).
+As we saw, developing a [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer) API with Phalcon is easy using [micro applications](/3.4/en/application-micro) and [PHQL](/3.4/en/db-phql).
