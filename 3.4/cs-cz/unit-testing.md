@@ -244,4 +244,4 @@ FAILURES!
 Tests: 1, Assertions: 2, Failures: 1.
 ```
 
-Now you can start building your Unit Tests. You can view a [good guide here](http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/). We also recommend reading the PHPUnit documentation if you're not familiar with PHPUnit.
+Now you can start building your Unit Tests. You can view a [good guide here](https://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/). We also recommend reading the PHPUnit documentation if you're not familiar with PHPUnit.
