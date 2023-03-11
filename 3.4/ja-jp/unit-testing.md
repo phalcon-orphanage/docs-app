@@ -244,4 +244,4 @@ FAILURES!
 Tests: 1, Assertions: 2, Failures: 1.
 ```
 
-今すぐユニットテストの構築を開始できます。 [ここで良いガイド](http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/)を見ることができます。 また、PHPUnitに精通していない場合は、PHPUnitのドキュメントを読むことをお勧めします。
+今すぐユニットテストの構築を開始できます。 [ここで良いガイド](https://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/)を見ることができます。 また、PHPUnitに精通していない場合は、PHPUnitのドキュメントを読むことをお勧めします。
