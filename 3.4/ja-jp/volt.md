@@ -11,7 +11,7 @@ Volt は、PHPのためにCで記述されており、とても速く、デザ�
 
 ![](/assets/images/content/volt.png)
 
-Volt は、[Armin Ronacher](https://github.com/mitsuhiko)によって作られた[Jinja](http://jinja.pocoo.org/)にインスパイアされています。 そのため、よく似た既存のテンプレートエンジンと同じ記法を採用しており、利用する多くの開発者にとって親しみやすくなっています。 Voltの記法と機能は、Phalconを使う開発者が慣れ親しんだ多くの要素を備え、当然パフォーマンスの点においても強化されています。
+Volt は、[Armin Ronacher](https://github.com/mitsuhiko)によって作られた[Jinja](https://jinja.pocoo.org/)にインスパイアされています。 そのため、よく似た既存のテンプレートエンジンと同じ記法を採用しており、利用する多くの開発者にとって親しみやすくなっています。 Voltの記法と機能は、Phalconを使う開発者が慣れ親しんだ多くの要素を備え、当然パフォーマンスの点においても強化されています。
 
 <a name='introduction'></a>
 
@@ -286,8 +286,8 @@ Variables can be formatted or modified using filters. The pipe operator `|` is u
 
 | フィルター              | 説明                                                                                                    |
 | ------------------ | ----------------------------------------------------------------------------------------------------- |
-| `abs`              | [abs](http://php.net/manual/en/function.abs.php) PHP関数を値に適用します。                                       |
-| `capitalize`       | [ucwords](http://php.net/manual/en/function.ucwords.php) PHP関数を値に適用して文字列を大文字にします                      |
+| `abs`              | [abs](https://php.net/manual/en/function.abs.php) PHP関数を値に適用します。                                       |
+| `capitalize`       | [ucwords](https://php.net/manual/en/function.ucwords.php) PHP関数を値に適用して文字列を大文字にします                      |
 | `convert_encoding` | 文字列をある文字セットから別の文字セットに変換します                                                                            |
 | `default`          | 評価された式が空（設定されていないかfalse）である場合のデフォルト値を設定します                                                            |
 | `e`                | `Phalcon\Escaper->escapeHtml()` を値に適用します                                                          |
@@ -295,22 +295,22 @@ Variables can be formatted or modified using filters. The pipe operator `|` is u
 | `escape_attr`      | `Phalcon\Escaper->escapeHtmlAttr()` を値に適用します                                                      |
 | `escape_css`       | `Phalcon\Escaper->escapeCss()` を値に適用します                                                           |
 | `escape_js`        | `Phalcon\Escaper->escapeJs()` を値に適用します                                                            |
-| `format`           | [sprintf](http://php.net/manual/en/function.sprintf.php) を使って文字列をフォーマットします。                           |
-| `json_encode`      | 値を [JSON](http://php.net/manual/en/function.json-encode.php) に変換します                                   |
-| `json_decode`      | 値を [JSON](http://php.net/manual/en/function.json-encode.php) からPHP形式に変換します                            |
-| `join`             | 区切り文字で配列を結合します [join](http://php.net/manual/en/function.join.php)                                     |
-| `keys`             | [array_keys](http://php.net/manual/en/function.array-keys.php) を使って配列のキーを返します                         |
-| `left_trim`        | PHPの [ltrim](http://php.net/manual/en/function.ltrim.php) 関数を値に適用します。 余分なスペースを削除します                   |
+| `format`           | [sprintf](https://php.net/manual/en/function.sprintf.php) を使って文字列をフォーマットします。                           |
+| `json_encode`      | 値を [JSON](https://php.net/manual/en/function.json-encode.php) に変換します                                   |
+| `json_decode`      | 値を [JSON](https://php.net/manual/en/function.json-encode.php) からPHP形式に変換します                            |
+| `join`             | 区切り文字で配列を結合します [join](https://php.net/manual/en/function.join.php)                                     |
+| `keys`             | [array_keys](https://php.net/manual/en/function.array-keys.php) を使って配列のキーを返します                         |
+| `left_trim`        | PHPの [ltrim](https://php.net/manual/en/function.ltrim.php) 関数を値に適用します。 余分なスペースを削除します                   |
 | `length`           | 文字列の長さ、または配列、オブジェクトに含まれるアイテムの数を数えます                                                                   |
 | `lower`            | 文字列を小文字に変更します。                                                                                        |
 | `nl2br`            | 改行コード `\n` をHTMLの改行（`<br />`）に変更します。 PHP関数 <2>nl2br</2> を使用します                                 |
-| `right_trim`       | PHPの [rtrim](http://php.net/manual/en/function.rtrim.php) 関数を値に適用します。 余分なスペースを削除します                   |
-| `sort`             | PHP 関数 [asort](http://php.net/manual/en/function.asort.php) を使用して配列をソートします。                           |
-| `stripslashes`     | PHPの [stripslashes](http://php.net/manual/en/function.stripslashes.php) 関数を値に適用します。 エスケープされた引用符を削除します |
-| `striptags`        | PHPの [striptags](http://php.net/manual/en/function.strip-tags.php) 関数を値に適用します。 HTMLタグを削除します            |
-| `trim`             | PHPの [trim](http://php.net/manual/en/function.trim.php) 関数を値に適用します。 余分なスペースを削除します                     |
+| `right_trim`       | PHPの [rtrim](https://php.net/manual/en/function.rtrim.php) 関数を値に適用します。 余分なスペースを削除します                   |
+| `sort`             | PHP 関数 [asort](https://php.net/manual/en/function.asort.php) を使用して配列をソートします。                           |
+| `stripslashes`     | PHPの [stripslashes](https://php.net/manual/en/function.stripslashes.php) 関数を値に適用します。 エスケープされた引用符を削除します |
+| `striptags`        | PHPの [striptags](https://php.net/manual/en/function.strip-tags.php) 関数を値に適用します。 HTMLタグを削除します            |
+| `trim`             | PHPの [trim](https://php.net/manual/en/function.trim.php) 関数を値に適用します。 余分なスペースを削除します                     |
 | `upper`            | 文字列を大文字に変更します。                                                                                        |
-| `url_encode`       | [urlencode](http://php.net/manual/en/function.urlencode.php) PHP 関数を値に適用します。                          |
+| `url_encode`       | [urlencode](https://php.net/manual/en/function.urlencode.php) PHP 関数を値に適用します。                          |
 
 例:
 
@@ -584,7 +584,7 @@ else 文もサポートされています:
 
 ```
 
-`switch` ステートメントはステートメントごとに実行されるため、`break` ステートメントが必要な場合があります。 switch 文と最初の `case` の間の出力（空白を含む）は、構文エラーになります。 したがって、空白行と空白を消去して、エラーの数を減らすことができます。[ここを見てください](http://php.net/control-structures.alternative-syntax)。
+`switch` ステートメントはステートメントごとに実行されるため、`break` ステートメントが必要な場合があります。 switch 文と最初の `case` の間の出力（空白を含む）は、構文エラーになります。 したがって、空白行と空白を消去して、エラーの数を減らすことができます。[ここを見てください](https://php.net/control-structures.alternative-syntax)。
 
 #### `switch` 無し `case` 文
 
