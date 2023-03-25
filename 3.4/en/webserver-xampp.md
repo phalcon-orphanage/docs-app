@@ -40,7 +40,7 @@ Open your browser to navigate to `http://localhost`. The XAMPP welcome page will
 
 ![](/assets/images/content/webserver-xampp-6.png)
 
-[phpinfo](http://php.net/manual/en/function.phpinfo.php) will output a significant amount of information on screen about the current state of PHP. Scroll down to check if the phalcon extension has been loaded correctly.
+[phpinfo](https://php.net/manual/en/function.phpinfo.php) will output a significant amount of information on screen about the current state of PHP. Scroll down to check if the phalcon extension has been loaded correctly.
 
 ![](/assets/images/content/webserver-xampp-7.png)
 
