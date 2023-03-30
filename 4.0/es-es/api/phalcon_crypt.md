@@ -267,7 +267,7 @@ Marca el algoritmo de *hash* como disponible.
 protected function cryptPadText( string $text, string $mode, int $blockSize, int $paddingType ): string;
 ```
 
-Rellena los textos antes de la encriptación. Ver [cryptopad](http://www.di-mgt.com.au/cryptopad.html)
+Rellena los textos antes de la encriptación. Ver [cryptopad](https://www.di-mgt.com.au/cryptopad.html)
 
 ```php
 protected function cryptUnpadText( string $text, string $mode, int $blockSize, int $paddingType );
