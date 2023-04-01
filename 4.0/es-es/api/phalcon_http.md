@@ -479,7 +479,7 @@ protected protocolVersion = 1.1;
  *
  * This method MUST return a UriInterface instance.
  *
- * @see http://tools.ietf.org/html/rfc3986#section-4.3
+ * @see https://tools.ietf.org/html/rfc3986#section-4.3
  *
  * @var UriInterface
  */
@@ -608,7 +608,7 @@ final protected function checkHeaderHost( CollectionInterface $collection ): Col
 
 Asegura que `Host` es la primera cabecera.
 
-@see: http://tools.ietf.org/html/rfc7230#section-5.4
+@see: https://tools.ietf.org/html/rfc7230#section-5.4
 
 ```php
 final protected function checkHeaderName( mixed $name ): void;
@@ -616,7 +616,7 @@ final protected function checkHeaderName( mixed $name ): void;
 
 Comprueba el nombre de la cabecera. Lanza excepción si no es válida
 
-@see http://tools.ietf.org/html/rfc7230#section-3.2
+@see https://tools.ietf.org/html/rfc7230#section-3.2
 
 ```php
 final protected function checkHeaderValue( mixed $value ): void;
@@ -722,7 +722,7 @@ protected requestTarget;
  *
  * This method MUST return a UriInterface instance.
  *
- * @see http://tools.ietf.org/html/rfc3986#section-4.3
+ * @see https://tools.ietf.org/html/rfc3986#section-4.3
  *
  * @var UriInterface
  */
@@ -770,7 +770,7 @@ Si la petición necesita un destino de petición no en la forma original — ej.
 
 Este método se DEBE implementar de tal forma que conserve la inmutabilidad del mensaje, y DEBE devolver una instancia que tenga el destino de la petición cambiado.
 
-@see http://tools.ietf.org/html/rfc7230#section-5.3 (for the various request-target forms allowed in request messages)
+@see https://tools.ietf.org/html/rfc7230#section-5.3 (for the various request-target forms allowed in request messages)
 
 ```php
 public function withUri( UriInterface $uri, mixed $preserveHost = bool ): mixed;
@@ -788,7 +788,7 @@ Puede optar por preservar el estado original de la cabecera `Host` estableciendo
 
 Este método se DEBE implementar de tal forma que conserve la inmutabilidad del mensaje, y DEBE devolver una instancia que tenga la nueva instancia UriInterface.
 
-@see http://tools.ietf.org/html/rfc3986#section-4.3
+@see https://tools.ietf.org/html/rfc3986#section-4.3
 
 ```php
 final protected function processMethod( mixed $method = string ): string;
@@ -867,8 +867,8 @@ PSR-7 Response
  * listed in the IANA HTTP Status Code Registry) for the response's
  * status code.
  *
- * @see http://tools.ietf.org/html/rfc7231#section-6
- * @see http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
+ * @see https://tools.ietf.org/html/rfc7231#section-6
+ * @see https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
  *
  * @var string
  */
@@ -912,7 +912,7 @@ Si no se especifica una frase de razón, las implementaciones PUEDEN elegir por 
 
 Este método DEBE implementarse de tal manera que conserve la inmutabilidad del mensaje, y DEBE devolver una instancia que tiene el estado y frase de razón actualizados.
 
-@see http://tools.ietf.org/html/rfc7231#section-6 @see http://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
+@see https://tools.ietf.org/html/rfc7231#section-6 @see https://www.iana.org/assignments/http-status-codes/http-status-codes.xhtml
 
 ```php
 protected function getPhrases(): array;
@@ -1221,7 +1221,7 @@ Advertencia: Esto podría intentar cargar una gran cantidad de datos en memoria.
 
 Este método NO DEBE lanzar una excepción para cumplir con las operaciones de *casting* de cadena de PHP.
 
-@see http://php.net/manual/en/language.oop5.magic.php#object.tostring
+@see https://php.net/manual/en/language.oop5.magic.php#object.tostring
 
 ```php
 public function close(): void;
@@ -1364,7 +1364,7 @@ Advertencia: Esto podría intentar cargar una gran cantidad de datos en memoria.
 
 Este método NO DEBE lanzar una excepción para cumplir con las operaciones de *casting* de cadena de PHP.
 
-@see http://php.net/manual/en/language.oop5.magic.php#object.tostring
+@see https://php.net/manual/en/language.oop5.magic.php#object.tostring
 
 ```php
 public function getContents( int $length = int ): string;
@@ -1515,7 +1515,7 @@ private clientMediaType;
  * Implementations SHOULD return the value stored in the 'error' key of
  * the file in the $_FILES array.
  *
- * @see http://php.net/manual/en/features.file-upload.errors.php
+ * @see https://php.net/manual/en/features.file-upload.errors.php
  *
  * @var int
  */
@@ -1600,7 +1600,7 @@ Cuando se usa un entorno SAPI donde se rellena $_FILES, cuando se escriben los f
 
 Si desea moverse a un flujo, use getStream(), ya que las operaciones SAPI no pueden garantizar la escritura a destinos de flujo.
 
-@see http://php.net/is_uploaded_file @see http://php.net/move_uploaded_file
+@see https://php.net/is_uploaded_file @see https://php.net/move_uploaded_file
 
 <h1 id="http-message-uploadedfilefactory">Final Class Phalcon\Http\Message\UploadedFileFactory</h1>
 
@@ -1620,7 +1620,7 @@ Crea un nuevo fichero subido.
 
 Si no se proporciona un tamaño, se determinará comprobando el tamaño del flujo.
 
-@link http://php.net/manual/features.file-upload.post-method.php @link http://php.net/manual/features.file-upload.errors.php
+@link https://php.net/manual/features.file-upload.post-method.php @link https://php.net/manual/features.file-upload.errors.php
 
 <h1 id="http-message-uri">Final Class Phalcon\Http\Message\Uri</h1>
 
@@ -1648,7 +1648,7 @@ protected fragment = ;
  * The value returned MUST be normalized to lowercase, per RFC 3986
  * Section 3.2.2.
  *
- * @see http://tools.ietf.org/html/rfc3986#section-3.2.2
+ * @see https://tools.ietf.org/html/rfc3986#section-3.2.2
  *
  * @return string
  */
@@ -2016,7 +2016,7 @@ Obtiene una valor de consulta o `get` siempre saneado con los filtros preestable
 public function getHTTPReferer(): string;
 ```
 
-Obtiene la página web de referencia en la petición activa. ie: http://www.google.com
+Obtiene la página web de referencia en la petición activa. ie: https://www.google.com
 
 ```php
 final public function getHeader( string $header ): string;
@@ -2690,7 +2690,7 @@ Obtiene información de autenticación aceptada por el navegador/cliente desde $
 public function getHTTPReferer(): string;
 ```
 
-Obtiene la página web de referencia en la petición activa. ie: http://www.google.com
+Obtiene la página web de referencia en la petición activa. ie: https://www.google.com
 
 ```php
 public function getHeader( string $header ): string;
