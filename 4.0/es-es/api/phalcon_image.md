@@ -418,7 +418,7 @@ public function setResourceLimit( int $type, int $limit );
 
 Establece los limites para un recurso particular en megabytes
 
-@link http://php.net/manual/ru/imagick.constants.php#imagick.constants.resourcetypes
+@link https://php.net/manual/ru/imagick.constants.php#imagick.constants.resourcetypes
 
 ```php
 protected function processBackground( int $r, int $g, int $b, int $opacity );
