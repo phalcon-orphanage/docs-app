@@ -666,7 +666,7 @@ public function interpolate( string $message, mixed $context = null );
 
 Interpola los valores de contexto dentro de los marcadores de posición del mensaje
 
-@see http://www.php-fig.org/psr/psr-3/ Section 1.2 Message
+@see https://www.php-fig.org/psr/psr-3/ Section 1.2 Message
 
 ```php
 public function setDateFormat( string $dateFormat )
