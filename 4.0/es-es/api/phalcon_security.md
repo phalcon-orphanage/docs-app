@@ -881,7 +881,7 @@ echo $random->base58(7);  // 774SJD3vgP
 
 Esta clase toma prestada parcialmente la librería SecureRandom de Ruby
 
-@link http://ruby-doc.org/stdlib-2.2.2/libdoc/securerandom/rdoc/SecureRandom.html
+@link https://ruby-doc.org/stdlib-2.2.2/libdoc/securerandom/rdoc/SecureRandom.html
 
 ## Métodos
 
