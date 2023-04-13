@@ -67,7 +67,7 @@ Zephir 프로그래밍이 쉽지 않으시다면, 그밖에도 기여할 수 있
 - [Generating a gdb backtrace](https://bugs.php.net/bugs-generating-backtrace.php)
 - [Generating a backtrace, with a compiler, on Win32](https://bugs.php.net/bugs-generating-backtrace-win32.php)
 - [Debugging Symbols](https://github.com/oerdnj/deb.sury.org/wiki/Debugging-symbols)
-- [Building PHP](http://www.phpinternalsbook.com/build_system/building_php.html)
+- [Building PHP](https://www.phpinternalsbook.com/build_system/building_php.html)
 
 ## Pull Request 체크리스트
 

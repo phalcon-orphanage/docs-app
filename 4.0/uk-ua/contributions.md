@@ -67,7 +67,7 @@ Phalcon - проект з відкритим вихідним кодом, яки
 - [Створення зворотного трасування gdb](https://bugs.php.net/bugs-generating-backtrace.php)
 - [Створення зворотного трасування за допомогою компілятора на Win32](https://bugs.php.net/bugs-generating-backtrace-win32.php)
 - [Символи налагодження](https://github.com/oerdnj/deb.sury.org/wiki/Debugging-symbols)
-- [Збірка РНР](http://www.phpinternalsbook.com/build_system/building_php.html)
+- [Збірка РНР](https://www.phpinternalsbook.com/build_system/building_php.html)
 
 ## Контрольний список запитів на злиття
 
