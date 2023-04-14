@@ -63,7 +63,7 @@ title: 'Phalcon\Html'
 
 <h1 id="html-attributes">Class Phalcon\Html\Attributes</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Attributes.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Attributes.zep)
 
 | Namespace | Phalcon\Html | | Uses | Phalcon\Collection, Phalcon\Html\Attributes\RenderInterface, Phalcon\Tag | | Extends | Collection | | Implements | RenderInterface |
 
@@ -85,7 +85,7 @@ Render attributes as HTML attributes
 
 <h1 id="html-attributes-attributesinterface">Interface Phalcon\Html\Attributes\AttributesInterface</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Attributes/AttributesInterface.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Attributes/AttributesInterface.zep)
 
 | Namespace | Phalcon\Html\Attributes | | Uses | Phalcon\Html\Attributes |
 
@@ -109,7 +109,7 @@ Set Attributes
 
 <h1 id="html-attributes-renderinterface">Interface Phalcon\Html\Attributes\RenderInterface</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Attributes/RenderInterface.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Attributes/RenderInterface.zep)
 
 | Namespace | Phalcon\Html\Attributes |
 
@@ -127,7 +127,7 @@ Generate a string represetation
 
 <h1 id="html-breadcrumbs">Class Phalcon\Html\Breadcrumbs</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Breadcrumbs.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Breadcrumbs.zep)
 
 | Namespace | Phalcon\Html | | Uses | Phalcon\Di\DiInterface |
 
@@ -226,7 +226,7 @@ Returns the internal breadcrumbs array
 
 <h1 id="html-exception">Class Phalcon\Html\Exception</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Exception.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Exception.zep)
 
 | Namespace | Phalcon\Html | | Extends | \Phalcon\Exception |
 
@@ -236,7 +236,7 @@ Exceptions thrown in Phalcon\Html\Tag will use this class
 
 <h1 id="html-helper-abstracthelper">Abstract Class Phalcon\Html\Helper\AbstractHelper</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/AbstractHelper.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/AbstractHelper.zep)
 
 | Namespace | Phalcon\Html\Helper | | Uses | Phalcon\Escaper\EscaperInterface, Phalcon\Html\Exception |
 
@@ -333,7 +333,7 @@ Produces a self close tag i.e. <img />
 
 <h1 id="html-helper-abstractlist">Abstract Class Phalcon\Html\Helper\AbstractList</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/AbstractList.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/AbstractList.zep)
 
 | Namespace | Phalcon\Html\Helper | | Uses | Phalcon\Html\Exception | | Extends | AbstractHelper |
 
@@ -379,7 +379,7 @@ Returns the tag name.
 
 <h1 id="html-helper-abstractseries">Abstract Class Phalcon\Html\Helper\AbstractSeries</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/AbstractSeries.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/AbstractSeries.zep)
 
 | Namespace | Phalcon\Html\Helper | | Extends | AbstractHelper |
 
@@ -420,7 +420,7 @@ Returns the tag name.
 
 <h1 id="html-helper-anchor">Class Phalcon\Html\Helper\Anchor</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Anchor.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Anchor.zep)
 
 | Namespace | Phalcon\Html\Helper | | Uses | Phalcon\Html\Exception | | Extends | AbstractHelper |
 
@@ -440,7 +440,7 @@ Produce a <a> tag</p>
 <h1 id="html-helper-base">Class Phalcon\Html\Helper\Base</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Base.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Base.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -465,7 +465,7 @@ Produce a <a> tag</p>
 <h1 id="html-helper-body">Class Phalcon\Html\Helper\Body</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Body.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Body.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -490,7 +490,7 @@ Produce a <a> tag</p>
 <h1 id="html-helper-button">Class Phalcon\Html\Helper\Button</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Button.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Button.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -515,7 +515,7 @@ Produce a <a> tag</p>
 <h1 id="html-helper-close">Class Phalcon\Html\Helper\Close</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Close.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Close.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -540,7 +540,7 @@ Produce a <a> tag</p>
 <h1 id="html-helper-element">Class Phalcon\Html\Helper\Element</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Element.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Element.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -565,7 +565,7 @@ Produce a <a> tag</p>
 <h1 id="html-helper-form">Class Phalcon\Html\Helper\Form</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Form.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Form.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -590,7 +590,7 @@ Produce a <a> tag</p>
 <h1 id="html-helper-img">Class Phalcon\Html\Helper\Img</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Img.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Img.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -615,7 +615,7 @@ Produce a <a> tag</p>
 <h1 id="html-helper-input-abstractinput">Abstract Class Phalcon\Html\Helper\Input\AbstractInput</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/AbstractInput.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/AbstractInput.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -670,7 +670,7 @@ protected attributes;
 <h1 id="html-helper-input-checkbox">Class Phalcon\Html\Helper\Input\Checkbox</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Checkbox.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Checkbox.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -729,7 +729,7 @@ protected type = checkbox;
 <h1 id="html-helper-input-color">Class Phalcon\Html\Helper\Input\Color</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Color.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Color.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -752,7 +752,7 @@ protected type = color;
 <h1 id="html-helper-input-date">Class Phalcon\Html\Helper\Input\Date</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Date.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Date.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -775,7 +775,7 @@ protected type = date;
 <h1 id="html-helper-input-datetime">Class Phalcon\Html\Helper\Input\DateTime</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/DateTime.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/DateTime.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -798,7 +798,7 @@ protected type = datetime;
 <h1 id="html-helper-input-datetimelocal">Class Phalcon\Html\Helper\Input\DateTimeLocal</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/DateTimeLocal.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/DateTimeLocal.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -821,7 +821,7 @@ protected type = datetime-local;
 <h1 id="html-helper-input-email">Class Phalcon\Html\Helper\Input\Email</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Email.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Email.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -844,7 +844,7 @@ protected type = email;
 <h1 id="html-helper-input-file">Class Phalcon\Html\Helper\Input\File</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/File.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/File.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -867,7 +867,7 @@ protected type = file;
 <h1 id="html-helper-input-hidden">Class Phalcon\Html\Helper\Input\Hidden</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Hidden.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Hidden.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -890,7 +890,7 @@ protected type = hidden;
 <h1 id="html-helper-input-image">Class Phalcon\Html\Helper\Input\Image</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Image.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Image.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -913,7 +913,7 @@ protected type = image;
 <h1 id="html-helper-input-input">Class Phalcon\Html\Helper\Input\Input</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Input.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Input.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -938,7 +938,7 @@ protected type = image;
 <h1 id="html-helper-input-month">Class Phalcon\Html\Helper\Input\Month</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Month.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Month.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -961,7 +961,7 @@ protected type = month;
 <h1 id="html-helper-input-numeric">Class Phalcon\Html\Helper\Input\Numeric</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Numeric.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Numeric.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -984,7 +984,7 @@ protected type = numeric;
 <h1 id="html-helper-input-password">Class Phalcon\Html\Helper\Input\Password</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Password.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Password.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1007,7 +1007,7 @@ protected type = password;
 <h1 id="html-helper-input-radio">Class Phalcon\Html\Helper\Input\Radio</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Radio.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Radio.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1032,7 +1032,7 @@ protected type = radio;
 <h1 id="html-helper-input-range">Class Phalcon\Html\Helper\Input\Range</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Range.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Range.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1055,7 +1055,7 @@ protected type = range;
 <h1 id="html-helper-input-search">Class Phalcon\Html\Helper\Input\Search</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Search.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Search.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1078,7 +1078,7 @@ protected type = search;
 <h1 id="html-helper-input-select">Class Phalcon\Html\Helper\Input\Select</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Select.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Select.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1154,7 +1154,7 @@ protected selected = ;
 <h1 id="html-helper-input-submit">Class Phalcon\Html\Helper\Input\Submit</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Submit.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Submit.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1177,7 +1177,7 @@ protected type = submit;
 <h1 id="html-helper-input-tel">Class Phalcon\Html\Helper\Input\Tel</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Tel.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Tel.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1200,7 +1200,7 @@ protected type = tel;
 <h1 id="html-helper-input-text">Class Phalcon\Html\Helper\Input\Text</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Text.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Text.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1214,7 +1214,7 @@ protected type = tel;
 <h1 id="html-helper-input-textarea">Class Phalcon\Html\Helper\Input\Textarea</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Textarea.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Textarea.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1250,7 +1250,7 @@ protected type = textarea;
 <h1 id="html-helper-input-time">Class Phalcon\Html\Helper\Input\Time</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Time.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Time.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1273,7 +1273,7 @@ protected type = time;
 <h1 id="html-helper-input-url">Class Phalcon\Html\Helper\Input\Url</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Url.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Url.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1296,7 +1296,7 @@ protected type = url;
 <h1 id="html-helper-input-week">Class Phalcon\Html\Helper\Input\Week</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Input/Week.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Input/Week.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1319,7 +1319,7 @@ protected type = week;
 <h1 id="html-helper-label">Class Phalcon\Html\Helper\Label</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Label.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Label.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1344,7 +1344,7 @@ protected type = week;
 <h1 id="html-helper-link">Class Phalcon\Html\Helper\Link</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Link.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Link.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1372,7 +1372,7 @@ protected type = week;
 <h1 id="html-helper-meta">Class Phalcon\Html\Helper\Meta</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Meta.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Meta.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1409,7 +1409,7 @@ protected type = week;
 <h1 id="html-helper-ol">Class Phalcon\Html\Helper\Ol</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Ol.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Ol.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1437,7 +1437,7 @@ protected type = week;
 <h1 id="html-helper-script">Class Phalcon\Html\Helper\Script</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Script.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Script.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1465,7 +1465,7 @@ protected type = week;
 <h1 id="html-helper-style">Class Phalcon\Html\Helper\Style</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Style.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Style.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1500,7 +1500,7 @@ protected type = week;
 <h1 id="html-helper-title">Class Phalcon\Html\Helper\Title</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Title.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Title.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1590,7 +1590,7 @@ protected separator = ;
 <h1 id="html-helper-ul">Class Phalcon\Html\Helper\Ul</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Helper/Ul.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Helper/Ul.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1611,7 +1611,7 @@ protected separator = ;
 <h1 id="html-link-evolvablelink">Class Phalcon\Html\Link\EvolvableLink</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Link/EvolvableLink.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Link/EvolvableLink.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1684,7 +1684,7 @@ protected separator = ;
 <h1 id="html-link-evolvablelinkprovider">Class Phalcon\Html\Link\EvolvableLinkProvider</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Link/EvolvableLinkProvider.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Link/EvolvableLinkProvider.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1728,7 +1728,7 @@ protected separator = ;
 <h1 id="html-link-link">Class Phalcon\Html\Link\Link</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Link/Link.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Link/Link.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1846,7 +1846,7 @@ protected templated = false;
 <h1 id="html-link-linkprovider">Class Phalcon\Html\Link\LinkProvider</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Link/LinkProvider.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Link/LinkProvider.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1915,7 +1915,7 @@ protected links;
 <h1 id="html-link-serializer-header">Class Phalcon\Html\Link\Serializer\Header</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Link/Serializer/Header.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Link/Serializer/Header.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1940,7 +1940,7 @@ protected links;
 <h1 id="html-link-serializer-serializerinterface">Interface Phalcon\Html\Link\Serializer\SerializerInterface</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/Link/Serializer/SerializerInterface.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/Link/Serializer/SerializerInterface.zep">Source on GitHub</a>
 </p>
 
 <p>
@@ -1965,7 +1965,7 @@ protected links;
 <h1 id="html-tagfactory">Class Phalcon\Html\TagFactory</h1>
 
 <p>
-  <a href="https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Html/TagFactory.zep">Source on GitHub</a>
+  <a href="https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Html/TagFactory.zep">Source on GitHub</a>
 </p>
 
 <p>

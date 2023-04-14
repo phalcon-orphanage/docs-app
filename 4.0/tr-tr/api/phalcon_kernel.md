@@ -9,7 +9,7 @@ title: 'Phalcon\Kernel'
 
 <h1 id="kernel">Class Phalcon\Kernel</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Kernel.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Kernel.zep)
 
 | Namespace | Phalcon |
 

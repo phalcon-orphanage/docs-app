@@ -14,7 +14,7 @@ title: 'Phalcon\Helper'
 
 <h1 id="helper-arr">Class Phalcon\Helper\Arr</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Helper/Arr.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Helper/Arr.zep)
 
 | Namespace  | Phalcon\Helper |
 | Uses       | stdClass |
@@ -170,7 +170,7 @@ by the keys obtained from the elements of a whitelist
 
 <h1 id="helper-base64">Class Phalcon\Helper\Base64</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Helper/Base64.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Helper/Base64.zep)
 
 | Namespace  | Phalcon\Helper |
 
@@ -197,7 +197,7 @@ Encode a json string in Base64 Url format.
 
 <h1 id="helper-exception">Class Phalcon\Helper\Exception</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Helper/Exception.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Helper/Exception.zep)
 
 | Namespace  | Phalcon\Helper |
 | Extends    | \Phalcon\Exception |
@@ -208,7 +208,7 @@ Exceptions thrown in Phalcon\Helper will use this class
 
 <h1 id="helper-fs">Class Phalcon\Helper\Fs</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Helper/Fs.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Helper/Fs.zep)
 
 | Namespace  | Phalcon\Helper |
 
@@ -229,7 +229,7 @@ see https://bugs.php.net/bug.php?id=37738
 
 <h1 id="helper-json">Class Phalcon\Helper\Json</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Helper/Json.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Helper/Json.zep)
 
 | Namespace  | Phalcon\Helper |
 | Uses       | InvalidArgumentException |
@@ -281,7 +281,7 @@ echo Json::encode($data);
 
 <h1 id="helper-number">Class Phalcon\Helper\Number</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Helper/Number.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Helper/Number.zep)
 
 | Namespace  | Phalcon\Helper |
 
@@ -302,7 +302,7 @@ Helper method to get an array element or a default
 
 <h1 id="helper-str">Class Phalcon\Helper\Str</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Helper/Str.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Helper/Str.zep)
 
 | Namespace  | Phalcon\Helper |
 | Uses       | RuntimeException |

@@ -8,7 +8,7 @@ title: 'Phalcon\Container'
 
 <h1 id="container">Class Phalcon\Container</h1>
 
-[Source on GitHub](https://github.com/phalcon/cphalcon/blob/v{{ pageVersion }}.0/phalcon/Container.zep)
+[Source on GitHub](https://github.com/phalcon/cphalcon/blob/4.2.x/phalcon/Container.zep)
 
 | Namespace  | Phalcon |
 | Uses       | Psr\Container\ContainerInterface, Phalcon\Di\DiInterface |
