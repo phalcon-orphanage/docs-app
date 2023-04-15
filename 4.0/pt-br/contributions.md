@@ -67,7 +67,7 @@ Confira os seguintes links para obter instruções sobre como gerar o backtrace:
 - [Generating a gdb backtrace](https://bugs.php.net/bugs-generating-backtrace.php)
 - [Generating a backtrace, with a compiler, on Win32](https://bugs.php.net/bugs-generating-backtrace-win32.php)
 - [Debugging Symbols](https://github.com/oerdnj/deb.sury.org/wiki/Debugging-symbols)
-- [Building PHP](http://www.phpinternalsbook.com/build_system/building_php.html)
+- [Building PHP](https://www.phpinternalsbook.com/build_system/building_php.html)
 
 ## Listas do Pull Request
 

@@ -66,7 +66,7 @@ Por favor consulte los siguientes enlaces para obtener instrucciones sobre cómo
 - [Generando una backtrace de gdb](https://bugs.php.net/bugs-generating-backtrace.php)
 - [Generar una backtrace, con un compilador, en Win32](https://bugs.php.net/bugs-generating-backtrace-win32.php)
 - [Símbolos de depuración](https://github.com/oerdnj/deb.sury.org/wiki/Debugging-symbols)
-- [Compilando PHP](http://www.phpinternalsbook.com/build_system/building_php.html)
+- [Compilando PHP](https://www.phpinternalsbook.com/build_system/building_php.html)
 
 ## Lista de verificación para *Pull Request(s)*
 
