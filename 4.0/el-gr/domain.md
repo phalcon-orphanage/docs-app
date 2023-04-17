@@ -11,7 +11,7 @@ keywords: 'domain, adr, payload'
 
 ![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 
-The domain component incorporates components that are used for the implementation of the [Action Domain Responder](https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder) ([ADR](http://pmjones.io/adr/)) pattern and can also be used when implementing [Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design).
+The domain component incorporates components that are used for the implementation of the [Action Domain Responder](https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder) ([ADR](https://pmjones.io/adr/)) pattern and can also be used when implementing [Domain Driven Design](https://en.wikipedia.org/wiki/Domain-driven_design).
 
 ## Payload
 
@@ -134,4 +134,4 @@ class ReportsController extends Controller
 ## Σύνδεσμοι
 
 * [Action Domain Responder](https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder)
-* [Clarifications to a review of Action Domain Responder](http://paul-m-jones.com/post/2018/12/19/clarifications-to-a-review-of-action-domain-responder/)
+* [Clarifications to a review of Action Domain Responder](https://paul-m-jones.com/post/2018/12/19/clarifications-to-a-review-of-action-domain-responder/)

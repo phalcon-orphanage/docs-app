@@ -12,7 +12,7 @@ keywords: 'domain, adr, payload, dominio'
 
 ![](/assets/images/document-status-stable-success.svg) ![](/assets/images/version-{{ pageVersion }}.svg)
 
-El componente de dominio incorpora componentes que se utilizan para la implementación del patrón [Respondedor de Dominio de Acción](https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder) ([ADR](http://pmjones.io/adr/)) y también se pueden usar al implementar [Diseño Dirigido por Dominio](https://en.wikipedia.org/wiki/Domain-driven_design).
+El componente de dominio incorpora componentes que se utilizan para la implementación del patrón [Respondedor de Dominio de Acción](https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder) ([ADR](https://pmjones.io/adr/)) y también se pueden usar al implementar [Diseño Dirigido por Dominio](https://en.wikipedia.org/wiki/Domain-driven_design).
 
 ## Carga útil
 
@@ -135,4 +135,4 @@ class ReportsController extends Controller
 ## Enlaces
 
 * [Respondedor de dominio de acción](https://en.wikipedia.org/wiki/Action%E2%80%93domain%E2%80%93responder)
-* [Aclaraciones a una revisión de Action Domain Responder](http://paul-m-jones.com/post/2018/12/19/clarifications-to-a-review-of-action-domain-responder/)
+* [Aclaraciones a una revisión de Action Domain Responder](https://paul-m-jones.com/post/2018/12/19/clarifications-to-a-review-of-action-domain-responder/)
