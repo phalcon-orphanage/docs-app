@@ -106,7 +106,7 @@ Una solución relativamente sencilla para incrementar el rendimiento del cliente
 
 ### Yahoo! YSlow
 
-[YSlow](http://yslow.org/) analiza las páginas web y sugiere formas de mejorar su rendimiento basado en un conjunto de [reglas para páginas web de alto rendimiento](https://developer.yahoo.com/performance/rules.html)
+[YSlow](https://yslow.org/) analiza las páginas web y sugiere formas de mejorar su rendimiento basado en un conjunto de [reglas para páginas web de alto rendimiento](https://developer.yahoo.com/performance/rules.html)
 
 ![](/assets/images/content/performance-yslow-1.jpg)
 
