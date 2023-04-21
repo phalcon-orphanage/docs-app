@@ -105,7 +105,7 @@ A relatively easy fix for increasing client performance is to set the correct he
 
 ### Yahoo! YSlow
 
-[YSlow](http://yslow.org/) analyzes web pages and suggests ways to improve their performance based on a set of [rules for high performance web pages](https://developer.yahoo.com/performance/rules.html)
+[YSlow](https://yslow.org/) analyzes web pages and suggests ways to improve their performance based on a set of [rules for high performance web pages](https://developer.yahoo.com/performance/rules.html)
 
 ![](/assets/images/content/performance-yslow-1.jpg)
 
