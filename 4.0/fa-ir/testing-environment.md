@@ -98,7 +98,7 @@ How would you like to run nanobox?
   b) Via Docker Native
 
   Note : Mac users, we strongly recommend choosing (a) until Docker Native
-         resolves an issue causing slow speeds : http://bit.ly/2jYFfWQ
+         resolves an issue causing slow speeds : https://bit.ly/2jYFfWQ
 
 Answer: 
 ```
