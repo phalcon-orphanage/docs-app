@@ -240,7 +240,7 @@ $container->set(
 > Status: **changes required**
 > 
 > Usage: [CLI Documentation](cli)
-{: .alert .alert-info }
+{: .alert .alert-danger }
 
 ### Parametreler
 
