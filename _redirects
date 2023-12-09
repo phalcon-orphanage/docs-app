@@ -40,8 +40,6 @@
 /4.0/:lang/devtools-usage                                      /4.0/:lang/devtools                                      301
 /4.0/:lang/environments-docker                                 /4.0/:lang/environments                                  301
 /4.0/:lang/environments-vagrant                                /4.0/:lang/environments                                  301
-/4.0/:lang/environments-docker                                 /4.0/:lang/environments                                  301
-/4.0/:lang/environments-vagrant                                /4.0/:lang/environments                                  301
 /4.0/:lang/odm                                                 /4.0/:lang/db-odm                                        301
 /4.0/:lang/logging                                             /4.0/:lang/logger                                        301
 /4.0/:lang/db                                                  /4.0/:lang/db                                            301
