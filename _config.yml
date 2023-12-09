@@ -18,6 +18,8 @@ app:
     appId: 'QSKF5YFGG5'
     indexName: 'phalconphp'
     apiKey: '3649840058938dc6b644f9abe5f4c9e9'
+  cloudflare:
+    analytics: '045e1620ddc443a0bd6c464078bac76e'
 
 permalink: :title
 
